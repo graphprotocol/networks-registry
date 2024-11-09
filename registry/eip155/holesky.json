@@ -16,7 +16,7 @@
     "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [
@@ -40,5 +40,6 @@
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "ethereum" } }
 }

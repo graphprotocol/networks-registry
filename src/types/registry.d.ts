@@ -5,9 +5,27 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Network = {
-  [k: string]: unknown;
-} & {
+export interface TheGraphNetworksRegistrySchema {
+  /**
+   * Reference to this schema file
+   */
+  $schema: string;
+  title: string;
+  description: string;
+  /**
+   * Version of the registry
+   */
+  version: string;
+  /**
+   * Date and time of the last update
+   */
+  updatedAt: string;
+  /**
+   * List of networks
+   */
+  networks: Network[];
+}
+export interface Network {
   /**
    * Established name of the chain on the Graph network, i.e. mainnet, btc, arweave-mainnet, near-testnet
    */
@@ -24,10 +42,6 @@ export type Network = {
    * CAIP-2 Chain ID, i.e. eip155:1, bip122:000000000019d6689c085ae165831e93
    */
   caip2Id: string;
-  /**
-   * dummy test field
-   */
-  newField?: string;
   /**
    * [optional] List of possible aliases for the chain id, i.e. ethereum, eth, mainnet, eth-mainnet
    */
@@ -93,7 +107,6 @@ export type Network = {
      * [optional] Protocol name in graph-node, i.e. ethereum, near, arweave
      */
     protocol?: "ethereum" | "near" | "arweave" | "cosmos" | "starknet";
-    [k: string]: unknown;
   };
   /**
    * URLs for the block explorers
@@ -102,18 +115,31 @@ export type Network = {
   /**
    * Providers support for the chain by providers
    */
-  support: {
+  services: {
     subgraphs?: Service[];
     sps?: Service[];
     firehose?: Service[];
     substreams?: Service[];
-    [k: string]: unknown;
   };
   /**
    * Issuance rewards on the Graph Network for this chain
    */
   issuanceRewards: boolean;
-  web3Icon?: string;
+  /**
+   * Icons for the chain
+   */
+  icon?: {
+    /**
+     * Web3Icons icon - see https://github.com/0xa3k5/web3icons
+     */
+    web3Icons?: {
+      name: string;
+      /**
+       * Variants of the icon, if none specified - all are available
+       */
+      variants?: string[];
+    };
+  };
   /**
    * List of RPC URLs for the chain. Use {CUSTOM_API_KEY} as a placeholder for a private API key
    */
@@ -137,27 +163,6 @@ export type Network = {
     kind: "rpc" | "firehose" | "other";
     hint?: string;
   }[];
-};
-
-export interface TheGraphNetworksRegistrySchema {
-  /**
-   * Reference to this schema file
-   */
-  $schema: string;
-  title: string;
-  description: string;
-  /**
-   * Version of the registry
-   */
-  version: string;
-  /**
-   * Date and time of the last update
-   */
-  updatedAt: string;
-  /**
-   * List of networks
-   */
-  networks: Network[];
 }
 export interface Service {
   provider:

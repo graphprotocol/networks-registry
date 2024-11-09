@@ -9,7 +9,7 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "graphNode": { "protocol": "cosmos" },
-  "support": {
+  "services": {
     "firehose": [
       {
         "provider": "streamingfast",

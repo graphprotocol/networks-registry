@@ -8,7 +8,7 @@
   "rpcUrls": [],
   "apiUrls": [{ "url": "https://vara.api.subscan.io/api", "kind": "subscan" }],
   "networkType": "mainnet",
-  "support": {
+  "services": {
     "firehose": [
       {
         "provider": "streamingfast",

@@ -8,7 +8,7 @@
   "explorerUrls": ["https://www.oklink.com/xlayer"],
   "rpcUrls": ["https://rpc.xlayer.tech"],
   "apiUrls": [],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

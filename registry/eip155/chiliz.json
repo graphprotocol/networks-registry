@@ -9,11 +9,10 @@
   "rpcUrls": ["https://rpc.chiliz.com", "https://rpc.ankr.com/chiliz"],
   "apiUrls": [{ "url": "https://scan.chiliz.com/api", "kind": "etherscan" }],
   "networkType": "mainnet",
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "issuanceRewards": false,
   "nativeToken": "CHZ",
   "docsUrl": "https://docs.chiliz.com",
-  "web3Icon": "chiliz",
   "genesis": {
     "hash": "0xd79fa059ef8cdfcf72676df19e209ee014183a5fa1cf132b2ff9288dbbcf5042",
     "height": 0
@@ -23,5 +22,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "chiliz" } }
 }

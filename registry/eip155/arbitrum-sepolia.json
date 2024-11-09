@@ -21,7 +21,7 @@
       "kind": "etherscan"
     }
   ],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [
@@ -43,5 +43,6 @@
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "arbitrum-one" } }
 }

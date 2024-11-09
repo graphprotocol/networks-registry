@@ -8,7 +8,7 @@
   "explorerUrls": ["https://xexplorer.neo.org"],
   "rpcUrls": ["https://mainnet-1.rpc.banelabs.org"],
   "apiUrls": [{ "url": "https://xexplorer.neo.org/api", "kind": "etherscan" }],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "GAS",

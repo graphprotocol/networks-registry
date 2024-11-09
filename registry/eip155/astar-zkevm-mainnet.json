@@ -13,13 +13,12 @@
       "kind": "etherscan"
     }
   ],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.astar.network/docs/getting-started",
-  "web3Icon": "astar",
   "genesis": {
     "hash": "0x5f7b9f463b7a0b690efb11446d0520e5b884e5bf0e3a3780c881a3b490592574",
     "height": 0
@@ -29,5 +28,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "astar" } }
 }

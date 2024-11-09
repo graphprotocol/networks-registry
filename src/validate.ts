@@ -74,6 +74,42 @@ function validateRelations(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+function validateEvmRules(networks: Network[]) {
+  process.stdout.write("Validating EVM rules ... ");
+
+  for (const network of networks) {
+    const isEvm = network.caip2Id.startsWith("eip155:");
+
+    if (isEvm) {
+      if (network.firehose?.evmExtendedModel === undefined) {
+        ERRORS.push(
+          `Network ${network.id} is EVM but missing required firehose.evmExtendedModel field`,
+        );
+      }
+
+      if (network.graphNode?.protocol !== "ethereum") {
+        ERRORS.push(
+          `Network ${network.id} is EVM but graphNode.protocol is not "ethereum"`,
+        );
+      }
+    } else {
+      if (network.firehose?.evmExtendedModel !== undefined) {
+        ERRORS.push(
+          `Network ${network.id} is non-EVM but has evmExtendedModel field which is not allowed`,
+        );
+      }
+
+      if (network.graphNode?.protocol === "ethereum") {
+        ERRORS.push(
+          `Network ${network.id} is non-EVM but has graphNode.protocol="ethereum" which is not allowed`,
+        );
+      }
+    }
+  }
+
+  process.stdout.write("done\n");
+}
+
 function validateTestnets(networks: Network[]) {
   process.stdout.write("Validating testnets ... ");
   for (const network of networks) {
@@ -134,16 +170,35 @@ function validateUrls(networks: Network[]) {
 
 async function validateWeb3Icons(networks: Network[]) {
   process.stdout.write("Validating web3 icons ... ");
-  const icons = await fetchWeb3NetworkIcons();
+  const web3Icons = await fetchWeb3NetworkIcons();
   for (const network of networks) {
-    if (network.web3Icon) {
-      if (!icons.find((i) => i.id === network.web3Icon)) {
+    if (network.icon?.web3Icons?.name) {
+      const ourIcon = network.icon?.web3Icons!;
+      const web3Icon = web3Icons.find((i) => i.id === ourIcon.name);
+      if (!web3Icon) {
         ERRORS.push(
-          `Network ${network.id} web3icon id does not exist: ${network.web3Icon}`,
+          `Network ${network.id} web3icon id does not exist on web3Icons: ${ourIcon.name}`,
         );
+      } else {
+        const web3Variants = web3Icon.variants || [];
+        const ourVariants = ourIcon.variants || [];
+
+        if (web3Variants.length === 2) {
+          if (ourVariants.length === 1) {
+            ERRORS.push(
+              `Network ${network.id} web3icon should have both variants or none: ${ourVariants.join(",")}`,
+            );
+          }
+        } else if (web3Variants.length === 1) {
+          if (ourVariants.length !== 1 || ourVariants[0] !== web3Variants[0]) {
+            ERRORS.push(
+              `Network ${network.id} web3icon should only have the variant: ${web3Variants[0]}`,
+            );
+          }
+        }
       }
     } else {
-      if (icons.find((i) => i.id === network.id)) {
+      if (web3Icons.find((i) => i.id === network.id)) {
         ERRORS.push(
           `Network ${network.id} does not have a web3icon but there exists an icon with the same id. Consider adding it.`,
         );
@@ -279,6 +334,7 @@ async function main() {
   validateFilenames(networksPath);
   validateUniqueness(networks);
   validateRelations(networks);
+  validateEvmRules(networks);
   validateTestnets(networks);
   validateUrls(networks);
   await validateWeb3Icons(networks);
