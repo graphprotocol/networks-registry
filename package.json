@@ -1,10 +1,10 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "scripts": {
     "format": "prettier ./schemas/registry.schema.json ./registry/**/*.json ./src/**/*.ts ./**/*.md --write",
-    "format:check": "prettier ./registry/**/*.json ./src/**/*.ts ./**/*.md --check",
+    "format:check": "prettier ./schemas/registry.schema.json ./registry/**/*.json ./src/**/*.ts ./**/*.md --check",
     "validate:schema": "bun run ./src/validate_schema.ts",
     "validate:networks": "bun run ./src/validate.ts",
     "validate:registry": "ajv validate -s schemas/registry.schema.json -d 'dist/TheGraphNetworksRegistry.json' --strict=true -c ajv-formats",
