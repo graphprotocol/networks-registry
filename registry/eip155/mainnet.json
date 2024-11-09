@@ -8,6 +8,7 @@
   "explorerUrls": ["https://etherscan.io"],
   "rpcUrls": [
     "https://rpc.ankr.com/eth",
+    "https://cloudflare-eth.com",
     "https://eth.rpc.pinax.network/v1/{PINAX_API_KEY}",
     "https://mainnet.infura.io/v3/{INFURA_API_KEY}"
   ],
