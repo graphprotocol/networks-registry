@@ -1,0 +1,50 @@
+{
+  "id": "blast-testnet",
+  "shortName": "Blast Sepolia",
+  "fullName": "Blast Sepolia Testnet",
+  "aliases": ["evm-23888", "blast-sepolia"],
+  "caip2Id": "eip155:23888",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://sepolia.blastscan.io"],
+  "rpcUrls": [
+    "https://sepolia.blast.io",
+    "https://blastsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://blast-testnet.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "blastsepolia.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      {
+        "provider": "pinax",
+        "url": "blastsepolia.substreams.pinax.network:443"
+      }
+    ]
+  },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "blast-mainnet" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.blast.io",
+  "web3Icon": "blast",
+  "genesis": {
+    "hash": "0x26a1c0faad7b041f34569a1bb383f00ab74b335883a44bed53e9f41ced5fd906",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "chiliz-testnet",
+  "shortName": "Chiliz",
+  "fullName": "Chiliz Spicy Testnet",
+  "aliases": ["chiliz-spicy-testnet", "evm-88882"],
+  "caip2Id": "eip155:88882",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://testnet.chiliscan.com"],
+  "rpcUrls": ["https://spicy-rpc.chiliz.com"],
+  "apiUrls": [
+    { "url": "https://spicy-explorer.chiliz.com/api", "kind": "etherscan" }
+  ],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "chiliz" }],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "issuanceRewards": false,
+  "nativeToken": "CHZ",
+  "docsUrl": "https://docs.chiliz.com",
+  "web3Icon": "chiliz",
+  "genesis": {
+    "hash": "0x9e0e07ae4ee9b0ef66a4206656677020306259d0b0b845ad3bb6b09fb91485ff",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

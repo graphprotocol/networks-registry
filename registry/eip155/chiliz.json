@@ -1,0 +1,27 @@
+{
+  "id": "chiliz",
+  "shortName": "Chiliz",
+  "fullName": "Chiliz Mainnet",
+  "aliases": ["chiliz-mainnet", "evm-88888"],
+  "caip2Id": "eip155:88888",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://chiliscan.com"],
+  "rpcUrls": ["https://rpc.chiliz.com", "https://rpc.ankr.com/chiliz"],
+  "apiUrls": [{ "url": "https://scan.chiliz.com/api", "kind": "etherscan" }],
+  "networkType": "mainnet",
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "issuanceRewards": false,
+  "nativeToken": "CHZ",
+  "docsUrl": "https://docs.chiliz.com",
+  "web3Icon": "chiliz",
+  "genesis": {
+    "hash": "0xd79fa059ef8cdfcf72676df19e209ee014183a5fa1cf132b2ff9288dbbcf5042",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

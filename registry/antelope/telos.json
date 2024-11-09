@@ -1,0 +1,32 @@
+{
+  "id": "telos",
+  "shortName": "Telos",
+  "fullName": "Telos Mainnet",
+  "aliases": ["telos-mainnet"],
+  "caip2Id": "antelope:4667b205c6838ef70ff7988f6e8257e8",
+  "explorerUrls": ["https://explorer.telos.net"],
+  "rpcUrls": ["https://telos.api.eosnation.io"],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "telos.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "telos.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "TELOS",
+  "docsUrl": "https://docs.telos.net",
+  "web3Icon": "telos",
+  "genesis": {
+    "hash": "0x000000021d642039071f77a8a2e1eca6cfc0d90f94e7304f0d401bf28f067693",
+    "height": 2
+  },
+  "firehose": {
+    "blockType": "sf.antelope.type.v1.Block",
+    "bufUrl": "https://buf.build/pinax/firehose-antelope",
+    "bytesEncoding": "hex"
+  }
+}

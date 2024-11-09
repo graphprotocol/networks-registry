@@ -1,0 +1,33 @@
+{
+  "id": "telos-testnet",
+  "shortName": "Telos",
+  "fullName": "Telos Testnet",
+  "aliases": [],
+  "caip2Id": "antelope:1eaa0824707c8c16bd25145493bf062a",
+  "explorerUrls": ["https://explorer-test.telos.net"],
+  "rpcUrls": ["https://telostest.api.eosnation.io"],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "telos" }],
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "telostest.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "telostest.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "TELOS",
+  "docsUrl": "https://docs.telos.net",
+  "web3Icon": "telos",
+  "genesis": {
+    "hash": "0x0000000377dcf185dce2cd5b1ad7e70a7da0a73fc175c47283043791956c70c3",
+    "height": 3
+  },
+  "firehose": {
+    "blockType": "sf.antelope.type.v1.Block",
+    "bufUrl": "https://buf.build/pinax/firehose-antelope",
+    "bytesEncoding": "hex"
+  }
+}

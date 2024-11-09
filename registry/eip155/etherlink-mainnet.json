@@ -1,0 +1,29 @@
+{
+  "id": "etherlink-mainnet",
+  "shortName": "Etherlink",
+  "fullName": "Etherlink Mainnet",
+  "aliases": ["etherlink"],
+  "caip2Id": "eip155:42793",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.etherlink.com"],
+  "rpcUrls": ["https://node.mainnet.etherlink.com"],
+  "apiUrls": [
+    { "url": "https://explorer.etherlink.com/api", "kind": "etherscan" }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "XTZ",
+  "docsUrl": "https://docs.etherlink.com",
+  "web3Icon": "etherlink",
+  "genesis": {
+    "hash": "0x37628d45dcd6265c969aa5f5dc3fe8fddd21198c683b85ac7099d8e39597df50",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

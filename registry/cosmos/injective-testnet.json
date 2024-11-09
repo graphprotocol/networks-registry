@@ -1,0 +1,40 @@
+{
+  "id": "injective-testnet",
+  "shortName": "Injective",
+  "fullName": "Injective Testnet",
+  "aliases": ["injective-2"],
+  "caip2Id": "cosmos:injective-2",
+  "explorerUrls": ["https://testnet.explorer.injective.network"],
+  "rpcUrls": [],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "graphNode": { "protocol": "cosmos" },
+  "relations": [{ "kind": "testnetOf", "network": "injective-mainnet" }],
+  "support": {
+    "firehose": [
+      {
+        "provider": "streamingfast",
+        "url": "testnet.injective.streamingfast.io:443"
+      }
+    ],
+    "substreams": [
+      {
+        "provider": "streamingfast",
+        "url": "testnet.injective.streamingfast.io:443"
+      }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "INJ",
+  "docsUrl": "https://docs.injective.network",
+  "web3Icon": "injective",
+  "genesis": {
+    "hash": "0xa9effb99c7bc3ba8c18a487ffffd800c137bc2b2f47f73c350f3ca27077044a1",
+    "height": 37368800
+  },
+  "firehose": {
+    "blockType": "sf.cosmos.type.v2.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
+    "bytesEncoding": "hex"
+  }
+}

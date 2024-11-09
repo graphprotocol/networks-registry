@@ -1,0 +1,52 @@
+{
+  "id": "arbitrum-one",
+  "shortName": "Arbitrum One",
+  "fullName": "Arbitrum One Mainnet",
+  "aliases": ["arbone", "arbitrum", "arb-sepolia", "evm-42161"],
+  "caip2Id": "eip155:42161",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "explorerUrls": ["https://arbiscan.io"],
+  "rpcUrls": [
+    "https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}",
+    "https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}",
+    "https://arbone.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://arb1.arbitrum.io/rpc"
+  ],
+  "apiUrls": [
+    { "url": "https://arbitrum-one.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "arbone.firehose.pinax.network:443" },
+      { "provider": "streamingfast", "url": "arb-one.streamingfast.io:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "arbone.substreams.pinax.network:443" },
+      { "provider": "streamingfast", "url": "arb-one.streamingfast.io:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": true,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.arbitrum.io",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/arbitrum",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "arbitrum-one",
+  "genesis": {
+    "hash": "0x7ee576b35482195fc49205cec9af72ce14f003b9ae69f6ba0faef4514be8b442",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

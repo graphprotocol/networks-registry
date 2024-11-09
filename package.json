@@ -1,0 +1,27 @@
+{
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "format": "prettier ./registry/**/*.json ./src/**/*.ts ./**/*.md --write",
+    "format:check": "prettier ./registry/**/*.json ./src/**/*.ts ./**/*.md --check",
+    "validate:schema": "bun run ./src/validate_schema.ts",
+    "validate:networks": "bun run ./src/validate.ts",
+    "validate:registry": "ajv validate -s schemas/registry.schema.json -d 'dist/TheGraphNetworksRegistry.json' --strict=true -c ajv-formats",
+    "validate:urls": "bun run ./src/validate_urls.ts",
+    "validate": "bun validate:schema && bun validate:networks",
+    "generate:types": "json2ts --input schemas/registry.schema.json --output src/types/registry.d.ts --cwd=schemas",
+    "generate:registry": "bun run ./src/generate.ts",
+    "generate:public": "bun run ./src/generate.ts registry public",
+    "all": "bun generate:types && bun validate && bun generate:registry && bun format && bun format:check"
+  },
+  "devDependencies": {
+    "@types/bun": "1",
+    "ajv": "^8.17.1",
+    "ajv-cli": "^5.0.0",
+    "ajv-formats": "^3.0.1",
+    "json-schema-to-typescript": "^15.0.2",
+    "prettier": "^3.3.3",
+    "wrangler": "3.81.0"
+  }
+}

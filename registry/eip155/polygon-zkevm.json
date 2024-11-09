@@ -1,0 +1,33 @@
+{
+  "id": "polygon-zkevm",
+  "shortName": "Polygon zkEVM",
+  "fullName": "Polygon zkEVM Mainnet",
+  "aliases": [],
+  "caip2Id": "eip155:1101",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "explorerUrls": ["https://zkevm.polygonscan.com"],
+  "rpcUrls": ["https://zkevm-rpc.com", "https://polygon-zkevm.drpc.org"],
+  "apiUrls": [
+    {
+      "url": "https://polygon-zkevm.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
+  ],
+  "networkType": "mainnet",
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://polygon.technology/polygon-zkevm",
+  "web3Icon": "polygon-zkevm",
+  "genesis": {
+    "hash": "0x81005434635456a16f74ff7023fbe0bf423abbc8a8deb093ffff455c0ad3b741",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

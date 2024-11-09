@@ -1,0 +1,39 @@
+{
+  "id": "mantra-testnet",
+  "shortName": "Mantra",
+  "fullName": "Mantra Testnet",
+  "aliases": ["mantra-dukong"],
+  "caip2Id": "cosmos:mantra-dukong",
+  "explorerUrls": ["https://explorer.mantrachain.io/MANTRA-Dukong"],
+  "rpcUrls": ["https://mantra-testnet-rpc.publicnode.com:443"],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "mantra-mainnet" }],
+  "graphNode": { "protocol": "cosmos" },
+  "support": {
+    "firehose": [
+      {
+        "provider": "streamingfast",
+        "url": "testnet.mantra.streamingfast.io:443"
+      }
+    ],
+    "substreams": [
+      {
+        "provider": "streamingfast",
+        "url": "testnet.mantra.streamingfast.io:443"
+      }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "OM",
+  "docsUrl": "https://docs.mantrachain.io",
+  "genesis": {
+    "hash": "0x2701f72ef3e2242e27244b2dfa895ad212fc07de71599a0af2fe2410d93bc7bb",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.cosmos.type.v2.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
+    "bytesEncoding": "hex"
+  }
+}

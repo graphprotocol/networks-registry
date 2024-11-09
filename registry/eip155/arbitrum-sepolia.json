@@ -1,0 +1,47 @@
+{
+  "id": "arbitrum-sepolia",
+  "shortName": "Arbitrum Sepolia",
+  "fullName": "Arbitrum Sepolia Testnet",
+  "aliases": ["evm-421614"],
+  "caip2Id": "eip155:421614",
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "arbitrum-one" },
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://sepolia.arbiscan.io"],
+  "rpcUrls": [
+    "https://sepolia-rollup.arbitrum.io/rpc",
+    "https://arbsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://arbitrum-sepolia.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "arbsepolia.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "arbsepolia.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.arbitrum.io",
+  "genesis": {
+    "hash": "0x77194da4010e549a7028a9c3c51c3e277823be6ac7d138d0bb8a70197b5c004c",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

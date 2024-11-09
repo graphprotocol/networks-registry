@@ -1,0 +1,45 @@
+{
+  "id": "mode-mainnet",
+  "shortName": "Mode",
+  "fullName": "Mode Mainnet",
+  "aliases": ["evm-34443", "mode"],
+  "caip2Id": "eip155:34443",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.mode.network"],
+  "rpcUrls": [
+    "https://mainnet.mode.network",
+    "https://mode.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://mode.drpc.org"
+  ],
+  "apiUrls": [
+    { "url": "https://explorer.mode.network/api", "kind": "etherscan" }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "mode.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "mode.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.mode.network",
+  "indexerDocsUrls": [
+    { "url": "https://docs.infradao.com/archive-nodes-101/mode", "kind": "rpc" }
+  ],
+  "web3Icon": "mode",
+  "genesis": {
+    "hash": "0xb0f682e12fc555fd5ce8fce51a59a67d66a5b46be28611a168260a549dac8a9b",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

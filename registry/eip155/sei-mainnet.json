@@ -1,0 +1,43 @@
+{
+  "id": "sei-mainnet",
+  "shortName": "Sei",
+  "fullName": "Sei Network",
+  "aliases": ["sei-evm-mainnet", "sei"],
+  "caip2Id": "eip155:1329",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://seitrace.com"],
+  "rpcUrls": ["https://evm-rpc.sei-apis.com"],
+  "apiUrls": [
+    { "url": "https://seitrace.com/pacific-1/api", "kind": "etherscan" }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      {
+        "provider": "streamingfast",
+        "url": "evm-mainnet.sei.streamingfast.io:443"
+      }
+    ],
+    "substreams": [
+      {
+        "provider": "streamingfast",
+        "url": "evm-mainnet.sei.streamingfast.io:443"
+      }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "SEI",
+  "docsUrl": "https://docs.seitrace.com",
+  "web3Icon": "sei-network",
+  "genesis": {
+    "hash": "0xe43c3e52a4f74dc7bb35f55cc813ed2ce97e46aafb3fcf8884056b0a757f5b75",
+    "height": 79123881
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

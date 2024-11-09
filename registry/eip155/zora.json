@@ -1,0 +1,40 @@
+{
+  "id": "zora",
+  "shortName": "Zora",
+  "fullName": "Zora Network",
+  "aliases": ["zora-mainnet"],
+  "caip2Id": "eip155:7777777",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.zora.energy"],
+  "rpcUrls": [
+    "https://rpc.zora.energy",
+    "https://zora.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    { "url": "https://explorer.zora.energy/api/v2", "kind": "etherscan" }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "zora.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "zora.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.zora.co",
+  "genesis": {
+    "hash": "0x47555a45a1af8d4728ca337a1e48375a83919b1ea16591e070a07388b7364e29",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

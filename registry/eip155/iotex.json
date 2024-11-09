@@ -1,0 +1,27 @@
+{
+  "id": "iotex",
+  "shortName": "IoTeX",
+  "fullName": "IoTeX Mainnet",
+  "aliases": ["evm-4689", "iotex-mainnet"],
+  "caip2Id": "eip155:4689",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://iotexscan.io"],
+  "rpcUrls": ["https://babel-api.mainnet.iotex.io"],
+  "apiUrls": [{ "url": "https://iotexscan.io/api", "kind": "etherscan" }],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "IOTX",
+  "docsUrl": "https://docs.iotex.io",
+  "web3Icon": "iotex",
+  "genesis": {
+    "hash": "0x230ba8095d5a505e355652f9dcc2b13605419a8fa3d3fd5ddc6d24fd6a902641",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

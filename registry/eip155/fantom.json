@@ -1,0 +1,39 @@
+{
+  "id": "fantom",
+  "shortName": "Fantom",
+  "fullName": "Fantom Mainnet",
+  "aliases": ["evm-250", "fantom-mainnet"],
+  "caip2Id": "eip155:250",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://ftmscan.com"],
+  "rpcUrls": [
+    "https://rpc.ftm.tools",
+    "https://fantom.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://fantom.drpc.org"
+  ],
+  "apiUrls": [
+    { "url": "https://fantom.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": true,
+  "nativeToken": "FTM",
+  "docsUrl": "https://docs.fantom.foundation",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/fantom",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "fantom",
+  "genesis": {
+    "hash": "0x00000000000003e83fddf1e9330f0a8691d9f0b2af57b38c3bb85488488a40df",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

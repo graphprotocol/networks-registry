@@ -1,0 +1,47 @@
+{
+  "id": "starknet-mainnet",
+  "shortName": "Starknet",
+  "fullName": "Starknet Mainnet",
+  "aliases": ["starknet"],
+  "caip2Id": "starknet:SN_MAIN",
+  "graphNode": { "protocol": "starknet" },
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "explorerUrls": ["https://starkscan.co"],
+  "rpcUrls": [
+    "https://starknet-mainnet.public.blastapi.io",
+    "https://starknet.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      {
+        "provider": "streamingfast",
+        "url": "mainnet.starknet.streamingfast.io:443"
+      },
+      { "provider": "pinax", "url": "starknet.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      {
+        "provider": "streamingfast",
+        "url": "mainnet.starknet.streamingfast.io:443"
+      },
+      { "provider": "pinax", "url": "starknet.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.starknet.io",
+  "web3Icon": "starknet",
+  "genesis": {
+    "hash": "0x47c3637b57c2b079b93c61539950c17e868a28f46cdef28f88521067f21e943",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.starknet.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
+    "bytesEncoding": "0xhex"
+  }
+}

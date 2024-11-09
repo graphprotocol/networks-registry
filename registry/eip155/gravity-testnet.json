@@ -1,0 +1,33 @@
+{
+  "id": "gravity-testnet",
+  "shortName": "Gravity Sepolia",
+  "fullName": "Gravity Sepolia Testnet",
+  "aliases": ["gravity-sepolia"],
+  "caip2Id": "eip155:13505",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer-sepolia.gravity.xyz"],
+  "rpcUrls": ["https://rpc-sepolia.gravity.xyz"],
+  "apiUrls": [
+    { "url": "https://explorer-sepolia.gravity.xyz/api", "kind": "etherscan" }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "gravity-mainnet" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "G",
+  "docsUrl": "https://docs.gravity.xyz",
+  "web3Icon": "gravity",
+  "genesis": {
+    "hash": "0xdf76dabe0734fed9d517027a494bc00662576d30aee9672a6fab5184e06ee8ca",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

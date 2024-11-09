@@ -1,0 +1,36 @@
+{
+  "id": "boba-bnb",
+  "shortName": "Boba BNB",
+  "fullName": "Boba BNB Mainnet",
+  "aliases": ["evm-56288", "boba-bsc"],
+  "caip2Id": "eip155:56288",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://bnb.bobascan.com"],
+  "rpcUrls": [
+    "https://bnb.boba.network",
+    "https://boba-bnb.gateway.tenderly.co"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://api.routescan.io/v2/network/mainnet/evm/56288/etherscan/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "bsc" }],
+  "issuanceRewards": true,
+  "nativeToken": "BOBA",
+  "docsUrl": "https://docs.boba.network",
+  "web3Icon": "boba",
+  "genesis": {
+    "hash": "0xf9aa25373a3cf1c3d3dcb1911093b56eb129221d203270bcdb002b3f01a120d9",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

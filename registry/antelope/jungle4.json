@@ -1,0 +1,32 @@
+{
+  "id": "jungle4",
+  "shortName": "Jungle4",
+  "fullName": "EOS Jungle4 Testnet",
+  "aliases": ["jungle"],
+  "caip2Id": "antelope:73e4385a2708e6d7048834fbc1079f2f",
+  "explorerUrls": ["https://jungle.bloks.io"],
+  "rpcUrls": ["https://jungle4.api.eosnation.io"],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "eos" }],
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "jungle4.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "jungle4.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "EOS",
+  "docsUrl": "https://jungletestnet.io",
+  "genesis": {
+    "hash": "0x00000002d61d836f51657f886a5bc55b18a731f7eace6565784328fbd051fc90",
+    "height": 2
+  },
+  "firehose": {
+    "blockType": "sf.antelope.type.v1.Block",
+    "bufUrl": "https://buf.build/pinax/firehose-antelope",
+    "bytesEncoding": "hex"
+  }
+}

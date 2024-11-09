@@ -1,0 +1,46 @@
+{
+  "id": "jungle4-evm",
+  "shortName": "Jungle4 EVM",
+  "fullName": "EOS Jungle4 EVM Testnet",
+  "aliases": ["jungle4-evm-testnet", "eos-evm-testnet", "evm-15557"],
+  "caip2Id": "eip155:15557",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [
+    { "kind": "evmOf", "network": "jungle4" },
+    { "kind": "testnetOf", "network": "eos-evm" }
+  ],
+  "explorerUrls": ["https://explorer.testnet.evm.eosnetwork.com"],
+  "rpcUrls": [
+    "https://explorer.testnet.evm.eosnetwork.com/api/eth-rpc",
+    "https://jungle4evm.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    {
+      "kind": "etherscan",
+      "url": "https://explorer.testnet.evm.eosnetwork.com/api"
+    }
+  ],
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "jungle4evm.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "jungle4evm.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "testnet",
+  "issuanceRewards": false,
+  "nativeToken": "EOS",
+  "docsUrl": "https://eosnetwork.com/eos-evm",
+  "web3Icon": "eos",
+  "genesis": {
+    "hash": "0xc6f7c5c995ae7a7567b44e9679c6654b39a957fe33daa33aee4ee96a01b2fbd5",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

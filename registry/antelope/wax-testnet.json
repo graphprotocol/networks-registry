@@ -1,0 +1,32 @@
+{
+  "id": "wax-testnet",
+  "shortName": "WAX",
+  "fullName": "WAX Testnet",
+  "aliases": ["waxtest"],
+  "caip2Id": "antelope:f16b1833c747c43682f4386fca9cbb32",
+  "explorerUrls": ["https://wax-test.bloks.io"],
+  "rpcUrls": ["https://waxtest.api.eosnation.io"],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "wax" }],
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "waxtest.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "waxtest.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "WAX",
+  "docsUrl": "https://developer.wax.io",
+  "genesis": {
+    "hash": "0x00000002066113f7023ed907632c404f25c5f0f02034f3b1a22f339c83d78c53",
+    "height": 2
+  },
+  "firehose": {
+    "blockType": "sf.antelope.type.v1.Block",
+    "bufUrl": "https://buf.build/pinax/firehose-antelope",
+    "bytesEncoding": "hex"
+  }
+}

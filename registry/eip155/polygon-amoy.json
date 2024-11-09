@@ -1,0 +1,44 @@
+{
+  "id": "polygon-amoy",
+  "shortName": "Amoy",
+  "fullName": "Polygon Amoy Testnet",
+  "aliases": ["amoy-testnet", "amoy"],
+  "caip2Id": "eip155:80002",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [
+    { "kind": "testnetOf", "network": "matic" },
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
+  "explorerUrls": ["https://www.oklink.com/amoy"],
+  "rpcUrls": [
+    "https://rpc-amoy.polygon.technology",
+    "https://amoy.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    { "url": "https://polygon-amoy.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "networkType": "testnet",
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "amoy.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "amoy.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "POL",
+  "docsUrl": "https://docs.polygon.technology",
+  "web3Icon": "polygon-pos",
+  "genesis": {
+    "hash": "0x7202b2b53c5a0836e773e319d18922cc756dd67432f9a1f65352b61f4406c697",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

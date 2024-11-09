@@ -1,0 +1,32 @@
+{
+  "id": "zksync-era",
+  "shortName": "zkSync",
+  "fullName": "zkSync Mainnet",
+  "aliases": ["evm-324", "zksync"],
+  "caip2Id": "eip155:324",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.zksync.io"],
+  "rpcUrls": ["https://mainnet.era.zksync.io"],
+  "apiUrls": [
+    {
+      "url": "https://block-explorer-api.mainnet.zksync.io/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.zksync.io",
+  "genesis": {
+    "hash": "0x51f81bcdfc324a0dff2b5bec9d92e21cbebc4d5e29d3a3d30de3e03fbeab8d7f",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

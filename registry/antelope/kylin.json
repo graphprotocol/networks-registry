@@ -1,0 +1,33 @@
+{
+  "id": "kylin",
+  "shortName": "Kylin",
+  "fullName": "Kylin Testnet",
+  "aliases": ["eos-kylin"],
+  "caip2Id": "antelope:5fff1dae8dc8e2fc4d5b23b2c7665c97",
+  "explorerUrls": ["https://kylin.bloks.io"],
+  "rpcUrls": ["https://kylin.api.eosnation.io"],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "eos" }],
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "kylin.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "kylin.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "EOS",
+  "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
+  "web3Icon": "eos",
+  "genesis": {
+    "hash": "0x00000002a1ec7ae214b9e43a904b6c010fb1260c9e8a12e5967bdbe451152a07",
+    "height": 2
+  },
+  "firehose": {
+    "blockType": "sf.antelope.type.v1.Block",
+    "bufUrl": "https://buf.build/pinax/firehose-antelope",
+    "bytesEncoding": "hex"
+  }
+}

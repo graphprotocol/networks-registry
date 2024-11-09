@@ -1,0 +1,29 @@
+{
+  "id": "harmony",
+  "shortName": "Harmony",
+  "fullName": "Harmony Mainnet Shard 0",
+  "aliases": ["evm-1666600000", "harmony-mainnet"],
+  "caip2Id": "eip155:1666600000",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.harmony.one/?shard=0"],
+  "rpcUrls": ["https://api.harmony.one/?shard=0"],
+  "apiUrls": [
+    { "url": "https://explorer.harmony.one/api?shard=0", "kind": "etherscan" }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "ONE",
+  "docsUrl": "https://docs.harmony.one",
+  "web3Icon": "harmony",
+  "genesis": {
+    "hash": "0xb4d158b82ac8a653c42b78697ab1cd0c6a0d9a15ab3bc34130f0b719fb174d2a",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

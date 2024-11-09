@@ -1,0 +1,32 @@
+{
+  "id": "celo",
+  "shortName": "Celo",
+  "fullName": "Celo Mainnet",
+  "aliases": ["evm-42220", "celo-mainnet"],
+  "caip2Id": "eip155:42220",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://celoscan.io"],
+  "rpcUrls": ["https://forno.celo.org"],
+  "apiUrls": [
+    { "url": "https://celo.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": true,
+  "nativeToken": "CELO",
+  "docsUrl": "https://docs.celo.org",
+  "indexerDocsUrls": [
+    { "url": "https://docs.infradao.com/archive-nodes-101/celo", "kind": "rpc" }
+  ],
+  "web3Icon": "celo",
+  "genesis": {
+    "hash": "0x19ea3339d3c8cda97235bc8293240d5b9dadcdfbb5d4b0b90ee731cac1bd11c3",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

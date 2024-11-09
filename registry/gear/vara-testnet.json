@@ -1,0 +1,38 @@
+{
+  "id": "vara-testnet",
+  "shortName": "Vara",
+  "fullName": "Vara Testnet",
+  "aliases": [],
+  "caip2Id": "gear:vara-testnet",
+  "relations": [{ "kind": "testnetOf", "network": "vara-mainnet" }],
+  "explorerUrls": [],
+  "rpcUrls": [],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "support": {
+    "firehose": [
+      {
+        "provider": "streamingfast",
+        "url": "testnet.vara.streamingfast.io:443"
+      }
+    ],
+    "substreams": [
+      {
+        "provider": "streamingfast",
+        "url": "testnet.vara.streamingfast.io:443"
+      }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "VARA",
+  "docsUrl": "https://wiki.vara.network",
+  "genesis": {
+    "hash": "0x525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.gear.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-gear",
+    "bytesEncoding": "hex"
+  }
+}
