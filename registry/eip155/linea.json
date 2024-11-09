@@ -1,0 +1,48 @@
+{
+  "id": "linea",
+  "shortName": "Linea",
+  "fullName": "Linea Mainnet",
+  "aliases": ["evm-59144", "linea-mainnet"],
+  "caip2Id": "eip155:59144",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://lineascan.build"],
+  "rpcUrls": [
+    "https://rpc.linea.build",
+    "https://linea.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}"
+  ],
+  "apiUrls": [
+    { "url": "https://linea.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "linea.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "linea.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": true,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.linea.build",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/linea",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "linea",
+  "genesis": {
+    "hash": "0xb6762a65689107b2326364aefc18f94cda413209fab35c00d4af51eaa20ffbc6",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

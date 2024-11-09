@@ -1,0 +1,27 @@
+{
+  "id": "xlayer-mainnet",
+  "shortName": "XLayer",
+  "fullName": "XLayer Mainnet",
+  "aliases": ["evm-196", "xlayer"],
+  "caip2Id": "eip155:196",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://www.oklink.com/xlayer"],
+  "rpcUrls": ["https://rpc.xlayer.tech"],
+  "apiUrls": [],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "OKB",
+  "docsUrl": "https://www.okx.com/xlayer",
+  "genesis": {
+    "hash": "0x11f32f605beb94a1acb783cb3b6da6d7975461ce3addf441e7ad60c2ec95e88f",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

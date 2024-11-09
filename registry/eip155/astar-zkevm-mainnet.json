@@ -1,0 +1,33 @@
+{
+  "id": "astar-zkevm-mainnet",
+  "shortName": "Astar zkEVM",
+  "fullName": "Astar zkEVM Mainnet",
+  "aliases": ["evm-3776", "astar", "astar-zkevm"],
+  "caip2Id": "eip155:3776",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://astar-zkevm.explorer.startale.com"],
+  "rpcUrls": ["https://rpc.startale.com/astar-zkevm"],
+  "apiUrls": [
+    {
+      "url": "https://astar-zkevm.explorer.startale.com/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.astar.network/docs/getting-started",
+  "web3Icon": "astar",
+  "genesis": {
+    "hash": "0x5f7b9f463b7a0b690efb11446d0520e5b884e5bf0e3a3780c881a3b490592574",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

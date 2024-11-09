@@ -1,0 +1,27 @@
+{
+  "id": "clover",
+  "shortName": "CLV",
+  "fullName": "CLV Parachain",
+  "aliases": ["clv-mainnet", "evm-1024"],
+  "caip2Id": "eip155:1024",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://clvscan.com"],
+  "rpcUrls": ["https://api-para.clv.org"],
+  "apiUrls": [{ "url": "https://clvscan.com/api", "kind": "etherscan" }],
+  "networkType": "mainnet",
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "issuanceRewards": false,
+  "nativeToken": "CLV",
+  "docsUrl": "https://docs.clv.org",
+  "web3Icon": "clover",
+  "genesis": {
+    "hash": "0x7c11fb21c186dd7846d92e09af5c02fa4c8a08b83c99d7361b8b9fd5dc1650fb",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

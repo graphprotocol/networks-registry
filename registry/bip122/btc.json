@@ -1,0 +1,36 @@
+{
+  "id": "btc",
+  "shortName": "Bitcoin",
+  "fullName": "Bitcoin Mainnet",
+  "aliases": ["bitcoin"],
+  "caip2Id": "bip122:000000000019d6689c085ae165831e93",
+  "explorerUrls": ["https://btcscan.org"],
+  "rpcUrls": ["https://bitcoin-mainnet.gateway.tatum.io"],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "bitcoin.firehose.pinax.network:443" },
+      { "provider": "streamingfast", "url": "mainnet.btc.streamingfast.io:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "bitcoin.substreams.pinax.network:443" },
+      { "provider": "streamingfast", "url": "mainnet.btc.streamingfast.io:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "BTC",
+  "docsUrl": "https://developer.bitcoin.org",
+  "web3Icon": "bitcoin",
+  "genesis": {
+    "hash": "0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.bitcoin.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-bitcoin",
+    "bytesEncoding": "hex"
+  }
+}

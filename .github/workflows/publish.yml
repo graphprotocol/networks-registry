@@ -1,0 +1,124 @@
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+name: Validate, generate and publish registry
+
+jobs:
+  upload-registry:
+    name: Upload to Cloudflare Pages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'write'
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --no-save
+
+      - name: Validate schema
+        run: bun validate:schema
+
+      - name: Generate registry types
+        run: bun generate:types
+
+      - name: Validate logic
+        run: |
+          if [ -z "${{ env.THEGRAPH_STUDIO_KEY }}" ]; then
+            echo "Error: secrets.THEGRAPH_STUDIO_KEY is not set - can't validate networks"
+            exit 1
+          fi
+          bun validate:networks
+
+      - name: Generate registry
+        run: bun generate:public
+
+      - name: Format
+        run: bun format
+
+      - name: Get version
+        id: get_version
+        run: |
+          VERSION=$(jq -r '.version' package.json)
+          echo "REGISTRY_VERSION=${VERSION}" >> $GITHUB_ENV
+
+      - name: Check if tag exists
+        id: check_tag
+        run: |
+          if git fetch --tags && git tag -l | grep -q "v${{ env.REGISTRY_VERSION }}"; then
+            echo "Error: Registry v${{ env.REGISTRY_VERSION }} already exists. Bump up the version in package.json to publish"
+            exit 1
+          fi
+
+      - name: Publish
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy public --project-name=graphregistry
+
+      - name: Get commit log
+        run: |
+          PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          if [ -z "$PREV_TAG" ]; then
+            CHANGELOG=$(git log --pretty=format:"- %s (@%an) [%h](https://github.com/$GITHUB_REPOSITORY/commit/%H)" --no-merges)
+          else
+            CHANGELOG=$(git log --pretty=format:"- %s (@%an) [%h](https://github.com/$GITHUB_REPOSITORY/commit/%H)" --no-merges ${PREV_TAG}..HEAD)
+          fi
+          echo "CHANGELOG<<EOF" >> $GITHUB_ENV
+          echo "$CHANGELOG" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add .
+          git commit -m "generate registry v${{ env.REGISTRY_VERSION }} [no ci]" || echo "No changes to commit"
+          git push
+
+      - name: Create tag
+        run: |
+          git tag "v${{ env.REGISTRY_VERSION }}"
+          git push origin "v${{ env.REGISTRY_VERSION }}"
+
+          IFS='.' read -r MAJOR MINOR PATCH <<< "${{ env.REGISTRY_VERSION }}"
+          echo "MAJOR=$MAJOR" >> $GITHUB_ENV
+          echo "MINOR=$MINOR" >> $GITHUB_ENV
+          echo "PATCH=$PATCH" >> $GITHUB_ENV
+
+      - name: Create GitHub release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: "v${{ env.REGISTRY_VERSION }}"
+          release_name: "v${{ env.REGISTRY_VERSION }}"
+          body: |
+            ### Networks Registry v${{ env.REGISTRY_VERSION }}
+            - ${{ env.REGISTRY_ROOT_URL }}/TheGraphNetworksRegistry.json
+            - ${{ env.REGISTRY_ROOT_URL }}/TheGraphNetworksRegistry_v${{ env.MAJOR }}_x_x.json
+            - ${{ env.REGISTRY_ROOT_URL }}/TheGraphNetworksRegistry_v${{ env.MAJOR }}_${{ env.MINOR }}_x.json
+            - ${{ env.REGISTRY_ROOT_URL }}/TheGraphNetworksRegistry_v${{ env.MAJOR }}_${{ env.MINOR }}_${{ env.PATCH }}.json
+
+            ### Schema v${{ env.MAJOR }}.${{ env.MINOR }}
+            - ${{ env.REGISTRY_ROOT_URL }}/TheGraphNetworksRegistrySchema_v${{ env.MAJOR }}_${{ env.MINOR }}.json
+
+            ### Changes
+            ${{ env.CHANGELOG }}
+
+    env:
+      THEGRAPH_STUDIO_KEY: ${{ secrets.THEGRAPH_STUDIO_KEY }}
+      REGISTRY_ROOT_URL: "https://graphregistry.pages.dev"

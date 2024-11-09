@@ -1,0 +1,36 @@
+{
+  "id": "arbitrum-nova",
+  "shortName": "Arbitrum Nova",
+  "fullName": "Arbitrum Nova",
+  "aliases": ["evm-42170", "arbnova", "arb-nova", "arbitrum-nova-mainnet"],
+  "caip2Id": "eip155:42170",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://nova-explorer.arbitrum.io"],
+  "rpcUrls": [
+    "https://nova.arbitrum.io/rpc",
+    "https://arbitrum-nova.publicnode.com"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://arbitrum-nova.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.arbitrum.io",
+  "web3Icon": "arbitrum-nova",
+  "genesis": {
+    "hash": "0x2ad24e03026118f9b3a48626f0636e38c93660e90a6812e853a99aa8c5371561",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "optimism-sepolia",
+  "shortName": "Optimism Sepolia",
+  "fullName": "OP Sepolia Testnet",
+  "aliases": ["op-sepolia", "opsepolia"],
+  "caip2Id": "eip155:11155420",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "optimism" }
+  ],
+  "explorerUrls": ["https://optimism-sepolia.blockscout.com"],
+  "rpcUrls": [
+    "https://sepolia.optimism.io",
+    "https://opsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://optimism-sepolia.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "opsepolia.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "opsepolia.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "testnet",
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.optimism.io",
+  "web3Icon": "optimistic-ethereum",
+  "genesis": {
+    "hash": "0x102de6ffb001480cc9b8b548fd05c34cd4f46ae4aa91759393db90ea0409887d",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

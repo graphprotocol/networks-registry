@@ -1,0 +1,44 @@
+{
+  "id": "boba",
+  "shortName": "Boba",
+  "fullName": "Boba Network",
+  "aliases": ["evm-288", "boba-mainnet"],
+  "caip2Id": "eip155:288",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://bobascan.com"],
+  "rpcUrls": [
+    "https://mainnet.boba.network",
+    "https://boba.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://api.routescan.io/v2/network/mainnet/evm/288/etherscan/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "boba.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "boba.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": true,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.boba.network",
+  "web3Icon": "boba",
+  "genesis": {
+    "hash": "0xdcd9e6a8f9973eaa62da2874959cb152faeb4fd6929177bd6335a1a16074ef9c",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

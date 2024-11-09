@@ -1,0 +1,47 @@
+{
+  "id": "boba-testnet",
+  "shortName": "Boba Sepolia",
+  "fullName": "Boba Sepolia Testnet",
+  "aliases": ["boba-sepolia"],
+  "caip2Id": "eip155:28882",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://testnet.bobascan.com"],
+  "rpcUrls": [
+    "https://sepolia.boba.network",
+    "https://bobasepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://api.routescan.io/v2/network/testnet/evm/28882/etherscan/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "bobasepolia.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "bobasepolia.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "boba" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.boba.network",
+  "web3Icon": "boba",
+  "genesis": {
+    "hash": "0x4d26ddc947c7cea924d5ef272c1a5ef40a1dce5ca2cbbaccad59d33f2505a30d",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

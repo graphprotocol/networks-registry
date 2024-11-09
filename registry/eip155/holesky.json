@@ -1,0 +1,44 @@
+{
+  "id": "holesky",
+  "shortName": "Holesky",
+  "fullName": "Ethereum Holesky Testnet",
+  "aliases": ["evm-17000"],
+  "caip2Id": "eip155:17000",
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "mainnet" }],
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": [
+    "https://holesky.etherscan.io",
+    "https://holesky.otterscan.io"
+  ],
+  "rpcUrls": [
+    "https://holesky.drpc.org",
+    "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "holesky.firehose.pinax.network:443" },
+      { "provider": "streamingfast", "url": "holesky.eth.streamingfast.io:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "holesky.substreams.pinax.network:443" },
+      { "provider": "streamingfast", "url": "holesky.eth.streamingfast.io:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://holesky.dev",
+  "genesis": {
+    "hash": "0xb5f7f912443c940f21fd611f12828d75b534364ed9e95ca4e307729a4661bde4",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

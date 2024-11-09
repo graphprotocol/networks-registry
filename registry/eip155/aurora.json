@@ -1,0 +1,29 @@
+{
+  "id": "aurora",
+  "shortName": "Aurora",
+  "fullName": "Aurora Mainnet",
+  "aliases": ["evm-1313161554", "aurora-mainnet"],
+  "caip2Id": "eip155:1313161554",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.aurora.dev"],
+  "rpcUrls": ["https://mainnet.aurora.dev"],
+  "apiUrls": [
+    { "url": "https://explorer.mainnet.aurora.dev/api", "kind": "etherscan" }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://doc.aurora.dev",
+  "web3Icon": "aurora",
+  "genesis": {
+    "hash": "0x8058d7fe544fdcac6836faa5f84c68291da1773594216957374708a7109a6336",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

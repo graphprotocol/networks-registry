@@ -1,0 +1,30 @@
+{
+  "id": "starknet-testnet",
+  "shortName": "Starknet Sepolia",
+  "fullName": "Starknet Sepolia Testnet",
+  "aliases": ["starknet-sepolia"],
+  "caip2Id": "starknet:SN_SEPOLIA",
+  "graphNode": { "protocol": "starknet" },
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "starknet-mainnet" }
+  ],
+  "explorerUrls": ["https://sepolia.starkscan.co"],
+  "rpcUrls": ["https://starknet-sepolia.public.blastapi.io"],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "support": {},
+  "issuanceRewards": false,
+  "nativeToken": "STRK",
+  "docsUrl": "https://docs.starknet.io",
+  "web3Icon": "starknet",
+  "genesis": {
+    "hash": "0x05c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.starknet.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
+    "bytesEncoding": "0xhex"
+  }
+}

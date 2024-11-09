@@ -1,0 +1,40 @@
+{
+  "id": "eos-evm",
+  "shortName": "EOS EVM",
+  "fullName": "EOS EVM Network",
+  "aliases": ["eosevm", "eos-evm-mainnet", "evm-17777"],
+  "caip2Id": "eip155:17777",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [{ "kind": "evmOf", "network": "eos" }],
+  "explorerUrls": ["https://explorer.evm.eosnetwork.com"],
+  "rpcUrls": [
+    "https://explorer.evm.eosnetwork.com/api/eth-rpc",
+    "https://eosevm.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    { "kind": "etherscan", "url": "https://explorer.evm.eosnetwork.com/api" }
+  ],
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "eosevm.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "eosevm.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "EOS",
+  "docsUrl": "https://eosnetwork.com/eos-evm",
+  "web3Icon": "eos",
+  "genesis": {
+    "hash": "0x330402d1032bd515fa7f93b5ccb370bd1b6fdf54cdf009b6d46e55070aa0a1b8",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

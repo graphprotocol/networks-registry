@@ -1,0 +1,32 @@
+{
+  "id": "cronos",
+  "shortName": "Cronos",
+  "fullName": "Cronos Mainnet",
+  "aliases": ["evm-25", "cronos-mainnet"],
+  "caip2Id": "eip155:25",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.cronos.org"],
+  "rpcUrls": [
+    "https://evm.cronos.org",
+    "https://cronos.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    { "url": "https://explorer-api.cronos.org/mainnet/api/v1", "kind": "other" }
+  ],
+  "support": {},
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "CRO",
+  "docsUrl": "https://docs.cronos.org",
+  "web3Icon": "cronos",
+  "genesis": {
+    "hash": "0xa7f4e603aa51239a15e0a3fafb15c6e4c6d6f2c39c55770330efd2fa5afc12a9",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

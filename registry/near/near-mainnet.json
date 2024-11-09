@@ -1,0 +1,43 @@
+{
+  "id": "near-mainnet",
+  "shortName": "Near",
+  "fullName": "Near Mainnet",
+  "aliases": ["near"],
+  "caip2Id": "near:mainnet",
+  "explorerUrls": ["https://nearblocks.io"],
+  "rpcUrls": ["https://rpc.mainnet.near.org"],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "graphNode": { "protocol": "near" },
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "near.firehose.pinax.network:443" },
+      {
+        "provider": "streamingfast",
+        "url": "mainnet.near.streamingfast.io:443"
+      }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "near.substreams.pinax.network:443" },
+      {
+        "provider": "streamingfast",
+        "url": "mainnet.near.streamingfast.io:443"
+      }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "NEAR",
+  "docsUrl": "https://docs.near.org",
+  "web3Icon": "near-protocol",
+  "genesis": {
+    "hash": "0xa7110b9052e1be68f7fa8bb4065bf54e731205801878e708db7464ec4b9b8014",
+    "height": 9820214
+  },
+  "firehose": {
+    "blockType": "sf.near.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-near",
+    "bytesEncoding": "hex"
+  }
+}

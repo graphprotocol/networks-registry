@@ -1,0 +1,33 @@
+{
+  "id": "rootstock-testnet",
+  "shortName": "Rootstock",
+  "fullName": "Rootstock Testnet",
+  "aliases": [],
+  "caip2Id": "eip155:31",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://rootstock-testnet.blockscout.com"],
+  "rpcUrls": ["https://public-node.testnet.rsk.co"],
+  "apiUrls": [
+    {
+      "url": "https://rootstock-testnet.blockscout.com/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "rootstock" }],
+  "issuanceRewards": false,
+  "nativeToken": "tRBTC",
+  "docsUrl": "https://dev.rootstock.io",
+  "web3Icon": "rootstock",
+  "genesis": {
+    "hash": "0xcabb7fbe88cd6d922042a32ffc08ce8b1fbb37d650b9d4e7dbfe2a7469adfa42",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

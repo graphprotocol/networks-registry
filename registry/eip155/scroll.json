@@ -1,0 +1,46 @@
+{
+  "id": "scroll",
+  "shortName": "Scroll",
+  "fullName": "Scroll Mainnet",
+  "aliases": ["evm-534352", "scroll-mainnet"],
+  "caip2Id": "eip155:534352",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://scrollscan.com"],
+  "rpcUrls": [
+    "https://rpc.scroll.io",
+    "https://scroll.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://rpc.ankr.com/scroll"
+  ],
+  "apiUrls": [{ "url": "https://api.scrollscan.com/api", "kind": "etherscan" }],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "scroll.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "scroll.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": true,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.scroll.io",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/scroll",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "scroll",
+  "genesis": {
+    "hash": "0xbbc05efd412b7cd47a2ed0e5ddfcf87af251e414ea4c801d78b6784513180a80",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

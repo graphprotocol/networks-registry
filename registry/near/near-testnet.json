@@ -1,0 +1,44 @@
+{
+  "id": "near-testnet",
+  "shortName": "Near",
+  "fullName": "Near Testnet",
+  "aliases": [],
+  "caip2Id": "near:testnet",
+  "explorerUrls": ["https://testnet.nearblocks.io"],
+  "rpcUrls": ["https://rpc.testnet.near.org"],
+  "apiUrls": [],
+  "networkType": "testnet",
+  "graphNode": { "protocol": "near" },
+  "relations": [{ "kind": "testnetOf", "network": "near-mainnet" }],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "neartest.firehose.pinax.network:443" },
+      {
+        "provider": "streamingfast",
+        "url": "testnet.near.streamingfast.io:443"
+      }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "neartest.substreams.pinax.network:443" },
+      {
+        "provider": "streamingfast",
+        "url": "testnet.near.streamingfast.io:443"
+      }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "NEAR",
+  "docsUrl": "https://docs.near.org",
+  "web3Icon": "near-protocol",
+  "genesis": {
+    "hash": "0x09d69c8ba4f319f8e78d0b701f0c1f763cc0d920551bfbd00072d5f56016d853",
+    "height": 42376923
+  },
+  "firehose": {
+    "blockType": "sf.near.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-near",
+    "bytesEncoding": "hex"
+  }
+}

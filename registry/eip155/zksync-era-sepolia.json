@@ -1,0 +1,35 @@
+{
+  "id": "zksync-era-sepolia",
+  "shortName": "zkSync",
+  "fullName": "zkSync Sepolia Testnet",
+  "aliases": ["evm-300", "zksync-testnet", "zksync-sepolia"],
+  "caip2Id": "eip155:300",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://sepolia.explorer.zksync.io"],
+  "rpcUrls": ["https://sepolia.era.zksync.dev"],
+  "apiUrls": [
+    {
+      "url": "https://block-explorer-api.sepolia.zksync.dev/api",
+      "kind": "etherscan"
+    }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "zksync-era" },
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.zksync.io",
+  "genesis": {
+    "hash": "0x086227fafad2bc4d08a122ebb690d958edcd43352d38d31646968480f496827c",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

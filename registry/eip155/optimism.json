@@ -1,0 +1,45 @@
+{
+  "id": "optimism",
+  "shortName": "Optimism",
+  "fullName": "OP Mainnet",
+  "aliases": ["evm-10", "op-mainnet"],
+  "caip2Id": "eip155:10",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "explorerUrls": ["https://optimistic.etherscan.io"],
+  "rpcUrls": ["https://mainnet.optimism.io", "https://optimism.drpc.org"],
+  "apiUrls": [
+    { "url": "https://optimism.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "streamingfast", "url": "opt-mainnet.streamingfast.io:443" }
+    ],
+    "substreams": [
+      { "provider": "streamingfast", "url": "opt-mainnet.streamingfast.io:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": true,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.optimism.io",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/optimism",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "optimistic-ethereum",
+  "genesis": {
+    "hash": "0x7ca38a1916c42007829c55e69d3e9a73265554b586a499015373241b8a3fa48b",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

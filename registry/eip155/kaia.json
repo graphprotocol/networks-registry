@@ -1,0 +1,26 @@
+{
+  "id": "kaia",
+  "shortName": "Kaia",
+  "fullName": "Kaia Mainnet",
+  "aliases": ["evm-8217", "kaia-mainnet"],
+  "caip2Id": "eip155:8217",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://kaiascan.io"],
+  "rpcUrls": ["https://public-en.node.kaia.io"],
+  "apiUrls": [],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "KAIA",
+  "docsUrl": "https://docs.kaia.io",
+  "genesis": {
+    "hash": "0xc72e5293c3c3ba38ed8ae910f780e4caaa9fb95e79784f7ab74c3c262ea7137e",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

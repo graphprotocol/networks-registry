@@ -1,0 +1,37 @@
+{
+  "id": "xai",
+  "shortName": "Xai",
+  "fullName": "Xai Mainnet",
+  "aliases": ["evm-660279", "xai-mainnet"],
+  "caip2Id": "eip155:660279",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.xai-chain.net"],
+  "rpcUrls": [
+    "https://xai-chain.net/rpc",
+    "https://xai.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [],
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "xai.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "xai.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "XAI",
+  "docsUrl": "https://docs.x.ai/docs",
+  "web3Icon": "xai",
+  "genesis": {
+    "hash": "0xeb2a6f0f62cc7956562dc4e6316b60bdaff6a15affd6431592cb52f1552caa55",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "sepolia-cl",
+  "shortName": "Sepolia Beacon",
+  "fullName": "Ethereum Sepolia Consensus Layer Chain",
+  "aliases": ["sepolia-beacon"],
+  "caip2Id": "beacon:11155111",
+  "explorerUrls": [],
+  "rpcUrls": [],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "relations": [{ "kind": "beaconOf", "network": "sepolia" }],
+  "support": {
+    "firehose": [
+      { "provider": "pinax", "url": "holesky-cl.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "holesky-cl.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
+  "web3Icon": "ethereum",
+  "genesis": {
+    "hash": "0xfb9b64fe445f76696407e1e3cc390371edff147bf712db86db6197d4b31ede43",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.beacon.type.v1.Block",
+    "bufUrl": "https://buf.build/pinax/firehose-beacon",
+    "bytesEncoding": "0xhex"
+  }
+}

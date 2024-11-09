@@ -1,0 +1,38 @@
+{
+  "id": "mantra-mainnet",
+  "shortName": "Mantra",
+  "fullName": "Mantra Mainnet",
+  "aliases": ["mantra-1", "mantra"],
+  "caip2Id": "cosmos:mantra-1",
+  "explorerUrls": ["https://explorer.mantrachain.io/MANTRA-1"],
+  "rpcUrls": ["https://mantra-rpc.publicnode.com"],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "graphNode": { "protocol": "cosmos" },
+  "support": {
+    "firehose": [
+      {
+        "provider": "streamingfast",
+        "url": "mainnet.mantra.streamingfast.io:443"
+      }
+    ],
+    "substreams": [
+      {
+        "provider": "streamingfast",
+        "url": "mainnet.mantra.streamingfast.io:443"
+      }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "OM",
+  "docsUrl": "https://docs.mantrachain.io",
+  "genesis": {
+    "hash": "0x0d56d4b442c9628cb5679a04dbb8085920c64a4737fe50b8574c4d3a37ab2141",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.cosmos.type.v2.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
+    "bytesEncoding": "hex"
+  }
+}

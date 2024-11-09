@@ -1,0 +1,47 @@
+{
+  "id": "moonbeam",
+  "shortName": "Moonbeam",
+  "fullName": "Moonbeam Mainnet",
+  "aliases": ["evm-1284", "mbeam"],
+  "caip2Id": "eip155:1284",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://moonbeam.moonscan.io"],
+  "rpcUrls": [
+    "https://rpc.api.moonbeam.network",
+    "https://moonbeam.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://moonbeam.drpc.org"
+  ],
+  "apiUrls": [
+    { "url": "https://moonbeam.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "moonbeam.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "moonbeam.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "GLMR",
+  "docsUrl": "https://docs.moonbeam.network",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/moonbeam",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "moonbeam",
+  "genesis": {
+    "hash": "0x7e6b3bbed86828a558271c9c9f62354b1d8b5aa15ff85fd6f1e7cbe9af9dde7e",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

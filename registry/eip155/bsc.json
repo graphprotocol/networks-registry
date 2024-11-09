@@ -1,0 +1,48 @@
+{
+  "id": "bsc",
+  "shortName": "BNB",
+  "fullName": "BNB Smart Chain Mainnet",
+  "aliases": ["bnb", "bnb-mainnet", "bsc-mainnet", "evm-56"],
+  "caip2Id": "eip155:56",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://bscscan.com"],
+  "rpcUrls": [
+    "https://bsc-dataseed1.binance.org",
+    "https://bsc-dataseed1.defibit.io",
+    "https://bsc.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [{ "url": "https://api.bscscan.com/api", "kind": "etherscan" }],
+  "networkType": "mainnet",
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "bsc.firehose.pinax.network:443" },
+      { "provider": "streamingfast", "url": "bnb.streamingfast.io:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "bsc.substreams.pinax.network:443" },
+      { "provider": "streamingfast", "url": "bnb.streamingfast.io:443" }
+    ]
+  },
+  "issuanceRewards": true,
+  "nativeToken": "BNB",
+  "docsUrl": "https://docs.bnbchain.org",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/binance",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "binance-smart-chain",
+  "genesis": {
+    "hash": "0x0d21840abff46b96c84b2ac9e10e4f5cdaeb5693cb665db62a2f3b02d2d57b5b",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

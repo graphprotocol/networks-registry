@@ -1,0 +1,26 @@
+{
+  "id": "neox",
+  "shortName": "Neo X",
+  "fullName": "Neo X Mainnet",
+  "aliases": ["evm-47763", "neox-mainnet"],
+  "caip2Id": "eip155:47763",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://xexplorer.neo.org"],
+  "rpcUrls": ["https://mainnet-1.rpc.banelabs.org"],
+  "apiUrls": [{ "url": "https://xexplorer.neo.org/api", "kind": "etherscan" }],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "GAS",
+  "docsUrl": "https://xdocs.ngd.network",
+  "genesis": {
+    "hash": "0x2ee57478315c7d3182997a812d7885dafee48612cd88cb30b615847b0dd8dbd7",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

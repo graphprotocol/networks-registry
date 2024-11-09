@@ -1,0 +1,47 @@
+{
+  "id": "sepolia",
+  "shortName": "Ethereum Sepolia",
+  "fullName": "Ethereum Seepolia Testnet",
+  "aliases": ["evm-11155111"],
+  "caip2Id": "eip155:11155111",
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "mainnet" }],
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": [
+    "https://sepolia.etherscan.io",
+    "https://sepolia.otterscan.io"
+  ],
+  "rpcUrls": [
+    "https://rpc.sepolia.org",
+    "https://sepolia.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://sepolia.infura.io/v3/${INFURA_API_KEY}"
+  ],
+  "apiUrls": [
+    { "url": "https://sepolia.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "sepolia.firehose.pinax.network:443" },
+      { "provider": "streamingfast", "url": "sepolia.eth.streamingfast.io:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "sepolia.substreams.pinax.network:443" },
+      { "provider": "streamingfast", "url": "sepolia.eth.streamingfast.io:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://sepolia.dev",
+  "genesis": {
+    "hash": "0x25a5cc106eea7138acab33231d7160d69cb777ee0c2c553fcddf5138993e6dd9",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

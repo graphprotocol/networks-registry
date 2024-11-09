@@ -1,0 +1,51 @@
+{
+  "id": "matic",
+  "shortName": "Polygon",
+  "fullName": "Polygon Mainnet",
+  "aliases": ["polygon", "matic-mainnet"],
+  "caip2Id": "eip155:137",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "explorerUrls": ["https://polygonscan.com"],
+  "rpcUrls": [
+    "https://polygon-rpc.com",
+    "https://polygon.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://rpc.ankr.com/polygon"
+  ],
+  "apiUrls": [
+    { "url": "https://api.polygonscan.com/api", "kind": "etherscan" }
+  ],
+  "networkType": "mainnet",
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "polygon.firehose.pinax.network:443" },
+      { "provider": "streamingfast", "url": "polygon.streamingfast.io:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "polygon.substreams.pinax.network:443" },
+      { "provider": "streamingfast", "url": "polygon.streamingfast.io:443" }
+    ]
+  },
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/polygon",
+      "kind": "rpc"
+    }
+  ],
+  "issuanceRewards": true,
+  "nativeToken": "POL",
+  "docsUrl": "https://docs.polygon.technology",
+  "web3Icon": "polygon-pos",
+  "genesis": {
+    "hash": "0xa9c28ce2141b56c474f1dc504bee9b01eb1bd7d1a507580d5519d4437a97de1b",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

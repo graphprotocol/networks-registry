@@ -1,0 +1,40 @@
+{
+  "id": "gnosis",
+  "shortName": "Gnosis",
+  "fullName": "Gnosis Mainnet",
+  "aliases": ["evm-100", "gnosis-mainnet"],
+  "caip2Id": "eip155:100",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://gnosisscan.io", "https://gnosis.blockscout.com"],
+  "rpcUrls": [
+    "https://rpc.gnosischain.com",
+    "https://gnosis.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://rpc.gnosis.gateway.fm",
+    "https://rpc.ankr.com/gnosis"
+  ],
+  "apiUrls": [
+    { "url": "https://gnosis.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "mainnet",
+  "issuanceRewards": true,
+  "nativeToken": "XDAI",
+  "docsUrl": "https://docs.gnosischain.com",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/gnosis",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "gnosis",
+  "genesis": {
+    "hash": "0x4f1dd23188aab3a76b463e4af801b52b1248ef073c648cbdc4c9333d3da79756",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

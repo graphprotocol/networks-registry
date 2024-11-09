@@ -1,0 +1,41 @@
+{
+  "id": "chapel",
+  "shortName": "BNB Chapel",
+  "fullName": "BNB Smart Chain Chapel Testnet",
+  "aliases": ["bnb-chapel", "bnb-testnet", "bsc-testnet"],
+  "caip2Id": "eip155:97",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://testnet.bscscan.com"],
+  "rpcUrls": [
+    "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
+    "https://chapel.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    { "url": "https://bsc-testnet.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "bsc" }],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "chapel.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "chapel.substreams.pinax.network:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "tBNB",
+  "docsUrl": "https://docs.bnbchain.org",
+  "web3Icon": "binance-smart-chain",
+  "genesis": {
+    "hash": "0x6d3c66c5357ec91d5c43af47e234a939b22557cbb552dc45bebbceeed90fbe34",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

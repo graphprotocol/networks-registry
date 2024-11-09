@@ -1,0 +1,30 @@
+{
+  "id": "fuse-testnet",
+  "shortName": "Fuse",
+  "fullName": "Fuse Testnet",
+  "aliases": ["evm-12001"],
+  "caip2Id": "eip155:12001",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.fusespark.io"],
+  "rpcUrls": ["https://rpc.fusespark.io"],
+  "apiUrls": [
+    { "url": "https://explorer.fusespark.io/api", "kind": "blockscout" }
+  ],
+  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "fuse" }],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.fuse.io",
+  "web3Icon": "fuse",
+  "genesis": {
+    "hash": "0xfd643f387cd7386d21e8d34f8762188865789196dee77c98f8210dbbc15616ae",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

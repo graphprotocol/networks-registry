@@ -1,0 +1,54 @@
+{
+  "id": "avalanche",
+  "shortName": "Avalanche",
+  "fullName": "Avalanche C-Chain",
+  "aliases": ["evm-43114", "avalanche-mainnet"],
+  "caip2Id": "eip155:43114",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://snowtrace.io"],
+  "rpcUrls": [
+    "https://api.avax.network/ext/bc/C/rpc",
+    "https://avalanche.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://avalanche-c-chain-rpc.publicnode.com"
+  ],
+  "apiUrls": [{ "url": "https://api.snowtrace.io/api", "kind": "etherscan" }],
+  "support": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      {
+        "provider": "streamingfast",
+        "url": "avalanche-mainnet.streamingfast.io:443"
+      },
+      { "provider": "pinax", "url": "avalanche.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      {
+        "provider": "streamingfast",
+        "url": "avalanche-mainnet.streamingfast.io:443"
+      },
+      { "provider": "pinax", "url": "avalanche.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": true,
+  "nativeToken": "AVAX",
+  "docsUrl": "https://docs.avax.network",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/avalanche",
+      "kind": "rpc"
+    }
+  ],
+  "web3Icon": "avalanche",
+  "genesis": {
+    "hash": "0xb77a5f60d341511367c4295fba0b59a3e0062b075ef1fc795066636604484fdc",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

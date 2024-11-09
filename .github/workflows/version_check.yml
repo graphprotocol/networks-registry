@@ -1,0 +1,29 @@
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+name: Check version on PR
+
+jobs:
+  validate-json:
+    name: Check version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Get version
+        id: get_version
+        run: |
+          VERSION=$(jq -r '.version' package.json)
+          echo "REGISTRY_VERSION=v${VERSION}" >> $GITHUB_ENV
+
+      - name: Check if tag exists
+        id: check_tag
+        run: |
+          TAG="${{ env.REGISTRY_VERSION }}"
+          if git fetch --tags && git tag -l | grep -q "$TAG"; then
+            echo "Error: Registry $TAG already exists. Bump up the version in package.json to publish"
+            exit 1
+          fi
