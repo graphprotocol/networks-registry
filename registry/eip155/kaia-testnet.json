@@ -8,7 +8,7 @@
   "explorerUrls": ["https://kairos.kaiascan.io"],
   "rpcUrls": ["https://public-en.kairos.node.kaia.io"],
   "apiUrls": [],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "kaia" }],
   "issuanceRewards": false,
@@ -23,5 +23,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "klay-token" } }
 }

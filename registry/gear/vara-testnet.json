@@ -9,7 +9,7 @@
   "rpcUrls": [],
   "apiUrls": [],
   "networkType": "testnet",
-  "support": {
+  "services": {
     "firehose": [
       {
         "provider": "streamingfast",

@@ -8,7 +8,7 @@
   "explorerUrls": ["https://www.oklink.com/xlayer-test"],
   "rpcUrls": ["https://testrpc.xlayer.tech"],
   "apiUrls": [],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },

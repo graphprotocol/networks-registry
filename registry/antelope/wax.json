@@ -8,7 +8,7 @@
   "rpcUrls": ["https://wax.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "wax.firehose.pinax.network:443" }
     ],
