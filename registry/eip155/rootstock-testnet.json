@@ -19,7 +19,6 @@
   "issuanceRewards": false,
   "nativeToken": "tRBTC",
   "docsUrl": "https://dev.rootstock.io",
-  "web3Icon": "rootstock",
   "genesis": {
     "hash": "0xcabb7fbe88cd6d922042a32ffc08ce8b1fbb37d650b9d4e7dbfe2a7469adfa42",
     "height": 0
@@ -29,5 +28,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "rootstock" } }
 }

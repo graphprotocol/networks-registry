@@ -31,7 +31,6 @@
   "indexerDocsUrls": [
     { "url": "https://docs.infradao.com/archive-nodes-101/mode", "kind": "rpc" }
   ],
-  "web3Icon": "mode",
   "genesis": {
     "hash": "0xb0f682e12fc555fd5ce8fce51a59a67d66a5b46be28611a168260a549dac8a9b",
     "height": 0
@@ -41,5 +40,6 @@
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "mode" } }
 }

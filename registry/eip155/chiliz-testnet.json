@@ -16,7 +16,6 @@
   "issuanceRewards": false,
   "nativeToken": "CHZ",
   "docsUrl": "https://docs.chiliz.com",
-  "web3Icon": "chiliz",
   "genesis": {
     "hash": "0x9e0e07ae4ee9b0ef66a4206656677020306259d0b0b845ad3bb6b09fb91485ff",
     "height": 0
@@ -26,5 +25,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "chiliz" } }
 }

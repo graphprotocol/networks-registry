@@ -21,7 +21,6 @@
       "kind": "rpc"
     }
   ],
-  "web3Icon": "rootstock",
   "genesis": {
     "hash": "0xf88529d4ab262c0f4d042e9d8d3f2472848eaafe1a9b7213f57617eb40a9f9e0",
     "height": 0
@@ -31,5 +30,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "rootstock" } }
 }

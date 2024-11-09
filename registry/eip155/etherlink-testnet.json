@@ -16,7 +16,6 @@
   "issuanceRewards": false,
   "nativeToken": "XTZ",
   "docsUrl": "https://docs.etherlink.com",
-  "web3Icon": "etherlink",
   "genesis": {
     "hash": "0x2cf11372c813c0007ef080103fc813cf26ad9a374e88d589ef536dfc3dd1fee9",
     "height": 0
@@ -26,5 +25,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "etherlink" } }
 }

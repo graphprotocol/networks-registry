@@ -134,16 +134,35 @@ function validateUrls(networks: Network[]) {
 
 async function validateWeb3Icons(networks: Network[]) {
   process.stdout.write("Validating web3 icons ... ");
-  const icons = await fetchWeb3NetworkIcons();
+  const web3Icons = await fetchWeb3NetworkIcons();
   for (const network of networks) {
-    if (network.web3Icon) {
-      if (!icons.find((i) => i.id === network.web3Icon)) {
+    if (network.icon?.web3Icons?.name) {
+      const ourIcon = network.icon?.web3Icons!;
+      const web3Icon = web3Icons.find((i) => i.id === ourIcon.name);
+      if (!web3Icon) {
         ERRORS.push(
           `Network ${network.id} web3icon id does not exist: ${network.web3Icon}`,
         );
+      } else {
+        const web3Variants = web3Icon.variants || [];
+        const ourVariants = ourIcon.variants || [];
+
+        if (web3Variants.length === 2) {
+          if (ourVariants.length === 1) {
+            ERRORS.push(
+              `Network ${network.id} web3icon should have both variants or none: ${ourVariants.join(",")}`,
+            );
+          }
+        } else if (web3Variants.length === 1) {
+          if (ourVariants.length !== 1 || ourVariants[0] !== web3Variants[0]) {
+            ERRORS.push(
+              `Network ${network.id} web3icon should only have the variant: ${web3Variants[0]}`,
+            );
+          }
+        }
       }
     } else {
-      if (icons.find((i) => i.id === network.id)) {
+      if (web3Icons.find((i) => i.id === network.id)) {
         ERRORS.push(
           `Network ${network.id} does not have a web3icon but there exists an icon with the same id. Consider adding it.`,
         );

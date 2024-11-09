@@ -19,7 +19,6 @@
   "issuanceRewards": false,
   "nativeToken": "FTM",
   "docsUrl": "https://docs.fantom.foundation",
-  "web3Icon": "fantom",
   "genesis": {
     "hash": "0x00000000000003e8c717f00dc4306a6ff72eabc9a6ec6e4a46bf6ba044ca88d2",
     "height": 0
@@ -29,5 +28,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "fantom" } }
 }

@@ -25,7 +25,6 @@
       "kind": "rpc"
     }
   ],
-  "web3Icon": "fantom",
   "genesis": {
     "hash": "0x00000000000003e83fddf1e9330f0a8691d9f0b2af57b38c3bb85488488a40df",
     "height": 0
@@ -35,5 +34,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "fantom" } }
 }

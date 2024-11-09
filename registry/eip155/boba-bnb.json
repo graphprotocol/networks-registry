@@ -22,7 +22,6 @@
   "issuanceRewards": true,
   "nativeToken": "BOBA",
   "docsUrl": "https://docs.boba.network",
-  "web3Icon": "boba",
   "genesis": {
     "hash": "0xf9aa25373a3cf1c3d3dcb1911093b56eb129221d203270bcdb002b3f01a120d9",
     "height": 0
@@ -32,5 +31,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "boba" } }
 }

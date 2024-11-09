@@ -31,7 +31,6 @@
   "issuanceRewards": false,
   "nativeToken": "NEAR",
   "docsUrl": "https://docs.near.org",
-  "web3Icon": "near-protocol",
   "genesis": {
     "hash": "0x09d69c8ba4f319f8e78d0b701f0c1f763cc0d920551bfbd00072d5f56016d853",
     "height": 42376923
@@ -40,5 +39,6 @@
     "blockType": "sf.near.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-near",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "near-protocol" } }
 }

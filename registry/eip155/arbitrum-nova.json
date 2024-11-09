@@ -22,7 +22,6 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.arbitrum.io",
-  "web3Icon": "arbitrum-nova",
   "genesis": {
     "hash": "0x2ad24e03026118f9b3a48626f0636e38c93660e90a6812e853a99aa8c5371561",
     "height": 0
@@ -32,5 +31,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "arbitrum-nova" } }
 }

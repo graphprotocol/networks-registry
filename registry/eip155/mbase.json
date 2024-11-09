@@ -16,7 +16,6 @@
   "issuanceRewards": false,
   "nativeToken": "DEV",
   "docsUrl": "https://docs.moonbeam.network/learn/platform/networks/moonbase",
-  "web3Icon": "moonbeam",
   "genesis": {
     "hash": "0x33638dde636f9264b6472b9d976d58e757fe88badac53f204f3f530ecc5aacfa",
     "height": 0
@@ -26,5 +25,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "moonbeam" } }
 }

@@ -33,7 +33,6 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.optimism.io",
-  "web3Icon": "optimistic-ethereum",
   "genesis": {
     "hash": "0x102de6ffb001480cc9b8b548fd05c34cd4f46ae4aa91759393db90ea0409887d",
     "height": 0
@@ -43,5 +42,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "optimistic-ethereum" } }
 }

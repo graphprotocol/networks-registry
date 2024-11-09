@@ -6,7 +6,6 @@
   "caip2Id": "antelope:aca376f206b8fc25a6ed44dbdc66547c",
   "explorerUrls": ["https://bloks.io"],
   "rpcUrls": ["https://eos.api.eosnation.io"],
-  "newField": "some",
   "apiUrls": [],
   "networkType": "mainnet",
   "support": {
@@ -20,7 +19,6 @@
   "issuanceRewards": false,
   "nativeToken": "EOS",
   "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
-  "web3Icon": "eos",
   "genesis": {
     "hash": "0x0000000267f3e2284b482f3afc2e724be1d6cbc1804532ec62d4e7af47c30693",
     "height": 2
@@ -29,5 +27,6 @@
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "eos", "variants": ["mono"] } }
 }

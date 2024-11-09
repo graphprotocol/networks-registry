@@ -36,7 +36,6 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.blast.io",
-  "web3Icon": "blast",
   "genesis": {
     "hash": "0x26a1c0faad7b041f34569a1bb383f00ab74b335883a44bed53e9f41ced5fd906",
     "height": 0
@@ -46,5 +45,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "blast" } }
 }

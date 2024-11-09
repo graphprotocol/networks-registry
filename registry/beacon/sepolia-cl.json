@@ -20,7 +20,6 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-  "web3Icon": "ethereum",
   "genesis": {
     "hash": "0xfb9b64fe445f76696407e1e3cc390371edff147bf712db86db6197d4b31ede43",
     "height": 0
@@ -29,5 +28,6 @@
     "blockType": "sf.beacon.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-beacon",
     "bytesEncoding": "0xhex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "ethereum" } }
 }

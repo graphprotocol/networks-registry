@@ -25,10 +25,6 @@ export type Network = {
    */
   caip2Id: string;
   /**
-   * dummy test field
-   */
-  newField?: string;
-  /**
    * [optional] List of possible aliases for the chain id, i.e. ethereum, eth, mainnet, eth-mainnet
    */
   aliases?: string[];
@@ -40,14 +36,7 @@ export type Network = {
     /**
      * Kind of relation
      */
-    kind:
-      | "testnetOf"
-      | "beaconOf"
-      | "forkedFrom"
-      | "l2Of"
-      | "shardOf"
-      | "evmOf"
-      | "other";
+    kind: "testnetOf" | "beaconOf" | "forkedFrom" | "l2Of" | "shardOf" | "evmOf" | "other";
     /**
      * Id of the related network, i.e. mainnet, near-mainnet
      */
@@ -93,6 +82,8 @@ export type Network = {
      * [optional] Protocol name in graph-node, i.e. ethereum, near, arweave
      */
     protocol?: "ethereum" | "near" | "arweave" | "cosmos" | "starknet";
+    additionalProperties?: never;
+    description?: "Graph node configuration";
     [k: string]: unknown;
   };
   /**
@@ -107,13 +98,26 @@ export type Network = {
     sps?: Service[];
     firehose?: Service[];
     substreams?: Service[];
-    [k: string]: unknown;
   };
   /**
    * Issuance rewards on the Graph Network for this chain
    */
   issuanceRewards: boolean;
-  web3Icon?: string;
+  /**
+   * Icons for the chain
+   */
+  icon?: {
+    /**
+     * Web3Icons icon - see https://github.com/0xa3k5/web3icons
+     */
+    web3Icons?: {
+      name: string;
+      /**
+       * Variants of the icon, if none specified - all are available
+       */
+      variants?: string[];
+    };
+  };
   /**
    * List of RPC URLs for the chain. Use {CUSTOM_API_KEY} as a placeholder for a private API key
    */
@@ -160,12 +164,6 @@ export interface TheGraphNetworksRegistrySchema {
   networks: Network[];
 }
 export interface Service {
-  provider:
-    | "e&n"
-    | "pinax"
-    | "graphops"
-    | "streamingfast"
-    | "messari"
-    | "semiotic";
+  provider: "e&n" | "pinax" | "graphops" | "streamingfast" | "messari" | "semiotic";
   url?: string;
 }

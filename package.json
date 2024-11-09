@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "format": "prettier ./registry/**/*.json ./src/**/*.ts ./**/*.md --write",
+    "format": "prettier ./schemas/registry.schema.json ./registry/**/*.json ./src/**/*.ts ./**/*.md --write",
     "format:check": "prettier ./registry/**/*.json ./src/**/*.ts ./**/*.md --check",
     "validate:schema": "bun run ./src/validate_schema.ts",
     "validate:networks": "bun run ./src/validate.ts",
@@ -20,8 +20,8 @@
     "ajv": "^8.17.1",
     "ajv-cli": "^5.0.0",
     "ajv-formats": "^3.0.1",
-    "json-schema-to-typescript": "^15.0.2",
+    "json-schema-to-typescript": "^15.0.3",
     "prettier": "^3.3.3",
-    "wrangler": "3.81.0"
+    "wrangler": "3.86.0"
   }
 }

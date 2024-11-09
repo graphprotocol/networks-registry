@@ -15,7 +15,6 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://doc.aurora.dev",
-  "web3Icon": "aurora",
   "genesis": {
     "hash": "0x8058d7fe544fdcac6836faa5f84c68291da1773594216957374708a7109a6336",
     "height": 0
@@ -25,5 +24,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "aurora" } }
 }

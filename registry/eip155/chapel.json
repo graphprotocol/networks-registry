@@ -27,7 +27,6 @@
   "issuanceRewards": false,
   "nativeToken": "tBNB",
   "docsUrl": "https://docs.bnbchain.org",
-  "web3Icon": "binance-smart-chain",
   "genesis": {
     "hash": "0x6d3c66c5357ec91d5c43af47e234a939b22557cbb552dc45bebbceeed90fbe34",
     "height": 0
@@ -37,5 +36,6 @@
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "binance-smart-chain" } }
 }

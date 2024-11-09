@@ -18,7 +18,6 @@
   "issuanceRewards": false,
   "nativeToken": "CRO",
   "docsUrl": "https://docs.cronos.org",
-  "web3Icon": "cronos",
   "genesis": {
     "hash": "0xa7f4e603aa51239a15e0a3fafb15c6e4c6d6f2c39c55770330efd2fa5afc12a9",
     "height": 0
@@ -28,5 +27,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "cronos" } }
 }

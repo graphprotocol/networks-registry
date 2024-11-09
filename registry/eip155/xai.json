@@ -23,7 +23,6 @@
   "issuanceRewards": false,
   "nativeToken": "XAI",
   "docsUrl": "https://docs.x.ai/docs",
-  "web3Icon": "xai",
   "genesis": {
     "hash": "0xeb2a6f0f62cc7956562dc4e6316b60bdaff6a15affd6431592cb52f1552caa55",
     "height": 0
@@ -33,5 +32,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "xai" } }
 }

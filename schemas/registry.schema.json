@@ -10,12 +10,8 @@
       "format": "uri",
       "description": "Reference to this schema file"
     },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
     "version": {
       "type": "string",
       "pattern": "^\\d+\\.\\d+\\.\\d+$",
@@ -28,9 +24,7 @@
     },
     "networks": {
       "type": "array",
-      "items": {
-        "$ref": "#/$defs/Network"
-      },
+      "items": { "$ref": "#/$defs/Network" },
       "description": "List of networks"
     }
   },
@@ -65,10 +59,6 @@
           "pattern": "^[-a-z0-9]{3,8}:[-_a-zA-Z0-9]{1,32}$",
           "description": "CAIP-2 Chain ID, i.e. eip155:1, bip122:000000000019d6689c085ae165831e93"
         },
-        "newField": {
-          "type": "string",
-          "description": "dummy test field"
-        },
         "aliases": {
           "type": "array",
           "items": {
@@ -79,11 +69,7 @@
         },
         "networkType": {
           "type": "string",
-          "enum": [
-            "mainnet",
-            "testnet",
-            "devnet"
-          ],
+          "enum": ["mainnet", "testnet", "devnet"],
           "description": "Whether the chain is a mainnet/testnet/devnet"
         },
         "relations": {
@@ -110,10 +96,7 @@
                 "description": "Id of the related network, i.e. mainnet, near-mainnet"
               }
             },
-            "required": [
-              "kind",
-              "network"
-            ],
+            "required": ["kind", "network"],
             "additionalProperties": false
           }
         },
@@ -127,11 +110,7 @@
             },
             "bytesEncoding": {
               "type": "string",
-              "enum": [
-                "hex",
-                "0xhex",
-                "base58"
-              ],
+              "enum": ["hex", "0xhex", "base58"],
               "description": "Bytes encoding, i.e. hex, 0xhex, base58"
             },
             "bufUrl": {
@@ -144,11 +123,7 @@
               "description": "[optional] Whether supports extended block model if EVM chain"
             }
           },
-          "required": [
-            "blockType",
-            "bytesEncoding",
-            "bufUrl"
-          ],
+          "required": ["blockType", "bytesEncoding", "bufUrl"],
           "additionalProperties": false,
           "description": "Firehose block information"
         },
@@ -166,10 +141,7 @@
               "minimum": 0
             }
           },
-          "required": [
-            "hash",
-            "height"
-          ],
+          "required": ["hash", "height"],
           "additionalProperties": false
         },
         "nativeToken": {
@@ -182,23 +154,16 @@
           "properties": {
             "protocol": {
               "type": "string",
-              "enum": [
-                "ethereum",
-                "near",
-                "arweave",
-                "cosmos",
-                "starknet"
-              ],
+              "enum": ["ethereum", "near", "arweave", "cosmos", "starknet"],
               "description": "[optional] Protocol name in graph-node, i.e. ethereum, near, arweave"
-            }
+            },
+            "additionalProperties": false,
+            "description": "Graph node configuration"
           }
         },
         "explorerUrls": {
           "type": "array",
-          "items": {
-            "type": "string",
-            "format": "uri"
-          },
+          "items": { "type": "string", "format": "uri" },
           "description": "URLs for the block explorers"
         },
         "support": {
@@ -221,22 +186,38 @@
               "items": { "$ref": "#/$defs/Network/$defs/Service" }
             }
           },
+          "additionalProperties": false,
           "description": "Providers support for the chain by providers"
         },
         "issuanceRewards": {
           "type": "boolean",
           "description": "Issuance rewards on the Graph Network for this chain"
         },
-        "web3Icon": {
-          "type": "string",
-          "pattern": "^[a-z0-9-]+$"
+        "icon": {
+          "type": "object",
+          "properties": {
+            "web3Icons": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+                "variants": {
+                  "type": "array",
+                  "items": { "type": "string", "pattern": "^(mono|branded)$" },
+                  "uniqueItems": true,
+                  "description": "Variants of the icon, if none specified - all are available"
+                }
+              },
+              "required": ["name"],
+              "additionalProperties": false,
+              "description": "Web3Icons icon - see https://github.com/0xa3k5/web3icons"
+            }
+          },
+          "additionalProperties": false,
+          "description": "Icons for the chain"
         },
         "rpcUrls": {
           "type": "array",
-          "items": {
-            "type": "string",
-            "format": "uri-template"
-          },
+          "items": { "type": "string", "format": "uri-template" },
           "description": "List of RPC URLs for the chain. Use {CUSTOM_API_KEY} as a placeholder for a private API key"
         },
         "apiUrls": {
@@ -244,10 +225,7 @@
           "items": {
             "type": "object",
             "properties": {
-              "url": {
-                "type": "string",
-                "format": "uri-template"
-              },
+              "url": { "type": "string", "format": "uri-template" },
               "kind": {
                 "type": "string",
                 "enum": [
@@ -259,10 +237,7 @@
                 ]
               }
             },
-            "required": [
-              "url",
-              "kind"
-            ],
+            "required": ["url", "kind"],
             "additionalProperties": false
           },
           "description": "List of API URLs for the chain, i.e. https://api.etherscan.io/api. Use {CUSTOM_API_KEY} as a placeholder for a private API key"
@@ -277,26 +252,14 @@
           "items": {
             "type": "object",
             "properties": {
-              "url": {
-                "type": "string",
-                "format": "url"
-              },
+              "url": { "type": "string", "format": "url" },
               "kind": {
                 "type": "string",
-                "enum": [
-                  "rpc",
-                  "firehose",
-                  "other"
-                ]
+                "enum": ["rpc", "firehose", "other"]
               },
-              "hint": {
-                "type": "string"
-              }
+              "hint": { "type": "string" }
             },
-            "required": [
-              "url",
-              "kind"
-            ],
+            "required": ["url", "kind"],
             "additionalProperties": false
           },
           "description": "Documentation to run indexer components for the chain"
@@ -327,10 +290,7 @@
                 "semiotic"
               ]
             },
-            "url": {
-              "type": "string",
-              "format": "uri"
-            }
+            "url": { "type": "string", "format": "uri" }
           },
           "required": ["provider"],
           "additionalProperties": false
@@ -340,30 +300,19 @@
         {
           "if": {
             "properties": {
-              "caip2Id": {
-                "type": "string",
-                "pattern": "^eip155:"
-              }
+              "caip2Id": { "type": "string", "pattern": "^eip155:" }
             }
           },
           "then": {
             "properties": {
               "firehose": {
                 "type": "object",
-                "properties": {
-                  "evmExtendedModel": {
-                    "type": "boolean"
-                  }
-                },
+                "properties": { "evmExtendedModel": { "type": "boolean" } },
                 "required": ["evmExtendedModel"]
               },
               "graphNode": {
                 "type": "object",
-                "properties": {
-                  "protocol": {
-                    "const": "ethereum"
-                  }
-                }
+                "properties": { "protocol": { "const": "ethereum" } }
               }
             }
           },
@@ -384,7 +333,8 @@
                   "protocol": {
                     "anyOf": [
                       { "not": { "const": "ethereum" } },
-                      { "type": "null" }],
+                      { "type": "null" }
+                    ],
                     "description": "protocol must be non-ethereum or undefined for non-EVM chains"
                   }
                 }

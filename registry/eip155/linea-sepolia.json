@@ -22,7 +22,6 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.linea.build",
-  "web3Icon": "linea",
   "genesis": {
     "hash": "0x65a64c825d7c13ce1bf077801d0b6b2a89853e19e4a89a5433d7d85d2102a20b",
     "height": 0
@@ -32,5 +31,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "linea" } }
 }

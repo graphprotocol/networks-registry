@@ -29,7 +29,6 @@
   "issuanceRewards": false,
   "nativeToken": "SEI",
   "docsUrl": "https://docs.seitrace.com",
-  "web3Icon": "sei-network",
   "genesis": {
     "hash": "0xe43c3e52a4f74dc7bb35f55cc813ed2ce97e46aafb3fcf8884056b0a757f5b75",
     "height": 79123881
@@ -39,5 +38,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "sei-network" } }
 }

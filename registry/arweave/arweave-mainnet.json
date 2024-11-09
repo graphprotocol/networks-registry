@@ -22,7 +22,6 @@
   "issuanceRewards": false,
   "nativeToken": "AR",
   "docsUrl": "https://docs.arweave.org/developers",
-  "web3Icon": "arweave",
   "genesis": {
     "hash": "0xef0214ecaa252020230a5325719dfc2d9cec86123bc46926dad0c2251ed6be17b7112528dbe678fb2d31d6e6a0951244",
     "height": 0
@@ -31,5 +30,6 @@
     "blockType": "sf.arweave.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-arweave",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "arweave" } }
 }

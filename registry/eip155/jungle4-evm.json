@@ -32,7 +32,6 @@
   "issuanceRewards": false,
   "nativeToken": "EOS",
   "docsUrl": "https://eosnetwork.com/eos-evm",
-  "web3Icon": "eos",
   "genesis": {
     "hash": "0xc6f7c5c995ae7a7567b44e9679c6654b39a957fe33daa33aee4ee96a01b2fbd5",
     "height": 0
@@ -42,5 +41,6 @@
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "eos", "variants": ["mono"] } }
 }

@@ -19,7 +19,6 @@
   "issuanceRewards": false,
   "nativeToken": "MOVR",
   "docsUrl": "https://docs.moonbeam.network",
-  "web3Icon": "moonriver",
   "genesis": {
     "hash": "0xce24348303f7a60c4d2d3c82adddf55ca57af89cd9e2cd4b863906ef53b89b3c",
     "height": 0
@@ -29,5 +28,8 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
+  },
+  "icon": {
+    "web3Icons": { "name": "moonriver", "variants": ["mono", "branded"] }
   }
 }

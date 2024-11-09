@@ -40,7 +40,6 @@
       "kind": "rpc"
     }
   ],
-  "web3Icon": "avalanche",
   "genesis": {
     "hash": "0xb77a5f60d341511367c4295fba0b59a3e0062b075ef1fc795066636604484fdc",
     "height": 0
@@ -50,5 +49,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "avalanche" } }
 }

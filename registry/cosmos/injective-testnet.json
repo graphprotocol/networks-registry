@@ -27,7 +27,6 @@
   "issuanceRewards": false,
   "nativeToken": "INJ",
   "docsUrl": "https://docs.injective.network",
-  "web3Icon": "injective",
   "genesis": {
     "hash": "0xa9effb99c7bc3ba8c18a487ffffd800c137bc2b2f47f73c350f3ca27077044a1",
     "height": 37368800
@@ -36,5 +35,6 @@
     "blockType": "sf.cosmos.type.v2.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "injective" } }
 }

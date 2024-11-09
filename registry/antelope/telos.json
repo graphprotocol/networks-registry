@@ -19,7 +19,6 @@
   "issuanceRewards": false,
   "nativeToken": "TELOS",
   "docsUrl": "https://docs.telos.net",
-  "web3Icon": "telos",
   "genesis": {
     "hash": "0x000000021d642039071f77a8a2e1eca6cfc0d90f94e7304f0d401bf28f067693",
     "height": 2
@@ -28,5 +27,6 @@
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "telos" } }
 }

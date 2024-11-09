@@ -25,7 +25,6 @@ async function main() {
   const registrySchema = JSON.parse(fs.readFileSync(schemaPath, "utf-8"));
   ajv.addSchema(registrySchema, "registrySchema");
   const validate = ajv.getSchema("registrySchema#/$defs/Network")!;
-
   for (const file of files) {
     try {
       const json = JSON.parse(fs.readFileSync(file, "utf-8"));

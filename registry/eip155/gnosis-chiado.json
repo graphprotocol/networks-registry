@@ -19,7 +19,6 @@
   "issuanceRewards": false,
   "nativeToken": "XDAI",
   "docsUrl": "https://docs.gnosischain.com",
-  "web3Icon": "gnosis",
   "genesis": {
     "hash": "0xada44fd8d2ecab8b08f256af07ad3e777f17fb434f8f8e678b312f576212ba9a",
     "height": 0
@@ -29,5 +28,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "gnosis" } }
 }

@@ -34,7 +34,6 @@
       "kind": "rpc"
     }
   ],
-  "web3Icon": "blast",
   "genesis": {
     "hash": "0xb689b35ef29d0bec5816938e0e52683c7257d2e325420ea69b739a2be4754b89",
     "height": 0
@@ -44,5 +43,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "blast" } }
 }
