@@ -1,9 +1,9 @@
 {
-  "$schema": "https://graphregistry.pages.dev/TheGraphNetworksRegistrySchema_v0_3.json",
-  "version": "0.3.0",
+  "$schema": "https://graphregistry.pages.dev/TheGraphNetworksRegistrySchema_v0_4.json",
+  "version": "0.4.0",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-09T05:57:09.464Z",
+  "updatedAt": "2024-11-09T23:22:48.744Z",
   "networks": [
     {
       "id": "mainnet",
@@ -39,7 +39,7 @@
         }
       ],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -80,7 +80,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "ethereum",
       "genesis": {
         "hash": "0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3",
         "height": 0
@@ -90,6 +89,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ethereum"
+        }
       }
     },
     {
@@ -123,7 +127,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -157,7 +161,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "optimistic-ethereum",
       "genesis": {
         "hash": "0x7ca38a1916c42007829c55e69d3e9a73265554b586a499015373241b8a3fa48b",
         "height": 0
@@ -167,6 +170,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "optimistic-ethereum"
+        }
       }
     },
     {
@@ -197,7 +205,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -214,7 +222,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "gnosis",
       "genesis": {
         "hash": "0x4f1dd23188aab3a76b463e4af801b52b1248ef073c648cbdc4c9333d3da79756",
         "height": 0
@@ -224,6 +231,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "gnosis"
+        }
       }
     },
     {
@@ -244,7 +256,7 @@
         "https://public-en.kairos.node.kaia.io"
       ],
       "apiUrls": [],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -270,6 +282,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "klay-token"
+        }
       }
     },
     {
@@ -296,7 +313,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -313,7 +330,6 @@
       "issuanceRewards": false,
       "nativeToken": "XDAI",
       "docsUrl": "https://docs.gnosischain.com",
-      "web3Icon": "gnosis",
       "genesis": {
         "hash": "0xada44fd8d2ecab8b08f256af07ad3e777f17fb434f8f8e678b312f576212ba9a",
         "height": 0
@@ -323,6 +339,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "gnosis"
+        }
       }
     },
     {
@@ -350,7 +371,7 @@
         }
       ],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -360,7 +381,6 @@
       "issuanceRewards": false,
       "nativeToken": "CLV",
       "docsUrl": "https://docs.clv.org",
-      "web3Icon": "clover",
       "genesis": {
         "hash": "0x7c11fb21c186dd7846d92e09af5c02fa4c8a08b83c99d7361b8b9fd5dc1650fb",
         "height": 1
@@ -370,6 +390,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "clover"
+        }
       }
     },
     {
@@ -401,7 +426,7 @@
         }
       ],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -411,7 +436,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://polygon.technology/polygon-zkevm",
-      "web3Icon": "polygon-zkevm",
       "genesis": {
         "hash": "0x81005434635456a16f74ff7023fbe0bf423abbc8a8deb093ffff455c0ad3b741",
         "height": 0
@@ -421,6 +445,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "polygon-zkevm"
+        }
       }
     },
     {
@@ -456,7 +485,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -500,6 +529,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ethereum"
+        }
       }
     },
     {
@@ -537,7 +571,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -560,7 +594,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.optimism.io",
-      "web3Icon": "optimistic-ethereum",
       "genesis": {
         "hash": "0x102de6ffb001480cc9b8b548fd05c34cd4f46ae4aa91759393db90ea0409887d",
         "height": 0
@@ -570,6 +603,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "optimistic-ethereum"
+        }
       }
     },
     {
@@ -595,7 +633,7 @@
           "kind": "blockscout"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -612,7 +650,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.fuse.io",
-      "web3Icon": "fuse",
       "genesis": {
         "hash": "0xfd643f387cd7386d21e8d34f8762188865789196dee77c98f8210dbbc15616ae",
         "height": 0
@@ -622,6 +659,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "fuse"
+        }
       }
     },
     {
@@ -650,7 +692,7 @@
           "kind": "blockscout"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -679,7 +721,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "fuse",
       "genesis": {
         "hash": "0x6e778e9491576a28bd06fac93844d8494be1f153e60ba7d29b4b51d991d4f830",
         "height": 0
@@ -689,6 +730,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "fuse"
+        }
       }
     },
     {
@@ -714,7 +760,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -763,7 +809,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -780,7 +826,6 @@
       "issuanceRewards": false,
       "nativeToken": "XTZ",
       "docsUrl": "https://docs.etherlink.com",
-      "web3Icon": "etherlink",
       "genesis": {
         "hash": "0x2cf11372c813c0007ef080103fc813cf26ad9a374e88d589ef536dfc3dd1fee9",
         "height": 0
@@ -790,6 +835,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "etherlink"
+        }
       }
     },
     {
@@ -818,7 +868,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -847,7 +897,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "moonbeam",
       "genesis": {
         "hash": "0x7e6b3bbed86828a558271c9c9f62354b1d8b5aa15ff85fd6f1e7cbe9af9dde7e",
         "height": 0
@@ -857,6 +906,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "moonbeam"
+        }
       }
     },
     {
@@ -884,7 +938,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -901,7 +955,6 @@
       "issuanceRewards": false,
       "nativeToken": "MOVR",
       "docsUrl": "https://docs.moonbeam.network",
-      "web3Icon": "moonriver",
       "genesis": {
         "hash": "0xce24348303f7a60c4d2d3c82adddf55ca57af89cd9e2cd4b863906ef53b89b3c",
         "height": 0
@@ -911,6 +964,15 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "moonriver",
+          "variants": [
+            "mono",
+            "branded"
+          ]
+        }
       }
     },
     {
@@ -937,7 +999,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -954,7 +1016,6 @@
       "issuanceRewards": false,
       "nativeToken": "DEV",
       "docsUrl": "https://docs.moonbeam.network/learn/platform/networks/moonbase",
-      "web3Icon": "moonbeam",
       "genesis": {
         "hash": "0x33638dde636f9264b6472b9d976d58e757fe88badac53f204f3f530ecc5aacfa",
         "height": 0
@@ -964,6 +1025,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "moonbeam"
+        }
       }
     },
     {
@@ -990,7 +1056,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1001,7 +1067,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://doc.aurora.dev",
-      "web3Icon": "aurora",
       "genesis": {
         "hash": "0x8058d7fe544fdcac6836faa5f84c68291da1773594216957374708a7109a6336",
         "height": 0
@@ -1011,6 +1076,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "aurora"
+        }
       }
     },
     {
@@ -1037,7 +1107,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1060,7 +1130,6 @@
       "issuanceRewards": false,
       "nativeToken": "SEI",
       "docsUrl": "https://docs.seitrace.com",
-      "web3Icon": "sei-network",
       "genesis": {
         "hash": "0xe43c3e52a4f74dc7bb35f55cc813ed2ce97e46aafb3fcf8884056b0a757f5b75",
         "height": 79123881
@@ -1070,6 +1139,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "sei-network"
+        }
       }
     },
     {
@@ -1095,7 +1169,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1116,7 +1190,6 @@
       "issuanceRewards": false,
       "nativeToken": "G",
       "docsUrl": "https://docs.gravity.xyz",
-      "web3Icon": "gravity",
       "genesis": {
         "hash": "0xdf76dabe0734fed9d517027a494bc00662576d30aee9672a6fab5184e06ee8ca",
         "height": 0
@@ -1126,6 +1199,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "gravity"
+        }
       }
     },
     {
@@ -1161,7 +1239,7 @@
         }
       ],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1202,7 +1280,6 @@
       "issuanceRewards": true,
       "nativeToken": "POL",
       "docsUrl": "https://docs.polygon.technology",
-      "web3Icon": "polygon-pos",
       "genesis": {
         "hash": "0xa9c28ce2141b56c474f1dc504bee9b01eb1bd7d1a507580d5519d4437a97de1b",
         "height": 0
@@ -1212,6 +1289,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "polygon-pos"
+        }
       }
     },
     {
@@ -1250,7 +1332,7 @@
           "url": "https://explorer.testnet.evm.eosnetwork.com/api"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -1268,7 +1350,6 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://eosnetwork.com/eos-evm",
-      "web3Icon": "eos",
       "genesis": {
         "hash": "0xc6f7c5c995ae7a7567b44e9679c6654b39a957fe33daa33aee4ee96a01b2fbd5",
         "height": 0
@@ -1278,6 +1359,14 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "eos",
+          "variants": [
+            "mono"
+          ]
+        }
       }
     },
     {
@@ -1303,7 +1392,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1320,7 +1409,6 @@
       "issuanceRewards": false,
       "nativeToken": "G",
       "docsUrl": "https://docs.gravity.xyz",
-      "web3Icon": "gravity",
       "genesis": {
         "hash": "0x6eb5f2e11f3e026992cb3860e4518f672f0019fdc3c595e06cd22894fb6d7c36",
         "height": 0
@@ -1330,6 +1418,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "gravity"
+        }
       }
     },
     {
@@ -1356,7 +1449,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1367,7 +1460,6 @@
       "issuanceRewards": false,
       "nativeToken": "ONE",
       "docsUrl": "https://docs.harmony.one",
-      "web3Icon": "harmony",
       "genesis": {
         "hash": "0xb4d158b82ac8a653c42b78697ab1cd0c6a0d9a15ab3bc34130f0b719fb174d2a",
         "height": 0
@@ -1377,6 +1469,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "harmony"
+        }
       }
     },
     {
@@ -1406,7 +1503,7 @@
         "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1450,6 +1547,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ethereum"
+        }
       }
     },
     {
@@ -1484,7 +1586,7 @@
           "url": "https://explorer.evm.eosnetwork.com/api"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -1502,7 +1604,6 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://eosnetwork.com/eos-evm",
-      "web3Icon": "eos",
       "genesis": {
         "hash": "0x330402d1032bd515fa7f93b5ccb370bd1b6fdf54cdf009b6d46e55070aa0a1b8",
         "height": 0
@@ -1512,6 +1613,14 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "eos",
+          "variants": [
+            "mono"
+          ]
+        }
       }
     },
     {
@@ -1532,7 +1641,7 @@
         "https://testrpc.xlayer.tech"
       ],
       "apiUrls": [],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1583,7 +1692,7 @@
         "https://rpc.xlayer.tech"
       ],
       "apiUrls": [],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1636,7 +1745,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1669,7 +1778,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.blast.io",
-      "web3Icon": "blast",
       "genesis": {
         "hash": "0x26a1c0faad7b041f34569a1bb383f00ab74b335883a44bed53e9f41ced5fd906",
         "height": 0
@@ -1679,6 +1787,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "blast"
+        }
       }
     },
     {
@@ -1706,12 +1819,11 @@
           "kind": "other"
         }
       ],
-      "support": {},
+      "services": {},
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "CRO",
       "docsUrl": "https://docs.cronos.org",
-      "web3Icon": "cronos",
       "genesis": {
         "hash": "0xa7f4e603aa51239a15e0a3fafb15c6e4c6d6f2c39c55770330efd2fa5afc12a9",
         "height": 0
@@ -1721,6 +1833,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "cronos"
+        }
       }
     },
     {
@@ -1749,7 +1866,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1766,7 +1883,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "fantom",
       "genesis": {
         "hash": "0x00000000000003e83fddf1e9330f0a8691d9f0b2af57b38c3bb85488488a40df",
         "height": 0
@@ -1776,6 +1892,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "fantom"
+        }
       }
     },
     {
@@ -1803,7 +1924,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1832,7 +1953,6 @@
       "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.boba.network",
-      "web3Icon": "boba",
       "genesis": {
         "hash": "0xdcd9e6a8f9973eaa62da2874959cb152faeb4fd6929177bd6335a1a16074ef9c",
         "height": 0
@@ -1842,6 +1962,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "boba"
+        }
       }
     },
     {
@@ -1868,7 +1993,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1901,7 +2026,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.boba.network",
-      "web3Icon": "boba",
       "genesis": {
         "hash": "0x4d26ddc947c7cea924d5ef272c1a5ef40a1dce5ca2cbbaccad59d33f2505a30d",
         "height": 0
@@ -1911,6 +2035,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "boba"
+        }
       }
     },
     {
@@ -1936,7 +2065,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -1953,7 +2082,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "rootstock",
       "genesis": {
         "hash": "0xf88529d4ab262c0f4d042e9d8d3f2472848eaafe1a9b7213f57617eb40a9f9e0",
         "height": 0
@@ -1963,6 +2091,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "rootstock"
+        }
       }
     },
     {
@@ -1990,7 +2123,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2020,6 +2153,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "zksync"
+        }
       }
     },
     {
@@ -2043,7 +2181,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2060,7 +2198,6 @@
       "issuanceRewards": false,
       "nativeToken": "tRBTC",
       "docsUrl": "https://dev.rootstock.io",
-      "web3Icon": "rootstock",
       "genesis": {
         "hash": "0xcabb7fbe88cd6d922042a32ffc08ce8b1fbb37d650b9d4e7dbfe2a7469adfa42",
         "height": 0
@@ -2070,6 +2207,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "rootstock"
+        }
       }
     },
     {
@@ -2096,7 +2238,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2122,6 +2264,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "zksync"
+        }
       }
     },
     {
@@ -2150,7 +2297,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2184,7 +2331,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "mode",
       "genesis": {
         "hash": "0xb0f682e12fc555fd5ce8fce51a59a67d66a5b46be28611a168260a549dac8a9b",
         "height": 0
@@ -2194,6 +2340,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "mode"
+        }
       }
     },
     {
@@ -2221,7 +2372,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2238,7 +2389,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.astar.network/docs/getting-started",
-      "web3Icon": "astar",
       "genesis": {
         "hash": "0x5f7b9f463b7a0b690efb11446d0520e5b884e5bf0e3a3780c881a3b490592574",
         "height": 0
@@ -2248,6 +2398,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "astar"
+        }
       }
     },
     {
@@ -2273,7 +2428,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2290,7 +2445,6 @@
       "issuanceRewards": false,
       "nativeToken": "FTM",
       "docsUrl": "https://docs.fantom.foundation",
-      "web3Icon": "fantom",
       "genesis": {
         "hash": "0x00000000000003e8c717f00dc4306a6ff72eabc9a6ec6e4a46bf6ba044ca88d2",
         "height": 0
@@ -2300,6 +2454,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "fantom"
+        }
       }
     },
     {
@@ -2337,7 +2496,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2379,7 +2538,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "arbitrum-one",
       "genesis": {
         "hash": "0x7ee576b35482195fc49205cec9af72ce14f003b9ae69f6ba0faef4514be8b442",
         "height": 0
@@ -2389,6 +2547,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "arbitrum-one"
+        }
       }
     },
     {
@@ -2426,7 +2589,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2462,6 +2625,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "arbitrum-one"
+        }
       }
     },
     {
@@ -2491,7 +2659,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2508,7 +2676,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.arbitrum.io",
-      "web3Icon": "arbitrum-nova",
       "genesis": {
         "hash": "0x2ad24e03026118f9b3a48626f0636e38c93660e90a6812e853a99aa8c5371561",
         "height": 0
@@ -2518,6 +2685,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "arbitrum-nova"
+        }
       }
     },
     {
@@ -2544,7 +2716,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2561,7 +2733,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "celo",
       "genesis": {
         "hash": "0x19ea3339d3c8cda97235bc8293240d5b9dadcdfbb5d4b0b90ee731cac1bd11c3",
         "height": 0
@@ -2571,6 +2742,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "celo"
+        }
       }
     },
     {
@@ -2596,7 +2772,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2607,7 +2783,6 @@
       "issuanceRewards": false,
       "nativeToken": "XTZ",
       "docsUrl": "https://docs.etherlink.com",
-      "web3Icon": "etherlink",
       "genesis": {
         "hash": "0x37628d45dcd6265c969aa5f5dc3fe8fddd21198c683b85ac7099d8e39597df50",
         "height": 0
@@ -2617,6 +2792,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "etherlink"
+        }
       }
     },
     {
@@ -2645,7 +2825,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2687,7 +2867,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "avalanche",
       "genesis": {
         "hash": "0xb77a5f60d341511367c4295fba0b59a3e0062b075ef1fc795066636604484fdc",
         "height": 0
@@ -2697,6 +2876,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "avalanche"
+        }
       }
     },
     {
@@ -2723,7 +2907,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2734,7 +2918,6 @@
       "issuanceRewards": false,
       "nativeToken": "IOTX",
       "docsUrl": "https://docs.iotex.io",
-      "web3Icon": "iotex",
       "genesis": {
         "hash": "0x230ba8095d5a505e355652f9dcc2b13605419a8fa3d3fd5ddc6d24fd6a902641",
         "height": 1
@@ -2744,6 +2927,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "iotex"
+        }
       }
     },
     {
@@ -2770,7 +2958,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2818,7 +3006,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2853,7 +3041,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "scroll",
       "genesis": {
         "hash": "0xbbc05efd412b7cd47a2ed0e5ddfcf87af251e414ea4c801d78b6784513180a80",
         "height": 0
@@ -2863,6 +3050,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "scroll"
+        }
       }
     },
     {
@@ -2894,7 +3086,7 @@
         }
       ],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2935,7 +3127,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "binance-smart-chain",
       "genesis": {
         "hash": "0x0d21840abff46b96c84b2ac9e10e4f5cdaeb5693cb665db62a2f3b02d2d57b5b",
         "height": 0
@@ -2945,6 +3136,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "binance-smart-chain"
+        }
       }
     },
     {
@@ -2972,7 +3168,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -2989,7 +3185,6 @@
       "issuanceRewards": true,
       "nativeToken": "BOBA",
       "docsUrl": "https://docs.boba.network",
-      "web3Icon": "boba",
       "genesis": {
         "hash": "0xf9aa25373a3cf1c3d3dcb1911093b56eb129221d203270bcdb002b3f01a120d9",
         "height": 0
@@ -2999,6 +3194,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "boba"
+        }
       }
     },
     {
@@ -3025,7 +3225,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3046,7 +3246,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.linea.build",
-      "web3Icon": "linea",
       "genesis": {
         "hash": "0x65a64c825d7c13ce1bf077801d0b6b2a89853e19e4a89a5433d7d85d2102a20b",
         "height": 0
@@ -3056,6 +3255,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "linea"
+        }
       }
     },
     {
@@ -3084,7 +3288,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3119,7 +3323,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "linea",
       "genesis": {
         "hash": "0xb6762a65689107b2326364aefc18f94cda413209fab35c00d4af51eaa20ffbc6",
         "height": 0
@@ -3129,6 +3332,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "linea"
+        }
       }
     },
     {
@@ -3151,7 +3359,7 @@
         "https://xai.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -3169,7 +3377,6 @@
       "issuanceRewards": false,
       "nativeToken": "XAI",
       "docsUrl": "https://docs.x.ai/docs",
-      "web3Icon": "xai",
       "genesis": {
         "hash": "0xeb2a6f0f62cc7956562dc4e6316b60bdaff6a15affd6431592cb52f1552caa55",
         "height": 0
@@ -3179,6 +3386,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "xai"
+        }
       }
     },
     {
@@ -3205,7 +3417,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3281,7 +3493,7 @@
         }
       ],
       "networkType": "testnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3303,7 +3515,6 @@
       "issuanceRewards": false,
       "nativeToken": "POL",
       "docsUrl": "https://docs.polygon.technology",
-      "web3Icon": "polygon-pos",
       "genesis": {
         "hash": "0x7202b2b53c5a0836e773e319d18922cc756dd67432f9a1f65352b61f4406c697",
         "height": 0
@@ -3313,6 +3524,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "polygon-pos"
+        }
       }
     },
     {
@@ -3341,7 +3557,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3376,7 +3592,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "blast",
       "genesis": {
         "hash": "0xb689b35ef29d0bec5816938e0e52683c7257d2e325420ea69b739a2be4754b89",
         "height": 0
@@ -3386,6 +3601,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "blast"
+        }
       }
     },
     {
@@ -3407,7 +3627,7 @@
         "https://public-en.node.kaia.io"
       ],
       "apiUrls": [],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3427,6 +3647,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "klay-token"
+        }
       }
     },
     {
@@ -3454,7 +3679,7 @@
           "kind": "etherscan"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3496,7 +3721,6 @@
           "kind": "rpc"
         }
       ],
-      "web3Icon": "base",
       "genesis": {
         "hash": "0xf712aa9241cc24369b143cf6dce85f0902a9731e70d66818a3a5845b296c73dd",
         "height": 0
@@ -3506,6 +3730,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "base"
+        }
       }
     },
     {
@@ -3539,7 +3768,7 @@
           "network": "chiliz"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3549,7 +3778,6 @@
       "issuanceRewards": false,
       "nativeToken": "CHZ",
       "docsUrl": "https://docs.chiliz.com",
-      "web3Icon": "chiliz",
       "genesis": {
         "hash": "0x9e0e07ae4ee9b0ef66a4206656677020306259d0b0b845ad3bb6b09fb91485ff",
         "height": 0
@@ -3559,6 +3787,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "chiliz"
+        }
       }
     },
     {
@@ -3587,7 +3820,7 @@
         }
       ],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3597,7 +3830,6 @@
       "issuanceRewards": false,
       "nativeToken": "CHZ",
       "docsUrl": "https://docs.chiliz.com",
-      "web3Icon": "chiliz",
       "genesis": {
         "hash": "0xd79fa059ef8cdfcf72676df19e209ee014183a5fa1cf132b2ff9288dbbcf5042",
         "height": 0
@@ -3607,6 +3839,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "chiliz"
+        }
       }
     },
     {
@@ -3642,7 +3879,7 @@
           "network": "bsc"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -3664,7 +3901,6 @@
       "issuanceRewards": false,
       "nativeToken": "tBNB",
       "docsUrl": "https://docs.bnbchain.org",
-      "web3Icon": "binance-smart-chain",
       "genesis": {
         "hash": "0x6d3c66c5357ec91d5c43af47e234a939b22557cbb552dc45bebbceeed90fbe34",
         "height": 0
@@ -3674,6 +3910,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "binance-smart-chain"
+        }
       }
     },
     {
@@ -3692,7 +3933,7 @@
       ],
       "apiUrls": [],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -3739,7 +3980,7 @@
           "network": "telos"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -3756,7 +3997,6 @@
       "issuanceRewards": false,
       "nativeToken": "TELOS",
       "docsUrl": "https://docs.telos.net",
-      "web3Icon": "telos",
       "genesis": {
         "hash": "0x0000000377dcf185dce2cd5b1ad7e70a7da0a73fc175c47283043791956c70c3",
         "height": 3
@@ -3765,6 +4005,11 @@
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "telos"
+        }
       }
     },
     {
@@ -3783,7 +4028,7 @@
       ],
       "apiUrls": [],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -3800,7 +4045,6 @@
       "issuanceRewards": false,
       "nativeToken": "TELOS",
       "docsUrl": "https://docs.telos.net",
-      "web3Icon": "telos",
       "genesis": {
         "hash": "0x000000021d642039071f77a8a2e1eca6cfc0d90f94e7304f0d401bf28f067693",
         "height": 2
@@ -3809,6 +4053,11 @@
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "telos"
+        }
       }
     },
     {
@@ -3833,7 +4082,7 @@
           "network": "eos"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -3850,7 +4099,6 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
-      "web3Icon": "eos",
       "genesis": {
         "hash": "0x00000002a1ec7ae214b9e43a904b6c010fb1260c9e8a12e5967bdbe451152a07",
         "height": 2
@@ -3859,6 +4107,14 @@
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "eos",
+          "variants": [
+            "mono"
+          ]
+        }
       }
     },
     {
@@ -3883,7 +4139,7 @@
           "network": "eos"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -3924,10 +4180,9 @@
       "rpcUrls": [
         "https://eos.api.eosnation.io"
       ],
-      "newField": "some",
       "apiUrls": [],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -3944,7 +4199,6 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
-      "web3Icon": "eos",
       "genesis": {
         "hash": "0x0000000267f3e2284b482f3afc2e724be1d6cbc1804532ec62d4e7af47c30693",
         "height": 2
@@ -3953,6 +4207,14 @@
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "eos",
+          "variants": [
+            "mono"
+          ]
+        }
       }
     },
     {
@@ -3977,7 +4239,7 @@
           "network": "wax"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -4021,7 +4283,7 @@
       "graphNode": {
         "protocol": "arweave"
       },
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -4048,7 +4310,6 @@
       "issuanceRewards": false,
       "nativeToken": "AR",
       "docsUrl": "https://docs.arweave.org/developers",
-      "web3Icon": "arweave",
       "genesis": {
         "hash": "0xef0214ecaa252020230a5325719dfc2d9cec86123bc46926dad0c2251ed6be17b7112528dbe678fb2d31d6e6a0951244",
         "height": 0
@@ -4057,6 +4318,11 @@
         "blockType": "sf.arweave.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-arweave",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "arweave"
+        }
       }
     },
     {
@@ -4079,7 +4345,7 @@
           "network": "mainnet"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -4096,7 +4362,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "web3Icon": "ethereum",
       "genesis": {
         "hash": "0x4d611d5b93fdab69013a7f0a2f961caca0c853f87cfe9595fe50038163079360",
         "height": 0
@@ -4105,6 +4370,11 @@
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
         "bytesEncoding": "0xhex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ethereum"
+        }
       }
     },
     {
@@ -4125,7 +4395,7 @@
           "network": "sepolia"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -4142,7 +4412,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "web3Icon": "ethereum",
       "genesis": {
         "hash": "0xfb9b64fe445f76696407e1e3cc390371edff147bf712db86db6197d4b31ede43",
         "height": 0
@@ -4151,6 +4420,11 @@
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
         "bytesEncoding": "0xhex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ethereum"
+        }
       }
     },
     {
@@ -4171,7 +4445,7 @@
           "network": "holesky"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "pinax",
@@ -4188,7 +4462,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "web3Icon": "ethereum",
       "genesis": {
         "hash": "0xab09edd9380f8451c3ff5c809821174a36dce606fea8b5ea35ea936915dbf889",
         "height": 0
@@ -4197,6 +4470,11 @@
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
         "bytesEncoding": "0xhex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ethereum"
+        }
       }
     },
     {
@@ -4215,7 +4493,7 @@
       ],
       "apiUrls": [],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -4250,7 +4528,6 @@
       "issuanceRewards": false,
       "nativeToken": "BTC",
       "docsUrl": "https://developer.bitcoin.org",
-      "web3Icon": "bitcoin",
       "genesis": {
         "hash": "0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
         "height": 0
@@ -4259,6 +4536,11 @@
         "blockType": "sf.bitcoin.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-bitcoin",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "bitcoin"
+        }
       }
     },
     {
@@ -4279,7 +4561,7 @@
       "graphNode": {
         "protocol": "cosmos"
       },
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "streamingfast",
@@ -4296,7 +4578,6 @@
       "issuanceRewards": false,
       "nativeToken": "INJ",
       "docsUrl": "https://docs.injective.network",
-      "web3Icon": "injective",
       "genesis": {
         "hash": "0x24c9714291a999b952859ee02ec9b233394fe743b07ea3578d432a4a2707b6af",
         "height": 1
@@ -4305,6 +4586,11 @@
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "injective"
+        }
       }
     },
     {
@@ -4330,7 +4616,7 @@
           "network": "injective-mainnet"
         }
       ],
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "streamingfast",
@@ -4347,7 +4633,6 @@
       "issuanceRewards": false,
       "nativeToken": "INJ",
       "docsUrl": "https://docs.injective.network",
-      "web3Icon": "injective",
       "genesis": {
         "hash": "0xa9effb99c7bc3ba8c18a487ffffd800c137bc2b2f47f73c350f3ca27077044a1",
         "height": 37368800
@@ -4356,6 +4641,11 @@
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "injective"
+        }
       }
     },
     {
@@ -4378,7 +4668,7 @@
       "graphNode": {
         "protocol": "cosmos"
       },
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "streamingfast",
@@ -4430,7 +4720,7 @@
       "graphNode": {
         "protocol": "cosmos"
       },
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "streamingfast",
@@ -4476,7 +4766,7 @@
         }
       ],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "streamingfast",
@@ -4519,7 +4809,7 @@
       "rpcUrls": [],
       "apiUrls": [],
       "networkType": "testnet",
-      "support": {
+      "services": {
         "firehose": [
           {
             "provider": "streamingfast",
@@ -4565,7 +4855,7 @@
       "graphNode": {
         "protocol": "near"
       },
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -4600,7 +4890,6 @@
       "issuanceRewards": false,
       "nativeToken": "NEAR",
       "docsUrl": "https://docs.near.org",
-      "web3Icon": "near-protocol",
       "genesis": {
         "hash": "0xa7110b9052e1be68f7fa8bb4065bf54e731205801878e708db7464ec4b9b8014",
         "height": 9820214
@@ -4609,6 +4898,11 @@
         "blockType": "sf.near.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-near",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "near-protocol"
+        }
       }
     },
     {
@@ -4634,7 +4928,7 @@
           "network": "near-mainnet"
         }
       ],
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -4669,7 +4963,6 @@
       "issuanceRewards": false,
       "nativeToken": "NEAR",
       "docsUrl": "https://docs.near.org",
-      "web3Icon": "near-protocol",
       "genesis": {
         "hash": "0x09d69c8ba4f319f8e78d0b701f0c1f763cc0d920551bfbd00072d5f56016d853",
         "height": 42376923
@@ -4678,6 +4971,11 @@
         "blockType": "sf.near.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-near",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "near-protocol"
+        }
       }
     },
     {
@@ -4698,7 +4996,7 @@
       ],
       "apiUrls": [],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -4725,7 +5023,6 @@
       "issuanceRewards": false,
       "nativeToken": "SOL",
       "docsUrl": "https://solana.com/docs",
-      "web3Icon": "solana",
       "genesis": {
         "hash": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
         "height": 0
@@ -4734,6 +5031,11 @@
         "blockType": "sf.solana.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-solana",
         "bytesEncoding": "base58"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "solana"
+        }
       }
     },
     {
@@ -4762,7 +5064,7 @@
       ],
       "apiUrls": [],
       "networkType": "mainnet",
-      "support": {
+      "services": {
         "subgraphs": [
           {
             "provider": "e&n"
@@ -4797,7 +5099,6 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.starknet.io",
-      "web3Icon": "starknet",
       "genesis": {
         "hash": "0x47c3637b57c2b079b93c61539950c17e868a28f46cdef28f88521067f21e943",
         "height": 0
@@ -4806,6 +5107,11 @@
         "blockType": "sf.starknet.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
         "bytesEncoding": "0xhex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "starknet"
+        }
       }
     },
     {
@@ -4837,11 +5143,10 @@
       ],
       "apiUrls": [],
       "networkType": "testnet",
-      "support": {},
+      "services": {},
       "issuanceRewards": false,
       "nativeToken": "STRK",
       "docsUrl": "https://docs.starknet.io",
-      "web3Icon": "starknet",
       "genesis": {
         "hash": "0x05c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
         "height": 0
@@ -4850,6 +5155,11 @@
         "blockType": "sf.starknet.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
         "bytesEncoding": "0xhex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "starknet"
+        }
       }
     }
   ]
