@@ -9,7 +9,7 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "relations": [{ "kind": "beaconOf", "network": "mainnet" }],
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "eth-cl.firehose.pinax.network:443" }
     ],

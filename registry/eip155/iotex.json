@@ -8,7 +8,7 @@
   "explorerUrls": ["https://iotexscan.io"],
   "rpcUrls": ["https://babel-api.mainnet.iotex.io"],
   "apiUrls": [{ "url": "https://iotexscan.io/api", "kind": "etherscan" }],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "IOTX",

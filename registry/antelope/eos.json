@@ -8,7 +8,7 @@
   "rpcUrls": ["https://eos.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "eos.firehose.pinax.network:443" }
     ],

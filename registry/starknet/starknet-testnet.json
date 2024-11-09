@@ -13,7 +13,7 @@
   "rpcUrls": ["https://starknet-sepolia.public.blastapi.io"],
   "apiUrls": [],
   "networkType": "testnet",
-  "support": {},
+  "services": {},
   "issuanceRewards": false,
   "nativeToken": "STRK",
   "docsUrl": "https://docs.starknet.io",

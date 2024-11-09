@@ -14,7 +14,7 @@
   "apiUrls": [
     { "url": "https://fantom.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "issuanceRewards": true,
   "nativeToken": "FTM",

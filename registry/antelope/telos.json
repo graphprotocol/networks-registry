@@ -8,7 +8,7 @@
   "rpcUrls": ["https://telos.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "telos.firehose.pinax.network:443" }
     ],

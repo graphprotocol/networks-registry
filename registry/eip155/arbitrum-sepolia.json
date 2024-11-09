@@ -21,7 +21,7 @@
       "kind": "etherscan"
     }
   ],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [

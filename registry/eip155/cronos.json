@@ -13,7 +13,7 @@
   "apiUrls": [
     { "url": "https://explorer-api.cronos.org/mainnet/api/v1", "kind": "other" }
   ],
-  "support": {},
+  "services": {},
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "CRO",

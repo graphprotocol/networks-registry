@@ -10,7 +10,7 @@
   "networkType": "testnet",
   "graphNode": { "protocol": "cosmos" },
   "relations": [{ "kind": "testnetOf", "network": "injective-mainnet" }],
-  "support": {
+  "services": {
     "firehose": [
       {
         "provider": "streamingfast",

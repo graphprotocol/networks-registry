@@ -9,7 +9,7 @@
   "rpcUrls": ["https://rpc.chiliz.com", "https://rpc.ankr.com/chiliz"],
   "apiUrls": [{ "url": "https://scan.chiliz.com/api", "kind": "etherscan" }],
   "networkType": "mainnet",
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "issuanceRewards": false,
   "nativeToken": "CHZ",
   "docsUrl": "https://docs.chiliz.com",

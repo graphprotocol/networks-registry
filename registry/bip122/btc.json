@@ -8,7 +8,7 @@
   "rpcUrls": ["https://bitcoin-mainnet.gateway.tatum.io"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [

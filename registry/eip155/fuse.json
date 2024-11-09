@@ -12,7 +12,7 @@
     "https://fuse.drpc.org"
   ],
   "apiUrls": [{ "url": "https://explorer.fuse.io/api", "kind": "blockscout" }],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "firehose": [
       { "provider": "pinax", "url": "fuse.firehose.pinax.network:443" }

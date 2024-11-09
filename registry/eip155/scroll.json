@@ -12,7 +12,7 @@
     "https://rpc.ankr.com/scroll"
   ],
   "apiUrls": [{ "url": "https://api.scrollscan.com/api", "kind": "etherscan" }],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "firehose": [
       { "provider": "pinax", "url": "scroll.firehose.pinax.network:443" }

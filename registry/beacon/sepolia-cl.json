@@ -9,7 +9,7 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "relations": [{ "kind": "beaconOf", "network": "sepolia" }],
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "holesky-cl.firehose.pinax.network:443" }
     ],

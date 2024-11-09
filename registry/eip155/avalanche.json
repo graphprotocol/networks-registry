@@ -12,7 +12,7 @@
     "https://avalanche-c-chain-rpc.publicnode.com"
   ],
   "apiUrls": [{ "url": "https://api.snowtrace.io/api", "kind": "etherscan" }],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [

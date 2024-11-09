@@ -74,6 +74,42 @@ function validateRelations(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+function validateEvmRules(networks: Network[]) {
+  process.stdout.write("Validating EVM rules ... ");
+
+  for (const network of networks) {
+    const isEvm = network.caip2Id.startsWith("eip155:");
+
+    if (isEvm) {
+      if (network.firehose?.evmExtendedModel === undefined) {
+        ERRORS.push(
+          `Network ${network.id} is EVM but missing required firehose.evmExtendedModel field`,
+        );
+      }
+
+      if (network.graphNode?.protocol !== "ethereum") {
+        ERRORS.push(
+          `Network ${network.id} is EVM but graphNode.protocol is not "ethereum"`,
+        );
+      }
+    } else {
+      if (network.firehose?.evmExtendedModel !== undefined) {
+        ERRORS.push(
+          `Network ${network.id} is non-EVM but has evmExtendedModel field which is not allowed`,
+        );
+      }
+
+      if (network.graphNode?.protocol === "ethereum") {
+        ERRORS.push(
+          `Network ${network.id} is non-EVM but has graphNode.protocol="ethereum" which is not allowed`,
+        );
+      }
+    }
+  }
+
+  process.stdout.write("done\n");
+}
+
 function validateTestnets(networks: Network[]) {
   process.stdout.write("Validating testnets ... ");
   for (const network of networks) {
@@ -141,7 +177,7 @@ async function validateWeb3Icons(networks: Network[]) {
       const web3Icon = web3Icons.find((i) => i.id === ourIcon.name);
       if (!web3Icon) {
         ERRORS.push(
-          `Network ${network.id} web3icon id does not exist: ${network.web3Icon}`,
+          `Network ${network.id} web3icon id does not exist on web3Icons: ${ourIcon.name}`,
         );
       } else {
         const web3Variants = web3Icon.variants || [];
@@ -298,6 +334,7 @@ async function main() {
   validateFilenames(networksPath);
   validateUniqueness(networks);
   validateRelations(networks);
+  validateEvmRules(networks);
   validateTestnets(networks);
   validateUrls(networks);
   await validateWeb3Icons(networks);

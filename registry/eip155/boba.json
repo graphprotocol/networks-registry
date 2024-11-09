@@ -16,7 +16,7 @@
       "kind": "etherscan"
     }
   ],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "firehose": [
       { "provider": "pinax", "url": "boba.firehose.pinax.network:443" }

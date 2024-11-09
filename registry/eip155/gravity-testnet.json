@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://explorer-sepolia.gravity.xyz/api", "kind": "etherscan" }
   ],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },

@@ -13,7 +13,7 @@
   "apiUrls": [
     { "url": "https://api-moonriver.moonscan.io/api", "kind": "etherscan" }
   ],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "relations": [{ "kind": "other", "network": "moonbeam" }],
   "issuanceRewards": false,

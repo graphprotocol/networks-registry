@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://explorer.harmony.one/api?shard=0", "kind": "etherscan" }
   ],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "ONE",

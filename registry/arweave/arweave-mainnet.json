@@ -9,7 +9,7 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "graphNode": { "protocol": "arweave" },
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [

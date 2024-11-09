@@ -15,7 +15,7 @@
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "bsc" }],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "firehose": [
       { "provider": "pinax", "url": "chapel.firehose.pinax.network:443" }

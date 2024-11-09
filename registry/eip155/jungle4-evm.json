@@ -20,7 +20,7 @@
       "url": "https://explorer.testnet.evm.eosnetwork.com/api"
     }
   ],
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "jungle4evm.firehose.pinax.network:443" }
     ],

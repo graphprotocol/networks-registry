@@ -14,7 +14,7 @@
   "apiUrls": [
     { "kind": "etherscan", "url": "https://explorer.evm.eosnetwork.com/api" }
   ],
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "eosevm.firehose.pinax.network:443" }
     ],

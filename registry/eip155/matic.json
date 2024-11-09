@@ -16,7 +16,7 @@
     { "url": "https://api.polygonscan.com/api", "kind": "etherscan" }
   ],
   "networkType": "mainnet",
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [

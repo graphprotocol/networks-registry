@@ -15,7 +15,7 @@
     }
   ],
   "networkType": "mainnet",
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://polygon.technology/polygon-zkevm",

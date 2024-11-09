@@ -151,14 +151,13 @@
         },
         "graphNode": {
           "type": "object",
+          "additionalProperties": false,
           "properties": {
             "protocol": {
               "type": "string",
               "enum": ["ethereum", "near", "arweave", "cosmos", "starknet"],
               "description": "[optional] Protocol name in graph-node, i.e. ethereum, near, arweave"
-            },
-            "additionalProperties": false,
-            "description": "Graph node configuration"
+            }
           }
         },
         "explorerUrls": {
@@ -166,7 +165,7 @@
           "items": { "type": "string", "format": "uri" },
           "description": "URLs for the block explorers"
         },
-        "support": {
+        "services": {
           "type": "object",
           "properties": {
             "subgraphs": {
@@ -271,7 +270,7 @@
         "shortName",
         "fullName",
         "networkType",
-        "support",
+        "services",
         "issuanceRewards"
       ],
       "additionalProperties": false,
@@ -295,54 +294,7 @@
           "required": ["provider"],
           "additionalProperties": false
         }
-      },
-      "allOf": [
-        {
-          "if": {
-            "properties": {
-              "caip2Id": { "type": "string", "pattern": "^eip155:" }
-            }
-          },
-          "then": {
-            "properties": {
-              "firehose": {
-                "type": "object",
-                "properties": { "evmExtendedModel": { "type": "boolean" } },
-                "required": ["evmExtendedModel"]
-              },
-              "graphNode": {
-                "type": "object",
-                "properties": { "protocol": { "const": "ethereum" } }
-              }
-            }
-          },
-          "else": {
-            "properties": {
-              "firehose": {
-                "type": "object",
-                "properties": {
-                  "evmExtendedModel": {
-                    "const": false,
-                    "description": "evmExtendedModel makes no sense for non-EVM chains"
-                  }
-                }
-              },
-              "graphNode": {
-                "type": "object",
-                "properties": {
-                  "protocol": {
-                    "anyOf": [
-                      { "not": { "const": "ethereum" } },
-                      { "type": "null" }
-                    ],
-                    "description": "protocol must be non-ethereum or undefined for non-EVM chains"
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
+      }
     }
   }
 }

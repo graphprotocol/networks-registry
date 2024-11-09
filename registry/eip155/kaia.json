@@ -8,7 +8,7 @@
   "explorerUrls": ["https://kaiascan.io"],
   "rpcUrls": ["https://public-en.node.kaia.io"],
   "apiUrls": [],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "KAIA",

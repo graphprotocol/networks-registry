@@ -9,7 +9,7 @@
   "apiUrls": [],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "eos" }],
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "kylin.firehose.pinax.network:443" }
     ],

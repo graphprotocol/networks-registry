@@ -10,7 +10,7 @@
   "networkType": "testnet",
   "graphNode": { "protocol": "near" },
   "relations": [{ "kind": "testnetOf", "network": "near-mainnet" }],
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [

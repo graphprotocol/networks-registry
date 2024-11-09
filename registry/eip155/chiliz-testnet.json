@@ -12,7 +12,7 @@
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "chiliz" }],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "issuanceRewards": false,
   "nativeToken": "CHZ",
   "docsUrl": "https://docs.chiliz.com",

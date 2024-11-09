@@ -5,9 +5,27 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Network = {
-  [k: string]: unknown;
-} & {
+export interface TheGraphNetworksRegistrySchema {
+  /**
+   * Reference to this schema file
+   */
+  $schema: string;
+  title: string;
+  description: string;
+  /**
+   * Version of the registry
+   */
+  version: string;
+  /**
+   * Date and time of the last update
+   */
+  updatedAt: string;
+  /**
+   * List of networks
+   */
+  networks: Network[];
+}
+export interface Network {
   /**
    * Established name of the chain on the Graph network, i.e. mainnet, btc, arweave-mainnet, near-testnet
    */
@@ -36,7 +54,14 @@ export type Network = {
     /**
      * Kind of relation
      */
-    kind: "testnetOf" | "beaconOf" | "forkedFrom" | "l2Of" | "shardOf" | "evmOf" | "other";
+    kind:
+      | "testnetOf"
+      | "beaconOf"
+      | "forkedFrom"
+      | "l2Of"
+      | "shardOf"
+      | "evmOf"
+      | "other";
     /**
      * Id of the related network, i.e. mainnet, near-mainnet
      */
@@ -82,9 +107,6 @@ export type Network = {
      * [optional] Protocol name in graph-node, i.e. ethereum, near, arweave
      */
     protocol?: "ethereum" | "near" | "arweave" | "cosmos" | "starknet";
-    additionalProperties?: never;
-    description?: "Graph node configuration";
-    [k: string]: unknown;
   };
   /**
    * URLs for the block explorers
@@ -93,7 +115,7 @@ export type Network = {
   /**
    * Providers support for the chain by providers
    */
-  support: {
+  services: {
     subgraphs?: Service[];
     sps?: Service[];
     firehose?: Service[];
@@ -141,29 +163,14 @@ export type Network = {
     kind: "rpc" | "firehose" | "other";
     hint?: string;
   }[];
-};
-
-export interface TheGraphNetworksRegistrySchema {
-  /**
-   * Reference to this schema file
-   */
-  $schema: string;
-  title: string;
-  description: string;
-  /**
-   * Version of the registry
-   */
-  version: string;
-  /**
-   * Date and time of the last update
-   */
-  updatedAt: string;
-  /**
-   * List of networks
-   */
-  networks: Network[];
 }
 export interface Service {
-  provider: "e&n" | "pinax" | "graphops" | "streamingfast" | "messari" | "semiotic";
+  provider:
+    | "e&n"
+    | "pinax"
+    | "graphops"
+    | "streamingfast"
+    | "messari"
+    | "semiotic";
   url?: string;
 }

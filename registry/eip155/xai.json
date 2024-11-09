@@ -11,7 +11,7 @@
     "https://xai.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [],
-  "support": {
+  "services": {
     "firehose": [
       { "provider": "pinax", "url": "xai.firehose.pinax.network:443" }
     ],

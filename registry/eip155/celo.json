@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://celo.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "mainnet",
   "issuanceRewards": true,
   "nativeToken": "CELO",

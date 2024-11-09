@@ -17,7 +17,7 @@
     { "url": "https://eth.blockscout.com/api", "kind": "blockscout" }
   ],
   "networkType": "mainnet",
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [

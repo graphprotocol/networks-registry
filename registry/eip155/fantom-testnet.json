@@ -13,7 +13,7 @@
       "kind": "etherscan"
     }
   ],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "fantom" }],
   "issuanceRewards": false,

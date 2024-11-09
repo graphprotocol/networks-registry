@@ -13,7 +13,7 @@
   "apiUrls": [
     { "url": "https://gnosis-chiado.blockscout.com/api", "kind": "etherscan" }
   ],
-  "support": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "gnosis" }],
   "issuanceRewards": false,

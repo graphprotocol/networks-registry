@@ -13,7 +13,7 @@
   ],
   "apiUrls": [],
   "networkType": "mainnet",
-  "support": {
+  "services": {
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [
