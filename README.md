@@ -4,11 +4,11 @@ This repository manages a registry of networks in The Graph ecosystem. See [Rele
 
 ## Adding/updating a chain
 
-- add/update a network JSON in the `registry` directory. TODO: add detailed fields descriptions and best practices
+- add/update a network JSON in the `registry` directory. See [Adding a Chain](./docs/adding-a-chain.md) for details
 - [optional] validate with `bun validate` (see below for local setup steps)
 - [optional] format with `bun format`
 - increment patch version in `package.json`
-- open a PR. This will trigger validation checks and will signal if there are any issues with new definitions
+- open a PR. This will trigger validation checks and will signal if there are any issues with your definition
 
 ## Structure of the repository
 
@@ -62,14 +62,18 @@ Every PR merge triggers a GitHub action that generates new registry version, for
 4 registry JSON files with the identical contents are deployed in addition to existing ones.
 Assuming current version is v1.2.3, the following files with identical content are published:
 
-- https://graphregistry.pages.dev/TheGraphNetworksRegistry.json
-- https://graphregistry.pages.dev/TheGraphNetworksRegistry_v1_2_3.json
-- https://graphregistry.pages.dev/TheGraphNetworksRegistry_v1_2_x.json
-- https://graphregistry.pages.dev/TheGraphNetworksRegistry_v1_x_x.json
+- TheGraphNetworksRegistry.json
+- TheGraphNetworksRegistry_v1_2_3.json
+- TheGraphNetworksRegistry_v1_2_x.json
+- TheGraphNetworksRegistry_v1_x_x.json
+
+In addition to the above, the JSON Schema is available at TheGraphNetworksRegistrySchema_v1_2.json
 
 ## Registry Usage
 
 In your application you can pull one of the registry JSONs above depending on your use case - whether it's pinned to a specific registry version, whether you allow backwards compatible schema changes or you just need the latest one.
+
+Refer to [Using The Graph Networks Registry](./docs/using-the-registry.md) for more information and best practices.
 
 Typical use cases:
 
