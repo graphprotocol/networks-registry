@@ -24,8 +24,8 @@ More details on versioning can be found in the [README](https://github.com/graph
 ## Best Practices
 
 - Use type generation from the JSON Schema for better development experience
-- Avoid loading the registry on the client side - it can be quite large
-- Cache the registry appropriately - it doesn't change frequently
+- Avoid loading the registry on the client side more than once- it can be quite large
+- Cache the registry appropriately for your use case - it doesn't change often
 
 ## Integration
 
