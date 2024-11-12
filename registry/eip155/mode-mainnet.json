@@ -8,8 +8,7 @@
   "explorerUrls": ["https://explorer.mode.network"],
   "rpcUrls": [
     "https://mainnet.mode.network",
-    "https://mode.rpc.pinax.network/v1/{PINAX_API_KEY}",
-    "https://mode.drpc.org"
+    "https://mode.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
     { "url": "https://explorer.mode.network/api", "kind": "etherscan" }

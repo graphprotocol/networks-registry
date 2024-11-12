@@ -1,15 +1,14 @@
 {
   "id": "fantom",
   "shortName": "Fantom",
-  "fullName": "Fantom Mainnet",
-  "aliases": ["evm-250", "fantom-mainnet"],
+  "fullName": "Fantom Opera Mainnet",
+  "aliases": ["evm-250", "fantom-mainnet", "fantom-opera"],
   "caip2Id": "eip155:250",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://ftmscan.com"],
   "rpcUrls": [
     "https://rpc.ftm.tools",
-    "https://fantom.rpc.pinax.network/v1/{PINAX_API_KEY}",
-    "https://fantom.drpc.org"
+    "https://fantom.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
     { "url": "https://fantom.abi.pinax.network/api", "kind": "etherscan" }
@@ -26,7 +25,7 @@
     }
   ],
   "genesis": {
-    "hash": "0x00000000000003e83fddf1e9330f0a8691d9f0b2af57b38c3bb85488488a40df",
+    "hash": "0x0000000000000000c20dbfb2ec18ae20037c716f3ba2d9e1da768a9deca17cb4",
     "height": 0
   },
   "firehose": {

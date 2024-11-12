@@ -8,7 +8,8 @@
   "explorerUrls": ["https://nova-explorer.arbitrum.io"],
   "rpcUrls": [
     "https://nova.arbitrum.io/rpc",
-    "https://arbitrum-nova.publicnode.com"
+    "https://arbitrum-nova.publicnode.com",
+    "https://arbnova.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
     {
@@ -16,7 +17,16 @@
       "kind": "etherscan"
     }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "arbnova.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "arbnova.substreams.pinax.network:443" }
+    ]
+  },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

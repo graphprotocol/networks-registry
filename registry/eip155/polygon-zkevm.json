@@ -7,7 +7,10 @@
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://zkevm.polygonscan.com"],
-  "rpcUrls": ["https://zkevm-rpc.com", "https://polygon-zkevm.drpc.org"],
+  "rpcUrls": [
+    "https://zkevm-rpc.com",
+    "https://polygonzk.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
   "apiUrls": [
     {
       "url": "https://polygon-zkevm.abi.pinax.network/api",
@@ -15,7 +18,16 @@
     }
   ],
   "networkType": "mainnet",
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "polygonzk.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "polygonzk.substreams.pinax.network:443" }
+    ]
+  },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://polygon.technology/polygon-zkevm",

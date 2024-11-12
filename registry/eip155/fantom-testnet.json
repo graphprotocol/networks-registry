@@ -1,7 +1,7 @@
 {
   "id": "fantom-testnet",
   "shortName": "Fantom",
-  "fullName": "Fantom Testnet",
+  "fullName": "Fantom Opera Testnet",
   "aliases": ["evm-4002"],
   "caip2Id": "eip155:4002",
   "graphNode": { "protocol": "ethereum" },
@@ -20,7 +20,7 @@
   "nativeToken": "FTM",
   "docsUrl": "https://docs.fantom.foundation",
   "genesis": {
-    "hash": "0x00000000000003e8c717f00dc4306a6ff72eabc9a6ec6e4a46bf6ba044ca88d2",
+    "hash": "0x00000000000000009a0c7349d44dc4d0f602a54e0a8543360c2fee4c3937b49e",
     "height": 0
   },
   "firehose": {

@@ -8,7 +8,8 @@
   "explorerUrls": ["https://moonriver.moonscan.io"],
   "rpcUrls": [
     "https://rpc.api.moonriver.moonbeam.network",
-    "https://moonriver.drpc.org"
+    "https://moonriver.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://moonriver.public.blastapi.io"
   ],
   "apiUrls": [
     { "url": "https://api-moonriver.moonscan.io/api", "kind": "etherscan" }
