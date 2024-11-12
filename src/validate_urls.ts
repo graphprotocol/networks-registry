@@ -21,6 +21,82 @@ async function testURL(url: string) {
   }
 }
 
+async function validateRpc(networks: Network[]) {
+  process.stdout.write("Validating RPC genesis blocks ... ");
+
+  const ethNetworks = networks.filter(
+    (n) => n.genesis && n.caip2Id.startsWith("eip155"),
+  );
+
+  await Promise.all(
+    ethNetworks.map(async (network) => {
+      for (const rpcUrl of network.rpcUrls ?? []) {
+        if (rpcUrl.includes("{")) {
+          continue;
+        }
+
+        try {
+          const controller = new AbortController();
+          const timeout = setTimeout(() => controller.abort(), 10000);
+
+          const response = await fetch(rpcUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              jsonrpc: "2.0",
+              id: 1,
+              method: "eth_getBlockByNumber",
+              params: [`0x${network.genesis?.height.toString(16)}`, false],
+            }),
+            signal: controller.signal,
+          });
+
+          clearTimeout(timeout);
+
+          if (!response.ok) {
+            ERRORS.push(
+              `Network ${network.id} failed to query public RPC: ${rpcUrl}`,
+            );
+            continue;
+          }
+          const data = await response.json();
+
+          if (data.error || !data.result) {
+            ERRORS.push(
+              `Network ${network.id} empty response from public RPC: ${rpcUrl}`,
+            );
+            continue;
+          }
+
+          const genesisHash = data.result.hash;
+          if (
+            genesisHash.toLowerCase() !== network.genesis?.hash.toLowerCase()
+          ) {
+            ERRORS.push(
+              `Network ${network.id} has mismatched genesis hash: RPC=${genesisHash} registry=${network.genesis?.hash}`,
+            );
+          }
+          console.log(
+            `  ${network.id}: genesis hash validated at ${rpcUrl}: ${genesisHash}`,
+          );
+        } catch (e) {
+          if (e instanceof Error && e.name === "AbortError") {
+            ERRORS.push(
+              `Network ${network.id} RPC request timed out after 10s: ${rpcUrl}`,
+            );
+          } else {
+            ERRORS.push(
+              `Network ${network.id} exception querying public RPC: ${rpcUrl}`,
+            );
+          }
+        }
+      }
+    }),
+  );
+
+  process.stdout.write("done\n");
+}
+
 async function validateUrls(networks: Network[]) {
   process.stdout.write("Validating URLs ... ");
   const batchSize = 30;
@@ -57,6 +133,7 @@ async function main() {
   }
 
   await validateUrls(networks);
+  await validateRpc(networks);
 
   if (ERRORS.length > 0) {
     console.error(`${ERRORS.length} Validation errors:`);

@@ -16,6 +16,7 @@
   ],
   "services": {
     "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
     "firehose": [
       { "provider": "pinax", "url": "blast.firehose.pinax.network:443" }
     ],

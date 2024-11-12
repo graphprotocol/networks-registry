@@ -10,7 +10,7 @@ Each chain should be defined as a JSON file in the `registry` directory with the
 
 - `fullName` - Full display name (e.g., "Ethereum Mainnet", "BNB Smart Chain")
 
-- `aliases` [optional] - Alternative names for the chain (e.g., ["ethereum", "eth", "eth-mainnet"])
+- `aliases` [optional] - Alternative names for the chain (e.g., ["ethereum", "eth", "eth-mainnet"]). Aliases need to be unique
 
 - `caip2Id` - [CAIP-2](https://chainagnostic.org/CAIPs/caip-2) chain identifier (e.g., "eip155:1", "near:mainnet")
 
@@ -102,7 +102,7 @@ Each chain should be defined as a JSON file in the `registry` directory with the
 
 ## Choosing a Chain ID
 
-The chain ID should be unique and descriptive. Avoid using `mainnet` or `testnet` in the chain ID. Instead of `mychain-testnet` use `mychain-sepolia`.
+The chain ID should be unique and descriptive. Avoid using `mainnet` or `testnet` in the chain ID where possible. Instead of `mychain-testnet` use `mychain-sepolia`. Instead of `mychain-mainnet` use `mychain`. More rules to come.
 
 ## Validation
 

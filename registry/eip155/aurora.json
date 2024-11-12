@@ -16,7 +16,7 @@
   "nativeToken": "ETH",
   "docsUrl": "https://doc.aurora.dev",
   "genesis": {
-    "hash": "0x8058d7fe544fdcac6836faa5f84c68291da1773594216957374708a7109a6336",
+    "hash": "0x0475c3f1fb767b161d8691d243a8daa3ff1621c181d21ca215b327d72df7fd11",
     "height": 0
   },
   "firehose": {

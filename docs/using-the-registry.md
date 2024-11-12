@@ -24,14 +24,15 @@ More details on versioning can be found in the [README](https://github.com/graph
 ## Best Practices
 
 - Use type generation from the JSON Schema for better development experience
-- Avoid loading the registry on the client side - it can be quite large
-- Cache the registry appropriately - it doesn't change frequently
+- Avoid loading the registry on the client side more than once- it can be quite large
+- Cache the registry appropriately for your use case - it doesn't change often
 
 ## Integration
 
 To generate types from the corresponding JSON Schema, use the one of the many available tools:
 
 - [quicktype](https://github.com/quicktype/quicktype) for many languages
+
 ```
 > npx quicktype --lang go \
   --visibility public \
@@ -41,6 +42,7 @@ To generate types from the corresponding JSON Schema, use the one of the many av
 ```
 
 - [json-schema-to-typescript](https://github.com/bcherny/json-schema-to-typescript) for typescript
+
 ```
 > npx json-schema-to-typescript \
   --input TheGraphNetworksRegistrySchema_v1_0.json \
@@ -48,4 +50,3 @@ To generate types from the corresponding JSON Schema, use the one of the many av
 ```
 
 - [typify](https://github.com/oxidecomputer/typify) for Rust
-
