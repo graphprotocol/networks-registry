@@ -11,7 +11,7 @@
   ],
   "explorerUrls": ["https://explorer.testnet.evm.eosnetwork.com"],
   "rpcUrls": [
-    "https://explorer.testnet.evm.eosnetwork.com/api/eth-rpc",
+    "https://api.testnet.evm.eosnetwork.com",
     "https://jungle4evm.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
