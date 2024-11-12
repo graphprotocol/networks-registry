@@ -1,0 +1,36 @@
+{
+  "id": "boba-bnb-testnet",
+  "shortName": "Boba BNB",
+  "fullName": "Boba BNB Testnet",
+  "aliases": ["evm-9728", "boba-bsc-testnet"],
+  "caip2Id": "eip155:9728",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://bnb.testnet.bobascan.com"],
+  "rpcUrls": ["https://testnet.bnb.boba.network"],
+  "apiUrls": [
+    {
+      "url": "https://api.routescan.io/v2/network/testnet/evm/9728/etherscan/api",
+      "kind": "etherscan"
+    }
+  ],
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "boba-bnb" },
+    { "kind": "l2Of", "network": "boba-testnet" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "BOBA",
+  "docsUrl": "https://docs.boba.network",
+  "genesis": {
+    "hash": "0x4d26ddc947c7cea924d5ef272c1a5ef40a1dce5ca2cbbaccad59d33f2505a30d",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "boba" } }
+}

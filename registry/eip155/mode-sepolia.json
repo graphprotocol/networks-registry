@@ -1,0 +1,33 @@
+{
+  "id": "mode-sepolia",
+  "shortName": "Mode Sepolia",
+  "fullName": "Mode Sepolia Testnet",
+  "aliases": ["evm-919", "mode-testnet"],
+  "caip2Id": "eip155:919",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://sepolia.explorer.mode.network"],
+  "rpcUrls": ["https://sepolia.mode.network"],
+  "apiUrls": [
+    { "url": "https://sepolia.explorer.mode.network/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "mode-mainnet" },
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.mode.network",
+  "genesis": {
+    "hash": "0x13c352562289a88ed33087a51b6b6c859a27709c8555c9def7cb9757c043acad",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "mode" } }
+}

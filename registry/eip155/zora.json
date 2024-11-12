@@ -14,7 +14,6 @@
     { "url": "https://explorer.zora.energy/api/v2", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
     "firehose": [
       { "provider": "pinax", "url": "zora.firehose.pinax.network:443" }
     ],
