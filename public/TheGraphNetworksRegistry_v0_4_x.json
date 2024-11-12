@@ -1,9 +1,9 @@
 {
-  "$schema": "https://graphregistry.pages.dev/TheGraphNetworksRegistrySchema_v0_4.json",
-  "version": "0.4.1",
+  "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_4.json",
+  "version": "0.4.2",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-12T00:47:54.137Z",
+  "updatedAt": "2024-11-12T16:57:24.533Z",
   "networks": [
     {
       "id": "mainnet",
@@ -352,9 +352,9 @@
       "fullName": "CLV Parachain",
       "aliases": [
         "clv-mainnet",
-        "evm-1024"
+        "evm-1023"
       ],
-      "caip2Id": "eip155:1024",
+      "caip2Id": "eip155:1023",
       "graphNode": {
         "protocol": "ethereum"
       },
@@ -1183,6 +1183,119 @@
       }
     },
     {
+      "id": "aurora-testnet",
+      "shortName": "Aurora",
+      "fullName": "Aurora Testnet",
+      "aliases": [
+        "evm-1313161555"
+      ],
+      "caip2Id": "eip155:1313161555",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.testnet.aurora.dev"
+      ],
+      "rpcUrls": [
+        "https://testnet.aurora.dev"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer.testnet.aurora.dev/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "aurora"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://doc.aurora.dev",
+      "genesis": {
+        "hash": "0x250d32dc5dc0113f25f82987daf09e1dc5a79b09e53e78d475728f71248767b0",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "aurora"
+        }
+      }
+    },
+    {
+      "id": "sei-atlantic",
+      "shortName": "Sei Atlantic",
+      "fullName": "Sei Atlantic Testnet",
+      "aliases": [
+        "sei-testnet",
+        "sei-atlantic2"
+      ],
+      "caip2Id": "eip155:1328",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://seitrace.com/?chain=atlantic-2"
+      ],
+      "rpcUrls": [
+        "https://evm-rpc-testnet.sei-apis.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://seitrace.com/atlantic-2/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "sei-mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "SEI",
+      "docsUrl": "https://docs.seitrace.com",
+      "genesis": {
+        "hash": "0xf9d3845df25b43b1c6926f3ceda6845c17f5624e12212fd8847d0ba01da1ab9e",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "sei-network"
+        }
+      }
+    },
+    {
       "id": "sei-mainnet",
       "shortName": "Sei",
       "fullName": "Sei Network",
@@ -1724,7 +1837,86 @@
       }
     },
     {
-      "id": "xlayer-testnet",
+      "id": "soneium-minato",
+      "shortName": "Soneium Minato",
+      "fullName": "Soneium Minato Testnet",
+      "aliases": [
+        "soneium-minato-testnet",
+        "soneium-testnet"
+      ],
+      "caip2Id": "eip155:1946",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://soneium-minato.blockscout.com"
+      ],
+      "rpcUrls": [
+        "https://rpc.minato.soneium.org",
+        "https://minato.rpc.pinax.network/v1/{PINAX_API_KEY}"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://soneium-minato.blockscout.com/api",
+          "kind": "etherscan"
+        }
+      ],
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "soneium-minato"
+        },
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ],
+        "sps": [
+          {
+            "provider": "e&n"
+          }
+        ],
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "minato.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "minato.substreams.pinax.network:443"
+          }
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://soneium.org/en/docs",
+      "genesis": {
+        "hash": "0x7ec49d93fa8f47c00e98cc5965cd3903a8faa9238743d2eba0e0550ab4c45c43",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "soneium"
+        }
+      }
+    },
+    {
+      "id": "xlayer-sepolia",
       "shortName": "XLayer",
       "fullName": "XLayer Testnet",
       "aliases": [
@@ -2421,6 +2613,12 @@
         ]
       },
       "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.mode.network",
@@ -2935,6 +3133,63 @@
       }
     },
     {
+      "id": "fuji",
+      "shortName": "Avalanche Fuji",
+      "fullName": "Avalanche Fuji Testnet",
+      "aliases": [
+        "evm-43113",
+        "avalanche-fuji"
+      ],
+      "caip2Id": "eip155:43113",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://testnet.snowscan.xyz"
+      ],
+      "rpcUrls": [
+        "https://api.avax-test.network/ext/bc/C/rpc"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api-testnet.snowtrace.io/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "avalanche"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "AVAX",
+      "docsUrl": "https://docs.avax.network",
+      "genesis": {
+        "hash": "0x738639479dc82d199365626f90caa82f7eafcfe9ed354b456fb3d294597ceb53",
+        "height": 1
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "avalanche"
+        }
+      }
+    },
+    {
       "id": "avalanche",
       "shortName": "Avalanche",
       "fullName": "Avalanche C-Chain",
@@ -3170,6 +3425,67 @@
       "icon": {
         "web3Icons": {
           "name": "neo-x"
+        }
+      }
+    },
+    {
+      "id": "scroll-sepolia",
+      "shortName": "Scroll Sepolia",
+      "fullName": "Scroll Sepolia Testnet",
+      "aliases": [
+        "evm-534351",
+        "scroll-testnet"
+      ],
+      "caip2Id": "eip155:534351",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://sepolia.scrollscan.com"
+      ],
+      "rpcUrls": [
+        "https://sepolia-rpc.scroll.io"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api-sepolia.scrollscan.com/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        },
+        {
+          "kind": "testnetOf",
+          "network": "scroll"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.scroll.io",
+      "genesis": {
+        "hash": "0xaa62d1a8b2bffa9e5d2368b63aae0d98d54928bd713125e3fd9e5c896c68592c",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "scroll"
         }
       }
     },
@@ -3616,11 +3932,6 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "provider": "e&n"
-          }
-        ],
         "firehose": [
           {
             "provider": "pinax",
@@ -3941,6 +4252,68 @@
       }
     },
     {
+      "id": "base-sepolia",
+      "shortName": "Base",
+      "fullName": "Base Sepolia Testnet",
+      "aliases": [
+        "evm-84532",
+        "base-testnet"
+      ],
+      "caip2Id": "eip155:84532",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://sepolia.basescan.org"
+      ],
+      "rpcUrls": [
+        "https://sepolia.base.org",
+        "https://base-sepolia-rpc.publicnode.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://base-sepolia.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "base"
+        },
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.base.org",
+      "genesis": {
+        "hash": "0x0dcc9e089e30b90ddfc55be9a37dd15bc551aeee999d2e2b51414c54eaf934e4",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "base"
+        }
+      }
+    },
+    {
       "id": "chiliz-testnet",
       "shortName": "Chiliz",
       "fullName": "Chiliz Spicy Testnet",
@@ -4050,6 +4423,67 @@
       }
     },
     {
+      "id": "mode-sepolia",
+      "shortName": "Mode Sepolia",
+      "fullName": "Mode Sepolia Testnet",
+      "aliases": [
+        "evm-919",
+        "mode-testnet"
+      ],
+      "caip2Id": "eip155:919",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://sepolia.explorer.mode.network"
+      ],
+      "rpcUrls": [
+        "https://sepolia.mode.network"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://sepolia.explorer.mode.network/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "mode-mainnet"
+        },
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.mode.network",
+      "genesis": {
+        "hash": "0x13c352562289a88ed33087a51b6b6c859a27709c8555c9def7cb9757c043acad",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "mode"
+        }
+      }
+    },
+    {
       "id": "chapel",
       "shortName": "BNB Chapel",
       "fullName": "BNB Smart Chain Chapel Testnet",
@@ -4117,6 +4551,67 @@
       "icon": {
         "web3Icons": {
           "name": "binance-smart-chain"
+        }
+      }
+    },
+    {
+      "id": "boba-bnb-testnet",
+      "shortName": "Boba BNB",
+      "fullName": "Boba BNB Testnet",
+      "aliases": [
+        "evm-9728",
+        "boba-bsc-testnet"
+      ],
+      "caip2Id": "eip155:9728",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://bnb.testnet.bobascan.com"
+      ],
+      "rpcUrls": [
+        "https://testnet.bnb.boba.network"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/9728/etherscan/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "boba-bnb"
+        },
+        {
+          "kind": "l2Of",
+          "network": "boba-testnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "BOBA",
+      "docsUrl": "https://docs.boba.network",
+      "genesis": {
+        "hash": "0x4d26ddc947c7cea924d5ef272c1a5ef40a1dce5ca2cbbaccad59d33f2505a30d",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "boba"
         }
       }
     },
