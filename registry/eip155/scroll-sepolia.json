@@ -1,0 +1,33 @@
+{
+  "id": "scroll-sepolia",
+  "shortName": "Scroll Sepolia",
+  "fullName": "Scroll Sepolia Testnet",
+  "aliases": ["evm-534351", "scroll-testnet"],
+  "caip2Id": "eip155:534351",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://sepolia.scrollscan.com"],
+  "rpcUrls": ["https://sepolia-rpc.scroll.io"],
+  "apiUrls": [
+    { "url": "https://api-sepolia.scrollscan.com/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "scroll" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.scroll.io",
+  "genesis": {
+    "hash": "0xaa62d1a8b2bffa9e5d2368b63aae0d98d54928bd713125e3fd9e5c896c68592c",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "scroll" } }
+}

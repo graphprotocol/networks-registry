@@ -1,0 +1,30 @@
+{
+  "id": "sei-atlantic",
+  "shortName": "Sei Atlantic",
+  "fullName": "Sei Atlantic Testnet",
+  "aliases": ["sei-testnet", "sei-atlantic2"],
+  "caip2Id": "eip155:1328",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://seitrace.com/?chain=atlantic-2"],
+  "rpcUrls": ["https://evm-rpc-testnet.sei-apis.com"],
+  "apiUrls": [
+    { "url": "https://seitrace.com/atlantic-2/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "sei-mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "SEI",
+  "docsUrl": "https://docs.seitrace.com",
+  "genesis": {
+    "hash": "0xf9d3845df25b43b1c6926f3ceda6845c17f5624e12212fd8847d0ba01da1ab9e",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "sei-network" } }
+}

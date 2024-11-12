@@ -24,6 +24,7 @@
     ]
   },
   "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.mode.network",

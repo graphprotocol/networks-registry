@@ -5,7 +5,8 @@ import { loadNetworks } from "./utils/fs";
 import packageInfo from "../package.json";
 import { getVersionFilenames } from "./utils/versions";
 
-const REGISTRY_ROOT_URL = "https://graphregistry.pages.dev";
+const REGISTRY_ROOT_URL =
+  process.env.REGISTRY_ROOT_URL ?? "https://graphregistry.pages.dev";
 
 function generateMermaidGraph(networks: Network[]): string {
   const relations = networks
