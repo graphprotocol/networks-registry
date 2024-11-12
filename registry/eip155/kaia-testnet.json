@@ -6,7 +6,7 @@
   "caip2Id": "eip155:1001",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://kairos.kaiascan.io"],
-  "rpcUrls": ["https://public-en.kairos.node.kaia.io"],
+  "rpcUrls": ["https://public-en-kairos.node.kaia.io"],
   "apiUrls": [],
   "services": { "subgraphs": [{ "provider": "e&n" }] },
   "networkType": "testnet",

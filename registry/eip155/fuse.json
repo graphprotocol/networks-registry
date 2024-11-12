@@ -8,12 +8,12 @@
   "explorerUrls": ["https://explorer.fuse.io"],
   "rpcUrls": [
     "https://rpc.fuse.io",
-    "https://fuse.rpc.pinax.network/v1/{PINAX_API_KEY}",
-    "https://fuse.drpc.org"
+    "https://fuse.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [{ "url": "https://explorer.fuse.io/api", "kind": "blockscout" }],
   "services": {
     "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
     "firehose": [
       { "provider": "pinax", "url": "fuse.firehose.pinax.network:443" }
     ],

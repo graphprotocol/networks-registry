@@ -14,6 +14,7 @@
   "apiUrls": [{ "url": "https://api.scrollscan.com/api", "kind": "etherscan" }],
   "services": {
     "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
     "firehose": [
       { "provider": "pinax", "url": "scroll.firehose.pinax.network:443" }
     ],

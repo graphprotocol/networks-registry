@@ -8,7 +8,7 @@
   "relations": [{ "kind": "evmOf", "network": "eos" }],
   "explorerUrls": ["https://explorer.evm.eosnetwork.com"],
   "rpcUrls": [
-    "https://explorer.evm.eosnetwork.com/api/eth-rpc",
+    "https://api.evm.eosnetwork.com",
     "https://eosevm.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
