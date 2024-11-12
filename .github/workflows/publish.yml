@@ -33,13 +33,19 @@ jobs:
       - name: Generate registry types
         run: bun generate:types
 
-      - name: Validate logic
+      - name: Check env variables
         run: |
+          if [ -z "${{ vars.REGISTRY_ROOT_URL }}" ]; then
+            echo "Error: REGISTRY_ROOT_URL is not set"
+            exit 1
+          fi
           if [ -z "${{ env.THEGRAPH_STUDIO_KEY }}" ]; then
             echo "Error: secrets.THEGRAPH_STUDIO_KEY is not set - can't validate networks"
             exit 1
           fi
-          bun validate:networks
+
+      - name: Validate logic
+        run: bun validate:networks
 
       - name: Generate registry
         run: bun generate:public
@@ -121,4 +127,4 @@ jobs:
 
     env:
       THEGRAPH_STUDIO_KEY: ${{ secrets.THEGRAPH_STUDIO_KEY }}
-      REGISTRY_ROOT_URL: "https://graphregistry.pages.dev"
+      REGISTRY_ROOT_URL: ${{ vars.REGISTRY_ROOT_URL }}
