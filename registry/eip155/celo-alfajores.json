@@ -5,11 +5,9 @@
   "aliases": ["evm-44787", "celo-testnet"],
   "caip2Id": "eip155:44787",
   "networkType": "testnet",
-  "relations": [
-    { "kind": "testnetOf", "network": "celo" }
-  ],
+  "relations": [{ "kind": "testnetOf", "network": "celo" }],
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://alfajores.celoscan.io/"],
+  "explorerUrls": ["https://alfajores.celoscan.io"],
   "rpcUrls": [
     "https://alfajores-forno.celo-testnet.org",
     "https://alfajores.rpc.pinax.network/v1/{PINAX_API_KEY}"
@@ -20,12 +18,10 @@
       "kind": "etherscan"
     }
   ],
-  "services": {
-    "subgraphs": [{ "provider": "e&n" }]
-  },
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
   "issuanceRewards": false,
   "nativeToken": "CELO",
-  "docsUrl": "https://docs.celo.org/",
+  "docsUrl": "https://docs.celo.org",
   "genesis": {
     "hash": "0xe423b034e7f0282c1b621f7bbc1cea4316a2a80b1600490769eae77777e4b67e",
     "height": 0

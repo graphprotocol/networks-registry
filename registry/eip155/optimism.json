@@ -7,7 +7,10 @@
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://optimistic.etherscan.io"],
-  "rpcUrls": ["https://mainnet.optimism.io", "https://optimism-rpc.publicnode.com"],
+  "rpcUrls": [
+    "https://mainnet.optimism.io",
+    "https://optimism-rpc.publicnode.com"
+  ],
   "apiUrls": [
     { "url": "https://optimism.abi.pinax.network/api", "kind": "etherscan" }
   ],
