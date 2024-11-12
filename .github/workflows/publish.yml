@@ -78,9 +78,9 @@ jobs:
         run: |
           PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
           if [ -z "$PREV_TAG" ]; then
-            CHANGELOG=$(git log --pretty=format:"- %s (@%an) [%h](https://github.com/$GITHUB_REPOSITORY/commit/%H)" --no-merges)
+            CHANGELOG=$(git log --pretty=format:"- %s (%an) [%h](https://github.com/$GITHUB_REPOSITORY/commit/%H)" --no-merges)
           else
-            CHANGELOG=$(git log --pretty=format:"- %s (@%an) [%h](https://github.com/$GITHUB_REPOSITORY/commit/%H)" --no-merges ${PREV_TAG}..HEAD)
+            CHANGELOG=$(git log --pretty=format:"- %s (%an) [%h](https://github.com/$GITHUB_REPOSITORY/commit/%H)" --no-merges ${PREV_TAG}..HEAD)
           fi
           echo "CHANGELOG<<EOF" >> $GITHUB_ENV
           echo "$CHANGELOG" >> $GITHUB_ENV
