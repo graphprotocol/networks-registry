@@ -1,0 +1,36 @@
+{
+  "id": "base-sepolia",
+  "shortName": "Base",
+  "fullName": "Base Sepolia Testnet",
+  "aliases": ["evm-84532", "base-testnet"],
+  "caip2Id": "eip155:84532",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://sepolia.basescan.org"],
+  "rpcUrls": [
+    "https://sepolia.base.org",
+    "https://base-sepolia-rpc.publicnode.com"
+  ],
+  "apiUrls": [
+    { "url": "https://base-sepolia.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "base" },
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.base.org",
+  "genesis": {
+    "hash": "0x0dcc9e089e30b90ddfc55be9a37dd15bc551aeee999d2e2b51414c54eaf934e4",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "base" } }
+}

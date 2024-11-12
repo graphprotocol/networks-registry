@@ -1,0 +1,30 @@
+{
+  "id": "aurora-testnet",
+  "shortName": "Aurora",
+  "fullName": "Aurora Testnet",
+  "aliases": ["evm-1313161555"],
+  "caip2Id": "eip155:1313161555",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.testnet.aurora.dev"],
+  "rpcUrls": ["https://testnet.aurora.dev"],
+  "apiUrls": [
+    { "url": "https://explorer.testnet.aurora.dev/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "aurora" }],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://doc.aurora.dev",
+  "genesis": {
+    "hash": "0x250d32dc5dc0113f25f82987daf09e1dc5a79b09e53e78d475728f71248767b0",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "aurora" } }
+}
