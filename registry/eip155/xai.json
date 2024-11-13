@@ -10,7 +10,9 @@
     "https://xai-chain.net/rpc",
     "https://xai.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
-  "apiUrls": [],
+  "apiUrls": [
+    { "url": "https://explorer.xai-chain.net/api", "kind": "etherscan" }
+  ],
   "services": {
     "firehose": [
       { "provider": "pinax", "url": "xai.firehose.pinax.network:443" }
@@ -20,6 +22,7 @@
     ]
   },
   "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "arbitrum-one" }],
   "issuanceRewards": false,
   "nativeToken": "XAI",
   "docsUrl": "https://docs.x.ai/docs",

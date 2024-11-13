@@ -8,10 +8,11 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://arbiscan.io"],
   "rpcUrls": [
+    "https://arbitrum-one.publicnode.com",
+    "https://arb1.arbitrum.io/rpc",
     "https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}",
     "https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}",
-    "https://arbone.rpc.pinax.network/v1/{PINAX_API_KEY}",
-    "https://arb1.arbitrum.io/rpc"
+    "https://arbone.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
     { "url": "https://arbitrum-one.abi.pinax.network/api", "kind": "etherscan" }
