@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_5.json",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-13T04:59:08.671Z",
+  "updatedAt": "2024-11-13T23:20:25.497Z",
   "networks": [
     {
       "id": "mainnet",
@@ -119,7 +119,8 @@
       ],
       "rpcUrls": [
         "https://mainnet.optimism.io",
-        "https://optimism-rpc.publicnode.com"
+        "https://optimism-rpc.publicnode.com",
+        "https://optimism.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -142,12 +143,20 @@
           {
             "provider": "streamingfast",
             "url": "opt-mainnet.streamingfast.io:443"
+          },
+          {
+            "provider": "pinax",
+            "url": "optimism.firehose.pinax.network:443"
           }
         ],
         "substreams": [
           {
             "provider": "streamingfast",
             "url": "opt-mainnet.streamingfast.io:443"
+          },
+          {
+            "provider": "pinax",
+            "url": "optimism.substreams.pinax.network:443"
           }
         ]
       },
@@ -1607,7 +1616,8 @@
         "https://explorer.gravity.xyz"
       ],
       "rpcUrls": [
-        "https://rpc.gravity.xyz"
+        "https://rpc.gravity.xyz",
+        "https://gravity.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -1619,6 +1629,18 @@
         "subgraphs": [
           {
             "provider": "e&n"
+          }
+        ],
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "gravity.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "gravity.substreams.pinax.network:443"
           }
         ]
       },
@@ -1995,13 +2017,26 @@
         "https://www.oklink.com/xlayer"
       ],
       "rpcUrls": [
-        "https://rpc.xlayer.tech"
+        "https://rpc.xlayer.tech",
+        "https://xlayer.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [],
       "services": {
         "subgraphs": [
           {
             "provider": "e&n"
+          }
+        ],
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "xlayer.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "xlayer.substreams.pinax.network:443"
           }
         ]
       },
@@ -2024,6 +2059,67 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      }
+    },
+    {
+      "id": "bnb-op",
+      "shortName": "opBNB",
+      "fullName": "opBNB Mainnet",
+      "aliases": [
+        "evm-204",
+        "opbnb",
+        "bsc-op"
+      ],
+      "caip2Id": "eip155:204",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "bsc"
+        }
+      ],
+      "explorerUrls": [
+        "https://opbnbscan.com"
+      ],
+      "rpcUrls": [
+        "https://opbnb-mainnet-rpc.bnbchain.org",
+        "https://opbnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
+      ],
+      "apiUrls": [],
+      "services": {
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "opbnb.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "opbnb.substreams.pinax.network:443"
+          }
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "BNB",
+      "docsUrl": "https://docs.bnbchain.org/bnb-opbnb",
+      "genesis": {
+        "hash": "0x4dd61178c8b0f01670c231597e7bcb368e84545acd46d940a896d6a791dd6df4",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "binance-smart-chain"
+        }
       }
     },
     {
@@ -2178,6 +2274,18 @@
         "subgraphs": [
           {
             "provider": "e&n"
+          }
+        ],
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "fantom.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "fantom.substreams.pinax.network:443"
           }
         ]
       },
@@ -3173,7 +3281,8 @@
         "https://testnet.snowscan.xyz"
       ],
       "rpcUrls": [
-        "https://api.avax-test.network/ext/bc/C/rpc"
+        "https://api.avax-test.network/ext/bc/C/rpc",
+        "https://fuji.rpc.pinax.network/v1/{PINAX_API_KEY}/ext/bc/C/rpc"
       ],
       "apiUrls": [
         {
@@ -3232,7 +3341,7 @@
       ],
       "rpcUrls": [
         "https://api.avax.network/ext/bc/C/rpc",
-        "https://avalanche.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://avalanche.rpc.pinax.network/v1/{PINAX_API_KEY}/ext/bc/C/rpc",
         "https://avalanche-c-chain-rpc.publicnode.com"
       ],
       "apiUrls": [
@@ -3477,7 +3586,8 @@
         "https://sepolia.scrollscan.com"
       ],
       "rpcUrls": [
-        "https://sepolia-rpc.scroll.io"
+        "https://sepolia-rpc.scroll.io",
+        "https://scrsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -3489,6 +3599,18 @@
         "subgraphs": [
           {
             "provider": "e&n"
+          }
+        ],
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "scrsepolia.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "scrsepolia.substreams.pinax.network:443"
           }
         ]
       },
@@ -3708,7 +3830,8 @@
       ],
       "rpcUrls": [
         "https://bnb.boba.network",
-        "https://boba-bnb.gateway.tenderly.co"
+        "https://boba-bnb.gateway.tenderly.co",
+        "https://bobabnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -3720,6 +3843,18 @@
         "subgraphs": [
           {
             "provider": "e&n"
+          }
+        ],
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "bobabnb.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "bobabnb.substreams.pinax.network:443"
           }
         ]
       },
@@ -4232,7 +4367,8 @@
       ],
       "rpcUrls": [
         "https://mainnet.base.org",
-        "https://base-rpc.publicnode.com"
+        "https://base-rpc.publicnode.com",
+        "https://base.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -4322,7 +4458,8 @@
       ],
       "rpcUrls": [
         "https://sepolia.base.org",
-        "https://base-sepolia-rpc.publicnode.com"
+        "https://base-sepolia-rpc.publicnode.com",
+        "https://basesepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -4334,6 +4471,18 @@
         "subgraphs": [
           {
             "provider": "e&n"
+          }
+        ],
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "basesepolia.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "basesepolia.substreams.pinax.network:443"
           }
         ]
       },
@@ -4442,7 +4591,8 @@
       ],
       "rpcUrls": [
         "https://rpc.chiliz.com",
-        "https://rpc.ankr.com/chiliz"
+        "https://rpc.ankr.com/chiliz",
+        "https://chiliz.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -5962,11 +6112,25 @@
         "https://sepolia.starkscan.co"
       ],
       "rpcUrls": [
-        "https://starknet-sepolia.public.blastapi.io"
+        "https://starknet-sepolia.public.blastapi.io",
+        "https://starksepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [],
       "networkType": "testnet",
-      "services": {},
+      "services": {
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "starksepolia.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "starksepolia.substreams.pinax.network:443"
+          }
+        ]
+      },
       "issuanceRewards": false,
       "nativeToken": "STRK",
       "docsUrl": "https://docs.starknet.io",
