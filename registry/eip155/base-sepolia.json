@@ -9,12 +9,21 @@
   "explorerUrls": ["https://sepolia.basescan.org"],
   "rpcUrls": [
     "https://sepolia.base.org",
-    "https://base-sepolia-rpc.publicnode.com"
+    "https://base-sepolia-rpc.publicnode.com",
+    "https://basesepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
     { "url": "https://base-sepolia.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "basesepolia.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "basesepolia.substreams.pinax.network:443" }
+    ]
+  },
   "networkType": "testnet",
   "relations": [
     { "kind": "testnetOf", "network": "base" },

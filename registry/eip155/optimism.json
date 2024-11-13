@@ -9,7 +9,8 @@
   "explorerUrls": ["https://optimistic.etherscan.io"],
   "rpcUrls": [
     "https://mainnet.optimism.io",
-    "https://optimism-rpc.publicnode.com"
+    "https://optimism-rpc.publicnode.com",
+    "https://optimism.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
     { "url": "https://optimism.abi.pinax.network/api", "kind": "etherscan" }
@@ -18,10 +19,18 @@
     "subgraphs": [{ "provider": "e&n" }],
     "sps": [{ "provider": "e&n" }],
     "firehose": [
-      { "provider": "streamingfast", "url": "opt-mainnet.streamingfast.io:443" }
+      {
+        "provider": "streamingfast",
+        "url": "opt-mainnet.streamingfast.io:443"
+      },
+      { "provider": "pinax", "url": "optimism.firehose.pinax.network:443" }
     ],
     "substreams": [
-      { "provider": "streamingfast", "url": "opt-mainnet.streamingfast.io:443" }
+      {
+        "provider": "streamingfast",
+        "url": "opt-mainnet.streamingfast.io:443"
+      },
+      { "provider": "pinax", "url": "optimism.substreams.pinax.network:443" }
     ]
   },
   "networkType": "mainnet",

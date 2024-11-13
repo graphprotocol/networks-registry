@@ -6,9 +6,20 @@
   "caip2Id": "eip155:196",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://www.oklink.com/xlayer"],
-  "rpcUrls": ["https://rpc.xlayer.tech"],
+  "rpcUrls": [
+    "https://rpc.xlayer.tech",
+    "https://xlayer.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
   "apiUrls": [],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "xlayer.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "xlayer.substreams.pinax.network:443" }
+    ]
+  },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
