@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_4.json",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-12T16:57:24.533Z",
+  "updatedAt": "2024-11-13T01:35:50.168Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2800,10 +2800,11 @@
         "https://arbiscan.io"
       ],
       "rpcUrls": [
+        "https://arbitrum-one.publicnode.com",
+        "https://arb1.arbitrum.io/rpc",
         "https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}",
         "https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}",
-        "https://arbone.rpc.pinax.network/v1/{PINAX_API_KEY}",
-        "https://arb1.arbitrum.io/rpc"
+        "https://arbone.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -3324,6 +3325,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "celo"
+        }
       }
     },
     {
@@ -3872,7 +3878,12 @@
         "https://xai-chain.net/rpc",
         "https://xai.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
-      "apiUrls": [],
+      "apiUrls": [
+        {
+          "url": "https://explorer.xai-chain.net/api",
+          "kind": "etherscan"
+        }
+      ],
       "services": {
         "firehose": [
           {
@@ -3888,6 +3899,12 @@
         ]
       },
       "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "arbitrum-one"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "XAI",
       "docsUrl": "https://docs.x.ai/docs",
@@ -4226,6 +4243,12 @@
         ]
       },
       "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
       "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.base.org",
