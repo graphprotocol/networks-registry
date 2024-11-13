@@ -1,6 +1,7 @@
 {
   "id": "gnosis-chiado",
-  "shortName": "Gnosis Chiado",
+  "shortName": "Gnosis",
+  "secondName": "Chiado",
   "fullName": "Gnosis Chiado Testnet",
   "aliases": ["chiado"],
   "caip2Id": "eip155:10200",

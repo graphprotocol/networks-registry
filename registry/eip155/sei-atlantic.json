@@ -1,6 +1,7 @@
 {
   "id": "sei-atlantic",
-  "shortName": "Sei Atlantic",
+  "shortName": "Sei",
+  "secondName": "Atlantic",
   "fullName": "Sei Atlantic Testnet",
   "aliases": ["sei-testnet", "sei-atlantic2"],
   "caip2Id": "eip155:1328",

@@ -1,6 +1,7 @@
 {
   "id": "fantom",
   "shortName": "Fantom",
+  "secondName": "Opera",
   "fullName": "Fantom Opera Mainnet",
   "aliases": ["evm-250", "fantom-mainnet", "fantom-opera"],
   "caip2Id": "eip155:250",

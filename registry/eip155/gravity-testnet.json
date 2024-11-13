@@ -1,6 +1,7 @@
 {
   "id": "gravity-testnet",
-  "shortName": "Gravity Sepolia",
+  "shortName": "Gravity",
+  "secondName": "Sepolia",
   "fullName": "Gravity Sepolia Testnet",
   "aliases": ["gravity-sepolia"],
   "caip2Id": "eip155:13505",

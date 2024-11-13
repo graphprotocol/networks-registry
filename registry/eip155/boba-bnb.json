@@ -1,6 +1,7 @@
 {
   "id": "boba-bnb",
-  "shortName": "Boba BNB",
+  "shortName": "Boba",
+  "secondName": "BNB",
   "fullName": "Boba BNB Mainnet",
   "aliases": ["evm-56288", "boba-bsc"],
   "caip2Id": "eip155:56288",

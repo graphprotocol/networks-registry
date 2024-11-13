@@ -1,6 +1,7 @@
 {
   "id": "mode-sepolia",
-  "shortName": "Mode Sepolia",
+  "shortName": "Mode",
+  "secondName": "Sepolia",
   "fullName": "Mode Sepolia Testnet",
   "aliases": ["evm-919", "mode-testnet"],
   "caip2Id": "eip155:919",

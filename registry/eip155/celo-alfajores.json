@@ -1,6 +1,7 @@
 {
   "id": "celo-alfajores",
-  "shortName": "Celo Alfajores",
+  "shortName": "Celo",
+  "secondName": "Alfajores",
   "fullName": "Celo Alfajores Testnet",
   "aliases": ["evm-44787", "celo-testnet"],
   "caip2Id": "eip155:44787",

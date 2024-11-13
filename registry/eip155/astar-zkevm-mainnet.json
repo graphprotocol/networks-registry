@@ -1,6 +1,7 @@
 {
   "id": "astar-zkevm-mainnet",
-  "shortName": "Astar zkEVM",
+  "shortName": "Astar",
+  "secondName": "zkEVM",
   "fullName": "Astar zkEVM Mainnet",
   "aliases": ["evm-3776", "astar", "astar-zkevm"],
   "caip2Id": "eip155:3776",

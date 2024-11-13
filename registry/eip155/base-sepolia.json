@@ -1,6 +1,7 @@
 {
   "id": "base-sepolia",
   "shortName": "Base",
+  "secondName": "Sepolia",
   "fullName": "Base Sepolia Testnet",
   "aliases": ["evm-84532", "base-testnet"],
   "caip2Id": "eip155:84532",

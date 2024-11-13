@@ -1,6 +1,7 @@
 {
   "id": "jungle4-evm",
-  "shortName": "Jungle4 EVM",
+  "shortName": "EOS EVM",
+  "secondName": "Jungle4",
   "fullName": "EOS Jungle4 EVM Testnet",
   "aliases": ["jungle4-evm-testnet", "eos-evm-testnet", "evm-15557"],
   "caip2Id": "eip155:15557",

@@ -1,0 +1,35 @@
+{
+  "id": "solana-devnet",
+  "shortName": "Solana",
+  "fullName": "Solana Devnet",
+  "aliases": [],
+  "caip2Id": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+  "explorerUrls": ["https://explorer.solana.com/?cluster=devnet"],
+  "rpcUrls": ["https://api.devnet.solana.com"],
+  "apiUrls": [],
+  "networkType": "devnet",
+  "relations": [{ "kind": "testnetOf", "network": "solana-mainnet-beta" }],
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "sps": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "streamingfast", "url": "devnet.sol.streamingfast.io:443" }
+    ],
+    "substreams": [
+      { "provider": "streamingfast", "url": "devnet.sol.streamingfast.io:443" }
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "SOL",
+  "docsUrl": "https://solana.com/docs",
+  "genesis": {
+    "hash": "4D2M7ehkYzBJNsL9GYvQXKj7sFaJGGyZMvK5hC8BQvS8",
+    "height": 300000000
+  },
+  "firehose": {
+    "blockType": "sf.solana.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-solana",
+    "bytesEncoding": "base58"
+  },
+  "icon": { "web3Icons": { "name": "solana" } }
+}

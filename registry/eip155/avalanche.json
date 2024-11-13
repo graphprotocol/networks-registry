@@ -1,6 +1,7 @@
 {
   "id": "avalanche",
   "shortName": "Avalanche",
+  "secondName": "C-Chain",
   "fullName": "Avalanche C-Chain",
   "aliases": ["evm-43114", "avalanche-mainnet"],
   "caip2Id": "eip155:43114",

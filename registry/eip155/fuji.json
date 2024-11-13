@@ -1,6 +1,7 @@
 {
   "id": "fuji",
-  "shortName": "Avalanche Fuji",
+  "shortName": "Avalanche",
+  "secondName": "Fuji",
   "fullName": "Avalanche Fuji Testnet",
   "aliases": ["evm-43113", "avalanche-fuji"],
   "caip2Id": "eip155:43113",

@@ -1,6 +1,7 @@
 {
   "id": "gravity-mainnet",
   "shortName": "Gravity",
+  "secondName": "Alpha",
   "fullName": "Gravity Alpha Mainnet",
   "aliases": ["gravity"],
   "caip2Id": "eip155:1625",

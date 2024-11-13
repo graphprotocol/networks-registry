@@ -1,6 +1,7 @@
 {
   "id": "arbitrum-sepolia",
-  "shortName": "Arbitrum Sepolia",
+  "shortName": "Arbitrum",
+  "secondName": "Sepolia",
   "fullName": "Arbitrum Sepolia Testnet",
   "aliases": ["evm-421614"],
   "caip2Id": "eip155:421614",

@@ -50,6 +50,10 @@
           "type": "string",
           "description": "Short display name of the network, i.e. Ethereum, BNB"
         },
+        "secondName": {
+          "type": "string",
+          "description": "Second display name of the network, i.e. Sepolia, Nova"
+        },
         "fullName": {
           "type": "string",
           "description": "Display name of the network, i.e. Ethereum Mainnet, Bitcoin Testnet"
