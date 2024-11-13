@@ -7,11 +7,22 @@
   "caip2Id": "eip155:1625",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.gravity.xyz"],
-  "rpcUrls": ["https://rpc.gravity.xyz"],
+  "rpcUrls": [
+    "https://rpc.gravity.xyz",
+    "https://gravity.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
   "apiUrls": [
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "gravity.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "gravity.substreams.pinax.network:443" }
+    ]
+  },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

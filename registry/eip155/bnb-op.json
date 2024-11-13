@@ -1,0 +1,38 @@
+{
+  "id": "bnb-op",
+  "shortName": "opBNB",
+  "fullName": "opBNB Mainnet",
+  "aliases": ["evm-204", "opbnb", "bsc-op"],
+  "caip2Id": "eip155:204",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [{ "kind": "l2Of", "network": "bsc" }],
+  "explorerUrls": ["https://opbnbscan.com"],
+  "rpcUrls": [
+    "https://opbnb-mainnet-rpc.bnbchain.org",
+    "https://opbnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [],
+  "services": {
+    "firehose": [
+      { "provider": "pinax", "url": "opbnb.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "opbnb.substreams.pinax.network:443" }
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "BNB",
+  "docsUrl": "https://docs.bnbchain.org/bnb-opbnb",
+  "genesis": {
+    "hash": "0x4dd61178c8b0f01670c231597e7bcb368e84545acd46d940a896d6a791dd6df4",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "binance-smart-chain" } }
+}

@@ -9,7 +9,8 @@
   "explorerUrls": ["https://bnb.bobascan.com"],
   "rpcUrls": [
     "https://bnb.boba.network",
-    "https://boba-bnb.gateway.tenderly.co"
+    "https://boba-bnb.gateway.tenderly.co",
+    "https://bobabnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
     {
@@ -17,7 +18,15 @@
       "kind": "etherscan"
     }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "bobabnb.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "bobabnb.substreams.pinax.network:443" }
+    ]
+  },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "bsc" }],
   "issuanceRewards": true,
