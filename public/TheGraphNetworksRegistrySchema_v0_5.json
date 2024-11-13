@@ -1,0 +1,304 @@
+{
+  "$id": "https://thegraph.com/schemas/registry.schema.json",
+  "$schema": "http://json-schema.org/schema#",
+  "title": "The Graph networks registry schema",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 10,
+      "format": "uri",
+      "description": "Reference to this schema file"
+    },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Version of the registry"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date and time of the last update"
+    },
+    "networks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Network" },
+      "description": "List of networks"
+    }
+  },
+  "required": [
+    "networks",
+    "title",
+    "description",
+    "updatedAt",
+    "version",
+    "$schema"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "Network": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(?!-)[a-z0-9-]{3,}(?<!-)$",
+          "description": "Established name of the chain on the Graph network, i.e. mainnet, btc, arweave-mainnet, near-testnet"
+        },
+        "shortName": {
+          "type": "string",
+          "description": "Short display name of the network, i.e. Ethereum, BNB"
+        },
+        "secondName": {
+          "type": "string",
+          "description": "Second display name of the network, i.e. Sepolia, Nova"
+        },
+        "fullName": {
+          "type": "string",
+          "description": "Display name of the network, i.e. Ethereum Mainnet, Bitcoin Testnet"
+        },
+        "caip2Id": {
+          "type": "string",
+          "pattern": "^[-a-z0-9]{3,8}:[-_a-zA-Z0-9]{1,32}$",
+          "description": "CAIP-2 Chain ID, i.e. eip155:1, bip122:000000000019d6689c085ae165831e93"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(?!-)[a-z0-9-]{3,}(?<!-)$"
+          },
+          "description": "[optional] List of possible aliases for the chain id, i.e. ethereum, eth, mainnet, eth-mainnet"
+        },
+        "networkType": {
+          "type": "string",
+          "enum": ["mainnet", "testnet", "devnet"],
+          "description": "Whether the chain is a mainnet/testnet/devnet"
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "testnetOf",
+                  "beaconOf",
+                  "forkedFrom",
+                  "l2Of",
+                  "shardOf",
+                  "evmOf",
+                  "other"
+                ],
+                "description": "Kind of relation"
+              },
+              "network": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$",
+                "description": "Id of the related network, i.e. mainnet, near-mainnet"
+              }
+            },
+            "required": ["kind", "network"],
+            "additionalProperties": false
+          }
+        },
+        "firehose": {
+          "type": "object",
+          "properties": {
+            "blockType": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9.]+$",
+              "description": "Block type, i.e. sf.ethereum.type.v2.Block"
+            },
+            "bytesEncoding": {
+              "type": "string",
+              "enum": ["hex", "0xhex", "base58"],
+              "description": "Bytes encoding, i.e. hex, 0xhex, base58"
+            },
+            "bufUrl": {
+              "type": "string",
+              "format": "uri",
+              "description": "Protobuf definitions on buf.build, i.e. https://buf.build/streamingfast/firehose-ethereum"
+            },
+            "evmExtendedModel": {
+              "type": "boolean",
+              "description": "[optional] Whether supports extended block model if EVM chain"
+            }
+          },
+          "required": ["blockType", "bytesEncoding", "bufUrl"],
+          "additionalProperties": false,
+          "description": "Firehose block information"
+        },
+        "genesis": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "description": "Hash of the genesis block either in 0x-prefixed hex or base58",
+              "pattern": "^(0x[a-fA-F0-9]+|[1-9A-HJ-NP-Za-km-z]+)$"
+            },
+            "height": {
+              "type": "integer",
+              "description": "Block height of the genesis or the first available block",
+              "minimum": 0
+            }
+          },
+          "required": ["hash", "height"],
+          "additionalProperties": false
+        },
+        "nativeToken": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9]+$",
+          "description": "Symbol of the native token"
+        },
+        "graphNode": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "protocol": {
+              "type": "string",
+              "enum": ["ethereum", "near", "arweave", "cosmos", "starknet"],
+              "description": "[optional] Protocol name in graph-node, i.e. ethereum, near, arweave"
+            }
+          }
+        },
+        "explorerUrls": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" },
+          "description": "URLs for the block explorers"
+        },
+        "services": {
+          "type": "object",
+          "properties": {
+            "subgraphs": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/Network/$defs/Service" }
+            },
+            "sps": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/Network/$defs/Service" }
+            },
+            "firehose": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/Network/$defs/Service" }
+            },
+            "substreams": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/Network/$defs/Service" }
+            }
+          },
+          "additionalProperties": false,
+          "description": "Providers support for the chain by providers"
+        },
+        "issuanceRewards": {
+          "type": "boolean",
+          "description": "Issuance rewards on the Graph Network for this chain"
+        },
+        "icon": {
+          "type": "object",
+          "properties": {
+            "web3Icons": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+                "variants": {
+                  "type": "array",
+                  "items": { "type": "string", "pattern": "^(mono|branded)$" },
+                  "uniqueItems": true,
+                  "description": "Variants of the icon, if none specified - all are available"
+                }
+              },
+              "required": ["name"],
+              "additionalProperties": false,
+              "description": "Web3Icons icon - see https://github.com/0xa3k5/web3icons"
+            }
+          },
+          "additionalProperties": false,
+          "description": "Icons for the chain"
+        },
+        "rpcUrls": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri-template" },
+          "description": "List of RPC URLs for the chain. Use {CUSTOM_API_KEY} as a placeholder for a private API key"
+        },
+        "apiUrls": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": { "type": "string", "format": "uri-template" },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "etherscan",
+                  "blockscout",
+                  "ethplorer",
+                  "subscan",
+                  "other"
+                ]
+              }
+            },
+            "required": ["url", "kind"],
+            "additionalProperties": false
+          },
+          "description": "List of API URLs for the chain, i.e. https://api.etherscan.io/api. Use {CUSTOM_API_KEY} as a placeholder for a private API key"
+        },
+        "docsUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the chain documentation"
+        },
+        "indexerDocsUrls": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": { "type": "string", "format": "url" },
+              "kind": {
+                "type": "string",
+                "enum": ["rpc", "firehose", "other"]
+              },
+              "hint": { "type": "string" }
+            },
+            "required": ["url", "kind"],
+            "additionalProperties": false
+          },
+          "description": "Documentation to run indexer components for the chain"
+        }
+      },
+      "required": [
+        "id",
+        "caip2Id",
+        "shortName",
+        "fullName",
+        "networkType",
+        "services",
+        "issuanceRewards"
+      ],
+      "additionalProperties": false,
+      "$defs": {
+        "Service": {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "type": "string",
+              "enum": [
+                "e&n",
+                "pinax",
+                "graphops",
+                "streamingfast",
+                "messari",
+                "semiotic"
+              ]
+            },
+            "url": { "type": "string", "format": "uri" }
+          },
+          "required": ["provider"],
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
-  "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_4.json",
-  "version": "0.4.3",
+  "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_5.json",
+  "version": "0.5.0",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-13T01:35:50.168Z",
+  "updatedAt": "2024-11-13T04:59:08.671Z",
   "networks": [
     {
       "id": "mainnet",
@@ -241,7 +241,8 @@
     {
       "id": "kaia-testnet",
       "shortName": "Kaia",
-      "fullName": "Kaia Testnet Kairos",
+      "secondName": "Kairos",
+      "fullName": "Kaia Kairos Testnet",
       "aliases": [
         "evm-1001"
       ],
@@ -291,7 +292,8 @@
     },
     {
       "id": "gnosis-chiado",
-      "shortName": "Gnosis Chiado",
+      "shortName": "Gnosis",
+      "secondName": "Chiado",
       "fullName": "Gnosis Chiado Testnet",
       "aliases": [
         "chiado"
@@ -399,7 +401,8 @@
     },
     {
       "id": "polygon-zkevm",
-      "shortName": "Polygon zkEVM",
+      "shortName": "Polygon",
+      "secondName": "zkEVM",
       "fullName": "Polygon zkEVM Mainnet",
       "aliases": [],
       "caip2Id": "eip155:1101",
@@ -471,8 +474,9 @@
     },
     {
       "id": "sepolia",
-      "shortName": "Ethereum Sepolia",
-      "fullName": "Ethereum Seepolia Testnet",
+      "shortName": "Ethereum",
+      "secondName": "Sepolia",
+      "fullName": "Ethereum Sepolia Testnet",
       "aliases": [
         "evm-11155111"
       ],
@@ -555,7 +559,8 @@
     },
     {
       "id": "optimism-sepolia",
-      "shortName": "Optimism Sepolia",
+      "shortName": "Optimism",
+      "secondName": "Sepolia",
       "fullName": "OP Sepolia Testnet",
       "aliases": [
         "op-sepolia",
@@ -1003,7 +1008,8 @@
     },
     {
       "id": "mbase",
-      "shortName": "Moonbase Alpha",
+      "shortName": "Moonbase",
+      "secondName": "Alpha",
       "fullName": "Moonbase Alpha Testnet",
       "aliases": [
         "evm-1287",
@@ -1060,7 +1066,8 @@
     },
     {
       "id": "unichain-testnet",
-      "shortName": "Unichain Sepolia",
+      "shortName": "Unichain",
+      "secondName": "Sepolia",
       "fullName": "Unichain Sepolia Testnet",
       "aliases": [
         "evm-1301"
@@ -1240,7 +1247,8 @@
     },
     {
       "id": "sei-atlantic",
-      "shortName": "Sei Atlantic",
+      "shortName": "Sei",
+      "secondName": "Atlantic",
       "fullName": "Sei Atlantic Testnet",
       "aliases": [
         "sei-testnet",
@@ -1360,7 +1368,8 @@
     },
     {
       "id": "gravity-testnet",
-      "shortName": "Gravity Sepolia",
+      "shortName": "Gravity",
+      "secondName": "Sepolia",
       "fullName": "Gravity Sepolia Testnet",
       "aliases": [
         "gravity-sepolia"
@@ -1510,7 +1519,8 @@
     },
     {
       "id": "jungle4-evm",
-      "shortName": "Jungle4 EVM",
+      "shortName": "EOS EVM",
+      "secondName": "Jungle4",
       "fullName": "EOS Jungle4 EVM Testnet",
       "aliases": [
         "jungle4-evm-testnet",
@@ -1584,6 +1594,7 @@
     {
       "id": "gravity-mainnet",
       "shortName": "Gravity",
+      "secondName": "Alpha",
       "fullName": "Gravity Alpha Mainnet",
       "aliases": [
         "gravity"
@@ -1690,7 +1701,8 @@
     },
     {
       "id": "holesky",
-      "shortName": "Holesky",
+      "shortName": "Ethereum",
+      "secondName": "Holesky",
       "fullName": "Ethereum Holesky Testnet",
       "aliases": [
         "evm-17000"
@@ -1838,7 +1850,8 @@
     },
     {
       "id": "soneium-minato",
-      "shortName": "Soneium Minato",
+      "shortName": "Soneium",
+      "secondName": "Minato",
       "fullName": "Soneium Minato Testnet",
       "aliases": [
         "soneium-minato-testnet",
@@ -1918,6 +1931,7 @@
     {
       "id": "xlayer-sepolia",
       "shortName": "XLayer",
+      "secondName": "Sepolia",
       "fullName": "XLayer Testnet",
       "aliases": [
         "evm-195"
@@ -2014,7 +2028,8 @@
     },
     {
       "id": "blast-testnet",
-      "shortName": "Blast Sepolia",
+      "shortName": "Blast",
+      "secondName": "Sepolia",
       "fullName": "Blast Sepolia Testnet",
       "aliases": [
         "evm-23888",
@@ -2135,6 +2150,7 @@
     {
       "id": "fantom",
       "shortName": "Fantom",
+      "secondName": "Opera",
       "fullName": "Fantom Opera Mainnet",
       "aliases": [
         "evm-250",
@@ -2263,7 +2279,8 @@
     },
     {
       "id": "boba-testnet",
-      "shortName": "Boba Sepolia",
+      "shortName": "Boba",
+      "secondName": "Sepolia",
       "fullName": "Boba Sepolia Testnet",
       "aliases": [
         "boba-sepolia"
@@ -2393,6 +2410,7 @@
     {
       "id": "zksync-era-sepolia",
       "shortName": "zkSync",
+      "secondName": "Sepolia",
       "fullName": "zkSync Sepolia Testnet",
       "aliases": [
         "evm-300",
@@ -2509,6 +2527,7 @@
     {
       "id": "zksync-era",
       "shortName": "zkSync",
+      "secondName": "Era",
       "fullName": "zkSync Mainnet",
       "aliases": [
         "evm-324",
@@ -2646,7 +2665,8 @@
     },
     {
       "id": "astar-zkevm-mainnet",
-      "shortName": "Astar zkEVM",
+      "shortName": "Astar",
+      "secondName": "zkEVM",
       "fullName": "Astar zkEVM Mainnet",
       "aliases": [
         "evm-3776",
@@ -2723,7 +2743,7 @@
     {
       "id": "fantom-testnet",
       "shortName": "Fantom",
-      "fullName": "Fantom Opera Testnet",
+      "fullName": "Fantom Testnet",
       "aliases": [
         "evm-4002"
       ],
@@ -2778,7 +2798,8 @@
     },
     {
       "id": "arbitrum-one",
-      "shortName": "Arbitrum One",
+      "shortName": "Arbitrum",
+      "secondName": "One",
       "fullName": "Arbitrum One Mainnet",
       "aliases": [
         "arbone",
@@ -2872,7 +2893,8 @@
     },
     {
       "id": "arbitrum-sepolia",
-      "shortName": "Arbitrum Sepolia",
+      "shortName": "Arbitrum",
+      "secondName": "Sepolia",
       "fullName": "Arbitrum Sepolia Testnet",
       "aliases": [
         "evm-421614"
@@ -2950,7 +2972,8 @@
     },
     {
       "id": "arbitrum-nova",
-      "shortName": "Arbitrum Nova",
+      "shortName": "Arbitrum",
+      "secondName": "Nova",
       "fullName": "Arbitrum Nova",
       "aliases": [
         "evm-42170",
@@ -3135,7 +3158,8 @@
     },
     {
       "id": "fuji",
-      "shortName": "Avalanche Fuji",
+      "shortName": "Avalanche",
+      "secondName": "Fuji",
       "fullName": "Avalanche Fuji Testnet",
       "aliases": [
         "evm-43113",
@@ -3193,6 +3217,7 @@
     {
       "id": "avalanche",
       "shortName": "Avalanche",
+      "secondName": "C-Chain",
       "fullName": "Avalanche C-Chain",
       "aliases": [
         "evm-43114",
@@ -3276,7 +3301,8 @@
     },
     {
       "id": "celo-alfajores",
-      "shortName": "Celo Alfajores",
+      "shortName": "Celo",
+      "secondName": "Alfajores",
       "fullName": "Celo Alfajores Testnet",
       "aliases": [
         "evm-44787",
@@ -3436,7 +3462,8 @@
     },
     {
       "id": "scroll-sepolia",
-      "shortName": "Scroll Sepolia",
+      "shortName": "Scroll",
+      "secondName": "Sepolia",
       "fullName": "Scroll Sepolia Testnet",
       "aliases": [
         "evm-534351",
@@ -3665,7 +3692,8 @@
     },
     {
       "id": "boba-bnb",
-      "shortName": "Boba BNB",
+      "shortName": "Boba",
+      "secondName": "BNB",
       "fullName": "Boba BNB Mainnet",
       "aliases": [
         "evm-56288",
@@ -3723,7 +3751,8 @@
     },
     {
       "id": "linea-sepolia",
-      "shortName": "Linea Sepolia",
+      "shortName": "Linea",
+      "secondName": "Sepolia",
       "fullName": "Linea Sepolia Testnet",
       "aliases": [
         "evm-59141",
@@ -3985,7 +4014,8 @@
     },
     {
       "id": "polygon-amoy",
-      "shortName": "Amoy",
+      "shortName": "Polygon",
+      "secondName": "Amoy",
       "fullName": "Polygon Amoy Testnet",
       "aliases": [
         "amoy-testnet",
@@ -4277,6 +4307,7 @@
     {
       "id": "base-sepolia",
       "shortName": "Base",
+      "secondName": "Sepolia",
       "fullName": "Base Sepolia Testnet",
       "aliases": [
         "evm-84532",
@@ -4339,6 +4370,7 @@
     {
       "id": "chiliz-testnet",
       "shortName": "Chiliz",
+      "secondName": "Spicy",
       "fullName": "Chiliz Spicy Testnet",
       "aliases": [
         "chiliz-spicy-testnet",
@@ -4447,7 +4479,8 @@
     },
     {
       "id": "mode-sepolia",
-      "shortName": "Mode Sepolia",
+      "shortName": "Mode",
+      "secondName": "Sepolia",
       "fullName": "Mode Sepolia Testnet",
       "aliases": [
         "evm-919",
@@ -4508,7 +4541,8 @@
     },
     {
       "id": "chapel",
-      "shortName": "BNB Chapel",
+      "shortName": "BNB",
+      "secondName": "Chapel",
       "fullName": "BNB Smart Chain Chapel Testnet",
       "aliases": [
         "bnb-chapel",
@@ -4579,7 +4613,8 @@
     },
     {
       "id": "boba-bnb-testnet",
-      "shortName": "Boba BNB",
+      "shortName": "Boba",
+      "secondName": "BNB",
       "fullName": "Boba BNB Testnet",
       "aliases": [
         "evm-9728",
@@ -4783,7 +4818,8 @@
     },
     {
       "id": "kylin",
-      "shortName": "Kylin",
+      "shortName": "EOS",
+      "secondName": "Kylin",
       "fullName": "Kylin Testnet",
       "aliases": [
         "eos-kylin"
@@ -4840,7 +4876,8 @@
     },
     {
       "id": "jungle4",
-      "shortName": "Jungle4",
+      "shortName": "EOS",
+      "secondName": "Jungle4",
       "fullName": "EOS Jungle4 Testnet",
       "aliases": [
         "jungle"
@@ -5100,7 +5137,8 @@
     },
     {
       "id": "sepolia-cl",
-      "shortName": "Sepolia Beacon",
+      "shortName": "Ethereum Beacon",
+      "secondName": "Sepolia",
       "fullName": "Ethereum Sepolia Consensus Layer Chain",
       "aliases": [
         "sepolia-beacon"
@@ -5150,7 +5188,8 @@
     },
     {
       "id": "holesky-cl",
-      "shortName": "Holesky Beacon",
+      "shortName": "Ethereum Beacon",
+      "secondName": "Holesky",
       "fullName": "Ethereum Holesky Consensus Layer Chain",
       "aliases": [
         "holesky-beacon"
@@ -5760,6 +5799,68 @@
       }
     },
     {
+      "id": "solana-devnet",
+      "shortName": "Solana",
+      "fullName": "Solana Devnet",
+      "aliases": [],
+      "caip2Id": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
+      "explorerUrls": [
+        "https://explorer.solana.com/?cluster=devnet"
+      ],
+      "rpcUrls": [
+        "https://api.devnet.solana.com"
+      ],
+      "apiUrls": [],
+      "networkType": "devnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "solana-mainnet-beta"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          {
+            "provider": "e&n"
+          }
+        ],
+        "sps": [
+          {
+            "provider": "e&n"
+          }
+        ],
+        "firehose": [
+          {
+            "provider": "streamingfast",
+            "url": "devnet.sol.streamingfast.io:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "streamingfast",
+            "url": "devnet.sol.streamingfast.io:443"
+          }
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "SOL",
+      "docsUrl": "https://solana.com/docs",
+      "genesis": {
+        "hash": "4D2M7ehkYzBJNsL9GYvQXKj7sFaJGGyZMvK5hC8BQvS8",
+        "height": 300000000
+      },
+      "firehose": {
+        "blockType": "sf.solana.type.v1.Block",
+        "bufUrl": "https://buf.build/streamingfast/firehose-solana",
+        "bytesEncoding": "base58"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "solana"
+        }
+      }
+    },
+    {
       "id": "starknet-mainnet",
       "shortName": "Starknet",
       "fullName": "Starknet Mainnet",
@@ -5837,7 +5938,8 @@
     },
     {
       "id": "starknet-testnet",
-      "shortName": "Starknet Sepolia",
+      "shortName": "Starknet",
+      "secondName": "Sepolia",
       "fullName": "Starknet Sepolia Testnet",
       "aliases": [
         "starknet-sepolia"
