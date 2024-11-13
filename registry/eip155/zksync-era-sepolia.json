@@ -1,6 +1,7 @@
 {
   "id": "zksync-era-sepolia",
   "shortName": "zkSync",
+  "secondName": "Sepolia",
   "fullName": "zkSync Sepolia Testnet",
   "aliases": ["evm-300", "zksync-testnet", "zksync-sepolia"],
   "caip2Id": "eip155:300",

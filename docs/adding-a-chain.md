@@ -8,6 +8,8 @@ Each chain should be defined as a JSON file in the `registry` directory with the
 
 - `shortName` - Brief display name (e.g., "Ethereum", "BNB")
 
+- `secondName` [optional] - Second display name (e.g., "Sepolia", "One")
+
 - `fullName` - Full display name (e.g., "Ethereum Mainnet", "BNB Smart Chain")
 
 - `aliases` [optional] - Alternative names for the chain (e.g., ["ethereum", "eth", "eth-mainnet"]). Aliases need to be unique

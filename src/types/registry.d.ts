@@ -35,6 +35,10 @@ export interface Network {
    */
   shortName: string;
   /**
+   * Second display name of the network, i.e. Sepolia, Nova
+   */
+  secondName?: string;
+  /**
    * Display name of the network, i.e. Ethereum Mainnet, Bitcoin Testnet
    */
   fullName: string;

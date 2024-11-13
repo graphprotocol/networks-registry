@@ -1,6 +1,7 @@
 {
   "id": "arbitrum-nova",
-  "shortName": "Arbitrum Nova",
+  "shortName": "Arbitrum",
+  "secondName": "Nova",
   "fullName": "Arbitrum Nova",
   "aliases": ["evm-42170", "arbnova", "arb-nova", "arbitrum-nova-mainnet"],
   "caip2Id": "eip155:42170",

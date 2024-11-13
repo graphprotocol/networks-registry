@@ -1,6 +1,7 @@
 {
   "id": "boba-testnet",
-  "shortName": "Boba Sepolia",
+  "shortName": "Boba",
+  "secondName": "Sepolia",
   "fullName": "Boba Sepolia Testnet",
   "aliases": ["boba-sepolia"],
   "caip2Id": "eip155:28882",

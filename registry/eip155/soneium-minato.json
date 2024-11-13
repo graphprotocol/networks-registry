@@ -1,6 +1,7 @@
 {
   "id": "soneium-minato",
-  "shortName": "Soneium Minato",
+  "shortName": "Soneium",
+  "secondName": "Minato",
   "fullName": "Soneium Minato Testnet",
   "aliases": ["soneium-minato-testnet", "soneium-testnet"],
   "caip2Id": "eip155:1946",

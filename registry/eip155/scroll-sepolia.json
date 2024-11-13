@@ -1,6 +1,7 @@
 {
   "id": "scroll-sepolia",
-  "shortName": "Scroll Sepolia",
+  "shortName": "Scroll",
+  "secondName": "Sepolia",
   "fullName": "Scroll Sepolia Testnet",
   "aliases": ["evm-534351", "scroll-testnet"],
   "caip2Id": "eip155:534351",

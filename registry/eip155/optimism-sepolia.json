@@ -1,6 +1,7 @@
 {
   "id": "optimism-sepolia",
-  "shortName": "Optimism Sepolia",
+  "shortName": "Optimism",
+  "secondName": "Sepolia",
   "fullName": "OP Sepolia Testnet",
   "aliases": ["op-sepolia", "opsepolia"],
   "caip2Id": "eip155:11155420",

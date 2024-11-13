@@ -1,6 +1,7 @@
 {
   "id": "chapel",
-  "shortName": "BNB Chapel",
+  "shortName": "BNB",
+  "secondName": "Chapel",
   "fullName": "BNB Smart Chain Chapel Testnet",
   "aliases": ["bnb-chapel", "bnb-testnet", "bsc-testnet"],
   "caip2Id": "eip155:97",

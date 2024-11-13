@@ -1,6 +1,7 @@
 {
   "id": "starknet-testnet",
-  "shortName": "Starknet Sepolia",
+  "shortName": "Starknet",
+  "secondName": "Sepolia",
   "fullName": "Starknet Sepolia Testnet",
   "aliases": ["starknet-sepolia"],
   "caip2Id": "starknet:SN_SEPOLIA",

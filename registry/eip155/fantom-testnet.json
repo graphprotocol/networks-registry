@@ -1,7 +1,7 @@
 {
   "id": "fantom-testnet",
   "shortName": "Fantom",
-  "fullName": "Fantom Opera Testnet",
+  "fullName": "Fantom Testnet",
   "aliases": ["evm-4002"],
   "caip2Id": "eip155:4002",
   "graphNode": { "protocol": "ethereum" },

@@ -1,6 +1,7 @@
 {
   "id": "unichain-testnet",
-  "shortName": "Unichain Sepolia",
+  "shortName": "Unichain",
+  "secondName": "Sepolia",
   "fullName": "Unichain Sepolia Testnet",
   "aliases": ["evm-1301"],
   "caip2Id": "eip155:1301",

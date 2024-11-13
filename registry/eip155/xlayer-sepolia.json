@@ -1,6 +1,7 @@
 {
   "id": "xlayer-sepolia",
   "shortName": "XLayer",
+  "secondName": "Sepolia",
   "fullName": "XLayer Testnet",
   "aliases": ["evm-195"],
   "caip2Id": "eip155:195",
