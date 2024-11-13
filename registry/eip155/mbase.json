@@ -1,6 +1,7 @@
 {
   "id": "mbase",
-  "shortName": "Moonbase Alpha",
+  "shortName": "Moonbase",
+  "secondName": "Alpha",
   "fullName": "Moonbase Alpha Testnet",
   "aliases": ["evm-1287", "moonbase"],
   "caip2Id": "eip155:1287",

@@ -1,6 +1,7 @@
 {
   "id": "jungle4",
-  "shortName": "Jungle4",
+  "shortName": "EOS",
+  "secondName": "Jungle4",
   "fullName": "EOS Jungle4 Testnet",
   "aliases": ["jungle"],
   "caip2Id": "antelope:73e4385a2708e6d7048834fbc1079f2f",

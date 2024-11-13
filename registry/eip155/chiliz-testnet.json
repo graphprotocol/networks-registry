@@ -1,6 +1,7 @@
 {
   "id": "chiliz-testnet",
   "shortName": "Chiliz",
+  "secondName": "Spicy",
   "fullName": "Chiliz Spicy Testnet",
   "aliases": ["chiliz-spicy-testnet", "evm-88882"],
   "caip2Id": "eip155:88882",

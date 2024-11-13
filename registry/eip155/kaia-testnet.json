@@ -1,7 +1,8 @@
 {
   "id": "kaia-testnet",
   "shortName": "Kaia",
-  "fullName": "Kaia Testnet Kairos",
+  "secondName": "Kairos",
+  "fullName": "Kaia Kairos Testnet",
   "aliases": ["evm-1001"],
   "caip2Id": "eip155:1001",
   "graphNode": { "protocol": "ethereum" },

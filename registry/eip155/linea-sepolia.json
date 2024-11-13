@@ -1,6 +1,7 @@
 {
   "id": "linea-sepolia",
-  "shortName": "Linea Sepolia",
+  "shortName": "Linea",
+  "secondName": "Sepolia",
   "fullName": "Linea Sepolia Testnet",
   "aliases": ["evm-59141", "linea-testnet"],
   "caip2Id": "eip155:59141",

@@ -1,6 +1,7 @@
 {
   "id": "zksync-era",
   "shortName": "zkSync",
+  "secondName": "Era",
   "fullName": "zkSync Mainnet",
   "aliases": ["evm-324", "zksync"],
   "caip2Id": "eip155:324",

@@ -1,6 +1,7 @@
 {
   "id": "polygon-amoy",
-  "shortName": "Amoy",
+  "shortName": "Polygon",
+  "secondName": "Amoy",
   "fullName": "Polygon Amoy Testnet",
   "aliases": ["amoy-testnet", "amoy"],
   "caip2Id": "eip155:80002",

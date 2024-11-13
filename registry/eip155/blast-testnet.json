@@ -1,6 +1,7 @@
 {
   "id": "blast-testnet",
-  "shortName": "Blast Sepolia",
+  "shortName": "Blast",
+  "secondName": "Sepolia",
   "fullName": "Blast Sepolia Testnet",
   "aliases": ["evm-23888", "blast-sepolia"],
   "caip2Id": "eip155:23888",

@@ -1,6 +1,7 @@
 {
   "id": "polygon-zkevm",
-  "shortName": "Polygon zkEVM",
+  "shortName": "Polygon",
+  "secondName": "zkEVM",
   "fullName": "Polygon zkEVM Mainnet",
   "aliases": [],
   "caip2Id": "eip155:1101",
