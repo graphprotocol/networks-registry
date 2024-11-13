@@ -6,7 +6,11 @@
   "caip2Id": "eip155:88888",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://chiliscan.com"],
-  "rpcUrls": ["https://rpc.chiliz.com", "https://rpc.ankr.com/chiliz"],
+  "rpcUrls": [
+    "https://rpc.chiliz.com",
+    "https://rpc.ankr.com/chiliz",
+    "https://chiliz.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
   "apiUrls": [{ "url": "https://scan.chiliz.com/api", "kind": "etherscan" }],
   "networkType": "mainnet",
   "services": { "subgraphs": [{ "provider": "e&n" }] },

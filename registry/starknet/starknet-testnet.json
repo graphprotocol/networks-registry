@@ -11,10 +11,23 @@
     { "kind": "testnetOf", "network": "starknet-mainnet" }
   ],
   "explorerUrls": ["https://sepolia.starkscan.co"],
-  "rpcUrls": ["https://starknet-sepolia.public.blastapi.io"],
+  "rpcUrls": [
+    "https://starknet-sepolia.public.blastapi.io",
+    "https://starksepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
   "apiUrls": [],
   "networkType": "testnet",
-  "services": {},
+  "services": {
+    "firehose": [
+      { "provider": "pinax", "url": "starksepolia.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      {
+        "provider": "pinax",
+        "url": "starksepolia.substreams.pinax.network:443"
+      }
+    ]
+  },
   "issuanceRewards": false,
   "nativeToken": "STRK",
   "docsUrl": "https://docs.starknet.io",

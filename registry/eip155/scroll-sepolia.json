@@ -7,11 +7,22 @@
   "caip2Id": "eip155:534351",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.scrollscan.com"],
-  "rpcUrls": ["https://sepolia-rpc.scroll.io"],
+  "rpcUrls": [
+    "https://sepolia-rpc.scroll.io",
+    "https://scrsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
   "apiUrls": [
     { "url": "https://api-sepolia.scrollscan.com/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [
+      { "provider": "pinax", "url": "scrsepolia.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "scrsepolia.substreams.pinax.network:443" }
+    ]
+  },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },
