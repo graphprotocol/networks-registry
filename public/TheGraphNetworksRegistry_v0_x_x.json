@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_5.json",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-13T23:20:25.497Z",
+  "updatedAt": "2024-11-14T14:38:57.773Z",
   "networks": [
     {
       "id": "mainnet",
@@ -983,6 +983,18 @@
           {
             "provider": "e&n"
           }
+        ],
+        "firehose": [
+          {
+            "provider": "pinax",
+            "url": "moonriver.firehose.pinax.network:443"
+          }
+        ],
+        "substreams": [
+          {
+            "provider": "pinax",
+            "url": "moonriver.substreams.pinax.network:443"
+          }
         ]
       },
       "networkType": "mainnet",
@@ -1145,6 +1157,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "unichain"
+        }
       }
     },
     {
@@ -1593,10 +1610,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "eos",
-          "variants": [
-            "mono"
-          ]
+          "name": "eos"
         }
       }
     },
@@ -1863,10 +1877,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "eos",
-          "variants": [
-            "mono"
-          ]
+          "name": "eos"
         }
       }
     },
@@ -1952,9 +1963,9 @@
     },
     {
       "id": "xlayer-sepolia",
-      "shortName": "XLayer",
+      "shortName": "X Layer",
       "secondName": "Sepolia",
-      "fullName": "XLayer Testnet",
+      "fullName": "X Layer Sepolia Testnet",
       "aliases": [
         "evm-195"
       ],
@@ -1999,12 +2010,17 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "x-layer"
+        }
       }
     },
     {
       "id": "xlayer-mainnet",
-      "shortName": "XLayer",
-      "fullName": "XLayer Mainnet",
+      "shortName": "X Layer",
+      "fullName": "X Layer Mainnet",
       "aliases": [
         "evm-196",
         "xlayer"
@@ -2059,6 +2075,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "x-layer"
+        }
       }
     },
     {
@@ -5017,10 +5038,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "eos",
-          "variants": [
-            "mono"
-          ]
+          "name": "eos"
         }
       }
     },
@@ -5072,6 +5090,11 @@
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "eos"
+        }
       }
     },
     {
@@ -5118,10 +5141,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "eos",
-          "variants": [
-            "mono"
-          ]
+          "name": "eos"
         }
       }
     },
@@ -5608,7 +5628,8 @@
     {
       "id": "mantra-testnet",
       "shortName": "Mantra",
-      "fullName": "Mantra Testnet",
+      "secondName": "Dukong",
+      "fullName": "Mantra Dukong Testnet",
       "aliases": [
         "mantra-dukong"
       ],
