@@ -1,7 +1,8 @@
 {
   "id": "mantra-testnet",
   "shortName": "Mantra",
-  "fullName": "Mantra Testnet",
+  "secondName": "Dukong",
+  "fullName": "Mantra Dukong Testnet",
   "aliases": ["mantra-dukong"],
   "caip2Id": "cosmos:mantra-dukong",
   "explorerUrls": ["https://explorer.mantrachain.io/MANTRA-Dukong"],
