@@ -14,7 +14,11 @@
   "apiUrls": [
     { "url": "https://api-moonriver.moonscan.io/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": {
+    "subgraphs": [{ "provider": "e&n" }],
+    "firehose": [{ "provider": "pinax", "url": "moonriver.firehose.pinax.network:443" }],
+    "substreams": [{ "provider": "pinax", "url": "moonriver.substreams.pinax.network:443" }]
+  },
   "networkType": "mainnet",
   "relations": [{ "kind": "other", "network": "moonbeam" }],
   "issuanceRewards": false,

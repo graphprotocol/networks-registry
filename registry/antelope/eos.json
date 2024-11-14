@@ -28,5 +28,5 @@
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
     "bytesEncoding": "hex"
   },
-  "icon": { "web3Icons": { "name": "eos", "variants": ["mono"] } }
+  "icon": { "web3Icons": { "name": "eos" } }
 }

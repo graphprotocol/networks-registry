@@ -1,8 +1,8 @@
 {
   "id": "xlayer-sepolia",
-  "shortName": "XLayer",
+  "shortName": "X Layer",
   "secondName": "Sepolia",
-  "fullName": "XLayer Testnet",
+  "fullName": "X Layer Sepolia Testnet",
   "aliases": ["evm-195"],
   "caip2Id": "eip155:195",
   "graphNode": { "protocol": "ethereum" },
@@ -27,5 +27,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "x-layer" } }
 }

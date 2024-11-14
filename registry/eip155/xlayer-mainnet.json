@@ -1,7 +1,7 @@
 {
   "id": "xlayer-mainnet",
-  "shortName": "XLayer",
-  "fullName": "XLayer Mainnet",
+  "shortName": "X Layer",
+  "fullName": "X Layer Mainnet",
   "aliases": ["evm-196", "xlayer"],
   "caip2Id": "eip155:196",
   "graphNode": { "protocol": "ethereum" },
@@ -23,5 +23,6 @@
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "x-layer" } }
 }
