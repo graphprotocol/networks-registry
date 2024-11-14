@@ -32,6 +32,12 @@
   "issuanceRewards": true,
   "nativeToken": "BOBA",
   "docsUrl": "https://docs.boba.network",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/bobabnb",
+      "kind": "rpc"
+    }
+  ],
   "genesis": {
     "hash": "0xf9aa25373a3cf1c3d3dcb1911093b56eb129221d203270bcdb002b3f01a120d9",
     "height": 0
