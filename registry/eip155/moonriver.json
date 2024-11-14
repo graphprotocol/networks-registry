@@ -16,8 +16,12 @@
   ],
   "services": {
     "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [{ "provider": "pinax", "url": "moonriver.firehose.pinax.network:443" }],
-    "substreams": [{ "provider": "pinax", "url": "moonriver.substreams.pinax.network:443" }]
+    "firehose": [
+      { "provider": "pinax", "url": "moonriver.firehose.pinax.network:443" }
+    ],
+    "substreams": [
+      { "provider": "pinax", "url": "moonriver.substreams.pinax.network:443" }
+    ]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "other", "network": "moonbeam" }],
