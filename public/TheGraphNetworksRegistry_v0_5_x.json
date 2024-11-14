@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_5.json",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-14T14:38:57.773Z",
+  "updatedAt": "2024-11-14T18:48:34.455Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2390,6 +2390,12 @@
       "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.boba.network",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/boba",
+          "kind": "rpc"
+        }
+      ],
       "genesis": {
         "hash": "0xdcd9e6a8f9973eaa62da2874959cb152faeb4fd6929177bd6335a1a16074ef9c",
         "height": 0
@@ -3889,6 +3895,12 @@
       "issuanceRewards": true,
       "nativeToken": "BOBA",
       "docsUrl": "https://docs.boba.network",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/bobabnb",
+          "kind": "rpc"
+        }
+      ],
       "genesis": {
         "hash": "0xf9aa25373a3cf1c3d3dcb1911093b56eb129221d203270bcdb002b3f01a120d9",
         "height": 0
@@ -4157,6 +4169,12 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.zora.co",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/zora",
+          "kind": "rpc"
+        }
+      ],
       "genesis": {
         "hash": "0x47555a45a1af8d4728ca337a1e48375a83919b1ea16591e070a07388b7364e29",
         "height": 0
@@ -6092,6 +6110,12 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.starknet.io",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/starknet",
+          "kind": "firehose"
+        }
+      ],
       "genesis": {
         "hash": "0x47c3637b57c2b079b93c61539950c17e868a28f46cdef28f88521067f21e943",
         "height": 0
