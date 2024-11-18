@@ -44,7 +44,7 @@
         "id": {
           "type": "string",
           "pattern": "^(?!-)[a-z0-9-]{3,}(?<!-)$",
-          "description": "Established name of the chain on the Graph network, e.g. mainnet, btc, arweave-mainnet, near-testnet"
+          "description": "Established name of the network in The Graph ecosystem, e.g. mainnet, btc, arweave-mainnet, near-testnet"
         },
         "shortName": {
           "type": "string",
@@ -69,12 +69,12 @@
             "type": "string",
             "pattern": "^(?!-)[a-z0-9-]{3,}(?<!-)$"
           },
-          "description": "[optional] List of possible aliases for the chain id, e.g. ethereum, eth, mainnet, eth-mainnet"
+          "description": "[optional] List of possible aliases for the network id, e.g. ethereum, eth, mainnet, eth-mainnet"
         },
         "networkType": {
           "type": "string",
           "enum": ["mainnet", "testnet", "devnet"],
-          "description": "Whether the chain is a mainnet/testnet/devnet"
+          "description": "Whether the network is a mainnet/testnet/devnet"
         },
         "relations": {
           "type": "array",
@@ -97,13 +97,13 @@
               "network": {
                 "type": "string",
                 "pattern": "^[a-z0-9-]+$",
-                "description": "Id of the related network, e.g. mainnet, near-mainnet"
+                "description": "ID of the related network, e.g. mainnet, near-mainnet"
               }
             },
             "required": ["kind", "network"],
-            "additionalProperties": false,
-            "description": "Relations to other networks in the registry"
-          }
+            "additionalProperties": false
+          },
+          "description": "Relations to other networks in the registry"
         },
         "firehose": {
           "type": "object",
@@ -125,7 +125,7 @@
             },
             "evmExtendedModel": {
               "type": "boolean",
-              "description": "[optional] Whether supports extended block model if EVM chain"
+              "description": "[optional] Whether there is support for extended EVM block model"
             }
           },
           "required": ["blockType", "bytesEncoding", "bufUrl"],
@@ -197,7 +197,7 @@
             }
           },
           "additionalProperties": false,
-          "description": "Services available for the chain in the ecosystem"
+          "description": "Services available for the network in the ecosystem"
         },
         "issuanceRewards": {
           "type": "boolean",
@@ -209,7 +209,11 @@
             "web3Icons": {
               "type": "object",
               "properties": {
-                "name": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+                "name": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$",
+                  "description": "Web3Icons icon ID"
+                },
                 "variants": {
                   "type": "array",
                   "items": { "type": "string", "pattern": "^(mono|branded)$" },
@@ -223,7 +227,7 @@
             }
           },
           "additionalProperties": false,
-          "description": "Icons for the chain"
+          "description": "Icons for the network"
         },
         "rpcUrls": {
           "type": "array",
@@ -251,7 +255,7 @@
             "required": ["url", "kind"],
             "additionalProperties": false
           },
-          "description": "List of offchain API URLs for the chain, used to get ABI, etc, e.g. https://api.etherscan.io/api. Use {CUSTOM_API_KEY} as a placeholder for a private API key"
+          "description": "List of API URLs for the network, i.e. Etherescan-like API to get ABI. Use {CUSTOM_API_KEY} as a placeholder for a private API key"
         },
         "docsUrl": {
           "type": "string",
@@ -263,16 +267,25 @@
           "items": {
             "type": "object",
             "properties": {
-              "url": { "type": "string", "format": "url" },
+              "url": {
+                "type": "string",
+                "format": "url",
+                "description": "URL to the documentation, e.g. https://docs.infradao.com/archive-nodes-101/arbitrum"
+              },
               "kind": {
                 "type": "string",
-                "enum": ["rpc", "firehose", "datasets", "other"]
+                "enum": ["rpc", "firehose", "datasets", "other"],
+                "description": "Kind of documentation"
+              },
+              "description": {
+                "type": "string",
+                "description": "Docs description, e.g. Arbitrum 101"
               }
             },
             "required": ["url", "kind"],
             "additionalProperties": false
           },
-          "description": "Documentation to run indexer components for the chain"
+          "description": "Documentation to run indexer components for this network"
         }
       },
       "required": [
