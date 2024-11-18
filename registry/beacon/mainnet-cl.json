@@ -10,12 +10,8 @@
   "networkType": "mainnet",
   "relations": [{ "kind": "beaconOf", "network": "mainnet" }],
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "eth-cl.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "eth-cl.substreams.pinax.network:443" }
-    ]
+    "firehose": ["eth-cl.firehose.pinax.network:443"],
+    "substreams": ["eth-cl.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "ETH",

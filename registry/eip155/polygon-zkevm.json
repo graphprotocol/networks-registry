@@ -20,14 +20,10 @@
   ],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "polygonzk.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "polygonzk.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
+    "firehose": ["polygonzk.firehose.pinax.network:443"],
+    "substreams": ["polygonzk.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "ETH",

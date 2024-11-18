@@ -15,13 +15,9 @@
     { "url": "https://linea.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "linea.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "linea.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["linea.firehose.pinax.network:443"],
+    "substreams": ["linea.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

@@ -17,13 +17,9 @@
     }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "boba.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "boba.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["boba.firehose.pinax.network:443"],
+    "substreams": ["boba.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

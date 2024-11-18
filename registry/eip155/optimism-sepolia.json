@@ -22,13 +22,9 @@
     }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "opsepolia.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "opsepolia.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["opsepolia.firehose.pinax.network:443"],
+    "substreams": ["opsepolia.substreams.pinax.network:443"]
   },
   "networkType": "testnet",
   "issuanceRewards": false,

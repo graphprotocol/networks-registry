@@ -20,13 +20,9 @@
   ],
   "networkType": "testnet",
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "amoy.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "amoy.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["amoy.firehose.pinax.network:443"],
+    "substreams": ["amoy.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "POL",

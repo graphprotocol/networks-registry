@@ -22,12 +22,8 @@
     }
   ],
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "jungle4evm.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "jungle4evm.substreams.pinax.network:443" }
-    ]
+    "firehose": ["jungle4evm.firehose.pinax.network:443"],
+    "substreams": ["jungle4evm.substreams.pinax.network:443"]
   },
   "networkType": "testnet",
   "issuanceRewards": false,

@@ -13,12 +13,8 @@
   ],
   "apiUrls": [],
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "opbnb.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "opbnb.substreams.pinax.network:443" }
-    ]
+    "firehose": ["opbnb.firehose.pinax.network:443"],
+    "substreams": ["opbnb.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,

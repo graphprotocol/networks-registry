@@ -9,18 +9,8 @@
   "apiUrls": [{ "url": "https://vara.api.subscan.io/api", "kind": "subscan" }],
   "networkType": "mainnet",
   "services": {
-    "firehose": [
-      {
-        "provider": "streamingfast",
-        "url": "mainnet.vara.streamingfast.io:443"
-      }
-    ],
-    "substreams": [
-      {
-        "provider": "streamingfast",
-        "url": "mainnet.vara.streamingfast.io:443"
-      }
-    ]
+    "firehose": ["mainnet.vara.streamingfast.io:443"],
+    "substreams": ["mainnet.vara.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "VARA",

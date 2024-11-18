@@ -17,15 +17,15 @@
   ],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
     "firehose": [
-      { "provider": "pinax", "url": "polygon.firehose.pinax.network:443" },
-      { "provider": "streamingfast", "url": "polygon.streamingfast.io:443" }
+      "polygon.firehose.pinax.network:443",
+      "polygon.streamingfast.io:443"
     ],
     "substreams": [
-      { "provider": "pinax", "url": "polygon.substreams.pinax.network:443" },
-      { "provider": "streamingfast", "url": "polygon.streamingfast.io:443" }
+      "polygon.substreams.pinax.network:443",
+      "polygon.streamingfast.io:443"
     ]
   },
   "indexerDocsUrls": [

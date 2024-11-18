@@ -11,7 +11,7 @@
   "apiUrls": [
     { "url": "https://seitrace.com/atlantic-2/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "sei-mainnet" }],
   "issuanceRewards": false,

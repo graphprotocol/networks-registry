@@ -23,14 +23,10 @@
     }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "unisepolia.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "unisepolia.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
+    "firehose": ["unisepolia.firehose.pinax.network:443"],
+    "substreams": ["unisepolia.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "ETH",

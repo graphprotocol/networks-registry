@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://testnet.explorer.etherlink.com/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "etherlink-mainnet" }],
   "issuanceRewards": false,

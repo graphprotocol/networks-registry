@@ -14,21 +14,15 @@
   ],
   "apiUrls": [{ "url": "https://api.snowtrace.io/api", "kind": "etherscan" }],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
     "firehose": [
-      {
-        "provider": "streamingfast",
-        "url": "avalanche-mainnet.streamingfast.io:443"
-      },
-      { "provider": "pinax", "url": "avalanche.firehose.pinax.network:443" }
+      "avalanche-mainnet.streamingfast.io:443",
+      "avalanche.firehose.pinax.network:443"
     ],
     "substreams": [
-      {
-        "provider": "streamingfast",
-        "url": "avalanche-mainnet.streamingfast.io:443"
-      },
-      { "provider": "pinax", "url": "avalanche.substreams.pinax.network:443" }
+      "avalanche-mainnet.streamingfast.io:443",
+      "avalanche.substreams.pinax.network:443"
     ]
   },
   "networkType": "mainnet",
