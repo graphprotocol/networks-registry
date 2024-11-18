@@ -146,6 +146,41 @@ function validateTestnets(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+const ALLOWED_FH_PROVIDERS = ["pinax.network", "streamingfast.io"];
+const ALLOWED_SG_PROVIDERS = ["api.thegraph.com"];
+
+function validateServices(networks: Network[]) {
+  process.stdout.write("Validating services ... ");
+
+  for (const network of networks) {
+    const services = network.services ?? [];
+
+    // Validate subgraphs and sps services
+    ["subgraphs", "sps"].forEach((serviceType) => {
+      for (const url of services[serviceType] ?? []) {
+        if (!ALLOWED_SG_PROVIDERS.some((provider) => url.includes(provider))) {
+          ERRORS.push(
+            `Network ${network.id} has invalid ${serviceType} URL: only ${ALLOWED_SG_PROVIDERS.join(", ")} allowed right now`,
+          );
+        }
+      }
+    });
+
+    // Validate substreams and firehose services
+    ["firehose", "substreams"].forEach((serviceType) => {
+      for (const url of services[serviceType] ?? []) {
+        if (!ALLOWED_FH_PROVIDERS.some((provider) => url.includes(provider))) {
+          ERRORS.push(
+            `Network ${network.id} has invalid ${serviceType} URL: only ${ALLOWED_FH_PROVIDERS.join(", ")} allowed right now`,
+          );
+        }
+      }
+    });
+  }
+
+  process.stdout.write("done\n");
+}
+
 function validateUrls(networks: Network[]) {
   process.stdout.write("Validating URLs ... ");
   const urls = [
@@ -337,6 +372,7 @@ async function main() {
   validateEvmRules(networks);
   validateTestnets(networks);
   validateUrls(networks);
+  validateServices(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
   await validateGraphNetworks(networks);
