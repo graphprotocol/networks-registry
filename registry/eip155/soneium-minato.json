@@ -17,7 +17,7 @@
   "networkType": "testnet",
   "relations": [
     { "kind": "testnetOf", "network": "soneium-minato" },
-    { "kind": "l2Of", "network": "mainnet" }
+    { "kind": "l2Of", "network": "sepolia" }
   ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
