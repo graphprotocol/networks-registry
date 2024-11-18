@@ -44,24 +44,24 @@
         "id": {
           "type": "string",
           "pattern": "^(?!-)[a-z0-9-]{3,}(?<!-)$",
-          "description": "Established name of the chain on the Graph network, i.e. mainnet, btc, arweave-mainnet, near-testnet"
+          "description": "Established name of the chain on the Graph network, e.g. mainnet, btc, arweave-mainnet, near-testnet"
         },
         "shortName": {
           "type": "string",
-          "description": "Short display name of the network, i.e. Ethereum, BNB"
+          "description": "Short display name of the network, e.g. Ethereum, BNB"
         },
         "secondName": {
           "type": "string",
-          "description": "Second display name of the network, i.e. Sepolia, Nova"
+          "description": "Second display name of the network, e.g. Sepolia, Nova"
         },
         "fullName": {
           "type": "string",
-          "description": "Display name of the network, i.e. Ethereum Mainnet, Bitcoin Testnet"
+          "description": "Display name of the network, e.g. Ethereum Mainnet, Bitcoin Testnet"
         },
         "caip2Id": {
           "type": "string",
           "pattern": "^[-a-z0-9]{3,8}:[-_a-zA-Z0-9]{1,32}$",
-          "description": "CAIP-2 Chain ID, i.e. eip155:1, bip122:000000000019d6689c085ae165831e93"
+          "description": "CAIP-2 Chain ID, e.g. eip155:1, bip122:000000000019d6689c085ae165831e93"
         },
         "aliases": {
           "type": "array",
@@ -69,7 +69,7 @@
             "type": "string",
             "pattern": "^(?!-)[a-z0-9-]{3,}(?<!-)$"
           },
-          "description": "[optional] List of possible aliases for the chain id, i.e. ethereum, eth, mainnet, eth-mainnet"
+          "description": "[optional] List of possible aliases for the chain id, e.g. ethereum, eth, mainnet, eth-mainnet"
         },
         "networkType": {
           "type": "string",
@@ -97,11 +97,12 @@
               "network": {
                 "type": "string",
                 "pattern": "^[a-z0-9-]+$",
-                "description": "Id of the related network, i.e. mainnet, near-mainnet"
+                "description": "Id of the related network, e.g. mainnet, near-mainnet"
               }
             },
             "required": ["kind", "network"],
-            "additionalProperties": false
+            "additionalProperties": false,
+            "description": "Relations to other networks in the registry"
           }
         },
         "firehose": {
@@ -110,17 +111,17 @@
             "blockType": {
               "type": "string",
               "pattern": "^[a-zA-Z0-9.]+$",
-              "description": "Block type, i.e. sf.ethereum.type.v2.Block"
+              "description": "Block type, e.g. sf.ethereum.type.v2.Block"
             },
             "bytesEncoding": {
               "type": "string",
               "enum": ["hex", "0xhex", "base58"],
-              "description": "Bytes encoding, i.e. hex, 0xhex, base58"
+              "description": "Bytes encoding, e.g. hex, 0xhex, base58"
             },
             "bufUrl": {
               "type": "string",
               "format": "uri",
-              "description": "Protobuf definitions on buf.build, i.e. https://buf.build/streamingfast/firehose-ethereum"
+              "description": "Protobuf definitions on buf.build, e.g. https://buf.build/streamingfast/firehose-ethereum"
             },
             "evmExtendedModel": {
               "type": "boolean",
@@ -146,7 +147,8 @@
             }
           },
           "required": ["hash", "height"],
-          "additionalProperties": false
+          "additionalProperties": false,
+          "description": "Genesis block information"
         },
         "nativeToken": {
           "type": "string",
@@ -160,9 +162,10 @@
             "protocol": {
               "type": "string",
               "enum": ["ethereum", "near", "arweave", "cosmos", "starknet"],
-              "description": "[optional] Protocol name in graph-node, i.e. ethereum, near, arweave"
+              "description": "[optional] Protocol name in graph-node, e.g. ethereum, near, arweave"
             }
-          }
+          },
+          "description": "Graph Node specific configuration information"
         },
         "explorerUrls": {
           "type": "array",
@@ -174,23 +177,27 @@
           "properties": {
             "subgraphs": {
               "type": "array",
-              "items": { "$ref": "#/$defs/Network/$defs/Service" }
+              "items": { "type": "string", "format": "uri-template" },
+              "description": "Subgraph studio deployment URLs, e.g. https://api.thegraph.com/deploy"
             },
             "sps": {
               "type": "array",
-              "items": { "$ref": "#/$defs/Network/$defs/Service" }
+              "items": { "type": "string", "format": "uri-template" },
+              "description": "Substreams-based subgraphs studio deployment URLs, e.g. https://api.thegraph.com/deploy"
             },
             "firehose": {
               "type": "array",
-              "items": { "$ref": "#/$defs/Network/$defs/Service" }
+              "items": { "type": "string", "format": "uri-template" },
+              "description": "Firehose gRPC URLs, e.g. eth.firehose.pinax.network:443"
             },
             "substreams": {
               "type": "array",
-              "items": { "$ref": "#/$defs/Network/$defs/Service" }
+              "items": { "type": "string", "format": "uri-template" },
+              "description": "Substreams gRPC URLs, e.g. eth.substreams.pinax.network:443"
             }
           },
           "additionalProperties": false,
-          "description": "Providers support for the chain by providers"
+          "description": "Services available for the chain in the ecosystem"
         },
         "issuanceRewards": {
           "type": "boolean",
@@ -237,13 +244,14 @@
                   "ethplorer",
                   "subscan",
                   "other"
-                ]
+                ],
+                "description": "Kind of API"
               }
             },
             "required": ["url", "kind"],
             "additionalProperties": false
           },
-          "description": "List of API URLs for the chain, i.e. https://api.etherscan.io/api. Use {CUSTOM_API_KEY} as a placeholder for a private API key"
+          "description": "List of offchain API URLs for the chain, used to get ABI, etc, e.g. https://api.etherscan.io/api. Use {CUSTOM_API_KEY} as a placeholder for a private API key"
         },
         "docsUrl": {
           "type": "string",
@@ -258,9 +266,8 @@
               "url": { "type": "string", "format": "url" },
               "kind": {
                 "type": "string",
-                "enum": ["rpc", "firehose", "other"]
-              },
-              "hint": { "type": "string" }
+                "enum": ["rpc", "firehose", "datasets", "other"]
+              }
             },
             "required": ["url", "kind"],
             "additionalProperties": false
@@ -277,28 +284,7 @@
         "services",
         "issuanceRewards"
       ],
-      "additionalProperties": false,
-      "$defs": {
-        "Service": {
-          "type": "object",
-          "properties": {
-            "provider": {
-              "type": "string",
-              "enum": [
-                "e&n",
-                "pinax",
-                "graphops",
-                "streamingfast",
-                "messari",
-                "semiotic"
-              ]
-            },
-            "url": { "type": "string", "format": "uri" }
-          },
-          "required": ["provider"],
-          "additionalProperties": false
-        }
-      }
+      "additionalProperties": false
     }
   }
 }

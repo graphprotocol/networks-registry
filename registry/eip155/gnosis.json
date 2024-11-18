@@ -15,7 +15,7 @@
   "apiUrls": [
     { "url": "https://gnosis.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": true,
   "nativeToken": "XDAI",

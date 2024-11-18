@@ -19,7 +19,7 @@
       "kind": "etherscan"
     }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "CELO",
   "docsUrl": "https://docs.celo.org",

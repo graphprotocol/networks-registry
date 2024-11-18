@@ -9,7 +9,7 @@
   "rpcUrls": ["https://api-para.clv.org"],
   "apiUrls": [{ "url": "https://clvscan.com/api", "kind": "etherscan" }],
   "networkType": "mainnet",
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "CLV",
   "docsUrl": "https://docs.clv.org",

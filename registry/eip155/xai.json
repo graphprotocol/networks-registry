@@ -14,12 +14,8 @@
     { "url": "https://explorer.xai-chain.net/api", "kind": "etherscan" }
   ],
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "xai.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "xai.substreams.pinax.network:443" }
-    ]
+    "firehose": ["xai.firehose.pinax.network:443"],
+    "substreams": ["xai.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "arbitrum-one" }],

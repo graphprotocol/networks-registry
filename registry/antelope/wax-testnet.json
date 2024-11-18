@@ -10,12 +10,8 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "wax" }],
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "waxtest.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "waxtest.substreams.pinax.network:443" }
-    ]
+    "firehose": ["waxtest.firehose.pinax.network:443"],
+    "substreams": ["waxtest.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "WAX",

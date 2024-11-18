@@ -10,14 +10,10 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "arweave" },
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "arweave.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "arweave.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
+    "firehose": ["arweave.firehose.pinax.network:443"],
+    "substreams": ["arweave.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "AR",

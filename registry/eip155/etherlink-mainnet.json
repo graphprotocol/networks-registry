@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://explorer.etherlink.com/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "XTZ",

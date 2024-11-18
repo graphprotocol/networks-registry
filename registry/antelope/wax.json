@@ -9,12 +9,8 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "wax.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "wax.substreams.pinax.network:443" }
-    ]
+    "firehose": ["wax.firehose.pinax.network:443"],
+    "substreams": ["wax.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "WAX",

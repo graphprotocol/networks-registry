@@ -14,15 +14,12 @@
   "apiUrls": [{ "url": "https://api.bscscan.com/api", "kind": "etherscan" }],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "bsc.firehose.pinax.network:443" },
-      { "provider": "streamingfast", "url": "bnb.streamingfast.io:443" }
-    ],
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
+    "firehose": ["bsc.firehose.pinax.network:443", "bnb.streamingfast.io:443"],
     "substreams": [
-      { "provider": "pinax", "url": "bsc.substreams.pinax.network:443" },
-      { "provider": "streamingfast", "url": "bnb.streamingfast.io:443" }
+      "bsc.substreams.pinax.network:443",
+      "bnb.streamingfast.io:443"
     ]
   },
   "issuanceRewards": true,

@@ -9,12 +9,8 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "telos.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "telos.substreams.pinax.network:443" }
-    ]
+    "firehose": ["telos.firehose.pinax.network:443"],
+    "substreams": ["telos.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "TELOS",

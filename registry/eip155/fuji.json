@@ -14,7 +14,7 @@
   "apiUrls": [
     { "url": "https://api-testnet.snowtrace.io/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "avalanche" }],
   "issuanceRewards": false,

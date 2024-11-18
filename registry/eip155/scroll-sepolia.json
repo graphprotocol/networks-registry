@@ -15,13 +15,9 @@
     { "url": "https://api-sepolia.scrollscan.com/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "scrsepolia.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "scrsepolia.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["scrsepolia.firehose.pinax.network:443"],
+    "substreams": ["scrsepolia.substreams.pinax.network:443"]
   },
   "networkType": "testnet",
   "relations": [

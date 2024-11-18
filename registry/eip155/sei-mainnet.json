@@ -11,19 +11,9 @@
     { "url": "https://seitrace.com/pacific-1/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      {
-        "provider": "streamingfast",
-        "url": "evm-mainnet.sei.streamingfast.io:443"
-      }
-    ],
-    "substreams": [
-      {
-        "provider": "streamingfast",
-        "url": "evm-mainnet.sei.streamingfast.io:443"
-      }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["evm-mainnet.sei.streamingfast.io:443"],
+    "substreams": ["evm-mainnet.sei.streamingfast.io:443"]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,

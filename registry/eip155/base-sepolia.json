@@ -16,13 +16,9 @@
     { "url": "https://base-sepolia.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "basesepolia.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "basesepolia.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["basesepolia.firehose.pinax.network:443"],
+    "substreams": ["basesepolia.substreams.pinax.network:443"]
   },
   "networkType": "testnet",
   "relations": [

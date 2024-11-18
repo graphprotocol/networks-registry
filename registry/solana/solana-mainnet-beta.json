@@ -9,14 +9,10 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "streamingfast", "url": "mainnet.sol.streamingfast.io:443" }
-    ],
-    "substreams": [
-      { "provider": "streamingfast", "url": "mainnet.sol.streamingfast.io:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
+    "firehose": ["mainnet.sol.streamingfast.io:443"],
+    "substreams": ["mainnet.sol.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "SOL",

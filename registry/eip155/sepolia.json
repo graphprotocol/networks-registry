@@ -21,15 +21,15 @@
     { "url": "https://sepolia.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
     "firehose": [
-      { "provider": "pinax", "url": "sepolia.firehose.pinax.network:443" },
-      { "provider": "streamingfast", "url": "sepolia.eth.streamingfast.io:443" }
+      "sepolia.firehose.pinax.network:443",
+      "sepolia.eth.streamingfast.io:443"
     ],
     "substreams": [
-      { "provider": "pinax", "url": "sepolia.substreams.pinax.network:443" },
-      { "provider": "streamingfast", "url": "sepolia.eth.streamingfast.io:443" }
+      "sepolia.substreams.pinax.network:443",
+      "sepolia.eth.streamingfast.io:443"
     ]
   },
   "issuanceRewards": false,
