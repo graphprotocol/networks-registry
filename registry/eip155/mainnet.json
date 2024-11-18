@@ -35,7 +35,7 @@
   "indexerDocsUrls": [
     {
       "url": "https://docs.infradao.com/archive-nodes-101/ethereum",
-      "kind": "rpc"
+      "description": "Arhchive Nodes 101"
     }
   ],
   "genesis": {

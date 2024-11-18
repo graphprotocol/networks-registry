@@ -115,7 +115,7 @@
             },
             "bytesEncoding": {
               "type": "string",
-              "enum": ["hex", "0xhex", "base58"],
+              "enum": ["hex", "0xhex", "base58", "base64", "other"],
               "description": "Bytes encoding, e.g. hex, 0xhex, base58"
             },
             "bufUrl": {
@@ -161,7 +161,14 @@
           "properties": {
             "protocol": {
               "type": "string",
-              "enum": ["ethereum", "near", "arweave", "cosmos", "starknet"],
+              "enum": [
+                "ethereum",
+                "near",
+                "arweave",
+                "cosmos",
+                "starknet",
+                "other"
+              ],
               "description": "[optional] Protocol name in graph-node, e.g. ethereum, near, arweave"
             }
           },
@@ -272,17 +279,12 @@
                 "format": "url",
                 "description": "URL to the documentation, e.g. https://docs.infradao.com/archive-nodes-101/arbitrum"
               },
-              "kind": {
-                "type": "string",
-                "enum": ["rpc", "firehose", "datasets", "other"],
-                "description": "Kind of documentation"
-              },
               "description": {
                 "type": "string",
                 "description": "Docs description, e.g. Arbitrum 101"
               }
             },
-            "required": ["url", "kind"],
+            "required": ["url"],
             "additionalProperties": false
           },
           "description": "Documentation to run indexer components for this network"
