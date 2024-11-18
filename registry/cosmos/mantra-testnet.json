@@ -12,18 +12,8 @@
   "relations": [{ "kind": "testnetOf", "network": "mantra-mainnet" }],
   "graphNode": { "protocol": "cosmos" },
   "services": {
-    "firehose": [
-      {
-        "provider": "streamingfast",
-        "url": "testnet.mantra.streamingfast.io:443"
-      }
-    ],
-    "substreams": [
-      {
-        "provider": "streamingfast",
-        "url": "testnet.mantra.streamingfast.io:443"
-      }
-    ]
+    "firehose": ["testnet.mantra.streamingfast.io:443"],
+    "substreams": ["testnet.mantra.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "OM",

@@ -2,7 +2,7 @@
   "id": "kylin",
   "shortName": "EOS",
   "secondName": "Kylin",
-  "fullName": "Kylin Testnet",
+  "fullName": "EOS Kylin Testnet",
   "aliases": ["eos-kylin"],
   "caip2Id": "antelope:5fff1dae8dc8e2fc4d5b23b2c7665c97",
   "explorerUrls": ["https://kylin.bloks.io"],
@@ -11,12 +11,8 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "eos" }],
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "kylin.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "kylin.substreams.pinax.network:443" }
-    ]
+    "firehose": ["kylin.firehose.pinax.network:443"],
+    "substreams": ["kylin.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "EOS",

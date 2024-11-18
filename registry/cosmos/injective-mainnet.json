@@ -10,18 +10,8 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "cosmos" },
   "services": {
-    "firehose": [
-      {
-        "provider": "streamingfast",
-        "url": "mainnet.injective.streamingfast.io:443"
-      }
-    ],
-    "substreams": [
-      {
-        "provider": "streamingfast",
-        "url": "mainnet.injective.streamingfast.io:443"
-      }
-    ]
+    "firehose": ["mainnet.injective.streamingfast.io:443"],
+    "substreams": ["mainnet.injective.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "INJ",

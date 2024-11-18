@@ -14,13 +14,9 @@
     { "url": "https://moonbeam.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "moonbeam.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "moonbeam.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["moonbeam.firehose.pinax.network:443"],
+    "substreams": ["moonbeam.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,

@@ -15,21 +15,15 @@
     { "url": "https://base.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
     "firehose": [
-      { "provider": "pinax", "url": "base.firehose.pinax.network:443" },
-      {
-        "provider": "streamingfast",
-        "url": "base-mainnet.streamingfast.io:443"
-      }
+      "base.firehose.pinax.network:443",
+      "base-mainnet.streamingfast.io:443"
     ],
     "substreams": [
-      { "provider": "pinax", "url": "base.substreams.pinax.network:443" },
-      {
-        "provider": "streamingfast",
-        "url": "base-mainnet.streamingfast.io:443"
-      }
+      "base.substreams.pinax.network:443",
+      "base-mainnet.streamingfast.io:443"
     ]
   },
   "networkType": "mainnet",

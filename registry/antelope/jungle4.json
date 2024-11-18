@@ -11,12 +11,8 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "eos" }],
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "jungle4.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "jungle4.substreams.pinax.network:443" }
-    ]
+    "firehose": ["jungle4.firehose.pinax.network:443"],
+    "substreams": ["jungle4.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "EOS",

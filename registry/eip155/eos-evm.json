@@ -15,12 +15,8 @@
     { "kind": "etherscan", "url": "https://explorer.evm.eosnetwork.com/api" }
   ],
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "eosevm.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "eosevm.substreams.pinax.network:443" }
-    ]
+    "firehose": ["eosevm.firehose.pinax.network:443"],
+    "substreams": ["eosevm.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,

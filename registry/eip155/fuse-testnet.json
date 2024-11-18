@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://explorer.fusespark.io/api", "kind": "blockscout" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "fuse" }],
   "issuanceRewards": false,

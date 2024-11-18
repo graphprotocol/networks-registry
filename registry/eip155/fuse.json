@@ -12,14 +12,10 @@
   ],
   "apiUrls": [{ "url": "https://explorer.fuse.io/api", "kind": "blockscout" }],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "fuse.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "fuse.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
+    "firehose": ["fuse.firehose.pinax.network:443"],
+    "substreams": ["fuse.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "issuanceRewards": true,

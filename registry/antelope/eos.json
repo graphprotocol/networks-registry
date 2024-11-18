@@ -9,12 +9,8 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "eos.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "eos.substreams.pinax.network:443" }
-    ]
+    "firehose": ["eos.firehose.pinax.network:443"],
+    "substreams": ["eos.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "EOS",

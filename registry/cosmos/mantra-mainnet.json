@@ -10,18 +10,8 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "cosmos" },
   "services": {
-    "firehose": [
-      {
-        "provider": "streamingfast",
-        "url": "mainnet.mantra.streamingfast.io:443"
-      }
-    ],
-    "substreams": [
-      {
-        "provider": "streamingfast",
-        "url": "mainnet.mantra.streamingfast.io:443"
-      }
-    ]
+    "firehose": ["mainnet.mantra.streamingfast.io:443"],
+    "substreams": ["mainnet.mantra.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "OM",

@@ -11,18 +11,8 @@
   "graphNode": { "protocol": "cosmos" },
   "relations": [{ "kind": "testnetOf", "network": "injective-mainnet" }],
   "services": {
-    "firehose": [
-      {
-        "provider": "streamingfast",
-        "url": "testnet.injective.streamingfast.io:443"
-      }
-    ],
-    "substreams": [
-      {
-        "provider": "streamingfast",
-        "url": "testnet.injective.streamingfast.io:443"
-      }
-    ]
+    "firehose": ["testnet.injective.streamingfast.io:443"],
+    "substreams": ["testnet.injective.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "INJ",

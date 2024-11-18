@@ -19,15 +19,15 @@
     { "url": "https://arbitrum-one.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
     "firehose": [
-      { "provider": "pinax", "url": "arbone.firehose.pinax.network:443" },
-      { "provider": "streamingfast", "url": "arb-one.streamingfast.io:443" }
+      "arbone.firehose.pinax.network:443",
+      "arb-one.streamingfast.io:443"
     ],
     "substreams": [
-      { "provider": "pinax", "url": "arbone.substreams.pinax.network:443" },
-      { "provider": "streamingfast", "url": "arb-one.streamingfast.io:443" }
+      "arbone.substreams.pinax.network:443",
+      "arb-one.streamingfast.io:443"
     ]
   },
   "networkType": "mainnet",

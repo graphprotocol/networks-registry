@@ -9,15 +9,15 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
     "firehose": [
-      { "provider": "pinax", "url": "bitcoin.firehose.pinax.network:443" },
-      { "provider": "streamingfast", "url": "mainnet.btc.streamingfast.io:443" }
+      "bitcoin.firehose.pinax.network:443",
+      "mainnet.btc.streamingfast.io:443"
     ],
     "substreams": [
-      { "provider": "pinax", "url": "bitcoin.substreams.pinax.network:443" },
-      { "provider": "streamingfast", "url": "mainnet.btc.streamingfast.io:443" }
+      "bitcoin.substreams.pinax.network:443",
+      "mainnet.btc.streamingfast.io:443"
     ]
   },
   "issuanceRewards": false,

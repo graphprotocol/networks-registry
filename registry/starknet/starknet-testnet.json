@@ -18,15 +18,8 @@
   "apiUrls": [],
   "networkType": "testnet",
   "services": {
-    "firehose": [
-      { "provider": "pinax", "url": "starksepolia.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      {
-        "provider": "pinax",
-        "url": "starksepolia.substreams.pinax.network:443"
-      }
-    ]
+    "firehose": ["starksepolia.firehose.pinax.network:443"],
+    "substreams": ["starksepolia.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "STRK",

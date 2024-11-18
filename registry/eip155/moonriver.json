@@ -15,13 +15,9 @@
     { "url": "https://api-moonriver.moonscan.io/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "moonriver.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "moonriver.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["moonriver.firehose.pinax.network:443"],
+    "substreams": ["moonriver.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "other", "network": "moonbeam" }],

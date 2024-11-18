@@ -18,13 +18,9 @@
     }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "bobasepolia.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "bobasepolia.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["bobasepolia.firehose.pinax.network:443"],
+    "substreams": ["bobasepolia.substreams.pinax.network:443"]
   },
   "networkType": "testnet",
   "relations": [

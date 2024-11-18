@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://explorer.testnet.aurora.dev/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": [{ "provider": "e&n" }] },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "aurora" }],
   "issuanceRewards": false,

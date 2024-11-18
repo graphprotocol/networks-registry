@@ -14,14 +14,10 @@
     { "url": "https://explorer.mode.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "mode.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "mode.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "sps": ["https://api.thegraph.com/deploy"],
+    "firehose": ["mode.firehose.pinax.network:443"],
+    "substreams": ["mode.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

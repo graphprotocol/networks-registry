@@ -17,13 +17,9 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "bsc" }],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "firehose": [
-      { "provider": "pinax", "url": "chapel.firehose.pinax.network:443" }
-    ],
-    "substreams": [
-      { "provider": "pinax", "url": "chapel.substreams.pinax.network:443" }
-    ]
+    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "firehose": ["chapel.firehose.pinax.network:443"],
+    "substreams": ["chapel.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "tBNB",
