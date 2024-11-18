@@ -22,7 +22,10 @@
   "nativeToken": "FUSE",
   "docsUrl": "https://docs.fuse.io",
   "indexerDocsUrls": [
-    { "url": "https://docs.infradao.com/archive-nodes-101/fuse", "kind": "rpc" }
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/fuse",
+      "description": "Arhchive Nodes 101"
+    }
   ],
   "genesis": {
     "hash": "0x6e778e9491576a28bd06fac93844d8494be1f153e60ba7d29b4b51d991d4f830",

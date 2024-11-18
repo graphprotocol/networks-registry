@@ -32,7 +32,7 @@
   "indexerDocsUrls": [
     {
       "url": "https://docs.infradao.com/archive-nodes-101/avalanche",
-      "kind": "rpc"
+      "description": "Arhchive Nodes 101"
     }
   ],
   "genesis": {
