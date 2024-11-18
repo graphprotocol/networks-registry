@@ -85,7 +85,7 @@ export interface Network {
     /**
      * Bytes encoding, e.g. hex, 0xhex, base58
      */
-    bytesEncoding: "hex" | "0xhex" | "base58";
+    bytesEncoding: "hex" | "0xhex" | "base58" | "base64" | "other";
     /**
      * Protobuf definitions on buf.build, e.g. https://buf.build/streamingfast/firehose-ethereum
      */
@@ -119,7 +119,13 @@ export interface Network {
     /**
      * [optional] Protocol name in graph-node, e.g. ethereum, near, arweave
      */
-    protocol?: "ethereum" | "near" | "arweave" | "cosmos" | "starknet";
+    protocol?:
+      | "ethereum"
+      | "near"
+      | "arweave"
+      | "cosmos"
+      | "starknet"
+      | "other";
   };
   /**
    * URLs for the block explorers
@@ -194,10 +200,6 @@ export interface Network {
      * URL to the documentation, e.g. https://docs.infradao.com/archive-nodes-101/arbitrum
      */
     url: string;
-    /**
-     * Kind of documentation
-     */
-    kind: "rpc" | "firehose" | "datasets" | "other";
     /**
      * Docs description, e.g. Arbitrum 101
      */

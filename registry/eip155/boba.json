@@ -27,7 +27,10 @@
   "nativeToken": "ETH",
   "docsUrl": "https://docs.boba.network",
   "indexerDocsUrls": [
-    { "url": "https://docs.infradao.com/archive-nodes-101/boba", "kind": "rpc" }
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/boba",
+      "description": "Arhchive Nodes 101"
+    }
   ],
   "genesis": {
     "hash": "0xdcd9e6a8f9973eaa62da2874959cb152faeb4fd6929177bd6335a1a16074ef9c",

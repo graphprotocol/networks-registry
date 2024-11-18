@@ -25,7 +25,7 @@
   "indexerDocsUrls": [
     {
       "url": "https://docs.infradao.com/archive-nodes-101/moonbeam",
-      "kind": "rpc"
+      "description": "Arhchive Nodes 101"
     }
   ],
   "genesis": {
