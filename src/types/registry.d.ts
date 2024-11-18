@@ -27,33 +27,36 @@ export interface TheGraphNetworksRegistrySchema {
 }
 export interface Network {
   /**
-   * Established name of the chain on the Graph network, i.e. mainnet, btc, arweave-mainnet, near-testnet
+   * Established name of the network in The Graph ecosystem, e.g. mainnet, btc, arweave-mainnet, near-testnet
    */
   id: string;
   /**
-   * Short display name of the network, i.e. Ethereum, BNB
+   * Short display name of the network, e.g. Ethereum, BNB
    */
   shortName: string;
   /**
-   * Second display name of the network, i.e. Sepolia, Nova
+   * Second display name of the network, e.g. Sepolia, Nova
    */
   secondName?: string;
   /**
-   * Display name of the network, i.e. Ethereum Mainnet, Bitcoin Testnet
+   * Display name of the network, e.g. Ethereum Mainnet, Bitcoin Testnet
    */
   fullName: string;
   /**
-   * CAIP-2 Chain ID, i.e. eip155:1, bip122:000000000019d6689c085ae165831e93
+   * CAIP-2 Chain ID, e.g. eip155:1, bip122:000000000019d6689c085ae165831e93
    */
   caip2Id: string;
   /**
-   * [optional] List of possible aliases for the chain id, i.e. ethereum, eth, mainnet, eth-mainnet
+   * [optional] List of possible aliases for the network id, e.g. ethereum, eth, mainnet, eth-mainnet
    */
   aliases?: string[];
   /**
-   * Whether the chain is a mainnet/testnet/devnet
+   * Whether the network is a mainnet/testnet/devnet
    */
   networkType: "mainnet" | "testnet" | "devnet";
+  /**
+   * Relations to other networks in the registry
+   */
   relations?: {
     /**
      * Kind of relation
@@ -67,7 +70,7 @@ export interface Network {
       | "evmOf"
       | "other";
     /**
-     * Id of the related network, i.e. mainnet, near-mainnet
+     * ID of the related network, e.g. mainnet, near-mainnet
      */
     network: string;
   }[];
@@ -76,22 +79,25 @@ export interface Network {
    */
   firehose?: {
     /**
-     * Block type, i.e. sf.ethereum.type.v2.Block
+     * Block type, e.g. sf.ethereum.type.v2.Block
      */
     blockType: string;
     /**
-     * Bytes encoding, i.e. hex, 0xhex, base58
+     * Bytes encoding, e.g. hex, 0xhex, base58
      */
     bytesEncoding: "hex" | "0xhex" | "base58";
     /**
-     * Protobuf definitions on buf.build, i.e. https://buf.build/streamingfast/firehose-ethereum
+     * Protobuf definitions on buf.build, e.g. https://buf.build/streamingfast/firehose-ethereum
      */
     bufUrl: string;
     /**
-     * [optional] Whether supports extended block model if EVM chain
+     * [optional] Whether there is support for extended EVM block model
      */
     evmExtendedModel?: boolean;
   };
+  /**
+   * Genesis block information
+   */
   genesis?: {
     /**
      * Hash of the genesis block either in 0x-prefixed hex or base58
@@ -106,9 +112,12 @@ export interface Network {
    * Symbol of the native token
    */
   nativeToken?: string;
+  /**
+   * Graph Node specific configuration information
+   */
   graphNode?: {
     /**
-     * [optional] Protocol name in graph-node, i.e. ethereum, near, arweave
+     * [optional] Protocol name in graph-node, e.g. ethereum, near, arweave
      */
     protocol?: "ethereum" | "near" | "arweave" | "cosmos" | "starknet";
   };
@@ -117,26 +126,41 @@ export interface Network {
    */
   explorerUrls?: string[];
   /**
-   * Providers support for the chain by providers
+   * Services available for the network in the ecosystem
    */
   services: {
-    subgraphs?: Service[];
-    sps?: Service[];
-    firehose?: Service[];
-    substreams?: Service[];
+    /**
+     * Subgraph studio deployment URLs, e.g. https://api.thegraph.com/deploy
+     */
+    subgraphs?: string[];
+    /**
+     * Substreams-based subgraphs studio deployment URLs, e.g. https://api.thegraph.com/deploy
+     */
+    sps?: string[];
+    /**
+     * Firehose gRPC URLs, e.g. eth.firehose.pinax.network:443
+     */
+    firehose?: string[];
+    /**
+     * Substreams gRPC URLs, e.g. eth.substreams.pinax.network:443
+     */
+    substreams?: string[];
   };
   /**
    * Issuance rewards on the Graph Network for this chain
    */
   issuanceRewards: boolean;
   /**
-   * Icons for the chain
+   * Icons for the network
    */
   icon?: {
     /**
      * Web3Icons icon - see https://github.com/0xa3k5/web3icons
      */
     web3Icons?: {
+      /**
+       * Web3Icons icon ID
+       */
       name: string;
       /**
        * Variants of the icon, if none specified - all are available
@@ -149,10 +173,13 @@ export interface Network {
    */
   rpcUrls?: string[];
   /**
-   * List of API URLs for the chain, i.e. https://api.etherscan.io/api. Use {CUSTOM_API_KEY} as a placeholder for a private API key
+   * List of API URLs for the network, i.e. Etherescan-like API to get ABI. Use {CUSTOM_API_KEY} as a placeholder for a private API key
    */
   apiUrls?: {
     url: string;
+    /**
+     * Kind of API
+     */
     kind: "etherscan" | "blockscout" | "ethplorer" | "subscan" | "other";
   }[];
   /**
@@ -160,21 +187,20 @@ export interface Network {
    */
   docsUrl?: string;
   /**
-   * Documentation to run indexer components for the chain
+   * Documentation to run indexer components for this network
    */
   indexerDocsUrls?: {
+    /**
+     * URL to the documentation, e.g. https://docs.infradao.com/archive-nodes-101/arbitrum
+     */
     url: string;
-    kind: "rpc" | "firehose" | "other";
-    hint?: string;
+    /**
+     * Kind of documentation
+     */
+    kind: "rpc" | "firehose" | "datasets" | "other";
+    /**
+     * Docs description, e.g. Arbitrum 101
+     */
+    description?: string;
   }[];
-}
-export interface Service {
-  provider:
-    | "e&n"
-    | "pinax"
-    | "graphops"
-    | "streamingfast"
-    | "messari"
-    | "semiotic";
-  url?: string;
 }
