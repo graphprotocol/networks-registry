@@ -1,6 +1,6 @@
 # The Graph networks registry
 
-This repository manages a registry of networks in The Graph ecosystem. See [Releases](https://github.com/pinax-network/supported-networks/releases) page for the latest version of the registry.
+This repository manages a registry of networks in The Graph ecosystem. See [Releases](https://github.com/pinax-network/supported-networks/releases) page for the latest version of the registry. See [docs/networks-table.md](./docs/networks-table.md) for the up-to-date auto-generated networks table.
 
 ## Adding/updating a chain
 
@@ -12,6 +12,7 @@ This repository manages a registry of networks in The Graph ecosystem. See [Rele
 
 ## Structure of the repository
 
+- `docs/`: Contains docs and auto-generated networks table
 - `schemas/`: Contains the schema for the registry
 - `registry/`: Contains the networks JSONs (edit these)
 - `public`: Contains all generated registry versions (don't edit those)
