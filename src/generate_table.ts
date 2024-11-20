@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { loadNetworks } from "./utils/fs";
 import { Network } from "./types/registry";
+import { version } from "../package.json";
 
 function generateMarkdownTable(networks: Network[]): string {
   const headers = [
@@ -57,7 +58,7 @@ function generateMarkdownTable(networks: Network[]): string {
   ].join("\n");
 
   // Create complete markdown content
-  return `# The Graph Registry Networks\n\nAuto-generated from the networks registry on every release.\n\n${tableContent}\n`;
+  return `# Networks Registry v${version}\n\nAuto-generated from the networks registry on every release.\n\n${tableContent}\n`;
 }
 
 function main() {
