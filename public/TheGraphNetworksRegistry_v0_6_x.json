@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-18T22:33:02.385Z",
+  "updatedAt": "2024-11-20T16:47:35.027Z",
   "networks": [
     {
       "id": "mainnet",
@@ -61,7 +61,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/ethereum",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -135,7 +135,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/optimism",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -194,7 +194,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/gnosis",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -667,7 +667,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/fuse",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -835,7 +835,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/moonbeam",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -1371,7 +1371,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/polygon",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "issuanceRewards": true,
@@ -2087,7 +2087,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/fantom",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -2155,7 +2155,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/boba",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -2275,7 +2275,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/rootstock",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -2515,7 +2515,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/mode",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -2715,7 +2715,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/arbitrum",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -2908,7 +2908,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/celo",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -3082,7 +3082,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/avalanche",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -3376,7 +3376,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/scroll",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -3446,7 +3446,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/binance",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -3516,7 +3516,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/bobabnb",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -3645,7 +3645,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/linea",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -3768,7 +3768,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/zora",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -3902,7 +3902,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/blast",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -4020,7 +4020,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/base",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
@@ -5459,7 +5459,7 @@
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/starknet",
-          "description": "Arhchive Nodes 101"
+          "description": "Archive Nodes 101"
         }
       ],
       "genesis": {
