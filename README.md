@@ -1,6 +1,15 @@
 # The Graph networks registry
 
-This repository manages a registry of networks in The Graph ecosystem. See [Releases](https://github.com/pinax-network/supported-networks/releases) page for the latest version of the registry. See [docs/networks-table.md](./docs/networks-table.md) for the up-to-date auto-generated networks table.
+[![GitHub Release](https://img.shields.io/github/v/release/graphprotocol/networks-registry)](https://github.com/graphprotocol/networks-registry/releases/latest)
+
+This repository manages a registry of networks in The Graph ecosystem.
+
+See [Releases](https://github.com/graphprotocol/networks-registry/releases) page for the latest version of the registry.
+See [Networks Table](./docs/networks-table.md) for an up-to-date auto-generated networks list.
+
+[Libraries](https://github.com/pinax-network/graph-networks-libs) for Typescript, Go and Rust.
+
+[Demo app](https://graph-networks-app.vercel.app/) for the registry.
 
 ## Adding/updating a chain
 
@@ -12,9 +21,9 @@ This repository manages a registry of networks in The Graph ecosystem. See [Rele
 
 ## Structure of the repository
 
-- `docs/`: Contains docs and auto-generated networks table
 - `schemas/`: Contains the schema for the registry
 - `registry/`: Contains the networks JSONs (edit these)
+- `docs/`: Contains docs and auto-generated networks table
 - `public`: Contains all generated registry versions (don't edit those)
 - `src/`: Contains scripts to validate networks JSONs and generate the resulting registry JSON
 
@@ -72,9 +81,9 @@ In addition to the above, the JSON Schema is available at TheGraphNetworksRegist
 
 ## Registry Usage
 
-In your application you can pull one of the registry JSONs above depending on your use case - whether it's pinned to a specific registry version, whether you allow backwards compatible schema changes or you just need the latest one.
+In your application you can use one of the generated registry JSONs above depending on your use case.
 
-Refer to [Using The Graph Networks Registry](./docs/using-the-registry.md) for more information and best practices.
+Libraries for Typescript, Go and Rust [exist](https://github.com/pinax-network/graph-networks-libs) to make it easier to work with the registry.
 
 Typical use cases:
 
@@ -85,6 +94,7 @@ Typical use cases:
 
 ## References
 
+- [The Graph Networks Registry libraries](https://github.com/pinax-network/graph-networks-libs)
 - [Ethereum chains list](https://github.com/ethereum-lists/chains)
 - [CAIP-2 chain ids](https://chainagnostic.org/CAIPs/caip-2)
 - [Web3Icons](https://github.com/0xa3k5/web3icons/tree/main/raw-svgs/networks/branded)
