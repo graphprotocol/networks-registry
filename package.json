@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.6.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,6 +13,7 @@
     "generate:types": "json2ts --input schemas/registry.schema.json --output src/types/registry.d.ts --cwd=schemas",
     "generate:registry": "bun run ./src/generate.ts",
     "generate:public": "bun run ./src/generate.ts registry public",
+    "generate:table": "bun run ./src/generate_table.ts",
     "all": "bun generate:types && bun validate && bun generate:registry && bun format && bun format:check"
   },
   "devDependencies": {

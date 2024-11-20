@@ -50,6 +50,9 @@ jobs:
       - name: Generate registry
         run: bun generate:public
 
+      - name: Generate table
+        run: bun generate:table
+
       - name: Format
         run: bun format
 
