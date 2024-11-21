@@ -11,8 +11,8 @@
   "networkType": "mainnet",
   "relations": [{ "kind": "beaconOf", "network": "sepolia" }],
   "services": {
-    "firehose": ["holesky-cl.firehose.pinax.network:443"],
-    "substreams": ["holesky-cl.substreams.pinax.network:443"]
+    "firehose": ["sepolia-cl.firehose.pinax.network:443"],
+    "substreams": ["sepolia-cl.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "ETH",
