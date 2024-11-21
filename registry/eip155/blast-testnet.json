@@ -3,8 +3,8 @@
   "shortName": "Blast",
   "secondName": "Sepolia",
   "fullName": "Blast Sepolia Testnet",
-  "aliases": ["evm-23888", "blast-sepolia"],
-  "caip2Id": "eip155:23888",
+  "aliases": ["evm-168587773", "blast-sepolia"],
+  "caip2Id": "eip155:168587773",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.blastscan.io"],
   "rpcUrls": [

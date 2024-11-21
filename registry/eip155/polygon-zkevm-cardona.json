@@ -1,0 +1,43 @@
+{
+  "id": "polygon-zkevm-cardona",
+  "shortName": "Polygon zkEVM",
+  "secondName": "Cardona",
+  "fullName": "Polygon zkEVM Cardona Testnet",
+  "aliases": ["polygon-cardona"],
+  "caip2Id": "eip155:2442",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "polygon-zkevm" }
+  ],
+  "explorerUrls": ["https://cardona-zkevm.polygonscan.com"],
+  "rpcUrls": [
+    "https://rpc.cardona.zkevm-rpc.com",
+    "https://cardona.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://api-cardona-zkevm.polygonscan.com/api",
+      "kind": "etherscan"
+    }
+  ],
+  "networkType": "testnet",
+  "services": {
+    "firehose": ["cardona.firehose.pinax.network:443"],
+    "substreams": ["cardona.substreams.pinax.network:443"]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://polygon.technology/polygon-zkevm",
+  "genesis": {
+    "hash": "0x676c1a76a6c5855a32bdf7c61977a0d1510088a4eeac1330466453b3d08b60b9",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "polygon-zkevm" } }
+}

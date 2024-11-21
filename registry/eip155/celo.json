@@ -6,7 +6,10 @@
   "caip2Id": "eip155:42220",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://celoscan.io"],
-  "rpcUrls": ["https://forno.celo.org"],
+  "rpcUrls": [
+    "https://forno.celo.org",
+    "https://celo.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
   "apiUrls": [
     { "url": "https://celo.abi.pinax.network/api", "kind": "etherscan" }
   ],

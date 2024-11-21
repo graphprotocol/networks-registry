@@ -11,8 +11,14 @@
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
     "sps": ["https://api.thegraph.com/deploy"],
-    "firehose": ["mainnet.sol.streamingfast.io:443"],
-    "substreams": ["mainnet.sol.streamingfast.io:443"]
+    "firehose": [
+      "mainnet.sol.streamingfast.io:443",
+      "solana.firehose.pinax.network:443"
+    ],
+    "substreams": [
+      "mainnet.sol.streamingfast.io:443",
+      "solana.substreams.pinax.network:443"
+    ]
   },
   "issuanceRewards": false,
   "nativeToken": "SOL",
