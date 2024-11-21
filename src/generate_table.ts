@@ -6,8 +6,8 @@ import { version } from "../package.json";
 
 function generateMarkdownTable(networks: Network[]): string {
   const headers = [
-    "ID",
     "Network",
+    "ID",
     "Type",
     "Indexing Rewards",
     "Graph Node Protocol",
@@ -24,12 +24,19 @@ function generateMarkdownTable(networks: Network[]): string {
   // center-align all columns using :---:
   const alignmentRow = `| ${headers.map(() => ":---:").join(" | ")} |`;
 
+  const fullName = (network: Network) => {
+    const icon = network.icon?.web3Icons?.name
+      ? `![](https://raw.githubusercontent.com/0xa3k5/web3icons/refs/heads/main/raw-svgs/networks/branded/${network.icon.web3Icons.name}.svg)`
+      : "";
+    return `${icon} ${network.shortName} ${network.secondName ?? ""}`;
+  };
+
   // Generate rows for each network
   const rows = networks.map((network) => {
     const services = network.services || {};
     return [
+      fullName(network),
       `**${network.id}**`,
-      `${network.shortName} ${network.secondName ?? ""}`,
       `*${network.networkType}*`,
       network.issuanceRewards ? "✅" : "",
       `*${
