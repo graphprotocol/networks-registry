@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-21T03:36:17.958Z",
+  "updatedAt": "2024-11-21T18:43:12.206Z",
   "networks": [
     {
       "id": "mainnet",
@@ -370,8 +370,7 @@
     },
     {
       "id": "polygon-zkevm",
-      "shortName": "Polygon",
-      "secondName": "zkEVM",
+      "shortName": "Polygon zkEVM",
       "fullName": "Polygon zkEVM Mainnet",
       "aliases": [],
       "caip2Id": "eip155:1101",
@@ -1570,6 +1569,73 @@
       }
     },
     {
+      "id": "blast-testnet",
+      "shortName": "Blast",
+      "secondName": "Sepolia",
+      "fullName": "Blast Sepolia Testnet",
+      "aliases": [
+        "evm-168587773",
+        "blast-sepolia"
+      ],
+      "caip2Id": "eip155:168587773",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://sepolia.blastscan.io"
+      ],
+      "rpcUrls": [
+        "https://sepolia.blast.io",
+        "https://blastsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://blast-testnet.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "blastsepolia.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "blastsepolia.substreams.pinax.network:443"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        },
+        {
+          "kind": "testnetOf",
+          "network": "blast-mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.blast.io",
+      "genesis": {
+        "hash": "0x26a1c0faad7b041f34569a1bb383f00ab74b335883a44bed53e9f41ced5fd906",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "blast"
+        }
+      }
+    },
+    {
       "id": "holesky",
       "shortName": "Ethereum",
       "secondName": "Holesky",
@@ -1930,43 +1996,17 @@
       }
     },
     {
-      "id": "blast-testnet",
-      "shortName": "Blast",
-      "secondName": "Sepolia",
-      "fullName": "Blast Sepolia Testnet",
+      "id": "polygon-zkevm-cardona",
+      "shortName": "Polygon zkEVM",
+      "secondName": "Cardona",
+      "fullName": "Polygon zkEVM Cardona Testnet",
       "aliases": [
-        "evm-23888",
-        "blast-sepolia"
+        "polygon-cardona"
       ],
-      "caip2Id": "eip155:23888",
+      "caip2Id": "eip155:2442",
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://sepolia.blastscan.io"
-      ],
-      "rpcUrls": [
-        "https://sepolia.blast.io",
-        "https://blastsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://blast-testnet.abi.pinax.network/api",
-          "kind": "etherscan"
-        }
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "blastsepolia.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "blastsepolia.substreams.pinax.network:443"
-        ]
-      },
-      "networkType": "testnet",
       "relations": [
         {
           "kind": "l2Of",
@@ -1974,14 +2014,36 @@
         },
         {
           "kind": "testnetOf",
-          "network": "blast-mainnet"
+          "network": "polygon-zkevm"
         }
       ],
+      "explorerUrls": [
+        "https://cardona-zkevm.polygonscan.com"
+      ],
+      "rpcUrls": [
+        "https://rpc.cardona.zkevm-rpc.com",
+        "https://cardona.rpc.pinax.network/v1/{PINAX_API_KEY}"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api-cardona-zkevm.polygonscan.com/api",
+          "kind": "etherscan"
+        }
+      ],
+      "networkType": "testnet",
+      "services": {
+        "firehose": [
+          "cardona.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "cardona.substreams.pinax.network:443"
+        ]
+      },
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.blast.io",
+      "docsUrl": "https://polygon.technology/polygon-zkevm",
       "genesis": {
-        "hash": "0x26a1c0faad7b041f34569a1bb383f00ab74b335883a44bed53e9f41ced5fd906",
+        "hash": "0x676c1a76a6c5855a32bdf7c61977a0d1510088a4eeac1330466453b3d08b60b9",
         "height": 0
       },
       "firehose": {
@@ -1992,7 +2054,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "blast"
+          "name": "polygon-zkevm"
         }
       }
     },
@@ -2255,7 +2317,8 @@
         "https://rootstock.blockscout.com"
       ],
       "rpcUrls": [
-        "https://public-node.rsk.co"
+        "https://public-node.rsk.co",
+        "https://rootstock.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -2424,7 +2487,8 @@
         "https://explorer.zksync.io"
       ],
       "rpcUrls": [
-        "https://mainnet.era.zksync.io"
+        "https://mainnet.era.zksync.io",
+        "https://zksyncera.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -2939,7 +3003,8 @@
         "https://celoscan.io"
       ],
       "rpcUrls": [
-        "https://forno.celo.org"
+        "https://forno.celo.org",
+        "https://celo.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -3716,6 +3781,71 @@
       }
     },
     {
+      "id": "astar-zkyoto",
+      "shortName": "Astar",
+      "secondName": "zKyoto",
+      "fullName": "Astar zkEVM Testnet zKyoto",
+      "aliases": [
+        "evm-6038361",
+        "astar-testnet",
+        "astar-zkevm-testnet"
+      ],
+      "caip2Id": "eip155:6038361",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://zkyoto.explorer.startale.com"
+      ],
+      "rpcUrls": [
+        "https://rpc.startale.com/zkyoto",
+        "https://zkyoto.rpc.pinax.network/v1/{PINAX_API_KEY}"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://zkyoto.explorer.startale.com/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "firehose": [
+          "zkyoto.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "zkyoto.substreams.pinax.network:443"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        },
+        {
+          "kind": "testnetOf",
+          "network": "astar-zkevm-mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.astar.network/docs/getting-started",
+      "genesis": {
+        "hash": "0xa479ae412a77c2f4dee25e923ecac955df8ee9bc12eed467899da53a43cbf0f1",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "astar"
+        }
+      }
+    },
+    {
       "id": "xai",
       "shortName": "Xai",
       "fullName": "Xai Mainnet",
@@ -4244,6 +4374,12 @@
       "services": {
         "subgraphs": [
           "https://api.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "chiliz.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "chiliz.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -4853,6 +4989,95 @@
       }
     },
     {
+      "id": "gnosis-cl",
+      "shortName": "Gnosis Beacon",
+      "fullName": "Gnosis Consensus Layer Chain",
+      "aliases": [
+        "gnosis-beacon"
+      ],
+      "caip2Id": "beacon:100",
+      "explorerUrls": [],
+      "rpcUrls": [],
+      "apiUrls": [],
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "beaconOf",
+          "network": "gnosis"
+        }
+      ],
+      "services": {
+        "firehose": [
+          "gnosis-cl.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "gnosis-cl.substreams.pinax.network:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "XDAI",
+      "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
+      "genesis": {
+        "hash": "0x23564cd15ac0b90ed72cbc78ffd5e35e309816c0cca5ad28390bd9892e846a75",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.beacon.type.v1.Block",
+        "bufUrl": "https://buf.build/pinax/firehose-beacon",
+        "bytesEncoding": "0xhex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "gnosis"
+        }
+      }
+    },
+    {
+      "id": "gnosis-chiado-cl",
+      "shortName": "Gnosis Beacon",
+      "secondName": "Chiado",
+      "fullName": "Gnosis Chiado Consensus Layer Chain",
+      "aliases": [
+        "gnosis-chiado-beacon"
+      ],
+      "caip2Id": "beacon:10200",
+      "explorerUrls": [],
+      "rpcUrls": [],
+      "apiUrls": [],
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "beaconOf",
+          "network": "gnosis-chiado"
+        }
+      ],
+      "services": {
+        "firehose": [
+          "chiado-cl.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "chiado-cl.substreams.pinax.network:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "XDAI",
+      "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
+      "genesis": {
+        "hash": "0xf227cf50c05b1aa570ce4f8ee00c71f11c63d05b297ad3a0e7a05d341c333381",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.beacon.type.v1.Block",
+        "bufUrl": "https://buf.build/pinax/firehose-beacon",
+        "bytesEncoding": "0xhex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "gnosis"
+        }
+      }
+    },
+    {
       "id": "sepolia-cl",
       "shortName": "Ethereum Beacon",
       "secondName": "Sepolia",
@@ -4873,10 +5098,10 @@
       ],
       "services": {
         "firehose": [
-          "holesky-cl.firehose.pinax.network:443"
+          "sepolia-cl.firehose.pinax.network:443"
         ],
         "substreams": [
-          "holesky-cl.substreams.pinax.network:443"
+          "sepolia-cl.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -4989,6 +5214,49 @@
       "icon": {
         "web3Icons": {
           "name": "bitcoin"
+        }
+      }
+    },
+    {
+      "id": "litecoin",
+      "shortName": "Litecoin",
+      "fullName": "Litecoin Mainnet",
+      "aliases": [
+        "ltc",
+        "litecoin-mainnet"
+      ],
+      "caip2Id": "bip122:12a765e31ffd4059bada1e25190f6e98",
+      "explorerUrls": [
+        "https://blockexplorer.one/litecoin/mainnet"
+      ],
+      "rpcUrls": [
+        "https://litecoin-mainnet.gateway.tatum.io"
+      ],
+      "apiUrls": [],
+      "networkType": "mainnet",
+      "services": {
+        "firehose": [
+          "litecoin.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "litecoin.substreams.pinax.network:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "LTC",
+      "docsUrl": "https://litecoin.info/docs",
+      "genesis": {
+        "hash": "0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.bitcoin.type.v1.Block",
+        "bufUrl": "https://buf.build/streamingfast/firehose-bitcoin",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "litecoin"
         }
       }
     },
@@ -5386,10 +5654,12 @@
           "https://api.thegraph.com/deploy"
         ],
         "firehose": [
-          "mainnet.sol.streamingfast.io:443"
+          "mainnet.sol.streamingfast.io:443",
+          "solana.firehose.pinax.network:443"
         ],
         "substreams": [
-          "mainnet.sol.streamingfast.io:443"
+          "mainnet.sol.streamingfast.io:443",
+          "solana.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
