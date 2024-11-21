@@ -1,0 +1,30 @@
+{
+  "id": "gnosis-chiado-cl",
+  "shortName": "Gnosis Beacon",
+  "secondName": "Chiado",
+  "fullName": "Gnosis Chiado Consensus Layer Chain",
+  "aliases": ["gnosis-chiado-beacon"],
+  "caip2Id": "beacon:10200",
+  "explorerUrls": [],
+  "rpcUrls": [],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "relations": [{ "kind": "beaconOf", "network": "gnosis-chiado" }],
+  "services": {
+    "firehose": ["chiado-cl.firehose.pinax.network:443"],
+    "substreams": ["chiado-cl.substreams.pinax.network:443"]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "XDAI",
+  "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
+  "genesis": {
+    "hash": "0xf227cf50c05b1aa570ce4f8ee00c71f11c63d05b297ad3a0e7a05d341c333381",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.beacon.type.v1.Block",
+    "bufUrl": "https://buf.build/pinax/firehose-beacon",
+    "bytesEncoding": "0xhex"
+  },
+  "icon": { "web3Icons": { "name": "gnosis" } }
+}
