@@ -29,12 +29,17 @@ function validateUniqueness(networks: Network[]) {
     "explorerUrls",
     "rpcUrls",
     "apiUrls.url",
+    "services.firehose",
+    "services.substreams",
   ]) {
     const values = networks.flatMap((n) => {
       if (field.includes(".")) {
         const [obj, fi] = field.split(".");
         if (Array.isArray(n[obj])) {
           return n[obj].map((item) => item[fi]);
+        }
+        if (Array.isArray(n[obj][fi])) {
+          return n[obj][fi];
         }
         return [n[obj]?.[fi]].filter(Boolean);
       }
