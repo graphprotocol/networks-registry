@@ -7,7 +7,10 @@
   "caip2Id": "eip155:324",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.zksync.io"],
-  "rpcUrls": ["https://mainnet.era.zksync.io"],
+  "rpcUrls": [
+    "https://mainnet.era.zksync.io",
+    "https://zksyncera.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
   "apiUrls": [
     {
       "url": "https://block-explorer-api.mainnet.zksync.io/api",
