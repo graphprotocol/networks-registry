@@ -9,6 +9,7 @@
     "validate:networks": "bun run ./src/validate.ts",
     "validate:registry": "ajv validate -s schemas/registry.schema.json -d 'dist/TheGraphNetworksRegistry.json' --strict=true -c ajv-formats",
     "validate:urls": "bun run ./src/validate_urls.ts",
+    "validate:firehose": "bun run ./src/validate_firehose.ts",
     "validate": "bun validate:schema && bun validate:networks",
     "generate:types": "json2ts --input schemas/registry.schema.json --output src/types/registry.d.ts --cwd=schemas",
     "generate:registry": "bun run ./src/generate.ts",
