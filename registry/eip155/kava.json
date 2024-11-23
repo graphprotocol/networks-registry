@@ -1,0 +1,30 @@
+{
+  "id": "kava",
+  "shortName": "Kava",
+  "fullName": "Kava Mainnet",
+  "aliases": ["kava-mainnet", "evm-2222"],
+  "caip2Id": "eip155:2222",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://kavascan.io"],
+  "rpcUrls": [
+    "https://evm.kava.io",
+    "https://kava.rpc.pinax.network/v1/{PINAX_API_KEY}"
+  ],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "services": {},
+  "issuanceRewards": false,
+  "nativeToken": "KAVA",
+  "docsUrl": "https://docs.kava.io",
+  "genesis": {
+    "hash": "0x9d2af876309bb9174604004a813dcfee94f4947b08c5bb4c1a042f318488851e",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "kava" } }
+}

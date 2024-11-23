@@ -19,11 +19,11 @@
     "subgraphs": ["https://api.thegraph.com/deploy"],
     "sps": ["https://api.thegraph.com/deploy"],
     "firehose": [
-      "opt-mainnet.streamingfast.io:443",
+      "mainnet.optimism.streamingfast.io:443",
       "optimism.firehose.pinax.network:443"
     ],
     "substreams": [
-      "opt-mainnet.streamingfast.io:443",
+      "mainnet.optimism.streamingfast.io:443",
       "optimism.substreams.pinax.network:443"
     ]
   },
@@ -43,7 +43,7 @@
   },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
-    "evmExtendedModel": false,
+    "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
   },
