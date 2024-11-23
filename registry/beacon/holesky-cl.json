@@ -2,7 +2,7 @@
   "id": "holesky-cl",
   "shortName": "Ethereum Beacon",
   "secondName": "Holesky",
-  "fullName": "Ethereum Holesky Consensus Layer Chain",
+  "fullName": "Ethereum Holesky Consensus Layer",
   "aliases": ["holesky-beacon"],
   "caip2Id": "beacon:17000",
   "explorerUrls": [],

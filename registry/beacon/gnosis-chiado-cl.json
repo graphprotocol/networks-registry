@@ -2,7 +2,7 @@
   "id": "gnosis-chiado-cl",
   "shortName": "Gnosis Beacon",
   "secondName": "Chiado",
-  "fullName": "Gnosis Chiado Consensus Layer Chain",
+  "fullName": "Gnosis Chiado Consensus Layer",
   "aliases": ["gnosis-chiado-beacon"],
   "caip2Id": "beacon:10200",
   "explorerUrls": [],
