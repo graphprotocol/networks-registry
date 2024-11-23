@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-21T18:43:12.206Z",
+  "updatedAt": "2024-11-23T20:24:15.804Z",
   "networks": [
     {
       "id": "mainnet",
@@ -120,11 +120,11 @@
           "https://api.thegraph.com/deploy"
         ],
         "firehose": [
-          "opt-mainnet.streamingfast.io:443",
+          "mainnet.optimism.streamingfast.io:443",
           "optimism.firehose.pinax.network:443"
         ],
         "substreams": [
-          "opt-mainnet.streamingfast.io:443",
+          "mainnet.optimism.streamingfast.io:443",
           "optimism.substreams.pinax.network:443"
         ]
       },
@@ -144,7 +144,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -556,7 +556,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -1194,7 +1194,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -1249,7 +1249,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -1308,7 +1308,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -1442,12 +1442,12 @@
       "nativeToken": "EOS",
       "docsUrl": "https://eosnetwork.com/eos-evm",
       "genesis": {
-        "hash": "0xc6f7c5c995ae7a7567b44e9679c6654b39a957fe33daa33aee4ee96a01b2fbd5",
+        "hash": "0xc613831e8473c17c47ab60605e4e92693f0f37e767a1defa2f74160626e5d9ca",
         "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -1509,7 +1509,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -1744,12 +1744,12 @@
       "nativeToken": "EOS",
       "docsUrl": "https://eosnetwork.com/eos-evm",
       "genesis": {
-        "hash": "0x330402d1032bd515fa7f93b5ccb370bd1b6fdf54cdf009b6d46e55070aa0a1b8",
+        "hash": "0xcc936a8dc9ecf18dfd876f3566d240486d331f51ffcbb467e47f1c80ebb77440",
         "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -1819,7 +1819,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -1992,6 +1992,47 @@
       "icon": {
         "web3Icons": {
           "name": "binance-smart-chain"
+        }
+      }
+    },
+    {
+      "id": "kava",
+      "shortName": "Kava",
+      "fullName": "Kava Mainnet",
+      "aliases": [
+        "kava-mainnet",
+        "evm-2222"
+      ],
+      "caip2Id": "eip155:2222",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://kavascan.io"
+      ],
+      "rpcUrls": [
+        "https://evm.kava.io",
+        "https://kava.rpc.pinax.network/v1/{PINAX_API_KEY}"
+      ],
+      "apiUrls": [],
+      "networkType": "mainnet",
+      "services": {},
+      "issuanceRewards": false,
+      "nativeToken": "KAVA",
+      "docsUrl": "https://docs.kava.io",
+      "genesis": {
+        "hash": "0x9d2af876309bb9174604004a813dcfee94f4947b08c5bb4c1a042f318488851e",
+        "height": 1
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "kava"
         }
       }
     },
@@ -2977,7 +3018,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -3701,7 +3742,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -3770,7 +3811,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -3894,7 +3935,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       },
@@ -3958,7 +3999,7 @@
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
       }
@@ -4945,7 +4986,7 @@
     {
       "id": "mainnet-cl",
       "shortName": "Ethereum Beacon",
-      "fullName": "Ethereum Consensus Layer Chain",
+      "fullName": "Ethereum Consensus Layer",
       "aliases": [
         "mainnet-beacon",
         "eth-cl",
@@ -4991,7 +5032,7 @@
     {
       "id": "gnosis-cl",
       "shortName": "Gnosis Beacon",
-      "fullName": "Gnosis Consensus Layer Chain",
+      "fullName": "Gnosis Consensus Layer",
       "aliases": [
         "gnosis-beacon"
       ],
@@ -5036,7 +5077,7 @@
       "id": "gnosis-chiado-cl",
       "shortName": "Gnosis Beacon",
       "secondName": "Chiado",
-      "fullName": "Gnosis Chiado Consensus Layer Chain",
+      "fullName": "Gnosis Chiado Consensus Layer",
       "aliases": [
         "gnosis-chiado-beacon"
       ],
@@ -5081,7 +5122,7 @@
       "id": "sepolia-cl",
       "shortName": "Ethereum Beacon",
       "secondName": "Sepolia",
-      "fullName": "Ethereum Sepolia Consensus Layer Chain",
+      "fullName": "Ethereum Sepolia Consensus Layer",
       "aliases": [
         "sepolia-beacon"
       ],
@@ -5126,7 +5167,7 @@
       "id": "holesky-cl",
       "shortName": "Ethereum Beacon",
       "secondName": "Holesky",
-      "fullName": "Ethereum Holesky Consensus Layer Chain",
+      "fullName": "Ethereum Holesky Consensus Layer",
       "aliases": [
         "holesky-beacon"
       ],
@@ -5602,20 +5643,18 @@
           "https://api.thegraph.com/deploy"
         ],
         "firehose": [
-          "neartest.firehose.pinax.network:443",
-          "testnet.near.streamingfast.io:443"
+          "neartest.firehose.pinax.network:443"
         ],
         "substreams": [
-          "neartest.substreams.pinax.network:443",
-          "testnet.near.streamingfast.io:443"
+          "neartest.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
       "nativeToken": "NEAR",
       "docsUrl": "https://docs.near.org",
       "genesis": {
-        "hash": "0x09d69c8ba4f319f8e78d0b701f0c1f763cc0d920551bfbd00072d5f56016d853",
-        "height": 42376923
+        "hash": "0xd784da5a9e5e66668516c19a8095448fc54a22a28971dc330f0099df94379410",
+        "height": 42376888
       },
       "firehose": {
         "blockType": "sf.near.type.v1.Block",
@@ -5718,8 +5757,8 @@
       "nativeToken": "SOL",
       "docsUrl": "https://solana.com/docs",
       "genesis": {
-        "hash": "4D2M7ehkYzBJNsL9GYvQXKj7sFaJGGyZMvK5hC8BQvS8",
-        "height": 300000000
+        "hash": "B2Ano6cfDxb1ce3WXVM3VmkVGj3NPGB5ag95S46S3cpE",
+        "height": 325312361
       },
       "firehose": {
         "blockType": "sf.solana.type.v1.Block",
@@ -5841,7 +5880,7 @@
       "nativeToken": "STRK",
       "docsUrl": "https://docs.starknet.io",
       "genesis": {
-        "hash": "0x05c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
+        "hash": "0x5c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
         "height": 0
       },
       "firehose": {
