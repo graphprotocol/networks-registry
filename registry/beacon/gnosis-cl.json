@@ -1,7 +1,7 @@
 {
   "id": "gnosis-cl",
   "shortName": "Gnosis Beacon",
-  "fullName": "Gnosis Consensus Layer Chain",
+  "fullName": "Gnosis Consensus Layer",
   "aliases": ["gnosis-beacon"],
   "caip2Id": "beacon:100",
   "explorerUrls": [],

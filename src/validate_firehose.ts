@@ -64,8 +64,9 @@ async function validateFirehoseEvmModel(networks: Network[]) {
   const endpointsAndNetworks = networks
     .flatMap(network => network.services.firehose?.map(endpoint => [endpoint, network] as [string, Network]) ?? []);
 
-  for (let i = 0; i < endpointsAndNetworks.length; i += 10) {
-    const chunk = endpointsAndNetworks.slice(i, i + 10);
+  const BATCH = 20;
+  for (let i = 0; i < endpointsAndNetworks.length; i += BATCH) {
+    const chunk = endpointsAndNetworks.slice(i, i + BATCH);
     await Promise.all(chunk.map(([endpoint, network]) => validateSingleEndpoint(network, endpoint)));
   }
 }

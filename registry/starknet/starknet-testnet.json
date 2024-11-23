@@ -25,7 +25,7 @@
   "nativeToken": "STRK",
   "docsUrl": "https://docs.starknet.io",
   "genesis": {
-    "hash": "0x05c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
+    "hash": "0x5c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
     "height": 0
   },
   "firehose": {
