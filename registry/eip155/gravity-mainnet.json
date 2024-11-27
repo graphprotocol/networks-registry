@@ -20,7 +20,6 @@
     "substreams": ["gravity.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
-  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "G",
   "docsUrl": "https://docs.gravity.xyz",
