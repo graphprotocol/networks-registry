@@ -7,8 +7,12 @@
     "caip2Id": "eip155:4690",
     "graphNode": { "protocol": "ethereum" },
     "explorerUrls": ["https://testnet.iotexscan.io"],
-    "rpcUrls": ["https://babel-api.testnet.iotex.io"],
-    "apiUrls": ["https://testnet.index.iotexscan.io/api"],
+    "rpcUrls": [
+        "https://babel-api.testnet.iotex.io"
+    ],
+    "apiUrls": [
+        "https://testnet.index.iotexscan.io/api"
+    ],
     "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
     "networkType": "testnet",
     "relations": [{ "kind": "testnetOf", "network": "iotex" }],
@@ -17,7 +21,7 @@
     "docsUrl": "https://docs.iotex.io",
     "genesis": {
       "hash": "0x663fc0a40a4943f1b56f501aee3ad626b5396e850aa53c5bd8759d0d47694dfc",
-      "height": 0
+      "height": 1
     },
     "firehose": {
       "blockType": "sf.ethereum.type.v2.Block",
