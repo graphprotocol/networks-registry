@@ -6,20 +6,19 @@
   "caip2Id": "eip155:21000001",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet-explorer.usecorn.com"],
-  "rpcUrls": [
-    "https://testnet-rpc.usecorn.com"
-  ],
+  "rpcUrls": ["https://testnet-rpc.usecorn.com"],
   "apiUrls": [
     { "url": "https://testnet-explorer.usecorn.com/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",
-  "relations": [{ "kind": "l2Of", "network": "sepolia" }, { "kind": "testnetOf", "network": "corn" }],
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "corn" }
+  ],
   "issuanceRewards": false,
   "nativeToken": "BTCN",
-  "docsUrl": "https://docs.usecorn.com/",
+  "docsUrl": "https://docs.usecorn.com",
   "genesis": {
     "hash": "0x110954744ffd9d4bcd4f7998896d1948f654c9e5ccf6fcda1637a35a1863a71d",
     "height": 0
