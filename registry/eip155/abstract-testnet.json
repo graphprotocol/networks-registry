@@ -8,7 +8,7 @@
     "graphNode": { "protocol": "ethereum" },
     "explorerUrls": ["https://explorer.testnet.abs.xyz/"],
     "rpcUrls": ["https://api.testnet.abs.xyz"],
-    "apiUrls": ["https://block-explorer-api.testnet.abs.xyz/api"],
+    "apiUrls": [{"url": "https://block-explorer-api.testnet.abs.xyz/api", "kind": "etherscan"}],
     "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
     "networkType": "testnet",
     "relations": [{ "kind": "testnetOf", "network": "abstract" }],
