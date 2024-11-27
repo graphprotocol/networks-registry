@@ -14,6 +14,9 @@
   "apiUrls": [
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
   ],
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
     "firehose": ["gravity.firehose.pinax.network:443"],
