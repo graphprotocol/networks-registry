@@ -1,0 +1,28 @@
+{
+    "id": "corn",
+    "shortName": "Corn",
+    "fullName": "Corn Maizenet",
+    "aliases": ["evm-21000000", "corn-mainnet", "corn-maizenet"],
+    "caip2Id": "eip155:21000000",
+    "graphNode": { "protocol": "ethereum" },
+    "explorerUrls": ["https://maizenet-explorer.usecorn.com"],
+    "rpcUrls": ["https://maizenet-rpc.usecorn.com"],
+    "apiUrls": ["https://maizenet-explorer.usecorn.com/api"],
+    "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+    "networkType": "mainnet",
+    "issuanceRewards": false,
+    "nativeToken": "corn",
+    "docsUrl": "https://docs.usecorn.com/",
+    "genesis": {
+      "hash": "0x80cd408e666fa2755da953bfd9056f09618318d5f71011a8247cebe2a13ae30f",
+      "height": 0
+    },
+    "firehose": {
+      "blockType": "sf.ethereum.type.v2.Block",
+      "evmExtendedModel": false,
+      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+      "bytesEncoding": "hex"
+    },
+    "icon": { "web3Icons": { "name": "corn" } }
+  }
+  
