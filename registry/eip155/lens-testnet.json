@@ -1,9 +1,8 @@
 {
-  "id": "lens-sepolia",
+  "id": "lens-testnet",
   "shortName": "Lens",
-  "secondName": "Sepolia",
-  "fullName": "Lens Sepolia Testnet",
-  "aliases": ["evm-37111", "lens-testnet"],
+  "fullName": "Lens Testnet",
+  "aliases": ["evm-37111", "lens-sepolia"],
   "caip2Id": "eip155:37111",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://block-explorer.testnet.lens.dev"],
@@ -16,7 +15,7 @@
   ],
   "networkType": "testnet",
   "relations": [
-    { "kind": "testnetOf", "network": "lens-sepolia" },
+    { "kind": "testnetOf", "network": "lens-testnet" },
     { "kind": "l2Of", "network": "sepolia" }
   ],
   "services": {},
