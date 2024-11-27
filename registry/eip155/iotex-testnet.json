@@ -10,9 +10,7 @@
     "rpcUrls": [
         "https://babel-api.testnet.iotex.io"
     ],
-    "apiUrls": [
-        "https://testnet.index.iotexscan.io/api"
-    ],
+    "apiUrls": [{"url": "https://testnet.index.iotexscan.io/api", "kind": "etherscan"}],
     "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
     "networkType": "testnet",
     "relations": [{ "kind": "testnetOf", "network": "iotex" }],
