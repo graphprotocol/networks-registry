@@ -1,0 +1,30 @@
+{
+    "id": "iotex-testnet",
+    "shortName": "Iotex",
+    "secondName": "Testnet",
+    "fullName": "Iotex Testnet",
+    "aliases": ["evm-4690"],
+    "caip2Id": "eip155:4690",
+    "graphNode": { "protocol": "ethereum" },
+    "explorerUrls": ["https://testnet.iotexscan.io"],
+    "rpcUrls": ["https://babel-api.testnet.iotex.io"],
+    "apiUrls": ["https://testnet.index.iotexscan.io/api"],
+    "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+    "networkType": "testnet",
+    "relations": [{ "kind": "testnetOf", "network": "iotex" }],
+    "issuanceRewards": false,
+    "nativeToken": "IOTX",
+    "docsUrl": "https://docs.iotex.io",
+    "genesis": {
+      "hash": "0x663fc0a40a4943f1b56f501aee3ad626b5396e850aa53c5bd8759d0d47694dfc",
+      "height": 0
+    },
+    "firehose": {
+      "blockType": "sf.ethereum.type.v2.Block",
+      "evmExtendedModel": false,
+      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+      "bytesEncoding": "hex"
+    },
+    "icon": { "web3Icons": { "name": "iotex" } }
+  }
+  

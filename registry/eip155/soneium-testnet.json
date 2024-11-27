@@ -1,9 +1,9 @@
 {
-  "id": "soneium-minato",
+  "id": "soneium-testnet",
   "shortName": "Soneium",
   "secondName": "Minato",
   "fullName": "Soneium Minato Testnet",
-  "aliases": ["soneium-minato-testnet", "soneium-testnet"],
+  "aliases": ["soneium-minato-testnet", "soneium-minato", "minato"],
   "caip2Id": "eip155:1946",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://soneium-minato.blockscout.com"],
@@ -16,7 +16,7 @@
   ],
   "networkType": "testnet",
   "relations": [
-    { "kind": "testnetOf", "network": "soneium-minato" },
+    { "kind": "testnetOf", "network": "soneium-testnet" },
     { "kind": "l2Of", "network": "sepolia" }
   ],
   "services": {
