@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-23T20:24:15.804Z",
+  "updatedAt": "2024-11-27T15:01:06.379Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2640,13 +2640,12 @@
       }
     },
     {
-      "id": "lens-sepolia",
+      "id": "lens-testnet",
       "shortName": "Lens",
-      "secondName": "Sepolia",
-      "fullName": "Lens Sepolia Testnet",
+      "fullName": "Lens Testnet",
       "aliases": [
         "evm-37111",
-        "lens-testnet"
+        "lens-sepolia"
       ],
       "caip2Id": "eip155:37111",
       "graphNode": {
@@ -2668,7 +2667,7 @@
       "relations": [
         {
           "kind": "testnetOf",
-          "network": "lens-sepolia"
+          "network": "lens-testnet"
         },
         {
           "kind": "l2Of",
