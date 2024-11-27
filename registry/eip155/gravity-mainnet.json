@@ -15,7 +15,7 @@
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
   ],
   "relations": [
-    { "kind": "l2Of", "network": "sepolia" }
+    { "kind": "l2Of", "network": "mainnet" }
   ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
