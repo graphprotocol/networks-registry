@@ -7,7 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://iotexscan.io"],
   "rpcUrls": ["https://babel-api.mainnet.iotex.io"],
-  "apiUrls": [{ "url": "https://iotexscan.io/api", "kind": "etherscan" }],
+  "apiUrls": [{ "url": "https://index.iotexscan.io/api", "kind": "etherscan" }],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,

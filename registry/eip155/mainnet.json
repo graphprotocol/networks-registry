@@ -13,7 +13,7 @@
     "https://mainnet.infura.io/v3/{INFURA_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://api.etherscan.io/api", "kind": "etherscan" },
+    { "url": "https://mainnet.abi.pinax.network/api", "kind": "etherscan" },
     { "url": "https://eth.blockscout.com/api", "kind": "blockscout" }
   ],
   "networkType": "mainnet",
