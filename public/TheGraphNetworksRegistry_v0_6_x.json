@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-28T03:50:39.534Z",
+  "updatedAt": "2024-11-28T17:51:12.685Z",
   "networks": [
     {
       "id": "mainnet",
@@ -443,7 +443,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.testnet.abs.xyz/"
+        "https://explorer.testnet.abs.xyz"
       ],
       "rpcUrls": [
         "https://api.testnet.abs.xyz"
@@ -472,7 +472,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.abs.xyz/",
+      "docsUrl": "https://docs.abs.xyz",
       "genesis": {
         "hash": "0xfbb449463d9f1ec874d597d80d911f60857cc2fbf93f8ac83c70f8cfa2220a74",
         "height": 1
@@ -2106,11 +2106,11 @@
       }
     },
     {
-      "id": "corn-sepolia",
+      "id": "corn-testnet",
       "shortName": "Corn",
       "fullName": "Corn Testnet",
       "aliases": [
-        "corn-testnet"
+        "corn-sepolia"
       ],
       "caip2Id": "eip155:21000001",
       "graphNode": {
@@ -2398,7 +2398,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.abs.xyz/",
+      "docsUrl": "https://docs.abs.xyz",
       "genesis": {
         "hash": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
         "height": 1
