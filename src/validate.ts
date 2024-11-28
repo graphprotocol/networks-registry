@@ -38,7 +38,7 @@ function validateUniqueness(networks: Network[]) {
         if (Array.isArray(n[obj])) {
           return n[obj].map((item) => item[fi]);
         }
-        if (Array.isArray(n[obj][fi])) {
+        if (Array.isArray(n[obj]?.[fi])) {
           return n[obj][fi];
         }
         return [n[obj]?.[fi]].filter(Boolean);
