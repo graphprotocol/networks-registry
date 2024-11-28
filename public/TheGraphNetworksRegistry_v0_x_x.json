@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-27T15:47:52.283Z",
+  "updatedAt": "2024-11-28T03:50:39.534Z",
   "networks": [
     {
       "id": "mainnet",
@@ -427,6 +427,65 @@
       "icon": {
         "web3Icons": {
           "name": "polygon-zkevm"
+        }
+      }
+    },
+    {
+      "id": "abstract-testnet",
+      "shortName": "Abstract",
+      "fullName": "Abstract Testnet",
+      "aliases": [
+        "evm-11124",
+        "abstract-sepolia"
+      ],
+      "caip2Id": "eip155:11124",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.testnet.abs.xyz/"
+      ],
+      "rpcUrls": [
+        "https://api.testnet.abs.xyz"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://block-explorer-api.testnet.abs.xyz/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "abstract"
+        },
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.abs.xyz/",
+      "genesis": {
+        "hash": "0xfbb449463d9f1ec874d597d80d911f60857cc2fbf93f8ac83c70f8cfa2220a74",
+        "height": 1
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "abstract"
         }
       }
     },
@@ -1482,6 +1541,12 @@
           "kind": "etherscan"
         }
       ],
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
       "services": {
         "subgraphs": [
           "https://api.thegraph.com/deploy"
@@ -1494,12 +1559,6 @@
         ]
       },
       "networkType": "mainnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "mainnet"
-        }
-      ],
       "issuanceRewards": false,
       "nativeToken": "G",
       "docsUrl": "https://docs.gravity.xyz",
@@ -1760,13 +1819,14 @@
       }
     },
     {
-      "id": "soneium-minato",
+      "id": "soneium-testnet",
       "shortName": "Soneium",
       "secondName": "Minato",
       "fullName": "Soneium Minato Testnet",
       "aliases": [
         "soneium-minato-testnet",
-        "soneium-testnet"
+        "soneium-minato",
+        "minato"
       ],
       "caip2Id": "eip155:1946",
       "graphNode": {
@@ -1789,7 +1849,7 @@
       "relations": [
         {
           "kind": "testnetOf",
-          "network": "soneium-minato"
+          "network": "soneium-testnet"
         },
         {
           "kind": "l2Of",
@@ -2033,7 +2093,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "BTCN",
-      "docsUrl": "https://docs.usecorn.com/",
+      "docsUrl": "https://docs.usecorn.com",
       "genesis": {
         "hash": "0x80cd408e666fa2755da953bfd9056f09618318d5f71011a8247cebe2a13ae30f",
         "height": 0
@@ -2086,7 +2146,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "BTCN",
-      "docsUrl": "https://docs.usecorn.com/",
+      "docsUrl": "https://docs.usecorn.com",
       "genesis": {
         "hash": "0x110954744ffd9d4bcd4f7998896d1948f654c9e5ccf6fcda1637a35a1863a71d",
         "height": 0
@@ -2309,6 +2369,49 @@
       "icon": {
         "web3Icons": {
           "name": "fantom"
+        }
+      }
+    },
+    {
+      "id": "abstract",
+      "shortName": "Abstract",
+      "fullName": "Abstract Mainnet",
+      "aliases": [
+        "evm-2741",
+        "abstract-mainnet"
+      ],
+      "caip2Id": "eip155:2741",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "subgraphs": [
+          "https://api.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.abs.xyz/",
+      "genesis": {
+        "hash": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+        "height": 1
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "abstract"
         }
       }
     },
@@ -2782,8 +2885,8 @@
       "nativeToken": "GRASS",
       "docsUrl": "https://www.lens.xyz/docs",
       "genesis": {
-        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-        "height": 0
+        "hash": "0x5712a0fa02404a9fe852ef7d19ea2c019af52f59faa262a34f327ba03bbdc6d2",
+        "height": 1
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -3467,6 +3570,61 @@
       }
     },
     {
+      "id": "iotex-testnet",
+      "shortName": "Iotex",
+      "secondName": "Testnet",
+      "fullName": "Iotex Testnet",
+      "aliases": [
+        "evm-4690"
+      ],
+      "caip2Id": "eip155:4690",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://testnet.iotexscan.io"
+      ],
+      "rpcUrls": [
+        "https://babel-api.testnet.iotex.io"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://testnet.index.iotexscan.io/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "iotex"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "IOTX",
+      "docsUrl": "https://docs.iotex.io",
+      "genesis": {
+        "hash": "0x663fc0a40a4943f1b56f501aee3ad626b5396e850aa53c5bd8759d0d47694dfc",
+        "height": 1
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "iotex"
+        }
+      }
+    },
+    {
       "id": "neox",
       "shortName": "Neo X",
       "fullName": "Neo X Mainnet",
@@ -3924,14 +4082,15 @@
       }
     },
     {
-      "id": "astar-zkyoto",
+      "id": "zkyoto-testnet",
       "shortName": "Astar",
       "secondName": "zKyoto",
       "fullName": "Astar zkEVM Testnet zKyoto",
       "aliases": [
         "evm-6038361",
         "astar-testnet",
-        "astar-zkevm-testnet"
+        "astar-zkevm-testnet",
+        "astar-zkyoto"
       ],
       "caip2Id": "eip155:6038361",
       "graphNode": {

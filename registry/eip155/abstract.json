@@ -1,25 +1,25 @@
 {
-    "id": "abstract",
-    "shortName": "Abstract",
-    "fullName": "Abstract Mainnet",
-    "aliases": ["evm-2741", "abstract-mainnet"],
-    "caip2Id": "eip155:2741",
-    "graphNode": { "protocol": "ethereum" },
-    "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
-    "networkType": "mainnet",
-    "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-    "issuanceRewards": false,
-    "nativeToken": "ETH",
-    "docsUrl": "https://docs.abs.xyz/",
-    "genesis": {
-      "hash": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
-      "height": 1
-    },
-    "firehose": {
-      "blockType": "sf.ethereum.type.v2.Block",
-      "evmExtendedModel": false,
-      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-      "bytesEncoding": "hex"
-    },
-    "icon": { "web3Icons": { "name": "abstract" } }
+  "id": "abstract",
+  "shortName": "Abstract",
+  "fullName": "Abstract Mainnet",
+  "aliases": ["evm-2741", "abstract-mainnet"],
+  "caip2Id": "eip155:2741",
+  "graphNode": { "protocol": "ethereum" },
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.abs.xyz",
+  "genesis": {
+    "hash": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "abstract" } }
 }
