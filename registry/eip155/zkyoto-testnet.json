@@ -3,7 +3,12 @@
   "shortName": "Astar",
   "secondName": "zKyoto",
   "fullName": "Astar zkEVM Testnet zKyoto",
-  "aliases": ["evm-6038361", "astar-testnet", "astar-zkevm-testnet", "astar-zkyoto"],
+  "aliases": [
+    "evm-6038361",
+    "astar-testnet",
+    "astar-zkevm-testnet",
+    "astar-zkyoto"
+  ],
   "caip2Id": "eip155:6038361",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://zkyoto.explorer.startale.com"],

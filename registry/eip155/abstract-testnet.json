@@ -1,28 +1,36 @@
 {
-    "id": "abstract-testnet",
-    "shortName": "Abstract",
-    "fullName": "Abstract Testnet",
-    "aliases": ["evm-11124", "abstract-sepolia"],
-    "caip2Id": "eip155:11124",
-    "graphNode": { "protocol": "ethereum" },
-    "explorerUrls": ["https://explorer.testnet.abs.xyz/"],
-    "rpcUrls": ["https://api.testnet.abs.xyz"],
-    "apiUrls": [{"url": "https://block-explorer-api.testnet.abs.xyz/api", "kind": "etherscan"}],
-    "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
-    "networkType": "testnet",
-    "relations": [{ "kind": "testnetOf", "network": "abstract" }, { "kind": "l2Of", "network": "sepolia" }],
-    "issuanceRewards": false,
-    "nativeToken": "ETH",
-    "docsUrl": "https://docs.abs.xyz/",
-    "genesis": {
-      "hash": "0xfbb449463d9f1ec874d597d80d911f60857cc2fbf93f8ac83c70f8cfa2220a74",
-      "height": 1
-    },
-    "firehose": {
-      "blockType": "sf.ethereum.type.v2.Block",
-      "evmExtendedModel": false,
-      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-      "bytesEncoding": "hex"
-    },
-    "icon": { "web3Icons": { "name": "abstract" } }
-  }
+  "id": "abstract-testnet",
+  "shortName": "Abstract",
+  "fullName": "Abstract Testnet",
+  "aliases": ["evm-11124", "abstract-sepolia"],
+  "caip2Id": "eip155:11124",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.testnet.abs.xyz"],
+  "rpcUrls": ["https://api.testnet.abs.xyz"],
+  "apiUrls": [
+    {
+      "url": "https://block-explorer-api.testnet.abs.xyz/api",
+      "kind": "etherscan"
+    }
+  ],
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "abstract" },
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.abs.xyz",
+  "genesis": {
+    "hash": "0xfbb449463d9f1ec874d597d80d911f60857cc2fbf93f8ac83c70f8cfa2220a74",
+    "height": 1
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "abstract" } }
+}

@@ -14,9 +14,7 @@
   "apiUrls": [
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
   ],
-  "relations": [
-    { "kind": "l2Of", "network": "mainnet" }
-  ],
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
     "firehose": ["gravity.firehose.pinax.network:443"],
