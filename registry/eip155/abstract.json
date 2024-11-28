@@ -2,17 +2,18 @@
     "id": "abstract",
     "shortName": "Abstract",
     "fullName": "Abstract Mainnet",
-    "aliases": ["evm-2741"],
+    "aliases": ["evm-2741", "abstract-mainnet"],
     "caip2Id": "eip155:2741",
     "graphNode": { "protocol": "ethereum" },
     "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
     "networkType": "mainnet",
+    "relations": [{ "kind": "l2Of", "network": "mainnet" }],
     "issuanceRewards": false,
     "nativeToken": "ETH",
     "docsUrl": "https://docs.abs.xyz/",
     "genesis": {
-      "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-      "height": 0
+      "hash": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "height": 1
     },
     "firehose": {
       "blockType": "sf.ethereum.type.v2.Block",
