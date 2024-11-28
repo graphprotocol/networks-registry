@@ -19,6 +19,10 @@
     {
       "url": "https://api-cardona-zkevm.polygonscan.com/api",
       "kind": "etherscan"
+    },
+    {
+      "url": "https://polygon-zkevm-cardona.abi.pinax.network/api",
+      "kind": "etherscan"
     }
   ],
   "networkType": "testnet",

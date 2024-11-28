@@ -11,7 +11,7 @@
     "https://bsc-dataseed1.defibit.io",
     "https://bsc.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
-  "apiUrls": [{ "url": "https://api.bscscan.com/api", "kind": "etherscan" }],
+  "apiUrls": [{ "url": "https://bsc.abi.pinax.network/api", "kind": "etherscan" }],
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
