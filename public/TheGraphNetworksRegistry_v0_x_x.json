@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.8",
+  "version": "0.6.9",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-28T17:51:12.685Z",
+  "updatedAt": "2024-11-28T23:25:23.277Z",
   "networks": [
     {
       "id": "mainnet",
@@ -30,7 +30,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.etherscan.io/api",
+          "url": "https://mainnet.abi.pinax.network/api",
           "kind": "etherscan"
         },
         {
@@ -1405,7 +1405,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.polygonscan.com/api",
+          "url": "https://polygon.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -2231,6 +2231,10 @@
       "apiUrls": [
         {
           "url": "https://api-cardona-zkevm.polygonscan.com/api",
+          "kind": "etherscan"
+        },
+        {
+          "url": "https://polygon-zkevm-cardona.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -3540,7 +3544,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://iotexscan.io/api",
+          "url": "https://index.iotexscan.io/api",
           "kind": "etherscan"
         }
       ],
@@ -3836,7 +3840,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.bscscan.com/api",
+          "url": "https://bsc.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
