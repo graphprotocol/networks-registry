@@ -23,8 +23,8 @@
   "nativeToken": "GRASS",
   "docsUrl": "https://www.lens.xyz/docs",
   "genesis": {
-    "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-    "height": 0
+    "hash": "0x5712a0fa02404a9fe852ef7d19ea2c019af52f59faa262a34f327ba03bbdc6d2",
+    "height": 1
   },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
