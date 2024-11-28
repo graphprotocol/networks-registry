@@ -14,13 +14,15 @@
   "apiUrls": [
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
   ],
+  "relations": [
+    { "kind": "l2Of", "network": "mainnet" }
+  ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
     "firehose": ["gravity.firehose.pinax.network:443"],
     "substreams": ["gravity.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
-  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "G",
   "docsUrl": "https://docs.gravity.xyz",
