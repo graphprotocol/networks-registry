@@ -1,8 +1,8 @@
 {
-  "id": "corn-sepolia",
+  "id": "corn-testnet",
   "shortName": "Corn",
   "fullName": "Corn Testnet",
-  "aliases": ["corn-testnet"],
+  "aliases": ["corn-sepolia"],
   "caip2Id": "eip155:21000001",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet-explorer.usecorn.com"],
