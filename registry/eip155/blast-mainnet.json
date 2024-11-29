@@ -12,7 +12,8 @@
     "https://rpc.ankr.com/blast"
   ],
   "apiUrls": [
-    { "url": "https://blast.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://blast.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://blast.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],

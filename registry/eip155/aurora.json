@@ -8,7 +8,7 @@
   "explorerUrls": ["https://explorer.aurora.dev"],
   "rpcUrls": ["https://mainnet.aurora.dev"],
   "apiUrls": [
-    { "url": "https://explorer.mainnet.aurora.dev/api", "kind": "etherscan" }
+    { "url": "https://explorer.mainnet.aurora.dev/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "mainnet",

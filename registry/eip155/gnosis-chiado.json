@@ -12,7 +12,7 @@
     "https://chiado.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://gnosis-chiado.blockscout.com/api", "kind": "etherscan" }
+    { "url": "https://gnosis-chiado.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",

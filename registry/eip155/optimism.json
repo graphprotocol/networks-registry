@@ -13,7 +13,8 @@
     "https://optimism.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://optimism.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://optimism.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://optimism.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],

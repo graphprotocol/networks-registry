@@ -14,7 +14,7 @@
   "apiUrls": [
     {
       "url": "https://astar-zkevm.explorer.startale.com/api",
-      "kind": "etherscan"
+      "kind": "blockscout"
     }
   ],
   "services": {
