@@ -13,7 +13,8 @@
     "https://rpc.ankr.com/polygon"
   ],
   "apiUrls": [
-    { "url": "https://polygon.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://polygon.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://polygon.blockscout.com/api", "kind": "blockscout" }
   ],
   "networkType": "mainnet",
   "services": {

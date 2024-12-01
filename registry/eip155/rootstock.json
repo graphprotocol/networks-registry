@@ -11,7 +11,7 @@
     "https://rootstock.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://rootstock.blockscout.com/api", "kind": "etherscan" }
+    { "url": "https://rootstock.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "mainnet",

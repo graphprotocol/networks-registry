@@ -20,7 +20,8 @@
     {
       "url": "https://arbitrum-sepolia.abi.pinax.network/api",
       "kind": "etherscan"
-    }
+    },
+    { "url": "https://sepolia-explorer.arbitrum.io/api", "kind": "blockscout" }
   ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],

@@ -11,7 +11,7 @@
     "https://zora.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://explorer.zora.energy/api/v2", "kind": "etherscan" }
+    { "url": "https://explorer.zora.energy/api", "kind": "blockscout" }
   ],
   "services": {
     "firehose": ["zora.firehose.pinax.network:443"],

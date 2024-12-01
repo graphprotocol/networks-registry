@@ -17,7 +17,9 @@
     "https://rpc.holesky.ethpandaops.io",
     "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
-  "apiUrls": [],
+  "apiUrls": [
+    { "url": "https://eth-holesky.blockscout.com/api", "kind": "blockscout" }
+  ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
     "sps": ["https://api.thegraph.com/deploy"],

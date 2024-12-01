@@ -19,6 +19,10 @@
     {
       "url": "https://optimism-sepolia.abi.pinax.network/api",
       "kind": "etherscan"
+    },
+    {
+      "url": "https://optimism-sepolia.blockscout.com/api",
+      "kind": "blockscout"
     }
   ],
   "services": {

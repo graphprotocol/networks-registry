@@ -15,7 +15,8 @@
     {
       "url": "https://blast-testnet.abi.pinax.network/api",
       "kind": "etherscan"
-    }
+    },
+    { "url": "https://blast-testnet.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],

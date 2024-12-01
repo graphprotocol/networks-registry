@@ -8,7 +8,7 @@
   "explorerUrls": ["https://explorer.etherlink.com"],
   "rpcUrls": ["https://node.mainnet.etherlink.com"],
   "apiUrls": [
-    { "url": "https://explorer.etherlink.com/api", "kind": "etherscan" }
+    { "url": "https://explorer.etherlink.com/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "mainnet",

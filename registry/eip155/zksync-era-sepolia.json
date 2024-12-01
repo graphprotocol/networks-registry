@@ -12,7 +12,8 @@
     {
       "url": "https://block-explorer-api.sepolia.zksync.dev/api",
       "kind": "etherscan"
-    }
+    },
+    { "url": "https://zksync-sepolia.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",

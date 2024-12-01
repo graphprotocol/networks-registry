@@ -8,7 +8,10 @@
   "explorerUrls": ["https://testnet.explorer.etherlink.com"],
   "rpcUrls": ["https://node.ghostnet.etherlink.com"],
   "apiUrls": [
-    { "url": "https://testnet.explorer.etherlink.com/api", "kind": "etherscan" }
+    {
+      "url": "https://testnet.explorer.etherlink.com/api",
+      "kind": "blockscout"
+    }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",

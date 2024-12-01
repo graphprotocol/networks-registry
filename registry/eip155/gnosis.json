@@ -13,7 +13,8 @@
     "https://rpc.ankr.com/gnosis"
   ],
   "apiUrls": [
-    { "url": "https://gnosis.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://gnosis.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://gnosis.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "mainnet",
