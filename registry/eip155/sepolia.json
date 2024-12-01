@@ -18,7 +18,8 @@
     "https://sepolia.infura.io/v3/${INFURA_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://sepolia.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://sepolia.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://eth-sepolia.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],

@@ -12,7 +12,8 @@
     "https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://linea.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://linea.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://api-explorer.linea.build/api", "kind": "blockscout" }
   ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],

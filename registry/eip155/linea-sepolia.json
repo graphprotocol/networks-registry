@@ -12,6 +12,10 @@
     {
       "url": "https://linea-sepolia.abi.pinax.network/api",
       "kind": "etherscan"
+    },
+    {
+      "url": "https://api-explorer.sepolia.linea.build/api",
+      "kind": "blockscout"
     }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },

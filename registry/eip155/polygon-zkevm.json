@@ -15,7 +15,8 @@
     {
       "url": "https://polygon-zkevm.abi.pinax.network/api",
       "kind": "etherscan"
-    }
+    },
+    { "url": "https://zkevm.blockscout.com/api", "kind": "blockscout" }
   ],
   "networkType": "mainnet",
   "services": {

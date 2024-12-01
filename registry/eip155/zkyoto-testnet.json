@@ -17,7 +17,7 @@
     "https://zkyoto.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://zkyoto.explorer.startale.com/api", "kind": "etherscan" }
+    { "url": "https://zkyoto.explorer.startale.com/api", "kind": "blockscout" }
   ],
   "services": {
     "firehose": ["zkyoto.firehose.pinax.network:443"],

@@ -9,7 +9,7 @@
   "explorerUrls": ["https://sepolia.explorer.mode.network"],
   "rpcUrls": ["https://sepolia.mode.network"],
   "apiUrls": [
-    { "url": "https://sepolia.explorer.mode.network/api", "kind": "etherscan" }
+    { "url": "https://sepolia.explorer.mode.network/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
   "networkType": "testnet",

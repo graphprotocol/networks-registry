@@ -11,7 +11,10 @@
     "https://scroll.rpc.pinax.network/v1/{PINAX_API_KEY}",
     "https://rpc.ankr.com/scroll"
   ],
-  "apiUrls": [{ "url": "https://api.scrollscan.com/api", "kind": "etherscan" }],
+  "apiUrls": [
+    { "url": "https://api.scrollscan.com/api", "kind": "etherscan" },
+    { "url": "https://scroll.blockscout.com/api", "kind": "blockscout" }
+  ],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
     "sps": ["https://api.thegraph.com/deploy"],
