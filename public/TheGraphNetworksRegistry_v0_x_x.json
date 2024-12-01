@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.9",
+  "version": "0.6.10",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-11-28T23:25:23.277Z",
+  "updatedAt": "2024-12-01T00:05:22.162Z",
   "networks": [
     {
       "id": "mainnet",
@@ -110,6 +110,10 @@
         {
           "url": "https://optimism.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://optimism.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -180,6 +184,10 @@
         {
           "url": "https://gnosis.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://gnosis.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -285,7 +293,7 @@
       "apiUrls": [
         {
           "url": "https://gnosis-chiado.blockscout.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -340,7 +348,7 @@
       "apiUrls": [
         {
           "url": "https://clvscan.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "networkType": "mainnet",
@@ -394,6 +402,10 @@
         {
           "url": "https://polygon-zkevm.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://zkevm.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "networkType": "mainnet",
@@ -521,6 +533,10 @@
         {
           "url": "https://sepolia.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://eth-sepolia.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -592,6 +608,10 @@
         {
           "url": "https://optimism-sepolia.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://optimism-sepolia.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -816,7 +836,7 @@
       "apiUrls": [
         {
           "url": "https://testnet.explorer.etherlink.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -1125,7 +1145,7 @@
       "apiUrls": [
         {
           "url": "https://explorer.mainnet.aurora.dev/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -1173,7 +1193,7 @@
       "apiUrls": [
         {
           "url": "https://explorer.testnet.aurora.dev/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -1407,6 +1427,10 @@
         {
           "url": "https://polygon.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://polygon.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "networkType": "mainnet",
@@ -1651,6 +1675,10 @@
         {
           "url": "https://blast-testnet.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://blast-testnet.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -1722,7 +1750,12 @@
         "https://rpc.holesky.ethpandaops.io",
         "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
-      "apiUrls": [],
+      "apiUrls": [
+        {
+          "url": "https://eth-holesky.blockscout.com/api",
+          "kind": "blockscout"
+        }
+      ],
       "services": {
         "subgraphs": [
           "https://api.thegraph.com/deploy"
@@ -2231,7 +2264,7 @@
       "apiUrls": [
         {
           "url": "https://api-cardona-zkevm.polygonscan.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         },
         {
           "url": "https://polygon-zkevm-cardona.abi.pinax.network/api",
@@ -2287,8 +2320,8 @@
       ],
       "apiUrls": [
         {
-          "url": "https://explorer-api.cronos.org/mainnet/api/v1",
-          "kind": "other"
+          "url": "https://cronos.org/explorer/api",
+          "kind": "blockscout"
         }
       ],
       "services": {},
@@ -2574,7 +2607,7 @@
       "apiUrls": [
         {
           "url": "https://rootstock.blockscout.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -2632,6 +2665,10 @@
         {
           "url": "https://block-explorer-api.sepolia.zksync.dev/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://zksync-sepolia.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -2745,6 +2782,10 @@
         {
           "url": "https://block-explorer-api.mainnet.zksync.io/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://zksync.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -2800,7 +2841,7 @@
       "apiUrls": [
         {
           "url": "https://explorer.mode.network/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -2923,7 +2964,7 @@
       "apiUrls": [
         {
           "url": "https://astar-zkevm.explorer.startale.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3055,6 +3096,10 @@
         {
           "url": "https://arbitrum-one.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://arbitrum.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3133,6 +3178,10 @@
         {
           "url": "https://arbitrum-sepolia.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://sepolia-explorer.arbitrum.io/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3195,6 +3244,10 @@
         {
           "url": "https://arbitrum-nova.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://nova-explorer.arbitrum.io/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3260,6 +3313,10 @@
         {
           "url": "https://celo.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://explorer.celo.org/mainnet/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3313,7 +3370,7 @@
       "apiUrls": [
         {
           "url": "https://explorer.etherlink.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3498,6 +3555,10 @@
         {
           "url": "https://celo-alfajores.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://celo-alfajores.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3701,6 +3762,10 @@
         {
           "url": "https://api-sepolia.scrollscan.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://scroll-sepolia.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3768,6 +3833,10 @@
         {
           "url": "https://api.scrollscan.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://scroll.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -3979,6 +4048,10 @@
         {
           "url": "https://linea-sepolia.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api-explorer.sepolia.linea.build/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4040,6 +4113,10 @@
         {
           "url": "https://linea.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api-explorer.linea.build/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4110,7 +4187,7 @@
       "apiUrls": [
         {
           "url": "https://zkyoto.explorer.startale.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4173,7 +4250,7 @@
       "apiUrls": [
         {
           "url": "https://explorer.xai-chain.net/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4230,8 +4307,8 @@
       ],
       "apiUrls": [
         {
-          "url": "https://explorer.zora.energy/api/v2",
-          "kind": "etherscan"
+          "url": "https://explorer.zora.energy/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4360,6 +4437,10 @@
         {
           "url": "https://blast.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://blast.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4476,6 +4557,10 @@
         {
           "url": "https://base.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://base.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4551,6 +4636,10 @@
         {
           "url": "https://base-sepolia.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://base-sepolia.blockscout.com/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4729,7 +4818,7 @@
       "apiUrls": [
         {
           "url": "https://sepolia.explorer.mode.network/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -5863,8 +5952,8 @@
       "nativeToken": "NEAR",
       "docsUrl": "https://docs.near.org",
       "genesis": {
-        "hash": "0xa7110b9052e1be68f7fa8bb4065bf54e731205801878e708db7464ec4b9b8014",
-        "height": 9820214
+        "hash": "0xc6fdf91c8e82f8f917cc1975e9de1c64be11899e321dfdf5febcfbb7313f1486",
+        "height": 9820210
       },
       "firehose": {
         "blockType": "sf.near.type.v1.Block",
