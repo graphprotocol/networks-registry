@@ -12,7 +12,7 @@
     "https://avalanche.rpc.pinax.network/v1/{PINAX_API_KEY}/ext/bc/C/rpc",
     "https://avalanche-c-chain-rpc.publicnode.com"
   ],
-  "apiUrls": [{ "url": "https://api.snowtrace.io/api", "kind": "etherscan" }],
+  "apiUrls": [{ "url": "https://api.snowtrace.io/api", "kind": "etherscan" }, { "url": "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api", "kind": "etherscan" }],
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
     "sps": ["https://api.thegraph.com/deploy"],

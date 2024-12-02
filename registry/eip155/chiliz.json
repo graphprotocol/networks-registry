@@ -11,7 +11,7 @@
     "https://rpc.ankr.com/chiliz",
     "https://chiliz.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
-  "apiUrls": [{ "url": "https://scan.chiliz.com/api", "kind": "etherscan" }],
+  "apiUrls": [{ "url": "https://scan.chiliz.com/api", "kind": "etherscan" }, { "url": "https://api.routescan.io/v2/network/mainnet/evm/88888/etherscan/api", "kind": "etherscan" }],
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.thegraph.com/deploy"],
