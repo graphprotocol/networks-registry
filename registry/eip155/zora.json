@@ -12,7 +12,10 @@
   ],
   "apiUrls": [
     { "url": "https://explorer.zora.energy/api", "kind": "blockscout" },
-    { "url": "https://api.routescan.io/v2/network/mainnet/evm/7777777/etherscan/api", "kind": "etherscan" }
+    {
+      "url": "https://api.routescan.io/v2/network/mainnet/evm/7777777/etherscan/api",
+      "kind": "etherscan"
+    }
   ],
   "services": {
     "firehose": ["zora.firehose.pinax.network:443"],

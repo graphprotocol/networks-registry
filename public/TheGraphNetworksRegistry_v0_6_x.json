@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.11",
+  "version": "0.6.12",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-12-02T17:56:17.714Z",
+  "updatedAt": "2024-12-02T20:44:56.638Z",
   "networks": [
     {
       "id": "mainnet",
@@ -36,6 +36,10 @@
         {
           "url": "https://eth.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "networkType": "mainnet",
@@ -2114,6 +2118,10 @@
         {
           "url": "https://maizenet-explorer.usecorn.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -2846,6 +2854,10 @@
         {
           "url": "https://explorer.mode.network/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/34443/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -2908,7 +2920,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://testnet.botanixscan.io/"
+        "https://testnet.botanixscan.io"
       ],
       "rpcUrls": [
         "https://node.botanixlabs.dev"
@@ -2933,7 +2945,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "BTC",
-      "docsUrl": "https://docs.botanixlabs.xyz/",
+      "docsUrl": "https://docs.botanixlabs.xyz",
       "genesis": {
         "hash": "0x3797638175875c37cefa72ef546db685e43c81ba4af8238b48a495f98d61588d",
         "height": 0
@@ -3534,6 +3546,10 @@
       "apiUrls": [
         {
           "url": "https://api.snowtrace.io/api",
+          "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
           "kind": "etherscan"
         }
       ],
@@ -4364,6 +4380,10 @@
         {
           "url": "https://explorer.zora.energy/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/7777777/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -4817,6 +4837,10 @@
       "apiUrls": [
         {
           "url": "https://scan.chiliz.com/api",
+          "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/88888/etherscan/api",
           "kind": "etherscan"
         }
       ],
