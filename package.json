@@ -1,5 +1,5 @@
 {
-  "version": "0.6.11",
+  "version": "0.6.12",
   "private": true,
   "type": "module",
   "scripts": {
@@ -24,8 +24,5 @@
     "ajv-formats": "^3.0.1",
     "json-schema-to-typescript": "15.0.3",
     "prettier": "3.4.1"
-  },
-  "dependencies": {
-    "wrangler": "3.90.0"
   }
 }
