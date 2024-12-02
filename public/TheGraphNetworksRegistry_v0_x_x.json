@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-12-01T00:05:22.162Z",
+  "updatedAt": "2024-12-02T17:56:17.714Z",
   "networks": [
     {
       "id": "mainnet",
@@ -463,6 +463,10 @@
       "apiUrls": [
         {
           "url": "https://block-explorer-api.testnet.abs.xyz/api",
+          "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/11124/etherscan/api",
           "kind": "etherscan"
         }
       ],
@@ -2888,6 +2892,57 @@
         "web3Icons": {
           "name": "mode"
         }
+      }
+    },
+    {
+      "id": "botanix-testnet",
+      "shortName": "Botanix",
+      "fullName": "Botanix Testnet",
+      "aliases": [
+        "spiderchain-testnet",
+        "spiderchain-testnet-v1",
+        "evm-3636"
+      ],
+      "caip2Id": "eip155:3636",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://testnet.botanixscan.io/"
+      ],
+      "rpcUrls": [
+        "https://node.botanixlabs.dev"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/3636/etherscan/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "botanix-testnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "BTC",
+      "docsUrl": "https://docs.botanixlabs.xyz/",
+      "genesis": {
+        "hash": "0x3797638175875c37cefa72ef546db685e43c81ba4af8238b48a495f98d61588d",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
       }
     },
     {
