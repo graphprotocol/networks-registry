@@ -16,7 +16,10 @@
     "https://amoy.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://polygon-amoy.abi.pinax.network/api", "kind": "etherscan" },
+    {
+      "url": "https://polygon-amoy.abi.pinax.network/api",
+      "kind": "etherscan"
+    },
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/80002/etherscan/api",
       "kind": "etherscan"

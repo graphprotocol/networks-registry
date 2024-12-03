@@ -9,7 +9,10 @@
   "explorerUrls": ["https://sepolia.explorer.mode.network"],
   "rpcUrls": ["https://sepolia.mode.network"],
   "apiUrls": [
-    { "url": "https://sepolia.explorer.mode.network/api", "kind": "blockscout" },
+    {
+      "url": "https://sepolia.explorer.mode.network/api",
+      "kind": "blockscout"
+    },
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/919/etherscan/api",
       "kind": "etherscan"
