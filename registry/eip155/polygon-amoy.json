@@ -16,11 +16,15 @@
     "https://amoy.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://polygon-amoy.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://polygon-amoy.abi.pinax.network/api", "kind": "etherscan" },
+    {
+      "url": "https://api.routescan.io/v2/network/testnet/evm/80002/etherscan/api",
+      "kind": "etherscan"
+    }
   ],
   "networkType": "testnet",
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["amoy.firehose.pinax.network:443"],
     "substreams": ["amoy.substreams.pinax.network:443"]
   },

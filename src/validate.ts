@@ -152,7 +152,7 @@ function validateTestnets(networks: Network[]) {
 }
 
 const ALLOWED_FH_PROVIDERS = ["pinax.network", "streamingfast.io"];
-const ALLOWED_SG_PROVIDERS = ["api.thegraph.com"];
+const ALLOWED_SG_PROVIDERS = ["api.studio.thegraph.com"];
 
 function validateServices(networks: Network[]) {
   process.stdout.write("Validating services ... ");

@@ -9,8 +9,8 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": [
       "mainnet.sol.streamingfast.io:443",
       "solana.firehose.pinax.network:443"

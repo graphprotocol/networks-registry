@@ -10,8 +10,8 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "near" },
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": [
       "near.firehose.pinax.network:443",
       "mainnet.near.streamingfast.io:443"

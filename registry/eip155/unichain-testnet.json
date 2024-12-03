@@ -20,11 +20,15 @@
     {
       "url": "https://unichain-sepolia.blockscout.com/api",
       "kind": "etherscan"
+    },
+    {
+      "url": "https://api.routescan.io/v2/network/testnet/evm/1301/etherscan/api",
+      "kind": "etherscan"
     }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["unisepolia.firehose.pinax.network:443"],
     "substreams": ["unisepolia.substreams.pinax.network:443"]
   },
