@@ -11,7 +11,7 @@
     { "url": "https://seitrace.com/pacific-1/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["evm-mainnet.sei.streamingfast.io:443"],
     "substreams": ["evm-mainnet.sei.streamingfast.io:443"]
   },

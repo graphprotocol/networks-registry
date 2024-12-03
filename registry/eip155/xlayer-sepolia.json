@@ -9,7 +9,7 @@
   "explorerUrls": ["https://www.oklink.com/xlayer-test"],
   "rpcUrls": ["https://testrpc.xlayer.tech"],
   "apiUrls": [],
-  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },

@@ -16,7 +16,7 @@
     { "url": "https://scroll-sepolia.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["scrsepolia.firehose.pinax.network:443"],
     "substreams": ["scrsepolia.substreams.pinax.network:443"]
   },

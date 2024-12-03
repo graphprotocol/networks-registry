@@ -9,11 +9,15 @@
   "explorerUrls": ["https://testnet.chiliscan.com"],
   "rpcUrls": ["https://spicy-rpc.chiliz.com"],
   "apiUrls": [
-    { "url": "https://spicy-explorer.chiliz.com/api", "kind": "etherscan" }
+    { "url": "https://spicy-explorer.chiliz.com/api", "kind": "etherscan" },
+    {
+      "url": "https://api.routescan.io/v2/network/testnet/evm/88882/etherscan/api",
+      "kind": "etherscan"
+    }
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "chiliz" }],
-  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "CHZ",
   "docsUrl": "https://docs.chiliz.com",

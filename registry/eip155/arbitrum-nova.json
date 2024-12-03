@@ -20,8 +20,8 @@
     { "url": "https://nova-explorer.arbitrum.io/api", "kind": "blockscout" }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["arbnova.firehose.pinax.network:443"],
     "substreams": ["arbnova.substreams.pinax.network:443"]
   },

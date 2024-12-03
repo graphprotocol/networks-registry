@@ -16,8 +16,8 @@
   ],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["bsc.firehose.pinax.network:443", "bnb.streamingfast.io:443"],
     "substreams": [
       "bsc.substreams.pinax.network:443",

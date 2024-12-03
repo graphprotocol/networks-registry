@@ -20,7 +20,7 @@
   ],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["chiliz.firehose.pinax.network:443"],
     "substreams": ["chiliz.substreams.pinax.network:443"]
   },

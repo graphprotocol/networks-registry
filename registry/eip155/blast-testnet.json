@@ -19,7 +19,7 @@
     { "url": "https://blast-testnet.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["blastsepolia.firehose.pinax.network:443"],
     "substreams": ["blastsepolia.substreams.pinax.network:443"]
   },

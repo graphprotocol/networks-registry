@@ -12,7 +12,11 @@
     "https://minato.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://soneium-minato.blockscout.com/api", "kind": "etherscan" }
+    { "url": "https://soneium-minato.blockscout.com/api", "kind": "etherscan" },
+    {
+      "url": "https://api.routescan.io/v2/network/testnet/evm/1946/etherscan/api",
+      "kind": "etherscan"
+    }
   ],
   "networkType": "testnet",
   "relations": [
@@ -20,8 +24,8 @@
     { "kind": "l2Of", "network": "sepolia" }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["minato.firehose.pinax.network:443"],
     "substreams": ["minato.substreams.pinax.network:443"]
   },

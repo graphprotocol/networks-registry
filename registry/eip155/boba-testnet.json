@@ -18,7 +18,7 @@
     }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["bobasepolia.firehose.pinax.network:443"],
     "substreams": ["bobasepolia.substreams.pinax.network:443"]
   },

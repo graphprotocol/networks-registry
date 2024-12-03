@@ -20,8 +20,8 @@
     }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": [
       "avalanche-mainnet.streamingfast.io:443",
       "avalanche.firehose.pinax.network:443"
