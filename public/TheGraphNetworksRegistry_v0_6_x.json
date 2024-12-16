@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.13",
+  "version": "0.6.14",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-12-03T00:42:10.602Z",
+  "updatedAt": "2024-12-16T17:47:56.643Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1492,6 +1492,50 @@
       }
     },
     {
+      "id": "sonic",
+      "shortName": "Sonic",
+      "fullName": "Sonic Mainnet",
+      "aliases": [
+        "evm-146",
+        "sonic-mainnet"
+      ],
+      "caip2Id": "eip155:146",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://sonicscan.org"
+      ],
+      "rpcUrls": [
+        "https://rpc.soniclabs.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/146/etherscan/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "S",
+      "docsUrl": "https://docs.soniclabs.com/",
+      "genesis": {
+        "hash": "0x411c75a1b1c2f2f458bcf243e7743d114e0117a4233cc13d91e7efc8fe8b0f3b",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      }
+    },
+    {
       "id": "jungle4-evm",
       "shortName": "EOS EVM",
       "secondName": "Jungle4",
@@ -2160,6 +2204,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "corn"
+        }
       }
     },
     {
@@ -2217,6 +2266,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "corn"
+        }
       }
     },
     {
@@ -5089,6 +5143,56 @@
         "web3Icons": {
           "name": "boba"
         }
+      }
+    },
+    {
+      "id": "lumia",
+      "shortName": "Lumia",
+      "fullName": "Lumia Mainnet",
+      "aliases": [
+        "evm-994873017",
+        "lumia-mainnet"
+      ],
+      "caip2Id": "eip155:994873017",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://lens.lumia.org"
+      ],
+      "rpcUrls": [
+        "https://mainnet-rpc.lumia.org"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer.lumia.org/api/",
+          "kind": "etherscan"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "LUMIA",
+      "docsUrl": "https://docs.lumia.org",
+      "genesis": {
+        "hash": "0xbe2fbdd3862a852c02db24f4dcdc8c5eebc74777f393a0119410ed81f6a39120",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
       }
     },
     {
