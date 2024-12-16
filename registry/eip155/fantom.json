@@ -15,7 +15,7 @@
     { "url": "https://fantom.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["fantom.firehose.pinax.network:443"],
     "substreams": ["fantom.substreams.pinax.network:443"]
   },

@@ -11,11 +11,15 @@
     "https://mode.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://explorer.mode.network/api", "kind": "blockscout" }
+    { "url": "https://explorer.mode.network/api", "kind": "blockscout" },
+    {
+      "url": "https://api.routescan.io/v2/network/mainnet/evm/34443/etherscan/api",
+      "kind": "etherscan"
+    }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["mode.firehose.pinax.network:443"],
     "substreams": ["mode.substreams.pinax.network:443"]
   },

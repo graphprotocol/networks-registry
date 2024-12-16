@@ -11,7 +11,7 @@
   "apiUrls": [
     { "url": "https://testnet.index.iotexscan.io/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "iotex" }],
   "issuanceRewards": false,

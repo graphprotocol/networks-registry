@@ -10,8 +10,8 @@
   "networkType": "devnet",
   "relations": [{ "kind": "testnetOf", "network": "solana-mainnet-beta" }],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["devnet.sol.streamingfast.io:443"],
     "substreams": ["devnet.sol.streamingfast.io:443"]
   },

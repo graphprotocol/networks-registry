@@ -11,8 +11,8 @@
   "graphNode": { "protocol": "near" },
   "relations": [{ "kind": "testnetOf", "network": "near-mainnet" }],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["neartest.firehose.pinax.network:443"],
     "substreams": ["neartest.substreams.pinax.network:443"]
   },

@@ -6,7 +6,7 @@ import packageInfo from "../package.json";
 import { getVersionFilenames } from "./utils/versions";
 
 const REGISTRY_ROOT_URL =
-  process.env.REGISTRY_ROOT_URL ?? "https://graphregistry.pages.dev";
+  process.env.REGISTRY_ROOT_URL ?? "https://registry.thegraph.com";
 
 function generateMermaidGraph(networks: Network[]): string {
   const relations = networks

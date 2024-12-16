@@ -9,7 +9,7 @@
   "rpcUrls": ["https://api-para.clv.org"],
   "apiUrls": [{ "url": "https://clvscan.com/api", "kind": "blockscout" }],
   "networkType": "mainnet",
-  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "CLV",
   "docsUrl": "https://docs.clv.org",

@@ -12,9 +12,13 @@
     "https://fuji.rpc.pinax.network/v1/{PINAX_API_KEY}/ext/bc/C/rpc"
   ],
   "apiUrls": [
-    { "url": "https://api-testnet.snowtrace.io/api", "kind": "etherscan" }
+    { "url": "https://api-testnet.snowtrace.io/api", "kind": "etherscan" },
+    {
+      "url": "https://api.routescan.io/v2/network/testnet/evm/43113/etherscan/api",
+      "kind": "etherscan"
+    }
   ],
-  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "avalanche" }],
   "issuanceRewards": false,

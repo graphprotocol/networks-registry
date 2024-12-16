@@ -15,7 +15,7 @@
     { "url": "https://api-moonriver.moonscan.io/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["moonriver.firehose.pinax.network:443"],
     "substreams": ["moonriver.substreams.pinax.network:443"]
   },

@@ -16,7 +16,7 @@
     { "url": "https://api-explorer.linea.build/api", "kind": "blockscout" }
   ],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["linea.firehose.pinax.network:443"],
     "substreams": ["linea.substreams.pinax.network:443"]
   },

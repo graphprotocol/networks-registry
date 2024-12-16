@@ -14,7 +14,7 @@
   "apiUrls": [
     { "url": "https://gnosis-chiado.blockscout.com/api", "kind": "blockscout" }
   ],
-  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "gnosis" }],
   "issuanceRewards": false,

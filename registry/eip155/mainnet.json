@@ -14,12 +14,16 @@
   ],
   "apiUrls": [
     { "url": "https://mainnet.abi.pinax.network/api", "kind": "etherscan" },
-    { "url": "https://eth.blockscout.com/api", "kind": "blockscout" }
+    { "url": "https://eth.blockscout.com/api", "kind": "blockscout" },
+    {
+      "url": "https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api",
+      "kind": "etherscan"
+    }
   ],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
-    "sps": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": [
       "eth.firehose.pinax.network:443",
       "mainnet.eth.streamingfast.io:443"

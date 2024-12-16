@@ -17,7 +17,7 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "bsc" }],
   "services": {
-    "subgraphs": ["https://api.thegraph.com/deploy"],
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["chapel.firehose.pinax.network:443"],
     "substreams": ["chapel.substreams.pinax.network:443"]
   },

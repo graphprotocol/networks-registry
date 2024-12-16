@@ -1,9 +1,9 @@
 {
   "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.10",
+  "version": "0.6.13",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-12-01T00:05:22.162Z",
+  "updatedAt": "2024-12-03T00:42:10.602Z",
   "networks": [
     {
       "id": "mainnet",
@@ -36,15 +36,19 @@
         {
           "url": "https://eth.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "eth.firehose.pinax.network:443",
@@ -118,10 +122,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "mainnet.optimism.streamingfast.io:443",
@@ -192,7 +196,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -242,7 +246,7 @@
       "apiUrls": [],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -298,7 +302,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -354,7 +358,7 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -411,10 +415,10 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "polygonzk.firehose.pinax.network:443"
@@ -464,11 +468,15 @@
         {
           "url": "https://block-explorer-api.testnet.abs.xyz/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/11124/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -537,14 +545,18 @@
         {
           "url": "https://eth-sepolia.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/11155111/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "sepolia.firehose.pinax.network:443",
@@ -616,7 +628,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "opsepolia.firehose.pinax.network:443"
@@ -670,7 +682,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -726,10 +738,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "fuse.firehose.pinax.network:443"
@@ -789,7 +801,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -841,7 +853,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -897,7 +909,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "moonbeam.firehose.pinax.network:443"
@@ -960,7 +972,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "moonriver.firehose.pinax.network:443"
@@ -1026,7 +1038,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -1089,14 +1101,18 @@
         {
           "url": "https://unichain-sepolia.blockscout.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/1301/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "unisepolia.firehose.pinax.network:443"
@@ -1150,7 +1166,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -1198,7 +1214,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -1254,7 +1270,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -1309,7 +1325,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "evm-mainnet.sei.streamingfast.io:443"
@@ -1364,7 +1380,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -1436,10 +1452,10 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "polygon.firehose.pinax.network:443",
@@ -1573,7 +1589,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "gravity.firehose.pinax.network:443"
@@ -1628,7 +1644,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -1683,7 +1699,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "blastsepolia.firehose.pinax.network:443"
@@ -1758,10 +1774,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "holesky.firehose.pinax.network:443",
@@ -1876,6 +1892,10 @@
         {
           "url": "https://soneium-minato.blockscout.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/1946/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "networkType": "testnet",
@@ -1891,10 +1911,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "minato.firehose.pinax.network:443"
@@ -1943,7 +1963,7 @@
       "apiUrls": [],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -1998,7 +2018,7 @@
       "apiUrls": [],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "xlayer.firehose.pinax.network:443"
@@ -2110,11 +2130,15 @@
         {
           "url": "https://maizenet-explorer.usecorn.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -2159,11 +2183,15 @@
         {
           "url": "https://testnet-explorer.usecorn.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/21000001/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -2374,7 +2402,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "fantom.firehose.pinax.network:443"
@@ -2423,7 +2451,7 @@
       },
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -2479,7 +2507,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "boba.firehose.pinax.network:443"
@@ -2547,7 +2575,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "bobasepolia.firehose.pinax.network:443"
@@ -2612,7 +2640,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -2673,7 +2701,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -2729,7 +2757,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -2790,7 +2818,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -2842,14 +2870,18 @@
         {
           "url": "https://explorer.mode.network/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/34443/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "mode.firehose.pinax.network:443"
@@ -2888,6 +2920,57 @@
         "web3Icons": {
           "name": "mode"
         }
+      }
+    },
+    {
+      "id": "botanix-testnet",
+      "shortName": "Botanix",
+      "fullName": "Botanix Testnet",
+      "aliases": [
+        "spiderchain-testnet",
+        "spiderchain-testnet-v1",
+        "evm-3636"
+      ],
+      "caip2Id": "eip155:3636",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://testnet.botanixscan.io"
+      ],
+      "rpcUrls": [
+        "https://node.botanixlabs.dev"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/3636/etherscan/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "botanix-testnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "BTC",
+      "docsUrl": "https://docs.botanixlabs.xyz",
+      "genesis": {
+        "hash": "0x3797638175875c37cefa72ef546db685e43c81ba4af8238b48a495f98d61588d",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
       }
     },
     {
@@ -2969,10 +3052,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "zkastar.firehose.pinax.network:443"
@@ -3032,7 +3115,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -3104,10 +3187,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "arbone.firehose.pinax.network:443",
@@ -3186,10 +3269,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "arbsepolia.firehose.pinax.network:443"
@@ -3252,10 +3335,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "arbnova.firehose.pinax.network:443"
@@ -3321,7 +3404,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -3375,7 +3458,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -3422,11 +3505,15 @@
         {
           "url": "https://api-testnet.snowtrace.io/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/43113/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -3480,14 +3567,18 @@
         {
           "url": "https://api.snowtrace.io/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "avalanche-mainnet.streamingfast.io:443",
@@ -3563,7 +3654,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -3611,7 +3702,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -3660,7 +3751,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -3715,7 +3806,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -3770,7 +3861,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "scrsepolia.firehose.pinax.network:443"
@@ -3841,10 +3932,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "scroll.firehose.pinax.network:443"
@@ -3916,10 +4007,10 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "bsc.firehose.pinax.network:443",
@@ -3984,7 +4075,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "bobabnb.firehose.pinax.network:443"
@@ -4056,7 +4147,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -4121,7 +4212,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "linea.firehose.pinax.network:443"
@@ -4309,6 +4400,10 @@
         {
           "url": "https://explorer.zora.energy/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/7777777/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -4380,12 +4475,16 @@
         {
           "url": "https://polygon-amoy.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/80002/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "networkType": "testnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "amoy.firehose.pinax.network:443"
@@ -4445,10 +4544,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "blast.firehose.pinax.network:443"
@@ -4510,7 +4609,7 @@
       "apiUrls": [],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -4565,10 +4664,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "base.firehose.pinax.network:443",
@@ -4644,7 +4743,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "basesepolia.firehose.pinax.network:443"
@@ -4706,6 +4805,10 @@
         {
           "url": "https://spicy-explorer.chiliz.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/88882/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "networkType": "testnet",
@@ -4717,7 +4820,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -4763,12 +4866,16 @@
         {
           "url": "https://scan.chiliz.com/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/88888/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "chiliz.firehose.pinax.network:443"
@@ -4819,11 +4926,15 @@
         {
           "url": "https://sepolia.explorer.mode.network/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/919/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -4892,7 +5003,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "chapel.firehose.pinax.network:443"
@@ -4947,7 +5058,7 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -5307,10 +5418,10 @@
       },
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "arweave.firehose.pinax.network:443"
@@ -5580,10 +5691,10 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "bitcoin.firehose.pinax.network:443",
@@ -5934,10 +6045,10 @@
       },
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "near.firehose.pinax.network:443",
@@ -5991,10 +6102,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "neartest.firehose.pinax.network:443"
@@ -6041,10 +6152,10 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "mainnet.sol.streamingfast.io:443",
@@ -6095,10 +6206,10 @@
       ],
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "devnet.sol.streamingfast.io:443"
@@ -6153,10 +6264,10 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [
-          "https://api.thegraph.com/deploy"
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "mainnet.starknet.streamingfast.io:443",
