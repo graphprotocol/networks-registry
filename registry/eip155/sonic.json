@@ -1,0 +1,29 @@
+{
+  "id": "sonic",
+  "shortName": "Sonic",
+  "fullName": "Sonic Mainnet",
+  "aliases": ["evm-146", "sonic-mainnet"],
+  "caip2Id": "eip155:146",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://sonicscan.org"],
+  "rpcUrls": ["https://rpc.soniclabs.com"],
+  "apiUrls": [
+     { "url":"https://api.routescan.io/v2/network/mainnet/evm/146/etherscan/api", "kind": "etherscan"}
+  ],
+  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "S",
+  "docsUrl": "https://docs.soniclabs.com/",
+  "genesis": {
+    "hash": "0x411c75a1b1c2f2f458bcf243e7743d114e0117a4233cc13d91e7efc8fe8b0f3b",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "sonic" } }
+}
