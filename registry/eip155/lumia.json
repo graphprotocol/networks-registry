@@ -11,7 +11,7 @@
      { "url": "https://explorer.lumia.org/api/", "kind": "etherscan"}
   ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "services": { "subgraphs": ["https://api.thegraph.com/deploy"] },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "LUMIA",
