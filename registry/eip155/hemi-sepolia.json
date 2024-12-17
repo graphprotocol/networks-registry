@@ -6,7 +6,7 @@
   "aliases": ["evm-743111", "hemi-testnet"],
   "caip2Id": "eip155:743111",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://testnet.explorer.hemi.xyz/"],
+  "explorerUrls": ["https://testnet.explorer.hemi.xyz"],
   "rpcUrls": ["https://testnet.rpc.hemi.network/rpc"],
   "apiUrls": [
     { "url": "https://testnet.explorer.hemi.xyz/api", "kind": "etherscan" }
@@ -16,10 +16,10 @@
   "relations": [
     { "kind": "testnetOf", "network": "hemi-sepolia" },
     { "kind": "l2Of", "network": "sepolia" }
-],
+  ],
   "issuanceRewards": false,
   "nativeToken": "ETH",
-  "docsUrl": "https://docs.hemi.xyz/",
+  "docsUrl": "https://docs.hemi.xyz",
   "genesis": {
     "hash": "0xc7eef424ae7c339cd0896344c80e136b81246ec5fe7d91a668a09b4c17543194",
     "height": 0
