@@ -1,5 +1,5 @@
 {
-  "$schema": "https://registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
+  "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
   "version": "0.6.6",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
