@@ -3,8 +3,16 @@ module.exports = {
     json: {
       ...require("prettier/parser-babel").parsers.json,
       preprocess: (text) => {
+        // List of URLs that should keep their trailing slash
+        const exceptions = [
+          "https://explorer.lumia.org/api/",
+        ];
+
         const processValue = (value) => {
           if (typeof value === "string" && (value.startsWith("http://") || value.startsWith("https://"))) {
+            if (exceptions.includes(value)) {
+              return value;
+            }
             return value.replace(/\/+$/, "");
           }
           if (Array.isArray(value)) {

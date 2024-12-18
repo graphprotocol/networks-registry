@@ -7,7 +7,9 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://lens.lumia.org"],
   "rpcUrls": ["https://mainnet-rpc.lumia.org"],
-  "apiUrls": [{ "url": "https://explorer.lumia.org/api", "kind": "etherscan" }],
+  "apiUrls": [
+    { "url": "https://explorer.lumia.org/api/", "kind": "etherscan" }
+  ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
