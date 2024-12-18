@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.16",
+  "version": "0.6.17",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-12-18T20:17:32.513Z",
+  "updatedAt": "2024-12-18T21:51:39.857Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5269,7 +5269,7 @@
       ],
       "caip2Id": "antelope:1064487b3cd1a897ce03ae5b6a865651",
       "explorerUrls": [
-        "https://wax.bloks.io"
+        "https://eosauthority.com/?network=wax"
       ],
       "rpcUrls": [
         "https://wax.api.eosnation.io"
@@ -5309,7 +5309,7 @@
       "aliases": [],
       "caip2Id": "antelope:1eaa0824707c8c16bd25145493bf062a",
       "explorerUrls": [
-        "https://explorer-test.telos.net"
+        "https://eosauthority.com/?network=telostest"
       ],
       "rpcUrls": [
         "https://telostest.api.eosnation.io"
@@ -5357,7 +5357,7 @@
       ],
       "caip2Id": "antelope:4667b205c6838ef70ff7988f6e8257e8",
       "explorerUrls": [
-        "https://explorer.telos.net"
+        "https://eosauthority.com/?network=telos"
       ],
       "rpcUrls": [
         "https://telos.api.eosnation.io"
@@ -5400,7 +5400,7 @@
       ],
       "caip2Id": "antelope:5fff1dae8dc8e2fc4d5b23b2c7665c97",
       "explorerUrls": [
-        "https://kylin.bloks.io"
+        "https://eosauthority.com/?network=kylin"
       ],
       "rpcUrls": [
         "https://kylin.api.eosnation.io"
@@ -5449,7 +5449,7 @@
       ],
       "caip2Id": "antelope:73e4385a2708e6d7048834fbc1079f2f",
       "explorerUrls": [
-        "https://jungle.bloks.io"
+        "https://eosauthority.com/?network=jungle"
       ],
       "rpcUrls": [
         "https://jungle4.api.eosnation.io"
@@ -5497,7 +5497,7 @@
       ],
       "caip2Id": "antelope:aca376f206b8fc25a6ed44dbdc66547c",
       "explorerUrls": [
-        "https://bloks.io"
+        "https://eosauthority.com/?network=eos"
       ],
       "rpcUrls": [
         "https://eos.api.eosnation.io"
@@ -5539,7 +5539,7 @@
       ],
       "caip2Id": "antelope:f16b1833c747c43682f4386fca9cbb32",
       "explorerUrls": [
-        "https://wax-test.bloks.io"
+        "https://eosauthority.com/?network=waxtest"
       ],
       "rpcUrls": [
         "https://waxtest.api.eosnation.io"
