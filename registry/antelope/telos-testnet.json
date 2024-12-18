@@ -4,7 +4,7 @@
   "fullName": "Telos Testnet",
   "aliases": [],
   "caip2Id": "antelope:1eaa0824707c8c16bd25145493bf062a",
-  "explorerUrls": ["https://explorer-test.telos.net"],
+  "explorerUrls": ["https://eosauthority.com/?network=telostest"],
   "rpcUrls": ["https://telostest.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "testnet",

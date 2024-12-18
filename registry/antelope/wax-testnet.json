@@ -4,7 +4,7 @@
   "fullName": "WAX Testnet",
   "aliases": ["waxtest"],
   "caip2Id": "antelope:f16b1833c747c43682f4386fca9cbb32",
-  "explorerUrls": ["https://wax-test.bloks.io"],
+  "explorerUrls": ["https://eosauthority.com/?network=waxtest"],
   "rpcUrls": ["https://waxtest.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "testnet",

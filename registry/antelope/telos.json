@@ -4,7 +4,7 @@
   "fullName": "Telos Mainnet",
   "aliases": ["telos-mainnet"],
   "caip2Id": "antelope:4667b205c6838ef70ff7988f6e8257e8",
-  "explorerUrls": ["https://explorer.telos.net"],
+  "explorerUrls": ["https://eosauthority.com/?network=telos"],
   "rpcUrls": ["https://telos.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "mainnet",

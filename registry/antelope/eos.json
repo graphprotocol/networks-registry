@@ -4,7 +4,7 @@
   "fullName": "EOS Mainnet",
   "aliases": ["eos-mainnet"],
   "caip2Id": "antelope:aca376f206b8fc25a6ed44dbdc66547c",
-  "explorerUrls": ["https://bloks.io"],
+  "explorerUrls": ["https://eosauthority.com/?network=eos"],
   "rpcUrls": ["https://eos.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "mainnet",

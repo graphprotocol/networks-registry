@@ -5,7 +5,7 @@
   "fullName": "EOS Jungle4 Testnet",
   "aliases": ["jungle"],
   "caip2Id": "antelope:73e4385a2708e6d7048834fbc1079f2f",
-  "explorerUrls": ["https://jungle.bloks.io"],
+  "explorerUrls": ["https://eosauthority.com/?network=jungle"],
   "rpcUrls": ["https://jungle4.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "testnet",
