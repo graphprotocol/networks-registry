@@ -23,5 +23,6 @@
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "wax" } }
 }
