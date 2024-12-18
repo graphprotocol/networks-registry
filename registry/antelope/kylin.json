@@ -5,7 +5,7 @@
   "fullName": "EOS Kylin Testnet",
   "aliases": ["eos-kylin"],
   "caip2Id": "antelope:5fff1dae8dc8e2fc4d5b23b2c7665c97",
-  "explorerUrls": ["https://kylin.bloks.io"],
+  "explorerUrls": ["https://eosauthority.com/?network=kylin"],
   "rpcUrls": ["https://kylin.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "testnet",
