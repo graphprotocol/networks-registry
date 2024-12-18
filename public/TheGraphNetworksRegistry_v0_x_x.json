@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.15",
+  "version": "0.6.16",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-12-17T20:00:23.668Z",
+  "updatedAt": "2024-12-18T20:17:32.513Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1533,6 +1533,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "sonic"
+        }
       }
     },
     {
@@ -4446,7 +4451,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://testnet.explorer.hemi.xyz/"
+        "https://testnet.explorer.hemi.xyz"
       ],
       "rpcUrls": [
         "https://testnet.rpc.hemi.network/rpc"
@@ -4475,7 +4480,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.hemi.xyz/",
+      "docsUrl": "https://docs.hemi.xyz",
       "genesis": {
         "hash": "0xc7eef424ae7c339cd0896344c80e136b81246ec5fe7d91a668a09b4c17543194",
         "height": 0
@@ -5220,7 +5225,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://explorer.lumia.org/api",
+          "url": "https://explorer.lumia.org/api/",
           "kind": "etherscan"
         }
       ],
@@ -5248,6 +5253,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "lumia"
+        }
       }
     },
     {
@@ -5285,6 +5295,11 @@
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "wax"
+        }
       }
     },
     {
@@ -5556,6 +5571,11 @@
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "wax"
+        }
       }
     },
     {
