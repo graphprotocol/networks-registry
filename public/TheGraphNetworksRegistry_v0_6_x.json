@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.18",
+  "version": "0.6.19",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2024-12-19T16:54:28.709Z",
+  "updatedAt": "2024-12-20T17:33:41.671Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3541,6 +3541,49 @@
       }
     },
     {
+      "id": "hemi",
+      "shortName": "Hemi",
+      "fullName": "Hemi Mainnet",
+      "aliases": [
+        "evm-43111",
+        "hemi-mainnet"
+      ],
+      "caip2Id": "eip155:43111",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.hemi.xyz",
+      "genesis": {
+        "hash": "0x6b070d8b8f3bf81c9314ff863748e3db2662ecc0a8dbd4c394a8b646ae0c8b8b",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "hemi"
+        }
+      }
+    },
+    {
       "id": "fuji",
       "shortName": "Avalanche",
       "secondName": "Fuji",
@@ -4471,7 +4514,7 @@
       "relations": [
         {
           "kind": "testnetOf",
-          "network": "hemi-sepolia"
+          "network": "hemi"
         },
         {
           "kind": "l2Of",
@@ -4490,6 +4533,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "hemi"
+        }
       }
     },
     {
@@ -4660,7 +4708,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "JOC",
-      "docsUrl": "https://www.japanopenchain.org/en/developer/",
+      "docsUrl": "https://www.japanopenchain.org/en/developer",
       "genesis": {
         "hash": "0x1b54bfa6846a13aacc57066840ec10d1b74b06870539bbc8a3d1b19bdc566733",
         "height": 0
