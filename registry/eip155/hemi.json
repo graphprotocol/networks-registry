@@ -1,7 +1,6 @@
 {
   "id": "hemi",
   "shortName": "Hemi",
-  "secondName": "Mainnet",
   "fullName": "Hemi Mainnet",
   "aliases": ["evm-43111", "hemi-mainnet"],
   "caip2Id": "eip155:43111",
