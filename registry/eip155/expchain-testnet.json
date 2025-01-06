@@ -5,7 +5,7 @@
   "aliases": ["evm-18880"],
   "caip2Id": "eip155:18880",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://blockscout-testnet.expchain.ai/"],
+  "explorerUrls": ["https://blockscout-testnet.expchain.ai"],
   "rpcUrls": ["https://rpc1-testnet.expchain.ai"],
   "apiUrls": [
     {
