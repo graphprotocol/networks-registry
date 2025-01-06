@@ -1,0 +1,32 @@
+{
+  "id": "expchain-testnet",
+  "shortName": "EXPchain",
+  "fullName": "EXPchain Testnet",
+  "aliases": ["evm-18880"],
+  "caip2Id": "eip155:18880",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://blockscout-testnet.expchain.ai/"],
+  "rpcUrls": ["https://rpc1-testnet.expchain.ai"],
+  "apiUrls": [
+    {
+      "url": "https://blockscout-testnet.expchain.ai/api",
+      "kind": "blockscout"
+    }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "expchain-testnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "ZKJ",
+  "docsUrl": "https://docs.polyhedra.network/expchain",
+  "genesis": {
+    "hash": "0xcd32fbe4844c34d8c24a50949e84a2b67bacca64a1229f248bb4c8a95c5feb75",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}
