@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.20",
+  "version": "0.6.21",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-06T15:35:11.772Z",
+  "updatedAt": "2025-01-10T04:55:09.809Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1928,7 +1928,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://blockscout-testnet.expchain.ai/"
+        "https://blockscout-testnet.expchain.ai"
       ],
       "rpcUrls": [
         "https://rpc1-testnet.expchain.ai"
@@ -3601,6 +3601,18 @@
       "graphNode": {
         "protocol": "ethereum"
       },
+      "explorerUrls": [
+        "https://explorer.hemi.xyz/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer.hemi.xyz/api",
+          "kind": "etherscan"
+        }
+      ],
+      "rpcUrls": [
+        "https://rpc.hemi.network/rpc"
+      ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"

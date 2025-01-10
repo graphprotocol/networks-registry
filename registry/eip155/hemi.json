@@ -5,10 +5,8 @@
   "aliases": ["evm-43111", "hemi-mainnet"],
   "caip2Id": "eip155:43111",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explorer.hemi.xyz/"],
-  "apiUrls": [
-    { "url": "https://explorer.hemi.xyz/api", "kind": "etherscan" }
-  ],
+  "explorerUrls": ["https://explorer.hemi.xyz"],
+  "apiUrls": [{ "url": "https://explorer.hemi.xyz/api", "kind": "etherscan" }],
   "rpcUrls": ["https://rpc.hemi.network/rpc"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
