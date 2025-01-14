@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.21",
+  "version": "0.6.22",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-10T04:55:09.809Z",
+  "updatedAt": "2025-01-14T01:19:02.563Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1917,6 +1917,61 @@
       }
     },
     {
+      "id": "soneium",
+      "shortName": "Soneium",
+      "fullName": "Soneium Mainnet",
+      "aliases": [
+        "evm-1868",
+        "soneium-mainnet"
+      ],
+      "caip2Id": "eip155:1868",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://soneium.blockscout.com"
+      ],
+      "rpcUrls": [
+        "https://rpc.soneium.org"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://soneium.blockscout.com/api",
+          "kind": "etherscan"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://soneium.org/en/docs",
+      "genesis": {
+        "hash": "0x295d22d269634c7d0055b33b887519362d0b31899e97109d1789a8a168de1b21",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "soneium"
+        }
+      }
+    },
+    {
       "id": "expchain-testnet",
       "shortName": "EXPchain",
       "fullName": "EXPchain Testnet",
@@ -2000,7 +2055,7 @@
       "relations": [
         {
           "kind": "testnetOf",
-          "network": "soneium-testnet"
+          "network": "soneium"
         },
         {
           "kind": "l2Of",
@@ -3602,7 +3657,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.hemi.xyz/"
+        "https://explorer.hemi.xyz"
       ],
       "apiUrls": [
         {
