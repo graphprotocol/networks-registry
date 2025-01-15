@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.22",
+  "version": "0.6.23",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-14T01:19:02.563Z",
+  "updatedAt": "2025-01-15T15:13:18.411Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1913,6 +1913,60 @@
       "icon": {
         "web3Icons": {
           "name": "eos"
+        }
+      }
+    },
+    {
+      "id": "mint",
+      "shortName": "Mint",
+      "fullName": "Mint Mainnet",
+      "aliases": [
+        "evm-185"
+      ],
+      "caip2Id": "eip155:185",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.mintchain.io"
+      ],
+      "rpcUrls": [
+        "https://rpc.mintchain.io"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer.mintchain.io/api",
+          "kind": "blockscout"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.mintchain.io/",
+      "genesis": {
+        "hash": "0x88441835ca2344ea384e6f73e3d6f921cdd304e5bd6dca15590217e3911c61a3",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "mint"
         }
       }
     },
