@@ -98,7 +98,9 @@ function main() {
 
   // Ensure docs directory exists
   const docsDir = path.dirname(outputPath);
-  fs.mkdirSync(docsDir, { recursive: true });
+  if (!fs.existsSync(docsDir)) {
+    fs.mkdirSync(docsDir, { recursive: true });
+  }
 
   // Write the file
   fs.writeFileSync(outputPath, content);
