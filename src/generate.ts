@@ -56,7 +56,9 @@ function main() {
   };
 
   const content = JSON.stringify(registry, null, 2) + "\n";
-  fs.mkdirSync(outputDir, { recursive: true });
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+  }
   fs.writeFileSync(path.join(outputDir, filenameLatest), content);
   fs.writeFileSync(path.join(outputDir, filenameLatestPatch), content);
   fs.writeFileSync(path.join(outputDir, filenameLatestMinor), content);
