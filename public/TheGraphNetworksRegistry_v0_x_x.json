@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.23",
+  "version": "0.6.26",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-15T15:13:18.411Z",
+  "updatedAt": "2025-01-21T04:31:44.630Z",
   "networks": [
     {
       "id": "mainnet",
@@ -272,6 +272,64 @@
       "icon": {
         "web3Icons": {
           "name": "klay-token"
+        }
+      }
+    },
+    {
+      "id": "monad-testnet",
+      "shortName": "Monad",
+      "fullName": "Monad Testnet",
+      "aliases": [
+        "evm-10143"
+      ],
+      "caip2Id": "eip155:10143",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.testnet.monad.xyz"
+      ],
+      "rpcUrls": [
+        "https://api.testnet.monad.xyz"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://block-explorer-api.testnet.monad.xyz/api",
+          "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/10143/etherscan/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "monad-testnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "MON",
+      "docsUrl": "https://docs.mon.xyz",
+      "genesis": {
+        "hash": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
+        "height": 1
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "monad"
         }
       }
     },
@@ -919,7 +977,7 @@
         ]
       },
       "networkType": "mainnet",
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "GLMR",
       "docsUrl": "https://docs.moonbeam.network",
       "indexerDocsUrls": [
@@ -1953,7 +2011,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.mintchain.io/",
+      "docsUrl": "https://docs.mintchain.io",
       "genesis": {
         "hash": "0x88441835ca2344ea384e6f73e3d6f921cdd304e5bd6dca15590217e3911c61a3",
         "height": 0
@@ -3114,7 +3172,7 @@
           "network": "mainnet"
         }
       ],
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.mode.network",
       "indexerDocsUrls": [
@@ -4753,7 +4811,7 @@
           "network": "mainnet"
         }
       ],
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.zora.co",
       "indexerDocsUrls": [
