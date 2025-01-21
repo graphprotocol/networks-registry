@@ -19,7 +19,7 @@
     "substreams": ["moonbeam.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "GLMR",
   "docsUrl": "https://docs.moonbeam.network",
   "indexerDocsUrls": [
