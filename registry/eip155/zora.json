@@ -23,7 +23,7 @@
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.zora.co",
   "indexerDocsUrls": [
