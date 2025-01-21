@@ -20,7 +20,7 @@
     "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
     "networkType": "testnet",
     "relations": [
-      { "kind": "testnetOf", "network": "abstract" }
+      { "kind": "testnetOf", "network": "monad-testnet" }
     ],
     "issuanceRewards": false,
     "nativeToken": "MON",
@@ -35,6 +35,6 @@
       "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
       "bytesEncoding": "hex"
     },
-    "icon": { "web3Icons": { "name": "abstract" } }
+    "icon": { "web3Icons": { "name": "monad" } }
   }
   
