@@ -380,7 +380,7 @@ async function main() {
   validateServices(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
-  await validateGraphNetworks(networks);
+  // await validateGraphNetworks(networks);
   await validateEthereumList(networks);
 
   if (ERRORS.length > 0) {

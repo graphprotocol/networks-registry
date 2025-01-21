@@ -44,8 +44,8 @@ jobs:
             exit 1
           fi
 
-      # - name: Validate logic
-      #   run: bun validate:networks
+      - name: Validate logic
+        run: bun validate:networks
 
       - name: Generate registry
         run: bun generate:public
