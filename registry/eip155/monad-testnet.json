@@ -5,8 +5,8 @@
   "aliases": ["evm-10143"],
   "caip2Id": "eip155:10143",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://testnet.monadexplorer.com/"],
-  "rpcUrls": ["https://testnet-rpc.monad.xyz/"],
+  "explorerUrls": ["https://testnet.monadexplorer.com"],
+  "rpcUrls": ["https://testnet-rpc.monad.xyz"],
   "apiUrls": [
     {
       "url": "https://explorer.monad-testnet.category.xyz/api",
@@ -18,7 +18,7 @@
   "relations": [{ "kind": "testnetOf", "network": "monad-testnet" }],
   "issuanceRewards": false,
   "nativeToken": "MON",
-  "docsUrl": "https://docs.monad.xyz/",
+  "docsUrl": "https://docs.monad.xyz",
   "genesis": {
     "hash": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
     "height": 0

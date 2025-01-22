@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.26",
+  "version": "0.6.27",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-21T04:31:44.630Z",
+  "updatedAt": "2025-01-22T17:40:26.461Z",
   "networks": [
     {
       "id": "mainnet",
@@ -287,19 +287,15 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.testnet.monad.xyz"
+        "https://testnet.monadexplorer.com/"
       ],
       "rpcUrls": [
-        "https://api.testnet.monad.xyz"
+        "https://testnet-rpc.monad.xyz/"
       ],
       "apiUrls": [
         {
-          "url": "https://block-explorer-api.testnet.monad.xyz/api",
-          "kind": "etherscan"
-        },
-        {
-          "url": "https://api.routescan.io/v2/network/testnet/evm/10143/etherscan/api",
-          "kind": "etherscan"
+          "url": "https://explorer.monad-testnet.category.xyz/api",
+          "kind": "blockscout"
         }
       ],
       "services": {
@@ -316,10 +312,10 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "MON",
-      "docsUrl": "https://docs.mon.xyz",
+      "docsUrl": "https://docs.monad.xyz/",
       "genesis": {
         "hash": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
-        "height": 1
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
