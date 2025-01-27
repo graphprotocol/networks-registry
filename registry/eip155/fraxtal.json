@@ -1,0 +1,30 @@
+{
+  "id": "fraxtal",
+  "shortName": "Fraxtal",
+  "fullName": "Fraxtal Mainnet",
+  "aliases": ["evm-252"],
+  "caip2Id": "eip155:252",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://fraxscan.com"],
+  "rpcUrls": ["https://rpc.frax.com"],
+  "apiUrls": [
+    { "url": "https://api.fraxscan.com/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "frxETH",
+  "docsUrl": "https://docs.mintchain.io",
+  "genesis": {
+    "hash": "0x521982bd54239dc71269eefb58601762cc15cfb2978e0becb46af7962ed6bfaa",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "fraxtal" } }
+}

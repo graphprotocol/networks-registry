@@ -1,0 +1,26 @@
+{
+  "id": "viction",
+  "shortName": "Viction",
+  "fullName": "Viction Mainnet",
+  "aliases": ["evm-88", "viction-mainnet"],
+  "caip2Id": "eip155:88",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://www.vicscan.xyz/"],
+  "rpcUrls": ["https://rpc.viction.xyz"],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "VIC",
+  "docsUrl": "https://docs.viction.xyz",
+  "genesis": {
+    "hash": "0x9326145f8a2c8c00bbe13afc7d7f3d9c868b5ef39d89f2f4e9390e9720298624",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "viction" } }
+}
