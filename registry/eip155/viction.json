@@ -5,7 +5,7 @@
   "aliases": ["evm-88", "viction-mainnet"],
   "caip2Id": "eip155:88",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://www.vicscan.xyz/"],
+  "explorerUrls": ["https://www.vicscan.xyz"],
   "rpcUrls": ["https://rpc.viction.xyz"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",

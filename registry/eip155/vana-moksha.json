@@ -5,20 +5,14 @@
   "aliases": ["vana-testnet", "evm-14800"],
   "caip2Id": "eip155:14800",
   "graphNode": { "protocol": "ethereum" },
-  "rpcUrls": [
-    "https://rpc.moksha.vana.org"
-  ],
+  "rpcUrls": ["https://rpc.moksha.vana.org"],
   "explorerUrls": ["https://moksha.vanascan.io"],
   "apiUrls": [
     { "url": "https://api.moksha.vanascan.io/api", "kind": "etherscan" }
   ],
   "networkType": "testnet",
-  "relations": [
-    { "kind": "testnetOf", "network": "vana" }
-  ],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "relations": [{ "kind": "testnetOf", "network": "vana" }],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "VANA",
   "docsUrl": "https://docs.vana.org",

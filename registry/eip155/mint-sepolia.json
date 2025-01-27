@@ -7,19 +7,18 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia-testnet-explorer.mintchain.io"],
   "apiUrls": [
-    { "url": "https://sepolia-testnet-explorer.mintchain.io/api", "kind": "etherscan" }
+    {
+      "url": "https://sepolia-testnet-explorer.mintchain.io/api",
+      "kind": "etherscan"
+    }
   ],
-  "rpcUrls": [
-    "https://sepolia-testnet-rpc.mintchain.io"
-  ],
+  "rpcUrls": ["https://sepolia-testnet-rpc.mintchain.io"],
   "networkType": "testnet",
   "relations": [
     { "kind": "testnetOf", "network": "mint" },
     { "kind": "l2Of", "network": "sepolia" }
   ],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.mintchain.io",

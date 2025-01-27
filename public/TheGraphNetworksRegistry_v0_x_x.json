@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.27",
+  "version": "0.6.28",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-22T17:40:26.461Z",
+  "updatedAt": "2025-01-27T21:43:32.153Z",
   "networks": [
     {
       "id": "mainnet",
@@ -287,10 +287,10 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://testnet.monadexplorer.com/"
+        "https://testnet.monadexplorer.com"
       ],
       "rpcUrls": [
-        "https://testnet-rpc.monad.xyz/"
+        "https://testnet-rpc.monad.xyz"
       ],
       "apiUrls": [
         {
@@ -312,7 +312,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "MON",
-      "docsUrl": "https://docs.monad.xyz/",
+      "docsUrl": "https://docs.monad.xyz",
       "genesis": {
         "hash": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
         "height": 0
@@ -1595,6 +1595,100 @@
       }
     },
     {
+      "id": "vana",
+      "shortName": "Vana",
+      "fullName": "Vana Mainnet",
+      "aliases": [
+        "evm-1480",
+        "vana-mainnet"
+      ],
+      "caip2Id": "eip155:1480",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://vanascan.io"
+      ],
+      "rpcUrls": [
+        "https://rpc.vana.org"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.vanascan.io/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "VANA",
+      "docsUrl": "https://docs.vana.org",
+      "genesis": {
+        "hash": "0xcf48ae63008a2a6ccf05c45dc3f8a4d99595999eafd09fa925d3906e4c4ff72b",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      }
+    },
+    {
+      "id": "vana-moksha",
+      "shortName": "Vana",
+      "fullName": "Vana Moksha Testnet",
+      "aliases": [
+        "vana-testnet",
+        "evm-14800"
+      ],
+      "caip2Id": "eip155:14800",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "rpcUrls": [
+        "https://rpc.moksha.vana.org"
+      ],
+      "explorerUrls": [
+        "https://moksha.vanascan.io"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.moksha.vanascan.io/api",
+          "kind": "etherscan"
+        }
+      ],
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "vana"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "VANA",
+      "docsUrl": "https://docs.vana.org",
+      "genesis": {
+        "hash": "0xaaa9e377da2dad6ec5896b5fdce820efc24643e40687a36c51a17ffac892726b",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      }
+    },
+    {
       "id": "jungle4-evm",
       "shortName": "EOS EVM",
       "secondName": "Jungle4",
@@ -1838,6 +1932,65 @@
       "icon": {
         "web3Icons": {
           "name": "blast"
+        }
+      }
+    },
+    {
+      "id": "mint-sepolia",
+      "shortName": "mint",
+      "fullName": "Mint Sepolia Testnet",
+      "aliases": [
+        "mint-testnet",
+        "evm-1687"
+      ],
+      "caip2Id": "eip155:1687",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://sepolia-testnet-explorer.mintchain.io"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://sepolia-testnet-explorer.mintchain.io/api",
+          "kind": "etherscan"
+        }
+      ],
+      "rpcUrls": [
+        "https://sepolia-testnet-rpc.mintchain.io"
+      ],
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "mint"
+        },
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.mintchain.io",
+      "genesis": {
+        "hash": "0xdf018ef6eb34f7f003e00e4980aee2c2af56e7a5a865924d18cc775c02190deb",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "mint"
         }
       }
     },
@@ -2705,6 +2858,60 @@
       "icon": {
         "web3Icons": {
           "name": "fantom"
+        }
+      }
+    },
+    {
+      "id": "fraxtal",
+      "shortName": "Fraxtal",
+      "fullName": "Fraxtal Mainnet",
+      "aliases": [
+        "evm-252"
+      ],
+      "caip2Id": "eip155:252",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://fraxscan.com"
+      ],
+      "rpcUrls": [
+        "https://rpc.frax.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://fraxtal.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "frxETH",
+      "docsUrl": "https://docs.mintchain.io",
+      "genesis": {
+        "hash": "0x521982bd54239dc71269eefb58601762cc15cfb2978e0becb46af7962ed6bfaa",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "fraxtal"
         }
       }
     },
@@ -4899,6 +5106,56 @@
       }
     },
     {
+      "id": "berachain-bartio",
+      "shortName": "berachain",
+      "fullName": "Berachain bArtio Testnet",
+      "aliases": [
+        "berachain-testnet",
+        "evm-80084"
+      ],
+      "caip2Id": "eip155:80084",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "rpcUrls": [
+        "https://bartio.rpc.berachain.com"
+      ],
+      "explorerUrls": [
+        "https://bartio.beratrail.io/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan/api",
+          "kind": "etherscan"
+        }
+      ],
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "berachain-bartio"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "BERA",
+      "docsUrl": "https://docs.berachain.com/",
+      "genesis": {
+        "hash": "0xa42850da28e09e0e7f75a76fe2b96c8b869a206bfadc9a4450ca345153b0c7d9",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      }
+    },
+    {
       "id": "joc",
       "shortName": "JOC",
       "fullName": "Japan Open Chain Mainnet",
@@ -5211,6 +5468,49 @@
       "icon": {
         "web3Icons": {
           "name": "base"
+        }
+      }
+    },
+    {
+      "id": "viction",
+      "shortName": "Viction",
+      "fullName": "Viction Mainnet",
+      "aliases": [
+        "evm-88",
+        "viction-mainnet"
+      ],
+      "caip2Id": "eip155:88",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://www.vicscan.xyz/"
+      ],
+      "rpcUrls": [
+        "https://rpc.viction.xyz"
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "VIC",
+      "docsUrl": "https://docs.viction.xyz",
+      "genesis": {
+        "hash": "0x9326145f8a2c8c00bbe13afc7d7f3d9c868b5ef39d89f2f4e9390e9720298624",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "tomochain"
         }
       }
     },

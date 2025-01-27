@@ -7,9 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://vanascan.io"],
   "rpcUrls": ["https://rpc.vana.org"],
-  "apiUrls": [
-    { "url": "https://api.vanascan.io/api", "kind": "etherscan" }
-  ],
+  "apiUrls": [{ "url": "https://api.vanascan.io/api", "kind": "etherscan" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
