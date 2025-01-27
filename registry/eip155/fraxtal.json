@@ -8,7 +8,7 @@
   "explorerUrls": ["https://fraxscan.com"],
   "rpcUrls": ["https://rpc.frax.com"],
   "apiUrls": [
-    { "url": "https://api.fraxscan.com/api", "kind": "etherscan" }
+    { "url": "https://fraxtal.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
