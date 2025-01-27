@@ -1,0 +1,28 @@
+{
+  "id": "vana",
+  "shortName": "Vana",
+  "fullName": "Vana Mainnet",
+  "aliases": ["evm-1480", "vana-mainnet"],
+  "caip2Id": "eip155:1480",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://vanascan.io"],
+  "rpcUrls": ["https://rpc.vana.org"],
+  "apiUrls": [
+    { "url": "https://api.vanascan.io/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "VANA",
+  "docsUrl": "https://docs.vana.org",
+  "genesis": {
+    "hash": "0xcf48ae63008a2a6ccf05c45dc3f8a4d99595999eafd09fa925d3906e4c4ff72b",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}

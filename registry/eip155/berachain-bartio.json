@@ -1,0 +1,35 @@
+{
+  "id": "berachain-bartio",
+  "shortName": "berachain",
+  "fullName": "Berachain bArtio Testnet",
+  "aliases": ["berachain-testnet", "evm-80084"],
+  "caip2Id": "eip155:80084",
+  "graphNode": { "protocol": "ethereum" },
+  "rpcUrls": [
+    "https://bartio.rpc.berachain.com"
+  ],
+  "explorerUrls": ["https://bartio.beratrail.io/"],
+  "apiUrls": [
+    { "url": "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan/api", "kind": "etherscan" }
+  ],
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "berachain-bartio" }
+  ],
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "BERA",
+  "docsUrl": "https://docs.berachain.com/",
+  "genesis": {
+    "hash": "0xa42850da28e09e0e7f75a76fe2b96c8b869a206bfadc9a4450ca345153b0c7d9",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}
