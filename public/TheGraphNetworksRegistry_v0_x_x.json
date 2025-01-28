@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.28",
+  "version": "0.6.29",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-27T21:43:32.153Z",
+  "updatedAt": "2025-01-28T20:33:24.834Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2927,6 +2927,18 @@
       "graphNode": {
         "protocol": "ethereum"
       },
+      "rpcUrls": [
+        "https://api.mainnet.abs.xyz"
+      ],
+      "explorerUrls": [
+        "https://abscan.org/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.abscan.org/api",
+          "kind": "etherscan"
+        }
+      ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -5121,7 +5133,7 @@
         "https://bartio.rpc.berachain.com"
       ],
       "explorerUrls": [
-        "https://bartio.beratrail.io/"
+        "https://bartio.beratrail.io"
       ],
       "apiUrls": [
         {
@@ -5143,7 +5155,7 @@
       },
       "issuanceRewards": false,
       "nativeToken": "BERA",
-      "docsUrl": "https://docs.berachain.com/",
+      "docsUrl": "https://docs.berachain.com",
       "genesis": {
         "hash": "0xa42850da28e09e0e7f75a76fe2b96c8b869a206bfadc9a4450ca345153b0c7d9",
         "height": 0
@@ -5484,7 +5496,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://www.vicscan.xyz/"
+        "https://www.vicscan.xyz"
       ],
       "rpcUrls": [
         "https://rpc.viction.xyz"

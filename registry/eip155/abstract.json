@@ -6,13 +6,8 @@
   "caip2Id": "eip155:2741",
   "graphNode": { "protocol": "ethereum" },
   "rpcUrls": ["https://api.mainnet.abs.xyz"],
-  "explorerUrls": ["https://abscan.org/"],
-  "apiUrls": [
-    {
-      "url": "https://api.abscan.org/api",
-      "kind": "etherscan"
-    }
-  ],
+  "explorerUrls": ["https://abscan.org"],
+  "apiUrls": [{ "url": "https://api.abscan.org/api", "kind": "etherscan" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
