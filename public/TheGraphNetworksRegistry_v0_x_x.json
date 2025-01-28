@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.29",
+  "version": "0.6.30",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-28T20:33:24.834Z",
+  "updatedAt": "2025-01-28T21:59:58.602Z",
   "networks": [
     {
       "id": "mainnet",
@@ -158,7 +158,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "optimistic-ethereum"
+          "name": "optimism"
         }
       }
     },
@@ -271,7 +271,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "klay-token"
+          "name": "kaia"
         }
       }
     },
@@ -707,7 +707,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "optimistic-ethereum"
+          "name": "optimism"
         }
       }
     },
@@ -1541,7 +1541,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "polygon-pos"
+          "name": "polygon"
         }
       }
     },
@@ -2931,7 +2931,7 @@
         "https://api.mainnet.abs.xyz"
       ],
       "explorerUrls": [
-        "https://abscan.org/"
+        "https://abscan.org"
       ],
       "apiUrls": [
         {
@@ -5044,6 +5044,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "zora"
+        }
       }
     },
     {
@@ -5113,7 +5118,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "polygon-pos"
+          "name": "polygon"
         }
       }
     },
@@ -5329,7 +5334,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "klay-token"
+          "name": "kaia"
         }
       }
     },
@@ -5522,7 +5527,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "tomochain"
+          "name": "viction"
         }
       }
     },
