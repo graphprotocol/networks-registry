@@ -5,15 +5,11 @@
     "aliases": ["bitlayer-test", "bitlayer-sepolia", "evm-200810"],
     "caip2Id": "eip155:200810",
     "graphNode": { "protocol": "ethereum" },
-    "relations": [{ "kind": "l2Of", "network": "testnet" }],
     "explorerUrls": ["https://testnet-scan.bitlayer.org"],
     "rpcUrls": [
             "https://rpc.ankr.com/bitlayer_testnet",
             "https://testnet-rpc.bitlayer.org",
             "https://testnet-rpc.bitlayer-rpc.com"
-    ],
-    "apiUrls": [
-      { "url": "https://api-testnet.bitlayer.org/scan/api", "kind": "etherscan" }
     ],
     "services": {
       "subgraphs": ["https://api.studio.thegraph.com/deploy"]
@@ -21,17 +17,6 @@
     "networkType": "testnet",
     "issuanceRewards": false,
     "nativeToken": "BTC",
-    "docsUrl": "https://docs.bitlayer.org",
-    "genesis": {
-      "hash": "0xabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdef",
-      "height": 0
-    },
-    "firehose": {
-      "blockType": "sf.ethereum.type.v2.Block",
-      "evmExtendedModel": true,
-      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-      "bytesEncoding": "hex"
-    },
-    "icon": { "web3Icons": { "name": "bitlayer-testnet" } }
+    "docsUrl": "https://docs.bitlayer.org"
   }
   
