@@ -18,14 +18,12 @@
     "all": "bun generate:types && bun validate && bun generate:registry && bun format && bun format:check"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.14",
+    "@types/bun": "1.2.1",
     "ajv": "^8.17.1",
     "ajv-cli": "^5.0.0",
     "ajv-formats": "^3.0.1",
-    "json-schema-to-typescript": "15.0.3",
-    "prettier": "3.4.1"
-  },
-  "dependencies": {
-    "wrangler": "3.90.0"
+    "json-schema-to-typescript": "15.0.4",
+    "prettier": "3.4.2",
+    "wrangler": "^3.107.2"
   }
 }
