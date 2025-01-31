@@ -25,8 +25,8 @@
   "nativeToken": "ETH",
   "docsUrl": "https://docs.zksync.io",
   "genesis": {
-    "hash": "0x51f81bcdfc324a0dff2b5bec9d92e21cbebc4d5e29d3a3d30de3e03fbeab8d7f",
-    "height": 1
+    "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+    "height": 0
   },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",

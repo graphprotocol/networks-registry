@@ -14,8 +14,8 @@
   "nativeToken": "CLV",
   "docsUrl": "https://docs.clv.org",
   "genesis": {
-    "hash": "0x7c11fb21c186dd7846d92e09af5c02fa4c8a08b83c99d7361b8b9fd5dc1650fb",
-    "height": 1
+    "hash": "0x316ead04231197413e137d371f8763cf6db84400d43749853efba5006115783b",
+    "height": 0
   },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",

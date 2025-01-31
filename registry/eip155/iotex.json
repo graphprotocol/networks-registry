@@ -14,8 +14,8 @@
   "nativeToken": "IOTX",
   "docsUrl": "https://docs.iotex.io",
   "genesis": {
-    "hash": "0x230ba8095d5a505e355652f9dcc2b13605419a8fa3d3fd5ddc6d24fd6a902641",
-    "height": 1
+    "hash": "0xb337983730981c2d50f114eed5da9dd20b83c8c5e130beefdb3001dc858cfe8b",
+    "height": 0
   },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",

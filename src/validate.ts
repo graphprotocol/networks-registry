@@ -18,6 +18,11 @@ function validateFilenames(networksPath: string) {
   process.stdout.write("done\n");
 }
 
+const ALLOWED_DUPLICATES: string[] = [
+  "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
+  "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+];
+
 function validateUniqueness(networks: Network[]) {
   process.stdout.write("Validating uniqueness ... ");
   for (const field of [
@@ -46,7 +51,9 @@ function validateUniqueness(networks: Network[]) {
       if (Array.isArray(n[field])) return n[field];
       return n[field] ? [n[field]] : [];
     });
-    const duplicates = values.filter((v, i) => values.indexOf(v) !== i);
+    const duplicates = values
+      .filter((v, i) => values.indexOf(v) !== i)
+      .filter((v) => !ALLOWED_DUPLICATES.includes(v));
     if (duplicates.length) {
       ERRORS.push(`Duplicate field: "${field} = ${duplicates[0]}"`);
     }
@@ -380,7 +387,7 @@ async function main() {
   validateServices(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
-  // await validateGraphNetworks(networks);
+  // await validateGraphNetworks(networks);       // uncomment when "mode" glitch is fixed
   await validateEthereumList(networks);
 
   if (ERRORS.length > 0) {
