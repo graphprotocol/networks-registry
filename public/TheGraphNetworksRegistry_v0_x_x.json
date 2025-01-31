@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.30",
+  "version": "0.6.31",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-28T21:59:58.602Z",
+  "updatedAt": "2025-01-31T18:19:42.179Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1636,6 +1636,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "vana"
+        }
       }
     },
     {
@@ -3498,7 +3503,11 @@
           "network": "sepolia"
         }
       ],
-      "services": {},
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
       "issuanceRewards": false,
       "nativeToken": "GRASS",
       "docsUrl": "https://www.lens.xyz/docs",
@@ -4920,6 +4929,55 @@
       "icon": {
         "web3Icons": {
           "name": "xai"
+        }
+      }
+    },
+    {
+      "id": "zetachain",
+      "shortName": "ZetaChain",
+      "fullName": "ZetaChain Mainnet",
+      "aliases": [
+        "evm-7000",
+        "zetachain-mainnet"
+      ],
+      "caip2Id": "eip155:7000",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://zetachain.blockscout.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://zetachain.blockscout.com/api",
+          "kind": "etherscan"
+        }
+      ],
+      "rpcUrls": [
+        "https://zetachain-evm.blockpi.network/v1/rpc/public"
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "ZETA",
+      "docsUrl": "https://www.zetachain.com/docs/",
+      "genesis": {
+        "hash": "0x60da6194a8e29e0e36c74544037918dd7a3a8a406f8e9f24d37c79623ee69690",
+        "height": 1
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "zeta-chain"
         }
       }
     },
