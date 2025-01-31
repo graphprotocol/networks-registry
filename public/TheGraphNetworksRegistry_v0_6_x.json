@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.31",
+  "version": "0.6.32",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-31T18:19:42.179Z",
+  "updatedAt": "2025-01-31T18:22:46.884Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1942,7 +1942,8 @@
     },
     {
       "id": "mint-sepolia",
-      "shortName": "mint",
+      "shortName": "Mint",
+      "secondName": "Sepolia",
       "fullName": "Mint Sepolia Testnet",
       "aliases": [
         "mint-testnet",
@@ -4964,7 +4965,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "ZETA",
-      "docsUrl": "https://www.zetachain.com/docs/",
+      "docsUrl": "https://www.zetachain.com/docs",
       "genesis": {
         "hash": "0x60da6194a8e29e0e36c74544037918dd7a3a8a406f8e9f24d37c79623ee69690",
         "height": 1
@@ -5182,7 +5183,8 @@
     },
     {
       "id": "berachain-bartio",
-      "shortName": "berachain",
+      "shortName": "Berachain",
+      "secondName": "bArtio",
       "fullName": "Berachain bArtio Testnet",
       "aliases": [
         "berachain-testnet",
