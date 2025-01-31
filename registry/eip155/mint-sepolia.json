@@ -1,6 +1,7 @@
 {
   "id": "mint-sepolia",
-  "shortName": "mint",
+  "shortName": "Mint",
+  "secondName": "Sepolia",
   "fullName": "Mint Sepolia Testnet",
   "aliases": ["mint-testnet", "evm-1687"],
   "caip2Id": "eip155:1687",

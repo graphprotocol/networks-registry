@@ -1,6 +1,7 @@
 {
   "id": "berachain-bartio",
-  "shortName": "berachain",
+  "shortName": "Berachain",
+  "secondName": "bArtio",
   "fullName": "Berachain bArtio Testnet",
   "aliases": ["berachain-testnet", "evm-80084"],
   "caip2Id": "eip155:80084",
