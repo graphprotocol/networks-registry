@@ -6,7 +6,7 @@
     "format": "prettier ./schemas/registry.schema.json ./registry/**/*.json ./src/**/*.ts ./**/*.md --write",
     "format:check": "prettier ./schemas/registry.schema.json ./registry/**/*.json ./src/**/*.ts ./**/*.md --check",
     "validate:schema": "bun run ./src/validate_schema.ts",
-    "validate:networks": "bun run ./src/validate.ts",
+    "validate:networks": "bun run ./src/validate_logic.ts",
     "validate:registry": "ajv validate -s schemas/registry.schema.json -d 'dist/TheGraphNetworksRegistry.json' --strict=true -c ajv-formats",
     "validate:urls": "bun run ./src/validate_urls.ts",
     "validate:firehose": "bun run ./src/validate_firehose.ts",
@@ -15,9 +15,11 @@
     "generate:registry": "bun run ./src/generate.ts",
     "generate:public": "bun run ./src/generate.ts registry public",
     "generate:table": "bun run ./src/generate_table.ts",
+    "maintenance": "bun run ./src/maintenance.ts",
     "all": "bun generate:types && bun validate && bun generate:registry && bun format && bun format:check"
   },
   "devDependencies": {
+    "@octokit/rest": "^21.1.0",
     "@types/bun": "1.2.1",
     "ajv": "^8.17.1",
     "ajv-cli": "^5.0.0",

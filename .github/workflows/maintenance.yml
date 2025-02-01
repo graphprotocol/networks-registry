@@ -1,0 +1,38 @@
+name: Daily Maintenance Check
+
+on:
+  schedule:
+    - cron: '14 0 * * *'  # Runs at 14:00 UTC / 9:00 AM EST every day
+  workflow_dispatch:
+
+jobs:
+  maintenance-check:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install grpcurl
+        run: |
+          curl -sSL "https://github.com/fullstorydev/grpcurl/releases/download/v1.9.2/grpcurl_1.9.2_linux_x86_64.tar.gz" | tar -xz -C /usr/local/bin
+          chmod +x /usr/local/bin/grpcurl
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --no-save
+
+      - name: Run maintenance check
+        run: bun maintenance
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SF_API_KEY: ${{ secrets.SF_API_KEY }}
+          PINAX_API_KEY: ${{ secrets.PINAX_API_KEY }}
+          THEGRAPH_STUDIO_KEY: ${{ secrets.THEGRAPH_STUDIO_KEY }}
