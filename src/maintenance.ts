@@ -5,35 +5,38 @@ import { validateSchema } from "./validate_schema";
 import { validateUrls } from "./validate_urls";
 import { Octokit } from "@octokit/rest";
 
+const issueTitle = "🔍 Daily Maintenance Report";
+const assignees = ["YaroShkvorets"];
+const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
+if (!owner || !repo) {
+  console.error(
+    "GITHUB_REPOSITORY environment variable is required. This script can only proceed from Github Actions workflow",
+  );
+  process.exit(1);
+}
+const octokit = new Octokit({
+  auth: process.env.GITHUB_TOKEN,
+});
+const startTime = Date.now();
+
 async function createOrUpdateIssue(errors: string[], warnings: string[]) {
-  const issueTitle = "🔍 Maintenance Report";
-  const assignees = ["YaroShkvorets"];
   const body = `## Maintenance Report (${new Date().toISOString().split("T")[0]})
 
-${errors.length > 0 ? "### ❌ Errors\n\n" + errors.map((e) => `- ${e}`).join("\n") : "### ✅ No errors found"}
+${errors.length > 0 ? `### ❌ ${errors.length} Error${errors.length > 1 ? "s" : ""}\n\n` + errors.map((e) => `- [ ] ${e}`).join("\n") : "### ✅ No errors found"}
 
-${warnings.length > 0 ? "### ⚠️ Warnings\n\n" + warnings.map((w) => `- ${w}`).join("\n") : "### ✅ No warnings found"}
+${warnings.length > 0 ? `### ⚠️ ${warnings.length} Warning${warnings.length > 1 ? "s" : ""}\n\n` + warnings.map((w) => `- [ ] ${w}`).join("\n") : "### ✅ No warnings found"}
 
-Generated at: ${new Date().toISOString()}`;
+<!-- maintenance-stats
+errors: ${errors.length}
+warnings: ${warnings.length}
+date: ${new Date().toISOString()}
+-->
+`;
+  const footer = `Generated at: ${new Date().toISOString()}
+[View workflow run](https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID})
+Elapsed: ${((Date.now() - startTime) / 1000).toFixed(0)}s`;
 
   console.log(body);
-
-  const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
-  if (!owner || !repo) {
-    console.error(
-      "GITHUB_REPOSITORY environment variable is required. This script can only proceed from Github Actions workflow",
-    );
-    process.exit(1);
-  }
-  const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-  if (!GITHUB_TOKEN) {
-    console.error("GITHUB_TOKEN environment variable is required");
-    process.exit(1);
-  }
-
-  const octokit = new Octokit({
-    auth: GITHUB_TOKEN,
-  });
 
   try {
     const { data: issues } = await octokit.issues.listForRepo({
@@ -44,22 +47,46 @@ Generated at: ${new Date().toISOString()}`;
     });
 
     const existingIssue = issues.find((issue) => issue.title === issueTitle);
-
     if (existingIssue) {
+      const statsMatch = existingIssue.body?.match(
+        /<!-- maintenance-stats\nerrors: (\d+)\nwarnings: (\d+)/,
+      );
+      const errorDiff = statsMatch
+        ? errors.length - parseInt(statsMatch[1] ?? "0")
+        : errors.length;
+      const warningDiff = statsMatch
+        ? warnings.length - parseInt(statsMatch[2] ?? "0")
+        : warnings.length;
+
+      const comparisonText = `### 📊 Changes Since Last Run
+${errorDiff !== 0 ? `- Errors: ${errorDiff > 0 ? `+${errorDiff}` : errorDiff} (${errors.length} total)` : "- Errors: No change"}
+${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warningDiff} (${warnings.length} total)` : "- Warnings: No change"}`;
+
       await octokit.issues.update({
         owner,
         repo,
         assignees,
         issue_number: existingIssue.number,
-        body,
+        body: `${body}\n\n${comparisonText}\n\n${footer}`,
       });
+
+      // Add a comment if there are new errors
+      if (errorDiff > 0) {
+        await octokit.issues.createComment({
+          owner,
+          repo,
+          issue_number: existingIssue.number,
+          body: `🚨 ${errorDiff} new potential error${errorDiff > 1 ? "s" : ""} detected`,
+        });
+      }
+
       console.log(`Updated existing issue #${existingIssue.number}`);
     } else {
       const { data: newIssue } = await octokit.issues.create({
         owner,
         repo,
         title: issueTitle,
-        body,
+        body: `${body}\n\n${footer}`,
         assignees,
         labels: ["maintenance"],
       });
@@ -80,7 +107,6 @@ async function main() {
   const { errors: e3, warnings: w3 } = await validateLogic("registry");
   const { errors: e4, warnings: w4 } = await validateFirehose("registry");
 
-  console.log("validated!");
   const errors = [...e1, ...e2, ...e3, ...e4];
   const warnings = [...w1, ...w2, ...w3, ...w4];
 

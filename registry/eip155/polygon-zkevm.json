@@ -27,7 +27,7 @@
   },
   "issuanceRewards": false,
   "nativeToken": "ETH",
-  "docsUrl": "https://polygon.technology/polygon-zkevm",
+  "docsUrl": "https://docs.polygon.technology/zkEVM",
   "genesis": {
     "hash": "0x81005434635456a16f74ff7023fbe0bf423abbc8a8deb093ffff455c0ad3b741",
     "height": 0

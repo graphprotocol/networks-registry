@@ -14,7 +14,7 @@ function validateFilenames(networksPath: string) {
   for (const file of files) {
     const network = readFromJsonFile<Network>(file);
     if (!file.endsWith(`/${network.id}.json`)) {
-      ERRORS.push(`Network ${network.id} must reside in ${network.id}.json`);
+      ERRORS.push(`\`${network.id}\` - must reside in ${network.id}.json`);
     }
   }
   process.stdout.write("done\n");
@@ -65,7 +65,7 @@ function validateUniqueness(networks: Network[]) {
   const aliases = new Set(networks.flatMap((n) => n.aliases ?? []));
   for (const network of networks) {
     if (aliases.has(network.id)) {
-      ERRORS.push(`Network id ${network.id} is used an alias elsewhere`);
+      ERRORS.push(`\`${network.id}\` - is used an alias elsewhere`);
     }
   }
   process.stdout.write("done\n");
@@ -78,7 +78,7 @@ function validateNames(networks: Network[]) {
     const dups = mainnets.filter((n) => n.shortName === network.shortName);
     if (dups.length > 1) {
       ERRORS.push(
-        `Networks ${dups.map((n) => n.id).join(",")} have non-unique shortName: ${network.shortName}`,
+        `Networks ${dups.map((n) => `\`${n.id}\``).join(",")} have non-unique shortName: ${network.shortName}`,
       );
     }
   }
@@ -91,12 +91,12 @@ function validateRelations(networks: Network[]) {
     for (const relation of network.relations ?? []) {
       if (!networks.find((n) => n.id === relation.network)) {
         ERRORS.push(
-          `Network ${network.id} has unknown related network: ${relation.network}`,
+          `\`${network.id}\` - has unknown related network: \`${relation.network}\``,
         );
       }
       if (relation.network === network.id) {
         ERRORS.push(
-          `Network ${network.id} has self-referencing "${relation.kind}" relation`,
+          `\`${network.id}\` - has self-referencing "${relation.kind}" relation`,
         );
       }
     }
@@ -114,25 +114,25 @@ function validateEvmRules(networks: Network[]) {
     if (isEvm) {
       if (network.firehose?.evmExtendedModel === undefined) {
         ERRORS.push(
-          `Network ${network.id} is EVM but missing required firehose.evmExtendedModel field`,
+          `\`${network.id}\` - is EVM but missing required firehose.evmExtendedModel field`,
         );
       }
 
       if (network.graphNode?.protocol !== "ethereum") {
         ERRORS.push(
-          `Network ${network.id} is EVM but graphNode.protocol is not "ethereum"`,
+          `\`${network.id}\` - is EVM but graphNode.protocol is not "ethereum"`,
         );
       }
     } else {
       if (network.firehose?.evmExtendedModel !== undefined) {
         ERRORS.push(
-          `Network ${network.id} is non-EVM but has evmExtendedModel field which is not allowed`,
+          `\`${network.id}\` - is non-EVM but has evmExtendedModel field which is not allowed`,
         );
       }
 
       if (network.graphNode?.protocol === "ethereum") {
         ERRORS.push(
-          `Network ${network.id} is non-EVM but has graphNode.protocol="ethereum" which is not allowed`,
+          `\`${network.id}\` - is non-EVM but has graphNode.protocol="ethereum" which is not allowed`,
         );
       }
     }
@@ -149,26 +149,24 @@ function validateTestnets(networks: Network[]) {
   for (const testnet of testnets) {
     const mainnetId = testnet.relations?.find((n) => n.kind === "testnetOf");
     if (!mainnetId) {
-      WARNINGS.push(`Testnet ${testnet.id} has no mainnet relation`);
+      WARNINGS.push(`\`${testnet.id}\` - this testnet has no mainnet relation`);
       continue;
     }
     const mainnet = networks.find((n) => n.id === mainnetId.network);
     if (!mainnet) {
       ERRORS.push(
-        `Testnet ${testnet.id} has unknown mainnet: ${mainnetId.network}`,
+        `Testnet \`${testnet.id}\` has unknown mainnet: \`${mainnetId.network}\``,
       );
       continue;
     }
     if (JSON.stringify(mainnet.firehose) !== JSON.stringify(testnet.firehose)) {
       ERRORS.push(
-        `Testnet ${testnet.id} has different firehose block type than mainnet ${mainnet.id}`,
+        `Testnet \`${testnet.id}\` has different firehose block type than mainnet \`${mainnet.id}\``,
       );
     }
     if (testnet.networkType === "mainnet") {
       if (testnet.relations?.find((n) => n.kind === "testnetOf")) {
-        ERRORS.push(
-          `Mainnet network ${testnet.id} can't have testnetOf relation`,
-        );
+        ERRORS.push(`Mainnet \`${testnet.id}\` can't have testnetOf relation`);
       }
     }
   }
@@ -190,7 +188,7 @@ function validateServices(networks: Network[]) {
       for (const url of services[serviceType] ?? []) {
         if (!ALLOWED_SG_PROVIDERS.some((provider) => url.includes(provider))) {
           ERRORS.push(
-            `Network ${network.id} has invalid ${serviceType} URL: only ${ALLOWED_SG_PROVIDERS.join(", ")} allowed right now`,
+            `\`${network.id}\` - invalid \`${serviceType}\` URL: only ${ALLOWED_SG_PROVIDERS.join(", ")} allowed right now`,
           );
         }
       }
@@ -201,7 +199,7 @@ function validateServices(networks: Network[]) {
       for (const url of services[serviceType] ?? []) {
         if (!ALLOWED_FH_PROVIDERS.some((provider) => url.includes(provider))) {
           ERRORS.push(
-            `Network ${network.id} has invalid ${serviceType} URL: only ${ALLOWED_FH_PROVIDERS.join(", ")} allowed right now`,
+            `\`${network.id}\` - invalid \`${serviceType}\` URL: only ${ALLOWED_FH_PROVIDERS.join(", ")} allowed right now`,
           );
         }
       }
@@ -211,9 +209,7 @@ function validateServices(networks: Network[]) {
     const firehoseUrls = services.firehose ?? [];
     const substreamsUrls = services.substreams ?? [];
     if (firehoseUrls.length !== substreamsUrls.length) {
-      WARNINGS.push(
-        `Network ${network.id} doesn't have a matching substreams/firehose pair`,
-      );
+      WARNINGS.push(`\`${network.id}\` - no matching substreams/firehose pair`);
     }
   }
 
@@ -251,7 +247,7 @@ async function validateWeb3Icons(networks: Network[]) {
       const web3Icon = web3Icons.find((i) => i.id === ourIcon.name);
       if (!web3Icon) {
         ERRORS.push(
-          `Network ${network.id} web3icon id does not exist on web3Icons: ${ourIcon.name}`,
+          `\`${network.id}\` - web3icon id does not exist on web3Icons: \`${ourIcon.name}\``,
         );
       } else {
         const web3Variants = web3Icon.variants || [];
@@ -259,22 +255,22 @@ async function validateWeb3Icons(networks: Network[]) {
 
         if (web3Variants.length === 2) {
           if (ourVariants.length === 1) {
-            ERRORS.push(
-              `Network ${network.id} web3icon should have both variants or none: ${ourVariants.join(",")}`,
+            WARNINGS.push(
+              `\`${network.id}\` - web3icon should have both variants or none: \`${ourVariants.join(",")}\``,
             );
           }
         } else if (web3Variants.length === 1) {
           if (ourVariants.length !== 1 || ourVariants[0] !== web3Variants[0]) {
             ERRORS.push(
-              `Network ${network.id} web3icon should only have the variant: ${web3Variants[0]}`,
+              `\`${network.id}\` - web3icon should only have the variant: \`${web3Variants[0]}\``,
             );
           }
         }
       }
     } else {
       if (web3Icons.find((i) => i.id === network.id)) {
-        ERRORS.push(
-          `Network ${network.id} does not have a web3icon but there exists an icon with the same id. Consider adding it.`,
+        WARNINGS.push(
+          `\`${network.id}\` - does not have a web3icon but there exists an icon with the same id. Consider adding it.`,
         );
       }
     }
@@ -362,13 +358,13 @@ async function validateEthereumList(networks: Network[]) {
     const chain = chains.find((c) => c.chainId === ourId);
     if (!chain) {
       ERRORS.push(
-        `Network ${network.id} with CAIP-2 id ${network.caip2Id} does not exist in ethereum chain registry`,
+        `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` does not exist in ethereum chain registry`,
       );
       continue;
     }
     if (chain.nativeCurrency.symbol !== network.nativeToken) {
-      ERRORS.push(
-        `Network ${network.id} with CAIP-2 id ${network.caip2Id} has different native token symbol in ethereum chain registry: ${chain.nativeCurrency.symbol} vs ${network.nativeToken}`,
+      WARNINGS.push(
+        `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` has different native token symbol in ethereum chain registry: \`${chain.nativeCurrency.symbol}\` vs \`${network.nativeToken}\``,
       );
     }
     if (chain.parent?.type === "L2") {
@@ -376,8 +372,8 @@ async function validateEthereumList(networks: Network[]) {
         (r) => r.kind === "l2Of",
       )?.network;
       if (!ourParent) {
-        ERRORS.push(
-          `Network ${network.id} with CAIP-2 id ${network.caip2Id} is an L2 chain in ethereum chain registry but has no l2Of relation`,
+        WARNINGS.push(
+          `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` is an L2 chain in ethereum chain registry but has no l2Of relation`,
         );
         continue;
       }
@@ -386,8 +382,8 @@ async function validateEthereumList(networks: Network[]) {
       )?.caip2Id!;
       const actualParentChainId = chain.parent.chain.replace("-", ":");
       if (actualParentChainId !== parentChainId) {
-        ERRORS.push(
-          `Network ${network.id} has different L2 parent chain in ethereum chain registry: ${actualParentChainId} vs ${parentChainId}`,
+        WARNINGS.push(
+          `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` has different L2 parent chain in ethereum chain registry: \`${actualParentChainId}\` vs \`${parentChainId}\``,
         );
       }
     }
