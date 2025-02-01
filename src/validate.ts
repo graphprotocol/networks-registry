@@ -205,6 +205,15 @@ function validateServices(networks: Network[]) {
         }
       }
     });
+
+    // Validate that firehose and substreams services are paired by provider
+    const firehoseUrls = services.firehose ?? [];
+    const substreamsUrls = services.substreams ?? [];
+    if (firehoseUrls.length !== substreamsUrls.length) {
+      WARNINGS.push(
+        `Network ${network.id} doesn't have a matching substreams/firehose pair`,
+      );
+    }
   }
 
   process.stdout.write("done\n");
@@ -421,6 +430,8 @@ async function main() {
     for (const warning of WARNINGS) {
       console.warn(`  - ${warning}`);
     }
+    console.log("All networks are valid but there are some warnings");
+    return;
   }
 
   console.log("All networks are valid");
