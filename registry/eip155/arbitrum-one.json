@@ -1,7 +1,6 @@
 {
   "id": "arbitrum-one",
-  "shortName": "Arbitrum",
-  "secondName": "One",
+  "shortName": "Arbitrum One",
   "fullName": "Arbitrum One Mainnet",
   "aliases": ["arbone", "arbitrum", "arb-sepolia", "evm-42161"],
   "caip2Id": "eip155:42161",

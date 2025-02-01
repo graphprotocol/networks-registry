@@ -1,7 +1,6 @@
 {
   "id": "sepolia-cl",
-  "shortName": "Ethereum Beacon",
-  "secondName": "Sepolia",
+  "shortName": "Sepolia Beacon",
   "fullName": "Ethereum Sepolia Consensus Layer",
   "aliases": ["sepolia-beacon"],
   "caip2Id": "beacon:11155111",

@@ -69,6 +69,20 @@ function validateUniqueness(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+function validateNames(networks: Network[]) {
+  process.stdout.write("Validating names ... ");
+  const mainnets = networks.filter((n) => n.networkType === "mainnet");
+  for (const network of mainnets) {
+    const dups = mainnets.filter((n) => n.shortName === network.shortName);
+    if (dups.length > 1) {
+      ERRORS.push(
+        `Networks ${dups.map((n) => n.id).join(",")} have non-unique shortName: ${network.shortName}`,
+      );
+    }
+  }
+  process.stdout.write("done\n");
+}
+
 function validateRelations(networks: Network[]) {
   process.stdout.write("Validating relations ... ");
   for (const network of networks) {
@@ -380,6 +394,7 @@ async function main() {
 
   validateFilenames(networksPath);
   validateUniqueness(networks);
+  validateNames(networks);
   validateRelations(networks);
   validateEvmRules(networks);
   validateTestnets(networks);
