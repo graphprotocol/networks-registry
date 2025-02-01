@@ -4,13 +4,20 @@ import { loadNetworks } from "./utils/fs";
 
 const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
+const TIMEOUT = 10000;
 
 async function testURL({ url, networkId }: { url: string; networkId: string }) {
   try {
-    const parsedUrl = new URL(url);
-    await fetch(parsedUrl.origin, { method: "HEAD" });
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), TIMEOUT);
 
-    const response = await fetch(url, { method: "HEAD" });
+    const response = await fetch(url, {
+      method: "HEAD",
+      signal: controller.signal,
+    });
+
+    clearTimeout(timeout);
+
     if (!response.ok) {
       console.warn(
         `  ${networkId} - URL returned an error: ${url} - ${response.status}`,
@@ -19,11 +26,11 @@ async function testURL({ url, networkId }: { url: string; networkId: string }) {
       console.log(`  ${networkId} - URL is valid and accessible: ${url}`);
     }
   } catch (error) {
-    // we only care about domain errors
+    // we only care about thrown connection errors
     console.error(
-      `  ${networkId} - Domain is invalid: ${url} - Error: ${error}`,
+      `  ${networkId} - Domain unreachable: ${url} - Error: ${error}`,
     );
-    ERRORS.push(`\`${networkId}\` - Domain unreachable: ${url}`);
+    ERRORS.push(`\`${networkId}\` - unreachable: ${url}`);
   }
 }
 
@@ -43,7 +50,7 @@ async function validateRpc(networks: Network[]) {
 
         try {
           const controller = new AbortController();
-          const timeout = setTimeout(() => controller.abort(), 10000);
+          const timeout = setTimeout(() => controller.abort(), TIMEOUT);
 
           const response = await fetch(rpcUrl, {
             method: "POST",
