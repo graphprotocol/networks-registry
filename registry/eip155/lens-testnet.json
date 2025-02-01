@@ -15,7 +15,6 @@
   ],
   "networkType": "testnet",
   "relations": [
-    { "kind": "testnetOf", "network": "lens-testnet" },
     { "kind": "l2Of", "network": "sepolia" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },

@@ -5,6 +5,7 @@ import { getActiveNetworks } from "./utils/graphnetwork";
 import { fetchChainListNetworks } from "./utils/chainlist";
 
 const ERRORS: string[] = [];
+const WARNINGS: string[] = [];
 
 function validateFilenames(networksPath: string) {
   process.stdout.write("Validating filenames ... ");
@@ -86,13 +87,16 @@ function validateNames(networks: Network[]) {
 function validateRelations(networks: Network[]) {
   process.stdout.write("Validating relations ... ");
   for (const network of networks) {
-    if (network.relations) {
-      for (const relation of network.relations) {
-        if (!networks.find((n) => n.id === relation.network)) {
-          ERRORS.push(
-            `Network ${network.id} has unknown related network: ${relation.network}`,
-          );
-        }
+    for (const relation of network.relations ?? []) {
+      if (!networks.find((n) => n.id === relation.network)) {
+        ERRORS.push(
+          `Network ${network.id} has unknown related network: ${relation.network}`,
+        );
+      }
+      if (relation.network === network.id) {
+        ERRORS.push(
+          `Network ${network.id} has self-referencing "${relation.kind}" relation`,
+        );
       }
     }
   }
@@ -138,32 +142,31 @@ function validateEvmRules(networks: Network[]) {
 
 function validateTestnets(networks: Network[]) {
   process.stdout.write("Validating testnets ... ");
-  for (const network of networks) {
-    if (["testnet", "devnet"].includes(network.networkType)) {
-      const mainnetId = network.relations?.find((n) => n.kind === "testnetOf");
-      if (!mainnetId) {
-        ERRORS.push(`Testnet ${network.id} has no mainnet relation`);
-        continue;
-      }
-      const mainnet = networks.find((n) => n.id === mainnetId.network);
-      if (!mainnet) {
-        ERRORS.push(
-          `Testnet ${network.id} has unknown mainnet: ${mainnetId.network}`,
-        );
-        continue;
-      }
-      if (
-        JSON.stringify(mainnet.firehose) !== JSON.stringify(network.firehose)
-      ) {
-        ERRORS.push(
-          `Testnet ${network.id} has different firehose block type than mainnet ${mainnet.id}`,
-        );
-      }
+  const testnets = networks.filter((n) =>
+    ["testnet", "devnet"].includes(n.networkType),
+  );
+  for (const testnet of testnets) {
+    const mainnetId = testnet.relations?.find((n) => n.kind === "testnetOf");
+    if (!mainnetId) {
+      WARNINGS.push(`Testnet ${testnet.id} has no mainnet relation`);
+      continue;
     }
-    if (network.networkType === "mainnet") {
-      if (network.relations?.find((n) => n.kind === "testnetOf")) {
+    const mainnet = networks.find((n) => n.id === mainnetId.network);
+    if (!mainnet) {
+      ERRORS.push(
+        `Testnet ${testnet.id} has unknown mainnet: ${mainnetId.network}`,
+      );
+      continue;
+    }
+    if (JSON.stringify(mainnet.firehose) !== JSON.stringify(testnet.firehose)) {
+      ERRORS.push(
+        `Testnet ${testnet.id} has different firehose block type than mainnet ${mainnet.id}`,
+      );
+    }
+    if (testnet.networkType === "mainnet") {
+      if (testnet.relations?.find((n) => n.kind === "testnetOf")) {
         ERRORS.push(
-          `Mainnet network ${network.id} can't have testnetOf relation`,
+          `Mainnet network ${testnet.id} can't have testnetOf relation`,
         );
       }
     }
@@ -411,6 +414,13 @@ async function main() {
       console.error(`  - ${error}`);
     }
     process.exit(1);
+  }
+
+  if (WARNINGS.length > 0) {
+    console.warn(`${WARNINGS.length} Validation warnings:`);
+    for (const warning of WARNINGS) {
+      console.warn(`  - ${warning}`);
+    }
   }
 
   console.log("All networks are valid");
