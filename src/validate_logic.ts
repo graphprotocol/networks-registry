@@ -416,7 +416,10 @@ export async function validateLogic(networksPath: string) {
   // await validateGraphNetworks(networks);       // uncomment when "mode" glitch is fixed
   await validateEthereumList(networks);
 
-  return { errors: ERRORS, warnings: WARNINGS };
+  return {
+    errors: ERRORS.map((e) => `[logic] ${e}`),
+    warnings: WARNINGS.map((e) => `[logic] ${e}`),
+  };
 }
 
 async function main() {
@@ -430,4 +433,7 @@ async function main() {
   }
 }
 
-await main();
+// Only run main() if this file is being run directly
+if (import.meta.main) {
+  await main();
+}

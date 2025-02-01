@@ -116,7 +116,10 @@ export async function validateFirehose(networksPath: string) {
 
   await validateFirehoseEvmModel(networks);
 
-  return { errors: ERRORS, warnings: WARNINGS };
+  return {
+    errors: ERRORS.map((e) => `[firehose] ${e}`),
+    warnings: WARNINGS.map((e) => `[firehose] ${e}`),
+  };
 }
 
 async function main() {
@@ -130,4 +133,7 @@ async function main() {
   }
 }
 
-await main();
+// Only run main() if this file is being run directly
+if (import.meta.main) {
+  await main();
+}
