@@ -31,7 +31,7 @@ warnings: ${warnings.length}
 date: ${new Date().toISOString()}
 -->
 `;
-  const footer = `Generated at: ${new Date().toISOString()}\n[View workflow run](https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID}/job/${process.env.GITHUB_JOB_ID})`;
+  const footer = `Generated at: ${new Date().toISOString()}\n[View workflow run](https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID})`;
 
   console.log(body);
 
