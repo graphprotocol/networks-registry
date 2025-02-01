@@ -59,8 +59,8 @@ Elapsed: ${((Date.now() - startTime) / 1000).toFixed(0)}s`;
         : warnings.length;
 
       const comparisonText = `### 📊 Changes Since Last Run
-${errorDiff !== 0 ? `- Errors: ${errorDiff > 0 ? `+${errorDiff}` : errorDiff} (${errors.length} total)\n` : "- Errors: No change"}
-${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warningDiff} (${warnings.length} total)\n` : "- Warnings: No change"}`;
+${errorDiff !== 0 ? `- Errors: ${errorDiff > 0 ? `+${errorDiff}` : errorDiff} (${errors.length} total)` : "- Errors: No change"}
+${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warningDiff} (${warnings.length} total)` : "- Warnings: No change"}`;
 
       await octokit.issues.update({
         owner,

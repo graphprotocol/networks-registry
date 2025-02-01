@@ -141,6 +141,8 @@ export async function validateUrls(networksPath: string) {
   }
 
   await validateDomains(networks);
+  // sleep a bit for rate-limits
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   await validateRpc(networks);
 
   return {
