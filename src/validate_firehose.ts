@@ -41,7 +41,7 @@ async function validateSingleEndpoint(
       ValidEncodingMap[info.blockIdEncoding] !== network.firehose?.bytesEncoding
     ) {
       ERRORS.push(
-        `Network ${network.id} endpoint ${endpoint} has invalid bytesEncoding: Registry: ${network.firehose?.bytesEncoding}, Firehose: ${info.blockIdEncoding}`,
+        `\`${network.id}\` - endpoint \`${endpoint}\` has different \`bytesEncoding\`: Registry: \`${network.firehose?.bytesEncoding}\`, Firehose: \`${info.blockIdEncoding}\``,
       );
     }
     if (
@@ -49,7 +49,7 @@ async function validateSingleEndpoint(
       !network.firehose?.evmExtendedModel
     ) {
       ERRORS.push(
-        `Network ${network.id} endpoint ${endpoint} has invalid evmExtendedModel for extended: Registry: ${network.firehose?.evmExtendedModel}, Firehose: ${info.blockFeatures}`,
+        `\`${network.id}\` - endpoint \`${endpoint}\` has different \`evmExtendedModel\`: Registry: \`${network.firehose?.evmExtendedModel}\`, Firehose: \`${info.blockFeatures}\``,
       );
     }
     if (
@@ -57,7 +57,7 @@ async function validateSingleEndpoint(
       network.firehose?.evmExtendedModel
     ) {
       ERRORS.push(
-        `Network ${network.id} endpoint ${endpoint} has invalid evmExtendedModel for base: Registry: ${network.firehose?.evmExtendedModel}, Firehose: ${info.blockFeatures}`,
+        `\`${network.id}\` - endpoint ${endpoint} has different \`evmExtendedModel\`: Registry: \`${network.firehose?.evmExtendedModel}\`, Firehose: \`${info.blockFeatures}\``,
       );
     }
     if (
@@ -65,12 +65,12 @@ async function validateSingleEndpoint(
       !network.firehose?.evmExtendedModel
     ) {
       ERRORS.push(
-        `Network ${network.id} endpoint ${endpoint} has invalid evmExtendedModel for hybrid: Registry: ${network.firehose?.evmExtendedModel}, Firehose: ${info.blockFeatures}`,
+        `\`${network.id}\` - endpoint ${endpoint} has different \`evmExtendedModel\`: Registry: \`${network.firehose?.evmExtendedModel}\`, Firehose: \`${info.blockFeatures}\``,
       );
     }
     if (!network.genesis?.hash?.includes(info.firstStreamableBlockId)) {
       ERRORS.push(
-        `Network ${network.id} endpoint ${endpoint} has invalid firstStreamableBlockId: Registry: ${network.genesis?.hash}, Firehose: ${info.firstStreamableBlockId}`,
+        `\`${network.id}\` - endpoint ${endpoint} has different \`firstStreamableBlockId\`: Registry: \`${network.genesis?.hash}\`, Firehose: \`${info.firstStreamableBlockId}\``,
       );
     }
   } catch (error) {
@@ -80,7 +80,7 @@ async function validateSingleEndpoint(
       }
     }
     ERRORS.push(
-      `Network ${network.id} endpoint ${endpoint} error: ${JSON.stringify(error)}`,
+      `\`${network.id}\` - endpoint ${endpoint} error: ${JSON.stringify(error)}`,
     );
   }
 }

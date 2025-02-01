@@ -6,13 +6,13 @@ import { validateUrls } from "./validate_urls";
 import { Octokit } from "@octokit/rest";
 
 async function createOrUpdateIssue(errors: string[], warnings: string[]) {
-  const issueTitle = "🔍 Maintenance Report";
+  const issueTitle = "🔍 Daily Maintenance Report";
   const assignees = ["YaroShkvorets"];
   const body = `## Maintenance Report (${new Date().toISOString().split("T")[0]})
 
-${errors.length > 0 ? "### ❌ Errors\n\n" + errors.map((e) => `- ${e}`).join("\n") : "### ✅ No errors found"}
+${errors.length > 0 ? "### ❌ Errors\n\n" + errors.map((e) => `- [ ] ${e}`).join("\n") : "### ✅ No errors found"}
 
-${warnings.length > 0 ? "### ⚠️ Warnings\n\n" + warnings.map((w) => `- ${w}`).join("\n") : "### ✅ No warnings found"}
+${warnings.length > 0 ? "### ⚠️ Warnings\n\n" + warnings.map((w) => `- [ ] ${w}`).join("\n") : "### ✅ No warnings found"}
 
 Generated at: ${new Date().toISOString()}`;
 

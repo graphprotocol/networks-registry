@@ -5,21 +5,25 @@ import { loadNetworks } from "./utils/fs";
 const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
 
-async function testURL(url: string) {
+async function testURL({ url, networkId }: { url: string; networkId: string }) {
   try {
     const parsedUrl = new URL(url);
     await fetch(parsedUrl.origin, { method: "HEAD" });
 
     const response = await fetch(url, { method: "HEAD" });
     if (!response.ok) {
-      console.warn(`  URL returned an error: ${url} - ${response.status}`);
+      console.warn(
+        `  ${networkId} - URL returned an error: ${url} - ${response.status}`,
+      );
     } else {
-      console.log(`  URL is valid and accessible: ${url}`);
+      console.log(`  ${networkId} - URL is valid and accessible: ${url}`);
     }
   } catch (error) {
     // we only care about domain errors
-    console.error(`  Domain is invalid: ${url} - Error: ${error}`);
-    ERRORS.push(`Domain is not available or invalid: ${url}`);
+    console.error(
+      `  ${networkId} - Domain is invalid: ${url} - Error: ${error}`,
+    );
+    ERRORS.push(`\`${networkId}\` - Domain unreachable: ${url}`);
   }
 }
 
@@ -57,7 +61,7 @@ async function validateRpc(networks: Network[]) {
 
           if (!response.ok) {
             ERRORS.push(
-              `Network ${network.id} failed to query public RPC: ${rpcUrl}`,
+              `\`${network.id}\` - failed to query RPC endpoint: ${rpcUrl}`,
             );
             continue;
           }
@@ -65,7 +69,7 @@ async function validateRpc(networks: Network[]) {
 
           if (data.error || !data.result) {
             WARNINGS.push(
-              `Network ${network.id} empty response from public RPC: ${rpcUrl}`,
+              `\`${network.id}\` - empty response from RPC endpoint: ${rpcUrl}`,
             );
             continue;
           }
@@ -75,7 +79,7 @@ async function validateRpc(networks: Network[]) {
             genesisHash.toLowerCase() !== network.genesis?.hash.toLowerCase()
           ) {
             ERRORS.push(
-              `Network ${network.id} has mismatched genesis hash: RPC=${genesisHash} registry=${network.genesis?.hash}`,
+              `\`${network.id}\` - mismatched genesis hash at RPC endpoint: ${rpcUrl}`,
             );
           }
           console.log(
@@ -84,11 +88,11 @@ async function validateRpc(networks: Network[]) {
         } catch (e) {
           if (e instanceof Error && e.name === "AbortError") {
             ERRORS.push(
-              `Network ${network.id} RPC request timed out after 10s: ${rpcUrl}`,
+              `\`${network.id}\` - RPC request timed out after 10s: ${rpcUrl}`,
             );
           } else {
             ERRORS.push(
-              `Network ${network.id} exception querying public RPC: ${rpcUrl}`,
+              `\`${network.id}\` - exception querying RPC endpoint: ${rpcUrl}`,
             );
           }
         }
@@ -102,18 +106,15 @@ async function validateRpc(networks: Network[]) {
 async function validateDomains(networks: Network[]) {
   process.stdout.write("Validating URLs ... ");
   const batchSize = 30;
-  const urls = [
-    ...new Set(
-      networks
-        .flatMap((n) => [
-          n.rpcUrls ?? [],
-          n.explorerUrls ?? [],
-          n.docsUrl ?? [],
-          (n.apiUrls ?? []).map((u) => u.url),
-        ])
-        .flat(),
-    ),
-  ];
+  const urls = networks.flatMap((n) => {
+    const urls = [
+      n.rpcUrls ?? [],
+      n.explorerUrls ?? [],
+      n.docsUrl ?? [],
+      (n.apiUrls ?? []).map((u) => u.url),
+    ].flat();
+    return urls.map((url) => ({ url, networkId: n.id }));
+  });
 
   console.log(`Found ${urls.length} URLs`);
   for (let i = 0; i < urls.length; i += batchSize) {
@@ -132,7 +133,7 @@ export async function validateUrls(networksPath: string) {
     ERRORS.push("No networks found");
   }
 
-  // await validateDomains(networks);
+  await validateDomains(networks);
   await validateRpc(networks);
 
   return {
