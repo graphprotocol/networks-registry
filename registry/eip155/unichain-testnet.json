@@ -6,9 +6,7 @@
   "aliases": ["evm-1301"],
   "caip2Id": "eip155:1301",
   "networkType": "testnet",
-  "relations": [
-    { "kind": "l2Of", "network": "sepolia" }
-  ],
+  "relations": [{ "kind": "l2Of", "network": "sepolia" }],
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://unichain-sepolia.blockscout.com"],
   "rpcUrls": [

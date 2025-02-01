@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.32",
+  "version": "0.6.33",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-01-31T18:22:46.884Z",
+  "updatedAt": "2025-02-01T04:44:09.036Z",
   "networks": [
     {
       "id": "mainnet",
@@ -304,12 +304,7 @@
         ]
       },
       "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "monad-testnet"
-        }
-      ],
+      "relations": [],
       "issuanceRewards": false,
       "nativeToken": "MON",
       "docsUrl": "https://docs.monad.xyz",
@@ -419,8 +414,8 @@
       "nativeToken": "CLV",
       "docsUrl": "https://docs.clv.org",
       "genesis": {
-        "hash": "0x7c11fb21c186dd7846d92e09af5c02fa4c8a08b83c99d7361b8b9fd5dc1650fb",
-        "height": 1
+        "hash": "0x316ead04231197413e137d371f8763cf6db84400d43749853efba5006115783b",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -548,8 +543,8 @@
       "nativeToken": "ETH",
       "docsUrl": "https://docs.abs.xyz",
       "genesis": {
-        "hash": "0xfbb449463d9f1ec874d597d80d911f60857cc2fbf93f8ac83c70f8cfa2220a74",
-        "height": 1
+        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -1133,10 +1128,6 @@
       "networkType": "testnet",
       "relations": [
         {
-          "kind": "testnetOf",
-          "network": "unichain-testnet"
-        },
-        {
           "kind": "l2Of",
           "network": "sepolia"
         }
@@ -1154,7 +1145,7 @@
       "apiUrls": [
         {
           "url": "https://unichain-sepolia.blockscout.com/api",
-          "kind": "etherscan"
+          "kind": "blockscout"
         },
         {
           "url": "https://api.routescan.io/v2/network/testnet/evm/1301/etherscan/api",
@@ -1691,6 +1682,11 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "vana"
+        }
       }
     },
     {
@@ -2267,12 +2263,7 @@
         ]
       },
       "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "expchain-testnet"
-        }
-      ],
+      "relations": [],
       "issuanceRewards": false,
       "nativeToken": "tZKJ",
       "docsUrl": "https://docs.polyhedra.network/expchain",
@@ -2961,8 +2952,8 @@
       "nativeToken": "ETH",
       "docsUrl": "https://docs.abs.xyz",
       "genesis": {
-        "hash": "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
-        "height": 1
+        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -3215,8 +3206,8 @@
       "nativeToken": "ETH",
       "docsUrl": "https://docs.zksync.io",
       "genesis": {
-        "hash": "0x086227fafad2bc4d08a122ebb690d958edcd43352d38d31646968480f496827c",
-        "height": 1
+        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -3328,8 +3319,8 @@
       "nativeToken": "ETH",
       "docsUrl": "https://docs.zksync.io",
       "genesis": {
-        "hash": "0x51f81bcdfc324a0dff2b5bec9d92e21cbebc4d5e29d3a3d30de3e03fbeab8d7f",
-        "height": 1
+        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -3449,12 +3440,7 @@
         ]
       },
       "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "botanix-testnet"
-        }
-      ],
+      "relations": [],
       "issuanceRewards": false,
       "nativeToken": "BTC",
       "docsUrl": "https://docs.botanixlabs.xyz",
@@ -3496,10 +3482,6 @@
       "networkType": "testnet",
       "relations": [
         {
-          "kind": "testnetOf",
-          "network": "lens-testnet"
-        },
-        {
           "kind": "l2Of",
           "network": "sepolia"
         }
@@ -3513,8 +3495,8 @@
       "nativeToken": "GRASS",
       "docsUrl": "https://www.lens.xyz/docs",
       "genesis": {
-        "hash": "0x5712a0fa02404a9fe852ef7d19ea2c019af52f59faa262a34f327ba03bbdc6d2",
-        "height": 1
+        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -3646,8 +3628,7 @@
     },
     {
       "id": "arbitrum-one",
-      "shortName": "Arbitrum",
-      "secondName": "One",
+      "shortName": "Arbitrum One",
       "fullName": "Arbitrum One Mainnet",
       "aliases": [
         "arbone",
@@ -3802,9 +3783,8 @@
     },
     {
       "id": "arbitrum-nova",
-      "shortName": "Arbitrum",
-      "secondName": "Nova",
-      "fullName": "Arbitrum Nova",
+      "shortName": "Arbitrum Nova",
+      "fullName": "Arbitrum Nova Mainnet",
       "aliases": [
         "evm-42170",
         "arbnova",
@@ -4082,8 +4062,8 @@
       "nativeToken": "AVAX",
       "docsUrl": "https://docs.avax.network",
       "genesis": {
-        "hash": "0x738639479dc82d199365626f90caa82f7eafcfe9ed354b456fb3d294597ceb53",
-        "height": 1
+        "hash": "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -4265,8 +4245,8 @@
       "nativeToken": "IOTX",
       "docsUrl": "https://docs.iotex.io",
       "genesis": {
-        "hash": "0x230ba8095d5a505e355652f9dcc2b13605419a8fa3d3fd5ddc6d24fd6a902641",
-        "height": 1
+        "hash": "0xb337983730981c2d50f114eed5da9dd20b83c8c5e130beefdb3001dc858cfe8b",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -4320,8 +4300,8 @@
       "nativeToken": "IOTX",
       "docsUrl": "https://docs.iotex.io",
       "genesis": {
-        "hash": "0x663fc0a40a4943f1b56f501aee3ad626b5396e850aa53c5bd8759d0d47694dfc",
-        "height": 1
+        "hash": "0x5e31a9f95ca4de82bd6f5ed9b465c6474bba27f1c5d31747393a555ce1f41607",
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -4603,8 +4583,7 @@
     },
     {
       "id": "boba-bnb",
-      "shortName": "Boba",
-      "secondName": "BNB",
+      "shortName": "Boba BNB",
       "fullName": "Boba BNB Mainnet",
       "aliases": [
         "evm-56288",
@@ -4805,72 +4784,6 @@
       "icon": {
         "web3Icons": {
           "name": "linea"
-        }
-      }
-    },
-    {
-      "id": "zkyoto-testnet",
-      "shortName": "Astar",
-      "secondName": "zKyoto",
-      "fullName": "Astar zkEVM Testnet zKyoto",
-      "aliases": [
-        "evm-6038361",
-        "astar-testnet",
-        "astar-zkevm-testnet",
-        "astar-zkyoto"
-      ],
-      "caip2Id": "eip155:6038361",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://zkyoto.explorer.startale.com"
-      ],
-      "rpcUrls": [
-        "https://rpc.startale.com/zkyoto",
-        "https://zkyoto.rpc.pinax.network/v1/{PINAX_API_KEY}"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://zkyoto.explorer.startale.com/api",
-          "kind": "blockscout"
-        }
-      ],
-      "services": {
-        "firehose": [
-          "zkyoto.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "zkyoto.substreams.pinax.network:443"
-        ]
-      },
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "sepolia"
-        },
-        {
-          "kind": "testnetOf",
-          "network": "astar-zkevm-mainnet"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "docsUrl": "https://docs.astar.network/docs/getting-started",
-      "genesis": {
-        "hash": "0xa479ae412a77c2f4dee25e923ecac955df8ee9bc12eed467899da53a43cbf0f1",
-        "height": 0
-      },
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "astar"
         }
       }
     },
@@ -5207,12 +5120,7 @@
         }
       ],
       "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "berachain-bartio"
-        }
-      ],
+      "relations": [],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -6414,8 +6322,7 @@
     },
     {
       "id": "gnosis-chiado-cl",
-      "shortName": "Gnosis Beacon",
-      "secondName": "Chiado",
+      "shortName": "Chiado Beacon",
       "fullName": "Gnosis Chiado Consensus Layer",
       "aliases": [
         "gnosis-chiado-beacon"
@@ -6459,8 +6366,7 @@
     },
     {
       "id": "sepolia-cl",
-      "shortName": "Ethereum Beacon",
-      "secondName": "Sepolia",
+      "shortName": "Sepolia Beacon",
       "fullName": "Ethereum Sepolia Consensus Layer",
       "aliases": [
         "sepolia-beacon"
@@ -6504,8 +6410,7 @@
     },
     {
       "id": "holesky-cl",
-      "shortName": "Ethereum Beacon",
-      "secondName": "Holesky",
+      "shortName": "Holesky Beacon",
       "fullName": "Ethereum Holesky Consensus Layer",
       "aliases": [
         "holesky-beacon"
@@ -6719,8 +6624,8 @@
       "nativeToken": "INJ",
       "docsUrl": "https://docs.injective.network",
       "genesis": {
-        "hash": "0xa9effb99c7bc3ba8c18a487ffffd800c137bc2b2f47f73c350f3ca27077044a1",
-        "height": 37368800
+        "hash": "0x99ffd75978c31495c75cf40dbddf80673db18dc750f1e9f549cc13d9b76e8745",
+        "height": 59109500
       },
       "firehose": {
         "blockType": "sf.cosmos.type.v2.Block",
@@ -6812,89 +6717,12 @@
       "nativeToken": "OM",
       "docsUrl": "https://docs.mantrachain.io",
       "genesis": {
-        "hash": "0x2701f72ef3e2242e27244b2dfa895ad212fc07de71599a0af2fe2410d93bc7bb",
+        "hash": "0xf4e9183911bbc59c472602cc83f06d8d335fc8f40c604a1a1adc0b7593403a84",
         "height": 1
       },
       "firehose": {
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
-        "bytesEncoding": "hex"
-      }
-    },
-    {
-      "id": "vara-mainnet",
-      "shortName": "Vara",
-      "fullName": "Vara Mainnet",
-      "aliases": [
-        "vara"
-      ],
-      "caip2Id": "gear:vara-mainnet",
-      "explorerUrls": [
-        "https://vara.subscan.io"
-      ],
-      "rpcUrls": [],
-      "apiUrls": [
-        {
-          "url": "https://vara.api.subscan.io/api",
-          "kind": "subscan"
-        }
-      ],
-      "networkType": "mainnet",
-      "services": {
-        "firehose": [
-          "mainnet.vara.streamingfast.io:443"
-        ],
-        "substreams": [
-          "mainnet.vara.streamingfast.io:443"
-        ]
-      },
-      "issuanceRewards": false,
-      "nativeToken": "VARA",
-      "docsUrl": "https://wiki.vara.network",
-      "genesis": {
-        "hash": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",
-        "height": 0
-      },
-      "firehose": {
-        "blockType": "sf.gear.type.v1.Block",
-        "bufUrl": "https://buf.build/streamingfast/firehose-gear",
-        "bytesEncoding": "hex"
-      }
-    },
-    {
-      "id": "vara-testnet",
-      "shortName": "Vara",
-      "fullName": "Vara Testnet",
-      "aliases": [],
-      "caip2Id": "gear:vara-testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "vara-mainnet"
-        }
-      ],
-      "explorerUrls": [],
-      "rpcUrls": [],
-      "apiUrls": [],
-      "networkType": "testnet",
-      "services": {
-        "firehose": [
-          "testnet.vara.streamingfast.io:443"
-        ],
-        "substreams": [
-          "testnet.vara.streamingfast.io:443"
-        ]
-      },
-      "issuanceRewards": false,
-      "nativeToken": "VARA",
-      "docsUrl": "https://wiki.vara.network",
-      "genesis": {
-        "hash": "0x525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
-        "height": 0
-      },
-      "firehose": {
-        "blockType": "sf.gear.type.v1.Block",
-        "bufUrl": "https://buf.build/streamingfast/firehose-gear",
         "bytesEncoding": "hex"
       }
     },
