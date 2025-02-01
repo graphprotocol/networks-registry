@@ -5,35 +5,34 @@ import { validateSchema } from "./validate_schema";
 import { validateUrls } from "./validate_urls";
 import { Octokit } from "@octokit/rest";
 
+const issueTitle = "🔍 Daily Maintenance Report";
+const assignees = ["YaroShkvorets"];
+const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
+if (!owner || !repo) {
+  console.error(
+    "GITHUB_REPOSITORY environment variable is required. This script can only proceed from Github Actions workflow",
+  );
+  process.exit(1);
+}
+const octokit = new Octokit({
+  auth: process.env.GITHUB_TOKEN,
+});
+
 async function createOrUpdateIssue(errors: string[], warnings: string[]) {
-  const issueTitle = "🔍 Daily Maintenance Report";
-  const assignees = ["YaroShkvorets"];
   const body = `## Maintenance Report (${new Date().toISOString().split("T")[0]})
 
 ${errors.length > 0 ? "### ❌ Errors\n\n" + errors.map((e) => `- [ ] ${e}`).join("\n") : "### ✅ No errors found"}
 
 ${warnings.length > 0 ? "### ⚠️ Warnings\n\n" + warnings.map((w) => `- [ ] ${w}`).join("\n") : "### ✅ No warnings found"}
 
-Generated at: ${new Date().toISOString()}`;
+<!-- maintenance-stats
+errors: ${errors.length}
+warnings: ${warnings.length}
+date: ${new Date().toISOString()}
+-->
+`;
 
   console.log(body);
-
-  const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
-  if (!owner || !repo) {
-    console.error(
-      "GITHUB_REPOSITORY environment variable is required. This script can only proceed from Github Actions workflow",
-    );
-    process.exit(1);
-  }
-  const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-  if (!GITHUB_TOKEN) {
-    console.error("GITHUB_TOKEN environment variable is required");
-    process.exit(1);
-  }
-
-  const octokit = new Octokit({
-    auth: GITHUB_TOKEN,
-  });
 
   try {
     const { data: issues } = await octokit.issues.listForRepo({
@@ -44,14 +43,27 @@ Generated at: ${new Date().toISOString()}`;
     });
 
     const existingIssue = issues.find((issue) => issue.title === issueTitle);
-
     if (existingIssue) {
+      const statsMatch = existingIssue.body?.match(
+        /<!-- maintenance-stats\nerrors: (\d+)\nwarnings: (\d+)/,
+      );
+      const errorDiff = statsMatch
+        ? errors.length - parseInt(statsMatch[1] ?? "0")
+        : errors.length;
+      const warningDiff = statsMatch
+        ? warnings.length - parseInt(statsMatch[2] ?? "0")
+        : warnings.length;
+
+      const comparisonText = `### 📊 Changes Since Last Run
+${errorDiff !== 0 ? `- Errors: ${errorDiff > 0 ? `+${errorDiff}` : errorDiff} (${errors.length} total)\n` : "- Errors: No change"}
+${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warningDiff} (${warnings.length} total)\n` : "- Warnings: No change"}`;
+
       await octokit.issues.update({
         owner,
         repo,
         assignees,
         issue_number: existingIssue.number,
-        body,
+        body: `${body}\n\n${comparisonText}\n\nGenerated at: ${new Date().toISOString()}`,
       });
       console.log(`Updated existing issue #${existingIssue.number}`);
     } else {
@@ -59,7 +71,7 @@ Generated at: ${new Date().toISOString()}`;
         owner,
         repo,
         title: issueTitle,
-        body,
+        body: `${body}\n\nGenerated at: ${new Date().toISOString()}`,
         assignees,
         labels: ["maintenance"],
       });
@@ -80,7 +92,6 @@ async function main() {
   const { errors: e3, warnings: w3 } = await validateLogic("registry");
   const { errors: e4, warnings: w4 } = await validateFirehose("registry");
 
-  console.log("validated!");
   const errors = [...e1, ...e2, ...e3, ...e4];
   const warnings = [...w1, ...w2, ...w3, ...w4];
 
