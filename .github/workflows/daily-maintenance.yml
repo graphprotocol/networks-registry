@@ -2,8 +2,8 @@ name: Daily Maintenance Check
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
-  workflow_dispatch:  # Allows manual triggering
+    - cron: '14 0 * * *'  # Runs at 14:00 UTC / 9:00 AM EST every day
+  workflow_dispatch:
 
 jobs:
   maintenance-check:
@@ -27,4 +27,7 @@ jobs:
       - name: Run maintenance check
         run: bun maintenance
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SF_API_KEY: ${{ secrets.SF_API_KEY }}
+          PINAX_API_KEY: ${{ secrets.PINAX_API_KEY }}
+          THEGRAPH_STUDIO_KEY: ${{ secrets.THEGRAPH_STUDIO_KEY }}
