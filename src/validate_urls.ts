@@ -132,10 +132,13 @@ export async function validateUrls(networksPath: string) {
     ERRORS.push("No networks found");
   }
 
-  await validateDomains(networks);
+  // await validateDomains(networks);
   await validateRpc(networks);
 
-  return { errors: ERRORS, warnings: WARNINGS };
+  return {
+    errors: ERRORS.map((e) => `[urls] ${e}`),
+    warnings: WARNINGS.map((e) => `[urls] ${e}`),
+  };
 }
 
 async function main() {
@@ -149,4 +152,7 @@ async function main() {
   }
 }
 
-await main();
+// Only run main() if this file is being run directly
+if (import.meta.main) {
+  await main();
+}

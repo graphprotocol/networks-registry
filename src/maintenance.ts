@@ -5,33 +5,40 @@ import { validateSchema } from "./validate_schema";
 import { validateUrls } from "./validate_urls";
 import { Octokit } from "@octokit/rest";
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-if (!GITHUB_TOKEN) {
-  throw new Error("GITHUB_TOKEN environment variable is required");
-}
-
-const octokit = new Octokit({
-  auth: GITHUB_TOKEN,
-});
-
 async function createOrUpdateIssue(errors: string[], warnings: string[]) {
-  const today = new Date().toISOString().split("T")[0];
   const issueTitle = "🔍 Maintenance Report";
+  const assignees = ["YaroShkvorets"];
+  const body = `## Maintenance Report (${new Date().toISOString().split("T")[0]})
 
-  // Format the issue body
-  const body = `## Maintenance Report (${today})
+${errors.length > 0 ? "### ❌ Errors\n\n" + errors.map((e) => `- ${e}`).join("\n") : "### ✅ No errors found"}
 
-${errors.length > 0 ? "### ❌ Errors\n\n" + errors.map((e) => `- ${e}`).join("\n") : "✅ No errors found"}
-
-${warnings.length > 0 ? "### ⚠️ Warnings\n\n" + warnings.map((w) => `- ${w}`).join("\n") : "✅ No warnings found"}
+${warnings.length > 0 ? "### ⚠️ Warnings\n\n" + warnings.map((w) => `- ${w}`).join("\n") : "### ✅ No warnings found"}
 
 Generated at: ${new Date().toISOString()}`;
 
+  console.log(body);
+
+  const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
+  if (!owner || !repo) {
+    console.error(
+      "GITHUB_REPOSITORY environment variable is required. This script can only proceed from Github Actions workflow",
+    );
+    process.exit(1);
+  }
+  const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+  if (!GITHUB_TOKEN) {
+    console.error("GITHUB_TOKEN environment variable is required");
+    process.exit(1);
+  }
+
+  const octokit = new Octokit({
+    auth: GITHUB_TOKEN,
+  });
+
   try {
-    // Search for existing maintenance issue
     const { data: issues } = await octokit.issues.listForRepo({
-      owner: "graphprotocol",
-      repo: "networks-registry",
+      owner,
+      repo,
       state: "open",
       creator: "github-actions[bot]",
     });
@@ -39,23 +46,21 @@ Generated at: ${new Date().toISOString()}`;
     const existingIssue = issues.find((issue) => issue.title === issueTitle);
 
     if (existingIssue) {
-      // Update existing issue
       await octokit.issues.update({
-        owner: "graphprotocol",
-        repo: "networks-registry",
-        assignees: ["YaroShkvorets"],
+        owner,
+        repo,
+        assignees,
         issue_number: existingIssue.number,
         body,
       });
       console.log(`Updated existing issue #${existingIssue.number}`);
     } else {
-      // Create new issue
       const { data: newIssue } = await octokit.issues.create({
-        owner: "graphprotocol",
-        repo: "networks-registry",
+        owner,
+        repo,
         title: issueTitle,
         body,
-        assignees: ["YaroShkvorets"],
+        assignees,
         labels: ["maintenance"],
       });
       console.log(`Created new issue #${newIssue.number}`);
@@ -75,13 +80,12 @@ async function main() {
   const { errors: e3, warnings: w3 } = await validateLogic("registry");
   const { errors: e4, warnings: w4 } = await validateFirehose("registry");
 
+  console.log("validated!");
   const errors = [...e1, ...e2, ...e3, ...e4];
   const warnings = [...w1, ...w2, ...w3, ...w4];
 
-  // Print to console as before
   printErrorsAndWarnings(errors, warnings);
 
-  // Create or update GitHub issue
   await createOrUpdateIssue(errors, warnings);
 }
 

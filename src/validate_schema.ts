@@ -37,7 +37,10 @@ export async function validateSchema(networksPath: string, schemaPath: string) {
     }
   }
 
-  return { errors: ERRORS, warnings: WARNINGS };
+  return {
+    errors: ERRORS.map((e) => `[schema] ${e}`),
+    warnings: WARNINGS.map((e) => `[schema] ${e}`),
+  };
 }
 
 async function main() {
@@ -56,4 +59,7 @@ async function main() {
   }
 }
 
-await main();
+// Only run main() if this file is being run directly
+if (import.meta.main) {
+  await main();
+}
