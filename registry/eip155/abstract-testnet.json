@@ -27,8 +27,8 @@
   "nativeToken": "ETH",
   "docsUrl": "https://docs.abs.xyz",
   "genesis": {
-    "hash": "0xfbb449463d9f1ec874d597d80d911f60857cc2fbf93f8ac83c70f8cfa2220a74",
-    "height": 1
+    "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+    "height": 0
   },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",

@@ -19,7 +19,7 @@
   "nativeToken": "OM",
   "docsUrl": "https://docs.mantrachain.io",
   "genesis": {
-    "hash": "0x2701f72ef3e2242e27244b2dfa895ad212fc07de71599a0af2fe2410d93bc7bb",
+    "hash": "0xf4e9183911bbc59c472602cc83f06d8d335fc8f40c604a1a1adc0b7593403a84",
     "height": 1
   },
   "firehose": {

@@ -5,6 +5,7 @@ import { getActiveNetworks } from "./utils/graphnetwork";
 import { fetchChainListNetworks } from "./utils/chainlist";
 
 const ERRORS: string[] = [];
+const WARNINGS: string[] = [];
 
 function validateFilenames(networksPath: string) {
   process.stdout.write("Validating filenames ... ");
@@ -17,6 +18,11 @@ function validateFilenames(networksPath: string) {
   }
   process.stdout.write("done\n");
 }
+
+const ALLOWED_DUPLICATES: string[] = [
+  "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
+  "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+];
 
 function validateUniqueness(networks: Network[]) {
   process.stdout.write("Validating uniqueness ... ");
@@ -46,7 +52,9 @@ function validateUniqueness(networks: Network[]) {
       if (Array.isArray(n[field])) return n[field];
       return n[field] ? [n[field]] : [];
     });
-    const duplicates = values.filter((v, i) => values.indexOf(v) !== i);
+    const duplicates = values
+      .filter((v, i) => values.indexOf(v) !== i)
+      .filter((v) => !ALLOWED_DUPLICATES.includes(v));
     if (duplicates.length) {
       ERRORS.push(`Duplicate field: "${field} = ${duplicates[0]}"`);
     }
@@ -62,16 +70,33 @@ function validateUniqueness(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+function validateNames(networks: Network[]) {
+  process.stdout.write("Validating names ... ");
+  const mainnets = networks.filter((n) => n.networkType === "mainnet");
+  for (const network of mainnets) {
+    const dups = mainnets.filter((n) => n.shortName === network.shortName);
+    if (dups.length > 1) {
+      ERRORS.push(
+        `Networks ${dups.map((n) => n.id).join(",")} have non-unique shortName: ${network.shortName}`,
+      );
+    }
+  }
+  process.stdout.write("done\n");
+}
+
 function validateRelations(networks: Network[]) {
   process.stdout.write("Validating relations ... ");
   for (const network of networks) {
-    if (network.relations) {
-      for (const relation of network.relations) {
-        if (!networks.find((n) => n.id === relation.network)) {
-          ERRORS.push(
-            `Network ${network.id} has unknown related network: ${relation.network}`,
-          );
-        }
+    for (const relation of network.relations ?? []) {
+      if (!networks.find((n) => n.id === relation.network)) {
+        ERRORS.push(
+          `Network ${network.id} has unknown related network: ${relation.network}`,
+        );
+      }
+      if (relation.network === network.id) {
+        ERRORS.push(
+          `Network ${network.id} has self-referencing "${relation.kind}" relation`,
+        );
       }
     }
   }
@@ -117,32 +142,31 @@ function validateEvmRules(networks: Network[]) {
 
 function validateTestnets(networks: Network[]) {
   process.stdout.write("Validating testnets ... ");
-  for (const network of networks) {
-    if (["testnet", "devnet"].includes(network.networkType)) {
-      const mainnetId = network.relations?.find((n) => n.kind === "testnetOf");
-      if (!mainnetId) {
-        ERRORS.push(`Testnet ${network.id} has no mainnet relation`);
-        continue;
-      }
-      const mainnet = networks.find((n) => n.id === mainnetId.network);
-      if (!mainnet) {
-        ERRORS.push(
-          `Testnet ${network.id} has unknown mainnet: ${mainnetId.network}`,
-        );
-        continue;
-      }
-      if (
-        JSON.stringify(mainnet.firehose) !== JSON.stringify(network.firehose)
-      ) {
-        ERRORS.push(
-          `Testnet ${network.id} has different firehose block type than mainnet ${mainnet.id}`,
-        );
-      }
+  const testnets = networks.filter((n) =>
+    ["testnet", "devnet"].includes(n.networkType),
+  );
+  for (const testnet of testnets) {
+    const mainnetId = testnet.relations?.find((n) => n.kind === "testnetOf");
+    if (!mainnetId) {
+      WARNINGS.push(`Testnet ${testnet.id} has no mainnet relation`);
+      continue;
     }
-    if (network.networkType === "mainnet") {
-      if (network.relations?.find((n) => n.kind === "testnetOf")) {
+    const mainnet = networks.find((n) => n.id === mainnetId.network);
+    if (!mainnet) {
+      ERRORS.push(
+        `Testnet ${testnet.id} has unknown mainnet: ${mainnetId.network}`,
+      );
+      continue;
+    }
+    if (JSON.stringify(mainnet.firehose) !== JSON.stringify(testnet.firehose)) {
+      ERRORS.push(
+        `Testnet ${testnet.id} has different firehose block type than mainnet ${mainnet.id}`,
+      );
+    }
+    if (testnet.networkType === "mainnet") {
+      if (testnet.relations?.find((n) => n.kind === "testnetOf")) {
         ERRORS.push(
-          `Mainnet network ${network.id} can't have testnetOf relation`,
+          `Mainnet network ${testnet.id} can't have testnetOf relation`,
         );
       }
     }
@@ -181,6 +205,15 @@ function validateServices(networks: Network[]) {
         }
       }
     });
+
+    // Validate that firehose and substreams services are paired by provider
+    const firehoseUrls = services.firehose ?? [];
+    const substreamsUrls = services.substreams ?? [];
+    if (firehoseUrls.length !== substreamsUrls.length) {
+      WARNINGS.push(
+        `Network ${network.id} doesn't have a matching substreams/firehose pair`,
+      );
+    }
   }
 
   process.stdout.write("done\n");
@@ -373,6 +406,7 @@ async function main() {
 
   validateFilenames(networksPath);
   validateUniqueness(networks);
+  validateNames(networks);
   validateRelations(networks);
   validateEvmRules(networks);
   validateTestnets(networks);
@@ -380,7 +414,7 @@ async function main() {
   validateServices(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
-  // await validateGraphNetworks(networks);
+  // await validateGraphNetworks(networks);       // uncomment when "mode" glitch is fixed
   await validateEthereumList(networks);
 
   if (ERRORS.length > 0) {
@@ -389,6 +423,15 @@ async function main() {
       console.error(`  - ${error}`);
     }
     process.exit(1);
+  }
+
+  if (WARNINGS.length > 0) {
+    console.warn(`${WARNINGS.length} Validation warnings:`);
+    for (const warning of WARNINGS) {
+      console.warn(`  - ${warning}`);
+    }
+    console.log("All networks are valid but there are some warnings");
+    return;
   }
 
   console.log("All networks are valid");

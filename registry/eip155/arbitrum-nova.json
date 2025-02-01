@@ -1,8 +1,7 @@
 {
   "id": "arbitrum-nova",
-  "shortName": "Arbitrum",
-  "secondName": "Nova",
-  "fullName": "Arbitrum Nova",
+  "shortName": "Arbitrum Nova",
+  "fullName": "Arbitrum Nova Mainnet",
   "aliases": ["evm-42170", "arbnova", "arb-nova", "arbitrum-nova-mainnet"],
   "caip2Id": "eip155:42170",
   "graphNode": { "protocol": "ethereum" },
