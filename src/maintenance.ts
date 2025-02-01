@@ -65,6 +65,17 @@ ${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warni
         issue_number: existingIssue.number,
         body: `${body}\n\n${comparisonText}\n\nGenerated at: ${new Date().toISOString()}`,
       });
+
+      // Add a comment if there are new errors
+      if (errorDiff > 0) {
+        await octokit.issues.createComment({
+          owner,
+          repo,
+          issue_number: existingIssue.number,
+          body: `🚨 ${errorDiff} new potential error${errorDiff > 1 ? "s" : ""} detected`,
+        });
+      }
+
       console.log(`Updated existing issue #${existingIssue.number}`);
     } else {
       const { data: newIssue } = await octokit.issues.create({
