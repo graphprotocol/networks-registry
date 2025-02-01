@@ -31,6 +31,7 @@ warnings: ${warnings.length}
 date: ${new Date().toISOString()}
 -->
 `;
+  const footer = `Generated at: ${new Date().toISOString()}\n[View workflow run](https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID}/job/${process.env.GITHUB_JOB_ID})`;
 
   console.log(body);
 
@@ -63,7 +64,7 @@ ${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warni
         repo,
         assignees,
         issue_number: existingIssue.number,
-        body: `${body}\n\n${comparisonText}\n\nGenerated at: ${new Date().toISOString()}`,
+        body: `${body}\n\n${comparisonText}\n\n${footer}`,
       });
 
       // Add a comment if there are new errors
@@ -82,7 +83,7 @@ ${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warni
         owner,
         repo,
         title: issueTitle,
-        body: `${body}\n\nGenerated at: ${new Date().toISOString()}`,
+        body: `${body}\n\n${footer}`,
         assignees,
         labels: ["maintenance"],
       });
