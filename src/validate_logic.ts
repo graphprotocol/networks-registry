@@ -3,6 +3,7 @@ import { loadNetworks, getAllJsonFiles, readFromJsonFile } from "./utils/fs";
 import { fetchWeb3NetworkIcons } from "./utils/web3icons";
 import { getActiveNetworks } from "./utils/graphnetwork";
 import { fetchChainListNetworks } from "./utils/chainlist";
+import { printErrorsAndWarnings } from "./print";
 
 const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
@@ -394,9 +395,7 @@ async function validateEthereumList(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
-async function main() {
-  const [, , networksPath = "registry"] = process.argv;
-
+export async function validateLogic(networksPath: string) {
   const networks = loadNetworks(networksPath);
   console.log(`Loaded ${networks.length} networks`);
 
@@ -417,24 +416,18 @@ async function main() {
   // await validateGraphNetworks(networks);       // uncomment when "mode" glitch is fixed
   await validateEthereumList(networks);
 
-  if (ERRORS.length > 0) {
-    console.error(`${ERRORS.length} Validation errors:`);
-    for (const error of ERRORS) {
-      console.error(`  - ${error}`);
-    }
+  return { errors: ERRORS, warnings: WARNINGS };
+}
+
+async function main() {
+  const [, , networksPath = "registry"] = process.argv;
+
+  const { errors, warnings } = await validateLogic(networksPath);
+
+  printErrorsAndWarnings(errors, warnings);
+  if (errors.length > 0) {
     process.exit(1);
   }
-
-  if (WARNINGS.length > 0) {
-    console.warn(`${WARNINGS.length} Validation warnings:`);
-    for (const warning of WARNINGS) {
-      console.warn(`  - ${warning}`);
-    }
-    console.log("All networks are valid but there are some warnings");
-    return;
-  }
-
-  console.log("All networks are valid");
 }
 
 await main();

@@ -2,17 +2,12 @@ import { getAllJsonFiles } from "./utils/fs";
 import Ajv from "ajv";
 import addFormats from "ajv-formats";
 import fs from "fs";
+import { printErrorsAndWarnings } from "./print";
 
 const ERRORS: string[] = [];
+const WARNINGS: string[] = [];
 
-async function main() {
-  const [
-    ,
-    ,
-    networksPath = "registry",
-    schemaPath = "schemas/registry.schema.json",
-  ] = process.argv;
-
+export async function validateSchema(networksPath: string, schemaPath: string) {
   const files = getAllJsonFiles(networksPath);
   if (files.length === 0) {
     console.error("No JSON files found");
@@ -42,15 +37,23 @@ async function main() {
     }
   }
 
-  if (ERRORS.length > 0) {
-    console.error("Validation errors:");
-    for (const error of ERRORS) {
-      console.error(`  - ${error}`);
-    }
+  return { errors: ERRORS, warnings: WARNINGS };
+}
+
+async function main() {
+  const [
+    ,
+    ,
+    networksPath = "registry",
+    schemaPath = "schemas/registry.schema.json",
+  ] = process.argv;
+
+  const { errors, warnings } = await validateSchema(networksPath, schemaPath);
+
+  printErrorsAndWarnings(errors, warnings);
+  if (errors.length > 0) {
     process.exit(1);
   }
-
-  console.log("All networks are valid\n");
 }
 
 await main();

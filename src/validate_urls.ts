@@ -1,7 +1,9 @@
+import { printErrorsAndWarnings } from "./print";
 import { Network } from "./types/registry";
 import { loadNetworks } from "./utils/fs";
 
 const ERRORS: string[] = [];
+const WARNINGS: string[] = [];
 
 async function testURL(url: string) {
   try {
@@ -62,7 +64,7 @@ async function validateRpc(networks: Network[]) {
           const data = await response.json();
 
           if (data.error || !data.result) {
-            ERRORS.push(
+            WARNINGS.push(
               `Network ${network.id} empty response from public RPC: ${rpcUrl}`,
             );
             continue;
@@ -97,7 +99,7 @@ async function validateRpc(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
-async function validateUrls(networks: Network[]) {
+async function validateDomains(networks: Network[]) {
   process.stdout.write("Validating URLs ... ");
   const batchSize = 30;
   const urls = [
@@ -122,9 +124,7 @@ async function validateUrls(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
-async function main() {
-  const [, , networksPath = "registry"] = process.argv;
-
+export async function validateUrls(networksPath: string) {
   let networks = loadNetworks(networksPath);
   console.log(`Loaded ${networks.length} networks`);
 
@@ -132,18 +132,21 @@ async function main() {
     ERRORS.push("No networks found");
   }
 
-  await validateUrls(networks);
+  await validateDomains(networks);
   await validateRpc(networks);
 
-  if (ERRORS.length > 0) {
-    console.error(`${ERRORS.length} Validation errors:`);
-    for (const error of ERRORS) {
-      console.error(`  - ${error}`);
-    }
+  return { errors: ERRORS, warnings: WARNINGS };
+}
+
+async function main() {
+  const [, , networksPath = "registry"] = process.argv;
+
+  const { errors, warnings } = await validateUrls(networksPath);
+
+  printErrorsAndWarnings(errors, warnings);
+  if (errors.length > 0) {
     process.exit(1);
   }
-
-  console.log("All networks are valid");
 }
 
 await main();
