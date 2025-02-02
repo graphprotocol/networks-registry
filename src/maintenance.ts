@@ -26,14 +26,8 @@ ${errors.length > 0 ? `### ❌ ${errors.length} Error${errors.length > 1 ? "s" :
 
 ${warnings.length > 0 ? `### ⚠️ ${warnings.length} Warning${warnings.length > 1 ? "s" : ""}\n\n` + warnings.map((w) => `- [ ] ${w}`).join("\n") : "### ✅ No warnings found"}
 
-<!-- maintenance-stats
-errors: ${errors.length}
-warnings: ${warnings.length}
-date: ${new Date().toISOString()}
--->
-`;
-  const footer = `Generated at: ${new Date().toISOString()}
 [View workflow run](https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID})
+Generated at: ${new Date().toISOString()}
 Elapsed: ${((Date.now() - startTime) / 1000).toFixed(0)}s`;
 
   console.log(body);
@@ -48,35 +42,24 @@ Elapsed: ${((Date.now() - startTime) / 1000).toFixed(0)}s`;
 
     const existingIssue = issues.find((issue) => issue.title === issueTitle);
     if (existingIssue) {
-      const statsMatch = existingIssue.body?.match(
-        /<!-- maintenance-stats\nerrors: (\d+)\nwarnings: (\d+)/,
-      );
-      const errorDiff = statsMatch
-        ? errors.length - parseInt(statsMatch[1] ?? "0")
-        : errors.length;
-      const warningDiff = statsMatch
-        ? warnings.length - parseInt(statsMatch[2] ?? "0")
-        : warnings.length;
-
-      const comparisonText = `### 📊 Changes Since Last Run
-${errorDiff !== 0 ? `- Errors: ${errorDiff > 0 ? `+${errorDiff}` : errorDiff} (${errors.length} total)` : "- Errors: No change"}
-${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warningDiff} (${warnings.length} total)` : "- Warnings: No change"}`;
-
       await octokit.issues.update({
         owner,
         repo,
         assignees,
         issue_number: existingIssue.number,
-        body: `${body}\n\n${comparisonText}\n\n${footer}`,
+        body,
       });
 
       // Add a comment if there are new errors
-      if (errorDiff > 0) {
+      const newErrors = errors.filter((e) => !existingIssue.body?.includes(e));
+      if (newErrors.length > 0) {
         await octokit.issues.createComment({
           owner,
           repo,
           issue_number: existingIssue.number,
-          body: `🚨 ${errorDiff} new potential error${errorDiff > 1 ? "s" : ""} detected`,
+          body: `### 🚨 ${newErrors.length} new issue${
+            newErrors.length > 1 ? "s" : ""
+          }\n${newErrors.map((e) => `- [ ] ${e}`).join("\n")}`,
         });
       }
 
@@ -86,7 +69,7 @@ ${warningDiff !== 0 ? `- Warnings: ${warningDiff > 0 ? `+${warningDiff}` : warni
         owner,
         repo,
         title: issueTitle,
-        body: `${body}\n\n${footer}`,
+        body: body,
         assignees,
         labels: ["maintenance"],
       });
