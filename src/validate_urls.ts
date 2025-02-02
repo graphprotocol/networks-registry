@@ -1,5 +1,6 @@
 import { printErrorsAndWarnings } from "./print";
 import { Network } from "./types/registry";
+import { applyEnvVars } from "./utils/env";
 import { loadNetworks } from "./utils/fs";
 
 const ERRORS: string[] = [];
@@ -43,11 +44,8 @@ async function validateRpc(networks: Network[]) {
 
   await Promise.all(
     ethNetworks.map(async (network) => {
-      for (const rpcUrl of network.rpcUrls ?? []) {
-        if (rpcUrl.includes("{")) {
-          continue;
-        }
-
+      const rpcUrls = (network.rpcUrls ?? []).map(applyEnvVars).filter(Boolean);
+      for (const rpcUrl of rpcUrls) {
         try {
           const controller = new AbortController();
           const timeout = setTimeout(() => controller.abort(), TIMEOUT);
