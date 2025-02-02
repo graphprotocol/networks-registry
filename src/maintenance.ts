@@ -43,7 +43,7 @@ ${
 }
 
 [View workflow run](https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID})
-Generated at: ${new Date().toISOString()}
+Generated: ${new Date().toISOString().slice(0, 19).replace("T", " ")}
 Elapsed: ${((Date.now() - startTime) / 1000).toFixed(0)}s`;
 
   console.log(body);
