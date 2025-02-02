@@ -22,9 +22,25 @@ const startTime = Date.now();
 async function createOrUpdateIssue(errors: string[], warnings: string[]) {
   const body = `## Maintenance Report (${new Date().toISOString().split("T")[0]})
 
-${errors.length > 0 ? `### ❌ ${errors.length} Error${errors.length > 1 ? "s" : ""}\n\n` + errors.map((e) => `- [ ] ${e}`).join("\n") : "### ✅ No errors found"}
+${
+  errors.length > 0
+    ? `### ❌ ${errors.length} Error${errors.length > 1 ? "s" : ""}\n\n` +
+      errors
+        .sort()
+        .map((e) => `- [ ] ${e}`)
+        .join("\n")
+    : "### ✅ No errors found"
+}
 
-${warnings.length > 0 ? `### ⚠️ ${warnings.length} Warning${warnings.length > 1 ? "s" : ""}\n\n` + warnings.map((w) => `- [ ] ${w}`).join("\n") : "### ✅ No warnings found"}
+${
+  warnings.length > 0
+    ? `### ⚠️ ${warnings.length} Warning${warnings.length > 1 ? "s" : ""}\n\n` +
+      warnings
+        .sort()
+        .map((w) => `- [ ] ${w}`)
+        .join("\n")
+    : "### ✅ No warnings found"
+}
 
 [View workflow run](https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID})
 Generated at: ${new Date().toISOString()}
