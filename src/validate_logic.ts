@@ -114,25 +114,33 @@ function validateEvmRules(networks: Network[]) {
     if (isEvm) {
       if (network.firehose?.evmExtendedModel === undefined) {
         ERRORS.push(
-          `\`${network.id}\` - is EVM but missing required firehose.evmExtendedModel field`,
+          `\`${network.id}\` - EVM chain is missing firehose.evmExtendedModel field`,
         );
       }
 
       if (network.graphNode?.protocol !== "ethereum") {
         ERRORS.push(
-          `\`${network.id}\` - is EVM but graphNode.protocol is not "ethereum"`,
+          `\`${network.id}\` - EVM chain has graphNode.protocol!="ethereum"`,
         );
+      }
+
+      if (network.rpcUrls?.length === 0) {
+        WARNINGS.push(`\`${network.id}\` - has no RPC endpoints`);
+      }
+
+      if (network.apiUrls?.length === 0) {
+        WARNINGS.push(`\`${network.id}\` - has no API endpoints`);
       }
     } else {
       if (network.firehose?.evmExtendedModel !== undefined) {
         ERRORS.push(
-          `\`${network.id}\` - is non-EVM but has evmExtendedModel field which is not allowed`,
+          `\`${network.id}\` - non-EVM chain has evmExtendedModel field`,
         );
       }
 
       if (network.graphNode?.protocol === "ethereum") {
         ERRORS.push(
-          `\`${network.id}\` - is non-EVM but has graphNode.protocol="ethereum" which is not allowed`,
+          `\`${network.id}\` - non-EVM has graphNode.protocol="ethereum"`,
         );
       }
     }
@@ -155,18 +163,20 @@ function validateTestnets(networks: Network[]) {
     const mainnet = networks.find((n) => n.id === mainnetId.network);
     if (!mainnet) {
       ERRORS.push(
-        `Testnet \`${testnet.id}\` has unknown mainnet: \`${mainnetId.network}\``,
+        `\`${testnet.id}\` - this testnet has unknown mainnet: \`${mainnetId.network}\``,
       );
       continue;
     }
     if (JSON.stringify(mainnet.firehose) !== JSON.stringify(testnet.firehose)) {
       ERRORS.push(
-        `Testnet \`${testnet.id}\` has different firehose block type than mainnet \`${mainnet.id}\``,
+        `\`${testnet.id}\` - mismatching testnet/mainnet firehose block type`,
       );
     }
     if (testnet.networkType === "mainnet") {
       if (testnet.relations?.find((n) => n.kind === "testnetOf")) {
-        ERRORS.push(`Mainnet \`${testnet.id}\` can't have testnetOf relation`);
+        ERRORS.push(
+          `\`${testnet.id}\` - testnet can't have "testnetOf" relation`,
+        );
       }
     }
   }
@@ -188,7 +198,7 @@ function validateServices(networks: Network[]) {
       for (const url of services[serviceType] ?? []) {
         if (!ALLOWED_SG_PROVIDERS.some((provider) => url.includes(provider))) {
           ERRORS.push(
-            `\`${network.id}\` - invalid \`${serviceType}\` URL: only ${ALLOWED_SG_PROVIDERS.join(", ")} allowed right now`,
+            `\`${network.id}\` - invalid \`${serviceType}\` provider: ${url}`,
           );
         }
       }
@@ -199,7 +209,7 @@ function validateServices(networks: Network[]) {
       for (const url of services[serviceType] ?? []) {
         if (!ALLOWED_FH_PROVIDERS.some((provider) => url.includes(provider))) {
           ERRORS.push(
-            `\`${network.id}\` - invalid \`${serviceType}\` URL: only ${ALLOWED_FH_PROVIDERS.join(", ")} allowed right now`,
+            `\`${network.id}\` - invalid \`${serviceType}\` provider: ${url}`,
           );
         }
       }
@@ -256,13 +266,13 @@ async function validateWeb3Icons(networks: Network[]) {
         if (web3Variants.length === 2) {
           if (ourVariants.length === 1) {
             WARNINGS.push(
-              `\`${network.id}\` - web3icon should have both variants or none: \`${ourVariants.join(",")}\``,
+              `\`${network.id}\` - web3icon should have both variants or none \`${ourVariants.join(",")}\``,
             );
           }
         } else if (web3Variants.length === 1) {
           if (ourVariants.length !== 1 || ourVariants[0] !== web3Variants[0]) {
             ERRORS.push(
-              `\`${network.id}\` - web3icon should only have the variant: \`${web3Variants[0]}\``,
+              `\`${network.id}\` - web3icon should only have the variant \`${web3Variants[0]}\``,
             );
           }
         }
@@ -328,13 +338,13 @@ async function validateGraphNetworks(networks: Network[]) {
     );
     if (!graphNetwork) {
       ERRORS.push(
-        `Network ${network.id} is active in registry but not on the graph network`,
+        `\`${network.id}\` - has indexing rewards in registry but not on The Graph Network`,
       );
       continue;
     }
     if (graphNetwork.id !== network.caip2Id) {
       ERRORS.push(
-        `Network ${network.id} has non-matching chain id on the graph network: ${graphNetwork?.id} vs ${network.caip2Id}`,
+        `\`${network.id}\` - has non-matching chain id on the graph network: ${graphNetwork?.id} vs ${network.caip2Id}`,
       );
     }
   }
@@ -358,13 +368,13 @@ async function validateEthereumList(networks: Network[]) {
     const chain = chains.find((c) => c.chainId === ourId);
     if (!chain) {
       ERRORS.push(
-        `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` does not exist in ethereum chain registry`,
+        `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` does not exist in ethereum list`,
       );
       continue;
     }
     if (chain.nativeCurrency.symbol !== network.nativeToken) {
       WARNINGS.push(
-        `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` has different native token symbol in ethereum chain registry: \`${chain.nativeCurrency.symbol}\` vs \`${network.nativeToken}\``,
+        `\`${network.id}\` - native token mismatch in ethereum list: \`${chain.nativeCurrency.symbol}\` vs \`${network.nativeToken}\``,
       );
     }
     if (chain.parent?.type === "L2") {
@@ -373,7 +383,7 @@ async function validateEthereumList(networks: Network[]) {
       )?.network;
       if (!ourParent) {
         WARNINGS.push(
-          `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` is an L2 chain in ethereum chain registry but has no l2Of relation`,
+          `\`${network.id}\` - has L2 parent in ethereum list but has no "l2Of" relation in registry`,
         );
         continue;
       }
@@ -383,7 +393,7 @@ async function validateEthereumList(networks: Network[]) {
       const actualParentChainId = chain.parent.chain.replace("-", ":");
       if (actualParentChainId !== parentChainId) {
         WARNINGS.push(
-          `\`${network.id}\` - CAIP-2 id \`${network.caip2Id}\` has different L2 parent chain in ethereum chain registry: \`${actualParentChainId}\` vs \`${parentChainId}\``,
+          `\`${network.id}\` - parent chain mismatch in ethereum list: \`${actualParentChainId}\` vs \`${parentChainId}\``,
         );
       }
     }
