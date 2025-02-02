@@ -6,6 +6,7 @@ import { loadNetworks } from "./utils/fs";
 const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
 const TIMEOUT = 10000;
+const FETCH_BATCH_SIZE = 30;
 
 async function testURL({ url, networkId }: { url: string; networkId: string }) {
   try {
@@ -20,100 +21,92 @@ async function testURL({ url, networkId }: { url: string; networkId: string }) {
     clearTimeout(timeout);
 
     if (!response.ok) {
-      console.warn(
-        `  ${networkId} - URL returned an error: ${url} - ${response.status}`,
+      console.log(
+        `  ${networkId} - URL returned an error, which is probably fine: ${url} - ${response.status}`,
       );
     } else {
       console.log(`  ${networkId} - URL is valid and accessible: ${url}`);
     }
-  } catch (error) {
+  } catch (e) {
     // we only care about thrown connection errors
-    console.error(
-      `  ${networkId} - Domain unreachable: ${url} - Error: ${error}`,
-    );
+    console.error(`  ${networkId} - exception at ${url}: ${e.message}`);
     ERRORS.push(`\`${networkId}\` - unreachable: ${url}`);
   }
 }
 
-async function validateRpc(networks: Network[]) {
-  process.stdout.write("Validating RPC genesis blocks ... ");
+async function testRpc({ network, url }: { network: Network; url: string }) {
+  try {
+    const urlExpanded = applyEnvVars(url);
+    if (!urlExpanded) {
+      return;
+    }
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), TIMEOUT);
+    const response = await fetch(urlExpanded, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        jsonrpc: "2.0",
+        id: 1,
+        method: "eth_getBlockByNumber",
+        params: [`0x${network.genesis?.height.toString(16)}`, false],
+      }),
+      signal: controller.signal,
+    });
 
-  const ethNetworks = networks.filter(
-    (n) => n.genesis && n.caip2Id.startsWith("eip155"),
-  );
+    clearTimeout(timeout);
 
-  await Promise.all(
-    ethNetworks.map(async (network) => {
-      const rpcUrls = (network.rpcUrls ?? []).map(applyEnvVars).filter(Boolean);
-      for (const rpcUrl of rpcUrls) {
-        try {
-          const controller = new AbortController();
-          const timeout = setTimeout(() => controller.abort(), TIMEOUT);
+    if (!response.ok) {
+      const err = `\`${network.id}\` - failed to query RPC endpoint: ${url}`;
+      ERRORS.push(err);
+      console.error(err);
+      return;
+    }
 
-          const response = await fetch(rpcUrl, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              jsonrpc: "2.0",
-              id: 1,
-              method: "eth_getBlockByNumber",
-              params: [`0x${network.genesis?.height.toString(16)}`, false],
-            }),
-            signal: controller.signal,
-          });
+    const data = await response.json();
+    if (data.error || !data.result) {
+      const err = `\`${network.id}\` - empty response from RPC endpoint: ${url}`;
+      WARNINGS.push(err);
+      console.warn(err);
+      return;
+    }
 
-          clearTimeout(timeout);
+    const genesisHash = data.result.hash;
+    if (genesisHash.toLowerCase() !== network.genesis?.hash.toLowerCase()) {
+      const err = `\`${network.id}\` - mismatched genesis hash at RPC endpoint: ${url}`;
+      ERRORS.push(err);
+      console.error(err);
+      return;
+    }
+    console.log(`  ${network.id}: genesis validated at ${url}: ${genesisHash}`);
+  } catch (e) {
+    if (e instanceof Error && e.name === "AbortError") {
+      ERRORS.push(`\`${network.id}\` - RPC request timed out: ${url}`);
+    } else {
+      ERRORS.push(`\`${network.id}\` - unreachable RPC endpoint: ${url}`);
+    }
+    console.error(`\`${network.id}\` - exception at ${url}: ${e.message}`);
+  }
+}
 
-          if (!response.ok) {
-            ERRORS.push(
-              `\`${network.id}\` - failed to query RPC endpoint: ${rpcUrl}`,
-            );
-            continue;
-          }
-          const data = await response.json();
-
-          if (data.error || !data.result) {
-            WARNINGS.push(
-              `\`${network.id}\` - empty response from RPC endpoint: ${rpcUrl}`,
-            );
-            continue;
-          }
-
-          const genesisHash = data.result.hash;
-          if (
-            genesisHash.toLowerCase() !== network.genesis?.hash.toLowerCase()
-          ) {
-            ERRORS.push(
-              `\`${network.id}\` - mismatched genesis hash at RPC endpoint: ${rpcUrl}`,
-            );
-          }
-          console.log(
-            `  ${network.id}: genesis hash validated at ${rpcUrl}: ${genesisHash}`,
-          );
-        } catch (e) {
-          if (e instanceof Error && e.name === "AbortError") {
-            ERRORS.push(
-              `\`${network.id}\` - RPC request timed out after 10s: ${rpcUrl}`,
-            );
-          } else {
-            ERRORS.push(
-              `\`${network.id}\` - exception querying RPC endpoint: ${rpcUrl}`,
-            );
-          }
-        }
-      }
-    }),
-  );
+async function validateRpcs(networks: Network[]) {
+  process.stdout.write("Validating RPC genesis blocks ... \n");
+  const urls = networks
+    .filter((n) => n.genesis && n.caip2Id.startsWith("eip155"))
+    .flatMap((n) => (n.rpcUrls ?? []).map((url) => ({ url, network: n })));
+  for (let i = 0; i < urls.length; i += FETCH_BATCH_SIZE) {
+    const batch = urls.slice(i, i + FETCH_BATCH_SIZE);
+    await Promise.allSettled(batch.map(testRpc));
+  }
 
   process.stdout.write("done\n");
 }
 
 async function validateDomains(networks: Network[]) {
   process.stdout.write("Validating URLs ... ");
-  const batchSize = 30;
   const urls = networks.flatMap((n) => {
     const urls = [
-      n.rpcUrls ?? [],
+      // n.rpcUrls ?? [],
       n.explorerUrls ?? [],
       n.docsUrl ?? [],
       (n.apiUrls ?? []).map((u) => u.url),
@@ -122,8 +115,8 @@ async function validateDomains(networks: Network[]) {
   });
 
   console.log(`Found ${urls.length} URLs`);
-  for (let i = 0; i < urls.length; i += batchSize) {
-    const batch = urls.slice(i, i + batchSize);
+  for (let i = 0; i < urls.length; i += FETCH_BATCH_SIZE) {
+    const batch = urls.slice(i, i + FETCH_BATCH_SIZE);
     await Promise.allSettled(batch.map(testURL));
   }
 
@@ -141,7 +134,7 @@ export async function validateUrls(networksPath: string) {
   await validateDomains(networks);
   // sleep a bit for rate-limits
   await new Promise((resolve) => setTimeout(resolve, 3000));
-  await validateRpc(networks);
+  await validateRpcs(networks);
 
   return {
     errors: ERRORS.map((e) => `[urls] ${e}`),
