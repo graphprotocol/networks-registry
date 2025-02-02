@@ -8,6 +8,30 @@ const WARNINGS: string[] = [];
 const TIMEOUT = 10000;
 const FETCH_BATCH_SIZE = 30;
 
+// calls processor function on each item of items, in parallel, up to batchSize items at a time
+async function processQueue<T>(
+  items: T[],
+  processor: (item: T) => Promise<void>,
+  batchSize: number = FETCH_BATCH_SIZE,
+) {
+  console.log(`Processing queue with ${items.length} items`);
+  const queue = [...items];
+  const inProgress = new Set<Promise<void>>();
+
+  while (queue.length > 0 || inProgress.size > 0) {
+    while (inProgress.size < batchSize && queue.length > 0) {
+      const next = queue.shift()!;
+      const promise = processor(next).then(() => {
+        inProgress.delete(promise);
+      });
+      inProgress.add(promise);
+    }
+    if (inProgress.size > 0) {
+      await Promise.race(inProgress);
+    }
+  }
+}
+
 async function testURL({ url, networkId }: { url: string; networkId: string }) {
   try {
     const controller = new AbortController();
@@ -94,32 +118,24 @@ async function validateRpcs(networks: Network[]) {
   const urls = networks
     .filter((n) => n.genesis && n.caip2Id.startsWith("eip155"))
     .flatMap((n) => (n.rpcUrls ?? []).map((url) => ({ url, network: n })));
-  for (let i = 0; i < urls.length; i += FETCH_BATCH_SIZE) {
-    const batch = urls.slice(i, i + FETCH_BATCH_SIZE);
-    await Promise.allSettled(batch.map(testRpc));
-  }
 
+  await processQueue(urls, testRpc);
   process.stdout.write("done\n");
 }
 
 async function validateDomains(networks: Network[]) {
-  process.stdout.write("Validating URLs ... ");
-  const urls = networks.flatMap((n) => {
-    const urls = [
+  process.stdout.write("Validating URLs ... \n");
+  const urls = networks.flatMap((n) =>
+    [
       // n.rpcUrls ?? [],
       n.explorerUrls ?? [],
       n.docsUrl ?? [],
       (n.apiUrls ?? []).map((u) => u.url),
-    ].flat();
-    return urls.map((url) => ({ url, networkId: n.id }));
-  });
-
-  console.log(`Found ${urls.length} URLs`);
-  for (let i = 0; i < urls.length; i += FETCH_BATCH_SIZE) {
-    const batch = urls.slice(i, i + FETCH_BATCH_SIZE);
-    await Promise.allSettled(batch.map(testURL));
-  }
-
+    ]
+      .flat()
+      .map((url) => ({ url, networkId: n.id })),
+  );
+  await processQueue(urls, testURL);
   process.stdout.write("done\n");
 }
 
@@ -132,8 +148,6 @@ export async function validateUrls(networksPath: string) {
   }
 
   await validateDomains(networks);
-  // sleep a bit for rate-limits
-  await new Promise((resolve) => setTimeout(resolve, 3000));
   await validateRpcs(networks);
 
   return {
