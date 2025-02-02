@@ -6,7 +6,6 @@ import { validateUrls } from "./validate_urls";
 import { Octokit } from "@octokit/rest";
 
 const issueTitle = "🔍 Daily Maintenance Report";
-const assignees = ["YaroShkvorets"];
 const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
 if (!owner || !repo) {
   console.error(
@@ -43,7 +42,7 @@ ${
 }
 
 [View workflow run](https://github.com/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID})
-Generated: ${new Date().toISOString().slice(0, 19).replace("T", " ")}
+Generated: ${new Date().toISOString().slice(0, 19).replace("T", " ")} UTC
 Elapsed: ${((Date.now() - startTime) / 1000).toFixed(0)}s`;
 
   console.log(body);
@@ -61,7 +60,6 @@ Elapsed: ${((Date.now() - startTime) / 1000).toFixed(0)}s`;
       await octokit.issues.update({
         owner,
         repo,
-        assignees,
         issue_number: existingIssue.number,
         body,
       });
@@ -86,7 +84,6 @@ Elapsed: ${((Date.now() - startTime) / 1000).toFixed(0)}s`;
         repo,
         title: issueTitle,
         body: body,
-        assignees,
         labels: ["maintenance"],
       });
       console.log(`Created new issue #${newIssue.number}`);
