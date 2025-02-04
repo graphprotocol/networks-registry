@@ -1,0 +1,30 @@
+{
+  "id": "solana-accounts",
+  "shortName": "Solana Accounts",
+  "fullName": "Solana Accounts",
+  "aliases": ["solana-accounts-mainnet"],
+  "caip2Id": "solana:Accounts",
+  "explorerUrls": [],
+  "rpcUrls": [],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "services": {
+    "subgraphs": [],
+    "sps": [],
+    "firehose": [],
+    "substreams": ["accounts.mainnet.sol.streamingfast.io:443"]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "SOL",
+  "docsUrl": "https://www.streamingfast.io/solana-data-stream",
+  "genesis": {
+    "hash": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.solana.type.v1.AccountBlock",
+    "bufUrl": "https://buf.build/streamingfast/firehose-solana",
+    "bytesEncoding": "base58"
+  },
+  "icon": { "web3Icons": { "name": "solana" } }
+}
