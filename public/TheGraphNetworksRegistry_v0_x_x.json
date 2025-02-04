@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.34",
+  "version": "0.6.35",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-04T15:08:45.300Z",
+  "updatedAt": "2025-02-04T18:54:01.355Z",
   "networks": [
     {
       "id": "mainnet",
@@ -287,10 +287,10 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.testnet.japanopenchain.org/"
+        "https://explorer.testnet.japanopenchain.org"
       ],
       "rpcUrls": [
-        "https://rpc-1.japanopenchain.org:8545/"
+        "https://rpc-1.testnet.japanopenchain.org:8545"
       ],
       "apiUrls": [
         {
@@ -4717,7 +4717,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.inkonchain.com/"
+        "https://explorer.inkonchain.com"
       ],
       "apiUrls": [
         {
@@ -4736,7 +4736,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.inkonchain.com/",
+      "docsUrl": "https://docs.inkonchain.com",
       "genesis": {
         "hash": "0x23a2658170ba70d014ba0d0d2709f8fbfe2fa660cd868c5f282f991eecbe38ee",
         "height": 0
@@ -5101,7 +5101,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.inkonchain.com/",
+      "docsUrl": "https://docs.inkonchain.com",
       "genesis": {
         "hash": "0xe5fd5cf0be56af58ad5751b401410d6b7a09d830fa459789746a3d0dd1c79834",
         "height": 0
@@ -7045,6 +7045,44 @@
       },
       "firehose": {
         "blockType": "sf.solana.type.v1.Block",
+        "bufUrl": "https://buf.build/streamingfast/firehose-solana",
+        "bytesEncoding": "base58"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "solana"
+        }
+      }
+    },
+    {
+      "id": "solana-accounts",
+      "shortName": "Solana Accounts",
+      "fullName": "Solana Accounts",
+      "aliases": [
+        "solana-accounts-mainnet"
+      ],
+      "caip2Id": "solana:Accounts",
+      "explorerUrls": [],
+      "rpcUrls": [],
+      "apiUrls": [],
+      "networkType": "mainnet",
+      "services": {
+        "subgraphs": [],
+        "sps": [],
+        "firehose": [],
+        "substreams": [
+          "accounts.mainnet.sol.streamingfast.io:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "SOL",
+      "docsUrl": "https://www.streamingfast.io/solana-data-stream",
+      "genesis": {
+        "hash": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.solana.type.v1.AccountBlock",
         "bufUrl": "https://buf.build/streamingfast/firehose-solana",
         "bytesEncoding": "base58"
       },

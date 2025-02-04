@@ -12,9 +12,7 @@
     "subgraphs": [],
     "sps": [],
     "firehose": [],
-    "substreams": [
-      "accounts.mainnet.sol.streamingfast.io:443"
-    ]
+    "substreams": ["accounts.mainnet.sol.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "SOL",
