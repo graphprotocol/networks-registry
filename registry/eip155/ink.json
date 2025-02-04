@@ -24,6 +24,7 @@
       "evmExtendedModel": true,
       "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
       "bytesEncoding": "hex"
-    }
+    },
+    "icon": { "web3Icons": { "name": "ink" } }
   }
   
