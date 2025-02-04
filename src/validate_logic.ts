@@ -23,6 +23,7 @@ function validateFilenames(networksPath: string) {
 const ALLOWED_DUPLICATES: string[] = [
   "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
   "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+  "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
 ];
 
 function validateUniqueness(networks: Network[]) {

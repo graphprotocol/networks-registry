@@ -6,7 +6,7 @@
   "caip2Id": "eip155:10081",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.testnet.japanopenchain.org"],
-  "rpcUrls": ["https://rpc-1.japanopenchain.org:8545"],
+  "rpcUrls": ["https://rpc-1.testnet.japanopenchain.org:8545"],
   "apiUrls": [
     {
       "url": "https://explorer.testnet.japanopenchain.org/api",
