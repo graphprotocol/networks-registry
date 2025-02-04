@@ -9,7 +9,10 @@
   "apiUrls": [
     { "url": "https://zetachain.blockscout.com/api", "kind": "etherscan" }
   ],
-  "rpcUrls": ["https://zetachain-evm.blockpi.network/v1/rpc/public"],
+  "rpcUrls": [
+    "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
+    "https://zetachain-mainnet.public.blastapi.io"
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
