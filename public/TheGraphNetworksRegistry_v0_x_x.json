@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.35",
+  "version": "0.6.36",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-04T18:54:01.355Z",
+  "updatedAt": "2025-02-04T19:57:30.191Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2710,7 +2710,7 @@
         "https://kavascan.io"
       ],
       "rpcUrls": [
-        "https://evm.kava.io",
+        "https://rpc.ankr.com/kava_evm",
         "https://kava.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [],
@@ -2721,7 +2721,7 @@
       "docsUrl": "https://docs.kava.io",
       "genesis": {
         "hash": "0x9d2af876309bb9174604004a813dcfee94f4947b08c5bb4c1a042f318488851e",
-        "height": 1
+        "height": 0
       },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -4971,7 +4971,8 @@
         }
       ],
       "rpcUrls": [
-        "https://zetachain-evm.blockpi.network/v1/rpc/public"
+        "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
+        "https://zetachain-mainnet.public.blastapi.io"
       ],
       "services": {
         "subgraphs": [
@@ -5283,7 +5284,12 @@
         }
       ],
       "networkType": "testnet",
-      "relations": [],
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "berachain"
+        }
+      ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -5301,6 +5307,48 @@
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "berachain"
+        }
+      }
+    },
+    {
+      "id": "berachain",
+      "shortName": "Berachain",
+      "fullName": "Berachain Mainnet",
+      "aliases": [
+        "evm-80094",
+        "berachain-mainnet"
+      ],
+      "caip2Id": "eip155:80094",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "BERA",
+      "docsUrl": "https://docs.berachain.com/",
+      "genesis": {
+        "hash": "0xd57819422128da1c44339fc7956662378c17e2213e669b427ac91cd11dfcfb38",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "berachain"
+        }
       }
     },
     {
