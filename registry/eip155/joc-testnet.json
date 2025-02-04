@@ -1,0 +1,33 @@
+{
+    "id": "joc-testnet",
+    "shortName": "JOC",
+  "fullName": "Japan Open Chain Testnet",
+  "aliases": ["evm-10081"],
+    "caip2Id": "eip155:10081",
+    "graphNode": { "protocol": "ethereum" },
+    "explorerUrls": ["https://explorer.testnet.japanopenchain.org/"],
+    "rpcUrls": ["https://rpc-1.japanopenchain.org:8545/"],
+    "apiUrls": [
+      { "url": "https://explorer.testnet.japanopenchain.org/api", "kind": "blockscout" }
+    ],
+    "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+    "networkType": "testnet",
+    "relations": [
+      { "kind": "testnetOf", "network": "joc" }
+    ],
+    "issuanceRewards": false,
+    "nativeToken": "JOCT",
+    "docsUrl": "https://www.japanopenchain.org/en/developer",
+    "genesis": {
+      "hash": "0x0fb7b4779aae36dc557227283f182bc9a3b232c07fae4a2553734c5817df1d06",
+      "height": 0
+    },
+    "firehose": {
+      "blockType": "sf.ethereum.type.v2.Block",
+      "evmExtendedModel": false,
+      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+      "bytesEncoding": "hex"
+    },
+    "icon": { "web3Icons": { "name": "japan-open-chain" } }
+  }
+  

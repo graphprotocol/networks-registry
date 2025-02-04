@@ -1,0 +1,30 @@
+{
+    "id": "ink",
+    "shortName": "Ink",
+    "fullName": "Ink Mainnet",
+    "aliases": ["evm-57073", "ink-mainnet"],
+    "caip2Id": "eip155:57073",
+    "graphNode": { "protocol": "ethereum" },
+    "explorerUrls": ["https://explorer.inkonchain.com/"],
+    "apiUrls": [
+      { "url": "https://explorer.inkonchain.com/api", "kind": "blockscout" }
+    ],
+    "rpcUrls": ["https://rpc-gel.inkonchain.com"],
+    "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+    "networkType": "mainnet",
+    "issuanceRewards": false,
+    "nativeToken": "ETH",
+    "docsUrl": "https://docs.inkonchain.com/",
+    "genesis": {
+      "hash": "0x23a2658170ba70d014ba0d0d2709f8fbfe2fa660cd868c5f282f991eecbe38ee",
+      "height": 0
+    },
+    "firehose": {
+      "blockType": "sf.ethereum.type.v2.Block",
+      "evmExtendedModel": true,
+      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+      "bytesEncoding": "hex"
+    },
+    "icon": { "web3Icons": { "name": "ink" } }
+  }
+  
