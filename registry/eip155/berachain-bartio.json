@@ -15,7 +15,9 @@
     }
   ],
   "networkType": "testnet",
-  "relations": [],
+  "relations": [
+    { "kind": "testnetOf", "network": "berachain" }
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "BERA",
@@ -29,5 +31,6 @@
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "berachain" } }
 }
