@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.33",
+  "version": "0.6.34",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-01T04:44:09.036Z",
+  "updatedAt": "2025-02-04T15:08:45.300Z",
   "networks": [
     {
       "id": "mainnet",
@@ -276,6 +276,60 @@
       }
     },
     {
+      "id": "joc-testnet",
+      "shortName": "JOC",
+      "fullName": "Japan Open Chain Testnet",
+      "aliases": [
+        "evm-10081"
+      ],
+      "caip2Id": "eip155:10081",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.testnet.japanopenchain.org/"
+      ],
+      "rpcUrls": [
+        "https://rpc-1.japanopenchain.org:8545/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer.testnet.japanopenchain.org/api",
+          "kind": "blockscout"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "joc"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "JOCT",
+      "docsUrl": "https://www.japanopenchain.org/en/developer",
+      "genesis": {
+        "hash": "0x0fb7b4779aae36dc557227283f182bc9a3b232c07fae4a2553734c5817df1d06",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "japan-open-chain"
+        }
+      }
+    },
+    {
       "id": "monad-testnet",
       "shortName": "Monad",
       "fullName": "Monad Testnet",
@@ -478,7 +532,7 @@
       },
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://polygon.technology/polygon-zkevm",
+      "docsUrl": "https://docs.polygon.technology/zkEVM",
       "genesis": {
         "hash": "0x81005434635456a16f74ff7023fbe0bf423abbc8a8deb093ffff455c0ad3b741",
         "height": 0
@@ -2731,7 +2785,7 @@
       },
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://polygon.technology/polygon-zkevm",
+      "docsUrl": "https://docs.polygon.technology/zkEVM",
       "genesis": {
         "hash": "0x676c1a76a6c5855a32bdf7c61977a0d1510088a4eeac1330466453b3d08b60b9",
         "height": 0
@@ -4651,6 +4705,55 @@
       }
     },
     {
+      "id": "ink",
+      "shortName": "Ink",
+      "fullName": "Ink Mainnet",
+      "aliases": [
+        "evm-57073",
+        "ink-mainnet"
+      ],
+      "caip2Id": "eip155:57073",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.inkonchain.com/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer.inkonchain.com/api",
+          "kind": "blockscout"
+        }
+      ],
+      "rpcUrls": [
+        "https://rpc-gel.inkonchain.com"
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.inkonchain.com/",
+      "genesis": {
+        "hash": "0x23a2658170ba70d014ba0d0d2709f8fbfe2fa660cd868c5f282f991eecbe38ee",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ink"
+        }
+      }
+    },
+    {
       "id": "linea-sepolia",
       "shortName": "Linea",
       "secondName": "Sepolia",
@@ -4956,6 +5059,66 @@
       }
     },
     {
+      "id": "ink-sepolia",
+      "shortName": "Ink",
+      "secondName": "Sepolia",
+      "fullName": "Ink Sepolia",
+      "aliases": [
+        "evm-763373",
+        "ink-testnet"
+      ],
+      "caip2Id": "eip155:763373",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer-sepolia.inkonchain.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer-sepolia.inkonchain.com/api",
+          "kind": "blockscout"
+        }
+      ],
+      "rpcUrls": [
+        "https://rpc-gel-sepolia.inkonchain.com"
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "ink"
+        },
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.inkonchain.com/",
+      "genesis": {
+        "hash": "0xe5fd5cf0be56af58ad5751b401410d6b7a09d830fa459789746a3d0dd1c79834",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ink"
+        }
+      }
+    },
+    {
       "id": "zora",
       "shortName": "Zora",
       "fullName": "Zora Network",
@@ -5184,6 +5347,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "japan-open-chain"
+        }
       }
     },
     {
