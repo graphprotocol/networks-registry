@@ -16,7 +16,7 @@
   },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
-    "evmExtendedModel": false,
+    "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
   },
