@@ -1,0 +1,33 @@
+{
+    "id": "ink-sepolia",
+    "shortName": "Ink",
+    "fullName": "Ink Sepolia",
+    "aliases": ["evm-763373", "ink-testnet"],
+    "caip2Id": "eip155:763373",
+    "graphNode": { "protocol": "ethereum" },
+    "explorerUrls": ["https://explorer-sepolia.inkonchain.com"],
+    "apiUrls": [
+      { "url": "https://explorer-sepolia.inkonchain.com/api", "kind": "blockscout" }
+    ],
+    "rpcUrls": ["https://rpc-gel-sepolia.inkonchain.com"],
+    "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+    "networkType": "testnet",
+    "relations": [
+        { "kind": "testnetOf", "network": "ink" },
+        { "kind": "l2Of", "network": "sepolia" }
+    ],
+    "issuanceRewards": false,
+    "nativeToken": "ETH",
+    "docsUrl": "https://docs.inkonchain.com/",
+    "genesis": {
+      "hash": "0xe5fd5cf0be56af58ad5751b401410d6b7a09d830fa459789746a3d0dd1c79834",
+      "height": 0
+    },
+    "firehose": {
+      "blockType": "sf.ethereum.type.v2.Block",
+      "evmExtendedModel": true,
+      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+      "bytesEncoding": "hex"
+    }
+  }
+  
