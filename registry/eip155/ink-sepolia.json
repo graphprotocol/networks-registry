@@ -1,6 +1,7 @@
 {
     "id": "ink-sepolia",
     "shortName": "Ink",
+    "secondName": "Sepolia",
     "fullName": "Ink Sepolia",
     "aliases": ["evm-763373", "ink-testnet"],
     "caip2Id": "eip155:763373",
