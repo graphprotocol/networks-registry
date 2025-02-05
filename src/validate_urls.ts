@@ -141,7 +141,7 @@ async function testRpc({
     clearTimeout(timeout);
 
     if (!response.ok) {
-      const err = `\`${network.id}\` - failed to query RPC endpoint: ${url}`;
+      const err = `\`${network.id}\` - response not ok from RPC endpoint: ${url}`;
       ERRORS.push(err);
       console.error(err + " - " + response.statusText);
       return false;
@@ -149,7 +149,7 @@ async function testRpc({
 
     const data = await response.json();
     if (data.error || !data.result) {
-      const err = `\`${network.id}\` - empty response from RPC endpoint: ${url}`;
+      const err = `\`${network.id}\` - non-archive RPC endpoint: ${url}`;
       WARNINGS.push(err);
       console.warn(err);
       return true; //consider it valid

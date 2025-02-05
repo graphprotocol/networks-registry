@@ -40,38 +40,38 @@ async function validateSingleEndpoint(
     if (
       ValidEncodingMap[info.blockIdEncoding] !== network.firehose?.bytesEncoding
     ) {
-      ERRORS.push(
-        `\`${network.id}\` - endpoint \`${endpoint}\` has different \`bytesEncoding\`: Registry: \`${network.firehose?.bytesEncoding}\`, Firehose: \`${info.blockIdEncoding}\``,
-      );
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`bytesEncoding\``;
+      ERRORS.push(err);
+      console.error(err);
     }
     if (
       info.blockFeatures?.includes("extended") &&
       !network.firehose?.evmExtendedModel
     ) {
-      ERRORS.push(
-        `\`${network.id}\` - endpoint \`${endpoint}\` has different \`evmExtendedModel\`: Registry: \`${network.firehose?.evmExtendedModel}\`, Firehose: \`${info.blockFeatures}\``,
-      );
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`evmExtendedModel\``;
+      ERRORS.push(err);
+      console.error(err);
     }
     if (
       info.blockFeatures?.includes("base") &&
       network.firehose?.evmExtendedModel
     ) {
-      ERRORS.push(
-        `\`${network.id}\` - endpoint ${endpoint} has different \`evmExtendedModel\`: Registry: \`${network.firehose?.evmExtendedModel}\`, Firehose: \`${info.blockFeatures}\``,
-      );
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`evmExtendedModel\``;
+      ERRORS.push(err);
+      console.error(err);
     }
     if (
       info.blockFeatures?.includes("hybrid") &&
       !network.firehose?.evmExtendedModel
     ) {
-      ERRORS.push(
-        `\`${network.id}\` - endpoint ${endpoint} has different \`evmExtendedModel\`: Registry: \`${network.firehose?.evmExtendedModel}\`, Firehose: \`${info.blockFeatures}\``,
-      );
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`evmExtendedModel\``;
+      ERRORS.push(err);
+      console.error(err);
     }
     if (!network.genesis?.hash?.includes(info.firstStreamableBlockId)) {
-      ERRORS.push(
-        `\`${network.id}\` - endpoint ${endpoint} has different \`firstStreamableBlockId\`: Registry: \`${network.genesis?.hash}\`, Firehose: \`${info.firstStreamableBlockId}\``,
-      );
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`firstStreamableBlockId\``;
+      ERRORS.push(err);
+      console.error(err);
     }
   } catch (error) {
     if (error instanceof Error) {
