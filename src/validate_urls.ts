@@ -142,8 +142,8 @@ async function testRpc({
 
     if (!response.ok) {
       const err = `\`${network.id}\` - failed to query RPC endpoint: ${url}`;
-      WARNINGS.push(err);
-      console.error(err);
+      ERRORS.push(err);
+      console.error(err + " - " + response.statusText);
       return false;
     }
 
