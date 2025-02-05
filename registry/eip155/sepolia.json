@@ -13,7 +13,8 @@
     "https://sepolia.otterscan.io"
   ],
   "rpcUrls": [
-    "https://rpc.sepolia.org",
+    "https://rpc-sepolia.rockx.com",
+    "https://sepolia.gateway.tenderly.co",
     "https://sepolia.rpc.pinax.network/v1/{PINAX_API_KEY}",
     "https://sepolia.infura.io/v3/${INFURA_API_KEY}"
   ],
