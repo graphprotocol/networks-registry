@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.36",
+  "version": "0.6.37",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-04T19:57:30.191Z",
+  "updatedAt": "2025-02-06T14:52:20.515Z",
   "networks": [
     {
       "id": "mainnet",
@@ -636,7 +636,8 @@
         "https://sepolia.otterscan.io"
       ],
       "rpcUrls": [
-        "https://rpc.sepolia.org",
+        "https://rpc-sepolia.rockx.com",
+        "https://sepolia.gateway.tenderly.co",
         "https://sepolia.rpc.pinax.network/v1/{PINAX_API_KEY}",
         "https://sepolia.infura.io/v3/${INFURA_API_KEY}"
       ],
@@ -5326,6 +5327,18 @@
       "graphNode": {
         "protocol": "ethereum"
       },
+      "rpcUrls": [
+        "https://rpc.berachain.com/"
+      ],
+      "explorerUrls": [
+        "https://berascan.com/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.berascan.com/api",
+          "kind": "etherscan"
+        }
+      ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -5334,7 +5347,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "BERA",
-      "docsUrl": "https://docs.berachain.com/",
+      "docsUrl": "https://docs.berachain.com",
       "genesis": {
         "hash": "0xd57819422128da1c44339fc7956662378c17e2213e669b427ac91cd11dfcfb38",
         "height": 0
