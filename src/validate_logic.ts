@@ -420,7 +420,7 @@ export async function validateLogic(networksPath: string) {
   validateServices(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
-  // await validateGraphNetworks(networks);       // uncomment when "mode" glitch is fixed
+  await validateGraphNetworks(networks);
   await validateEthereumList(networks);
 
   return {
