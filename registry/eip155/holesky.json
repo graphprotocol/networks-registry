@@ -14,7 +14,7 @@
   ],
   "rpcUrls": [
     "https://ethereum-holesky-rpc.publicnode.com",
-    "https://rpc.holesky.ethpandaops.io",
+    "https://rpc-holesky.rockx.com",
     "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [

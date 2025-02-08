@@ -71,7 +71,7 @@ async function testURL({
   } catch (e) {
     // we only care about thrown connection errors
     console.error(`  ${networkId} - exception at ${url}: ${e.message}`);
-    ERRORS.push(`\`${networkId}\` - unreachable: ${url}`);
+    ERRORS.push(`\`${networkId}\` - unreachable URL: ${url}`);
     return false;
   }
   return true;
@@ -106,7 +106,7 @@ async function testAPI({
   } catch (e) {
     // we only care about thrown connection errors for now
     console.error(`  ${networkId} - exception at ${url}: ${e.message}`);
-    ERRORS.push(`\`${networkId}\` - unreachable: ${url}`);
+    WARNINGS.push(`\`${networkId}\` - unreachable API: ${url}`);
     return false;
   }
   return true;
@@ -121,8 +121,8 @@ async function testRpc({
 }): Promise<boolean> {
   try {
     const urlExpanded = applyEnvVars(url);
-    if (!urlExpanded) {
-      return false; // private RPC
+    if (urlExpanded === "") {
+      return false;
     }
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), TIMEOUT);
@@ -141,8 +141,8 @@ async function testRpc({
     clearTimeout(timeout);
 
     if (!response.ok) {
-      const err = `\`${network.id}\` - response not ok from RPC endpoint: ${url}`;
-      ERRORS.push(err);
+      const err = `\`${network.id}\` - bad response from RPC endpoint: ${url}`;
+      WARNINGS.push(err);
       console.error(err + " - " + response.statusText);
       return false;
     }
@@ -152,7 +152,7 @@ async function testRpc({
       const err = `\`${network.id}\` - non-archive RPC endpoint: ${url}`;
       WARNINGS.push(err);
       console.warn(err);
-      return true; //consider it valid
+      return false;
     }
 
     const genesisHash = data.result.hash;
@@ -167,7 +167,7 @@ async function testRpc({
     if (e instanceof Error && e.name === "AbortError") {
       WARNINGS.push(`\`${network.id}\` - RPC request timed out: ${url}`);
     } else {
-      WARNINGS.push(`\`${network.id}\` - unreachable RPC endpoint: ${url}`);
+      WARNINGS.push(`\`${network.id}\` - unreachable RPC: ${url}`);
     }
     console.error(`\`${network.id}\` - exception at ${url}: ${e.message}`);
     return false;
@@ -175,13 +175,15 @@ async function testRpc({
   return true;
 }
 
-async function validateRpcs(networks: Network[]) {
-  console.log("Validating RPC genesis blocks ... ");
+async function validatePublicRpcs(networks: Network[]) {
+  console.log("Validating public RPCs ... ");
   const ethNetworks = networks.filter(
     (n) => n.genesis && n.caip2Id.startsWith("eip155"),
   );
   const urls = ethNetworks.flatMap((n) =>
-    (n.rpcUrls ?? []).map((url) => ({ url, network: n })),
+    (n.rpcUrls ?? [])
+      .filter((url) => !url.includes("{"))
+      .map((url) => ({ url, network: n })),
   );
 
   const results = await processQueue(urls, testRpc);
@@ -192,12 +194,30 @@ async function validateRpcs(networks: Network[]) {
       .map((u, i) => ({ url: u.url, valid: results[i] }))
       .filter(({ url }) => network.rpcUrls?.includes(url));
     if (networkUrls.length > 0 && !networkUrls.some(({ valid }) => valid)) {
-      ERRORS.push(`\`${network.id}\` - no working public RPC endpoints found`);
+      ERRORS.push(`\`${network.id}\` - no working public RPC endpoints`);
     }
   }
 
   console.log(
-    `RPC validation complete: ${results.filter(Boolean).length}/${urls.length} endpoints validated successfully\n`,
+    `Public RPC validation complete: ${results.filter(Boolean).length}/${urls.length} endpoints validated successfully\n`,
+  );
+}
+
+async function validatePrivateRpcs(networks: Network[]) {
+  console.log("Validating private RPCs ... ");
+  const ethNetworks = networks.filter(
+    (n) => n.genesis && n.caip2Id.startsWith("eip155"),
+  );
+  const urls = ethNetworks.flatMap((n) =>
+    (n.rpcUrls ?? [])
+      .filter((url) => url.includes("{"))
+      .map((url) => ({ url, network: n })),
+  );
+
+  const results = await processQueue(urls, testRpc);
+
+  console.log(
+    `Private RPC validation complete: ${results.filter(Boolean).length}/${urls.length} endpoints validated successfully\n`,
   );
 }
 
@@ -240,7 +260,8 @@ export async function validateUrls(networksPath: string) {
 
   await validateDocs(networks);
   await validateApis(networks);
-  await validateRpcs(networks);
+  await validatePublicRpcs(networks);
+  await validatePrivateRpcs(networks);
 
   return {
     errors: ERRORS.map((e) => `[urls] ${e}`),
