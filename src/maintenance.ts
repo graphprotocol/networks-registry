@@ -7,18 +7,18 @@ import { Octokit } from "@octokit/rest";
 
 const issueTitle = "🔍 Daily Maintenance Report";
 const [owner, repo] = (process.env.GITHUB_REPOSITORY || "").split("/");
-if (!owner || !repo) {
-  console.error(
-    "GITHUB_REPOSITORY environment variable is required. This script can only proceed from Github Actions workflow",
-  );
-  process.exit(1);
-}
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 const startTime = Date.now();
 
 async function createOrUpdateIssue(errors: string[], warnings: string[]) {
+  if (!owner || !repo) {
+    console.error(
+      "GITHUB_REPOSITORY environment variable is required. This script can only proceed from Github Actions workflow",
+    );
+    process.exit(1);
+  }
   const body = `## Maintenance Report (${new Date().toISOString().split("T")[0]})
 
 ${

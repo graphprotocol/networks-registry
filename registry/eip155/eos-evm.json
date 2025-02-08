@@ -23,7 +23,7 @@
   "nativeToken": "EOS",
   "docsUrl": "https://eosnetwork.com/eos-evm",
   "genesis": {
-    "hash": "0xcc936a8dc9ecf18dfd876f3566d240486d331f51ffcbb467e47f1c80ebb77440",
+    "hash": "0x330402d1032bd515fa7f93b5ccb370bd1b6fdf54cdf009b6d46e55070aa0a1b8",
     "height": 0
   },
   "firehose": {
