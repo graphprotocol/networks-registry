@@ -3,10 +3,12 @@
   "shortName": "Unichain",
   "secondName": "Sepolia",
   "fullName": "Unichain Sepolia Testnet",
-  "aliases": ["evm-1301"],
+  "aliases": ["evm-1301", "unichain-sepolia"],
   "caip2Id": "eip155:1301",
   "networkType": "testnet",
-  "relations": [{ "kind": "l2Of", "network": "sepolia" }],
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "unichain" }],
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://unichain-sepolia.blockscout.com"],
   "rpcUrls": [
