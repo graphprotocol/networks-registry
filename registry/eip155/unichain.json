@@ -8,6 +8,14 @@
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "relations": [ { "kind": "l2Of", "network": "mainnet" } ],
+  "explorerUrls": ["https://unichain.blockscout.com"],
+  "apiUrls": [
+    {
+      "url": "https://unichain.blockscout.com/api",
+      "kind": "blockscout"
+    }
+  ],
+  "rpcUrls": [ "https://mainnet.unichain.org" ],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.unichain.org/docs",
