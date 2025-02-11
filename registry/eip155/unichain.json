@@ -8,7 +8,7 @@
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "relations": [ { "kind": "l2Of", "network": "mainnet" } ],
-  "explorerUrls": ["https://unichain.blockscout.com"],
+  "explorerUrls": ["https://unichain.blockscout.com", "https://uniscan.xyz/"],
   "apiUrls": [
     {
       "url": "https://unichain.blockscout.com/api",
