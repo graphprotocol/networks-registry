@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.37",
+  "version": "0.6.38",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-06T14:52:20.515Z",
+  "updatedAt": "2025-02-11T13:59:04.814Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1172,12 +1172,69 @@
       }
     },
     {
+      "id": "unichain",
+      "shortName": "Unichain",
+      "fullName": "Unichain Mainnet",
+      "aliases": [
+        "evm-130",
+        "unichain-mainnet"
+      ],
+      "caip2Id": "eip155:130",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "explorerUrls": [
+        "https://unichain.blockscout.com",
+        "https://uniscan.xyz/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://unichain.blockscout.com/api",
+          "kind": "blockscout"
+        }
+      ],
+      "rpcUrls": [
+        "https://mainnet.unichain.org"
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.unichain.org/docs",
+      "genesis": {
+        "hash": "0x3425162ddf41a0a1f0106d67b71828c9a9577e6ddeb94e4f33d2cde1fdc3befe",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "unichain"
+        }
+      }
+    },
+    {
       "id": "unichain-testnet",
       "shortName": "Unichain",
       "secondName": "Sepolia",
       "fullName": "Unichain Sepolia Testnet",
       "aliases": [
-        "evm-1301"
+        "evm-1301",
+        "unichain-sepolia"
       ],
       "caip2Id": "eip155:1301",
       "networkType": "testnet",
@@ -1185,6 +1242,10 @@
         {
           "kind": "l2Of",
           "network": "sepolia"
+        },
+        {
+          "kind": "testnetOf",
+          "network": "unichain"
         }
       ],
       "graphNode": {
@@ -1794,7 +1855,7 @@
       "nativeToken": "EOS",
       "docsUrl": "https://eosnetwork.com/eos-evm",
       "genesis": {
-        "hash": "0xc613831e8473c17c47ab60605e4e92693f0f37e767a1defa2f74160626e5d9ca",
+        "hash": "0xc6f7c5c995ae7a7567b44e9679c6654b39a957fe33daa33aee4ee96a01b2fbd5",
         "height": 0
       },
       "firehose": {
@@ -2076,7 +2137,7 @@
       ],
       "rpcUrls": [
         "https://ethereum-holesky-rpc.publicnode.com",
-        "https://rpc.holesky.ethpandaops.io",
+        "https://rpc-holesky.rockx.com",
         "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [
@@ -2165,7 +2226,7 @@
       "nativeToken": "EOS",
       "docsUrl": "https://eosnetwork.com/eos-evm",
       "genesis": {
-        "hash": "0xcc936a8dc9ecf18dfd876f3566d240486d331f51ffcbb467e47f1c80ebb77440",
+        "hash": "0x330402d1032bd515fa7f93b5ccb370bd1b6fdf54cdf009b6d46e55070aa0a1b8",
         "height": 0
       },
       "firehose": {
@@ -5328,10 +5389,10 @@
         "protocol": "ethereum"
       },
       "rpcUrls": [
-        "https://rpc.berachain.com/"
+        "https://rpc.berachain.com"
       ],
       "explorerUrls": [
-        "https://berascan.com/"
+        "https://berascan.com"
       ],
       "apiUrls": [
         {

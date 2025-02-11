@@ -7,15 +7,12 @@
   "graphNode": { "protocol": "ethereum" },
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
-  "relations": [ { "kind": "l2Of", "network": "mainnet" } ],
-  "explorerUrls": ["https://unichain.blockscout.com", "https://uniscan.xyz/"],
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "explorerUrls": ["https://unichain.blockscout.com", "https://uniscan.xyz"],
   "apiUrls": [
-    {
-      "url": "https://unichain.blockscout.com/api",
-      "kind": "blockscout"
-    }
+    { "url": "https://unichain.blockscout.com/api", "kind": "blockscout" }
   ],
-  "rpcUrls": [ "https://mainnet.unichain.org" ],
+  "rpcUrls": ["https://mainnet.unichain.org"],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.unichain.org/docs",
