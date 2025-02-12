@@ -31,7 +31,6 @@ async function validateSingleEndpoint(
   network: Network,
   endpoint: string,
 ): Promise<void> {
-  console.log(`  ${network.id} @ ${endpoint} `);
   try {
     const command = `grpcurl -H "X-Api-Key: ${process.env.SF_API_KEY}" ${endpoint} sf.firehose.v2.EndpointInfo/Info`;
     const { stdout } = await execAsync(command);
