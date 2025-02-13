@@ -35,7 +35,7 @@ async function testURL({
         }
         throw new Error(err);
       }
-    });
+    }, url);
   } catch (e) {
     // Only add warning/error after all retries have failed
     console.error(`  ${networkId} - exception at ${url}: ${e.message}`);
@@ -70,7 +70,7 @@ async function testAPI({
           `  ${networkId} - URL returned an error, which is probably fine: ${url} - ${response.status}`,
         );
       }
-    });
+    }, url);
   } catch (e) {
     // Only add warning after all retries have failed
     console.error(`  ${networkId} - exception at ${url}: ${e.message}`);
@@ -124,7 +124,7 @@ async function testRpc({
       if (genesisHash?.toLowerCase() !== network.genesis?.hash.toLowerCase()) {
         throw new Error("mismatched genesis hash");
       }
-    });
+    }, url);
   } catch (e) {
     let errorMessage = "unknown error";
     if (e instanceof Error) {

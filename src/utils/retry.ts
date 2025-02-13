@@ -1,5 +1,5 @@
 const DEFAULT_BATCH_SIZE = 30;
-const DEFAULT_RETRY_SLEEP_MS = 1000;
+const DEFAULT_RETRY_SLEEP_MS = 10000;
 const DEFAULT_MAX_RETRY_ATTEMPTS = 3;
 
 // calls processor function on each item of items, in parallel, up to batchSize items at a time
@@ -36,6 +36,7 @@ export async function processQueue<T, S>(
 // Helper function to implement retry logic
 export async function withRetry<T>(
   operation: () => Promise<T>,
+  caption: string = "operation",
   maxAttempts: number = DEFAULT_MAX_RETRY_ATTEMPTS,
   delayMs: number = DEFAULT_RETRY_SLEEP_MS,
 ): Promise<T> {
@@ -48,7 +49,9 @@ export async function withRetry<T>(
       lastError = error;
       if (attempt < maxAttempts) {
         await new Promise((resolve) => setTimeout(resolve, delayMs));
-        console.log(`Retrying... (attempt ${attempt + 1}/${maxAttempts})`);
+        console.log(
+          `Retrying ${caption} ... (attempt ${attempt + 1}/${maxAttempts})`,
+        );
       }
     }
   }
