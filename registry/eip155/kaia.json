@@ -7,7 +7,12 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://kaiascan.io"],
   "rpcUrls": ["https://public-en.node.kaia.io"],
-  "apiUrls": [],
+  "apiUrls": [
+    {
+      "url": "https://mainnet-oapi.kaiascan.io/api",
+      "kind": "blockscout"
+    }
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
