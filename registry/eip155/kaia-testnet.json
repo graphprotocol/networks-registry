@@ -9,10 +9,7 @@
   "explorerUrls": ["https://kairos.kaiascan.io"],
   "rpcUrls": ["https://public-en-kairos.node.kaia.io"],
   "apiUrls": [
-    {
-      "url": "https://kairos-oapi.kaiascan.io/api",
-      "kind": "blockscout"
-    }
+    { "url": "https://kairos-oapi.kaiascan.io/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",

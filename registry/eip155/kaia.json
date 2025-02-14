@@ -8,10 +8,7 @@
   "explorerUrls": ["https://kaiascan.io"],
   "rpcUrls": ["https://public-en.node.kaia.io"],
   "apiUrls": [
-    {
-      "url": "https://mainnet-oapi.kaiascan.io/api",
-      "kind": "blockscout"
-    }
+    { "url": "https://mainnet-oapi.kaiascan.io/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
