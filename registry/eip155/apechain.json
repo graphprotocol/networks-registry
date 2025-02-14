@@ -1,0 +1,32 @@
+{
+  "id": "apechain",
+  "shortName": "ApeChain",
+  "fullName": "ApeChain Mainnet",
+  "aliases": ["evm-33139", "apechain-mainnet"],
+  "caip2Id": "eip155:33139",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://apescan.io/"],
+  "rpcUrls": ["https://rpc.apechain.com"],
+  "apiUrls": [
+    {
+      "url": "https://api.apescan.io/api",
+      "kind": "etherscan"
+    }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "APE",
+  "docsUrl": "https://docs.apechain.com/",
+  "genesis": {
+    "hash": "0xa217064039db238cd731edf0005e93b9ac72604247a8e7280e0606727f2d0736",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "apechain" } }
+}
