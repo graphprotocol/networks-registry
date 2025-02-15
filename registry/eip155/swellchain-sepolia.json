@@ -1,0 +1,37 @@
+{
+    "id": "swellchain-sepolia",
+    "shortName": "Swellchain",
+    "secondName": "Sepolia",
+    "fullName": "Swellchain Sepolia Testnet",
+    "aliases": ["swellchain-testnet", "evm-1924"],
+    "caip2Id": "eip155:1924",
+    "graphNode": { "protocol": "ethereum" },
+    "explorerUrls": ["https://swell-testnet-explorer.alt.technology/"],
+    "apiUrls": [
+      {
+        "url": "https://swell-testnet-explorer.alt.technology/api",
+        "kind": "blockscout"
+      }
+    ],
+    "rpcUrls": ["https://rpc.ankr.com/swell_sepolia"],
+    "networkType": "testnet",
+    "relations": [
+      { "kind": "testnetOf", "network": "swellchain" },
+      { "kind": "l2Of", "network": "sepolia" }
+    ],
+    "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+    "issuanceRewards": false,
+    "nativeToken": "ETH",
+    "docsUrl": "https://docs.swellnetwork.io/",
+    "genesis": {
+      "hash": "0x56d83858e4fab3bcd009c0014c91fce910f0e4585d1f446e043c813043fd0317",
+      "height": 0
+    },
+    "firehose": {
+      "blockType": "sf.ethereum.type.v2.Block",
+      "evmExtendedModel": true,
+      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+      "bytesEncoding": "hex"
+    },
+    "icon": { "web3Icons": { "name": "swell" } }
+  }
