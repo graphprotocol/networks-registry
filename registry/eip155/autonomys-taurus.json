@@ -5,14 +5,19 @@
   "aliases": ["evm-490000", "autonomys-testnet"],
   "caip2Id": "eip155:490000",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://blockscout.taurus.autonomys.xyz/"],
+  "explorerUrls": ["https://blockscout.taurus.autonomys.xyz"],
   "rpcUrls": ["https://auto-evm.taurus.autonomys.xyz/ws"],
-  "apiUrls": [{ "url": "https://blockscout.taurus.autonomys.xyz/api", "kind": "blockscout" }],
+  "apiUrls": [
+    {
+      "url": "https://blockscout.taurus.autonomys.xyz/api",
+      "kind": "blockscout"
+    }
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "issuanceRewards": false,
   "nativeToken": "AI3",
-  "docsUrl": "https://docs.autonomys.xyz/",
+  "docsUrl": "https://docs.autonomys.xyz",
   "genesis": {
     "hash": "0x085b6a1088858e39e9f26e832db9ba44e7f8ca977f363f0aff79f8bec5abb8b9",
     "height": 0
