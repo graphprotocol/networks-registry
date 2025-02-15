@@ -13,7 +13,8 @@
   ],
   "apiUrls": [
     { "url": "https://api.scrollscan.com/api", "kind": "etherscan" },
-    { "url": "https://scroll.blockscout.com/api", "kind": "blockscout" }
+    { "url": "https://scroll.blockscout.com/api", "kind": "blockscout" },
+    { "url": "https://scroll.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

@@ -13,6 +13,7 @@
     "https://avalanche-c-chain-rpc.publicnode.com"
   ],
   "apiUrls": [
+    { "url": "https://avalanche.abi.pinax.network/api", "kind": "etherscan" },
     { "url": "https://api.snowtrace.io/api", "kind": "etherscan" },
     {
       "url": "https://api.routescan.io/v2/network/mainnet/evm/43114/etherscan/api",

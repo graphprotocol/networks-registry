@@ -7,7 +7,10 @@
   "graphNode": { "protocol": "ethereum" },
   "rpcUrls": ["https://api.mainnet.abs.xyz"],
   "explorerUrls": ["https://abscan.org"],
-  "apiUrls": [{ "url": "https://api.abscan.org/api", "kind": "etherscan" }],
+  "apiUrls": [
+    { "url": "https://api.abscan.org/api", "kind": "etherscan" },
+    { "url": "https://abstract.abi.pinax.network/api", "kind": "etherscan" }
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

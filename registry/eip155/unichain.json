@@ -10,7 +10,8 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://unichain.blockscout.com", "https://uniscan.xyz"],
   "apiUrls": [
-    { "url": "https://unichain.blockscout.com/api", "kind": "blockscout" }
+    { "url": "https://unichain.blockscout.com/api", "kind": "blockscout" },
+    { "url": "https://unichain.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "rpcUrls": ["https://mainnet.unichain.org"],
   "issuanceRewards": false,
