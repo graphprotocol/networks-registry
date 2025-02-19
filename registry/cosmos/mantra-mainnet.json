@@ -24,5 +24,6 @@
     "blockType": "sf.cosmos.type.v2.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
     "bytesEncoding": "hex"
-  }
+  },
+  "icon": { "web3Icons": { "name": "mantra" } }
 }
