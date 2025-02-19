@@ -2,7 +2,7 @@
   "id": "gnosis",
   "shortName": "Gnosis",
   "fullName": "Gnosis Mainnet",
-  "aliases": ["evm-100", "gnosis-mainnet"],
+  "aliases": ["evm-100", "gnosis-mainnet", "xdai"],
   "caip2Id": "eip155:100",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://gnosisscan.io", "https://gnosis.blockscout.com"],
