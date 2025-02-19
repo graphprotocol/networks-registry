@@ -7,7 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "rpcUrls": ["https://rpc.berachain.com"],
   "explorerUrls": ["https://berascan.com"],
-  "apiUrls": [{ "url": "https://api.berascan.com/api", "kind": "etherscan" }],
+  "apiUrls": [{ "url": "https://berachain.abi.pinax.network/api", "kind": "etherscan" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,

@@ -8,7 +8,6 @@
   "explorerUrls": ["https://apescan.io"],
   "rpcUrls": ["https://rpc.apechain.com"],
   "apiUrls": [
-    { "url": "https://api.apescan.io/api", "kind": "etherscan" },
     { "url": "https://apechain.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
