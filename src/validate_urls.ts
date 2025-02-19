@@ -55,26 +55,48 @@ async function testAPI({
   networkId: string;
 }): Promise<boolean> {
   try {
-    await withRetry(async () => {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-      const response = await fetch(url, {
-        method: "HEAD",
-        signal: controller.signal,
-      });
-
-      clearTimeout(timeout);
-
-      if (!response.ok) {
-        console.log(
-          `  ${networkId} - URL returned an error, which is probably fine: ${url} - ${response.status}`,
+    await withRetry(
+      async () => {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+        const response = await fetch(
+          `${url}?module=contract&action=getsourcecode&address=0x0000000000001267532f4387C34a5AA50A8D4284`,
+          {
+            signal: controller.signal,
+          },
         );
-      }
-    }, url);
+
+        clearTimeout(timeout);
+
+        if (!response.ok) {
+          throw new Error(`status ${response.status}`);
+        }
+        const body = await response.json().catch(() => undefined);
+        if (!body) {
+          throw new Error("non-JSON response");
+        }
+        if (body.status != "1" && !body.result?.includes("not verified")) {
+          throw new Error(`invalid response: ${body.status} - ${body.message}`);
+        }
+      },
+      url,
+      3,
+      30_000, // for rate-limiting
+    );
   } catch (e) {
-    // Only add warning after all retries have failed
-    console.error(`  ${networkId} - exception at ${url}: ${e.message}`);
-    WARNINGS.push(`\`${networkId}\` - unreachable API: ${url}`);
+    let errorMessage = "unknown error";
+    if (e instanceof Error) {
+      if (e.message.includes("Unable to connect")) {
+        errorMessage = "unreachable host";
+      } else if (e.name === "AbortError") {
+        errorMessage = "request timeout";
+      } else {
+        errorMessage = e.message;
+      }
+    }
+    const err = `\`${networkId}\` - ${errorMessage} at API endpoint: ${url}`;
+    WARNINGS.push(err);
+    console.error(err);
     return false;
   }
   return true;
