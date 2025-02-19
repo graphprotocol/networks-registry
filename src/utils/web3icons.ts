@@ -1,12 +1,14 @@
-export type Variants = "branded" | "mono";
+export type Variants = "branded" | "mono" | "background";
 
 export interface Web3IconsNetwork {
   id: string;
   name: string;
+  fileName: string;
   variants: Variants[];
   nativeCoinId?: string;
   shortName?: string;
   chainId?: number;
+  caip2id: string;
 }
 
 export async function fetchWeb3NetworkIcons(): Promise<Web3IconsNetwork[]> {
