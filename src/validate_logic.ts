@@ -253,8 +253,12 @@ async function validateWeb3Icons(networks: Network[]) {
   process.stdout.write("Validating web3 icons ... ");
   const web3Icons = await fetchWeb3NetworkIcons();
   for (const network of networks) {
-    if (network.icon?.web3Icons?.name) {
-      const ourIcon = network.icon?.web3Icons!;
+    if (!network.icon || !network.icon.web3Icons) {
+      WARNINGS.push(`\`${network.id}\` - has no web3icon`);
+      continue;
+    }
+    if (network.icon.web3Icons.name) {
+      const ourIcon = network.icon.web3Icons;
       const web3Icon = web3Icons.find((i) => i.id === ourIcon.name);
       if (!web3Icon) {
         ERRORS.push(
