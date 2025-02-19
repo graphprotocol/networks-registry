@@ -259,7 +259,11 @@ async function validateWeb3Icons(networks: Network[]) {
     }
     if (network.icon.web3Icons.name) {
       const ourIcon = network.icon.web3Icons;
-      const web3Icon = web3Icons.find((i) => i.id === ourIcon.name);
+      /**
+       * in web3icons the fileName is better point of reference than "id"
+       * since id can differ from fileName, using id would prevent loading icons from github urls
+       */
+      const web3Icon = web3Icons.find((i) => i.fileName === ourIcon.name);
       if (!web3Icon) {
         ERRORS.push(
           `\`${network.id}\` - web3icon id does not exist on web3Icons: \`${ourIcon.name}\``,
