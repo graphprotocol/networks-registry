@@ -253,9 +253,17 @@ async function validateWeb3Icons(networks: Network[]) {
   process.stdout.write("Validating web3 icons ... ");
   const web3Icons = await fetchWeb3NetworkIcons();
   for (const network of networks) {
-    if (network.icon?.web3Icons?.name) {
-      const ourIcon = network.icon?.web3Icons!;
-      const web3Icon = web3Icons.find((i) => i.id === ourIcon.name);
+    if (!network.icon || !network.icon.web3Icons) {
+      WARNINGS.push(`\`${network.id}\` - has no web3icon`);
+      continue;
+    }
+    if (network.icon.web3Icons.name) {
+      const ourIcon = network.icon.web3Icons;
+      /**
+       * in web3icons the fileName is better point of reference than "id"
+       * since id can differ from fileName, using id would prevent loading icons from github urls
+       */
+      const web3Icon = web3Icons.find((i) => i.fileName === ourIcon.name);
       if (!web3Icon) {
         ERRORS.push(
           `\`${network.id}\` - web3icon id does not exist on web3Icons: \`${ourIcon.name}\``,
@@ -264,24 +272,32 @@ async function validateWeb3Icons(networks: Network[]) {
         const web3Variants = web3Icon.variants || [];
         const ourVariants = ourIcon.variants || [];
 
-        if (web3Variants.length === 2) {
-          if (ourVariants.length === 1) {
-            WARNINGS.push(
-              `\`${network.id}\` - web3icon should have both variants or none \`${ourVariants.join(",")}\``,
-            );
-          }
-        } else if (web3Variants.length === 1) {
-          if (ourVariants.length !== 1 || ourVariants[0] !== web3Variants[0]) {
-            ERRORS.push(
-              `\`${network.id}\` - web3icon should only have the variant \`${web3Variants[0]}\``,
-            );
-          }
+        if (
+          web3Variants.length === 3 &&
+          ourVariants.length !== 0 &&
+          ourVariants.length !== 3
+        ) {
+          WARNINGS.push(
+            `\`${network.id}\` - web3icon should have 0 or all 3 variants \`${ourVariants.join(",")}\``,
+          );
+        }
+        if (
+          web3Variants.length !== 3 &&
+          web3Variants.sort().join(",") !== ourVariants.sort().join(",")
+        ) {
+          WARNINGS.push(
+            `\`${network.id}\` - web3icon has mismatching variants \`${web3Variants.join(",")}\``,
+          );
         }
       }
     } else {
       if (web3Icons.find((i) => i.id === network.id)) {
         WARNINGS.push(
-          `\`${network.id}\` - does not have a web3icon but there exists an icon with the same id. Consider adding it.`,
+          `\`${network.id}\` - has no web3icon but there exists an icon with the same id. Consider adding it.`,
+        );
+      } else {
+        WARNINGS.push(
+          `\`${network.id}\` - has no web3icon, consider adding one to web3icons repo`,
         );
       }
     }

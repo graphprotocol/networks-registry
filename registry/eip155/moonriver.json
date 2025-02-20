@@ -35,6 +35,6 @@
     "bytesEncoding": "hex"
   },
   "icon": {
-    "web3Icons": { "name": "moonriver", "variants": ["mono", "branded"] }
+    "web3Icons": { "name": "moonriver" }
   }
 }
