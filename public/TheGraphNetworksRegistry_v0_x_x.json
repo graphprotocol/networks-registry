@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.39",
+  "version": "0.6.40",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-15T00:31:59.437Z",
+  "updatedAt": "2025-02-20T17:53:59.283Z",
   "networks": [
     {
       "id": "mainnet",
@@ -168,7 +168,8 @@
       "fullName": "Gnosis Mainnet",
       "aliases": [
         "evm-100",
-        "gnosis-mainnet"
+        "gnosis-mainnet",
+        "xdai"
       ],
       "caip2Id": "eip155:100",
       "graphNode": {
@@ -1107,11 +1108,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "moonriver",
-          "variants": [
-            "mono",
-            "branded"
-          ]
+          "name": "moonriver"
         }
       }
     },
@@ -2392,6 +2389,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "expchain"
+        }
       }
     },
     {
@@ -2407,7 +2409,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.swellnetwork.io/"
+        "https://explorer.swellnetwork.io"
       ],
       "rpcUrls": [
         "https://rpc.ankr.com/swell"
@@ -2426,7 +2428,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.swellnetwork.io/",
+      "docsUrl": "https://docs.swellnetwork.io",
       "genesis": {
         "hash": "0x92379973a1576876b7337a9ce89e2a7a9cb99887f55e6045ed2069d5d98d9319",
         "height": 0
@@ -2457,7 +2459,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://swell-testnet-explorer.alt.technology/"
+        "https://swell-testnet-explorer.alt.technology"
       ],
       "apiUrls": [
         {
@@ -2486,7 +2488,7 @@
       },
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.swellnetwork.io/",
+      "docsUrl": "https://docs.swellnetwork.io",
       "genesis": {
         "hash": "0x56d83858e4fab3bcd009c0014c91fce910f0e4585d1f446e043c813043fd0317",
         "height": 0
@@ -3572,7 +3574,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://apescan.io/"
+        "https://apescan.io"
       ],
       "rpcUrls": [
         "https://rpc.apechain.com"
@@ -3595,7 +3597,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "APE",
-      "docsUrl": "https://docs.apechain.com/",
+      "docsUrl": "https://docs.apechain.com",
       "genesis": {
         "hash": "0xa217064039db238cd731edf0005e93b9ac72604247a8e7280e0606727f2d0736",
         "height": 0
@@ -3731,6 +3733,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "botanix"
+        }
       }
     },
     {
@@ -3781,6 +3788,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "lens"
+        }
       }
     },
     {
@@ -4655,7 +4667,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://blockscout.taurus.autonomys.xyz/"
+        "https://blockscout.taurus.autonomys.xyz"
       ],
       "rpcUrls": [
         "https://auto-evm.taurus.autonomys.xyz/ws"
@@ -4674,7 +4686,7 @@
       "networkType": "testnet",
       "issuanceRewards": false,
       "nativeToken": "AI3",
-      "docsUrl": "https://docs.autonomys.xyz/",
+      "docsUrl": "https://docs.autonomys.xyz",
       "genesis": {
         "hash": "0x085b6a1088858e39e9f26e832db9ba44e7f8ca977f363f0aff79f8bec5abb8b9",
         "height": 0
@@ -5456,7 +5468,10 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "zora"
+          "name": "zora",
+          "variants": [
+            "branded"
+          ]
         }
       }
     },
@@ -7178,6 +7193,11 @@
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "mantra"
+        }
       }
     },
     {
@@ -7225,6 +7245,11 @@
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "mantra"
+        }
       }
     },
     {
