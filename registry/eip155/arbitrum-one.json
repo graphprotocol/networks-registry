@@ -2,7 +2,7 @@
   "id": "arbitrum-one",
   "shortName": "Arbitrum One",
   "fullName": "Arbitrum One Mainnet",
-  "aliases": ["arbone", "arbitrum", "arb-sepolia", "evm-42161"],
+  "aliases": ["arbone", "arbitrum", "arb-sepolia", "evm-42161", "arbitrum-one-mainnet"],
   "caip2Id": "eip155:42161",
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

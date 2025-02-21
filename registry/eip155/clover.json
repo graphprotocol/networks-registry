@@ -2,7 +2,7 @@
   "id": "clover",
   "shortName": "CLV",
   "fullName": "CLV Parachain",
-  "aliases": ["clv-mainnet", "evm-1023"],
+  "aliases": ["clv-mainnet", "evm-1023", "clover-mainnet"],
   "caip2Id": "eip155:1023",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://clvscan.com"],

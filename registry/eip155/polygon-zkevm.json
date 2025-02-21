@@ -2,7 +2,7 @@
   "id": "polygon-zkevm",
   "shortName": "Polygon zkEVM",
   "fullName": "Polygon zkEVM Mainnet",
-  "aliases": [],
+  "aliases": ["evm-1101", "polygon-zkevm-mainnet"],
   "caip2Id": "eip155:1101",
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

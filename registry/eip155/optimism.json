@@ -2,7 +2,7 @@
   "id": "optimism",
   "shortName": "Optimism",
   "fullName": "OP Mainnet",
-  "aliases": ["evm-10", "op-mainnet"],
+  "aliases": ["evm-10", "op-mainnet", "optimism-mainnet"],
   "caip2Id": "eip155:10",
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
