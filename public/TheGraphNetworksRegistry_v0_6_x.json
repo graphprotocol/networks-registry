@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.40",
+  "version": "0.6.41",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-20T17:53:59.283Z",
+  "updatedAt": "2025-02-21T18:14:02.296Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2325,6 +2325,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "soneium.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "soneium.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -2602,6 +2608,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "xlayertest.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "xlayertest.substreams.pinax.network:443"
         ]
       },
       "networkType": "testnet",
@@ -3582,10 +3594,6 @@
       "apiUrls": [
         {
           "url": "https://api.apescan.io/api",
-          "kind": "etherscan"
-        },
-        {
-          "url": "https://apechain.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -5070,6 +5078,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "lineasepolia.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "lineasepolia.substreams.pinax.network:443"
         ]
       },
       "networkType": "testnet",
@@ -5629,6 +5643,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "bera.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "bera.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -6054,6 +6074,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "spicy.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "spicy.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -7536,12 +7562,11 @@
           "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
-          "mainnet.starknet.streamingfast.io:443",
           "starknet.firehose.pinax.network:443"
         ],
         "substreams": [
-          "mainnet.starknet.streamingfast.io:443",
-          "starknet.substreams.pinax.network:443"
+          "starknet.substreams.pinax.network:443",
+          "mainnet.starknet.streamingfast.io:443"
         ]
       },
       "issuanceRewards": false,
@@ -7604,7 +7629,8 @@
           "starksepolia.firehose.pinax.network:443"
         ],
         "substreams": [
-          "starksepolia.substreams.pinax.network:443"
+          "starksepolia.substreams.pinax.network:443",
+          "testnet.starknet.streamingfast.io:443"
         ]
       },
       "issuanceRewards": false,
