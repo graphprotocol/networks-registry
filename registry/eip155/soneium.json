@@ -11,7 +11,11 @@
     { "url": "https://soneium.blockscout.com/api", "kind": "etherscan" }
   ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["soneium.firehose.pinax.network:443"],
+    "substreams": ["soneium.substreams.pinax.network:443"]
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "ETH",

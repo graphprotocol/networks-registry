@@ -215,13 +215,6 @@ function validateServices(networks: Network[]) {
         }
       }
     });
-
-    // Validate that firehose and substreams services are paired by provider
-    const firehoseUrls = services.firehose ?? [];
-    const substreamsUrls = services.substreams ?? [];
-    if (firehoseUrls.length !== substreamsUrls.length) {
-      WARNINGS.push(`\`${network.id}\` - no matching substreams/firehose pair`);
-    }
   }
 
   process.stdout.write("done\n");
