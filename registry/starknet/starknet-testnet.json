@@ -19,7 +19,10 @@
   "networkType": "testnet",
   "services": {
     "firehose": ["starksepolia.firehose.pinax.network:443"],
-    "substreams": ["starksepolia.substreams.pinax.network:443"]
+    "substreams": [
+      "starksepolia.substreams.pinax.network:443",
+      "testnet.starknet.streamingfast.io:443"
+    ]
   },
   "issuanceRewards": false,
   "nativeToken": "STRK",

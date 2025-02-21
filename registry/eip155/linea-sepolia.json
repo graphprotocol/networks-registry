@@ -18,7 +18,11 @@
       "kind": "blockscout"
     }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["lineasepolia.firehose.pinax.network:443"],
+    "substreams": ["lineasepolia.substreams.pinax.network:443"]
+  },
   "networkType": "testnet",
   "relations": [
     { "kind": "testnetOf", "network": "linea" },
