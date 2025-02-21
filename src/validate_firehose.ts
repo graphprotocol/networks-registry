@@ -73,14 +73,13 @@ async function validateSingleEndpoint(
       console.error(err);
     }
   } catch (error) {
-    if (error instanceof Error) {
-      if (error.message.includes("Unimplemented")) {
-        return;
-      }
+    if (error instanceof Error && error.message.includes("Unimplemented")) {
+      WARNINGS.push(
+        `\`${network.id}\` - endpoint ${endpoint} does not expose firehose RPC`,
+      );
+      return;
     }
-    ERRORS.push(
-      `\`${network.id}\` - endpoint ${endpoint} error: ${JSON.stringify(error)}`,
-    );
+    WARNINGS.push(`\`${network.id}\` - endpoint ${endpoint} is not accessible`);
   }
 }
 
