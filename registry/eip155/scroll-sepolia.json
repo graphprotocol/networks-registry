@@ -13,7 +13,7 @@
   ],
   "apiUrls": [
     { "url": "https://scroll-sepolia.blockscout.com/api", "kind": "blockscout" },
-    { "url": "https://sepolia.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://scroll-sepolia.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
