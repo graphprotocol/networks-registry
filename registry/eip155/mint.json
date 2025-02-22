@@ -2,7 +2,7 @@
   "id": "mint",
   "shortName": "Mint",
   "fullName": "Mint Mainnet",
-  "aliases": ["evm-185"],
+  "aliases": ["evm-185", "mint-mainnet"],
   "caip2Id": "eip155:185",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.mintchain.io"],

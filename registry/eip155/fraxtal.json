@@ -2,7 +2,7 @@
   "id": "fraxtal",
   "shortName": "Fraxtal",
   "fullName": "Fraxtal Mainnet",
-  "aliases": ["evm-252"],
+  "aliases": ["evm-252", "fraxtal-mainnet"],
   "caip2Id": "eip155:252",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://fraxscan.com"],

@@ -2,7 +2,7 @@
   "id": "moonbeam",
   "shortName": "Moonbeam",
   "fullName": "Moonbeam Mainnet",
-  "aliases": ["evm-1284", "mbeam"],
+  "aliases": ["evm-1284", "mbeam", "moonbeam-mainnet"],
   "caip2Id": "eip155:1284",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://moonbeam.moonscan.io"],

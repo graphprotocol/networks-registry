@@ -2,7 +2,7 @@
   "id": "boba-bnb",
   "shortName": "Boba BNB",
   "fullName": "Boba BNB Mainnet",
-  "aliases": ["evm-56288", "boba-bsc"],
+  "aliases": ["evm-56288", "boba-bsc", "boba-bnb-mainnet"],
   "caip2Id": "eip155:56288",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://bnb.bobascan.com"],

@@ -242,6 +242,33 @@ function validateUrls(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+function validateMainnetAliases(networks: Network[]) {
+  process.stdout.write("Validating mainnet aliases ... ");
+  const mainnets = networks.filter(
+    (n) =>
+      n.id !== "mainnet" &&
+      n.networkType === "mainnet" &&
+      !n.relations?.some((r) => r.kind === "beaconOf"),
+  );
+  for (const network of mainnets) {
+    const woMainnet = network.id.replace("-mainnet", "");
+    const withMainnet = `${woMainnet}-mainnet`;
+
+    if (woMainnet === network.id) {
+      if (!network.aliases?.includes(withMainnet)) {
+        ERRORS.push(
+          `\`${network.id}\` - must have an alias \`${withMainnet}\``,
+        );
+      }
+    } else {
+      if (!network.aliases?.includes(woMainnet)) {
+        ERRORS.push(`\`${network.id}\` - must have an alias \`${woMainnet}\``);
+      }
+    }
+  }
+  process.stdout.write("done\n");
+}
+
 async function validateWeb3Icons(networks: Network[]) {
   process.stdout.write("Validating web3 icons ... ");
   const web3Icons = await fetchWeb3NetworkIcons();
@@ -427,6 +454,7 @@ export async function validateLogic(networksPath: string) {
   validateTestnets(networks);
   validateUrls(networks);
   validateServices(networks);
+  validateMainnetAliases(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
   await validateGraphNetworks(networks);
