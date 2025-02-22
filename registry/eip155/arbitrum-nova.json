@@ -15,8 +15,7 @@
     {
       "url": "https://arbitrum-nova.abi.pinax.network/api",
       "kind": "etherscan"
-    },
-    { "url": "https://nova-explorer.arbitrum.io/api", "kind": "blockscout" }
+    }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

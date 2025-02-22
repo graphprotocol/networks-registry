@@ -17,10 +17,6 @@
   ],
   "apiUrls": [
     {
-      "url": "https://api-cardona-zkevm.polygonscan.com/api",
-      "kind": "blockscout"
-    },
-    {
       "url": "https://polygon-zkevm-cardona.abi.pinax.network/api",
       "kind": "etherscan"
     }

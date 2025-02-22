@@ -11,7 +11,9 @@
     "https://opbnb-mainnet-rpc.bnbchain.org",
     "https://opbnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
-  "apiUrls": [],
+  "apiUrls": [
+    { "url": "https://bnb-op.abi.pinax.network/api", "kind": "etherscan" }
+  ],
   "services": {
     "firehose": ["opbnb.firehose.pinax.network:443"],
     "substreams": ["opbnb.substreams.pinax.network:443"]

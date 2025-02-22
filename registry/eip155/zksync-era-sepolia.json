@@ -13,7 +13,8 @@
       "url": "https://block-explorer-api.sepolia.zksync.dev/api",
       "kind": "etherscan"
     },
-    { "url": "https://zksync-sepolia.blockscout.com/api", "kind": "blockscout" }
+    { "url": "https://zksync-sepolia.blockscout.com/api", "kind": "blockscout" },
+    { "url": "https://zksync-era-sepolia.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",

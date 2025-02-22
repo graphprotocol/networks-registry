@@ -12,7 +12,7 @@
     "https://moonriver.public.blastapi.io"
   ],
   "apiUrls": [
-    { "url": "https://api-moonriver.moonscan.io/api", "kind": "etherscan" }
+    { "url": "https://moonriver.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

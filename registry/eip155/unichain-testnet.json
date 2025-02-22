@@ -24,7 +24,8 @@
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/1301/etherscan/api",
       "kind": "etherscan"
-    }
+    },
+    { "url": "https://unichain-testnet.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

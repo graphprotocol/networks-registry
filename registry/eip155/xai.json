@@ -11,7 +11,8 @@
     "https://xai.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://explorer.xai-chain.net/api", "kind": "blockscout" }
+    { "url": "https://explorer.xai-chain.net/api", "kind": "blockscout" },
+    { "url": "https://xai.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
     "firehose": ["xai.firehose.pinax.network:443"],
