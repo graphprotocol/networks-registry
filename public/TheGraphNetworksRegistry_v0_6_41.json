@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.42",
+  "version": "0.6.41",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-22T23:08:19.980Z",
+  "updatedAt": "2025-02-21T18:14:02.296Z",
   "networks": [
     {
       "id": "mainnet",
@@ -90,8 +90,7 @@
       "fullName": "OP Mainnet",
       "aliases": [
         "evm-10",
-        "op-mainnet",
-        "optimism-mainnet"
+        "op-mainnet"
       ],
       "caip2Id": "eip155:10",
       "graphNode": {
@@ -442,8 +441,7 @@
       "fullName": "CLV Parachain",
       "aliases": [
         "clv-mainnet",
-        "evm-1023",
-        "clover-mainnet"
+        "evm-1023"
       ],
       "caip2Id": "eip155:1023",
       "graphNode": {
@@ -490,10 +488,7 @@
       "id": "polygon-zkevm",
       "shortName": "Polygon zkEVM",
       "fullName": "Polygon zkEVM Mainnet",
-      "aliases": [
-        "evm-1101",
-        "polygon-zkevm-mainnet"
-      ],
+      "aliases": [],
       "caip2Id": "eip155:1101",
       "graphNode": {
         "protocol": "ethereum"
@@ -998,8 +993,7 @@
       "fullName": "Moonbeam Mainnet",
       "aliases": [
         "evm-1284",
-        "mbeam",
-        "moonbeam-mainnet"
+        "mbeam"
       ],
       "caip2Id": "eip155:1284",
       "graphNode": {
@@ -1061,8 +1055,7 @@
       "fullName": "Moonriver Mainnet",
       "aliases": [
         "evm-1285",
-        "mriver",
-        "moonriver-mainnet"
+        "mriver"
       ],
       "caip2Id": "eip155:1285",
       "graphNode": {
@@ -2250,8 +2243,7 @@
       "shortName": "Mint",
       "fullName": "Mint Mainnet",
       "aliases": [
-        "evm-185",
-        "mint-mainnet"
+        "evm-185"
       ],
       "caip2Id": "eip155:185",
       "graphNode": {
@@ -2718,8 +2710,7 @@
       "aliases": [
         "evm-204",
         "opbnb",
-        "bsc-op",
-        "bnb-op-mainnet"
+        "bsc-op"
       ],
       "caip2Id": "eip155:204",
       "graphNode": {
@@ -3111,8 +3102,7 @@
       "shortName": "Fraxtal",
       "fullName": "Fraxtal Mainnet",
       "aliases": [
-        "evm-252",
-        "fraxtal-mainnet"
+        "evm-252"
       ],
       "caip2Id": "eip155:252",
       "graphNode": {
@@ -3529,8 +3519,7 @@
       "fullName": "zkSync Mainnet",
       "aliases": [
         "evm-324",
-        "zksync",
-        "zksync-era-mainnet"
+        "zksync"
       ],
       "caip2Id": "eip155:324",
       "graphNode": {
@@ -3943,8 +3932,7 @@
         "arbone",
         "arbitrum",
         "arb-sepolia",
-        "evm-42161",
-        "arbitrum-one-mainnet"
+        "evm-42161"
       ],
       "caip2Id": "eip155:42161",
       "graphNode": {
@@ -4946,8 +4934,7 @@
       "fullName": "Boba BNB Mainnet",
       "aliases": [
         "evm-56288",
-        "boba-bsc",
-        "boba-bnb-mainnet"
+        "boba-bsc"
       ],
       "caip2Id": "eip155:56288",
       "graphNode": {
@@ -7012,8 +6999,7 @@
       "shortName": "Bitcoin",
       "fullName": "Bitcoin Mainnet",
       "aliases": [
-        "bitcoin",
-        "btc-mainnet"
+        "bitcoin"
       ],
       "caip2Id": "bip122:000000000019d6689c085ae165831e93",
       "explorerUrls": [
@@ -7406,8 +7392,7 @@
       "fullName": "Solana Mainnet",
       "aliases": [
         "solana-mainnet",
-        "solana",
-        "solana-beta"
+        "solana"
       ],
       "caip2Id": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
       "explorerUrls": [

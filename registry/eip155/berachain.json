@@ -8,7 +8,11 @@
   "rpcUrls": ["https://rpc.berachain.com"],
   "explorerUrls": ["https://berascan.com"],
   "apiUrls": [{ "url": "https://api.berascan.com/api", "kind": "etherscan" }],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["bera.firehose.pinax.network:443"],
+    "substreams": ["bera.substreams.pinax.network:443"]
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "BERA",

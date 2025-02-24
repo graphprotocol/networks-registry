@@ -9,7 +9,11 @@
   "explorerUrls": ["https://www.oklink.com/xlayer-test"],
   "rpcUrls": ["https://testrpc.xlayer.tech"],
   "apiUrls": [],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["xlayertest.firehose.pinax.network:443"],
+    "substreams": ["xlayertest.substreams.pinax.network:443"]
+  },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },

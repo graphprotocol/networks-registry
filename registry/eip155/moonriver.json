@@ -2,7 +2,7 @@
   "id": "moonriver",
   "shortName": "Moonriver",
   "fullName": "Moonriver Mainnet",
-  "aliases": ["evm-1285", "mriver"],
+  "aliases": ["evm-1285", "mriver", "moonriver-mainnet"],
   "caip2Id": "eip155:1285",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://moonriver.moonscan.io"],

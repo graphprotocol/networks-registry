@@ -2,7 +2,7 @@
   "id": "bnb-op",
   "shortName": "opBNB",
   "fullName": "opBNB Mainnet",
-  "aliases": ["evm-204", "opbnb", "bsc-op"],
+  "aliases": ["evm-204", "opbnb", "bsc-op", "bnb-op-mainnet"],
   "caip2Id": "eip155:204",
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "bsc" }],

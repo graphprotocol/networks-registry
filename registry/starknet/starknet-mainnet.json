@@ -16,13 +16,10 @@
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": [
-      "mainnet.starknet.streamingfast.io:443",
-      "starknet.firehose.pinax.network:443"
-    ],
+    "firehose": ["starknet.firehose.pinax.network:443"],
     "substreams": [
-      "mainnet.starknet.streamingfast.io:443",
-      "starknet.substreams.pinax.network:443"
+      "starknet.substreams.pinax.network:443",
+      "mainnet.starknet.streamingfast.io:443"
     ]
   },
   "issuanceRewards": false,

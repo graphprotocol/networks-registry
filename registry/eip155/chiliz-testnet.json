@@ -17,7 +17,11 @@
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "chiliz" }],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["spicy.firehose.pinax.network:443"],
+    "substreams": ["spicy.substreams.pinax.network:443"]
+  },
   "issuanceRewards": false,
   "nativeToken": "CHZ",
   "docsUrl": "https://docs.chiliz.com",

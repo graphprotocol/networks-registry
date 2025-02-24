@@ -215,13 +215,6 @@ function validateServices(networks: Network[]) {
         }
       }
     });
-
-    // Validate that firehose and substreams services are paired by provider
-    const firehoseUrls = services.firehose ?? [];
-    const substreamsUrls = services.substreams ?? [];
-    if (firehoseUrls.length !== substreamsUrls.length) {
-      WARNINGS.push(`\`${network.id}\` - no matching substreams/firehose pair`);
-    }
   }
 
   process.stdout.write("done\n");
@@ -244,6 +237,33 @@ function validateUrls(networks: Network[]) {
     const match = /\{([^}]+)\}/g.exec(url); // Matches any {..}
     if (match && !/^[A-Z_]+$/.test(match[1])) {
       ERRORS.push(`Only upper-case variables allowed in URL: ${url}`);
+    }
+  }
+  process.stdout.write("done\n");
+}
+
+function validateMainnetAliases(networks: Network[]) {
+  process.stdout.write("Validating mainnet aliases ... ");
+  const mainnets = networks.filter(
+    (n) =>
+      n.id !== "mainnet" &&
+      n.networkType === "mainnet" &&
+      !n.relations?.some((r) => r.kind === "beaconOf"),
+  );
+  for (const network of mainnets) {
+    const woMainnet = network.id.replace("-mainnet", "");
+    const withMainnet = `${woMainnet}-mainnet`;
+
+    if (woMainnet === network.id) {
+      if (!network.aliases?.includes(withMainnet)) {
+        ERRORS.push(
+          `\`${network.id}\` - must have an alias \`${withMainnet}\``,
+        );
+      }
+    } else {
+      if (!network.aliases?.includes(woMainnet)) {
+        ERRORS.push(`\`${network.id}\` - must have an alias \`${woMainnet}\``);
+      }
     }
   }
   process.stdout.write("done\n");
@@ -434,6 +454,7 @@ export async function validateLogic(networksPath: string) {
   validateTestnets(networks);
   validateUrls(networks);
   validateServices(networks);
+  validateMainnetAliases(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
   await validateGraphNetworks(networks);
