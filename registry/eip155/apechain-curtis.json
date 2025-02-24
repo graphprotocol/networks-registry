@@ -1,0 +1,34 @@
+{
+  "id": "apechain-curtis",
+  "shortName": "ApeChain",
+  "secondName": "Curtis",
+  "fullName": "ApeChain Curtis Testnet",
+  "aliases": ["apechain-testnet", "evm-33111"],
+  "caip2Id": "eip155:33111",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://curtis.apescan.io/"],
+  "rpcUrls": ["https://curtis.rpc.caldera.xyz/http"],
+  "apiUrls": [
+    { "url": "https://api-curtis.apescan.io/api", "kind": "etherscan" }
+  ],
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "apechain" },
+    { "kind": "l2Of", "network": "arbitrum-sepolia" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "APE",
+  "docsUrl": "https://docs.apechain.com/",
+  "genesis": {
+    "hash": "0xebbc9a87d1c945533b12311d15d11f7baab6d8c64f7aabe9d956f862554807a8",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "apechain" } }
+}
