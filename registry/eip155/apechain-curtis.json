@@ -6,7 +6,7 @@
   "aliases": ["apechain-testnet", "evm-33111"],
   "caip2Id": "eip155:33111",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://curtis.apescan.io/"],
+  "explorerUrls": ["https://curtis.apescan.io"],
   "rpcUrls": ["https://curtis.rpc.caldera.xyz/http"],
   "apiUrls": [
     { "url": "https://api-curtis.apescan.io/api", "kind": "etherscan" }
@@ -19,7 +19,7 @@
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "APE",
-  "docsUrl": "https://docs.apechain.com/",
+  "docsUrl": "https://docs.apechain.com",
   "genesis": {
     "hash": "0xebbc9a87d1c945533b12311d15d11f7baab6d8c64f7aabe9d956f862554807a8",
     "height": 0
