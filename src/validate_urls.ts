@@ -235,7 +235,7 @@ async function validateApis(networks: Network[]) {
   const urls = networks.flatMap((n) =>
     (n.apiUrls ?? []).map(({ url, kind }) => ({ url, kind, networkId: n.id })),
   );
-  const results = await processQueue(urls, testAPI);
+  const results = await processQueue(urls, testAPI, 10);
 
   console.log(
     `API validation complete: ${results.filter(Boolean).length}/${urls.length} endpoints accessible\n`,
