@@ -1,0 +1,30 @@
+{
+  "id": "metis",
+  "shortName": "Metis",
+  "fullName": "Metis Andromeda Mainnet",
+  "aliases": ["metis-mainnet", "metis-andromeda", "metis-andromeda-mainnet", "evm-1088"],
+  "caip2Id": "eip155:1088",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.metis.io"],
+  "apiUrls": [
+    { "url": "https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api", "kind": "etherscan" }
+  ],
+  "rpcUrls": ["https://andromeda.metis.io"],
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "METIS",
+  "docsUrl": "https://docs.metis.io/",
+  "genesis": {
+    "hash": "0x9e3354e081a54a57190bdb8948a597c840ea5dd496b0322864d4585f4a716892",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "metis-andromeda" } }
+}
