@@ -1,0 +1,34 @@
+{
+  "id": "hashkeychain-sepolia",
+  "shortName": "Hashkey Chain",
+  "secondName": "Sepolia",
+  "fullName": "Hashkey Chain Sepolia Testnet",
+  "aliases": ["hashkeychain-testnet", "evm-133"],
+  "caip2Id": "eip155:133",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://hashkeychain-testnet-explorer.alt.technology"],
+  "apiUrls": [
+    {
+      "url": "https://hashkeychain-testnet-explorer.alt.technology/api",
+      "kind": "etherscan"
+    }
+  ],
+  "rpcUrls": ["https://hashkeychain-testnet.alt.technology"],
+  "networkType": "testnet",
+  "relations": [{ "kind": "l2Of", "network": "sepolia" }],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "HSK",
+  "docsUrl": "https://docs.hsk.xyz",
+  "genesis": {
+    "hash": "0x656cb2200b3dd0ac9434a86aa8db62fe1a0f317be4086cc5fe80c7c36645ed8c",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "hashkey" } }
+}
