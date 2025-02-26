@@ -1,6 +1,7 @@
 {
   "id": "metis",
   "shortName": "Metis",
+  "secondName": "Andromeda",
   "fullName": "Metis Andromeda Mainnet",
   "aliases": ["metis-mainnet", "metis-andromeda", "metis-andromeda-mainnet", "evm-1088"],
   "caip2Id": "eip155:1088",
