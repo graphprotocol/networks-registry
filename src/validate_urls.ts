@@ -81,8 +81,9 @@ async function testAPI({
         console.log(`  ${networkId} - ${url} is valid`);
       },
       url,
-      3,
+      5, // max attempts
       30_000, // for rate-limiting
+      0.2, // jitter
     );
   } catch (e) {
     let errorMessage = "unknown error";
@@ -235,7 +236,7 @@ async function validateApis(networks: Network[]) {
   const urls = networks.flatMap((n) =>
     (n.apiUrls ?? []).map(({ url, kind }) => ({ url, kind, networkId: n.id })),
   );
-  const results = await processQueue(urls, testAPI, 10);
+  const results = await processQueue(urls, testAPI, 20);
 
   console.log(
     `API validation complete: ${results.filter(Boolean).length}/${urls.length} endpoints accessible\n`,

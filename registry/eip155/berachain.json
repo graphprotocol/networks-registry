@@ -7,7 +7,10 @@
   "graphNode": { "protocol": "ethereum" },
   "rpcUrls": ["https://rpc.berachain.com"],
   "explorerUrls": ["https://berascan.com"],
-  "apiUrls": [{ "url": "https://api.berascan.com/api", "kind": "etherscan" }],
+  "apiUrls": [
+    { "url": "https://berachain.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://api.routescan.io/v2/network/mainnet/evm/80094/etherscan/api", "kind": "etherscan" }
+  ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["bera.firehose.pinax.network:443"],

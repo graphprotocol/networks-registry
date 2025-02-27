@@ -8,7 +8,7 @@
   "explorerUrls": ["https://explorer.harmony.one/?shard=0"],
   "rpcUrls": ["https://api.harmony.one/?shard=0"],
   "apiUrls": [
-    { "url": "https://explorer.harmony.one/api?shard=0", "kind": "etherscan" }
+    { "url": "https://explorer.harmony.one/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",

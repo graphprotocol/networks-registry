@@ -39,19 +39,22 @@ export async function withRetry<T>(
   caption: string = "operation",
   maxAttempts: number = DEFAULT_MAX_RETRY_ATTEMPTS,
   delayMs: number = DEFAULT_RETRY_SLEEP_MS,
+  jitter: number = 0,
 ): Promise<T> {
   let lastError: any;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {
+      console.log(`Trying ${caption} ... (attempt ${attempt}/${maxAttempts})`);
       return await operation();
     } catch (error) {
       lastError = error;
       if (attempt < maxAttempts) {
-        await new Promise((resolve) => setTimeout(resolve, delayMs));
-        console.log(
-          `Retrying ${caption} ... (attempt ${attempt + 1}/${maxAttempts})`,
-        );
+        const jitterOffset = jitter * (Math.random() * 2 - 1); // Value between -jitter and +jitter
+        const actualDelay = Math.floor(delayMs * (1 + jitterOffset));
+
+        console.log(`${caption} failed, retrying in ${actualDelay}ms...`);
+        await new Promise((resolve) => setTimeout(resolve, actualDelay));
       }
     }
   }

@@ -7,7 +7,9 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://kaiascan.io"],
   "rpcUrls": ["https://public-en.node.kaia.io"],
-  "apiUrls": [],
+  "apiUrls": [
+    { "url": "https://kaia.abi.pinax.network/api", "kind": "etherscan" }
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,

@@ -11,7 +11,8 @@
     "https://cronos.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://cronos.org/explorer/api", "kind": "blockscout" }
+    { "url": "https://cronos.org/explorer/api", "kind": "blockscout" },
+    { "url": "https://cronos.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {},
   "networkType": "mainnet",

@@ -9,7 +9,7 @@
   "rpcUrls": ["https://rpc.testnet.lens.dev"],
   "apiUrls": [
     {
-      "url": "https://block-explorer-api.staging.lens.dev/api",
+      "url": "https://block-explorer-api.lens.dev/api",
       "kind": "etherscan"
     }
   ],

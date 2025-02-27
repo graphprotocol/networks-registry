@@ -37,15 +37,19 @@ async function main() {
 
     let networks = loadNetworks("registry");
     console.log("Loaded from registry: ", networks.length);
+    const overlappedChains = networks
+      .filter((network) =>
+        etherscanChains.some(
+          (ethChain) => network.caip2Id === `eip155:${ethChain.chainid}`,
+        ),
+      )
+      .sort((a, b) => a.id.localeCompare(b.id));
+    console.log("Overlap: ", overlappedChains.length);
 
     console.log(
       "id                     chainid      registry   proxy                url",
     );
-    for (const ethChain of etherscanChains) {
-      const network = networks.find(
-        (n) => n.caip2Id === `eip155:${ethChain.chainid}`,
-      );
-      if (!network) continue;
+    for (const network of overlappedChains) {
       const ourApi = network.apiUrls?.find((c) =>
         c.url.includes("abi.pinax.network"),
       )?.url;
@@ -56,7 +60,7 @@ async function main() {
         .catch(() => false);
 
       console.log(
-        `${network.id.padEnd(22)} ${ethChain.chainid.toString().padEnd(15)} ${(inRegistry ? "✅" : "❌").padEnd(7)}  ${inProxy ? "✅" : "❌"}      ${url}`,
+        `${network.id.padEnd(22)} ${network.caip2Id.replace(/^eip155:/, "").padEnd(15)} ${(inRegistry ? "✅" : "❌").padEnd(7)}  ${inProxy ? "✅" : "❌"}      ${url}`,
       );
       await sleep(7000); // limited to 10 requests in 1 minute
     }

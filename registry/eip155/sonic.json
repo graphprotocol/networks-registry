@@ -11,7 +11,8 @@
     {
       "url": "https://api.routescan.io/v2/network/mainnet/evm/146/etherscan/api",
       "kind": "etherscan"
-    }
+    },
+    { "url": "https://sonic.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
