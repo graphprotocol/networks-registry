@@ -9,7 +9,7 @@
   "rpcUrls": [
     "https://rpc.chiliz.com",
     "https://rpc.ankr.com/chiliz",
-    "https://chiliz.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://chiliz.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://scan.chiliz.com/api", "kind": "etherscan" },

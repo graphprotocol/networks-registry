@@ -13,7 +13,7 @@
   "explorerUrls": ["https://www.oklink.com/amoy"],
   "rpcUrls": [
     "https://rpc-amoy.polygon.technology",
-    "https://amoy.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://amoy.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

@@ -9,7 +9,7 @@
   "rpcUrls": [
     "https://rpc.xlayer.tech",
     "https://xlayerrpc.okx.com",
-    "https://xlayer.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://xlayer.rpc.service.pinax.network"
   ],
   "apiUrls": [],
   "services": {

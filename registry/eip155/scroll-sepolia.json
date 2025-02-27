@@ -9,7 +9,7 @@
   "explorerUrls": ["https://sepolia.scrollscan.com"],
   "rpcUrls": [
     "https://sepolia-rpc.scroll.io",
-    "https://scrsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://scrsepolia.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

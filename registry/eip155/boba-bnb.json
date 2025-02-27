@@ -9,7 +9,7 @@
   "rpcUrls": [
     "https://bnb.boba.network",
     "https://boba-bnb.gateway.tenderly.co",
-    "https://bobabnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://bobabnb.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

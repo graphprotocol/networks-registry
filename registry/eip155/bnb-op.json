@@ -9,7 +9,7 @@
   "explorerUrls": ["https://opbnbscan.com"],
   "rpcUrls": [
     "https://opbnb-mainnet-rpc.bnbchain.org",
-    "https://opbnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://opbnb.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://bnb-op.abi.pinax.network/api", "kind": "etherscan" }

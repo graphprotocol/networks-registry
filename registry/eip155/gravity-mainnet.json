@@ -9,7 +9,7 @@
   "explorerUrls": ["https://explorer.gravity.xyz"],
   "rpcUrls": [
     "https://rpc.gravity.xyz",
-    "https://gravity.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://gravity.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }

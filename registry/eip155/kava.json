@@ -8,7 +8,7 @@
   "explorerUrls": ["https://kavascan.io"],
   "rpcUrls": [
     "https://rpc.ankr.com/kava_evm",
-    "https://kava.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://kava.rpc.service.pinax.network"
   ],
   "apiUrls": [],
   "networkType": "mainnet",

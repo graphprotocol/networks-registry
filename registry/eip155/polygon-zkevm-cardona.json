@@ -13,7 +13,7 @@
   "explorerUrls": ["https://cardona-zkevm.polygonscan.com"],
   "rpcUrls": [
     "https://rpc.cardona.zkevm-rpc.com",
-    "https://cardona.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://cardona.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

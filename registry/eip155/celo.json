@@ -8,7 +8,7 @@
   "explorerUrls": ["https://celoscan.io"],
   "rpcUrls": [
     "https://forno.celo.org",
-    "https://celo.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://celo.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://celo.abi.pinax.network/api", "kind": "etherscan" },

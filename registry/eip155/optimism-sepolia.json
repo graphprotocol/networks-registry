@@ -13,7 +13,7 @@
   "explorerUrls": ["https://optimism-sepolia.blockscout.com"],
   "rpcUrls": [
     "https://sepolia.optimism.io",
-    "https://opsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://opsepolia.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

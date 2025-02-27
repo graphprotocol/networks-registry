@@ -9,7 +9,7 @@
   "explorerUrls": ["https://explorer.zksync.io"],
   "rpcUrls": [
     "https://mainnet.era.zksync.io",
-    "https://zksyncera.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://zksyncera.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

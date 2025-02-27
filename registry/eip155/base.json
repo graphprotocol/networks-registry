@@ -9,7 +9,7 @@
   "rpcUrls": [
     "https://mainnet.base.org",
     "https://base-rpc.publicnode.com",
-    "https://base.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://base.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://base.abi.pinax.network/api", "kind": "etherscan" },

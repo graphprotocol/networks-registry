@@ -9,7 +9,7 @@
   "explorerUrls": ["https://zkevm.polygonscan.com"],
   "rpcUrls": [
     "https://zkevm-rpc.com",
-    "https://polygonzk.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://polygonzk.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

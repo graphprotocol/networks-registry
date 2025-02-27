@@ -8,7 +8,7 @@
   "explorerUrls": ["https://explorer.xai-chain.net"],
   "rpcUrls": [
     "https://xai-chain.net/rpc",
-    "https://xai.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://xai.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://explorer.xai-chain.net/api", "kind": "blockscout" },
