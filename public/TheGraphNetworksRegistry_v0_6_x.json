@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.45",
+  "version": "0.6.46",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-27T00:41:19.488Z",
+  "updatedAt": "2025-02-27T18:52:21.866Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2805,7 +2805,8 @@
         "https://www.oklink.com/xlayer-test"
       ],
       "rpcUrls": [
-        "https://testrpc.xlayer.tech"
+        "https://testrpc.xlayer.tech",
+        "https://xlayertestrpc.okx.com"
       ],
       "apiUrls": [],
       "services": {
@@ -2866,6 +2867,7 @@
       ],
       "rpcUrls": [
         "https://rpc.xlayer.tech",
+        "https://xlayerrpc.okx.com",
         "https://xlayer.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
       "apiUrls": [],
@@ -7705,9 +7707,7 @@
       "apiUrls": [],
       "networkType": "mainnet",
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "sps": [
           "https://api.studio.thegraph.com/deploy"
         ],
@@ -7797,9 +7797,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "sps": [
           "https://api.studio.thegraph.com/deploy"
         ],
@@ -7925,6 +7923,12 @@
       "apiUrls": [],
       "networkType": "testnet",
       "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ],
+        "sps": [
+          "https://api.studio.thegraph.com/deploy"
+        ],
         "firehose": [
           "starksepolia.firehose.pinax.network:443"
         ],
