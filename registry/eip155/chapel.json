@@ -9,7 +9,7 @@
   "explorerUrls": ["https://testnet.bscscan.com"],
   "rpcUrls": [
     "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
-    "https://chapel.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://chapel.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://bsc-testnet.abi.pinax.network/api", "kind": "etherscan" }

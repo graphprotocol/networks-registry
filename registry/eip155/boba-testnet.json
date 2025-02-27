@@ -9,7 +9,7 @@
   "explorerUrls": ["https://testnet.bobascan.com"],
   "rpcUrls": [
     "https://sepolia.boba.network",
-    "https://bobasepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://bobasepolia.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

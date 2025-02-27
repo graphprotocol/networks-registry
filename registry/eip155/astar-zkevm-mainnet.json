@@ -9,7 +9,7 @@
   "explorerUrls": ["https://astar-zkevm.explorer.startale.com"],
   "rpcUrls": [
     "https://rpc.startale.com/astar-zkevm",
-    "https://zkastar.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://zkastar.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

@@ -9,7 +9,7 @@
   "explorerUrls": ["https://starkscan.co"],
   "rpcUrls": [
     "https://starknet-mainnet.public.blastapi.io",
-    "https://starknet.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://starknet.rpc.service.pinax.network"
   ],
   "apiUrls": [],
   "networkType": "mainnet",

@@ -14,7 +14,7 @@
   "explorerUrls": ["https://sepolia.arbiscan.io"],
   "rpcUrls": [
     "https://sepolia-rollup.arbitrum.io/rpc",
-    "https://arbsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://arbsepolia.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

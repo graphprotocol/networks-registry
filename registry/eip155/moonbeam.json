@@ -8,7 +8,7 @@
   "explorerUrls": ["https://moonbeam.moonscan.io"],
   "rpcUrls": [
     "https://rpc.api.moonbeam.network",
-    "https://moonbeam.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://moonbeam.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://moonbeam.abi.pinax.network/api", "kind": "etherscan" }

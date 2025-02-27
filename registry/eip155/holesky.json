@@ -15,7 +15,7 @@
   "rpcUrls": [
     "https://ethereum-holesky-rpc.publicnode.com",
     "https://rpc-holesky.rockx.com",
-    "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://holesky.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://eth-holesky.blockscout.com/api", "kind": "blockscout" },

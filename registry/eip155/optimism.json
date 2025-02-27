@@ -10,7 +10,7 @@
   "rpcUrls": [
     "https://mainnet.optimism.io",
     "https://optimism-rpc.publicnode.com",
-    "https://optimism.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://optimism.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://optimism.abi.pinax.network/api", "kind": "etherscan" },

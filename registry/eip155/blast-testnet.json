@@ -9,7 +9,7 @@
   "explorerUrls": ["https://sepolia.blastscan.io"],
   "rpcUrls": [
     "https://sepolia.blast.io",
-    "https://blastsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://blastsepolia.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

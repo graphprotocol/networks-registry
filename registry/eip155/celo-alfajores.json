@@ -11,7 +11,7 @@
   "explorerUrls": ["https://alfajores.celoscan.io"],
   "rpcUrls": [
     "https://alfajores-forno.celo-testnet.org",
-    "https://alfajores.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://alfajores.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

@@ -9,7 +9,7 @@
   "explorerUrls": ["https://explorer.evm.eosnetwork.com"],
   "rpcUrls": [
     "https://api.evm.eosnetwork.com",
-    "https://eosevm.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://eosevm.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "kind": "etherscan", "url": "https://explorer.evm.eosnetwork.com/api" }

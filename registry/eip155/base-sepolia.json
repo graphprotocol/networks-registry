@@ -10,7 +10,7 @@
   "rpcUrls": [
     "https://sepolia.base.org",
     "https://base-sepolia-rpc.publicnode.com",
-    "https://basesepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://basesepolia.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

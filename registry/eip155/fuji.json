@@ -8,8 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.snowscan.xyz"],
   "rpcUrls": [
-    "https://api.avax-test.network/ext/bc/C/rpc",
-    "https://fuji.rpc.pinax.network/v1/{PINAX_API_KEY}/ext/bc/C/rpc"
+    "https://api.avax-test.network/ext/bc/C/rpc"
   ],
   "apiUrls": [
     { "url": "https://fuji.abi.pinax.network/api", "kind": "etherscan" },

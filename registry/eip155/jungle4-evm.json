@@ -13,7 +13,7 @@
   "explorerUrls": ["https://explorer.testnet.evm.eosnetwork.com"],
   "rpcUrls": [
     "https://api.testnet.evm.eosnetwork.com",
-    "https://jungle4evm.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://jungle4evm.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

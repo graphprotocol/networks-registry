@@ -8,7 +8,7 @@
   "explorerUrls": ["https://blastscan.io"],
   "rpcUrls": [
     "https://rpc.blast.io",
-    "https://blast.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://blast.rpc.service.pinax.network",
     "https://rpc.ankr.com/blast"
   ],
   "apiUrls": [

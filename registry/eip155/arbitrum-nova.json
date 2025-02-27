@@ -9,7 +9,7 @@
   "rpcUrls": [
     "https://nova.arbitrum.io/rpc",
     "https://arbitrum-nova.publicnode.com",
-    "https://arbnova.rpc.pinax.network/v1/{PINAX_API_KEY}"
+    "https://arbnova.rpc.service.pinax.network"
   ],
   "apiUrls": [
     {

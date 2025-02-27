@@ -9,7 +9,7 @@
   "explorerUrls": ["https://polygonscan.com"],
   "rpcUrls": [
     "https://polygon-rpc.com",
-    "https://polygon.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://polygon.rpc.service.pinax.network",
     "https://rpc.ankr.com/polygon"
   ],
   "apiUrls": [

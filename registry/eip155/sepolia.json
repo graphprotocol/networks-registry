@@ -15,7 +15,7 @@
   "rpcUrls": [
     "https://rpc-sepolia.rockx.com",
     "https://sepolia.gateway.tenderly.co",
-    "https://sepolia.rpc.pinax.network/v1/{PINAX_API_KEY}",
+    "https://sepolia.rpc.service.pinax.network",
     "https://sepolia.infura.io/v3/${INFURA_API_KEY}"
   ],
   "apiUrls": [
