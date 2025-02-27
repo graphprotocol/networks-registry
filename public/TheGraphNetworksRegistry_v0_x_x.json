@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.44",
+  "version": "0.6.45",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-26T14:34:49.105Z",
+  "updatedAt": "2025-02-27T00:41:19.488Z",
   "networks": [
     {
       "id": "mainnet",
@@ -24,7 +24,8 @@
       ],
       "rpcUrls": [
         "https://rpc.ankr.com/eth",
-        "https://cloudflare-eth.com",
+        "https://ethereum-rpc.publicnode.com",
+        "https://mainnet.gateway.tenderly.co",
         "https://eth.rpc.pinax.network/v1/{PINAX_API_KEY}",
         "https://mainnet.infura.io/v3/{INFURA_API_KEY}"
       ],
@@ -245,7 +246,12 @@
       "rpcUrls": [
         "https://public-en-kairos.node.kaia.io"
       ],
-      "apiUrls": [],
+      "apiUrls": [
+        {
+          "url": "https://kaia-testnet.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -527,7 +533,7 @@
       },
       "issuanceRewards": false,
       "nativeToken": "METIS",
-      "docsUrl": "https://docs.metis.io/",
+      "docsUrl": "https://docs.metis.io",
       "genesis": {
         "hash": "0x9e3354e081a54a57190bdb8948a597c840ea5dd496b0322864d4585f4a716892",
         "height": 0
@@ -638,6 +644,10 @@
         },
         {
           "url": "https://api.routescan.io/v2/network/testnet/evm/11124/etherscan/api",
+          "kind": "etherscan"
+        },
+        {
+          "url": "https://abstract-testnet.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -1136,7 +1146,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api-moonriver.moonscan.io/api",
+          "url": "https://moonriver.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -1265,6 +1275,10 @@
         {
           "url": "https://unichain.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://unichain.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "rpcUrls": [
@@ -1327,6 +1341,10 @@
         },
         {
           "url": "https://api.routescan.io/v2/network/testnet/evm/1301/etherscan/api",
+          "kind": "etherscan"
+        },
+        {
+          "url": "https://unichain-testnet.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -1792,6 +1810,10 @@
         {
           "url": "https://api.routescan.io/v2/network/mainnet/evm/146/etherscan/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://sonic.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -2070,7 +2092,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://explorer.harmony.one/api?shard=0",
+          "url": "https://explorer.harmony.one/api",
           "kind": "etherscan"
         }
       ],
@@ -2262,6 +2284,10 @@
         {
           "url": "https://eth-holesky.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://holesky.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -2907,7 +2933,12 @@
         "https://opbnb-mainnet-rpc.bnbchain.org",
         "https://opbnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
       ],
-      "apiUrls": [],
+      "apiUrls": [
+        {
+          "url": "https://bnb-op.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
       "services": {
         "firehose": [
           "opbnb.firehose.pinax.network:443"
@@ -3129,10 +3160,6 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api-cardona-zkevm.polygonscan.com/api",
-          "kind": "blockscout"
-        },
-        {
           "url": "https://polygon-zkevm-cardona.abi.pinax.network/api",
           "kind": "etherscan"
         }
@@ -3188,6 +3215,10 @@
         {
           "url": "https://cronos.org/explorer/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://cronos.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {},
@@ -3297,6 +3328,10 @@
         {
           "url": "https://fraxtal.abi.pinax.network/api",
           "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/252/etherscan/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -3350,7 +3385,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.abscan.org/api",
+          "url": "https://abstract.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -3602,6 +3637,10 @@
         {
           "url": "https://zksync-sepolia.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://zksync-era-sepolia.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -3720,6 +3759,10 @@
         {
           "url": "https://zksync.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://zksync-era.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -3774,7 +3817,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api-curtis.apescan.io/api",
+          "url": "https://apechain-testnet.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -3833,7 +3876,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.apescan.io/api",
+          "url": "https://apechain.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -4008,7 +4051,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://block-explorer-api.staging.lens.dev/api",
+          "url": "https://block-explorer-api.lens.dev/api",
           "kind": "etherscan"
         }
       ],
@@ -4281,10 +4324,6 @@
         {
           "url": "https://arbitrum-sepolia.abi.pinax.network/api",
           "kind": "etherscan"
-        },
-        {
-          "url": "https://sepolia-explorer.arbitrum.io/api",
-          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4346,10 +4385,6 @@
         {
           "url": "https://arbitrum-nova.abi.pinax.network/api",
           "kind": "etherscan"
-        },
-        {
-          "url": "https://nova-explorer.arbitrum.io/api",
-          "kind": "blockscout"
         }
       ],
       "services": {
@@ -4577,6 +4612,10 @@
       ],
       "apiUrls": [
         {
+          "url": "https://fuji.abi.pinax.network/api",
+          "kind": "etherscan"
+        },
+        {
           "url": "https://api-testnet.snowtrace.io/api",
           "kind": "etherscan"
         },
@@ -4638,6 +4677,10 @@
         "https://avalanche-c-chain-rpc.publicnode.com"
       ],
       "apiUrls": [
+        {
+          "url": "https://avalanche.abi.pinax.network/api",
+          "kind": "etherscan"
+        },
         {
           "url": "https://api.snowtrace.io/api",
           "kind": "etherscan"
@@ -4974,12 +5017,12 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api-sepolia.scrollscan.com/api",
-          "kind": "etherscan"
-        },
-        {
           "url": "https://scroll-sepolia.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://scroll-sepolia.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -5045,12 +5088,12 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.scrollscan.com/api",
-          "kind": "etherscan"
-        },
-        {
           "url": "https://scroll.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://scroll.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -5454,6 +5497,10 @@
         {
           "url": "https://explorer.xai-chain.net/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://xai.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -5878,7 +5925,11 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.berascan.com/api",
+          "url": "https://berachain.abi.pinax.network/api",
+          "kind": "etherscan"
+        },
+        {
+          "url": "https://api.routescan.io/v2/network/mainnet/evm/80094/etherscan/api",
           "kind": "etherscan"
         }
       ],
@@ -6058,7 +6109,12 @@
       "rpcUrls": [
         "https://public-en.node.kaia.io"
       ],
-      "apiUrls": [],
+      "apiUrls": [
+        {
+          "url": "https://kaia.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"

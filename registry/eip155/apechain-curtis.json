@@ -9,7 +9,10 @@
   "explorerUrls": ["https://curtis.apescan.io"],
   "rpcUrls": ["https://curtis.rpc.caldera.xyz/http"],
   "apiUrls": [
-    { "url": "https://apechain-testnet.abi.pinax.network/api", "kind": "etherscan" }
+    {
+      "url": "https://apechain-testnet.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
   ],
   "networkType": "testnet",
   "relations": [

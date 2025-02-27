@@ -8,10 +8,7 @@
   "explorerUrls": ["https://block-explorer.testnet.lens.dev"],
   "rpcUrls": ["https://rpc.testnet.lens.dev"],
   "apiUrls": [
-    {
-      "url": "https://block-explorer-api.lens.dev/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://block-explorer-api.lens.dev/api", "kind": "etherscan" }
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "l2Of", "network": "sepolia" }],
