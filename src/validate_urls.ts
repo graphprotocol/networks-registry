@@ -21,6 +21,9 @@ async function testURL({
       const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
       const response = await fetch(url, {
         method: "HEAD",
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+        },
         signal: controller.signal,
       });
 
@@ -30,7 +33,7 @@ async function testURL({
         const err = `${networkId} - ${url} returned ${response.status}`;
         //acceptable error codes
         if ([308, 307, 403].includes(response.status)) {
-          console.warn(err);
+          console.warn(err + " (acceptable error)");
           return;
         }
         throw new Error(err);
