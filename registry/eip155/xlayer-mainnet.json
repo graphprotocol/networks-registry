@@ -8,6 +8,7 @@
   "explorerUrls": ["https://www.oklink.com/xlayer"],
   "rpcUrls": [
     "https://rpc.xlayer.tech",
+    "https://xlayerrpc.okx.com",
     "https://xlayer.rpc.pinax.network/v1/{PINAX_API_KEY}"
   ],
   "apiUrls": [],
