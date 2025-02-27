@@ -81,8 +81,9 @@ async function testAPI({
         console.log(`  ${networkId} - ${url} is valid`);
       },
       url,
-      3,
+      5, // max attempts
       30_000, // for rate-limiting
+      0.2, // jitter
     );
   } catch (e) {
     let errorMessage = "unknown error";
