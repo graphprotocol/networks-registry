@@ -9,7 +9,7 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": [
       "mainnet.sol.streamingfast.io:443",
