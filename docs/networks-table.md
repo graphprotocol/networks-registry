@@ -1,4 +1,4 @@
-# Networks Registry v0.6.46
+# Networks Registry v0.6.47
 
 Auto-generated from the networks registry on every release.
 

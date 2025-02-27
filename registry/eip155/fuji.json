@@ -7,9 +7,7 @@
   "caip2Id": "eip155:43113",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.snowscan.xyz"],
-  "rpcUrls": [
-    "https://api.avax-test.network/ext/bc/C/rpc"
-  ],
+  "rpcUrls": ["https://api.avax-test.network/ext/bc/C/rpc"],
   "apiUrls": [
     { "url": "https://fuji.abi.pinax.network/api", "kind": "etherscan" },
     { "url": "https://api-testnet.snowtrace.io/api", "kind": "etherscan" },

@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.46",
+  "version": "0.6.47",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-02-27T18:52:21.866Z",
+  "updatedAt": "2025-02-27T19:25:02.327Z",
   "networks": [
     {
       "id": "mainnet",
@@ -26,7 +26,7 @@
         "https://rpc.ankr.com/eth",
         "https://ethereum-rpc.publicnode.com",
         "https://mainnet.gateway.tenderly.co",
-        "https://eth.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://eth.rpc.service.pinax.network",
         "https://mainnet.infura.io/v3/{INFURA_API_KEY}"
       ],
       "apiUrls": [
@@ -110,7 +110,7 @@
       "rpcUrls": [
         "https://mainnet.optimism.io",
         "https://optimism-rpc.publicnode.com",
-        "https://optimism.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://optimism.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -183,7 +183,7 @@
       ],
       "rpcUrls": [
         "https://rpc.gnosischain.com",
-        "https://gnosis.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://gnosis.rpc.service.pinax.network",
         "https://rpc.gnosis.gateway.fm",
         "https://rpc.ankr.com/gnosis"
       ],
@@ -403,7 +403,7 @@
       ],
       "rpcUrls": [
         "https://rpc.chiadochain.net",
-        "https://chiado.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://chiado.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -573,7 +573,7 @@
       ],
       "rpcUrls": [
         "https://zkevm-rpc.com",
-        "https://polygonzk.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://polygonzk.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -712,7 +712,7 @@
       "rpcUrls": [
         "https://rpc-sepolia.rockx.com",
         "https://sepolia.gateway.tenderly.co",
-        "https://sepolia.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://sepolia.rpc.service.pinax.network",
         "https://sepolia.infura.io/v3/${INFURA_API_KEY}"
       ],
       "apiUrls": [
@@ -792,7 +792,7 @@
       ],
       "rpcUrls": [
         "https://sepolia.optimism.io",
-        "https://opsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://opsepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -906,7 +906,7 @@
       ],
       "rpcUrls": [
         "https://rpc.fuse.io",
-        "https://fuse.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://fuse.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -1078,7 +1078,7 @@
       ],
       "rpcUrls": [
         "https://rpc.api.moonbeam.network",
-        "https://moonbeam.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://moonbeam.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -1141,7 +1141,7 @@
       ],
       "rpcUrls": [
         "https://rpc.api.moonriver.moonbeam.network",
-        "https://moonriver.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://moonriver.rpc.service.pinax.network",
         "https://moonriver.public.blastapi.io"
       ],
       "apiUrls": [
@@ -1332,7 +1332,7 @@
       ],
       "rpcUrls": [
         "https://sepolia.unichain.org",
-        "https://unisepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://unisepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -1733,7 +1733,7 @@
       ],
       "rpcUrls": [
         "https://polygon-rpc.com",
-        "https://polygon.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://polygon.rpc.service.pinax.network",
         "https://rpc.ankr.com/polygon"
       ],
       "apiUrls": [
@@ -1974,7 +1974,7 @@
       ],
       "rpcUrls": [
         "https://api.testnet.evm.eosnetwork.com",
-        "https://jungle4evm.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://jungle4evm.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -2027,7 +2027,7 @@
       ],
       "rpcUrls": [
         "https://rpc.gravity.xyz",
-        "https://gravity.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://gravity.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -2139,7 +2139,7 @@
       ],
       "rpcUrls": [
         "https://sepolia.blast.io",
-        "https://blastsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://blastsepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -2278,7 +2278,7 @@
       "rpcUrls": [
         "https://ethereum-holesky-rpc.publicnode.com",
         "https://rpc-holesky.rockx.com",
-        "https://holesky.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://holesky.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -2404,7 +2404,7 @@
       ],
       "rpcUrls": [
         "https://api.evm.eosnetwork.com",
-        "https://eosevm.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://eosevm.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -2733,7 +2733,7 @@
       ],
       "rpcUrls": [
         "https://rpc.minato.soneium.org",
-        "https://minato.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://minato.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -2868,7 +2868,7 @@
       "rpcUrls": [
         "https://rpc.xlayer.tech",
         "https://xlayerrpc.okx.com",
-        "https://xlayer.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://xlayer.rpc.service.pinax.network"
       ],
       "apiUrls": [],
       "services": {
@@ -2933,7 +2933,7 @@
       ],
       "rpcUrls": [
         "https://opbnb-mainnet-rpc.bnbchain.org",
-        "https://opbnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://opbnb.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3107,7 +3107,7 @@
       ],
       "rpcUrls": [
         "https://rpc.ankr.com/kava_evm",
-        "https://kava.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://kava.rpc.service.pinax.network"
       ],
       "apiUrls": [],
       "networkType": "mainnet",
@@ -3158,7 +3158,7 @@
       ],
       "rpcUrls": [
         "https://rpc.cardona.zkevm-rpc.com",
-        "https://cardona.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://cardona.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3211,7 +3211,7 @@
       ],
       "rpcUrls": [
         "https://evm.cronos.org",
-        "https://cronos.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://cronos.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3263,7 +3263,7 @@
       ],
       "rpcUrls": [
         "https://rpc.ftm.tools",
-        "https://fantom.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://fantom.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3439,7 +3439,7 @@
       ],
       "rpcUrls": [
         "https://mainnet.boba.network",
-        "https://boba.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://boba.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3507,7 +3507,7 @@
       ],
       "rpcUrls": [
         "https://sepolia.boba.network",
-        "https://bobasepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://bobasepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3572,7 +3572,7 @@
       ],
       "rpcUrls": [
         "https://public-node.rsk.co",
-        "https://rootstock.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://rootstock.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3751,7 +3751,7 @@
       ],
       "rpcUrls": [
         "https://mainnet.era.zksync.io",
-        "https://zksyncera.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://zksyncera.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3924,7 +3924,7 @@
       ],
       "rpcUrls": [
         "https://mainnet.mode.network",
-        "https://mode.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://mode.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -4107,7 +4107,7 @@
       ],
       "rpcUrls": [
         "https://rpc.startale.com/astar-zkevm",
-        "https://zkastar.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://zkastar.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -4238,7 +4238,7 @@
         "https://arb1.arbitrum.io/rpc",
         "https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}",
         "https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}",
-        "https://arbone.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://arbone.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -4320,7 +4320,7 @@
       ],
       "rpcUrls": [
         "https://sepolia-rollup.arbitrum.io/rpc",
-        "https://arbsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://arbsepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -4381,7 +4381,7 @@
       "rpcUrls": [
         "https://nova.arbitrum.io/rpc",
         "https://arbitrum-nova.publicnode.com",
-        "https://arbnova.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://arbnova.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -4446,7 +4446,7 @@
       ],
       "rpcUrls": [
         "https://forno.celo.org",
-        "https://celo.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://celo.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -4609,8 +4609,7 @@
         "https://testnet.snowscan.xyz"
       ],
       "rpcUrls": [
-        "https://api.avax-test.network/ext/bc/C/rpc",
-        "https://fuji.rpc.pinax.network/v1/{PINAX_API_KEY}/ext/bc/C/rpc"
+        "https://api.avax-test.network/ext/bc/C/rpc"
       ],
       "apiUrls": [
         {
@@ -4675,7 +4674,6 @@
       ],
       "rpcUrls": [
         "https://api.avax.network/ext/bc/C/rpc",
-        "https://avalanche.rpc.pinax.network/v1/{PINAX_API_KEY}/ext/bc/C/rpc",
         "https://avalanche-c-chain-rpc.publicnode.com"
       ],
       "apiUrls": [
@@ -4759,7 +4757,7 @@
       ],
       "rpcUrls": [
         "https://alfajores-forno.celo-testnet.org",
-        "https://alfajores.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://alfajores.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5015,7 +5013,7 @@
       ],
       "rpcUrls": [
         "https://sepolia-rpc.scroll.io",
-        "https://scrsepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://scrsepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5085,7 +5083,7 @@
       ],
       "rpcUrls": [
         "https://rpc.scroll.io",
-        "https://scroll.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://scroll.rpc.service.pinax.network",
         "https://rpc.ankr.com/scroll"
       ],
       "apiUrls": [
@@ -5164,7 +5162,7 @@
       "rpcUrls": [
         "https://bsc-dataseed1.binance.org",
         "https://bsc-dataseed1.defibit.io",
-        "https://bsc.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://bsc.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5233,7 +5231,7 @@
       "rpcUrls": [
         "https://bnb.boba.network",
         "https://boba-bnb.gateway.tenderly.co",
-        "https://bobabnb.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://bobabnb.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5420,7 +5418,7 @@
       ],
       "rpcUrls": [
         "https://rpc.linea.build",
-        "https://linea.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://linea.rpc.service.pinax.network",
         "https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}"
       ],
       "apiUrls": [
@@ -5493,7 +5491,7 @@
       ],
       "rpcUrls": [
         "https://xai-chain.net/rpc",
-        "https://xai.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://xai.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5725,7 +5723,7 @@
       ],
       "rpcUrls": [
         "https://rpc.zora.energy",
-        "https://zora.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://zora.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5808,7 +5806,7 @@
       ],
       "rpcUrls": [
         "https://rpc-amoy.polygon.technology",
-        "https://amoy.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://amoy.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6034,7 +6032,7 @@
       ],
       "rpcUrls": [
         "https://rpc.blast.io",
-        "https://blast.rpc.pinax.network/v1/{PINAX_API_KEY}",
+        "https://blast.rpc.service.pinax.network",
         "https://rpc.ankr.com/blast"
       ],
       "apiUrls": [
@@ -6160,7 +6158,7 @@
       "rpcUrls": [
         "https://mainnet.base.org",
         "https://base-rpc.publicnode.com",
-        "https://base.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://base.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6239,7 +6237,7 @@
       "rpcUrls": [
         "https://sepolia.base.org",
         "https://base-sepolia-rpc.publicnode.com",
-        "https://basesepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://basesepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6419,7 +6417,7 @@
       "rpcUrls": [
         "https://rpc.chiliz.com",
         "https://rpc.ankr.com/chiliz",
-        "https://chiliz.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://chiliz.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6545,7 +6543,7 @@
       ],
       "rpcUrls": [
         "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
-        "https://chapel.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://chapel.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -7848,7 +7846,7 @@
       ],
       "rpcUrls": [
         "https://starknet-mainnet.public.blastapi.io",
-        "https://starknet.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://starknet.rpc.service.pinax.network"
       ],
       "apiUrls": [],
       "networkType": "mainnet",
@@ -7918,7 +7916,7 @@
       ],
       "rpcUrls": [
         "https://starknet-sepolia.public.blastapi.io",
-        "https://starksepolia.rpc.pinax.network/v1/{PINAX_API_KEY}"
+        "https://starksepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [],
       "networkType": "testnet",
