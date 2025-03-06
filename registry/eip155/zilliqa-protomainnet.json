@@ -1,0 +1,26 @@
+{
+  "id": "zilliqa-protomainnet",
+  "shortName": "Zilliqa",
+  "secondName": "Proto-Mainnet",
+  "fullName": "Zilliqa 2.0 Proto-Mainnet",
+  "aliases": ["evm-32770"],
+  "caip2Id": "eip155:32770",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.zq2-protomainnet.zilliqa.com/"],
+  "networkType": "testnet",
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "ZIL",
+  "docsUrl": "https://dev.zilliqa.com",
+  "genesis": {
+    "hash": "0xaef57e820056b14dbb42e4b39d38587f727d5a7014039c44018e16db7bb05eb4",
+    "height": 3
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "zilliqa" } }
+}
