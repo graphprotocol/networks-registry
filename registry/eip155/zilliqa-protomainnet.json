@@ -7,7 +7,6 @@
   "caip2Id": "eip155:32770",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.zq2-protomainnet.zilliqa.com/"],
-  "rpcUrls": ["https://explorer.zq2-protomainnet.zilliqa.com/"],
   "networkType": "testnet",
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
