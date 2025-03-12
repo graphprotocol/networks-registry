@@ -1,0 +1,26 @@
+{
+  "id": "peaq",
+  "shortName": "peaq",
+  "fullName": "Peaq Network",
+  "aliases": ["evm-3338", "peaq-mainnet"],
+  "caip2Id": "eip155:3338",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://peaq.subscan.io/"],
+  "rpcUrls": ["https://peaq.api.onfinality.io/public"],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "PEAQ",
+  "docsUrl": "https://docs.peaq.network/",
+  "genesis": {
+    "hash": "0x43ab0f195759cb56597b46c826459bf550afe0398a1421293c961b1fecda1783",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "peaq" } }
+}
