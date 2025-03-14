@@ -28,7 +28,7 @@
     "firehose": ["arbsepolia.firehose.pinax.network:443"],
     "substreams": ["arbsepolia.substreams.pinax.network:443"]
   },
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.arbitrum.io",
   "genesis": {
