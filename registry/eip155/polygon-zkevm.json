@@ -25,7 +25,7 @@
     "firehose": ["polygonzk.firehose.pinax.network:443"],
     "substreams": ["polygonzk.substreams.pinax.network:443"]
   },
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.polygon.technology/zkEVM",
   "genesis": {
