@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.48",
+  "version": "0.6.50",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-03-07T00:52:46.400Z",
+  "updatedAt": "2025-03-14T00:08:13.431Z",
   "networks": [
     {
       "id": "mainnet",
@@ -600,7 +600,7 @@
           "polygonzk.substreams.pinax.network:443"
         ]
       },
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.polygon.technology/zkEVM",
       "genesis": {
@@ -3586,7 +3586,7 @@
         ]
       },
       "networkType": "mainnet",
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "RBTC",
       "docsUrl": "https://dev.rootstock.io",
       "indexerDocsUrls": [
@@ -3779,7 +3779,7 @@
           "network": "mainnet"
         }
       ],
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.zksync.io",
       "genesis": {
@@ -3811,7 +3811,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.zq2-protomainnet.zilliqa.com/"
+        "https://explorer.zq2-protomainnet.zilliqa.com"
       ],
       "networkType": "testnet",
       "services": {
@@ -3944,6 +3944,49 @@
       "icon": {
         "web3Icons": {
           "name": "apechain"
+        }
+      }
+    },
+    {
+      "id": "peaq",
+      "shortName": "peaq",
+      "fullName": "Peaq Network",
+      "aliases": [
+        "evm-3338",
+        "peaq-mainnet"
+      ],
+      "caip2Id": "eip155:3338",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://peaq.subscan.io/"
+      ],
+      "rpcUrls": [
+        "https://peaq.api.onfinality.io/public"
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "PEAQ",
+      "docsUrl": "https://docs.peaq.network/",
+      "genesis": {
+        "hash": "0x43ab0f195759cb56597b46c826459bf550afe0398a1421293c961b1fecda1783",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "peaq"
         }
       }
     },
@@ -4382,7 +4425,7 @@
           "arbsepolia.substreams.pinax.network:443"
         ]
       },
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.arbitrum.io",
       "genesis": {
