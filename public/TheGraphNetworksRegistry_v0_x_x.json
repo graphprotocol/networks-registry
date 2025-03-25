@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.50",
+  "version": "0.6.51",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-03-14T00:08:13.431Z",
+  "updatedAt": "2025-03-25T14:21:43.917Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2253,6 +2253,56 @@
       }
     },
     {
+      "id": "manta",
+      "shortName": "Manta",
+      "fullName": "Manta Pacific Mainnet",
+      "aliases": [
+        "evm-169",
+        "manta-mainnet"
+      ],
+      "caip2Id": "eip155:169",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "rpcUrls": [
+        "https://manta-pacific.drpc.org"
+      ],
+      "explorerUrls": [
+        "https://pacific-explorer.manta.network/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://pacific-explorer.manta.network/api",
+          "kind": "blockscout"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.manta.network/",
+      "genesis": {
+        "hash": "0x710b33d206fc550549c39801e9c1ca80d85399bf6e0881987e40e706c2f2f453",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      }
+    },
+    {
       "id": "holesky",
       "shortName": "Ethereum",
       "secondName": "Holesky",
@@ -3960,7 +4010,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://peaq.subscan.io/"
+        "https://peaq.subscan.io"
       ],
       "rpcUrls": [
         "https://peaq.api.onfinality.io/public"
@@ -3973,7 +4023,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "PEAQ",
-      "docsUrl": "https://docs.peaq.network/",
+      "docsUrl": "https://docs.peaq.network",
       "genesis": {
         "hash": "0x43ab0f195759cb56597b46c826459bf550afe0398a1421293c961b1fecda1783",
         "height": 0
@@ -4168,73 +4218,6 @@
       "icon": {
         "web3Icons": {
           "name": "lens"
-        }
-      }
-    },
-    {
-      "id": "astar-zkevm-mainnet",
-      "shortName": "Astar",
-      "secondName": "zkEVM",
-      "fullName": "Astar zkEVM Mainnet",
-      "aliases": [
-        "evm-3776",
-        "astar",
-        "astar-zkevm"
-      ],
-      "caip2Id": "eip155:3776",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://astar-zkevm.explorer.startale.com"
-      ],
-      "rpcUrls": [
-        "https://rpc.startale.com/astar-zkevm",
-        "https://zkastar.rpc.service.pinax.network"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://astar-zkevm.explorer.startale.com/api",
-          "kind": "blockscout"
-        }
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "zkastar.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "zkastar.substreams.pinax.network:443"
-        ]
-      },
-      "networkType": "mainnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "mainnet"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "docsUrl": "https://docs.astar.network/docs/getting-started",
-      "genesis": {
-        "hash": "0x5f7b9f463b7a0b690efb11446d0520e5b884e5bf0e3a3780c881a3b490592574",
-        "height": 0
-      },
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "astar"
         }
       }
     },
@@ -5933,27 +5916,26 @@
       }
     },
     {
-      "id": "berachain-bartio",
+      "id": "berachain-bepolia",
       "shortName": "Berachain",
-      "secondName": "bArtio",
-      "fullName": "Berachain bArtio Testnet",
+      "secondName": "bepolia",
+      "fullName": "Berachain bepolia Testnet",
       "aliases": [
-        "berachain-testnet",
-        "evm-80084"
+        "evm-80069"
       ],
-      "caip2Id": "eip155:80084",
+      "caip2Id": "eip155:80069",
       "graphNode": {
         "protocol": "ethereum"
       },
       "rpcUrls": [
-        "https://bartio.rpc.berachain.com"
+        "https://bepolia.rpc.berachain.com"
       ],
       "explorerUrls": [
-        "https://bartio.beratrail.io"
+        "https://bepolia.beratrail.io"
       ],
       "apiUrls": [
         {
-          "url": "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan/api",
+          "url": "https://api.routescan.io/v2/network/testnet/evm/80069/etherscan/api",
           "kind": "etherscan"
         }
       ],
@@ -5973,7 +5955,7 @@
       "nativeToken": "BERA",
       "docsUrl": "https://docs.berachain.com",
       "genesis": {
-        "hash": "0xa42850da28e09e0e7f75a76fe2b96c8b869a206bfadc9a4450ca345153b0c7d9",
+        "hash": "0x0207661de38f0e54ba91c8286096e72486784c79dc6a9681fc486b38335c042f",
         "height": 0
       },
       "firehose": {
