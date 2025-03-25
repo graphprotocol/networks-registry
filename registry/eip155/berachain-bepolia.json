@@ -1,16 +1,16 @@
 {
-  "id": "berachain-bartio",
+  "id": "berachain-bepolia",
   "shortName": "Berachain",
-  "secondName": "bArtio",
-  "fullName": "Berachain bArtio Testnet",
-  "aliases": ["berachain-testnet", "evm-80084"],
-  "caip2Id": "eip155:80084",
+  "secondName": "bepolia",
+  "fullName": "Berachain bepolia Testnet",
+  "aliases": ["evm-80069"],
+  "caip2Id": "eip155:80069",
   "graphNode": { "protocol": "ethereum" },
-  "rpcUrls": ["https://bartio.rpc.berachain.com"],
-  "explorerUrls": ["https://bartio.beratrail.io"],
+  "rpcUrls": ["https://bepolia.rpc.berachain.com"],
+  "explorerUrls": ["https://bepolia.beratrail.io"],
   "apiUrls": [
     {
-      "url": "https://api.routescan.io/v2/network/testnet/evm/80084/etherscan/api",
+      "url": "https://api.routescan.io/v2/network/testnet/evm/80069/etherscan/api",
       "kind": "etherscan"
     }
   ],
@@ -21,7 +21,7 @@
   "nativeToken": "BERA",
   "docsUrl": "https://docs.berachain.com",
   "genesis": {
-    "hash": "0xa42850da28e09e0e7f75a76fe2b96c8b869a206bfadc9a4450ca345153b0c7d9",
+    "hash": "0x0207661de38f0e54ba91c8286096e72486784c79dc6a9681fc486b38335c042f",
     "height": 0
   },
   "firehose": {
