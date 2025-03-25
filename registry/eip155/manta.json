@@ -1,0 +1,30 @@
+{
+    "id": "manta",
+    "shortName": "Manta",
+    "fullName": "Manta Pacific Mainnet",
+    "aliases": ["evm-169", "manta-mainnet"],
+    "caip2Id": "eip155:169",
+    "graphNode": { "protocol": "ethereum" },
+    "rpcUrls": ["https://manta-pacific.drpc.org"],
+    "explorerUrls": ["https://pacific-explorer.manta.network/"],
+    "apiUrls": [
+      { "url": "https://pacific-explorer.manta.network/api", "kind": "blockscout" }
+    ],
+    "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+    "networkType": "mainnet",
+    "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+    "issuanceRewards": false,
+    "nativeToken": "ETH",
+    "docsUrl": "https://docs.manta.network/",
+    "genesis": {
+      "hash": "0x710b33d206fc550549c39801e9c1ca80d85399bf6e0881987e40e706c2f2f453",
+      "height": 0
+    },
+    "firehose": {
+      "blockType": "sf.ethereum.type.v2.Block",
+      "evmExtendedModel": false,
+      "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+      "bytesEncoding": "hex"
+    }
+  }
+  
