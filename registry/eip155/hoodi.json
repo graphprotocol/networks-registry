@@ -15,7 +15,7 @@
     "https://0xrpc.io/hoodi"
   ],
   "apiUrls": [
-    { "url": "https://api-hoodi.etherscan.io/api", "kind": "etherscan" }
+    { "url": "https://hoodi.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"]
