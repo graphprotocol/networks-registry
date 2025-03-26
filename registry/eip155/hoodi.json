@@ -8,18 +8,12 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "mainnet" }],
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": [
-    "https://hoodi.etherscan.io"
-  ],
-  "rpcUrls": [
-    "https://0xrpc.io/hoodi"
-  ],
+  "explorerUrls": ["https://hoodi.etherscan.io"],
+  "rpcUrls": ["https://0xrpc.io/hoodi"],
   "apiUrls": [
     { "url": "https://hoodi.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "genesis": {
