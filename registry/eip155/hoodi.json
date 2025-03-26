@@ -1,0 +1,36 @@
+{
+  "id": "hoodi",
+  "shortName": "Ethereum",
+  "secondName": "Hoodi",
+  "fullName": "Ethereum Hoodi Testnet",
+  "aliases": ["evm-560048"],
+  "caip2Id": "eip155:560048",
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "mainnet" }],
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": [
+    "https://hoodi.etherscan.io"
+  ],
+  "rpcUrls": [
+    "https://0xrpc.io/hoodi"
+  ],
+  "apiUrls": [
+    { "url": "https://hoodi.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "genesis": {
+    "hash": "0xbbe312868b376a3001692a646dd2d7d1e4406380dfd86b98aa8a34d1557c971b",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "ethereum" } }
+}
