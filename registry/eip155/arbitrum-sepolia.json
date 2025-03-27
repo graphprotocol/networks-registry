@@ -3,7 +3,7 @@
   "shortName": "Arbitrum",
   "secondName": "Sepolia",
   "fullName": "Arbitrum Sepolia Testnet",
-  "aliases": ["evm-421614"],
+  "aliases": ["evm-421614", "arb-sepolia"],
   "caip2Id": "eip155:421614",
   "networkType": "testnet",
   "relations": [
