@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.52",
+  "version": "0.6.53",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-03-26T22:12:19.827Z",
+  "updatedAt": "2025-03-27T18:12:38.668Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4282,7 +4282,6 @@
       "aliases": [
         "arbone",
         "arbitrum",
-        "arb-sepolia",
         "evm-42161",
         "arbitrum-one-mainnet"
       ],
@@ -4364,7 +4363,8 @@
       "secondName": "Sepolia",
       "fullName": "Arbitrum Sepolia Testnet",
       "aliases": [
-        "evm-421614"
+        "evm-421614",
+        "arb-sepolia"
       ],
       "caip2Id": "eip155:421614",
       "networkType": "testnet",
