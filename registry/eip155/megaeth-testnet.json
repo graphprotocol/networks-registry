@@ -7,7 +7,7 @@
   "caip2Id": "eip155:6342",
   "networkType": "testnet",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://www.megaexplorer.xyz/"],
+  "explorerUrls": ["https://www.megaexplorer.xyz"],
   "rpcUrls": ["https://carrot.megaeth.com/rpc"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
