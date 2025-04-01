@@ -3,7 +3,7 @@
   "shortName": "Stellar",
   "fullName": "Stellar Mainnet",
   "aliases": ["stellar-mainnet"],
-  "caip2Id": "stellar:MAIN",
+  "caip2Id": "stellar:pubnet",
   "explorerUrls": ["https://stellarchain.io/"],
   "rpcUrls": [
     "https://horizon.stellar.org"
