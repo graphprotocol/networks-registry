@@ -3,17 +3,16 @@
   "shortName": "Stellar",
   "fullName": "Stellar Mainnet",
   "aliases": ["stellar-mainnet"],
-  "caip2Id": "stellar:SN_MAIN",
-  "graphNode": { "protocol": "stellar" },
+  "caip2Id": "stellar:MAIN",
   "explorerUrls": ["https://stellarchain.io/"],
   "rpcUrls": [
-    "https://horizon.stellar.org/"
+    "https://horizon.stellar.org"
   ],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "sps": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": [""],
+    "firehose": ["mainnet.stellar.streamingfast.io:443"],
     "substreams": [
       "mainnet.stellar.streamingfast.io:443"
     ]
@@ -22,13 +21,13 @@
   "nativeToken": "XLM",
   "docsUrl": "https://developers.stellar.org/",
   "genesis": {
-    "hash": "",
-    "height": 0
+    "hash": "0x84e2b18c296badee2a6c30347911f2b5a4323e1ecb3c8986235e1fdc322dadbe",
+    "height": 55411000
   },
   "firehose": {
-    "blockType": "sf.starknet.type.v1.Block",
-    "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
-    "bytesEncoding": "0xhex"
+    "blockType": "sf.stellar.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
+    "bytesEncoding": "hex"
   },
   "icon": { "web3Icons": { "name": "stellar" } }
 }
