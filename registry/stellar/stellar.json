@@ -1,0 +1,34 @@
+{
+  "id": "stellar",
+  "shortName": "Stellar",
+  "fullName": "Stellar Mainnet",
+  "aliases": ["stellar-mainnet"],
+  "caip2Id": "stellar:SN_MAIN",
+  "graphNode": { "protocol": "stellar" },
+  "explorerUrls": ["https://stellarchain.io/"],
+  "rpcUrls": [
+    "https://horizon.stellar.org/"
+  ],
+  "networkType": "mainnet",
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": [""],
+    "substreams": [
+      "mainnet.stellar.streamingfast.io:443"
+    ]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "XLM",
+  "docsUrl": "https://developers.stellar.org/",
+  "genesis": {
+    "hash": "",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.starknet.type.v1.Block",
+    "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
+    "bytesEncoding": "0xhex"
+  },
+  "icon": { "web3Icons": { "name": "stellar" } }
+}
