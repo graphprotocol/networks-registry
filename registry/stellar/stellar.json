@@ -4,22 +4,18 @@
   "fullName": "Stellar Mainnet",
   "aliases": ["stellar-mainnet"],
   "caip2Id": "stellar:pubnet",
-  "explorerUrls": ["https://stellarchain.io/"],
-  "rpcUrls": [
-    "https://horizon.stellar.org"
-  ],
+  "explorerUrls": ["https://stellarchain.io"],
+  "rpcUrls": ["https://horizon.stellar.org"],
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
     "sps": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["mainnet.stellar.streamingfast.io:443"],
-    "substreams": [
-      "mainnet.stellar.streamingfast.io:443"
-    ]
+    "substreams": ["mainnet.stellar.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "XLM",
-  "docsUrl": "https://developers.stellar.org/",
+  "docsUrl": "https://developers.stellar.org",
   "genesis": {
     "hash": "0x84e2b18c296badee2a6c30347911f2b5a4323e1ecb3c8986235e1fdc322dadbe",
     "height": 55411000
