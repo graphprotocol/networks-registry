@@ -1,24 +1,21 @@
 {
-  "id": "lens-testnet",
+  "id": "lens",
   "shortName": "Lens",
-  "fullName": "Lens Testnet",
-  "aliases": ["evm-37111", "lens-sepolia"],
-  "caip2Id": "eip155:37111",
+  "fullName": "Lens Mainnet",
+  "aliases": ["evm-232", "lens-mainnet"],
+  "caip2Id": "eip155:232",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://block-explorer.testnet.lens.dev"],
-  "rpcUrls": ["https://rpc.testnet.lens.dev"],
+  "explorerUrls": ["https://explorer.lens.xyz"],
   "apiUrls": [
-    { "url": "https://block-explorer-api.lens.dev/api", "kind": "etherscan" }
+    { "url": "https://explorer-api.lens.xyz/api", "kind": "etherscan" }
   ],
-  "networkType": "testnet",
-  "relations": [
-    { "kind": "l2Of", "network": "sepolia" },
-    { "kind": "testnetOf", "network": "lens" }
-  ],
+  "rpcUrls": ["https://rpc.lens.dev"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
-  "nativeToken": "GRASS",
-  "docsUrl": "https://www.lens.xyz/docs",
+  "nativeToken": "GHO",
+  "docsUrl": "https://lens.xyz/docs",
   "genesis": {
     "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
     "height": 0
