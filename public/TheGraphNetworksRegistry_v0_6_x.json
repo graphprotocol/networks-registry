@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.55",
+  "version": "0.6.56",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-04-01T20:51:30.995Z",
+  "updatedAt": "2025-04-04T15:56:32.891Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3187,6 +3187,61 @@
       }
     },
     {
+      "id": "lens",
+      "shortName": "Lens",
+      "fullName": "Lens Mainnet",
+      "aliases": [
+        "evm-232",
+        "lens-mainnet"
+      ],
+      "caip2Id": "eip155:232",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.lens.xyz"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer-api.lens.xyz/api",
+          "kind": "etherscan"
+        }
+      ],
+      "rpcUrls": [
+        "https://rpc.lens.dev"
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "GHO",
+      "docsUrl": "https://lens.xyz/docs",
+      "genesis": {
+        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "lens"
+        }
+      }
+    },
+    {
       "id": "polygon-zkevm-cardona",
       "shortName": "Polygon zkEVM",
       "secondName": "Cardona",
@@ -4200,6 +4255,10 @@
         {
           "kind": "l2Of",
           "network": "sepolia"
+        },
+        {
+          "kind": "testnetOf",
+          "network": "lens"
         }
       ],
       "services": {
@@ -8128,7 +8187,7 @@
       ],
       "caip2Id": "stellar:pubnet",
       "explorerUrls": [
-        "https://stellarchain.io/"
+        "https://stellarchain.io"
       ],
       "rpcUrls": [
         "https://horizon.stellar.org"
@@ -8148,7 +8207,7 @@
       },
       "issuanceRewards": false,
       "nativeToken": "XLM",
-      "docsUrl": "https://developers.stellar.org/",
+      "docsUrl": "https://developers.stellar.org",
       "genesis": {
         "hash": "0x84e2b18c296badee2a6c30347911f2b5a4323e1ecb3c8986235e1fdc322dadbe",
         "height": 55411000
