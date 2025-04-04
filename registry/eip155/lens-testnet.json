@@ -11,7 +11,10 @@
     { "url": "https://block-explorer-api.lens.dev/api", "kind": "etherscan" }
   ],
   "networkType": "testnet",
-  "relations": [{ "kind": "l2Of", "network": "sepolia" }],
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "lens" }
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "GRASS",
