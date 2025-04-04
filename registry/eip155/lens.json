@@ -1,0 +1,27 @@
+{
+  "id": "lens",
+  "shortName": "Lens",
+  "fullName": "Lens Mainnet",
+  "aliases": ["evm-232", "lens-mainnet"],
+  "caip2Id": "eip155:232",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.lens.xyz"],
+  "rpcUrls": ["https://rpc.lens.dev"],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "GHO",
+  "docsUrl": "https://lens.xyz/docs",
+  "genesis": {
+    "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "lens" } }
+}
