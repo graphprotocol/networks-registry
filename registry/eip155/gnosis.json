@@ -9,8 +9,7 @@
   "rpcUrls": [
     "https://rpc.gnosischain.com",
     "https://gnosis.rpc.service.pinax.network",
-    "https://rpc.gnosis.gateway.fm",
-    "https://rpc.ankr.com/gnosis"
+    "https://rpc.gnosis.gateway.fm"
   ],
   "apiUrls": [
     { "url": "https://gnosis.abi.pinax.network/api", "kind": "etherscan" },

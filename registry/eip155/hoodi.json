@@ -9,11 +9,15 @@
   "relations": [{ "kind": "testnetOf", "network": "mainnet" }],
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://hoodi.etherscan.io"],
-  "rpcUrls": ["https://0xrpc.io/hoodi"],
+  "rpcUrls": ["https://0xrpc.io/hoodi", "https://hoodi.rpc.service.pinax.network"],
   "apiUrls": [
     { "url": "https://hoodi.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["hoodi.firehose.pinax.network:443"],
+    "substreams": ["hoodi.substreams.pinax.network:443"]
+  },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "genesis": {

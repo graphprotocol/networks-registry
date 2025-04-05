@@ -29,7 +29,7 @@
     { "kind": "testnetOf", "network": "base" },
     { "kind": "l2Of", "network": "sepolia" }
   ],
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.base.org",
   "genesis": {

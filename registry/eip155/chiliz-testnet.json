@@ -7,7 +7,7 @@
   "caip2Id": "eip155:88882",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.chiliscan.com"],
-  "rpcUrls": ["https://spicy-rpc.chiliz.com"],
+  "rpcUrls": ["https://spicy-rpc.chiliz.com", "https://spicy.rpc.service.pinax.network"],
   "apiUrls": [
     { "url": "https://spicy-explorer.chiliz.com/api", "kind": "etherscan" },
     {

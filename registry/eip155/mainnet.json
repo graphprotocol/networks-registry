@@ -7,7 +7,6 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://etherscan.io"],
   "rpcUrls": [
-    "https://rpc.ankr.com/eth",
     "https://ethereum-rpc.publicnode.com",
     "https://mainnet.gateway.tenderly.co",
     "https://eth.rpc.service.pinax.network",

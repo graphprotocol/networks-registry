@@ -6,7 +6,7 @@
   "caip2Id": "eip155:146",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sonicscan.org"],
-  "rpcUrls": ["https://rpc.soniclabs.com"],
+  "rpcUrls": ["https://rpc.soniclabs.com", "https://sonic.rpc.service.pinax.network"],
   "apiUrls": [
     {
       "url": "https://api.routescan.io/v2/network/mainnet/evm/146/etherscan/api",
@@ -14,9 +14,13 @@
     },
     { "url": "https://sonic.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["sonic.firehose.pinax.network:443"],
+    "substreams": ["sonic.substreams.pinax.network:443"]
+  },
   "networkType": "mainnet",
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "S",
   "docsUrl": "https://docs.soniclabs.com",
   "genesis": {
