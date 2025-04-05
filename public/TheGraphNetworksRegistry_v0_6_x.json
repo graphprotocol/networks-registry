@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.57",
+  "version": "0.6.58",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-04-05T16:22:35.094Z",
+  "updatedAt": "2025-04-05T18:36:33.422Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1272,8 +1272,7 @@
       ],
       "explorerUrls": [
         "https://unichain.blockscout.com",
-        "https://uniscan.xyz",
-        "https://unichain.rpc.service.pinax.network"
+        "https://uniscan.xyz"
       ],
       "apiUrls": [
         {
@@ -1286,7 +1285,8 @@
         }
       ],
       "rpcUrls": [
-        "https://mainnet.unichain.org"
+        "https://mainnet.unichain.org",
+        "https://unichain.rpc.service.pinax.network"
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
@@ -2973,6 +2973,50 @@
         "web3Icons": {
           "name": "x-layer"
         }
+      }
+    },
+    {
+      "id": "ronin",
+      "shortName": "Ronin",
+      "fullName": "Ronin Mainnet",
+      "aliases": [
+        "evm-2020",
+        "ronin-mainnet"
+      ],
+      "caip2Id": "eip155:2020",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "firehose": [
+          "ronin.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "ronin.substreams.pinax.network:443"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [],
+      "explorerUrls": [
+        "https://app.roninchain.com"
+      ],
+      "apiUrls": [],
+      "rpcUrls": [
+        "https://api.roninchain.com/rpc",
+        "https://ronin.rpc.service.pinax.network"
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "RON",
+      "docsUrl": "https://docs.roninchain.com",
+      "genesis": {
+        "hash": "0x6e675ee97607f4e695188786c3c1853fb1562f1c075629eb5dbcff269422a1a4",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
       }
     },
     {
@@ -7185,6 +7229,43 @@
       }
     },
     {
+      "id": "ultra",
+      "shortName": "Ultra",
+      "fullName": "Ultra Mainnet",
+      "aliases": [
+        "ultra-mainnet"
+      ],
+      "caip2Id": "antelope:a9c481dfbc7d9506dc7e87e9a137c931",
+      "explorerUrls": [
+        "https://explorer.mainnet.ultra.io"
+      ],
+      "rpcUrls": [
+        "https://ultra.api.eosnation.io"
+      ],
+      "apiUrls": [],
+      "networkType": "mainnet",
+      "services": {
+        "firehose": [
+          "ultra.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "ultra.substreams.pinax.network:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "UOS",
+      "docsUrl": "https://developers.ultra.io",
+      "genesis": {
+        "hash": "0x00000002e10cbadd0c7491064d13ae89cfbdd734e1f66726861d771af1fcd6e9",
+        "height": 2
+      },
+      "firehose": {
+        "blockType": "sf.antelope.type.v1.Block",
+        "bufUrl": "https://buf.build/pinax/firehose-antelope",
+        "bytesEncoding": "hex"
+      }
+    },
+    {
       "id": "eos",
       "shortName": "EOS",
       "fullName": "EOS Mainnet",
@@ -8053,10 +8134,12 @@
           "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
-          "devnet.sol.streamingfast.io:443"
+          "devnet.sol.streamingfast.io:443",
+          "soldev.firehose.pinax.network:443"
         ],
         "substreams": [
-          "devnet.sol.streamingfast.io:443"
+          "devnet.sol.streamingfast.io:443",
+          "soldev.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -8075,6 +8158,49 @@
         "web3Icons": {
           "name": "solana"
         }
+      }
+    },
+    {
+      "id": "bnb-svm",
+      "shortName": "svmBNB",
+      "fullName": "svmBNB Mainnet",
+      "aliases": [
+        "bnb-svm-mainnet"
+      ],
+      "caip2Id": "solana:FRXwreefVunjoWykEhH42cxRMdyP2FuZ",
+      "explorerUrls": [
+        "https://explorer.svmbnbmainnet.soo.network"
+      ],
+      "rpcUrls": [
+        "https://rpc.svmbnbmainnet.soo.network/rpc"
+      ],
+      "apiUrls": [],
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "bsc"
+        }
+      ],
+      "services": {
+        "firehose": [
+          "svmbnb.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "svmbnb.substreams.pinax.network:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "BNB",
+      "docsUrl": "https://docs.soo.network",
+      "genesis": {
+        "hash": "FRXwreefVunjoWykEhH42cxRMdyP2FuZFwqofmX1LRDx",
+        "height": 1
+      },
+      "firehose": {
+        "blockType": "sf.solana.type.v1.Block",
+        "bufUrl": "https://buf.build/streamingfast/firehose-solana",
+        "bytesEncoding": "base58"
       }
     },
     {
@@ -8239,6 +8365,51 @@
       "genesis": {
         "hash": "0x84e2b18c296badee2a6c30347911f2b5a4323e1ecb3c8986235e1fdc322dadbe",
         "height": 55411000
+      },
+      "firehose": {
+        "blockType": "sf.stellar.type.v1.Block",
+        "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
+        "bytesEncoding": "base64"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "stellar"
+        }
+      }
+    },
+    {
+      "id": "stellar-testnet",
+      "shortName": "Stellar",
+      "fullName": "Stellar Testnet",
+      "aliases": [
+        "stellar-soroban"
+      ],
+      "caip2Id": "stellar:testnet",
+      "explorerUrls": [
+        "https://testnet.stellarchain.io"
+      ],
+      "rpcUrls": [],
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "stellar"
+        }
+      ],
+      "services": {
+        "firehose": [
+          "testnet.stellar.streamingfast.io:443"
+        ],
+        "substreams": [
+          "testnet.stellar.streamingfast.io:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "XLM",
+      "docsUrl": "https://developers.stellar.org",
+      "genesis": {
+        "hash": "0xd1ee30766823e8f1f7335ff7a7d3cc4724290cbb1b356de87241cc44eb5daad5",
+        "height": 1000
       },
       "firehose": {
         "blockType": "sf.stellar.type.v1.Block",

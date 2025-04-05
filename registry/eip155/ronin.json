@@ -11,9 +11,7 @@
   },
   "networkType": "mainnet",
   "relations": [],
-  "explorerUrls": [
-    "https://app.roninchain.com"
-  ],
+  "explorerUrls": ["https://app.roninchain.com"],
   "apiUrls": [],
   "rpcUrls": [
     "https://api.roninchain.com/rpc",

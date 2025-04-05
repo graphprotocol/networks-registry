@@ -10,12 +10,8 @@
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "bsc" }],
   "services": {
-    "firehose": [
-      "svmbnb.firehose.pinax.network:443"
-    ],
-    "substreams": [
-      "svmbnb.substreams.pinax.network:443"
-    ]
+    "firehose": ["svmbnb.firehose.pinax.network:443"],
+    "substreams": ["svmbnb.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "BNB",
