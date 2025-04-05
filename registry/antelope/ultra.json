@@ -1,0 +1,27 @@
+{
+  "id": "ultra",
+  "shortName": "Ultra",
+  "fullName": "Ultra Mainnet",
+  "aliases": ["ultra-mainnet"],
+  "caip2Id": "antelope:a9c481dfbc7d9506dc7e87e9a137c931",
+  "explorerUrls": ["https://explorer.mainnet.ultra.io"],
+  "rpcUrls": ["https://ultra.api.eosnation.io"],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "services": {
+    "firehose": ["ultra.firehose.pinax.network:443"],
+    "substreams": ["ultra.substreams.pinax.network:443"]
+  },
+  "issuanceRewards": false,
+  "nativeToken": "UOS",
+  "docsUrl": "https://developers.ultra.io",
+  "genesis": {
+    "hash": "0x00000002e10cbadd0c7491064d13ae89cfbdd734e1f66726861d771af1fcd6e9",
+    "height": 2
+  },
+  "firehose": {
+    "blockType": "sf.antelope.type.v1.Block",
+    "bufUrl": "https://buf.build/pinax/firehose-antelope",
+    "bytesEncoding": "hex"
+  }
+}
