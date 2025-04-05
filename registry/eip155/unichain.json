@@ -5,10 +5,14 @@
   "aliases": ["evm-130", "unichain-mainnet"],
   "caip2Id": "eip155:130",
   "graphNode": { "protocol": "ethereum" },
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["unichain.firehose.pinax.network:443"],
+    "substreams": ["unichain.substreams.pinax.network:443"]
+  },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "explorerUrls": ["https://unichain.blockscout.com", "https://uniscan.xyz"],
+  "explorerUrls": ["https://unichain.blockscout.com", "https://uniscan.xyz", "https://unichain.rpc.service.pinax.network"],
   "apiUrls": [
     { "url": "https://unichain.blockscout.com/api", "kind": "blockscout" },
     { "url": "https://unichain.abi.pinax.network/api", "kind": "etherscan" }

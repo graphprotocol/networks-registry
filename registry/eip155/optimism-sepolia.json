@@ -31,7 +31,7 @@
     "substreams": ["opsepolia.substreams.pinax.network:443"]
   },
   "networkType": "testnet",
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.optimism.io",
   "genesis": {

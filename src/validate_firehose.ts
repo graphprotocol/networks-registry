@@ -17,6 +17,7 @@ interface FirehoseInfo {
   blockIdEncoding:
     | "BLOCK_ID_ENCODING_HEX"
     | "BLOCK_ID_ENCODING_BASE58"
+    | "BLOCK_ID_ENCODING_BASE64"
     | "BLOCK_ID_ENCODING_0X_HEX";
   blockFeatures: ("base" | "extended" | "hybrid")[];
 }
@@ -24,6 +25,7 @@ interface FirehoseInfo {
 const ValidEncodingMap = {
   BLOCK_ID_ENCODING_HEX: "hex",
   BLOCK_ID_ENCODING_BASE58: "base58",
+  BLOCK_ID_ENCODING_BASE64: "base64",
   BLOCK_ID_ENCODING_0X_HEX: "0xhex",
 };
 
