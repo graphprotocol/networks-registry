@@ -14,14 +14,16 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": [
     "https://unichain.blockscout.com",
-    "https://uniscan.xyz",
-    "https://unichain.rpc.service.pinax.network"
+    "https://uniscan.xyz"
   ],
   "apiUrls": [
     { "url": "https://unichain.blockscout.com/api", "kind": "blockscout" },
     { "url": "https://unichain.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "rpcUrls": ["https://mainnet.unichain.org"],
+  "rpcUrls": [
+    "https://mainnet.unichain.org",
+    "https://unichain.rpc.service.pinax.network"
+  ],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.unichain.org/docs",
