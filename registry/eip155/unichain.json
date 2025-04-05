@@ -12,7 +12,11 @@
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "explorerUrls": ["https://unichain.blockscout.com", "https://uniscan.xyz", "https://unichain.rpc.service.pinax.network"],
+  "explorerUrls": [
+    "https://unichain.blockscout.com",
+    "https://uniscan.xyz",
+    "https://unichain.rpc.service.pinax.network"
+  ],
   "apiUrls": [
     { "url": "https://unichain.blockscout.com/api", "kind": "blockscout" },
     { "url": "https://unichain.abi.pinax.network/api", "kind": "etherscan" }

@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.56",
+  "version": "0.6.57",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-04-04T15:56:32.891Z",
+  "updatedAt": "2025-04-05T16:22:35.094Z",
   "networks": [
     {
       "id": "mainnet",
@@ -23,7 +23,6 @@
         "https://etherscan.io"
       ],
       "rpcUrls": [
-        "https://rpc.ankr.com/eth",
         "https://ethereum-rpc.publicnode.com",
         "https://mainnet.gateway.tenderly.co",
         "https://eth.rpc.service.pinax.network",
@@ -184,8 +183,7 @@
       "rpcUrls": [
         "https://rpc.gnosischain.com",
         "https://gnosis.rpc.service.pinax.network",
-        "https://rpc.gnosis.gateway.fm",
-        "https://rpc.ankr.com/gnosis"
+        "https://rpc.gnosis.gateway.fm"
       ],
       "apiUrls": [
         {
@@ -710,7 +708,6 @@
         "https://sepolia.otterscan.io"
       ],
       "rpcUrls": [
-        "https://rpc-sepolia.rockx.com",
         "https://sepolia.gateway.tenderly.co",
         "https://sepolia.rpc.service.pinax.network",
         "https://sepolia.infura.io/v3/${INFURA_API_KEY}"
@@ -816,7 +813,7 @@
         ]
       },
       "networkType": "testnet",
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.optimism.io",
       "genesis": {
@@ -1258,6 +1255,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "unichain.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "unichain.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -1269,7 +1272,8 @@
       ],
       "explorerUrls": [
         "https://unichain.blockscout.com",
-        "https://uniscan.xyz"
+        "https://uniscan.xyz",
+        "https://unichain.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -1804,7 +1808,8 @@
         "https://sonicscan.org"
       ],
       "rpcUrls": [
-        "https://rpc.soniclabs.com"
+        "https://rpc.soniclabs.com",
+        "https://sonic.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -1819,10 +1824,16 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "sonic.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "sonic.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "S",
       "docsUrl": "https://docs.soniclabs.com",
       "genesis": {
@@ -2332,7 +2343,6 @@
       ],
       "rpcUrls": [
         "https://ethereum-holesky-rpc.publicnode.com",
-        "https://rpc-holesky.rockx.com",
         "https://holesky.rpc.service.pinax.network"
       ],
       "apiUrls": [
@@ -2566,7 +2576,8 @@
         "https://soneium.blockscout.com"
       ],
       "rpcUrls": [
-        "https://rpc.soneium.org"
+        "https://rpc.soneium.org",
+        "https://soneium.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -2861,7 +2872,8 @@
       ],
       "rpcUrls": [
         "https://testrpc.xlayer.tech",
-        "https://xlayertestrpc.okx.com"
+        "https://xlayertestrpc.okx.com",
+        "https://xlayertest.rpc.service.pinax.network"
       ],
       "apiUrls": [],
       "services": {
@@ -3880,6 +3892,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "zksyncera.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "zksyncera.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -5365,7 +5383,8 @@
         "https://hoodi.etherscan.io"
       ],
       "rpcUrls": [
-        "https://0xrpc.io/hoodi"
+        "https://0xrpc.io/hoodi",
+        "https://hoodi.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5376,6 +5395,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "hoodi.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "hoodi.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -5532,7 +5557,8 @@
         "https://sepolia.lineascan.build"
       ],
       "rpcUrls": [
-        "https://rpc.sepolia.linea.build"
+        "https://rpc.sepolia.linea.build",
+        "https://lineasepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6143,7 +6169,8 @@
         "protocol": "ethereum"
       },
       "rpcUrls": [
-        "https://rpc.berachain.com"
+        "https://rpc.berachain.com",
+        "https://bera.rpc.service.pinax.network"
       ],
       "explorerUrls": [
         "https://berascan.com"
@@ -6496,7 +6523,7 @@
           "network": "sepolia"
         }
       ],
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.base.org",
       "genesis": {
@@ -6575,7 +6602,8 @@
         "https://testnet.chiliscan.com"
       ],
       "rpcUrls": [
-        "https://spicy-rpc.chiliz.com"
+        "https://spicy-rpc.chiliz.com",
+        "https://spicy.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -8215,7 +8243,7 @@
       "firehose": {
         "blockType": "sf.stellar.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "base64"
       },
       "icon": {
         "web3Icons": {

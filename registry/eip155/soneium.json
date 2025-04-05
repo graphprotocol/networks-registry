@@ -6,7 +6,10 @@
   "caip2Id": "eip155:1868",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://soneium.blockscout.com"],
-  "rpcUrls": ["https://rpc.soneium.org", "https://soneium.rpc.service.pinax.network"],
+  "rpcUrls": [
+    "https://rpc.soneium.org",
+    "https://soneium.rpc.service.pinax.network"
+  ],
   "apiUrls": [
     { "url": "https://soneium.blockscout.com/api", "kind": "etherscan" }
   ],

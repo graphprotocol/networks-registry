@@ -5,7 +5,10 @@
   "aliases": ["evm-80094", "berachain-mainnet"],
   "caip2Id": "eip155:80094",
   "graphNode": { "protocol": "ethereum" },
-  "rpcUrls": ["https://rpc.berachain.com", "https://bera.rpc.service.pinax.network"],
+  "rpcUrls": [
+    "https://rpc.berachain.com",
+    "https://bera.rpc.service.pinax.network"
+  ],
   "explorerUrls": ["https://berascan.com"],
   "apiUrls": [
     { "url": "https://berachain.abi.pinax.network/api", "kind": "etherscan" },
