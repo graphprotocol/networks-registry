@@ -1,0 +1,35 @@
+{
+  "id": "ronin",
+  "shortName": "Ronin",
+  "fullName": "Ronin Mainnet",
+  "aliases": ["evm-2020", "ronin-mainnet"],
+  "caip2Id": "eip155:2020",
+  "graphNode": { "protocol": "ethereum" },
+  "services": {
+    "firehose": ["ronin.firehose.pinax.network:443"],
+    "substreams": ["ronin.substreams.pinax.network:443"]
+  },
+  "networkType": "mainnet",
+  "relations": [],
+  "explorerUrls": [
+    "https://app.roninchain.com"
+  ],
+  "apiUrls": [],
+  "rpcUrls": [
+    "https://api.roninchain.com/rpc",
+    "https://ronin.rpc.service.pinax.network"
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "RON",
+  "docsUrl": "https://docs.roninchain.com",
+  "genesis": {
+    "hash": "0x6e675ee97607f4e695188786c3c1853fb1562f1c075629eb5dbcff269422a1a4",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}
