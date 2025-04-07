@@ -42,5 +42,7 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
   },
-  "icon": { "web3Icons": { "name": "zora", "variants": ["branded"] } }
+  "icon": {
+    "web3Icons": { "name": "zora", "variants": ["branded", "background"] }
+  }
 }
