@@ -43,6 +43,6 @@
     "bytesEncoding": "hex"
   },
   "icon": {
-    "web3Icons": { "name": "zora", "variants": ["branded", "background"] }
+    "web3Icons": { "name": "zora", "variants": ["branded"] }
   }
 }
