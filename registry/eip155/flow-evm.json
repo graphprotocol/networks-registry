@@ -1,0 +1,22 @@
+{
+  "id": "flow-evm",
+  "shortName": "Flow",
+  "fullName": "Flow EVM",
+  "aliases": ["evm-747", "flow-evm-mainnet"],
+  "caip2Id": "eip155:747",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://evm.flowscan.io"],
+  "rpcUrls": ["https://mainnet.evm.nodes.onflow.org"],
+  "apiUrls": [{ "url": "https://evm.flowscan.io/api", "kind": "blockscout" }],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "FLOW",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "docsUrl": "https://developers.flow.com/evm/about"
+}

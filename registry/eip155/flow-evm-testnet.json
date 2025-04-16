@@ -1,0 +1,25 @@
+{
+  "id": "flow-evm-testnet",
+  "shortName": "Flow",
+  "fullName": "Flow EVM Testnet",
+  "aliases": ["evm-545"],
+  "caip2Id": "eip155:545",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://evm-testnet.flowscan.io"],
+  "rpcUrls": ["https://testnet.evm.nodes.onflow.org"],
+  "apiUrls": [
+    { "url": "https://evm-testnet.flowscan.io/api", "kind": "blockscout" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "flow-evm" }],
+  "issuanceRewards": false,
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "nativeToken": "FLOW",
+  "docsUrl": "https://developers.flow.com/evm/about"
+}
