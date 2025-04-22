@@ -18,5 +18,9 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
   },
+  "genesis": {
+    "hash": "0xe311a8061e85b461e987f08e7cc84355eb78b438d0cc37ea412ca26ad4ac55b3",
+    "height": 0
+  },
   "docsUrl": "https://developers.flow.com/evm/about"
 }
