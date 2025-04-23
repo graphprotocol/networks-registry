@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.58",
+  "version": "0.6.59",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-04-05T18:36:33.422Z",
+  "updatedAt": "2025-04-23T22:14:37.386Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3017,6 +3017,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ronin"
+        }
       }
     },
     {
@@ -7263,6 +7268,11 @@
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ultra"
+        }
       }
     },
     {
