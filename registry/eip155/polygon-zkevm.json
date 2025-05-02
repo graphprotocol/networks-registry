@@ -28,6 +28,12 @@
   "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.polygon.technology/zkEVM",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/polygon-zkevm",
+      "description": "Archive Nodes 101"
+    }
+  ],
   "genesis": {
     "hash": "0x81005434635456a16f74ff7023fbe0bf423abbc8a8deb093ffff455c0ad3b741",
     "height": 0

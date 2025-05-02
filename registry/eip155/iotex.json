@@ -13,6 +13,12 @@
   "issuanceRewards": false,
   "nativeToken": "IOTX",
   "docsUrl": "https://docs.iotex.io",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/iotex",
+      "description": "Archive Nodes 101"
+    }
+  ],
   "genesis": {
     "hash": "0xb337983730981c2d50f114eed5da9dd20b83c8c5e130beefdb3001dc858cfe8b",
     "height": 0
