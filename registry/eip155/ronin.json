@@ -21,6 +21,12 @@
   "issuanceRewards": false,
   "nativeToken": "RON",
   "docsUrl": "https://docs.roninchain.com",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/ronin",
+      "description": "Archive Nodes 101"
+    }
+  ],
   "genesis": {
     "hash": "0x6e675ee97607f4e695188786c3c1853fb1562f1c075629eb5dbcff269422a1a4",
     "height": 0

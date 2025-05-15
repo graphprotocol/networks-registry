@@ -29,6 +29,12 @@
   "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.zksync.io",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/zksync-era",
+      "description": "Archive Nodes 101"
+    }
+  ],
   "genesis": {
     "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
     "height": 0

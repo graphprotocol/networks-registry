@@ -26,6 +26,12 @@
   "issuanceRewards": true,
   "nativeToken": "S",
   "docsUrl": "https://docs.soniclabs.com",
+  "indexerDocsUrls": [
+    {
+      "url": "https://docs.infradao.com/archive-nodes-101/sonic",
+      "description": "Archive Nodes 101"
+    }
+  ],
   "genesis": {
     "hash": "0x411c75a1b1c2f2f458bcf243e7743d114e0117a4233cc13d91e7efc8fe8b0f3b",
     "height": 0
