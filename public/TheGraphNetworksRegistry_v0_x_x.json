@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.60",
+  "version": "0.6.61",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-05-15T21:36:33.832Z",
+  "updatedAt": "2025-05-15T21:43:12.039Z",
   "networks": [
     {
       "id": "mainnet",
@@ -601,6 +601,12 @@
       "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.polygon.technology/zkEVM",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/polygon-zkevm",
+          "description": "Archive Nodes 101"
+        }
+      ],
       "genesis": {
         "hash": "0x81005434635456a16f74ff7023fbe0bf423abbc8a8deb093ffff455c0ad3b741",
         "height": 0
@@ -1836,6 +1842,12 @@
       "issuanceRewards": true,
       "nativeToken": "S",
       "docsUrl": "https://docs.soniclabs.com",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/sonic",
+          "description": "Archive Nodes 101"
+        }
+      ],
       "genesis": {
         "hash": "0x411c75a1b1c2f2f458bcf243e7743d114e0117a4233cc13d91e7efc8fe8b0f3b",
         "height": 0
@@ -3011,6 +3023,12 @@
       "issuanceRewards": false,
       "nativeToken": "RON",
       "docsUrl": "https://docs.roninchain.com",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/ronin",
+          "description": "Archive Nodes 101"
+        }
+      ],
       "genesis": {
         "hash": "0x6e675ee97607f4e695188786c3c1853fb1562f1c075629eb5dbcff269422a1a4",
         "height": 0
@@ -3962,6 +3980,12 @@
       "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.zksync.io",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/zksync-era",
+          "description": "Archive Nodes 101"
+        }
+      ],
       "genesis": {
         "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
         "height": 0
@@ -4545,6 +4569,12 @@
       "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.arbitrum.io",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/arbitrum-sepolia",
+          "description": "Archive Nodes 101"
+        }
+      ],
       "genesis": {
         "hash": "0x77194da4010e549a7028a9c3c51c3e277823be6ac7d138d0bb8a70197b5c004c",
         "height": 0
@@ -5026,6 +5056,12 @@
       "issuanceRewards": false,
       "nativeToken": "IOTX",
       "docsUrl": "https://docs.iotex.io",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/iotex",
+          "description": "Archive Nodes 101"
+        }
+      ],
       "genesis": {
         "hash": "0xb337983730981c2d50f114eed5da9dd20b83c8c5e130beefdb3001dc858cfe8b",
         "height": 0
@@ -6578,6 +6614,12 @@
       "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.base.org",
+      "indexerDocsUrls": [
+        {
+          "url": "https://docs.infradao.com/archive-nodes-101/base-sepolia",
+          "description": "Archive Nodes 101"
+        }
+      ],
       "genesis": {
         "hash": "0x0dcc9e089e30b90ddfc55be9a37dd15bc551aeee999d2e2b51414c54eaf934e4",
         "height": 0
