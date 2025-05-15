@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.59",
+  "version": "0.6.60",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-04-23T22:14:37.386Z",
+  "updatedAt": "2025-05-15T21:36:33.832Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2988,6 +2988,9 @@
         "protocol": "ethereum"
       },
       "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ],
         "firehose": [
           "ronin.firehose.pinax.network:443"
         ],

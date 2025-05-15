@@ -223,10 +223,7 @@
                 },
                 "variants": {
                   "type": "array",
-                  "items": {
-                    "type": "string",
-                    "pattern": "^(mono|branded)$"
-                  },
+                  "items": { "type": "string", "pattern": "^(mono|branded)$" },
                   "uniqueItems": true,
                   "description": "Variants of the icon, if none specified - all are available"
                 }
