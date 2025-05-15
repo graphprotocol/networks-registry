@@ -6,6 +6,7 @@
   "caip2Id": "eip155:2020",
   "graphNode": { "protocol": "ethereum" },
   "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["ronin.firehose.pinax.network:443"],
     "substreams": ["ronin.substreams.pinax.network:443"]
   },
