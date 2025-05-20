@@ -1,0 +1,28 @@
+{
+  "id": "katana-tatara",
+  "shortName": "Katana",
+  "fullName": "Katana Tatara Testnet",
+  "aliases": ["evm-129399"],
+  "caip2Id": "eip155:129399",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.tatara.katana.network"],
+  "rpcUrls": ["https://rpc.tatara.katanarpc.com"],
+  "apiUrls": [
+    { "url": "https://explorer.tatara.katana.network/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "relations": [],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "genesis": {
+    "hash": "0xbca38f4936fefe65751e55b3f3f88fec27d478e283b6bb92b5268e2ffcea7716",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  }
+}
