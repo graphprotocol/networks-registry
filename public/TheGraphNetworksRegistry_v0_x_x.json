@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.62",
+  "version": "0.6.63",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-05-20T20:55:47.339Z",
+  "updatedAt": "2025-05-28T22:00:25.452Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1275,7 +1275,16 @@
         ]
       },
       "networkType": "testnet",
-      "relations": [],
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        },
+        {
+          "kind": "testnetOf",
+          "network": "katana"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "genesis": {
@@ -3968,6 +3977,54 @@
       }
     },
     {
+      "id": "ozean-poseidon",
+      "shortName": "Ozean",
+      "fullName": "Ozean Poseidon Testnet",
+      "aliases": [
+        "evm-31911"
+      ],
+      "caip2Id": "eip155:31911",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://poseidon-testnet.explorer.caldera.xyz/"
+      ],
+      "rpcUrls": [
+        "https://poseidon-testnet.rpc.caldera.xyz/http"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://poseidon-testnet.explorer.caldera.xyz/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "genesis": {
+        "hash": "0x7ee9e9a8b75fa5f73e276e4b7f9eee22ceac26ec7516141a4ee737be1881102c",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      }
+    },
+    {
       "id": "zksync-era",
       "shortName": "zkSync",
       "secondName": "Era",
@@ -6031,6 +6088,43 @@
       }
     },
     {
+      "id": "katana",
+      "shortName": "Katana",
+      "fullName": "Katana Mainnet",
+      "aliases": [
+        "evm-747474",
+        "katana-mainnet"
+      ],
+      "caip2Id": "eip155:747474",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "genesis": {
+        "hash": "0x2d28253bc3362fb71336e4f45ba058a24167ef8f43aa2527d5ed9ecfa1d2d3d6",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      }
+    },
+    {
       "id": "ink-sepolia",
       "shortName": "Ink",
       "secondName": "Sepolia",
@@ -6975,66 +7069,6 @@
       "icon": {
         "web3Icons": {
           "name": "binance-smart-chain"
-        }
-      }
-    },
-    {
-      "id": "boba-bnb-testnet",
-      "shortName": "Boba",
-      "secondName": "BNB",
-      "fullName": "Boba BNB Testnet",
-      "aliases": [
-        "evm-9728",
-        "boba-bsc-testnet"
-      ],
-      "caip2Id": "eip155:9728",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://bnb.testnet.bobascan.com"
-      ],
-      "rpcUrls": [
-        "https://testnet.bnb.boba.network"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://api.routescan.io/v2/network/testnet/evm/9728/etherscan/api",
-          "kind": "etherscan"
-        }
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
-      },
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "boba-bnb"
-        },
-        {
-          "kind": "l2Of",
-          "network": "boba-testnet"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "BOBA",
-      "docsUrl": "https://docs.boba.network",
-      "genesis": {
-        "hash": "0x4d26ddc947c7cea924d5ef272c1a5ef40a1dce5ca2cbbaccad59d33f2505a30d",
-        "height": 0
-      },
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "boba"
         }
       }
     },

@@ -5,16 +5,17 @@
   "aliases": ["evm-31911"],
   "caip2Id": "eip155:31911",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://poseidon-testnet.explorer.caldera.xyz/"],
+  "explorerUrls": ["https://poseidon-testnet.explorer.caldera.xyz"],
   "rpcUrls": ["https://poseidon-testnet.rpc.caldera.xyz/http"],
   "apiUrls": [
-    { "url": "https://poseidon-testnet.explorer.caldera.xyz/api", "kind": "etherscan" }
+    {
+      "url": "https://poseidon-testnet.explorer.caldera.xyz/api",
+      "kind": "etherscan"
+    }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
-  "relations": [
-    { "kind": "l2Of", "network": "sepolia" }
-  ],
+  "relations": [{ "kind": "l2Of", "network": "sepolia" }],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "genesis": {
