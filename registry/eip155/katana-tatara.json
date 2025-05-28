@@ -12,7 +12,10 @@
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
-  "relations": [],
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "katana" }
+  ],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "genesis": {

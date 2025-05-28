@@ -26,6 +26,8 @@ const ALLOWED_DUPLICATES: string[] = [
   "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
 ];
 
+const ALLOWED_ETHEREUM_LIST_MISSING: string[] = ["katana", "ozean-poseidon"];
+
 function validateUniqueness(networks: Network[]) {
   process.stdout.write("Validating uniqueness ... ");
   for (const field of [
@@ -397,6 +399,9 @@ async function validateEthereumList(networks: Network[]) {
   const chains = await fetchChainListNetworks();
   const ethNetworks = networks.filter((n) => n.caip2Id.startsWith("eip155"));
   for (const network of ethNetworks) {
+    if (ALLOWED_ETHEREUM_LIST_MISSING.includes(network.id)) {
+      continue;
+    }
     const ourId = parseInt(network.caip2Id.split("eip155:")[1]);
     const chain = chains.find((c) => c.chainId === ourId);
     if (!chain) {
