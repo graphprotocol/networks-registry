@@ -10,7 +10,6 @@
     "https://rpc.ankr.com/kava_evm",
     "https://kava.rpc.service.pinax.network"
   ],
-  "apiUrls": [],
   "networkType": "mainnet",
   "services": {},
   "issuanceRewards": false,
