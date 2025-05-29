@@ -11,7 +11,7 @@
     "https://xlayerrpc.okx.com",
     "https://xlayer.rpc.service.pinax.network"
   ],
-    "services": {
+  "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["xlayer.firehose.pinax.network:443"],
     "substreams": ["xlayer.substreams.pinax.network:443"]

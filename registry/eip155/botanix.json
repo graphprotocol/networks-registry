@@ -5,13 +5,11 @@
   "aliases": ["evm-3637", "botanix-mainnet"],
   "caip2Id": "eip155:3637",
   "graphNode": { "protocol": "ethereum" },
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "BTC",
-  "docsUrl": "https://docs.botanixlabs.com/",
+  "docsUrl": "https://docs.botanixlabs.com",
   "genesis": {
     "hash": "0x0210ae550e730d0e18f96896b80caad6f59dcc0b83b67421975716d155d027c6",
     "height": 0

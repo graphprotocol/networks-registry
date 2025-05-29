@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.63",
+  "version": "0.6.64",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-05-28T22:00:25.452Z",
+  "updatedAt": "2025-05-29T22:18:07.597Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1687,6 +1687,10 @@
         {
           "kind": "l2Of",
           "network": "sepolia"
+        },
+        {
+          "kind": "testnetOf",
+          "network": "hashkeychain"
         }
       ],
       "services": {
@@ -2939,7 +2943,6 @@
         "https://xlayertestrpc.okx.com",
         "https://xlayertest.rpc.service.pinax.network"
       ],
-      "apiUrls": [],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -3001,7 +3004,6 @@
         "https://xlayerrpc.okx.com",
         "https://xlayer.rpc.service.pinax.network"
       ],
-      "apiUrls": [],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -3067,7 +3069,6 @@
       "explorerUrls": [
         "https://app.roninchain.com"
       ],
-      "apiUrls": [],
       "rpcUrls": [
         "https://api.roninchain.com/rpc",
         "https://ronin.rpc.service.pinax.network"
@@ -3298,7 +3299,6 @@
         "https://rpc.ankr.com/kava_evm",
         "https://kava.rpc.service.pinax.network"
       ],
-      "apiUrls": [],
       "networkType": "mainnet",
       "services": {},
       "issuanceRewards": false,
@@ -3988,7 +3988,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://poseidon-testnet.explorer.caldera.xyz/"
+        "https://poseidon-testnet.explorer.caldera.xyz"
       ],
       "rpcUrls": [
         "https://poseidon-testnet.rpc.caldera.xyz/http"
@@ -4400,12 +4400,54 @@
         ]
       },
       "networkType": "testnet",
-      "relations": [],
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "botanix"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "BTC",
       "docsUrl": "https://docs.botanixlabs.xyz",
       "genesis": {
         "hash": "0x3797638175875c37cefa72ef546db685e43c81ba4af8238b48a495f98d61588d",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "botanix"
+        }
+      }
+    },
+    {
+      "id": "botanix",
+      "shortName": "Botanix",
+      "fullName": "Botanix Mainnet",
+      "aliases": [
+        "evm-3637",
+        "botanix-mainnet"
+      ],
+      "caip2Id": "eip155:3637",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "BTC",
+      "docsUrl": "https://docs.botanixlabs.com/",
+      "genesis": {
+        "hash": "0x0210ae550e730d0e18f96896b80caad6f59dcc0b83b67421975716d155d027c6",
         "height": 0
       },
       "firehose": {
