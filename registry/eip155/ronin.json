@@ -13,7 +13,6 @@
   "networkType": "mainnet",
   "relations": [],
   "explorerUrls": ["https://app.roninchain.com"],
-  "apiUrls": [],
   "rpcUrls": [
     "https://api.roninchain.com/rpc",
     "https://ronin.rpc.service.pinax.network"

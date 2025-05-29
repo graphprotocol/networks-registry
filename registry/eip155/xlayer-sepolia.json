@@ -12,7 +12,6 @@
     "https://xlayertestrpc.okx.com",
     "https://xlayertest.rpc.service.pinax.network"
   ],
-  "apiUrls": [],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["xlayertest.firehose.pinax.network:443"],
