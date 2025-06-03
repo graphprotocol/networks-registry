@@ -1,0 +1,38 @@
+{
+  "id": "tron",
+  "shortName": "Tron",
+  "fullName": "Tron Mainnet",
+  "aliases": ["tron-mainnet"],
+  "caip2Id": "eip155:728126428",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://tronscan.org"],
+  "rpcUrls": [
+    "https://api.trongrid.io/jsonrpc",
+    "https://tron.drpc.org",
+    "https://rpc.ankr.com/tron_jsonrpc"
+  ],
+  "apiUrls": [
+    { "url": "https://apilist.tronscanapi.com/api", "kind": "etherscan" }
+  ],
+  "networkType": "mainnet",
+  "services": {
+    "subgraphs": [],
+    "sps": [],
+    "firehose": ["mainnet.tron.streamingfast.io:443"],
+    "substreams": ["mainnet.tron.streamingfast.io:443"]
+  },
+  "issuanceRewards": true,
+  "nativeToken": "TRX",
+  "docsUrl": "https://developers.tron.network",
+  "genesis": {
+    "hash": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.tron.type.v1.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-tron",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "tron" } }
+}
