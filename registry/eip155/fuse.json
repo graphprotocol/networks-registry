@@ -10,7 +10,7 @@
   "apiUrls": [{ "url": "https://explorer.fuse.io/api", "kind": "blockscout" }],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["fuse.firehose.pinax.network:443"],
     "substreams": ["fuse.substreams.pinax.network:443"]
   },

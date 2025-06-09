@@ -25,7 +25,7 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["minato.firehose.pinax.network:443"],
     "substreams": ["minato.substreams.pinax.network:443"]
   },

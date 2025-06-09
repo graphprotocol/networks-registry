@@ -10,8 +10,7 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "arweave" },
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["arweave.firehose.pinax.network:443"],
     "substreams": ["arweave.substreams.pinax.network:443"]
   },

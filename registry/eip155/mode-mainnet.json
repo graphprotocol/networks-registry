@@ -19,7 +19,7 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["mode.firehose.pinax.network:443"],
     "substreams": ["mode.substreams.pinax.network:443"]
   },

@@ -18,7 +18,7 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": [
       "mainnet.optimism.streamingfast.io:443",
       "optimism.firehose.pinax.network:443"
