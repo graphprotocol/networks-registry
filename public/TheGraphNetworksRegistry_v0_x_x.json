@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.65",
+  "version": "0.6.66",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-06-10T19:09:13.007Z",
+  "updatedAt": "2025-06-11T17:29:29.554Z",
   "networks": [
     {
       "id": "mainnet",
@@ -8153,7 +8153,8 @@
       "aliases": [
         "solana-mainnet",
         "solana",
-        "solana-beta"
+        "solana-beta",
+        "sol-mainnet"
       ],
       "caip2Id": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
       "explorerUrls": [
