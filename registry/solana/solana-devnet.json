@@ -11,7 +11,7 @@
   "relations": [{ "kind": "testnetOf", "network": "solana-mainnet-beta" }],
   "services": {
     "subgraphs": [],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": [
       "devnet.sol.streamingfast.io:443",
       "soldev.firehose.pinax.network:443"

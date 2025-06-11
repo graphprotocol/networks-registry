@@ -12,7 +12,7 @@
   "relations": [{ "kind": "testnetOf", "network": "near-mainnet" }],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["neartest.firehose.pinax.network:443"],
     "substreams": ["neartest.substreams.pinax.network:443"]
   },

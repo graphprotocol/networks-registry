@@ -10,7 +10,7 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": [
       "bitcoin.firehose.pinax.network:443",
       "mainnet.btc.streamingfast.io:443"

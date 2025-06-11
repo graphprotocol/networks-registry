@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.64",
+  "version": "0.6.65",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-05-29T22:18:07.597Z",
+  "updatedAt": "2025-06-10T19:09:13.007Z",
   "networks": [
     {
       "id": "mainnet",
@@ -47,9 +47,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "eth.firehose.pinax.network:443",
           "mainnet.eth.streamingfast.io:443"
@@ -125,9 +123,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "mainnet.optimism.streamingfast.io:443",
           "optimism.firehose.pinax.network:443"
@@ -588,9 +584,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "polygonzk.firehose.pinax.network:443"
         ],
@@ -736,9 +730,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "sepolia.firehose.pinax.network:443",
           "sepolia.eth.streamingfast.io:443"
@@ -921,9 +913,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "fuse.firehose.pinax.network:443"
         ],
@@ -1414,9 +1404,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "unisepolia.firehose.pinax.network:443"
         ],
@@ -1817,9 +1805,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "polygon.firehose.pinax.network:443",
           "polygon.streamingfast.io:443"
@@ -2427,9 +2413,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "holesky.firehose.pinax.network:443",
           "holesky.eth.streamingfast.io:443"
@@ -2894,9 +2878,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "minato.firehose.pinax.network:443"
         ],
@@ -4327,9 +4309,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "mode.firehose.pinax.network:443"
         ],
@@ -4445,7 +4425,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "BTC",
-      "docsUrl": "https://docs.botanixlabs.com/",
+      "docsUrl": "https://docs.botanixlabs.com",
       "genesis": {
         "hash": "0x0210ae550e730d0e18f96896b80caad6f59dcc0b83b67421975716d155d027c6",
         "height": 0
@@ -4619,9 +4599,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "arbone.firehose.pinax.network:443",
           "arb-one.streamingfast.io:443"
@@ -4698,9 +4676,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "arbsepolia.firehose.pinax.network:443"
         ],
@@ -4765,9 +4741,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "arbnova.firehose.pinax.network:443"
         ],
@@ -5066,9 +5040,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "avalanche-mainnet.streamingfast.io:443",
           "avalanche.firehose.pinax.network:443"
@@ -5478,9 +5450,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "scroll.firehose.pinax.network:443"
         ],
@@ -5553,9 +5523,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "bsc.firehose.pinax.network:443",
           "bnb.streamingfast.io:443"
@@ -6568,9 +6536,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "blast.firehose.pinax.network:443"
         ],
@@ -6693,9 +6659,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "base.firehose.pinax.network:443",
           "base-mainnet.streamingfast.io:443"
@@ -7547,12 +7511,7 @@
         "protocol": "arweave"
       },
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "arweave.firehose.pinax.network:443"
         ],
@@ -7821,9 +7780,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "bitcoin.firehose.pinax.network:443",
           "mainnet.btc.streamingfast.io:443"
@@ -8108,9 +8065,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "near.firehose.pinax.network:443",
           "mainnet.near.streamingfast.io:443"
@@ -8165,9 +8120,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "neartest.firehose.pinax.network:443"
         ],
@@ -8214,9 +8167,7 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "mainnet.sol.streamingfast.io:443",
           "solana.firehose.pinax.network:443"
@@ -8304,9 +8255,7 @@
       ],
       "services": {
         "subgraphs": [],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "devnet.sol.streamingfast.io:443",
           "soldev.firehose.pinax.network:443"
@@ -8407,9 +8356,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "starknet.firehose.pinax.network:443"
         ],
@@ -8477,9 +8424,7 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "starksepolia.firehose.pinax.network:443"
         ],
@@ -8523,9 +8468,7 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [],
-        "sps": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "sps": [],
         "firehose": [
           "mainnet.stellar.streamingfast.io:443"
         ],

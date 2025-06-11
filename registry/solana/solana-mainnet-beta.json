@@ -10,7 +10,7 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": [
       "mainnet.sol.streamingfast.io:443",
       "solana.firehose.pinax.network:443"

@@ -32,7 +32,7 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["unisepolia.firehose.pinax.network:443"],
     "substreams": ["unisepolia.substreams.pinax.network:443"]
   },

@@ -15,7 +15,7 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["starknet.firehose.pinax.network:443"],
     "substreams": [
       "starknet.substreams.pinax.network:443",

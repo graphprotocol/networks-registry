@@ -21,7 +21,7 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["polygonzk.firehose.pinax.network:443"],
     "substreams": ["polygonzk.substreams.pinax.network:443"]
   },

@@ -27,7 +27,7 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": [
       "sepolia.firehose.pinax.network:443",
       "sepolia.eth.streamingfast.io:443"

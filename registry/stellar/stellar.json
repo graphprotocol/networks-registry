@@ -9,7 +9,7 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": ["mainnet.stellar.streamingfast.io:443"],
     "substreams": ["mainnet.stellar.streamingfast.io:443"]
   },

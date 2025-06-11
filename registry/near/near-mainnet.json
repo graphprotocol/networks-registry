@@ -11,7 +11,7 @@
   "graphNode": { "protocol": "near" },
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": ["https://api.studio.thegraph.com/deploy"],
+    "sps": [],
     "firehose": [
       "near.firehose.pinax.network:443",
       "mainnet.near.streamingfast.io:443"
