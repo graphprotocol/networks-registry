@@ -1,0 +1,33 @@
+{
+  "id": "status-sepolia",
+  "shortName": "Status",
+  "secondName": "Sepolia",
+  "fullName": "Status Network Sepolia",
+  "aliases": ["status-testnet", "evm-1660990954"],
+  "caip2Id": "eip155:1660990954",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://sepoliascan.status.network/"],
+  "rpcUrls": ["https://public.sepolia.rpc.status.network"],
+  "apiUrls": [
+    { "url": "https://sepoliascan.status.network/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.status.network/",
+  "genesis": {
+    "hash": "0x8f6889114bdfdb70c73fb33765df93a99816db0ad942bbcee71cd5d7a39e11c2",
+    "height": 0
+  },
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex"
+  },
+  "icon": { "web3Icons": { "name": "sei-network" } }
+}
