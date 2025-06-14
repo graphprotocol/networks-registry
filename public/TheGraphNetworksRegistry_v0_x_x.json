@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.66",
+  "version": "0.6.67",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-06-11T17:29:29.554Z",
+  "updatedAt": "2025-06-14T17:02:07.394Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1286,6 +1286,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "katana"
+        }
       }
     },
     {
@@ -2135,6 +2140,57 @@
         "web3Icons": {
           "name": "gravity"
         }
+      }
+    },
+    {
+      "id": "status-sepolia",
+      "shortName": "Status",
+      "secondName": "Sepolia",
+      "fullName": "Status Network Sepolia",
+      "aliases": [
+        "status-testnet",
+        "evm-1660990954"
+      ],
+      "caip2Id": "eip155:1660990954",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://sepoliascan.status.network/"
+      ],
+      "rpcUrls": [
+        "https://public.sepolia.rpc.status.network"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://sepoliascan.status.network/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.status.network/",
+      "genesis": {
+        "hash": "0x8f6889114bdfdb70c73fb33765df93a99816db0ad942bbcee71cd5d7a39e11c2",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
       }
     },
     {
@@ -4004,6 +4060,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ozean"
+        }
       }
     },
     {
@@ -6132,6 +6193,11 @@
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "katana"
+        }
       }
     },
     {
