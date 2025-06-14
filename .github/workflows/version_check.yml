@@ -1,6 +1,6 @@
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [synchronize]  # Only run on updates, not initial creation
   workflow_dispatch:
 
 name: Check version on PR
@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
 
       - name: Get version
         id: get_version
