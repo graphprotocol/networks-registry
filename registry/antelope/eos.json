@@ -2,7 +2,7 @@
   "id": "eos",
   "shortName": "EOS",
   "fullName": "EOS Mainnet",
-  "aliases": ["eos-mainnet"],
+  "aliases": ["eos-mainnet", "vaulta"],
   "caip2Id": "antelope:aca376f206b8fc25a6ed44dbdc66547c",
   "explorerUrls": ["https://eosauthority.com/?network=eos"],
   "rpcUrls": ["https://eos.api.eosnation.io"],
