@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.67",
+  "version": "0.6.68",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-06-14T17:02:07.394Z",
+  "updatedAt": "2025-06-16T19:29:07.587Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2156,7 +2156,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://sepoliascan.status.network/"
+        "https://sepoliascan.status.network"
       ],
       "rpcUrls": [
         "https://public.sepolia.rpc.status.network"
@@ -2181,7 +2181,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.status.network/",
+      "docsUrl": "https://docs.status.network",
       "genesis": {
         "hash": "0x8f6889114bdfdb70c73fb33765df93a99816db0ad942bbcee71cd5d7a39e11c2",
         "height": 0
@@ -7474,7 +7474,8 @@
       "shortName": "EOS",
       "fullName": "EOS Mainnet",
       "aliases": [
-        "eos-mainnet"
+        "eos-mainnet",
+        "vaulta"
       ],
       "caip2Id": "antelope:aca376f206b8fc25a6ed44dbdc66547c",
       "explorerUrls": [
@@ -7812,6 +7813,50 @@
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
       "genesis": {
         "hash": "0xab09edd9380f8451c3ff5c809821174a36dce606fea8b5ea35ea936915dbf889",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.beacon.type.v1.Block",
+        "bufUrl": "https://buf.build/pinax/firehose-beacon",
+        "bytesEncoding": "0xhex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "ethereum"
+        }
+      }
+    },
+    {
+      "id": "hoodi-cl",
+      "shortName": "Hoodi Beacon",
+      "fullName": "Ethereum Hoodi Consensus Layer",
+      "aliases": [
+        "hoodi-beacon"
+      ],
+      "caip2Id": "beacon:560048",
+      "explorerUrls": [],
+      "rpcUrls": [],
+      "apiUrls": [],
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "beaconOf",
+          "network": "hoodi"
+        }
+      ],
+      "services": {
+        "firehose": [
+          "hoodi-cl.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "hoodi-cl.substreams.pinax.network:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
+      "genesis": {
+        "hash": "0x376450cd7fb9f05ade82a7f88565ac57af449ac696b1a6ac5cc7dac7d467b7d6",
         "height": 0
       },
       "firehose": {
