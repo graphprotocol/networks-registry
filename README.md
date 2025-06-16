@@ -14,10 +14,9 @@ See [Networks Table](./docs/networks-table.md) for an up-to-date auto-generated 
 ## Adding/updating a chain
 
 - add/update a network JSON in the `registry` directory. See [Adding a Chain](./docs/adding-a-chain.md) for details
-- [optional] validate with `bun validate` (see below for local setup steps)
+- validate with `bun validate` (see below for local setup steps)
 - [optional] format with `bun format`
-- increment patch version in `package.json`
-- open a PR. This will trigger validation checks and will signal if there are any issues with your definition
+- open a PR. This will bump the version, trigger validation checks and will signal if there are any issues with your definition
 
 ## Structure of the repository
 
