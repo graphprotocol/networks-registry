@@ -8,6 +8,14 @@ import { printErrorsAndWarnings } from "./print";
 const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
 
+const ALLOWED_DUPLICATES: string[] = [
+  "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
+  "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+  "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
+];
+
+const ALLOWED_ETHEREUM_LIST_MISSING: string[] = ["katana", "ozean-poseidon"];
+
 function validateFilenames(networksPath: string) {
   process.stdout.write("Validating filenames ... ");
   const files = getAllJsonFiles(networksPath);
@@ -19,14 +27,6 @@ function validateFilenames(networksPath: string) {
   }
   process.stdout.write("done\n");
 }
-
-const ALLOWED_DUPLICATES: string[] = [
-  "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
-  "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-  "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
-];
-
-const ALLOWED_ETHEREUM_LIST_MISSING: string[] = ["katana", "ozean-poseidon"];
 
 function validateUniqueness(networks: Network[]) {
   process.stdout.write("Validating uniqueness ... ");
@@ -42,7 +42,10 @@ function validateUniqueness(networks: Network[]) {
     "services.firehose",
     "services.substreams",
   ]) {
-    const values = networks.flatMap((n) => {
+    // Only consider networks that do NOT have an 'evmOf' relation
+    const values = networks.filter(
+      (n) => !n.relations?.some((rel) => rel.kind === "evmOf")
+    ).flatMap((n) => {
       if (field.includes(".")) {
         const [obj, fi] = field.split(".");
         if (Array.isArray(n[obj])) {
