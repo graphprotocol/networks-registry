@@ -1,8 +1,8 @@
 {
-  "id": "tron",
-  "shortName": "Tron",
-  "fullName": "Tron Mainnet",
-  "aliases": ["tron-mainnet"],
+  "id": "tron-evm",
+  "shortName": "TRON EVM",
+  "fullName": "TRON EVM Mainnet",
+  "aliases": ["tronevm", "tron-evm-mainnet", "evm-728126428"],
   "caip2Id": "eip155:728126428",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://tronscan.org"],
@@ -10,6 +10,9 @@
     "https://api.trongrid.io/jsonrpc",
     "https://tron.drpc.org",
     "https://rpc.ankr.com/tron_jsonrpc"
+  ],
+  "relations": [
+    { "kind": "evmOf", "network": "tron" }
   ],
   "apiUrls": [
     { "url": "https://apilist.tronscanapi.com/api", "kind": "etherscan" }
@@ -29,9 +32,9 @@
     "height": 0
   },
   "firehose": {
-    "blockType": "sf.tron.type.v1.Block",
-    "evmExtendedModel": false,
-    "bufUrl": "https://buf.build/streamingfast/firehose-tron",
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex"
   },
   "icon": { "web3Icons": { "name": "tron" } }

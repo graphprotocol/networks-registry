@@ -8,6 +8,41 @@ import { printErrorsAndWarnings } from "./print";
 const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
 
+const ALLOWED_DUPLICATES: string[] = [
+  "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
+  "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+  "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
+];
+
+const ALLOWED_ETHEREUM_LIST_MISSING: string[] = ["katana", "ozean-poseidon"];
+
+// List of allowed duplicate fields per network
+const ALLOWED_DUPLICATE_FIELDS_PER_NETWORK: Record<string, { field: string, networks: string[] }[]> = {
+  "caip2Id": [
+    { field: "caip2Id", networks: ["tron", "tron-evm"] },
+  ],
+  "genesis.hash": [
+    { field: "genesis.hash", networks: ["tron", "tron-evm"] },
+  ],
+  "explorerUrls": [
+    { field: "explorerUrls", networks: ["tron", "tron-evm"] },
+  ],
+  "rpcUrls": [
+    { field: "rpcUrls", networks: ["tron", "tron-evm"] },
+  ],
+  "apiUrls.url": [
+    { field: "apiUrls.url", networks: ["tron", "tron-evm"] },
+  ],
+  "services.firehose": [
+    { field: "services.firehose", networks: ["tron", "tron-evm"] },
+  ],
+  "services.substreams": [
+    { field: "services.substreams", networks: ["tron", "tron-evm"] },
+  ]
+};
+
+const ALLOWED_EVM_CHAIN_NON_EVM_PROTOCOL: string[] = ["tron"];
+
 function validateFilenames(networksPath: string) {
   process.stdout.write("Validating filenames ... ");
   const files = getAllJsonFiles(networksPath);
@@ -19,14 +54,6 @@ function validateFilenames(networksPath: string) {
   }
   process.stdout.write("done\n");
 }
-
-const ALLOWED_DUPLICATES: string[] = [
-  "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
-  "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-  "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
-];
-
-const ALLOWED_ETHEREUM_LIST_MISSING: string[] = ["katana", "ozean-poseidon"];
 
 function validateUniqueness(networks: Network[]) {
   process.stdout.write("Validating uniqueness ... ");
@@ -60,7 +87,31 @@ function validateUniqueness(networks: Network[]) {
       .filter((v, i) => values.indexOf(v) !== i)
       .filter((v) => !ALLOWED_DUPLICATES.includes(v));
     if (duplicates.length) {
-      ERRORS.push(`Duplicate field: "${field} = ${duplicates[0]}"`);
+      // Find all networks with the duplicate value
+      const duplicateValue = duplicates[0];
+      const involvedNetworks = networks.filter((n) => {
+        if (field.includes(".")) {
+          const [obj, fi] = field.split(".");
+          if (Array.isArray(n[obj])) {
+            return n[obj].some((item) => item[fi] === duplicateValue);
+          }
+          if (Array.isArray(n[obj]?.[fi])) {
+            return n[obj][fi] && n[obj][fi].includes(duplicateValue);
+          }
+          return n[obj]?.[fi] === duplicateValue;
+        }
+        if (Array.isArray(n[field])) return n[field].includes(duplicateValue);
+        return n[field] === duplicateValue;
+      }).map((n) => n.id);
+      // Check if this duplicate is allowed for this field and these networks
+      const allowedSets = ALLOWED_DUPLICATE_FIELDS_PER_NETWORK[field] || [];
+      const isAllowed = allowedSets.some(({ networks }) =>
+        networks.every((id) => involvedNetworks.includes(id)) &&
+        involvedNetworks.every((id) => networks.includes(id))
+      );
+      if (!isAllowed) {
+        ERRORS.push(`Duplicate field: "${field} = ${duplicateValue}"`);
+      }
     }
   }
 
@@ -113,6 +164,10 @@ function validateEvmRules(networks: Network[]) {
 
   for (const network of networks) {
     const isEvm = network.caip2Id.startsWith("eip155:");
+
+    if (isEvm && ALLOWED_EVM_CHAIN_NON_EVM_PROTOCOL.includes(network.id)) {
+      continue;
+    }
 
     if (isEvm) {
       if (network.firehose?.evmExtendedModel === undefined) {
