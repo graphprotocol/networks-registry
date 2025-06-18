@@ -3,7 +3,7 @@
   "shortName": "TRON",
   "fullName": "TRON Mainnet",
   "aliases": ["tron-mainnet"],
-  "caip2Id": "eip155:728126428",
+  "caip2Id": "tron:mainnet",
   "explorerUrls": ["https://tronscan.org"],
   "rpcUrls": [
     "https://api.trongrid.io/jsonrpc",
