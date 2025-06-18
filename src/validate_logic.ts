@@ -16,27 +16,6 @@ const ALLOWED_DUPLICATES: string[] = [
 
 const ALLOWED_ETHEREUM_LIST_MISSING: string[] = ["katana", "ozean-poseidon"];
 
-// List of allowed duplicate fields per network
-const ALLOWED_DUPLICATE_FIELDS_PER_NETWORK: Record<string, { field: string, networks: string[] }[]> = {
-  "caip2Id": [
-    { field: "caip2Id", networks: ["tron", "tron-evm"] },
-  ],
-  "genesis.hash": [
-    { field: "genesis.hash", networks: ["tron", "tron-evm"] },
-  ],
-  "explorerUrls": [
-    { field: "explorerUrls", networks: ["tron", "tron-evm"] },
-  ],
-  "rpcUrls": [
-    { field: "rpcUrls", networks: ["tron", "tron-evm"] },
-  ],
-  "apiUrls.url": [
-    { field: "apiUrls.url", networks: ["tron", "tron-evm"] },
-  ],
-};
-
-const ALLOWED_EVM_CHAIN_NON_EVM_PROTOCOL: string[] = ["tron"];
-
 function validateFilenames(networksPath: string) {
   process.stdout.write("Validating filenames ... ");
   const files = getAllJsonFiles(networksPath);
@@ -63,7 +42,10 @@ function validateUniqueness(networks: Network[]) {
     "services.firehose",
     "services.substreams",
   ]) {
-    const values = networks.flatMap((n) => {
+    // Only consider networks that do NOT have an 'evmOf' relation
+    const values = networks.filter(
+      (n) => !n.relations?.some((rel) => rel.kind === "evmOf")
+    ).flatMap((n) => {
       if (field.includes(".")) {
         const [obj, fi] = field.split(".");
         if (Array.isArray(n[obj])) {
@@ -81,31 +63,7 @@ function validateUniqueness(networks: Network[]) {
       .filter((v, i) => values.indexOf(v) !== i)
       .filter((v) => !ALLOWED_DUPLICATES.includes(v));
     if (duplicates.length) {
-      // Find all networks with the duplicate value
-      const duplicateValue = duplicates[0];
-      const involvedNetworks = networks.filter((n) => {
-        if (field.includes(".")) {
-          const [obj, fi] = field.split(".");
-          if (Array.isArray(n[obj])) {
-            return n[obj].some((item) => item[fi] === duplicateValue);
-          }
-          if (Array.isArray(n[obj]?.[fi])) {
-            return n[obj][fi] && n[obj][fi].includes(duplicateValue);
-          }
-          return n[obj]?.[fi] === duplicateValue;
-        }
-        if (Array.isArray(n[field])) return n[field].includes(duplicateValue);
-        return n[field] === duplicateValue;
-      }).map((n) => n.id);
-      // Check if this duplicate is allowed for this field and these networks
-      const allowedSets = ALLOWED_DUPLICATE_FIELDS_PER_NETWORK[field] || [];
-      const isAllowed = allowedSets.some(({ networks }) =>
-        networks.every((id) => involvedNetworks.includes(id)) &&
-        involvedNetworks.every((id) => networks.includes(id))
-      );
-      if (!isAllowed) {
-        ERRORS.push(`Duplicate field: "${field} = ${duplicateValue}"`);
-      }
+      ERRORS.push(`Duplicate field: "${field} = ${duplicates[0]}"`);
     }
   }
 
@@ -158,10 +116,6 @@ function validateEvmRules(networks: Network[]) {
 
   for (const network of networks) {
     const isEvm = network.caip2Id.startsWith("eip155:");
-
-    if (isEvm && ALLOWED_EVM_CHAIN_NON_EVM_PROTOCOL.includes(network.id)) {
-      continue;
-    }
 
     if (isEvm) {
       if (network.firehose?.evmExtendedModel === undefined) {

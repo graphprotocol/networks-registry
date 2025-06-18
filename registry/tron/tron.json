@@ -11,7 +11,7 @@
     "https://rpc.ankr.com/tron_jsonrpc"
   ],
   "apiUrls": [
-  { "url": "https://apilist.tronscanapi.com/api", "kind": "other" }
+    { "url": "https://apilist.tronscanapi.com/api", "kind": "other" }
   ],
   "networkType": "mainnet",
   "services": {
