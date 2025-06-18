@@ -13,7 +13,7 @@
   ],
   "relations": [{ "kind": "evmOf", "network": "tron" }],
   "apiUrls": [
-    { "url": "https://apilist.tronscanapi.com/api", "kind": "etherscan" }
+  { "url": "https://apilist.tronscanapi.com/api", "kind": "other" }
   ],
   "networkType": "mainnet",
   "services": {
