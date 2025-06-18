@@ -20,7 +20,7 @@
     "firehose": ["mainnet.tron.streamingfast.io:443"],
     "substreams": ["mainnet.tron.streamingfast.io:443"]
   },
-  "issuanceRewards": true,
+  "issuanceRewards": false,
   "nativeToken": "TRX",
   "docsUrl": "https://developers.tron.network",
   "genesis": {
