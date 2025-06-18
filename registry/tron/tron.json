@@ -29,7 +29,6 @@
   },
   "firehose": {
     "blockType": "sf.tron.type.v1.Block",
-    "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-tron",
     "bytesEncoding": "hex"
   },
