@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.68",
+  "version": "0.6.69",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-06-16T19:29:07.587Z",
+  "updatedAt": "2025-06-18T18:53:57.133Z",
   "networks": [
     {
       "id": "mainnet",
@@ -6099,6 +6099,69 @@
       }
     },
     {
+      "id": "tron-evm",
+      "shortName": "TRON EVM",
+      "fullName": "TRON EVM Mainnet",
+      "aliases": [
+        "tronevm",
+        "tron-evm-mainnet",
+        "evm-728126428"
+      ],
+      "caip2Id": "eip155:728126428",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://tronscan.org"
+      ],
+      "rpcUrls": [
+        "https://api.trongrid.io/jsonrpc",
+        "https://tron.drpc.org",
+        "https://rpc.ankr.com/tron_jsonrpc"
+      ],
+      "relations": [
+        {
+          "kind": "evmOf",
+          "network": "tron"
+        }
+      ],
+      "apiUrls": [
+        {
+          "url": "https://apilist.tronscanapi.com/api",
+          "kind": "other"
+        }
+      ],
+      "networkType": "mainnet",
+      "services": {
+        "subgraphs": [],
+        "sps": [],
+        "firehose": [
+          "mainnet-evm.tron.streamingfast.io:443"
+        ],
+        "substreams": [
+          "mainnet-evm.tron.streamingfast.io:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "TRX",
+      "docsUrl": "https://developers.tron.network",
+      "genesis": {
+        "hash": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "tron"
+        }
+      }
+    },
+    {
       "id": "hemi-sepolia",
       "shortName": "Hemi",
       "secondName": "Sepolia",
@@ -8648,6 +8711,57 @@
       "icon": {
         "web3Icons": {
           "name": "stellar"
+        }
+      }
+    },
+    {
+      "id": "tron",
+      "shortName": "TRON",
+      "fullName": "TRON Mainnet",
+      "aliases": [
+        "tron-mainnet"
+      ],
+      "caip2Id": "tron:mainnet",
+      "explorerUrls": [
+        "https://tronscan.org"
+      ],
+      "rpcUrls": [
+        "https://api.trongrid.io/jsonrpc",
+        "https://tron.drpc.org",
+        "https://rpc.ankr.com/tron_jsonrpc"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://apilist.tronscanapi.com/api",
+          "kind": "other"
+        }
+      ],
+      "networkType": "mainnet",
+      "services": {
+        "subgraphs": [],
+        "sps": [],
+        "firehose": [
+          "mainnet.tron.streamingfast.io:443"
+        ],
+        "substreams": [
+          "mainnet.tron.streamingfast.io:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "TRX",
+      "docsUrl": "https://developers.tron.network",
+      "genesis": {
+        "hash": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
+        "height": 0
+      },
+      "firehose": {
+        "blockType": "sf.tron.type.v1.Block",
+        "bufUrl": "https://buf.build/streamingfast/firehose-tron",
+        "bytesEncoding": "hex"
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "tron"
         }
       }
     }
