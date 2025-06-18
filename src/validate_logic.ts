@@ -33,12 +33,6 @@ const ALLOWED_DUPLICATE_FIELDS_PER_NETWORK: Record<string, { field: string, netw
   "apiUrls.url": [
     { field: "apiUrls.url", networks: ["tron", "tron-evm"] },
   ],
-  "services.firehose": [
-    { field: "services.firehose", networks: ["tron", "tron-evm"] },
-  ],
-  "services.substreams": [
-    { field: "services.substreams", networks: ["tron", "tron-evm"] },
-  ]
 };
 
 const ALLOWED_EVM_CHAIN_NON_EVM_PROTOCOL: string[] = ["tron"];
