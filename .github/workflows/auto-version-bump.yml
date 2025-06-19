@@ -23,10 +23,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-
-
       - name: Import bot's GPG key for signing commits
         id: import-gpg
         uses: crazy-max/ghaction-import-gpg@v4
@@ -89,38 +85,9 @@ jobs:
         id: auto_bump
         if: steps.version_check.outputs.manually_bumped == 'false'
         run: |
-          BUMP_TYPE="${{ steps.bump_type.outputs.bump_type }}"
-          CURRENT_VERSION="${{ steps.current_version.outputs.current }}"
-
-          # Parse current version
-          IFS='.' read -ra VERSION_PARTS <<< "$CURRENT_VERSION"
-          MAJOR=${VERSION_PARTS[0]}
-          MINOR=${VERSION_PARTS[1]}
-          PATCH=${VERSION_PARTS[2]}
-
-          # Bump version based on type
-          case $BUMP_TYPE in
-            "major")
-              MAJOR=$((MAJOR + 1))
-              MINOR=0
-              PATCH=0
-              ;;
-            "minor")
-              MINOR=$((MINOR + 1))
-              PATCH=0
-              ;;
-            "patch")
-              PATCH=$((PATCH + 1))
-              ;;
-          esac
-
-          NEW_VERSION="$MAJOR.$MINOR.$PATCH"
-          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
-          echo "Bumping version from $CURRENT_VERSION to $NEW_VERSION ($BUMP_TYPE bump)"
-
-          # Update package.json
-          jq --arg version "$NEW_VERSION" '.version = $version' package.json > package.json.tmp
-          mv package.json.tmp package.json
+          chmod +x .github/scripts/bump-version.sh
+          ./.github/scripts/bump-version.sh ${{ steps.bump_type.outputs.bump_type }}
+          echo "new_version=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
 
       - name: Commit version bump
         if: steps.version_check.outputs.manually_bumped == 'false'
@@ -145,7 +112,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `🤖 **Auto Version Bump**\n\nVersion automatically bumped from \`${{ steps.current_version.outputs.current }}\` to \`${{ steps.auto_bump.outputs.new_version }}\` (\`${{ steps.bump_type.outputs.bump_type }}\` bump).\n\n💡 **Tip**: Add labels \`major\`, \`minor\`, or \`patch\` to your PR to control the bump type. Default is \`patch\`.`
+              body: "🤖 **Auto Version Bump**\n\nVersion automatically bumped from `${{ steps.current_version.outputs.current }}` to `${{ steps.auto_bump.outputs.new_version }}` (`${{ steps.bump_type.outputs.bump_type }}` bump).\n\n💡 **Tip**: Add labels `major`, `minor`, or `patch` to your PR to control the bump type. Default is `patch`."
             })
 
       - name: Skip message
