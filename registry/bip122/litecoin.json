@@ -15,16 +15,12 @@
   "issuanceRewards": false,
   "nativeToken": "LTC",
   "docsUrl": "https://litecoin.info/docs",
-  "genesis": {
-    "hash": "0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.bitcoin.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-bitcoin",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2",
+      "id": "0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2",
       "height": 0
     }
   },

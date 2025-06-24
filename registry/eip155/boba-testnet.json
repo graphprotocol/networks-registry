@@ -30,17 +30,13 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.boba.network",
-  "genesis": {
-    "hash": "0xc6171953a6a376ece6e33149686044f24f58a387ce2636a54e391d330b2326b5",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0xc6171953a6a376ece6e33149686044f24f58a387ce2636a54e391d330b2326b5",
+      "id": "0xc6171953a6a376ece6e33149686044f24f58a387ce2636a54e391d330b2326b5",
       "height": 0
     },
     "blockFeatures": ["base"]

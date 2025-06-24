@@ -16,16 +16,12 @@
   "issuanceRewards": false,
   "nativeToken": "WAX",
   "docsUrl": "https://developer.wax.io",
-  "genesis": {
-    "hash": "0x00000002066113f7023ed907632c404f25c5f0f02034f3b1a22f339c83d78c53",
-    "height": 2
-  },
   "firehose": {
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x00000002066113f7023ed907632c404f25c5f0f02034f3b1a22f339c83d78c53",
+      "id": "0x00000002066113f7023ed907632c404f25c5f0f02034f3b1a22f339c83d78c53",
       "height": 2
     }
   },

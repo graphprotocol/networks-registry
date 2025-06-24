@@ -10,17 +10,13 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "ETH",
-  "genesis": {
-    "hash": "0x2d28253bc3362fb71336e4f45ba058a24167ef8f43aa2527d5ed9ecfa1d2d3d6",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x2d28253bc3362fb71336e4f45ba058a24167ef8f43aa2527d5ed9ecfa1d2d3d6",
+      "id": "0x2d28253bc3362fb71336e4f45ba058a24167ef8f43aa2527d5ed9ecfa1d2d3d6",
       "height": 0
     },
     "blockFeatures": ["base"]

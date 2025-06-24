@@ -16,16 +16,12 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-  "genesis": {
-    "hash": "0x376450cd7fb9f05ade82a7f88565ac57af449ac696b1a6ac5cc7dac7d467b7d6",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.beacon.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-beacon",
     "bytesEncoding": "0xhex",
     "firstStreamableBlock": {
-      "hash": "0x376450cd7fb9f05ade82a7f88565ac57af449ac696b1a6ac5cc7dac7d467b7d6",
+      "id": "0x376450cd7fb9f05ade82a7f88565ac57af449ac696b1a6ac5cc7dac7d467b7d6",
       "height": 0
     }
   },

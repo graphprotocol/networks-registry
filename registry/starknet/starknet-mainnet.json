@@ -31,16 +31,12 @@
       "description": "Archive Nodes 101"
     }
   ],
-  "genesis": {
-    "hash": "0x47c3637b57c2b079b93c61539950c17e868a28f46cdef28f88521067f21e943",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.starknet.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
     "bytesEncoding": "0xhex",
     "firstStreamableBlock": {
-      "hash": "0x47c3637b57c2b079b93c61539950c17e868a28f46cdef28f88521067f21e943",
+      "id": "0x47c3637b57c2b079b93c61539950c17e868a28f46cdef28f88521067f21e943",
       "height": 0
     }
   },

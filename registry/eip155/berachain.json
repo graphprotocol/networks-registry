@@ -26,17 +26,13 @@
   "issuanceRewards": false,
   "nativeToken": "BERA",
   "docsUrl": "https://docs.berachain.com",
-  "genesis": {
-    "hash": "0xd57819422128da1c44339fc7956662378c17e2213e669b427ac91cd11dfcfb38",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0xd57819422128da1c44339fc7956662378c17e2213e669b427ac91cd11dfcfb38",
+      "id": "0xd57819422128da1c44339fc7956662378c17e2213e669b427ac91cd11dfcfb38",
       "height": 0
     },
     "blockFeatures": ["base"]

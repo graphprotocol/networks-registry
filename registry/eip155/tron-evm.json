@@ -25,17 +25,13 @@
   "issuanceRewards": false,
   "nativeToken": "TRX",
   "docsUrl": "https://developers.tron.network",
-  "genesis": {
-    "hash": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
+      "id": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
       "height": 0
     },
     "blockFeatures": ["base"]

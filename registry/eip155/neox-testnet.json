@@ -16,17 +16,13 @@
   "issuanceRewards": false,
   "nativeToken": "GAS",
   "docsUrl": "https://xdocs.ngd.network",
-  "genesis": {
-    "hash": "0x221f7d0a47dd80fe10f476625d62303947c9cd336113e119c64d919f0e9beb71",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x221f7d0a47dd80fe10f476625d62303947c9cd336113e119c64d919f0e9beb71",
+      "id": "0x221f7d0a47dd80fe10f476625d62303947c9cd336113e119c64d919f0e9beb71",
       "height": 0
     },
     "blockFeatures": ["base"]

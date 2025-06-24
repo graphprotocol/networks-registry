@@ -10,17 +10,13 @@
   "issuanceRewards": false,
   "nativeToken": "BTC",
   "docsUrl": "https://docs.botanixlabs.com",
-  "genesis": {
-    "hash": "0x0210ae550e730d0e18f96896b80caad6f59dcc0b83b67421975716d155d027c6",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x0210ae550e730d0e18f96896b80caad6f59dcc0b83b67421975716d155d027c6",
+      "id": "0x0210ae550e730d0e18f96896b80caad6f59dcc0b83b67421975716d155d027c6",
       "height": 0
     },
     "blockFeatures": ["base"]

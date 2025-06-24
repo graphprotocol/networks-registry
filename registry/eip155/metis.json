@@ -25,17 +25,13 @@
   "issuanceRewards": false,
   "nativeToken": "METIS",
   "docsUrl": "https://docs.metis.io",
-  "genesis": {
-    "hash": "0x9e3354e081a54a57190bdb8948a597c840ea5dd496b0322864d4585f4a716892",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x9e3354e081a54a57190bdb8948a597c840ea5dd496b0322864d4585f4a716892",
+      "id": "0x9e3354e081a54a57190bdb8948a597c840ea5dd496b0322864d4585f4a716892",
       "height": 0
     },
     "blockFeatures": ["base"]

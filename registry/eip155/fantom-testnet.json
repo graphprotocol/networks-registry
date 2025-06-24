@@ -19,17 +19,13 @@
   "issuanceRewards": false,
   "nativeToken": "FTM",
   "docsUrl": "https://docs.fantom.foundation",
-  "genesis": {
-    "hash": "0x00000000000000009a0c7349d44dc4d0f602a54e0a8543360c2fee4c3937b49e",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x00000000000000009a0c7349d44dc4d0f602a54e0a8543360c2fee4c3937b49e",
+      "id": "0x00000000000000009a0c7349d44dc4d0f602a54e0a8543360c2fee4c3937b49e",
       "height": 0
     },
     "blockFeatures": ["base"]

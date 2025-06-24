@@ -16,16 +16,12 @@
   "issuanceRewards": false,
   "nativeToken": "INJ",
   "docsUrl": "https://docs.injective.network",
-  "genesis": {
-    "hash": "0x24c9714291a999b952859ee02ec9b233394fe743b07ea3578d432a4a2707b6af",
-    "height": 1
-  },
   "firehose": {
     "blockType": "sf.cosmos.type.v2.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x24c9714291a999b952859ee02ec9b233394fe743b07ea3578d432a4a2707b6af",
+      "id": "0x24c9714291a999b952859ee02ec9b233394fe743b07ea3578d432a4a2707b6af",
       "height": 1
     }
   },

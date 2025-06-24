@@ -15,16 +15,12 @@
   "issuanceRewards": false,
   "nativeToken": "EOS",
   "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
-  "genesis": {
-    "hash": "0x0000000267f3e2284b482f3afc2e724be1d6cbc1804532ec62d4e7af47c30693",
-    "height": 2
-  },
   "firehose": {
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x0000000267f3e2284b482f3afc2e724be1d6cbc1804532ec62d4e7af47c30693",
+      "id": "0x0000000267f3e2284b482f3afc2e724be1d6cbc1804532ec62d4e7af47c30693",
       "height": 2
     }
   },

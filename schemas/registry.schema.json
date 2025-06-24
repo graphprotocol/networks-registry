@@ -146,13 +146,13 @@
                   "description": "Block height of the first streamable block. Can be different from genesis",
                   "minimum": 0
                 },
-                "hash": {
+                "id": {
                   "type": "string",
-                  "description": "Hash of the first streamable block either in 0x-prefixed hex or base58",
+                  "description": "Id of the first streamable block either in 0x-prefixed hex or base58",
                   "pattern": "^(0x[a-fA-F0-9]+|[1-9A-HJ-NP-Za-km-z]+)$"
                 }
               },
-              "required": ["hash", "height"],
+              "required": ["id", "height"],
               "additionalProperties": false,
               "description": "First available block information"
             },
@@ -164,24 +164,6 @@
           "required": ["blockType", "bytesEncoding", "bufUrl"],
           "additionalProperties": false,
           "description": "Firehose block information"
-        },
-        "genesis": {
-          "type": "object",
-          "properties": {
-            "hash": {
-              "type": "string",
-              "description": "Hash of the genesis block either in 0x-prefixed hex or base58",
-              "pattern": "^(0x[a-fA-F0-9]+|[1-9A-HJ-NP-Za-km-z]+)$"
-            },
-            "height": {
-              "type": "integer",
-              "description": "Block height of the genesis or the first available block",
-              "minimum": 0
-            }
-          },
-          "required": ["hash", "height"],
-          "additionalProperties": false,
-          "description": "Genesis block information"
         },
         "nativeToken": {
           "type": "string",

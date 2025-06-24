@@ -22,17 +22,13 @@
   "issuanceRewards": false,
   "nativeToken": "BNB",
   "docsUrl": "https://docs.bnbchain.org/bnb-opbnb",
-  "genesis": {
-    "hash": "0x4dd61178c8b0f01670c231597e7bcb368e84545acd46d940a896d6a791dd6df4",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x4dd61178c8b0f01670c231597e7bcb368e84545acd46d940a896d6a791dd6df4",
+      "id": "0x4dd61178c8b0f01670c231597e7bcb368e84545acd46d940a896d6a791dd6df4",
       "height": 0
     },
     "blockFeatures": ["base"]

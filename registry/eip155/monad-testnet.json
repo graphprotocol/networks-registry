@@ -19,17 +19,13 @@
   "issuanceRewards": false,
   "nativeToken": "MON",
   "docsUrl": "https://docs.monad.xyz",
-  "genesis": {
-    "hash": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
+      "id": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
       "height": 0
     },
     "blockFeatures": ["base"]

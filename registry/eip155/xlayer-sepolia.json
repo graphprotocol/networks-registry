@@ -25,17 +25,13 @@
   "issuanceRewards": false,
   "nativeToken": "OKB",
   "docsUrl": "https://www.okx.com/xlayer",
-  "genesis": {
-    "hash": "0x22a8085892b367833bd7431fa5a90ff6b5d3769167cdaa29ce8571d07bc8f866",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x22a8085892b367833bd7431fa5a90ff6b5d3769167cdaa29ce8571d07bc8f866",
+      "id": "0x22a8085892b367833bd7431fa5a90ff6b5d3769167cdaa29ce8571d07bc8f866",
       "height": 0
     },
     "blockFeatures": ["base"]

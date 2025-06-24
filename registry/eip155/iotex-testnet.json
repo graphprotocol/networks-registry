@@ -17,17 +17,13 @@
   "issuanceRewards": false,
   "nativeToken": "IOTX",
   "docsUrl": "https://docs.iotex.io",
-  "genesis": {
-    "hash": "0x5e31a9f95ca4de82bd6f5ed9b465c6474bba27f1c5d31747393a555ce1f41607",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x5e31a9f95ca4de82bd6f5ed9b465c6474bba27f1c5d31747393a555ce1f41607",
+      "id": "0x5e31a9f95ca4de82bd6f5ed9b465c6474bba27f1c5d31747393a555ce1f41607",
       "height": 0
     },
     "blockFeatures": ["base"]

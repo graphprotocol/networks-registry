@@ -23,17 +23,13 @@
   "issuanceRewards": false,
   "nativeToken": "BTCN",
   "docsUrl": "https://docs.usecorn.com",
-  "genesis": {
-    "hash": "0x110954744ffd9d4bcd4f7998896d1948f654c9e5ccf6fcda1637a35a1863a71d",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "hash": "0x110954744ffd9d4bcd4f7998896d1948f654c9e5ccf6fcda1637a35a1863a71d",
+      "id": "0x110954744ffd9d4bcd4f7998896d1948f654c9e5ccf6fcda1637a35a1863a71d",
       "height": 0
     },
     "blockFeatures": ["base"]
