@@ -7,7 +7,7 @@
   "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [],
-  "networkType": "mainnet",
+  "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "sepolia" }],
   "services": {
     "firehose": ["sepolia-cl.firehose.pinax.network:443"],

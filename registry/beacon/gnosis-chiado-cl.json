@@ -7,7 +7,7 @@
   "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [],
-  "networkType": "mainnet",
+  "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "gnosis-chiado" }],
   "services": {
     "firehose": ["chiado-cl.firehose.pinax.network:443"],

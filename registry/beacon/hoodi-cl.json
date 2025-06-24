@@ -7,7 +7,7 @@
   "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [],
-  "networkType": "mainnet",
+  "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "hoodi" }],
   "services": {
     "firehose": ["hoodi-cl.firehose.pinax.network:443"],

@@ -7,7 +7,7 @@
   "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [],
-  "networkType": "mainnet",
+  "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "mainnet" }],
   "services": {
     "firehose": ["eth-cl.firehose.pinax.network:443"],

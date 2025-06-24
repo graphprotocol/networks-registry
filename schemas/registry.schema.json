@@ -73,7 +73,7 @@
         },
         "networkType": {
           "type": "string",
-          "enum": ["mainnet", "testnet", "devnet"],
+          "enum": ["mainnet", "testnet", "devnet", "beacon"],
           "description": "Whether the network is a mainnet/testnet/devnet"
         },
         "relations": {
@@ -90,6 +90,8 @@
                   "l2Of",
                   "shardOf",
                   "evmOf",
+                  "svmOf",
+                  "flavorOf",
                   "other"
                 ],
                 "description": "Kind of relation"
@@ -126,6 +128,34 @@
             "evmExtendedModel": {
               "type": "boolean",
               "description": "[optional] Whether there is support for extended EVM block model"
+            },
+            "blockFeatures": {
+              "type": "array",
+              "items": { "type": "string", "pattern": "^(base|hybrid|extended|extended@[0-9]+)$" },
+              "uniqueItems": true,
+              "description": "Block features supported by the network"
+            },
+            "firstStreamableBlock": {
+              "type": "object",
+              "properties": {
+                "height": {
+                  "type": "integer",
+                  "description": "Block height of the first streamable block",
+                  "minimum": 0
+                },
+                "hash": {
+                  "type": "string",
+                  "description": "Hash of the first streamable block either in 0x-prefixed hex or base58",
+                  "pattern": "^(0x[a-fA-F0-9]+|[1-9A-HJ-NP-Za-km-z]+)$"
+                }
+              },
+              "required": ["hash", "height"],
+              "additionalProperties": false,
+              "description": "First available block information"
+            },
+            "deprecated": {
+              "type": "boolean",
+              "description": "[optional] Whether the network is deprecated in Firehose software"
             }
           },
           "required": ["blockType", "bytesEncoding", "bufUrl"],
@@ -170,6 +200,10 @@
                 "other"
               ],
               "description": "[optional] Protocol name in graph-node, e.g. ethereum, near, arweave"
+            },
+            "deprecated": {
+              "type": "boolean",
+              "description": "[optional] Whether the network is deprecated in graph-node software"
             }
           },
           "description": "Graph Node specific configuration information"
@@ -201,6 +235,11 @@
               "type": "array",
               "items": { "type": "string", "format": "uri-template" },
               "description": "Substreams gRPC URLs, e.g. eth.substreams.pinax.network:443"
+            },
+            "tokenApi": {
+              "type": "array",
+              "items": { "type": "string", "format": "uri-template" },
+              "description": "Token API URLs, e.g. https://token-api.thegraph.com/transfers/evm?network_id=base"
             }
           },
           "additionalProperties": false,
@@ -223,7 +262,7 @@
                 },
                 "variants": {
                   "type": "array",
-                  "items": { "type": "string", "pattern": "^(mono|branded)$" },
+                  "items": { "type": "string", "pattern": "^(mono|branded|background)$" },
                   "uniqueItems": true,
                   "description": "Variants of the icon, if none specified - all are available"
                 }

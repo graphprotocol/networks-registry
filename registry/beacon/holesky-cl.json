@@ -7,7 +7,7 @@
   "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [],
-  "networkType": "mainnet",
+  "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "holesky" }],
   "services": {
     "firehose": ["holesky-cl.firehose.pinax.network:443"],
