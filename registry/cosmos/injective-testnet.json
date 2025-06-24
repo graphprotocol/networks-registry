@@ -8,7 +8,7 @@
   "rpcUrls": [],
   "apiUrls": [],
   "networkType": "testnet",
-  "graphNode": { "protocol": "cosmos" },
+  "graphNode": { "protocol": "cosmos", "deprecated": true },
   "relations": [{ "kind": "testnetOf", "network": "injective-mainnet" }],
   "services": {
     "firehose": ["testnet.injective.streamingfast.io:443"],

@@ -8,7 +8,7 @@
   "rpcUrls": [],
   "apiUrls": [],
   "networkType": "mainnet",
-  "graphNode": { "protocol": "cosmos" },
+  "graphNode": { "protocol": "cosmos", "deprecated": true },
   "services": {
     "firehose": ["mainnet.injective.streamingfast.io:443"],
     "substreams": ["mainnet.injective.streamingfast.io:443"]

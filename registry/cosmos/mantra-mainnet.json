@@ -8,7 +8,7 @@
   "rpcUrls": ["https://mantra-rpc.publicnode.com"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "graphNode": { "protocol": "cosmos" },
+  "graphNode": { "protocol": "cosmos", "deprecated": true },
   "services": {
     "firehose": ["mainnet.mantra.streamingfast.io:443"],
     "substreams": ["mainnet.mantra.streamingfast.io:443"]
