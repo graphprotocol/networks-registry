@@ -27,6 +27,9 @@
     "substreams": [
       "polygon.substreams.pinax.network:443",
       "polygon.streamingfast.io:443"
+    ],
+    "tokenApi": [
+      "https://token-api.thegraph.com/transfers/evm?network_id=matic"
     ]
   },
   "indexerDocsUrls": [
