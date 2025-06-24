@@ -51,7 +51,7 @@
       "hash": "0x7ca38a1916c42007829c55e69d3e9a73265554b586a499015373241b8a3fa48b",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended@105235064", "hybrid"]
   },
   "icon": { "web3Icons": { "name": "optimism" } }
 }

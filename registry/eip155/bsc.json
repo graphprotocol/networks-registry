@@ -46,7 +46,7 @@
       "hash": "0x0d21840abff46b96c84b2ac9e10e4f5cdaeb5693cb665db62a2f3b02d2d57b5b",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "binance-smart-chain" } }
 }

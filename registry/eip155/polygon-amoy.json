@@ -47,7 +47,7 @@
       "hash": "0x7202b2b53c5a0836e773e319d18922cc756dd67432f9a1f65352b61f4406c697",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "polygon" } }
 }

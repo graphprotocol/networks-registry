@@ -52,7 +52,7 @@
       "hash": "0xb7fe0bc9f98ca03294ca0094ff9374cc3e64130b6ec85850d6e260191f48bfe7",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "unichain" } }
 }
