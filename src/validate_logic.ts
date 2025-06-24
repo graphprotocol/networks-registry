@@ -41,7 +41,6 @@ function validateUniqueness(networks: Network[]) {
     "apiUrls.url",
     "services.firehose",
     "services.substreams",
-    "services.tokenApi",
   ]) {
     // Only consider networks that do NOT have an 'evmOf' relation
     const values = networks

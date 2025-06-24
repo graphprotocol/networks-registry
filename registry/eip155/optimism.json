@@ -28,7 +28,7 @@
       "optimism.substreams.pinax.network:443"
     ],
     "tokenApi": [
-      "https://token-api.thegraph.com/transfers/evm?network_id=optimism"
+      "https://token-api.thegraph.com"
     ]
   },
   "networkType": "mainnet",

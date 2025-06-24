@@ -33,7 +33,7 @@
       "mainnet.eth.streamingfast.io:443"
     ],
     "tokenApi": [
-      "https://token-api.thegraph.com/transfers/evm?network_id=mainnet"
+      "https://token-api.thegraph.com"
     ]
   },
   "issuanceRewards": true,
