@@ -31,7 +31,11 @@
   "firehose": {
     "blockType": "sf.near.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-near",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "hash": "0xc6fdf91c8e82f8f917cc1975e9de1c64be11899e321dfdf5febcfbb7313f1486",
+      "height": 9820210
+    }
   },
   "icon": { "web3Icons": { "name": "near-protocol" } }
 }

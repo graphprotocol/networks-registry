@@ -22,7 +22,11 @@
   "firehose": {
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "hash": "0x00000002e10cbadd0c7491064d13ae89cfbdd734e1f66726861d771af1fcd6e9",
+      "height": 2
+    }
   },
   "icon": { "web3Icons": { "name": "ultra" } }
 }

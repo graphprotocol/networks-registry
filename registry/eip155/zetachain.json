@@ -26,7 +26,12 @@
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "hash": "0x60da6194a8e29e0e36c74544037918dd7a3a8a406f8e9f24d37c79623ee69690",
+      "height": 1
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "zeta-chain" } }
 }

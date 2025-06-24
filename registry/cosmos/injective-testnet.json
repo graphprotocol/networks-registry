@@ -24,7 +24,11 @@
   "firehose": {
     "blockType": "sf.cosmos.type.v2.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "hash": "0x99ffd75978c31495c75cf40dbddf80673db18dc750f1e9f549cc13d9b76e8745",
+      "height": 59109500
+    }
   },
   "icon": { "web3Icons": { "name": "injective" } }
 }

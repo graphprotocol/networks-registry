@@ -24,7 +24,11 @@
   "firehose": {
     "blockType": "sf.solana.type.v1.AccountBlock",
     "bufUrl": "https://buf.build/streamingfast/firehose-solana",
-    "bytesEncoding": "base58"
+    "bytesEncoding": "base58",
+    "firstStreamableBlock": {
+      "hash": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
+      "height": 0
+    }
   },
   "icon": { "web3Icons": { "name": "solana" } }
 }

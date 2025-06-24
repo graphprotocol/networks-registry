@@ -22,7 +22,11 @@
   "firehose": {
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "hash": "0x000000021d642039071f77a8a2e1eca6cfc0d90f94e7304f0d401bf28f067693",
+      "height": 2
+    }
   },
   "icon": { "web3Icons": { "name": "telos" } }
 }

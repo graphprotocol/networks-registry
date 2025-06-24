@@ -36,7 +36,11 @@
   "firehose": {
     "blockType": "sf.starknet.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
-    "bytesEncoding": "0xhex"
+    "bytesEncoding": "0xhex",
+    "firstStreamableBlock": {
+      "hash": "0x5c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
+      "height": 0
+    }
   },
   "icon": { "web3Icons": { "name": "starknet" } }
 }

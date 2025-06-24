@@ -24,7 +24,11 @@
   "firehose": {
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "hash": "0x00000002d61d836f51657f886a5bc55b18a731f7eace6565784328fbd051fc90",
+      "height": 2
+    }
   },
   "icon": { "web3Icons": { "name": "eos" } }
 }

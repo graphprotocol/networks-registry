@@ -131,7 +131,10 @@
             },
             "blockFeatures": {
               "type": "array",
-              "items": { "type": "string", "pattern": "^(base|hybrid|extended|extended@[0-9]+)$" },
+              "items": {
+                "type": "string",
+                "pattern": "^(base|hybrid|extended|extended@[0-9]+)$"
+              },
               "uniqueItems": true,
               "description": "Block features supported by the network"
             },
@@ -140,7 +143,7 @@
               "properties": {
                 "height": {
                   "type": "integer",
-                  "description": "Block height of the first streamable block",
+                  "description": "Block height of the first streamable block. Can be different from genesis",
                   "minimum": 0
                 },
                 "hash": {
@@ -262,7 +265,10 @@
                 },
                 "variants": {
                   "type": "array",
-                  "items": { "type": "string", "pattern": "^(mono|branded|background)$" },
+                  "items": {
+                    "type": "string",
+                    "pattern": "^(mono|branded|background)$"
+                  },
                   "uniqueItems": true,
                   "description": "Variants of the icon, if none specified - all are available"
                 }

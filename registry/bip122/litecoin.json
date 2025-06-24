@@ -22,7 +22,11 @@
   "firehose": {
     "blockType": "sf.bitcoin.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-bitcoin",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "hash": "0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2",
+      "height": 0
+    }
   },
   "icon": { "web3Icons": { "name": "litecoin" } }
 }

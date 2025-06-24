@@ -23,7 +23,11 @@
   "firehose": {
     "blockType": "sf.stellar.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
-    "bytesEncoding": "base64"
+    "bytesEncoding": "base64",
+    "firstStreamableBlock": {
+      "hash": "0x84e2b18c296badee2a6c30347911f2b5a4323e1ecb3c8986235e1fdc322dadbe",
+      "height": 55411000
+    }
   },
   "icon": { "web3Icons": { "name": "stellar" } }
 }
