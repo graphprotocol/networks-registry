@@ -27,5 +27,6 @@
       "id": "FRXwreefVunjoWykEhH42cxRMdyP2FuZFwqofmX1LRDx",
       "height": 1
     }
-  }
+  },
+  "icon": { "web3Icons": { "name": "binance-smart-chain" } }
 }
