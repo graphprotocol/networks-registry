@@ -47,5 +47,5 @@
     },
     "blockFeatures": ["base"]
   },
-  "icon": { "web3Icons": { "name": "zora", "variants": ["branded"] } }
+  "icon": { "web3Icons": { "name": "zora", "variants": ["branded", "background"] } }
 }
