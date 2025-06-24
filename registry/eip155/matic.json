@@ -52,5 +52,9 @@
     },
     "blockFeatures": ["extended"]
   },
+  "tokenApi": {
+    "features": ["tokens", "swaps", "nfts"],
+    "networkId": "matic"
+  },
   "icon": { "web3Icons": { "name": "polygon" } }
 }

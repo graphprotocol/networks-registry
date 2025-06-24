@@ -52,5 +52,9 @@
     },
     "blockFeatures": ["extended@105235064", "hybrid"]
   },
+  "tokenApi": {
+    "features": ["tokens", "swaps", "nfts"],
+    "networkId": "optimism"
+  },
   "icon": { "web3Icons": { "name": "optimism" } }
 }

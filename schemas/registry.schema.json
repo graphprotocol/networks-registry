@@ -169,16 +169,19 @@
           "additionalProperties": false,
           "properties": {
             "features": {
-              "type": "string",
-              "enum": [
-                "tokens",
-                "swaps",
-                "nfts",
-                "other"
-              ],
-              "description": "List of Token API features supported"
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "tokens",
+                  "swaps",
+                  "nfts",
+                  "other"
+                ],
+                "description": "List of Token API features supported"
+              }
             },
-            "network_id": {
+            "networkId": {
               "type": "string",
               "pattern": "^(?!-)[a-z0-9-]{3,}(?<!-)$",
               "description": "Network ID in Token API, has to be an ID or alias of an existing network"

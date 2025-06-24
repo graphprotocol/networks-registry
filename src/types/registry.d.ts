@@ -61,16 +61,7 @@ export interface Network {
     /**
      * Kind of relation
      */
-    kind:
-      | "testnetOf"
-      | "beaconOf"
-      | "forkedFrom"
-      | "l2Of"
-      | "shardOf"
-      | "evmOf"
-      | "svmOf"
-      | "flavorOf"
-      | "other";
+    kind: "testnetOf" | "beaconOf" | "forkedFrom" | "l2Of" | "shardOf" | "evmOf" | "svmOf" | "other";
     /**
      * ID of the related network, e.g. mainnet, near-mainnet
      */
@@ -119,6 +110,20 @@ export interface Network {
     deprecated?: boolean;
   };
   /**
+   * Token API specific configuration information
+   */
+  tokenApi?: {
+    features?: ("tokens" | "swaps" | "nfts" | "other")[];
+    /**
+     * Network ID in Token API, has to be an ID or alias of an existing network
+     */
+    networkId?: string;
+    /**
+     * [optional] Whether the network is deprecated in Token API software
+     */
+    deprecated?: boolean;
+  };
+  /**
    * Symbol of the native token
    */
   nativeToken?: string;
@@ -129,13 +134,7 @@ export interface Network {
     /**
      * [optional] Protocol name in graph-node, e.g. ethereum, near, arweave
      */
-    protocol?:
-      | "ethereum"
-      | "near"
-      | "arweave"
-      | "cosmos"
-      | "starknet"
-      | "other";
+    protocol?: "ethereum" | "near" | "arweave" | "cosmos" | "starknet" | "other";
     /**
      * [optional] Whether the network is deprecated in graph-node software
      */
@@ -166,7 +165,7 @@ export interface Network {
      */
     substreams?: string[];
     /**
-     * Token API URLs, e.g. https://token-api.thegraph.com/transfers/evm?network_id=base
+     * Token API URLs, e.g. https://token-api.thegraph.com
      */
     tokenApi?: string[];
   };

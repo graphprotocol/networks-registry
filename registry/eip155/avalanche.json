@@ -55,5 +55,9 @@
     },
     "blockFeatures": ["base"]
   },
+  "tokenApi": {
+    "features": ["tokens", "swaps", "nfts"],
+    "networkId": "avalanche"
+  },
   "icon": { "web3Icons": { "name": "avalanche" } }
 }

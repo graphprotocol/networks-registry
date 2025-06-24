@@ -56,5 +56,9 @@
     },
     "blockFeatures": ["extended"]
   },
+  "tokenApi": {
+    "features": ["tokens", "swaps", "nfts"],
+    "networkId": "mainnet"
+  },
   "icon": { "web3Icons": { "name": "ethereum" } }
 }
