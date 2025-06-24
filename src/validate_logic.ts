@@ -43,22 +43,22 @@ function validateUniqueness(networks: Network[]) {
     "services.substreams",
   ]) {
     // Only consider networks that do NOT have an 'evmOf' relation
-    const values = networks.filter(
-      (n) => !n.relations?.some((rel) => rel.kind === "evmOf")
-    ).flatMap((n) => {
-      if (field.includes(".")) {
-        const [obj, fi] = field.split(".");
-        if (Array.isArray(n[obj])) {
-          return n[obj].map((item) => item[fi]);
+    const values = networks
+      .filter((n) => !n.relations?.some((rel) => rel.kind === "evmOf"))
+      .flatMap((n) => {
+        if (field.includes(".")) {
+          const [obj, fi] = field.split(".");
+          if (Array.isArray(n[obj])) {
+            return n[obj].map((item) => item[fi]);
+          }
+          if (Array.isArray(n[obj]?.[fi])) {
+            return n[obj][fi];
+          }
+          return [n[obj]?.[fi]].filter(Boolean);
         }
-        if (Array.isArray(n[obj]?.[fi])) {
-          return n[obj][fi];
-        }
-        return [n[obj]?.[fi]].filter(Boolean);
-      }
-      if (Array.isArray(n[field])) return n[field];
-      return n[field] ? [n[field]] : [];
-    });
+        if (Array.isArray(n[field])) return n[field];
+        return n[field] ? [n[field]] : [];
+      });
     const duplicates = values
       .filter((v, i) => values.indexOf(v) !== i)
       .filter((v) => !ALLOWED_DUPLICATES.includes(v));
@@ -173,7 +173,11 @@ function validateTestnets(networks: Network[]) {
       );
       continue;
     }
-    if (JSON.stringify(mainnet.firehose) !== JSON.stringify(testnet.firehose)) {
+    if (
+      mainnet.firehose?.blockType !== testnet.firehose?.blockType ||
+      mainnet.firehose?.bytesEncoding !== testnet.firehose?.bytesEncoding ||
+      mainnet.firehose?.evmExtendedModel !== testnet.firehose?.evmExtendedModel
+    ) {
       ERRORS.push(
         `\`${testnet.id}\` - mismatching testnet/mainnet firehose block type`,
       );
