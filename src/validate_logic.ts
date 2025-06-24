@@ -119,10 +119,20 @@ function validateEvmRules(networks: Network[]) {
     const isEvm = network.caip2Id.startsWith("eip155:");
 
     if (isEvm) {
-      if (network.firehose?.evmExtendedModel === undefined) {
-        ERRORS.push(
-          `\`${network.id}\` - EVM chain is missing firehose.evmExtendedModel field`,
-        );
+      if (network.firehose) {
+        if (network.firehose.evmExtendedModel === undefined) {
+          ERRORS.push(
+            `\`${network.id}\` - EVM chain is missing firehose.evmExtendedModel field`,
+          );
+        }
+        if (
+          network.firehose.evmExtendedModel === false &&
+          !network.firehose.blockFeatures?.includes("base")
+        ) {
+          ERRORS.push(
+            `\`${network.id}\` - EVM chain has firehose.evmExtendedModel=false but firehose.blockFeatures does not include "base"`,
+          );
+        }
       }
 
       if (network.graphNode?.protocol !== "ethereum") {
@@ -195,6 +205,18 @@ function validateTestnets(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+function validateBeacons(networks: Network[]) {
+  process.stdout.write("Validating beacons ... ");
+  const beacons = networks.filter((n) => n.networkType === "beacon");
+  for (const beacon of beacons) {
+    if (!beacon.relations?.find((rel) => rel.kind === "beaconOf")) {
+      ERRORS.push(`\`${beacon.id}\` - beacon must have "beaconOf" relation`);
+    }
+  }
+
+  process.stdout.write("done\n");
+}
+
 const ALLOWED_FH_PROVIDERS = ["pinax.network", "streamingfast.io"];
 const ALLOWED_SG_PROVIDERS = ["api.studio.thegraph.com"];
 const ALLOWED_TOKEN_API_PROVIDERS = ["token-api.thegraph.com"];
@@ -204,6 +226,14 @@ function validateServices(networks: Network[]) {
 
   for (const network of networks) {
     const services = network.services ?? [];
+
+    if (services.firehose?.length) {
+      if (!network.firehose) {
+        ERRORS.push(
+          `\`${network.id}\` - has firehose service but no firehose block info`,
+        );
+      }
+    }
 
     // Validate subgraphs and sps services
     ["subgraphs", "sps"].forEach((serviceType) => {
@@ -473,6 +503,7 @@ export async function validateLogic(networksPath: string) {
   validateRelations(networks);
   validateEvmRules(networks);
   validateTestnets(networks);
+  validateBeacons(networks);
   validateUrls(networks);
   validateServices(networks);
   validateMainnetAliases(networks);
