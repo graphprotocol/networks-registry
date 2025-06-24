@@ -35,12 +35,13 @@ function validateUniqueness(networks: Network[]) {
     "fullName",
     "caip2Id",
     "aliases",
-    "genesis.hash",
+    "firehose.firstStreamableBlock.id",
     "explorerUrls",
     "rpcUrls",
     "apiUrls.url",
     "services.firehose",
     "services.substreams",
+    "services.tokenApi",
   ]) {
     // Only consider networks that do NOT have an 'evmOf' relation
     const values = networks
@@ -196,6 +197,7 @@ function validateTestnets(networks: Network[]) {
 
 const ALLOWED_FH_PROVIDERS = ["pinax.network", "streamingfast.io"];
 const ALLOWED_SG_PROVIDERS = ["api.studio.thegraph.com"];
+const ALLOWED_TOKEN_API_PROVIDERS = ["token-api.thegraph.com"];
 
 function validateServices(networks: Network[]) {
   process.stdout.write("Validating services ... ");
@@ -224,6 +226,17 @@ function validateServices(networks: Network[]) {
         }
       }
     });
+
+    // Validate token API services
+    for (const url of services.tokenApi ?? []) {
+      if (
+        !ALLOWED_TOKEN_API_PROVIDERS.some((provider) => url.includes(provider))
+      ) {
+        ERRORS.push(
+          `\`${network.id}\` - invalid \`tokenApi\` provider: ${url}`,
+        );
+      }
+    }
   }
 
   process.stdout.write("done\n");
