@@ -8,7 +8,7 @@
   "rpcUrls": ["https://rpc.mainnet.near.org"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "graphNode": { "protocol": "near", "deprecated": true },
+  "graphNode": { "protocol": "near", "deprecatedAt": "2025-05-28T00:00:00Z" },
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],

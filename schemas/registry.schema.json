@@ -155,9 +155,10 @@
               "additionalProperties": false,
               "description": "First available block information"
             },
-            "deprecated": {
-              "type": "boolean",
-              "description": "[optional] Whether the network is deprecated in Firehose software"
+            "deprecatedAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "[optional] Timestamp when the network was deprecated in Firehose software"
             }
           },
           "required": ["blockType", "bytesEncoding", "bufUrl"],
@@ -186,9 +187,10 @@
               "pattern": "^(?!-)[a-z0-9-]{3,}(?<!-)$",
               "description": "Network ID in Token API, has to be an ID or alias of an existing network"
             },
-            "deprecated": {
-              "type": "boolean",
-              "description": "[optional] Whether the network is deprecated in Token API software"
+            "deprecatedAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "[optional] Timestamp when the network was deprecated in Token API software"
             }
           },
           "description": "Token API specific configuration information"
@@ -214,9 +216,10 @@
               ],
               "description": "[optional] Protocol name in graph-node, e.g. ethereum, near, arweave"
             },
-            "deprecated": {
-              "type": "boolean",
-              "description": "[optional] Whether the network is deprecated in graph-node software"
+            "deprecatedAt": {
+              "type": "string",
+              "format": "date-time",
+              "description": "[optional] Timestamp when the network was deprecated in Graph Node software"
             }
           },
           "description": "Graph Node specific configuration information"

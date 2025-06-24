@@ -10,7 +10,7 @@
   "apiUrls": [],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "mantra-mainnet" }],
-  "graphNode": { "protocol": "cosmos", "deprecated": true },
+  "graphNode": { "protocol": "cosmos", "deprecatedAt": "2025-04-23T00:00:00Z" },
   "services": {
     "firehose": ["testnet.mantra.streamingfast.io:443"],
     "substreams": ["testnet.mantra.streamingfast.io:443"]

@@ -8,7 +8,7 @@
   "rpcUrls": ["https://rpc.testnet.near.org"],
   "apiUrls": [],
   "networkType": "testnet",
-  "graphNode": { "protocol": "near", "deprecated": true },
+  "graphNode": { "protocol": "near", "deprecatedAt": "2025-05-28T00:00:00Z" },
   "relations": [{ "kind": "testnetOf", "network": "near-mainnet" }],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
