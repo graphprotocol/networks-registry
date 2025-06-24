@@ -320,6 +320,26 @@ function validateMainnetAliases(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+function validateTokenApi(networks: Network[]) {
+  process.stdout.write("Validating token api ... ");
+  const ids = new Set(networks.flatMap((n) => [n.id, ...(n.aliases ?? [])]));
+  for (const n of networks) {
+    if (n.tokenApi?.networkId && !ids.has(n.tokenApi.networkId)) {
+      ERRORS.push(
+        `\`${n.id}\` - has tokenApi.networkId \`${n.tokenApi.networkId}\` but that id or alias does not exist`,
+      );
+    }
+    if (n.services?.tokenApi) {
+      if (!n.tokenApi?.networkId) {
+        ERRORS.push(
+          `\`${n.id}\` - has tokenApi service but no tokenApi defined`,
+        );
+      }
+    }
+  }
+  process.stdout.write("done\n");
+}
+
 async function validateWeb3Icons(networks: Network[]) {
   process.stdout.write("Validating web3 icons ... ");
   const web3Icons = await fetchWeb3NetworkIcons();
@@ -506,6 +526,7 @@ export async function validateLogic(networksPath: string) {
   validateUrls(networks);
   validateServices(networks);
   validateMainnetAliases(networks);
+  validateTokenApi(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
   await validateGraphNetworks(networks);
