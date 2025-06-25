@@ -58,7 +58,7 @@
     "blockFeatures": ["hybrid"]
   },
   "tokenApi": {
-    "features": ["tokens", "swaps", "nfts"],
+    "features": ["tokens", "dexes", "nfts"],
     "networkId": "arbitrum-one"
   },
   "icon": { "web3Icons": { "name": "arbitrum-one" } }

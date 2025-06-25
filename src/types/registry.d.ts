@@ -61,7 +61,15 @@ export interface Network {
     /**
      * Kind of relation
      */
-    kind: "testnetOf" | "beaconOf" | "forkedFrom" | "l2Of" | "shardOf" | "evmOf" | "svmOf" | "other";
+    kind:
+      | "testnetOf"
+      | "beaconOf"
+      | "forkedFrom"
+      | "l2Of"
+      | "shardOf"
+      | "evmOf"
+      | "svmOf"
+      | "other";
     /**
      * ID of the related network, e.g. mainnet, near-mainnet
      */
@@ -113,7 +121,7 @@ export interface Network {
    * Token API specific configuration information
    */
   tokenApi?: {
-    features?: ("tokens" | "swaps" | "nfts" | "other")[];
+    features?: ("tokens" | "dexes" | "nfts" | "other")[];
     /**
      * Network ID in Token API, has to be an ID or alias of an existing network
      */
@@ -134,7 +142,13 @@ export interface Network {
     /**
      * [optional] Protocol name in graph-node, e.g. ethereum, near, arweave
      */
-    protocol?: "ethereum" | "near" | "arweave" | "cosmos" | "starknet" | "other";
+    protocol?:
+      | "ethereum"
+      | "near"
+      | "arweave"
+      | "cosmos"
+      | "starknet"
+      | "other";
     /**
      * [optional] Whether the network is deprecated in graph-node software
      */

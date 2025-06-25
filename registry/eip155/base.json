@@ -51,7 +51,7 @@
     "blockFeatures": ["extended"]
   },
   "tokenApi": {
-    "features": ["tokens", "swaps", "nfts"],
+    "features": ["tokens", "dexes", "nfts"],
     "networkId": "base"
   },
   "icon": { "web3Icons": { "name": "base" } }
