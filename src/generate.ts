@@ -50,7 +50,7 @@ function main() {
     version: `${packageInfo.version}`,
     title: "The Graph networks registry",
     description:
-      "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
+      "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
     updatedAt: new Date().toISOString(),
     networks: loadNetworks(networksDir).sort(byCaip2Id),
   };
