@@ -12,15 +12,16 @@
   "issuanceRewards": false,
   "nativeToken": "PEAQ",
   "docsUrl": "https://docs.peaq.network",
-  "genesis": {
-    "hash": "0x43ab0f195759cb56597b46c826459bf550afe0398a1421293c961b1fecda1783",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x43ab0f195759cb56597b46c826459bf550afe0398a1421293c961b1fecda1783",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "peaq" } }
 }

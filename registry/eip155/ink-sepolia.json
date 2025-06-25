@@ -23,15 +23,16 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.inkonchain.com",
-  "genesis": {
-    "hash": "0xe5fd5cf0be56af58ad5751b401410d6b7a09d830fa459789746a3d0dd1c79834",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xe5fd5cf0be56af58ad5751b401410d6b7a09d830fa459789746a3d0dd1c79834",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "ink" } }
 }

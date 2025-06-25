@@ -32,15 +32,16 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://soneium.org/en/docs",
-  "genesis": {
-    "hash": "0x7ec49d93fa8f47c00e98cc5965cd3903a8faa9238743d2eba0e0550ab4c45c43",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x7ec49d93fa8f47c00e98cc5965cd3903a8faa9238743d2eba0e0550ab4c45c43",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "soneium" } }
 }

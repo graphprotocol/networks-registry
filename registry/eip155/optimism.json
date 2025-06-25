@@ -26,6 +26,9 @@
     "substreams": [
       "mainnet.optimism.streamingfast.io:443",
       "optimism.substreams.pinax.network:443"
+    ],
+    "tokenApi": [
+      "https://token-api.thegraph.com"
     ]
   },
   "networkType": "mainnet",
@@ -38,15 +41,20 @@
       "description": "Archive Nodes 101"
     }
   ],
-  "genesis": {
-    "hash": "0x7ca38a1916c42007829c55e69d3e9a73265554b586a499015373241b8a3fa48b",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x7ca38a1916c42007829c55e69d3e9a73265554b586a499015373241b8a3fa48b",
+      "height": 0
+    },
+    "blockFeatures": ["extended@105235064", "hybrid"]
+  },
+  "tokenApi": {
+    "features": ["tokens", "dexes", "nfts"],
+    "networkId": "optimism"
   },
   "icon": { "web3Icons": { "name": "optimism" } }
 }

@@ -16,15 +16,16 @@
   "issuanceRewards": false,
   "nativeToken": "HSK",
   "docsUrl": "https://docs.hsk.xyz",
-  "genesis": {
-    "hash": "0xa96aea946b763641b616ce0c69f37e61d9cd0abd709ef13a6b833e67b76de208",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xa96aea946b763641b616ce0c69f37e61d9cd0abd709ef13a6b833e67b76de208",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "hashkey" } }
 }

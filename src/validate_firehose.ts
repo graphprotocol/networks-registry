@@ -69,7 +69,11 @@ async function validateSingleEndpoint(
       ERRORS.push(err);
       console.error(err);
     }
-    if (!network.genesis?.hash?.includes(info.firstStreamableBlockId)) {
+    if (
+      !network.firehose?.firstStreamableBlock?.id?.includes(
+        info.firstStreamableBlockId,
+      )
+    ) {
       const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`firstStreamableBlockId\``;
       ERRORS.push(err);
       console.error(err);

@@ -32,15 +32,16 @@
       "description": "Archive Nodes 101"
     }
   ],
-  "genesis": {
-    "hash": "0xb689b35ef29d0bec5816938e0e52683c7257d2e325420ea69b739a2be4754b89",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xb689b35ef29d0bec5816938e0e52683c7257d2e325420ea69b739a2be4754b89",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "blast" } }
 }

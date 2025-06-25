@@ -27,6 +27,9 @@
     "substreams": [
       "polygon.substreams.pinax.network:443",
       "polygon.streamingfast.io:443"
+    ],
+    "tokenApi": [
+      "https://token-api.thegraph.com"
     ]
   },
   "indexerDocsUrls": [
@@ -38,15 +41,20 @@
   "issuanceRewards": true,
   "nativeToken": "POL",
   "docsUrl": "https://docs.polygon.technology",
-  "genesis": {
-    "hash": "0xa9c28ce2141b56c474f1dc504bee9b01eb1bd7d1a507580d5519d4437a97de1b",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xa9c28ce2141b56c474f1dc504bee9b01eb1bd7d1a507580d5519d4437a97de1b",
+      "height": 0
+    },
+    "blockFeatures": ["extended"]
+  },
+  "tokenApi": {
+    "features": ["tokens", "dexes", "nfts"],
+    "networkId": "matic"
   },
   "icon": { "web3Icons": { "name": "polygon" } }
 }

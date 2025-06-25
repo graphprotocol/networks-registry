@@ -23,14 +23,14 @@
   "issuanceRewards": false,
   "nativeToken": "TRX",
   "docsUrl": "https://developers.tron.network",
-  "genesis": {
-    "hash": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.tron.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-tron",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x00000000000000010ff5414c5cfbe9eae982e8cef7eb2399a39118e1206c8247",
+      "height": 1
+    }
   },
   "icon": { "web3Icons": { "name": "tron" } }
 }

@@ -53,7 +53,7 @@ export interface Network {
   /**
    * Whether the network is a mainnet/testnet/devnet
    */
-  networkType: "mainnet" | "testnet" | "devnet";
+  networkType: "mainnet" | "testnet" | "devnet" | "beacon";
   /**
    * Relations to other networks in the registry
    */
@@ -68,6 +68,7 @@ export interface Network {
       | "l2Of"
       | "shardOf"
       | "evmOf"
+      | "svmOf"
       | "other";
     /**
      * ID of the related network, e.g. mainnet, near-mainnet
@@ -94,19 +95,41 @@ export interface Network {
      * [optional] Whether there is support for extended EVM block model
      */
     evmExtendedModel?: boolean;
+    /**
+     * Block features supported by the network
+     */
+    blockFeatures?: string[];
+    /**
+     * First available block information
+     */
+    firstStreamableBlock?: {
+      /**
+       * Block height of the first streamable block. Can be different from genesis
+       */
+      height: number;
+      /**
+       * Id of the first streamable block either in 0x-prefixed hex or base58
+       */
+      id: string;
+    };
+    /**
+     * [optional] Whether the network is deprecated in Firehose software
+     */
+    deprecated?: boolean;
   };
   /**
-   * Genesis block information
+   * Token API specific configuration information
    */
-  genesis?: {
+  tokenApi?: {
+    features?: ("tokens" | "dexes" | "nfts" | "other")[];
     /**
-     * Hash of the genesis block either in 0x-prefixed hex or base58
+     * Network ID in Token API, has to be an ID or alias of an existing network
      */
-    hash: string;
+    networkId?: string;
     /**
-     * Block height of the genesis or the first available block
+     * [optional] Whether the network is deprecated in Token API software
      */
-    height: number;
+    deprecated?: boolean;
   };
   /**
    * Symbol of the native token
@@ -126,6 +149,10 @@ export interface Network {
       | "cosmos"
       | "starknet"
       | "other";
+    /**
+     * [optional] Whether the network is deprecated in graph-node software
+     */
+    deprecated?: boolean;
   };
   /**
    * URLs for the block explorers
@@ -151,6 +178,10 @@ export interface Network {
      * Substreams gRPC URLs, e.g. eth.substreams.pinax.network:443
      */
     substreams?: string[];
+    /**
+     * Token API URLs, e.g. https://token-api.thegraph.com
+     */
+    tokenApi?: string[];
   };
   /**
    * Issuance rewards on the Graph Network for this chain

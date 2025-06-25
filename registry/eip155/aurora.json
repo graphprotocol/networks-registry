@@ -15,15 +15,16 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://doc.aurora.dev",
-  "genesis": {
-    "hash": "0x0475c3f1fb767b161d8691d243a8daa3ff1621c181d21ca215b327d72df7fd11",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x0475c3f1fb767b161d8691d243a8daa3ff1621c181d21ca215b327d72df7fd11",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "aurora" } }
 }
