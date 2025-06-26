@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.69",
+  "version": "0.6.70",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-06-18T18:53:57.133Z",
+  "updatedAt": "2025-06-26T14:18:46.317Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3479,7 +3479,7 @@
     {
       "id": "cronos",
       "shortName": "Cronos",
-      "fullName": "Cronos Mainnet",
+      "fullName": "Cronos EVM Chain Mainnet",
       "aliases": [
         "evm-25",
         "cronos-mainnet"
@@ -3505,7 +3505,11 @@
           "kind": "etherscan"
         }
       ],
-      "services": {},
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "CRO",
