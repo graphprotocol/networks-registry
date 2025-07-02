@@ -1,7 +1,7 @@
 {
   "id": "cronos",
   "shortName": "Cronos",
-  "fullName": "Cronos Mainnet",
+  "fullName": "Cronos EVM Chain Mainnet",
   "aliases": ["evm-25", "cronos-mainnet"],
   "caip2Id": "eip155:25",
   "graphNode": { "protocol": "ethereum" },
@@ -14,7 +14,7 @@
     { "url": "https://cronos.org/explorer/api", "kind": "blockscout" },
     { "url": "https://cronos.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": {},
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "CRO",
