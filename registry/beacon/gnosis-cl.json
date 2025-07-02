@@ -7,7 +7,7 @@
   "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [],
-  "networkType": "mainnet",
+  "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "gnosis" }],
   "services": {
     "firehose": ["gnosis-cl.firehose.pinax.network:443"],
@@ -16,14 +16,14 @@
   "issuanceRewards": false,
   "nativeToken": "XDAI",
   "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-  "genesis": {
-    "hash": "0x23564cd15ac0b90ed72cbc78ffd5e35e309816c0cca5ad28390bd9892e846a75",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.beacon.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-beacon",
-    "bytesEncoding": "0xhex"
+    "bytesEncoding": "0xhex",
+    "firstStreamableBlock": {
+      "id": "0x23564cd15ac0b90ed72cbc78ffd5e35e309816c0cca5ad28390bd9892e846a75",
+      "height": 0
+    }
   },
   "icon": { "web3Icons": { "name": "gnosis" } }
 }

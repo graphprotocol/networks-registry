@@ -25,7 +25,8 @@
     "substreams": [
       "base.substreams.pinax.network:443",
       "base-mainnet.streamingfast.io:443"
-    ]
+    ],
+    "tokenApi": ["https://token-api.thegraph.com"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
@@ -38,15 +39,20 @@
       "description": "Archive Nodes 101"
     }
   ],
-  "genesis": {
-    "hash": "0xf712aa9241cc24369b143cf6dce85f0902a9731e70d66818a3a5845b296c73dd",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xf712aa9241cc24369b143cf6dce85f0902a9731e70d66818a3a5845b296c73dd",
+      "height": 0
+    },
+    "blockFeatures": ["extended"]
+  },
+  "tokenApi": {
+    "features": ["tokens", "dexes", "nfts"],
+    "networkId": "base"
   },
   "icon": { "web3Icons": { "name": "base" } }
 }

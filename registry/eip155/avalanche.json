@@ -29,6 +29,9 @@
     "substreams": [
       "avalanche-mainnet.streamingfast.io:443",
       "avalanche.substreams.pinax.network:443"
+    ],
+    "tokenApi": [
+      "https://token-api.thegraph.com"
     ]
   },
   "networkType": "mainnet",
@@ -41,15 +44,20 @@
       "description": "Archive Nodes 101"
     }
   ],
-  "genesis": {
-    "hash": "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "tokenApi": {
+    "features": ["tokens", "dexes", "nfts"],
+    "networkId": "avalanche"
   },
   "icon": { "web3Icons": { "name": "avalanche" } }
 }

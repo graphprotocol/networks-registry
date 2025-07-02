@@ -12,15 +12,16 @@
   "issuanceRewards": false,
   "nativeToken": "ZIL",
   "docsUrl": "https://dev.zilliqa.com",
-  "genesis": {
-    "hash": "0xaef57e820056b14dbb42e4b39d38587f727d5a7014039c44018e16db7bb05eb4",
-    "height": 3
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xaef57e820056b14dbb42e4b39d38587f727d5a7014039c44018e16db7bb05eb4",
+      "height": 3
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "zilliqa" } }
 }

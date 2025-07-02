@@ -20,15 +20,16 @@
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.hemi.xyz",
-  "genesis": {
-    "hash": "0xc7eef424ae7c339cd0896344c80e136b81246ec5fe7d91a668a09b4c17543194",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xc7eef424ae7c339cd0896344c80e136b81246ec5fe7d91a668a09b4c17543194",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "hemi" } }
 }

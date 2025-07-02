@@ -8,7 +8,10 @@
   "rpcUrls": ["https://rpc.svmbnbmainnet.soo.network/rpc"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "relations": [{ "kind": "l2Of", "network": "bsc" }],
+  "relations": [
+    { "kind": "l2Of", "network": "bsc" },
+    { "kind": "svmOf", "network": "bsc" }
+  ],
   "services": {
     "firehose": ["svmbnb.firehose.pinax.network:443"],
     "substreams": ["svmbnb.substreams.pinax.network:443"]
@@ -16,13 +19,14 @@
   "issuanceRewards": false,
   "nativeToken": "BNB",
   "docsUrl": "https://docs.soo.network",
-  "genesis": {
-    "hash": "FRXwreefVunjoWykEhH42cxRMdyP2FuZFwqofmX1LRDx",
-    "height": 1
-  },
   "firehose": {
     "blockType": "sf.solana.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-solana",
-    "bytesEncoding": "base58"
-  }
+    "bytesEncoding": "base58",
+    "firstStreamableBlock": {
+      "id": "FRXwreefVunjoWykEhH42cxRMdyP2FuZFwqofmX1LRDx",
+      "height": 1
+    }
+  },
+  "icon": { "web3Icons": { "name": "binance-smart-chain" } }
 }

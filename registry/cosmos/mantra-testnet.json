@@ -10,7 +10,7 @@
   "apiUrls": [],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "mantra-mainnet" }],
-  "graphNode": { "protocol": "cosmos" },
+  "graphNode": { "protocol": "cosmos", "deprecatedAt": "2025-04-23T00:00:00Z" },
   "services": {
     "firehose": ["testnet.mantra.streamingfast.io:443"],
     "substreams": ["testnet.mantra.streamingfast.io:443"]
@@ -18,14 +18,14 @@
   "issuanceRewards": false,
   "nativeToken": "OM",
   "docsUrl": "https://docs.mantrachain.io",
-  "genesis": {
-    "hash": "0xf4e9183911bbc59c472602cc83f06d8d335fc8f40c604a1a1adc0b7593403a84",
-    "height": 1
-  },
   "firehose": {
     "blockType": "sf.cosmos.type.v2.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xf4e9183911bbc59c472602cc83f06d8d335fc8f40c604a1a1adc0b7593403a84",
+      "height": 1
+    }
   },
   "icon": { "web3Icons": { "name": "mantra" } }
 }

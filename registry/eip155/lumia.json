@@ -16,15 +16,16 @@
   "issuanceRewards": false,
   "nativeToken": "LUMIA",
   "docsUrl": "https://docs.lumia.org",
-  "genesis": {
-    "hash": "0xbe2fbdd3862a852c02db24f4dcdc8c5eebc74777f393a0119410ed81f6a39120",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xbe2fbdd3862a852c02db24f4dcdc8c5eebc74777f393a0119410ed81f6a39120",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "lumia" } }
 }

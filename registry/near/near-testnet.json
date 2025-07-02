@@ -19,14 +19,14 @@
   "issuanceRewards": false,
   "nativeToken": "NEAR",
   "docsUrl": "https://docs.near.org",
-  "genesis": {
-    "hash": "0xd784da5a9e5e66668516c19a8095448fc54a22a28971dc330f0099df94379410",
-    "height": 42376888
-  },
   "firehose": {
     "blockType": "sf.near.type.v1.Block",
     "bufUrl": "https://buf.build/streamingfast/firehose-near",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xd784da5a9e5e66668516c19a8095448fc54a22a28971dc330f0099df94379410",
+      "height": 42376888
+    }
   },
   "icon": { "web3Icons": { "name": "near-protocol" } }
 }

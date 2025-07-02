@@ -35,7 +35,7 @@ function validateUniqueness(networks: Network[]) {
     "fullName",
     "caip2Id",
     "aliases",
-    "genesis.hash",
+    "firehose.firstStreamableBlock.id",
     "explorerUrls",
     "rpcUrls",
     "apiUrls.url",
@@ -43,22 +43,22 @@ function validateUniqueness(networks: Network[]) {
     "services.substreams",
   ]) {
     // Only consider networks that do NOT have an 'evmOf' relation
-    const values = networks.filter(
-      (n) => !n.relations?.some((rel) => rel.kind === "evmOf")
-    ).flatMap((n) => {
-      if (field.includes(".")) {
-        const [obj, fi] = field.split(".");
-        if (Array.isArray(n[obj])) {
-          return n[obj].map((item) => item[fi]);
+    const values = networks
+      .filter((n) => !n.relations?.some((rel) => rel.kind === "evmOf"))
+      .flatMap((n) => {
+        if (field.includes(".")) {
+          const [obj, fi] = field.split(".");
+          if (Array.isArray(n[obj])) {
+            return n[obj].map((item) => item[fi]);
+          }
+          if (Array.isArray(n[obj]?.[fi])) {
+            return n[obj][fi];
+          }
+          return [n[obj]?.[fi]].filter(Boolean);
         }
-        if (Array.isArray(n[obj]?.[fi])) {
-          return n[obj][fi];
-        }
-        return [n[obj]?.[fi]].filter(Boolean);
-      }
-      if (Array.isArray(n[field])) return n[field];
-      return n[field] ? [n[field]] : [];
-    });
+        if (Array.isArray(n[field])) return n[field];
+        return n[field] ? [n[field]] : [];
+      });
     const duplicates = values
       .filter((v, i) => values.indexOf(v) !== i)
       .filter((v) => !ALLOWED_DUPLICATES.includes(v));
@@ -118,10 +118,20 @@ function validateEvmRules(networks: Network[]) {
     const isEvm = network.caip2Id.startsWith("eip155:");
 
     if (isEvm) {
-      if (network.firehose?.evmExtendedModel === undefined) {
-        ERRORS.push(
-          `\`${network.id}\` - EVM chain is missing firehose.evmExtendedModel field`,
-        );
+      if (network.firehose) {
+        if (network.firehose.evmExtendedModel === undefined) {
+          ERRORS.push(
+            `\`${network.id}\` - EVM chain is missing firehose.evmExtendedModel field`,
+          );
+        }
+        if (
+          network.firehose.evmExtendedModel === false &&
+          !network.firehose.blockFeatures?.includes("base")
+        ) {
+          ERRORS.push(
+            `\`${network.id}\` - EVM chain has firehose.evmExtendedModel=false but firehose.blockFeatures does not include "base"`,
+          );
+        }
       }
 
       if (network.graphNode?.protocol !== "ethereum") {
@@ -173,7 +183,11 @@ function validateTestnets(networks: Network[]) {
       );
       continue;
     }
-    if (JSON.stringify(mainnet.firehose) !== JSON.stringify(testnet.firehose)) {
+    if (
+      mainnet.firehose?.blockType !== testnet.firehose?.blockType ||
+      mainnet.firehose?.bytesEncoding !== testnet.firehose?.bytesEncoding ||
+      mainnet.firehose?.evmExtendedModel !== testnet.firehose?.evmExtendedModel
+    ) {
       ERRORS.push(
         `\`${testnet.id}\` - mismatching testnet/mainnet firehose block type`,
       );
@@ -190,14 +204,35 @@ function validateTestnets(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
+function validateBeacons(networks: Network[]) {
+  process.stdout.write("Validating beacons ... ");
+  const beacons = networks.filter((n) => n.networkType === "beacon");
+  for (const beacon of beacons) {
+    if (!beacon.relations?.find((rel) => rel.kind === "beaconOf")) {
+      ERRORS.push(`\`${beacon.id}\` - beacon must have "beaconOf" relation`);
+    }
+  }
+
+  process.stdout.write("done\n");
+}
+
 const ALLOWED_FH_PROVIDERS = ["pinax.network", "streamingfast.io"];
 const ALLOWED_SG_PROVIDERS = ["api.studio.thegraph.com"];
+const ALLOWED_TOKEN_API_PROVIDERS = ["token-api.thegraph.com"];
 
 function validateServices(networks: Network[]) {
   process.stdout.write("Validating services ... ");
 
   for (const network of networks) {
     const services = network.services ?? [];
+
+    if (services.firehose?.length) {
+      if (!network.firehose) {
+        ERRORS.push(
+          `\`${network.id}\` - has firehose service but no firehose block info`,
+        );
+      }
+    }
 
     // Validate subgraphs and sps services
     ["subgraphs", "sps"].forEach((serviceType) => {
@@ -220,6 +255,17 @@ function validateServices(networks: Network[]) {
         }
       }
     });
+
+    // Validate token API services
+    for (const url of services.tokenApi ?? []) {
+      if (
+        !ALLOWED_TOKEN_API_PROVIDERS.some((provider) => url.includes(provider))
+      ) {
+        ERRORS.push(
+          `\`${network.id}\` - invalid \`tokenApi\` provider: ${url}`,
+        );
+      }
+    }
   }
 
   process.stdout.write("done\n");
@@ -268,6 +314,26 @@ function validateMainnetAliases(networks: Network[]) {
     } else {
       if (!network.aliases?.includes(woMainnet)) {
         ERRORS.push(`\`${network.id}\` - must have an alias \`${woMainnet}\``);
+      }
+    }
+  }
+  process.stdout.write("done\n");
+}
+
+function validateTokenApi(networks: Network[]) {
+  process.stdout.write("Validating token api ... ");
+  const ids = new Set(networks.flatMap((n) => [n.id, ...(n.aliases ?? [])]));
+  for (const n of networks) {
+    if (n.tokenApi?.networkId && !ids.has(n.tokenApi.networkId)) {
+      ERRORS.push(
+        `\`${n.id}\` - has tokenApi.networkId \`${n.tokenApi.networkId}\` but that id or alias does not exist`,
+      );
+    }
+    if (n.services?.tokenApi) {
+      if (!n.tokenApi?.networkId) {
+        ERRORS.push(
+          `\`${n.id}\` - has tokenApi service but no tokenApi defined`,
+        );
       }
     }
   }
@@ -456,9 +522,11 @@ export async function validateLogic(networksPath: string) {
   validateRelations(networks);
   validateEvmRules(networks);
   validateTestnets(networks);
+  validateBeacons(networks);
   validateUrls(networks);
   validateServices(networks);
   validateMainnetAliases(networks);
+  validateTokenApi(networks);
   await validateWeb3Icons(networks);
   await validateFirehoseBlockType(networks);
   await validateGraphNetworks(networks);

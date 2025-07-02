@@ -24,15 +24,16 @@
   "issuanceRewards": false,
   "nativeToken": "G",
   "docsUrl": "https://docs.gravity.xyz",
-  "genesis": {
-    "hash": "0x6eb5f2e11f3e026992cb3860e4518f672f0019fdc3c595e06cd22894fb6d7c36",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x6eb5f2e11f3e026992cb3860e4518f672f0019fdc3c595e06cd22894fb6d7c36",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "gravity" } }
 }

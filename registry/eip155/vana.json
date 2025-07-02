@@ -13,15 +13,16 @@
   "issuanceRewards": false,
   "nativeToken": "VANA",
   "docsUrl": "https://docs.vana.org",
-  "genesis": {
-    "hash": "0xcf48ae63008a2a6ccf05c45dc3f8a4d99595999eafd09fa925d3906e4c4ff72b",
-    "height": 0
-  },
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex"
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xcf48ae63008a2a6ccf05c45dc3f8a4d99595999eafd09fa925d3906e4c4ff72b",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
   },
   "icon": { "web3Icons": { "name": "vana" } }
 }
