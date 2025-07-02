@@ -45,9 +45,6 @@
     },
     "blockFeatures": ["extended"]
   },
-  "tokenApi": {
-    "features": ["tokens", "dexes", "nfts"],
-    "networkId": "bsc"
-  },
+  "tokenApi": { "features": ["tokens", "dexes", "nfts"], "networkId": "bsc" },
   "icon": { "web3Icons": { "name": "binance-smart-chain" } }
 }

@@ -27,9 +27,7 @@
       "mainnet.optimism.streamingfast.io:443",
       "optimism.substreams.pinax.network:443"
     ],
-    "tokenApi": [
-      "https://token-api.thegraph.com"
-    ]
+    "tokenApi": ["https://token-api.thegraph.com"]
   },
   "networkType": "mainnet",
   "issuanceRewards": true,

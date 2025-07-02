@@ -113,9 +113,9 @@ export interface Network {
       id: string;
     };
     /**
-     * [optional] Whether the network is deprecated in Firehose software
+     * [optional] Timestamp when the network was deprecated in Firehose software
      */
-    deprecated?: boolean;
+    deprecatedAt?: string;
   };
   /**
    * Token API specific configuration information
@@ -127,9 +127,9 @@ export interface Network {
      */
     networkId?: string;
     /**
-     * [optional] Whether the network is deprecated in Token API software
+     * [optional] Timestamp when the network was deprecated in Token API software
      */
-    deprecated?: boolean;
+    deprecatedAt?: string;
   };
   /**
    * Symbol of the native token
@@ -150,9 +150,9 @@ export interface Network {
       | "starknet"
       | "other";
     /**
-     * [optional] Whether the network is deprecated in graph-node software
+     * [optional] Timestamp when the network was deprecated in Graph Node software
      */
-    deprecated?: boolean;
+    deprecatedAt?: string;
   };
   /**
    * URLs for the block explorers

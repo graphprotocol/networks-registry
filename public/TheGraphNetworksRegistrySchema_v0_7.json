@@ -173,7 +173,12 @@
               "type": "array",
               "items": {
                 "type": "string",
-                "enum": ["tokens", "dexes", "nfts", "other"],
+                "enum": [
+                  "tokens",
+                  "dexes",
+                  "nfts",
+                  "other"
+                ],
                 "description": "List of Token API features supported"
               }
             },

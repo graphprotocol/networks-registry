@@ -50,9 +50,6 @@
     },
     "blockFeatures": ["extended"]
   },
-  "tokenApi": {
-    "features": ["tokens", "dexes", "nfts"],
-    "networkId": "base"
-  },
+  "tokenApi": { "features": ["tokens", "dexes", "nfts"], "networkId": "base" },
   "icon": { "web3Icons": { "name": "base" } }
 }

@@ -32,9 +32,7 @@
       "arbone.substreams.pinax.network:443",
       "arb-one.streamingfast.io:443"
     ],
-    "tokenApi": [
-      "https://token-api.thegraph.com"
-    ]
+    "tokenApi": ["https://token-api.thegraph.com"]
   },
   "networkType": "mainnet",
   "issuanceRewards": true,

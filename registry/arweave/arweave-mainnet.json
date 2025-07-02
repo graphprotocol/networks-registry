@@ -8,7 +8,10 @@
   "rpcUrls": [],
   "apiUrls": [],
   "networkType": "mainnet",
-  "graphNode": { "protocol": "arweave", "deprecatedAt": "2025-05-28T00:00:00Z" },
+  "graphNode": {
+    "protocol": "arweave",
+    "deprecatedAt": "2025-05-28T00:00:00Z"
+  },
   "services": {
     "sps": [],
     "firehose": ["arweave.firehose.pinax.network:443"],

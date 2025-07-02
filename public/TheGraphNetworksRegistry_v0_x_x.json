@@ -1,9 +1,9 @@
 {
-  "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.70",
+  "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
+  "version": "0.7.0",
   "title": "The Graph networks registry",
-  "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-06-26T14:18:46.317Z",
+  "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
+  "updatedAt": "2025-07-02T19:53:42.517Z",
   "networks": [
     {
       "id": "mainnet",
@@ -55,6 +55,9 @@
         "substreams": [
           "eth.substreams.pinax.network:443",
           "mainnet.eth.streamingfast.io:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": true,
@@ -66,15 +69,26 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes",
+          "nfts"
+        ],
+        "networkId": "mainnet"
       },
       "icon": {
         "web3Icons": {
@@ -131,6 +145,9 @@
         "substreams": [
           "mainnet.optimism.streamingfast.io:443",
           "optimism.substreams.pinax.network:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -143,15 +160,27 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x7ca38a1916c42007829c55e69d3e9a73265554b586a499015373241b8a3fa48b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x7ca38a1916c42007829c55e69d3e9a73265554b586a499015373241b8a3fa48b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended@105235064",
+          "hybrid"
+        ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes",
+          "nfts"
+        ],
+        "networkId": "optimism"
       },
       "icon": {
         "web3Icons": {
@@ -206,15 +235,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x4f1dd23188aab3a76b463e4af801b52b1248ef073c648cbdc4c9333d3da79756",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x4f1dd23188aab3a76b463e4af801b52b1248ef073c648cbdc4c9333d3da79756",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -261,15 +293,18 @@
       "issuanceRewards": false,
       "nativeToken": "KAIA",
       "docsUrl": "https://docs.kaia.io",
-      "genesis": {
-        "hash": "0xe33ff05ceec2581ca9496f38a2bf9baad5d4eed629e896ccb33d1dc991bc4b4a",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe33ff05ceec2581ca9496f38a2bf9baad5d4eed629e896ccb33d1dc991bc4b4a",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -315,15 +350,18 @@
       "issuanceRewards": false,
       "nativeToken": "JOCT",
       "docsUrl": "https://www.japanopenchain.org/en/developer",
-      "genesis": {
-        "hash": "0x0fb7b4779aae36dc557227283f182bc9a3b232c07fae4a2553734c5817df1d06",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0fb7b4779aae36dc557227283f182bc9a3b232c07fae4a2553734c5817df1d06",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -364,15 +402,18 @@
       "issuanceRewards": false,
       "nativeToken": "MON",
       "docsUrl": "https://docs.monad.xyz",
-      "genesis": {
-        "hash": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -420,15 +461,18 @@
       "issuanceRewards": false,
       "nativeToken": "XDAI",
       "docsUrl": "https://docs.gnosischain.com",
-      "genesis": {
-        "hash": "0xada44fd8d2ecab8b08f256af07ad3e777f17fb434f8f8e678b312f576212ba9a",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xada44fd8d2ecab8b08f256af07ad3e777f17fb434f8f8e678b312f576212ba9a",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -470,15 +514,18 @@
       "issuanceRewards": false,
       "nativeToken": "CLV",
       "docsUrl": "https://docs.clv.org",
-      "genesis": {
-        "hash": "0x316ead04231197413e137d371f8763cf6db84400d43749853efba5006115783b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x316ead04231197413e137d371f8763cf6db84400d43749853efba5006115783b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -528,15 +575,18 @@
       "issuanceRewards": false,
       "nativeToken": "METIS",
       "docsUrl": "https://docs.metis.io",
-      "genesis": {
-        "hash": "0x9e3354e081a54a57190bdb8948a597c840ea5dd496b0322864d4585f4a716892",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x9e3354e081a54a57190bdb8948a597c840ea5dd496b0322864d4585f4a716892",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -601,15 +651,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x81005434635456a16f74ff7023fbe0bf423abbc8a8deb093ffff455c0ad3b741",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x81005434635456a16f74ff7023fbe0bf423abbc8a8deb093ffff455c0ad3b741",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -668,15 +721,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.abs.xyz",
-      "genesis": {
-        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -743,15 +799,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://sepolia.dev",
-      "genesis": {
-        "hash": "0x25a5cc106eea7138acab33231d7160d69cb777ee0c2c553fcddf5138993e6dd9",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x25a5cc106eea7138acab33231d7160d69cb777ee0c2c553fcddf5138993e6dd9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -814,15 +873,18 @@
       "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.optimism.io",
-      "genesis": {
-        "hash": "0x102de6ffb001480cc9b8b548fd05c34cd4f46ae4aa91759393db90ea0409887d",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x102de6ffb001480cc9b8b548fd05c34cd4f46ae4aa91759393db90ea0409887d",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -868,15 +930,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.fuse.io",
-      "genesis": {
-        "hash": "0xfd643f387cd7386d21e8d34f8762188865789196dee77c98f8210dbbc15616ae",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xfd643f387cd7386d21e8d34f8762188865789196dee77c98f8210dbbc15616ae",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -931,15 +996,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x6e778e9491576a28bd06fac93844d8494be1f153e60ba7d29b4b51d991d4f830",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x6e778e9491576a28bd06fac93844d8494be1f153e60ba7d29b4b51d991d4f830",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -985,15 +1053,18 @@
       "issuanceRewards": false,
       "nativeToken": "GAS",
       "docsUrl": "https://xdocs.ngd.network",
-      "genesis": {
-        "hash": "0x221f7d0a47dd80fe10f476625d62303947c9cd336113e119c64d919f0e9beb71",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x221f7d0a47dd80fe10f476625d62303947c9cd336113e119c64d919f0e9beb71",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1037,15 +1108,18 @@
       "issuanceRewards": false,
       "nativeToken": "XTZ",
       "docsUrl": "https://docs.etherlink.com",
-      "genesis": {
-        "hash": "0x2cf11372c813c0007ef080103fc813cf26ad9a374e88d589ef536dfc3dd1fee9",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x2cf11372c813c0007ef080103fc813cf26ad9a374e88d589ef536dfc3dd1fee9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1100,15 +1174,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x7e6b3bbed86828a558271c9c9f62354b1d8b5aa15ff85fd6f1e7cbe9af9dde7e",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x7e6b3bbed86828a558271c9c9f62354b1d8b5aa15ff85fd6f1e7cbe9af9dde7e",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1164,15 +1241,18 @@
       "issuanceRewards": false,
       "nativeToken": "MOVR",
       "docsUrl": "https://docs.moonbeam.network",
-      "genesis": {
-        "hash": "0xce24348303f7a60c4d2d3c82adddf55ca57af89cd9e2cd4b863906ef53b89b3c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xce24348303f7a60c4d2d3c82adddf55ca57af89cd9e2cd4b863906ef53b89b3c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1220,15 +1300,18 @@
       "issuanceRewards": false,
       "nativeToken": "DEV",
       "docsUrl": "https://docs.moonbeam.network/learn/platform/networks/moonbase",
-      "genesis": {
-        "hash": "0x33638dde636f9264b6472b9d976d58e757fe88badac53f204f3f530ecc5aacfa",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x33638dde636f9264b6472b9d976d58e757fe88badac53f204f3f530ecc5aacfa",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1277,15 +1360,18 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "genesis": {
-        "hash": "0xbca38f4936fefe65751e55b3f3f88fec27d478e283b6bb92b5268e2ffcea7716",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xbca38f4936fefe65751e55b3f3f88fec27d478e283b6bb92b5268e2ffcea7716",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1344,15 +1430,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.unichain.org/docs",
-      "genesis": {
-        "hash": "0x3425162ddf41a0a1f0106d67b71828c9a9577e6ddeb94e4f33d2cde1fdc3befe",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x3425162ddf41a0a1f0106d67b71828c9a9577e6ddeb94e4f33d2cde1fdc3befe",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1420,15 +1509,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.unichain.org",
-      "genesis": {
-        "hash": "0xb7fe0bc9f98ca03294ca0094ff9374cc3e64130b6ec85850d6e260191f48bfe7",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xb7fe0bc9f98ca03294ca0094ff9374cc3e64130b6ec85850d6e260191f48bfe7",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1469,15 +1561,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://doc.aurora.dev",
-      "genesis": {
-        "hash": "0x0475c3f1fb767b161d8691d243a8daa3ff1621c181d21ca215b327d72df7fd11",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0475c3f1fb767b161d8691d243a8daa3ff1621c181d21ca215b327d72df7fd11",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1523,15 +1618,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://doc.aurora.dev",
-      "genesis": {
-        "hash": "0x250d32dc5dc0113f25f82987daf09e1dc5a79b09e53e78d475728f71248767b0",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x250d32dc5dc0113f25f82987daf09e1dc5a79b09e53e78d475728f71248767b0",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1579,15 +1677,18 @@
       "issuanceRewards": false,
       "nativeToken": "SEI",
       "docsUrl": "https://docs.seitrace.com",
-      "genesis": {
-        "hash": "0xf9d3845df25b43b1c6926f3ceda6845c17f5624e12212fd8847d0ba01da1ab9e",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xf9d3845df25b43b1c6926f3ceda6845c17f5624e12212fd8847d0ba01da1ab9e",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1634,15 +1735,18 @@
       "issuanceRewards": false,
       "nativeToken": "SEI",
       "docsUrl": "https://docs.seitrace.com",
-      "genesis": {
-        "hash": "0xe43c3e52a4f74dc7bb35f55cc813ed2ce97e46aafb3fcf8884056b0a757f5b75",
-        "height": 79123881
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe43c3e52a4f74dc7bb35f55cc813ed2ce97e46aafb3fcf8884056b0a757f5b75",
+          "height": 79123881
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1694,15 +1798,18 @@
       "issuanceRewards": false,
       "nativeToken": "HSK",
       "docsUrl": "https://docs.hsk.xyz",
-      "genesis": {
-        "hash": "0x656cb2200b3dd0ac9434a86aa8db62fe1a0f317be4086cc5fe80c7c36645ed8c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x656cb2200b3dd0ac9434a86aa8db62fe1a0f317be4086cc5fe80c7c36645ed8c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1753,15 +1860,18 @@
       "issuanceRewards": false,
       "nativeToken": "G",
       "docsUrl": "https://docs.gravity.xyz",
-      "genesis": {
-        "hash": "0xdf76dabe0734fed9d517027a494bc00662576d30aee9672a6fab5184e06ee8ca",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xdf76dabe0734fed9d517027a494bc00662576d30aee9672a6fab5184e06ee8ca",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1818,6 +1928,9 @@
         "substreams": [
           "polygon.substreams.pinax.network:443",
           "polygon.streamingfast.io:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "indexerDocsUrls": [
@@ -1829,15 +1942,26 @@
       "issuanceRewards": true,
       "nativeToken": "POL",
       "docsUrl": "https://docs.polygon.technology",
-      "genesis": {
-        "hash": "0xa9c28ce2141b56c474f1dc504bee9b01eb1bd7d1a507580d5519d4437a97de1b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xa9c28ce2141b56c474f1dc504bee9b01eb1bd7d1a507580d5519d4437a97de1b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes",
+          "nfts"
+        ],
+        "networkId": "matic"
       },
       "icon": {
         "web3Icons": {
@@ -1895,15 +2019,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x411c75a1b1c2f2f458bcf243e7743d114e0117a4233cc13d91e7efc8fe8b0f3b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x411c75a1b1c2f2f458bcf243e7743d114e0117a4233cc13d91e7efc8fe8b0f3b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1944,15 +2071,18 @@
       "issuanceRewards": false,
       "nativeToken": "VANA",
       "docsUrl": "https://docs.vana.org",
-      "genesis": {
-        "hash": "0xcf48ae63008a2a6ccf05c45dc3f8a4d99595999eafd09fa925d3906e4c4ff72b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xcf48ae63008a2a6ccf05c45dc3f8a4d99595999eafd09fa925d3906e4c4ff72b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -1999,15 +2129,18 @@
       "issuanceRewards": false,
       "nativeToken": "VANA",
       "docsUrl": "https://docs.vana.org",
-      "genesis": {
-        "hash": "0xaaa9e377da2dad6ec5896b5fdce820efc24643e40687a36c51a17ffac892726b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xaaa9e377da2dad6ec5896b5fdce820efc24643e40687a36c51a17ffac892726b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2064,15 +2197,18 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://eosnetwork.com/eos-evm",
-      "genesis": {
-        "hash": "0xc6f7c5c995ae7a7567b44e9679c6654b39a957fe33daa33aee4ee96a01b2fbd5",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xc6f7c5c995ae7a7567b44e9679c6654b39a957fe33daa33aee4ee96a01b2fbd5",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2126,15 +2262,18 @@
       "issuanceRewards": false,
       "nativeToken": "G",
       "docsUrl": "https://docs.gravity.xyz",
-      "genesis": {
-        "hash": "0x6eb5f2e11f3e026992cb3860e4518f672f0019fdc3c595e06cd22894fb6d7c36",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x6eb5f2e11f3e026992cb3860e4518f672f0019fdc3c595e06cd22894fb6d7c36",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2182,15 +2321,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.status.network",
-      "genesis": {
-        "hash": "0x8f6889114bdfdb70c73fb33765df93a99816db0ad942bbcee71cd5d7a39e11c2",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x8f6889114bdfdb70c73fb33765df93a99816db0ad942bbcee71cd5d7a39e11c2",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       }
     },
     {
@@ -2226,15 +2368,18 @@
       "issuanceRewards": false,
       "nativeToken": "ONE",
       "docsUrl": "https://docs.harmony.one",
-      "genesis": {
-        "hash": "0xb4d158b82ac8a653c42b78697ab1cd0c6a0d9a15ab3bc34130f0b719fb174d2a",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xb4d158b82ac8a653c42b78697ab1cd0c6a0d9a15ab3bc34130f0b719fb174d2a",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2297,15 +2442,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.blast.io",
-      "genesis": {
-        "hash": "0x26a1c0faad7b041f34569a1bb383f00ab74b335883a44bed53e9f41ced5fd906",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x26a1c0faad7b041f34569a1bb383f00ab74b335883a44bed53e9f41ced5fd906",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2357,15 +2505,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.mintchain.io",
-      "genesis": {
-        "hash": "0xdf018ef6eb34f7f003e00e4980aee2c2af56e7a5a865924d18cc775c02190deb",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xdf018ef6eb34f7f003e00e4980aee2c2af56e7a5a865924d18cc775c02190deb",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2412,15 +2563,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.manta.network",
-      "genesis": {
-        "hash": "0x710b33d206fc550549c39801e9c1ca80d85399bf6e0881987e40e706c2f2f453",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x710b33d206fc550549c39801e9c1ca80d85399bf6e0881987e40e706c2f2f453",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2482,15 +2636,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://holesky.dev",
-      "genesis": {
-        "hash": "0xb5f7f912443c940f21fd611f12828d75b534364ed9e95ca4e307729a4661bde4",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xb5f7f912443c940f21fd611f12828d75b534364ed9e95ca4e307729a4661bde4",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2537,15 +2694,18 @@
       "issuanceRewards": false,
       "nativeToken": "HSK",
       "docsUrl": "https://docs.hsk.xyz",
-      "genesis": {
-        "hash": "0xa96aea946b763641b616ce0c69f37e61d9cd0abd709ef13a6b833e67b76de208",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xa96aea946b763641b616ce0c69f37e61d9cd0abd709ef13a6b833e67b76de208",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2597,15 +2757,18 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://eosnetwork.com/eos-evm",
-      "genesis": {
-        "hash": "0x330402d1032bd515fa7f93b5ccb370bd1b6fdf54cdf009b6d46e55070aa0a1b8",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x330402d1032bd515fa7f93b5ccb370bd1b6fdf54cdf009b6d46e55070aa0a1b8",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2652,15 +2815,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.mintchain.io",
-      "genesis": {
-        "hash": "0x88441835ca2344ea384e6f73e3d6f921cdd304e5bd6dca15590217e3911c61a3",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x88441835ca2344ea384e6f73e3d6f921cdd304e5bd6dca15590217e3911c61a3",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2714,15 +2880,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://soneium.org/en/docs",
-      "genesis": {
-        "hash": "0x295d22d269634c7d0055b33b887519362d0b31899e97109d1789a8a168de1b21",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x295d22d269634c7d0055b33b887519362d0b31899e97109d1789a8a168de1b21",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2763,15 +2932,18 @@
       "issuanceRewards": false,
       "nativeToken": "tZKJ",
       "docsUrl": "https://docs.polyhedra.network/expchain",
-      "genesis": {
-        "hash": "0xcd32fbe4844c34d8c24a50949e84a2b67bacca64a1229f248bb4c8a95c5feb75",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xcd32fbe4844c34d8c24a50949e84a2b67bacca64a1229f248bb4c8a95c5feb75",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2812,15 +2984,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.swellnetwork.io",
-      "genesis": {
-        "hash": "0x92379973a1576876b7337a9ce89e2a7a9cb99887f55e6045ed2069d5d98d9319",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x92379973a1576876b7337a9ce89e2a7a9cb99887f55e6045ed2069d5d98d9319",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2872,15 +3047,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.swellnetwork.io",
-      "genesis": {
-        "hash": "0x56d83858e4fab3bcd009c0014c91fce910f0e4585d1f446e043c813043fd0317",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x56d83858e4fab3bcd009c0014c91fce910f0e4585d1f446e043c813043fd0317",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -2945,15 +3123,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://soneium.org/en/docs",
-      "genesis": {
-        "hash": "0x7ec49d93fa8f47c00e98cc5965cd3903a8faa9238743d2eba0e0550ab4c45c43",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x7ec49d93fa8f47c00e98cc5965cd3903a8faa9238743d2eba0e0550ab4c45c43",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3006,15 +3187,18 @@
       "issuanceRewards": false,
       "nativeToken": "OKB",
       "docsUrl": "https://www.okx.com/xlayer",
-      "genesis": {
-        "hash": "0x22a8085892b367833bd7431fa5a90ff6b5d3769167cdaa29ce8571d07bc8f866",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x22a8085892b367833bd7431fa5a90ff6b5d3769167cdaa29ce8571d07bc8f866",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3063,15 +3247,18 @@
       "issuanceRewards": false,
       "nativeToken": "OKB",
       "docsUrl": "https://www.okx.com/xlayer",
-      "genesis": {
-        "hash": "0x11f32f605beb94a1acb783cb3b6da6d7975461ce3addf441e7ad60c2ec95e88f",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x11f32f605beb94a1acb783cb3b6da6d7975461ce3addf441e7ad60c2ec95e88f",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3120,15 +3307,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x6e675ee97607f4e695188786c3c1853fb1562f1c075629eb5dbcff269422a1a4",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x6e675ee97607f4e695188786c3c1853fb1562f1c075629eb5dbcff269422a1a4",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3181,15 +3371,18 @@
       "issuanceRewards": false,
       "nativeToken": "BNB",
       "docsUrl": "https://docs.bnbchain.org/bnb-opbnb",
-      "genesis": {
-        "hash": "0x4dd61178c8b0f01670c231597e7bcb368e84545acd46d940a896d6a791dd6df4",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x4dd61178c8b0f01670c231597e7bcb368e84545acd46d940a896d6a791dd6df4",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3240,15 +3433,18 @@
       "issuanceRewards": false,
       "nativeToken": "BTCN",
       "docsUrl": "https://docs.usecorn.com",
-      "genesis": {
-        "hash": "0x80cd408e666fa2755da953bfd9056f09618318d5f71011a8247cebe2a13ae30f",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x80cd408e666fa2755da953bfd9056f09618318d5f71011a8247cebe2a13ae30f",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3302,15 +3498,18 @@
       "issuanceRewards": false,
       "nativeToken": "BTCN",
       "docsUrl": "https://docs.usecorn.com",
-      "genesis": {
-        "hash": "0x110954744ffd9d4bcd4f7998896d1948f654c9e5ccf6fcda1637a35a1863a71d",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x110954744ffd9d4bcd4f7998896d1948f654c9e5ccf6fcda1637a35a1863a71d",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3342,15 +3541,18 @@
       "issuanceRewards": false,
       "nativeToken": "KAVA",
       "docsUrl": "https://docs.kava.io",
-      "genesis": {
-        "hash": "0x9d2af876309bb9174604004a813dcfee94f4947b08c5bb4c1a042f318488851e",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x9d2af876309bb9174604004a813dcfee94f4947b08c5bb4c1a042f318488851e",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3397,15 +3599,18 @@
       "issuanceRewards": false,
       "nativeToken": "GHO",
       "docsUrl": "https://lens.xyz/docs",
-      "genesis": {
-        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3460,15 +3665,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.polygon.technology/zkEVM",
-      "genesis": {
-        "hash": "0x676c1a76a6c5855a32bdf7c61977a0d1510088a4eeac1330466453b3d08b60b9",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x676c1a76a6c5855a32bdf7c61977a0d1510088a4eeac1330466453b3d08b60b9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3514,15 +3722,18 @@
       "issuanceRewards": false,
       "nativeToken": "CRO",
       "docsUrl": "https://docs.cronos.org",
-      "genesis": {
-        "hash": "0xa7f4e603aa51239a15e0a3fafb15c6e4c6d6f2c39c55770330efd2fa5afc12a9",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xa7f4e603aa51239a15e0a3fafb15c6e4c6d6f2c39c55770330efd2fa5afc12a9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3578,15 +3789,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x0000000000000000c20dbfb2ec18ae20037c716f3ba2d9e1da768a9deca17cb4",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0000000000000000c20dbfb2ec18ae20037c716f3ba2d9e1da768a9deca17cb4",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3637,15 +3851,18 @@
       "issuanceRewards": false,
       "nativeToken": "frxETH",
       "docsUrl": "https://docs.mintchain.io",
-      "genesis": {
-        "hash": "0x521982bd54239dc71269eefb58601762cc15cfb2978e0becb46af7962ed6bfaa",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x521982bd54239dc71269eefb58601762cc15cfb2978e0becb46af7962ed6bfaa",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3692,15 +3909,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.abs.xyz",
-      "genesis": {
-        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3760,15 +3980,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xdcd9e6a8f9973eaa62da2874959cb152faeb4fd6929177bd6335a1a16074ef9c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xdcd9e6a8f9973eaa62da2874959cb152faeb4fd6929177bd6335a1a16074ef9c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3826,15 +4049,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.boba.network",
-      "genesis": {
-        "hash": "0xc6171953a6a376ece6e33149686044f24f58a387ce2636a54e391d330b2326b5",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xc6171953a6a376ece6e33149686044f24f58a387ce2636a54e391d330b2326b5",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3881,15 +4107,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xf88529d4ab262c0f4d042e9d8d3f2472848eaafe1a9b7213f57617eb40a9f9e0",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xf88529d4ab262c0f4d042e9d8d3f2472848eaafe1a9b7213f57617eb40a9f9e0",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -3950,15 +4179,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.zksync.io",
-      "genesis": {
-        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4002,15 +4234,18 @@
       "issuanceRewards": false,
       "nativeToken": "tRBTC",
       "docsUrl": "https://dev.rootstock.io",
-      "genesis": {
-        "hash": "0xcabb7fbe88cd6d922042a32ffc08ce8b1fbb37d650b9d4e7dbfe2a7469adfa42",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xcabb7fbe88cd6d922042a32ffc08ce8b1fbb37d650b9d4e7dbfe2a7469adfa42",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4055,15 +4290,18 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "genesis": {
-        "hash": "0x7ee9e9a8b75fa5f73e276e4b7f9eee22ceac26ec7516141a4ee737be1881102c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x7ee9e9a8b75fa5f73e276e4b7f9eee22ceac26ec7516141a4ee737be1881102c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4133,15 +4371,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4173,15 +4414,18 @@
       "issuanceRewards": false,
       "nativeToken": "ZIL",
       "docsUrl": "https://dev.zilliqa.com",
-      "genesis": {
-        "hash": "0xaef57e820056b14dbb42e4b39d38587f727d5a7014039c44018e16db7bb05eb4",
-        "height": 3
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xaef57e820056b14dbb42e4b39d38587f727d5a7014039c44018e16db7bb05eb4",
+          "height": 3
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4233,15 +4477,18 @@
       "issuanceRewards": false,
       "nativeToken": "APE",
       "docsUrl": "https://docs.apechain.com",
-      "genesis": {
-        "hash": "0xebbc9a87d1c945533b12311d15d11f7baab6d8c64f7aabe9d956f862554807a8",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xebbc9a87d1c945533b12311d15d11f7baab6d8c64f7aabe9d956f862554807a8",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4282,15 +4529,18 @@
       "issuanceRewards": false,
       "nativeToken": "APE",
       "docsUrl": "https://docs.apechain.com",
-      "genesis": {
-        "hash": "0xa217064039db238cd731edf0005e93b9ac72604247a8e7280e0606727f2d0736",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xa217064039db238cd731edf0005e93b9ac72604247a8e7280e0606727f2d0736",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4325,15 +4575,18 @@
       "issuanceRewards": false,
       "nativeToken": "PEAQ",
       "docsUrl": "https://docs.peaq.network",
-      "genesis": {
-        "hash": "0x43ab0f195759cb56597b46c826459bf550afe0398a1421293c961b1fecda1783",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x43ab0f195759cb56597b46c826459bf550afe0398a1421293c961b1fecda1783",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4398,15 +4651,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xb0f682e12fc555fd5ce8fce51a59a67d66a5b46be28611a168260a549dac8a9b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xb0f682e12fc555fd5ce8fce51a59a67d66a5b46be28611a168260a549dac8a9b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4454,15 +4710,18 @@
       "issuanceRewards": false,
       "nativeToken": "BTC",
       "docsUrl": "https://docs.botanixlabs.xyz",
-      "genesis": {
-        "hash": "0x3797638175875c37cefa72ef546db685e43c81ba4af8238b48a495f98d61588d",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x3797638175875c37cefa72ef546db685e43c81ba4af8238b48a495f98d61588d",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4491,15 +4750,18 @@
       "issuanceRewards": false,
       "nativeToken": "BTC",
       "docsUrl": "https://docs.botanixlabs.com",
-      "genesis": {
-        "hash": "0x0210ae550e730d0e18f96896b80caad6f59dcc0b83b67421975716d155d027c6",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0210ae550e730d0e18f96896b80caad6f59dcc0b83b67421975716d155d027c6",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4550,15 +4812,18 @@
       "issuanceRewards": false,
       "nativeToken": "GRASS",
       "docsUrl": "https://www.lens.xyz/docs",
-      "genesis": {
-        "hash": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4604,15 +4869,18 @@
       "issuanceRewards": false,
       "nativeToken": "FTM",
       "docsUrl": "https://docs.fantom.foundation",
-      "genesis": {
-        "hash": "0x00000000000000009a0c7349d44dc4d0f602a54e0a8543360c2fee4c3937b49e",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x00000000000000009a0c7349d44dc4d0f602a54e0a8543360c2fee4c3937b49e",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4672,6 +4940,9 @@
         "substreams": [
           "arbone.substreams.pinax.network:443",
           "arb-one.streamingfast.io:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -4684,15 +4955,26 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x7ee576b35482195fc49205cec9af72ce14f003b9ae69f6ba0faef4514be8b442",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x7ee576b35482195fc49205cec9af72ce14f003b9ae69f6ba0faef4514be8b442",
+          "height": 0
+        },
+        "blockFeatures": [
+          "hybrid"
+        ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes",
+          "nfts"
+        ],
+        "networkId": "arbitrum-one"
       },
       "icon": {
         "web3Icons": {
@@ -4758,15 +5040,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x77194da4010e549a7028a9c3c51c3e277823be6ac7d138d0bb8a70197b5c004c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x77194da4010e549a7028a9c3c51c3e277823be6ac7d138d0bb8a70197b5c004c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4824,15 +5109,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.arbitrum.io",
-      "genesis": {
-        "hash": "0x2ad24e03026118f9b3a48626f0636e38c93660e90a6812e853a99aa8c5371561",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x2ad24e03026118f9b3a48626f0636e38c93660e90a6812e853a99aa8c5371561",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4884,15 +5172,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x19ea3339d3c8cda97235bc8293240d5b9dadcdfbb5d4b0b90ee731cac1bd11c3",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x19ea3339d3c8cda97235bc8293240d5b9dadcdfbb5d4b0b90ee731cac1bd11c3",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4932,15 +5223,18 @@
       "issuanceRewards": false,
       "nativeToken": "XTZ",
       "docsUrl": "https://docs.etherlink.com",
-      "genesis": {
-        "hash": "0x37628d45dcd6265c969aa5f5dc3fe8fddd21198c683b85ac7099d8e39597df50",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x37628d45dcd6265c969aa5f5dc3fe8fddd21198c683b85ac7099d8e39597df50",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -4987,15 +5281,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.hemi.xyz",
-      "genesis": {
-        "hash": "0x6b070d8b8f3bf81c9314ff863748e3db2662ecc0a8dbd4c394a8b646ae0c8b8b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x6b070d8b8f3bf81c9314ff863748e3db2662ecc0a8dbd4c394a8b646ae0c8b8b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5051,15 +5348,18 @@
       "issuanceRewards": false,
       "nativeToken": "AVAX",
       "docsUrl": "https://docs.avax.network",
-      "genesis": {
-        "hash": "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5113,6 +5413,9 @@
         "substreams": [
           "avalanche-mainnet.streamingfast.io:443",
           "avalanche.substreams.pinax.network:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -5125,15 +5428,26 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x31ced5b9beb7f8782b014660da0cb18cc409f121f408186886e1ca3e8eeca96b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes",
+          "nfts"
+        ],
+        "networkId": "avalanche"
       },
       "icon": {
         "web3Icons": {
@@ -5186,15 +5500,18 @@
       "issuanceRewards": false,
       "nativeToken": "CELO",
       "docsUrl": "https://docs.celo.org",
-      "genesis": {
-        "hash": "0xe423b034e7f0282c1b621f7bbc1cea4316a2a80b1600490769eae77777e4b67e",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe423b034e7f0282c1b621f7bbc1cea4316a2a80b1600490769eae77777e4b67e",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5241,15 +5558,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xb337983730981c2d50f114eed5da9dd20b83c8c5e130beefdb3001dc858cfe8b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xb337983730981c2d50f114eed5da9dd20b83c8c5e130beefdb3001dc858cfe8b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5296,15 +5616,18 @@
       "issuanceRewards": false,
       "nativeToken": "IOTX",
       "docsUrl": "https://docs.iotex.io",
-      "genesis": {
-        "hash": "0x5e31a9f95ca4de82bd6f5ed9b465c6474bba27f1c5d31747393a555ce1f41607",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x5e31a9f95ca4de82bd6f5ed9b465c6474bba27f1c5d31747393a555ce1f41607",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5345,15 +5668,18 @@
       "issuanceRewards": false,
       "nativeToken": "GAS",
       "docsUrl": "https://xdocs.ngd.network",
-      "genesis": {
-        "hash": "0x2ee57478315c7d3182997a812d7885dafee48612cd88cb30b615847b0dd8dbd7",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x2ee57478315c7d3182997a812d7885dafee48612cd88cb30b615847b0dd8dbd7",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5394,15 +5720,18 @@
       "issuanceRewards": false,
       "nativeToken": "AI3",
       "docsUrl": "https://docs.autonomys.xyz",
-      "genesis": {
-        "hash": "0x085b6a1088858e39e9f26e832db9ba44e7f8ca977f363f0aff79f8bec5abb8b9",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x085b6a1088858e39e9f26e832db9ba44e7f8ca977f363f0aff79f8bec5abb8b9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5465,15 +5794,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.scroll.io",
-      "genesis": {
-        "hash": "0xaa62d1a8b2bffa9e5d2368b63aae0d98d54928bd713125e3fd9e5c896c68592c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xaa62d1a8b2bffa9e5d2368b63aae0d98d54928bd713125e3fd9e5c896c68592c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5539,15 +5871,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xbbc05efd412b7cd47a2ed0e5ddfcf87af251e414ea4c801d78b6784513180a80",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xbbc05efd412b7cd47a2ed0e5ddfcf87af251e414ea4c801d78b6784513180a80",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5596,6 +5931,9 @@
         "substreams": [
           "bsc.substreams.pinax.network:443",
           "bnb.streamingfast.io:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": true,
@@ -5607,15 +5945,26 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x0d21840abff46b96c84b2ac9e10e4f5cdaeb5693cb665db62a2f3b02d2d57b5b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0d21840abff46b96c84b2ac9e10e4f5cdaeb5693cb665db62a2f3b02d2d57b5b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes",
+          "nfts"
+        ],
+        "networkId": "bsc"
       },
       "icon": {
         "web3Icons": {
@@ -5668,15 +6017,18 @@
       },
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "genesis": {
-        "hash": "0xbbe312868b376a3001692a646dd2d7d1e4406380dfd86b98aa8a34d1557c971b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xbbe312868b376a3001692a646dd2d7d1e4406380dfd86b98aa8a34d1557c971b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5738,15 +6090,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xf9aa25373a3cf1c3d3dcb1911093b56eb129221d203270bcdb002b3f01a120d9",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xf9aa25373a3cf1c3d3dcb1911093b56eb129221d203270bcdb002b3f01a120d9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5787,15 +6142,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.inkonchain.com",
-      "genesis": {
-        "hash": "0x23a2658170ba70d014ba0d0d2709f8fbfe2fa660cd868c5f282f991eecbe38ee",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x23a2658170ba70d014ba0d0d2709f8fbfe2fa660cd868c5f282f991eecbe38ee",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5858,15 +6216,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.linea.build",
-      "genesis": {
-        "hash": "0x65a64c825d7c13ce1bf077801d0b6b2a89853e19e4a89a5433d7d85d2102a20b",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x65a64c825d7c13ce1bf077801d0b6b2a89853e19e4a89a5433d7d85d2102a20b",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5931,15 +6292,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xb6762a65689107b2326364aefc18f94cda413209fab35c00d4af51eaa20ffbc6",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xb6762a65689107b2326364aefc18f94cda413209fab35c00d4af51eaa20ffbc6",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -5973,15 +6337,18 @@
       },
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "genesis": {
-        "hash": "0xe56bd7ae2a26376ed01d4775edcec3fc18817451137e4a06a5899bf478b75500",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe56bd7ae2a26376ed01d4775edcec3fc18817451137e4a06a5899bf478b75500",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6036,15 +6403,18 @@
       "issuanceRewards": false,
       "nativeToken": "XAI",
       "docsUrl": "https://docs.x.ai/docs",
-      "genesis": {
-        "hash": "0xeb2a6f0f62cc7956562dc4e6316b60bdaff6a15affd6431592cb52f1552caa55",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xeb2a6f0f62cc7956562dc4e6316b60bdaff6a15affd6431592cb52f1552caa55",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6086,15 +6456,18 @@
       "issuanceRewards": false,
       "nativeToken": "ZETA",
       "docsUrl": "https://www.zetachain.com/docs",
-      "genesis": {
-        "hash": "0x60da6194a8e29e0e36c74544037918dd7a3a8a406f8e9f24d37c79623ee69690",
-        "height": 1
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x60da6194a8e29e0e36c74544037918dd7a3a8a406f8e9f24d37c79623ee69690",
+          "height": 1
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6149,15 +6522,18 @@
       "issuanceRewards": false,
       "nativeToken": "TRX",
       "docsUrl": "https://developers.tron.network",
-      "genesis": {
-        "hash": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6209,15 +6585,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.hemi.xyz",
-      "genesis": {
-        "hash": "0xc7eef424ae7c339cd0896344c80e136b81246ec5fe7d91a668a09b4c17543194",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xc7eef424ae7c339cd0896344c80e136b81246ec5fe7d91a668a09b4c17543194",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6251,15 +6630,18 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "genesis": {
-        "hash": "0x2d28253bc3362fb71336e4f45ba058a24167ef8f43aa2527d5ed9ecfa1d2d3d6",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x2d28253bc3362fb71336e4f45ba058a24167ef8f43aa2527d5ed9ecfa1d2d3d6",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6311,15 +6693,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.inkonchain.com",
-      "genesis": {
-        "hash": "0xe5fd5cf0be56af58ad5751b401410d6b7a09d830fa459789746a3d0dd1c79834",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe5fd5cf0be56af58ad5751b401410d6b7a09d830fa459789746a3d0dd1c79834",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6379,21 +6764,25 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x47555a45a1af8d4728ca337a1e48375a83919b1ea16591e070a07388b7364e29",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x47555a45a1af8d4728ca337a1e48375a83919b1ea16591e070a07388b7364e29",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
           "name": "zora",
           "variants": [
-            "branded"
+            "branded",
+            "background"
           ]
         }
       }
@@ -6453,15 +6842,18 @@
       "issuanceRewards": false,
       "nativeToken": "POL",
       "docsUrl": "https://docs.polygon.technology",
-      "genesis": {
-        "hash": "0x7202b2b53c5a0836e773e319d18922cc756dd67432f9a1f65352b61f4406c697",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x7202b2b53c5a0836e773e319d18922cc756dd67432f9a1f65352b61f4406c697",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6508,15 +6900,18 @@
       "issuanceRewards": false,
       "nativeToken": "BERA",
       "docsUrl": "https://docs.berachain.com",
-      "genesis": {
-        "hash": "0x0207661de38f0e54ba91c8286096e72486784c79dc6a9681fc486b38335c042f",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0207661de38f0e54ba91c8286096e72486784c79dc6a9681fc486b38335c042f",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6568,15 +6963,18 @@
       "issuanceRewards": false,
       "nativeToken": "BERA",
       "docsUrl": "https://docs.berachain.com",
-      "genesis": {
-        "hash": "0xd57819422128da1c44339fc7956662378c17e2213e669b427ac91cd11dfcfb38",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xd57819422128da1c44339fc7956662378c17e2213e669b427ac91cd11dfcfb38",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6619,15 +7017,18 @@
       "issuanceRewards": false,
       "nativeToken": "JOC",
       "docsUrl": "https://www.japanopenchain.org/en/developer",
-      "genesis": {
-        "hash": "0x1b54bfa6846a13aacc57066840ec10d1b74b06870539bbc8a3d1b19bdc566733",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x1b54bfa6846a13aacc57066840ec10d1b74b06870539bbc8a3d1b19bdc566733",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6693,15 +7094,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xb689b35ef29d0bec5816938e0e52683c7257d2e325420ea69b739a2be4754b89",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xb689b35ef29d0bec5816938e0e52683c7257d2e325420ea69b739a2be4754b89",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6742,15 +7146,18 @@
       "issuanceRewards": false,
       "nativeToken": "KAIA",
       "docsUrl": "https://docs.kaia.io",
-      "genesis": {
-        "hash": "0xc72e5293c3c3ba38ed8ae910f780e4caaa9fb95e79784f7ab74c3c262ea7137e",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xc72e5293c3c3ba38ed8ae910f780e4caaa9fb95e79784f7ab74c3c262ea7137e",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6800,6 +7207,9 @@
         "substreams": [
           "base.substreams.pinax.network:443",
           "base-mainnet.streamingfast.io:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -6818,15 +7228,26 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0xf712aa9241cc24369b143cf6dce85f0902a9731e70d66818a3a5845b296c73dd",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xf712aa9241cc24369b143cf6dce85f0902a9731e70d66818a3a5845b296c73dd",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes",
+          "nfts"
+        ],
+        "networkId": "base"
       },
       "icon": {
         "web3Icons": {
@@ -6896,15 +7317,18 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x0dcc9e089e30b90ddfc55be9a37dd15bc551aeee999d2e2b51414c54eaf934e4",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0dcc9e089e30b90ddfc55be9a37dd15bc551aeee999d2e2b51414c54eaf934e4",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -6939,15 +7363,18 @@
       "issuanceRewards": false,
       "nativeToken": "VIC",
       "docsUrl": "https://docs.viction.xyz",
-      "genesis": {
-        "hash": "0x9326145f8a2c8c00bbe13afc7d7f3d9c868b5ef39d89f2f4e9390e9720298624",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x9326145f8a2c8c00bbe13afc7d7f3d9c868b5ef39d89f2f4e9390e9720298624",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -7006,15 +7433,18 @@
       "issuanceRewards": false,
       "nativeToken": "CHZ",
       "docsUrl": "https://docs.chiliz.com",
-      "genesis": {
-        "hash": "0x9e0e07ae4ee9b0ef66a4206656677020306259d0b0b845ad3bb6b09fb91485ff",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x9e0e07ae4ee9b0ef66a4206656677020306259d0b0b845ad3bb6b09fb91485ff",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -7067,15 +7497,18 @@
       "issuanceRewards": false,
       "nativeToken": "CHZ",
       "docsUrl": "https://docs.chiliz.com",
-      "genesis": {
-        "hash": "0xd79fa059ef8cdfcf72676df19e209ee014183a5fa1cf132b2ff9288dbbcf5042",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xd79fa059ef8cdfcf72676df19e209ee014183a5fa1cf132b2ff9288dbbcf5042",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -7131,15 +7564,18 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.mode.network",
-      "genesis": {
-        "hash": "0x13c352562289a88ed33087a51b6b6c859a27709c8555c9def7cb9757c043acad",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x13c352562289a88ed33087a51b6b6c859a27709c8555c9def7cb9757c043acad",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -7195,15 +7631,18 @@
       "issuanceRewards": false,
       "nativeToken": "tBNB",
       "docsUrl": "https://docs.bnbchain.org",
-      "genesis": {
-        "hash": "0x6d3c66c5357ec91d5c43af47e234a939b22557cbb552dc45bebbceeed90fbe34",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x6d3c66c5357ec91d5c43af47e234a939b22557cbb552dc45bebbceeed90fbe34",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -7250,15 +7689,18 @@
       "issuanceRewards": false,
       "nativeToken": "LUMIA",
       "docsUrl": "https://docs.lumia.org",
-      "genesis": {
-        "hash": "0xbe2fbdd3862a852c02db24f4dcdc8c5eebc74777f393a0119410ed81f6a39120",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xbe2fbdd3862a852c02db24f4dcdc8c5eebc74777f393a0119410ed81f6a39120",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
       },
       "icon": {
         "web3Icons": {
@@ -7293,14 +7735,14 @@
       "issuanceRewards": false,
       "nativeToken": "WAX",
       "docsUrl": "https://developer.wax.io",
-      "genesis": {
-        "hash": "0x00000002c9a8761a546eeae2d5a0df4586d8d53d5e8c74da1b2f9ee44587f37d",
-        "height": 2
-      },
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x00000002c9a8761a546eeae2d5a0df4586d8d53d5e8c74da1b2f9ee44587f37d",
+          "height": 2
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7339,14 +7781,14 @@
       "issuanceRewards": false,
       "nativeToken": "TELOS",
       "docsUrl": "https://docs.telos.net",
-      "genesis": {
-        "hash": "0x0000000377dcf185dce2cd5b1ad7e70a7da0a73fc175c47283043791956c70c3",
-        "height": 3
-      },
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0000000377dcf185dce2cd5b1ad7e70a7da0a73fc175c47283043791956c70c3",
+          "height": 3
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7381,14 +7823,14 @@
       "issuanceRewards": false,
       "nativeToken": "TELOS",
       "docsUrl": "https://docs.telos.net",
-      "genesis": {
-        "hash": "0x000000021d642039071f77a8a2e1eca6cfc0d90f94e7304f0d401bf28f067693",
-        "height": 2
-      },
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x000000021d642039071f77a8a2e1eca6cfc0d90f94e7304f0d401bf28f067693",
+          "height": 2
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7430,14 +7872,14 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
-      "genesis": {
-        "hash": "0x00000002a1ec7ae214b9e43a904b6c010fb1260c9e8a12e5967bdbe451152a07",
-        "height": 2
-      },
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x00000002a1ec7ae214b9e43a904b6c010fb1260c9e8a12e5967bdbe451152a07",
+          "height": 2
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7479,14 +7921,14 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://jungletestnet.io",
-      "genesis": {
-        "hash": "0x00000002d61d836f51657f886a5bc55b18a731f7eace6565784328fbd051fc90",
-        "height": 2
-      },
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x00000002d61d836f51657f886a5bc55b18a731f7eace6565784328fbd051fc90",
+          "height": 2
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7521,14 +7963,14 @@
       "issuanceRewards": false,
       "nativeToken": "UOS",
       "docsUrl": "https://developers.ultra.io",
-      "genesis": {
-        "hash": "0x00000002e10cbadd0c7491064d13ae89cfbdd734e1f66726861d771af1fcd6e9",
-        "height": 2
-      },
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x00000002e10cbadd0c7491064d13ae89cfbdd734e1f66726861d771af1fcd6e9",
+          "height": 2
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7564,14 +8006,14 @@
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
-      "genesis": {
-        "hash": "0x0000000267f3e2284b482f3afc2e724be1d6cbc1804532ec62d4e7af47c30693",
-        "height": 2
-      },
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0000000267f3e2284b482f3afc2e724be1d6cbc1804532ec62d4e7af47c30693",
+          "height": 2
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7612,14 +8054,14 @@
       "issuanceRewards": false,
       "nativeToken": "WAX",
       "docsUrl": "https://developer.wax.io",
-      "genesis": {
-        "hash": "0x00000002066113f7023ed907632c404f25c5f0f02034f3b1a22f339c83d78c53",
-        "height": 2
-      },
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x00000002066113f7023ed907632c404f25c5f0f02034f3b1a22f339c83d78c53",
+          "height": 2
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7642,7 +8084,8 @@
       "apiUrls": [],
       "networkType": "mainnet",
       "graphNode": {
-        "protocol": "arweave"
+        "protocol": "arweave",
+        "deprecatedAt": "2025-05-28T00:00:00Z"
       },
       "services": {
         "sps": [],
@@ -7656,14 +8099,14 @@
       "issuanceRewards": false,
       "nativeToken": "AR",
       "docsUrl": "https://docs.arweave.org/developers",
-      "genesis": {
-        "hash": "0xef0214ecaa252020230a5325719dfc2d9cec86123bc46926dad0c2251ed6be17b7112528dbe678fb2d31d6e6a0951244",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.arweave.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-arweave",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xef0214ecaa252020230a5325719dfc2d9cec86123bc46926dad0c2251ed6be17b7112528dbe678fb2d31d6e6a0951244",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7684,7 +8127,7 @@
       "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [],
-      "networkType": "mainnet",
+      "networkType": "beacon",
       "relations": [
         {
           "kind": "beaconOf",
@@ -7702,14 +8145,14 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "genesis": {
-        "hash": "0x4d611d5b93fdab69013a7f0a2f961caca0c853f87cfe9595fe50038163079360",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
-        "bytesEncoding": "0xhex"
+        "bytesEncoding": "0xhex",
+        "firstStreamableBlock": {
+          "id": "0x4d611d5b93fdab69013a7f0a2f961caca0c853f87cfe9595fe50038163079360",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7728,7 +8171,7 @@
       "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [],
-      "networkType": "mainnet",
+      "networkType": "beacon",
       "relations": [
         {
           "kind": "beaconOf",
@@ -7746,14 +8189,14 @@
       "issuanceRewards": false,
       "nativeToken": "XDAI",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "genesis": {
-        "hash": "0x23564cd15ac0b90ed72cbc78ffd5e35e309816c0cca5ad28390bd9892e846a75",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
-        "bytesEncoding": "0xhex"
+        "bytesEncoding": "0xhex",
+        "firstStreamableBlock": {
+          "id": "0x23564cd15ac0b90ed72cbc78ffd5e35e309816c0cca5ad28390bd9892e846a75",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7772,7 +8215,7 @@
       "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [],
-      "networkType": "mainnet",
+      "networkType": "beacon",
       "relations": [
         {
           "kind": "beaconOf",
@@ -7790,14 +8233,14 @@
       "issuanceRewards": false,
       "nativeToken": "XDAI",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "genesis": {
-        "hash": "0xf227cf50c05b1aa570ce4f8ee00c71f11c63d05b297ad3a0e7a05d341c333381",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
-        "bytesEncoding": "0xhex"
+        "bytesEncoding": "0xhex",
+        "firstStreamableBlock": {
+          "id": "0xf227cf50c05b1aa570ce4f8ee00c71f11c63d05b297ad3a0e7a05d341c333381",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7816,7 +8259,7 @@
       "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [],
-      "networkType": "mainnet",
+      "networkType": "beacon",
       "relations": [
         {
           "kind": "beaconOf",
@@ -7834,14 +8277,14 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "genesis": {
-        "hash": "0xfb9b64fe445f76696407e1e3cc390371edff147bf712db86db6197d4b31ede43",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
-        "bytesEncoding": "0xhex"
+        "bytesEncoding": "0xhex",
+        "firstStreamableBlock": {
+          "id": "0xfb9b64fe445f76696407e1e3cc390371edff147bf712db86db6197d4b31ede43",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7860,7 +8303,7 @@
       "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [],
-      "networkType": "mainnet",
+      "networkType": "beacon",
       "relations": [
         {
           "kind": "beaconOf",
@@ -7878,14 +8321,14 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "genesis": {
-        "hash": "0xab09edd9380f8451c3ff5c809821174a36dce606fea8b5ea35ea936915dbf889",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
-        "bytesEncoding": "0xhex"
+        "bytesEncoding": "0xhex",
+        "firstStreamableBlock": {
+          "id": "0xab09edd9380f8451c3ff5c809821174a36dce606fea8b5ea35ea936915dbf889",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7904,7 +8347,7 @@
       "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [],
-      "networkType": "mainnet",
+      "networkType": "beacon",
       "relations": [
         {
           "kind": "beaconOf",
@@ -7922,14 +8365,14 @@
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "genesis": {
-        "hash": "0x376450cd7fb9f05ade82a7f88565ac57af449ac696b1a6ac5cc7dac7d467b7d6",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.beacon.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-beacon",
-        "bytesEncoding": "0xhex"
+        "bytesEncoding": "0xhex",
+        "firstStreamableBlock": {
+          "id": "0x376450cd7fb9f05ade82a7f88565ac57af449ac696b1a6ac5cc7dac7d467b7d6",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -7971,14 +8414,14 @@
       "issuanceRewards": false,
       "nativeToken": "BTC",
       "docsUrl": "https://developer.bitcoin.org",
-      "genesis": {
-        "hash": "0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.bitcoin.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-bitcoin",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8014,14 +8457,14 @@
       "issuanceRewards": false,
       "nativeToken": "LTC",
       "docsUrl": "https://litecoin.info/docs",
-      "genesis": {
-        "hash": "0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.bitcoin.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-bitcoin",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8045,7 +8488,8 @@
       "apiUrls": [],
       "networkType": "mainnet",
       "graphNode": {
-        "protocol": "cosmos"
+        "protocol": "cosmos",
+        "deprecatedAt": "2025-04-23T00:00:00Z"
       },
       "services": {
         "firehose": [
@@ -8058,14 +8502,14 @@
       "issuanceRewards": false,
       "nativeToken": "INJ",
       "docsUrl": "https://docs.injective.network",
-      "genesis": {
-        "hash": "0x24c9714291a999b952859ee02ec9b233394fe743b07ea3578d432a4a2707b6af",
-        "height": 1
-      },
       "firehose": {
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x24c9714291a999b952859ee02ec9b233394fe743b07ea3578d432a4a2707b6af",
+          "height": 1
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8088,7 +8532,8 @@
       "apiUrls": [],
       "networkType": "testnet",
       "graphNode": {
-        "protocol": "cosmos"
+        "protocol": "cosmos",
+        "deprecatedAt": "2025-04-23T00:00:00Z"
       },
       "relations": [
         {
@@ -8107,14 +8552,14 @@
       "issuanceRewards": false,
       "nativeToken": "INJ",
       "docsUrl": "https://docs.injective.network",
-      "genesis": {
-        "hash": "0x99ffd75978c31495c75cf40dbddf80673db18dc750f1e9f549cc13d9b76e8745",
-        "height": 59109500
-      },
       "firehose": {
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x7d5eabf8f6b38dd6d0135d8e16b778fa5bc9eb47b9c733f6c9563727d75ff3a9",
+          "height": 73538100
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8140,7 +8585,8 @@
       "apiUrls": [],
       "networkType": "mainnet",
       "graphNode": {
-        "protocol": "cosmos"
+        "protocol": "cosmos",
+        "deprecatedAt": "2025-04-23T00:00:00Z"
       },
       "services": {
         "firehose": [
@@ -8153,14 +8599,14 @@
       "issuanceRewards": false,
       "nativeToken": "OM",
       "docsUrl": "https://docs.mantrachain.io",
-      "genesis": {
-        "hash": "0x0d56d4b442c9628cb5679a04dbb8085920c64a4737fe50b8574c4d3a37ab2141",
-        "height": 1
-      },
       "firehose": {
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0d56d4b442c9628cb5679a04dbb8085920c64a4737fe50b8574c4d3a37ab2141",
+          "height": 1
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8192,7 +8638,8 @@
         }
       ],
       "graphNode": {
-        "protocol": "cosmos"
+        "protocol": "cosmos",
+        "deprecatedAt": "2025-04-23T00:00:00Z"
       },
       "services": {
         "firehose": [
@@ -8205,14 +8652,14 @@
       "issuanceRewards": false,
       "nativeToken": "OM",
       "docsUrl": "https://docs.mantrachain.io",
-      "genesis": {
-        "hash": "0xf4e9183911bbc59c472602cc83f06d8d335fc8f40c604a1a1adc0b7593403a84",
-        "height": 1
-      },
       "firehose": {
         "blockType": "sf.cosmos.type.v2.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-cosmos",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xf4e9183911bbc59c472602cc83f06d8d335fc8f40c604a1a1adc0b7593403a84",
+          "height": 1
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8256,14 +8703,14 @@
       "issuanceRewards": false,
       "nativeToken": "NEAR",
       "docsUrl": "https://docs.near.org",
-      "genesis": {
-        "hash": "0xc6fdf91c8e82f8f917cc1975e9de1c64be11899e321dfdf5febcfbb7313f1486",
-        "height": 9820210
-      },
       "firehose": {
         "blockType": "sf.near.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-near",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xc6fdf91c8e82f8f917cc1975e9de1c64be11899e321dfdf5febcfbb7313f1486",
+          "height": 9820210
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8309,14 +8756,14 @@
       "issuanceRewards": false,
       "nativeToken": "NEAR",
       "docsUrl": "https://docs.near.org",
-      "genesis": {
-        "hash": "0xd784da5a9e5e66668516c19a8095448fc54a22a28971dc330f0099df94379410",
-        "height": 42376888
-      },
       "firehose": {
         "blockType": "sf.near.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-near",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xd784da5a9e5e66668516c19a8095448fc54a22a28971dc330f0099df94379410",
+          "height": 42376888
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8359,14 +8806,14 @@
       "issuanceRewards": false,
       "nativeToken": "SOL",
       "docsUrl": "https://solana.com/docs",
-      "genesis": {
-        "hash": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.solana.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-solana",
-        "bytesEncoding": "base58"
+        "bytesEncoding": "base58",
+        "firstStreamableBlock": {
+          "id": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8397,14 +8844,14 @@
       "issuanceRewards": false,
       "nativeToken": "SOL",
       "docsUrl": "https://www.streamingfast.io/solana-data-stream",
-      "genesis": {
-        "hash": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.solana.type.v1.AccountBlock",
         "bufUrl": "https://buf.build/streamingfast/firehose-solana",
-        "bytesEncoding": "base58"
+        "bytesEncoding": "base58",
+        "firstStreamableBlock": {
+          "id": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8447,14 +8894,14 @@
       "issuanceRewards": false,
       "nativeToken": "SOL",
       "docsUrl": "https://solana.com/docs",
-      "genesis": {
-        "hash": "B2Ano6cfDxb1ce3WXVM3VmkVGj3NPGB5ag95S46S3cpE",
-        "height": 325312361
-      },
       "firehose": {
         "blockType": "sf.solana.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-solana",
-        "bytesEncoding": "base58"
+        "bytesEncoding": "base58",
+        "firstStreamableBlock": {
+          "id": "B2Ano6cfDxb1ce3WXVM3VmkVGj3NPGB5ag95S46S3cpE",
+          "height": 325312361
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8482,6 +8929,10 @@
         {
           "kind": "l2Of",
           "network": "bsc"
+        },
+        {
+          "kind": "svmOf",
+          "network": "bsc"
         }
       ],
       "services": {
@@ -8495,14 +8946,19 @@
       "issuanceRewards": false,
       "nativeToken": "BNB",
       "docsUrl": "https://docs.soo.network",
-      "genesis": {
-        "hash": "FRXwreefVunjoWykEhH42cxRMdyP2FuZFwqofmX1LRDx",
-        "height": 1
-      },
       "firehose": {
         "blockType": "sf.solana.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-solana",
-        "bytesEncoding": "base58"
+        "bytesEncoding": "base58",
+        "firstStreamableBlock": {
+          "id": "FRXwreefVunjoWykEhH42cxRMdyP2FuZFwqofmX1LRDx",
+          "height": 1
+        }
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "binance-smart-chain"
+        }
       }
     },
     {
@@ -8553,14 +9009,14 @@
           "description": "Archive Nodes 101"
         }
       ],
-      "genesis": {
-        "hash": "0x47c3637b57c2b079b93c61539950c17e868a28f46cdef28f88521067f21e943",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.starknet.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
-        "bytesEncoding": "0xhex"
+        "bytesEncoding": "0xhex",
+        "firstStreamableBlock": {
+          "id": "0x47c3637b57c2b079b93c61539950c17e868a28f46cdef28f88521067f21e943",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8615,14 +9071,14 @@
       "issuanceRewards": false,
       "nativeToken": "STRK",
       "docsUrl": "https://docs.starknet.io",
-      "genesis": {
-        "hash": "0x5c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.starknet.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-starknet",
-        "bytesEncoding": "0xhex"
+        "bytesEncoding": "0xhex",
+        "firstStreamableBlock": {
+          "id": "0x5c627d4aeb51280058bed93c7889bce78114d63baad1be0f0aeb32496d5f19c",
+          "height": 0
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8658,14 +9114,14 @@
       "issuanceRewards": false,
       "nativeToken": "XLM",
       "docsUrl": "https://developers.stellar.org",
-      "genesis": {
-        "hash": "0x84e2b18c296badee2a6c30347911f2b5a4323e1ecb3c8986235e1fdc322dadbe",
-        "height": 55411000
-      },
       "firehose": {
         "blockType": "sf.stellar.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
-        "bytesEncoding": "base64"
+        "bytesEncoding": "base64",
+        "firstStreamableBlock": {
+          "id": "0x84e2b18c296badee2a6c30347911f2b5a4323e1ecb3c8986235e1fdc322dadbe",
+          "height": 55411000
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8703,14 +9159,14 @@
       "issuanceRewards": false,
       "nativeToken": "XLM",
       "docsUrl": "https://developers.stellar.org",
-      "genesis": {
-        "hash": "0xd1ee30766823e8f1f7335ff7a7d3cc4724290cbb1b356de87241cc44eb5daad5",
-        "height": 1000
-      },
       "firehose": {
         "blockType": "sf.stellar.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
-        "bytesEncoding": "base64"
+        "bytesEncoding": "base64",
+        "firstStreamableBlock": {
+          "id": "0x2ec9adddf7475dee37e8fd0cc0f07ae0893e2325db7fb25fb318e8b7a797a720",
+          "height": 200
+        }
       },
       "icon": {
         "web3Icons": {
@@ -8754,14 +9210,14 @@
       "issuanceRewards": false,
       "nativeToken": "TRX",
       "docsUrl": "https://developers.tron.network",
-      "genesis": {
-        "hash": "0x00000000000000001ebf88508a03865c71d452e25f4d51194196a1d22b6653dc",
-        "height": 0
-      },
       "firehose": {
         "blockType": "sf.tron.type.v1.Block",
         "bufUrl": "https://buf.build/streamingfast/firehose-tron",
-        "bytesEncoding": "hex"
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x00000000000000010ff5414c5cfbe9eae982e8cef7eb2399a39118e1206c8247",
+          "height": 1
+        }
       },
       "icon": {
         "web3Icons": {

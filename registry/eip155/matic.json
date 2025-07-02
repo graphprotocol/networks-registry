@@ -28,9 +28,7 @@
       "polygon.substreams.pinax.network:443",
       "polygon.streamingfast.io:443"
     ],
-    "tokenApi": [
-      "https://token-api.thegraph.com"
-    ]
+    "tokenApi": ["https://token-api.thegraph.com"]
   },
   "indexerDocsUrls": [
     {
@@ -52,9 +50,6 @@
     },
     "blockFeatures": ["extended"]
   },
-  "tokenApi": {
-    "features": ["tokens", "dexes", "nfts"],
-    "networkId": "matic"
-  },
+  "tokenApi": { "features": ["tokens", "dexes", "nfts"], "networkId": "matic" },
   "icon": { "web3Icons": { "name": "polygon" } }
 }
