@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-03T15:57:31.951Z",
+  "updatedAt": "2025-07-03T16:09:37.160Z",
   "networks": [
     {
       "id": "mainnet",
