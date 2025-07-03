@@ -1,0 +1,36 @@
+{
+  "id": "injective-evm-testnet",
+  "shortName": "inEVM",
+  "fullName": "Injective inEVM Testnet",
+  "aliases": ["evm-2424"],
+  "caip2Id": "eip155:2424",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.inevm.com"],
+  "rpcUrls": ["https://testnet.rpc.inevm.com/http"],
+  "apiUrls": [
+    {
+      "url": "https://explorer.inevm.com/api",
+      "kind": "blockscout"
+    }
+  ],
+  "services": {
+    "firehose": ["testnet.injective-evm.streamingfast.io:443"]
+  },
+  "networkType": "testnet",
+  "relations": [{ "kind": "evmOf", "network": "injective-testnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "INJ",
+  "docsUrl": "https://docs.inevm.com",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x399400eb7ad682450ac74e94489bf992bb72868977cba866ece56e777d295ba8",
+      "height": 81314400
+    },
+    "blockFeatures": ["extended"]
+  },
+  "icon": { "web3Icons": { "name": "injective" } }
+}
