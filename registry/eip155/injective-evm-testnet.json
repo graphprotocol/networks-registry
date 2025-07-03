@@ -8,14 +8,9 @@
   "explorerUrls": ["https://explorer.inevm.com"],
   "rpcUrls": ["https://testnet.rpc.inevm.com/http"],
   "apiUrls": [
-    {
-      "url": "https://explorer.inevm.com/api",
-      "kind": "blockscout"
-    }
+    { "url": "https://explorer.inevm.com/api", "kind": "blockscout" }
   ],
-  "services": {
-    "firehose": ["testnet.injective-evm.streamingfast.io:443"]
-  },
+  "services": { "firehose": ["testnet.injective-evm.streamingfast.io:443"] },
   "networkType": "testnet",
   "relations": [{ "kind": "evmOf", "network": "injective-testnet" }],
   "issuanceRewards": false,
