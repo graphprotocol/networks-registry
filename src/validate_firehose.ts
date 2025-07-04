@@ -75,7 +75,11 @@ async function validateSingleEndpoint(
       )
     ) {
       const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`firstStreamableBlockId\``;
-      ERRORS.push(err);
+      if (["testnet", "devnet"].includes(network.networkType)) {
+        WARNINGS.push(err);
+      } else {
+        ERRORS.push(err);
+      }
       console.error(err);
     }
   } catch (error) {
