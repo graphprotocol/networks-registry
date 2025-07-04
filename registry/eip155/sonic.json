@@ -18,9 +18,7 @@
     { "url": "https://sonic.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["sonic.firehose.pinax.network:443"],
-    "substreams": ["sonic.substreams.pinax.network:443"]
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
   },
   "networkType": "mainnet",
   "issuanceRewards": true,
