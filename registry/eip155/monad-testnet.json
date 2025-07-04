@@ -8,7 +8,10 @@
   "explorerUrls": ["https://testnet.monadexplorer.com"],
   "rpcUrls": ["https://testnet-rpc.monad.xyz"],
   "apiUrls": [
-    { "url": "https://monad-testnet.abi.pinax.network/api", "kind": "etherscan" }
+    {
+      "url": "https://monad-testnet.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",

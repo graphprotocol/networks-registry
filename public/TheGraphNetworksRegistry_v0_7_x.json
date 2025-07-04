@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-04T18:24:06.863Z",
+  "updatedAt": "2025-07-04T19:23:35.074Z",
   "networks": [
     {
       "id": "mainnet",
@@ -388,8 +388,8 @@
       ],
       "apiUrls": [
         {
-          "url": "https://explorer.monad-testnet.category.xyz/api",
-          "kind": "blockscout"
+          "url": "https://monad-testnet.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -623,10 +623,6 @@
         {
           "url": "https://polygon-zkevm.abi.pinax.network/api",
           "kind": "etherscan"
-        },
-        {
-          "url": "https://zkevm.blockscout.com/api",
-          "kind": "blockscout"
         }
       ],
       "networkType": "mainnet",
@@ -691,10 +687,6 @@
       "apiUrls": [
         {
           "url": "https://block-explorer-api.testnet.abs.xyz/api",
-          "kind": "etherscan"
-        },
-        {
-          "url": "https://api.routescan.io/v2/network/testnet/evm/11124/etherscan/api",
           "kind": "etherscan"
         },
         {
@@ -2110,8 +2102,8 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.moksha.vanascan.io/api",
-          "kind": "etherscan"
+          "url": "https://moksha.vanascan.io/api",
+          "kind": "blockscout"
         }
       ],
       "networkType": "testnet",
@@ -2411,10 +2403,6 @@
         {
           "url": "https://blast-testnet.abi.pinax.network/api",
           "kind": "etherscan"
-        },
-        {
-          "url": "https://blast-testnet.blockscout.com/api",
-          "kind": "blockscout"
         }
       ],
       "services": {
@@ -2918,7 +2906,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://blockscout-testnet.expchain.ai/api",
+          "url": "https://blockscout-testnet.gadsgcxobnadfogadsihg.com/api",
           "kind": "blockscout"
         }
       ],
@@ -3819,12 +3807,7 @@
         "https://rpc.ftm.tools",
         "https://fantom.rpc.service.pinax.network"
       ],
-      "apiUrls": [
-        {
-          "url": "https://fantom.abi.pinax.network/api",
-          "kind": "etherscan"
-        }
-      ],
+      "apiUrls": [],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -4846,7 +4829,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://block-explorer-api.lens.dev/api",
+          "url": "https://explorer-api.testnet.lens.xyz/api",
           "kind": "etherscan"
         }
       ],
@@ -4905,12 +4888,7 @@
       "rpcUrls": [
         "https://rpc.testnet.fantom.network"
       ],
-      "apiUrls": [
-        {
-          "url": "https://fantom-testnet.abi.pinax.network/api",
-          "kind": "etherscan"
-        }
-      ],
+      "apiUrls": [],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -7117,10 +7095,6 @@
         {
           "url": "https://blast.abi.pinax.network/api",
           "kind": "etherscan"
-        },
-        {
-          "url": "https://blast.blockscout.com/api",
-          "kind": "blockscout"
         }
       ],
       "services": {
