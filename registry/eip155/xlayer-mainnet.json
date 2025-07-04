@@ -20,7 +20,7 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "OKB",
-  "docsUrl": "https://www.okx.com/xlayer",
+  "docsUrl": "https://web3.okx.com/xlayer",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,

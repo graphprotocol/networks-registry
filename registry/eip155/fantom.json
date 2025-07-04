@@ -6,7 +6,7 @@
   "aliases": ["evm-250", "fantom-mainnet", "fantom-opera"],
   "caip2Id": "eip155:250",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://ftmscan.com"],
+  "explorerUrls": ["https://explorer.fantom.network"],
   "rpcUrls": [
     "https://rpc.ftm.tools",
     "https://fantom.rpc.service.pinax.network"
