@@ -11,9 +11,7 @@
     "https://rpc.ftm.tools",
     "https://fantom.rpc.service.pinax.network"
   ],
-  "apiUrls": [
-    { "url": "https://fantom.abi.pinax.network/api", "kind": "etherscan" }
-  ],
+  "apiUrls": [],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["fantom.firehose.pinax.network:443"],
