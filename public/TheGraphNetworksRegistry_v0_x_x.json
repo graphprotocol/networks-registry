@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-04T19:23:35.074Z",
+  "updatedAt": "2025-07-04T19:38:47.029Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1993,12 +1993,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "sonic.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "sonic.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -2242,12 +2236,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "gravity.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "gravity.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -2325,6 +2313,11 @@
         "blockFeatures": [
           "base"
         ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "status"
+        }
       }
     },
     {
@@ -2961,6 +2954,10 @@
         {
           "url": "https://explorer.swellnetwork.io/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://swellchain.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "services": {
@@ -2998,6 +2995,7 @@
       "fullName": "Swellchain Sepolia Testnet",
       "aliases": [
         "swellchain-testnet",
+        "swellchain-bepolia",
         "evm-1924"
       ],
       "caip2Id": "eip155:1924",
@@ -3011,6 +3009,10 @@
         {
           "url": "https://swell-testnet-explorer.alt.technology/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://swellchain-sepolia.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "rpcUrls": [
