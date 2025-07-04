@@ -5,7 +5,7 @@
   "aliases": ["evm-4002"],
   "caip2Id": "eip155:4002",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://testnet.ftmscan.com"],
+  "explorerUrls": ["https://explorer.testnet.fantom.network"],
   "rpcUrls": ["https://rpc.testnet.fantom.network"],
   "apiUrls": [
     {

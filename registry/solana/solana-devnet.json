@@ -29,8 +29,8 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-solana",
     "bytesEncoding": "base58",
     "firstStreamableBlock": {
-      "id": "B2Ano6cfDxb1ce3WXVM3VmkVGj3NPGB5ag95S46S3cpE",
-      "height": 325312361
+      "id": "Cueq98fXZELX4qTJ7gvX2m2dmWiVMh6Mvsz87n6U8uF5",
+      "height": 391843999
     }
   },
   "icon": { "web3Icons": { "name": "solana" } }

@@ -5,7 +5,7 @@
   "aliases": ["evm-42170", "arbnova", "arb-nova", "arbitrum-nova-mainnet"],
   "caip2Id": "eip155:42170",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://nova-explorer.arbitrum.io"],
+  "explorerUrls": ["https://nova.arbiscan.io"],
   "rpcUrls": [
     "https://nova.arbitrum.io/rpc",
     "https://arbitrum-nova.publicnode.com",
