@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-03T16:09:37.160Z",
+  "updatedAt": "2025-07-04T18:24:06.863Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3186,7 +3186,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "OKB",
-      "docsUrl": "https://www.okx.com/xlayer",
+      "docsUrl": "https://web3.okx.com/xlayer",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
@@ -3246,7 +3246,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "OKB",
-      "docsUrl": "https://www.okx.com/xlayer",
+      "docsUrl": "https://web3.okx.com/xlayer",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
@@ -3813,7 +3813,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://ftmscan.com"
+        "https://explorer.fantom.network"
       ],
       "rpcUrls": [
         "https://rpc.ftm.tools",
@@ -4900,7 +4900,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://testnet.ftmscan.com"
+        "https://explorer.testnet.fantom.network"
       ],
       "rpcUrls": [
         "https://rpc.testnet.fantom.network"
@@ -5131,7 +5131,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://nova-explorer.arbitrum.io"
+        "https://nova.arbiscan.io"
       ],
       "rpcUrls": [
         "https://nova.arbitrum.io/rpc",
@@ -8956,8 +8956,8 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-solana",
         "bytesEncoding": "base58",
         "firstStreamableBlock": {
-          "id": "B2Ano6cfDxb1ce3WXVM3VmkVGj3NPGB5ag95S46S3cpE",
-          "height": 325312361
+          "id": "Cueq98fXZELX4qTJ7gvX2m2dmWiVMh6Mvsz87n6U8uF5",
+          "height": 391843999
         }
       },
       "icon": {
