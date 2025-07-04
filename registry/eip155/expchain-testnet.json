@@ -9,7 +9,7 @@
   "rpcUrls": ["https://rpc1-testnet.expchain.ai"],
   "apiUrls": [
     {
-      "url": "https://blockscout-testnet.expchain.ai/api",
+      "url": "https://blockscout-testnet.gadsgcxobnadfogadsihg.com/api",
       "kind": "blockscout"
     }
   ],

@@ -7,12 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.testnet.fantom.network"],
   "rpcUrls": ["https://rpc.testnet.fantom.network"],
-  "apiUrls": [
-    {
-      "url": "https://fantom-testnet.abi.pinax.network/api",
-      "kind": "etherscan"
-    }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "fantom" }],

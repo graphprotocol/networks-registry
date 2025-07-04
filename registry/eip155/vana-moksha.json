@@ -8,7 +8,7 @@
   "rpcUrls": ["https://rpc.moksha.vana.org"],
   "explorerUrls": ["https://moksha.vanascan.io"],
   "apiUrls": [
-    { "url": "https://api.moksha.vanascan.io/api", "kind": "etherscan" }
+    { "url": "https://moksha.vanascan.io/api", "kind": "blockscout" }
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "vana" }],
