@@ -19,10 +19,6 @@
     {
       "url": "https://polygon-amoy.abi.pinax.network/api",
       "kind": "etherscan"
-    },
-    {
-      "url": "https://api.routescan.io/v2/network/testnet/evm/80002/etherscan/api",
-      "kind": "etherscan"
     }
   ],
   "networkType": "testnet",

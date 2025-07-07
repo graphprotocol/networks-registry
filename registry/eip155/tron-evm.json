@@ -12,9 +12,7 @@
     "https://rpc.ankr.com/tron_jsonrpc"
   ],
   "relations": [{ "kind": "evmOf", "network": "tron" }],
-  "apiUrls": [
-    { "url": "https://apilist.tronscanapi.com/api", "kind": "other" }
-  ],
+  "apiUrls": [],
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],

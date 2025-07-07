@@ -10,9 +10,7 @@
     "https://tron.drpc.org",
     "https://rpc.ankr.com/tron_jsonrpc"
   ],
-  "apiUrls": [
-    { "url": "https://apilist.tronscanapi.com/api", "kind": "other" }
-  ],
+  "apiUrls": [],
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
