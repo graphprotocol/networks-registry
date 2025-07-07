@@ -8,17 +8,14 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.gravity.xyz"],
   "rpcUrls": [
-    "https://rpc.gravity.xyz",
-    "https://gravity.rpc.service.pinax.network"
+    "https://rpc.gravity.xyz"
   ],
   "apiUrls": [
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
   ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["gravity.firehose.pinax.network:443"],
-    "substreams": ["gravity.substreams.pinax.network:443"]
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,
