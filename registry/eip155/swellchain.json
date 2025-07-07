@@ -8,7 +8,8 @@
   "explorerUrls": ["https://explorer.swellnetwork.io"],
   "rpcUrls": ["https://rpc.ankr.com/swell"],
   "apiUrls": [
-    { "url": "https://explorer.swellnetwork.io/api", "kind": "blockscout" }
+    { "url": "https://explorer.swellnetwork.io/api", "kind": "blockscout" },
+    { "url": "https://swellchain.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",

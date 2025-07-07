@@ -3,7 +3,7 @@
   "shortName": "Swellchain",
   "secondName": "Sepolia",
   "fullName": "Swellchain Sepolia Testnet",
-  "aliases": ["swellchain-testnet", "evm-1924"],
+  "aliases": ["swellchain-testnet", "swellchain-bepolia", "evm-1924"],
   "caip2Id": "eip155:1924",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://swell-testnet-explorer.alt.technology"],
@@ -11,6 +11,10 @@
     {
       "url": "https://swell-testnet-explorer.alt.technology/api",
       "kind": "blockscout"
+    },
+    {
+      "url": "https://swellchain-sepolia.abi.pinax.network/api",
+      "kind": "etherscan"
     }
   ],
   "rpcUrls": ["https://rpc.ankr.com/swell_sepolia"],
