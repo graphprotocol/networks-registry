@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-04T19:38:47.029Z",
+  "updatedAt": "2025-07-07T20:20:32.825Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1982,10 +1982,6 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.routescan.io/v2/network/mainnet/evm/146/etherscan/api",
-          "kind": "etherscan"
-        },
-        {
           "url": "https://sonic.abi.pinax.network/api",
           "kind": "etherscan"
         }
@@ -2218,8 +2214,7 @@
         "https://explorer.gravity.xyz"
       ],
       "rpcUrls": [
-        "https://rpc.gravity.xyz",
-        "https://gravity.rpc.service.pinax.network"
+        "https://rpc.gravity.xyz"
       ],
       "apiUrls": [
         {
@@ -6539,12 +6534,7 @@
           "network": "tron"
         }
       ],
-      "apiUrls": [
-        {
-          "url": "https://apilist.tronscanapi.com/api",
-          "kind": "other"
-        }
-      ],
+      "apiUrls": [],
       "networkType": "mainnet",
       "services": {
         "subgraphs": [],
@@ -6857,10 +6847,6 @@
       "apiUrls": [
         {
           "url": "https://polygon-amoy.abi.pinax.network/api",
-          "kind": "etherscan"
-        },
-        {
-          "url": "https://api.routescan.io/v2/network/testnet/evm/80002/etherscan/api",
           "kind": "etherscan"
         }
       ],
@@ -9223,12 +9209,7 @@
         "https://tron.drpc.org",
         "https://rpc.ankr.com/tron_jsonrpc"
       ],
-      "apiUrls": [
-        {
-          "url": "https://apilist.tronscanapi.com/api",
-          "kind": "other"
-        }
-      ],
+      "apiUrls": [],
       "networkType": "mainnet",
       "services": {
         "subgraphs": [],

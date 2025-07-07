@@ -7,16 +7,12 @@
   "caip2Id": "eip155:1625",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.gravity.xyz"],
-  "rpcUrls": [
-    "https://rpc.gravity.xyz"
-  ],
+  "rpcUrls": ["https://rpc.gravity.xyz"],
   "apiUrls": [
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
   ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "G",

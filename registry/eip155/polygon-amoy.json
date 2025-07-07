@@ -16,10 +16,7 @@
     "https://amoy.rpc.service.pinax.network"
   ],
   "apiUrls": [
-    {
-      "url": "https://polygon-amoy.abi.pinax.network/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://polygon-amoy.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "networkType": "testnet",
   "services": {
