@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-07T20:20:32.825Z",
+  "updatedAt": "2025-07-09T18:53:56.666Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1354,7 +1354,7 @@
       "nativeToken": "ETH",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -1362,7 +1362,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
@@ -6646,6 +6646,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "katana.streamingfast.io:443"
+        ],
+        "substreams": [
+          "katana.streamingfast.io:443"
         ]
       },
       "networkType": "mainnet",
@@ -6659,7 +6665,7 @@
       "nativeToken": "ETH",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -6667,7 +6673,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
