@@ -19,9 +19,7 @@
       "mainnet.sol.streamingfast.io:443",
       "solana.substreams.pinax.network:443"
     ],
-    "tokenApi": [
-      "https://token-api.thegraph.com"
-    ]
+    "tokenApi": ["https://token-api.thegraph.com"]
   },
   "issuanceRewards": false,
   "nativeToken": "SOL",
@@ -35,9 +33,6 @@
       "height": 0
     }
   },
-  "tokenApi": {
-    "features": ["tokens", "dexes"],
-    "networkId": "solana"
-  },
+  "tokenApi": { "features": ["tokens", "dexes"], "networkId": "solana" },
   "icon": { "web3Icons": { "name": "solana" } }
 }

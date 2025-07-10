@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-09T18:53:56.666Z",
+  "updatedAt": "2025-07-10T17:30:05.158Z",
   "networks": [
     {
       "id": "mainnet",
@@ -8826,6 +8826,9 @@
         "substreams": [
           "mainnet.sol.streamingfast.io:443",
           "solana.substreams.pinax.network:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": false,
@@ -8839,6 +8842,13 @@
           "id": "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
           "height": 0
         }
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes"
+        ],
+        "networkId": "solana"
       },
       "icon": {
         "web3Icons": {
