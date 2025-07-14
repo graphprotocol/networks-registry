@@ -14,7 +14,10 @@ const ALLOWED_DUPLICATES: string[] = [
   "4sGjMW1sUnHzSxGspuhpqLDx6wiyjNtZAMdL4VZHirAn",
 ];
 
-const ALLOWED_ETHEREUM_LIST_MISSING: string[] = ["katana", "ozean-poseidon"];
+const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
+  "ozean-poseidon",
+  "injective-evm-testnet",
+];
 
 function validateFilenames(networksPath: string) {
   process.stdout.write("Validating filenames ... ");
