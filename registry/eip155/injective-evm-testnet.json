@@ -5,10 +5,13 @@
   "aliases": ["evm-1439"],
   "caip2Id": "eip155:1439",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://testnet.blockscout.injective.network/"],
+  "explorerUrls": ["https://testnet.blockscout.injective.network"],
   "rpcUrls": ["https://k8s.testnet.json-rpc.injective.network"],
   "apiUrls": [
-    { "url": "https://testnet.blockscout-api.injective.network/api", "kind": "blockscout" }
+    {
+      "url": "https://testnet.blockscout-api.injective.network/api",
+      "kind": "blockscout"
+    }
   ],
   "services": {
     "substreams": ["testnet.injective-evm.streamingfast.io:443"],
