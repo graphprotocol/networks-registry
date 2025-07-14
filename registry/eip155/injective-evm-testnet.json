@@ -1,24 +1,23 @@
 {
   "id": "injective-evm-testnet",
-  "shortName": "Inj-EVM",
+  "shortName": "Injective EVM",
   "fullName": "Injective EVM Testnet",
-  "aliases": ["evm-2424"],
-  "caip2Id": "eip155:2424",
+  "aliases": ["evm-1439"],
+  "caip2Id": "eip155:1439",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.blockscout.injective.network/"],
-  "rpcUrls": ["https://{INSTANCE}.injective-testnet.quiknode.pro/{API-KEY}"],
+  "rpcUrls": ["https://k8s.testnet.json-rpc.injective.network"],
   "apiUrls": [
     { "url": "https://testnet.blockscout-api.injective.network/api", "kind": "blockscout" }
   ],
-  "services": { 
-    "subgraphs": [""],
+  "services": {
     "substreams": ["testnet.injective-evm.streamingfast.io:443"],
-    "firehose": ["testnet.injective-evm.streamingfast.io:443"] 
+    "firehose": ["testnet.injective-evm.streamingfast.io:443"]
   },
   "networkType": "testnet",
   "issuanceRewards": false,
   "nativeToken": "INJ",
-  "docsUrl": "https://testnet.blockscout.injective.network/api-docs",
+  "docsUrl": "https://docs.injective.network/developers-evm/network-information",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
