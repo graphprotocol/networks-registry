@@ -7,6 +7,9 @@
   "caip2Id": "eip155:33101",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://otterscan.testnet.zilliqa.com/"],
+  "rpcUrls": [
+    "https://dev-api.zilliqa.com"
+  ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "zilliqa" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
