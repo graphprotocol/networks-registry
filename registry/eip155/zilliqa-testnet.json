@@ -5,7 +5,7 @@
   "aliases": ["evm-33101"],
   "caip2Id": "eip155:33101",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://otterscan.testnet.zilliqa.com/"],
+  "explorerUrls": ["https://otterscan.testnet.zilliqa.com"],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "zilliqa" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
