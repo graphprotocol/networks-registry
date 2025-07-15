@@ -1,7 +1,6 @@
 {
   "id": "zilliqa",
   "shortName": "Zilliqa",
-  "secondName": "Mainnet",
   "fullName": "Zilliqa 2.0 Mainnet",
   "aliases": ["evm-32769", "zilliqa-mainnet"],
   "caip2Id": "eip155:32769",
