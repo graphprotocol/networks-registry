@@ -220,7 +220,7 @@ function validateBeacons(networks: Network[]) {
 }
 
 const ALLOWED_FH_PROVIDERS = ["pinax.network", "streamingfast.io"];
-const ALLOWED_SG_PROVIDERS = ["api.studio.thegraph.com"];
+const ALLOWED_SG_PROVIDERS = ["api.studio.thegraph.com", "streamingfast.io"];
 const ALLOWED_TOKEN_API_PROVIDERS = ["token-api.thegraph.com"];
 
 function validateServices(networks: Network[]) {
