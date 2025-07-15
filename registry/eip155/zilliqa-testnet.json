@@ -1,0 +1,27 @@
+{
+  "id": "zilliqa-testnet",
+  "shortName": "Zilliqa",
+  "fullName": "Zilliqa 2.0 Testnet",
+  "aliases": ["evm-33101"],
+  "caip2Id": "eip155:33101",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://otterscan.testnet.zilliqa.com/"],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "zilliqa" }],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "ZIL",
+  "docsUrl": "https://dev.zilliqa.com",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x1947718b431d25dd65c226f79f3e0a9cc96a948899dab3422993def1494a9c95",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "zilliqa" } }
+}

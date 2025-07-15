@@ -5,7 +5,11 @@
   "aliases": ["evm-3338", "peaq-mainnet"],
   "caip2Id": "eip155:3338",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://peaq.subscan.io"],
+  "explorerUrls": [
+    "https://peaq.subscan.io",
+    "https://scout.peaq.xyz/"
+  ],
+  "apiUrls": [{ "url": "https://scout.peaq.xyz/api", "kind": "etherscan" }],
   "rpcUrls": ["https://peaq.api.onfinality.io/public"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
