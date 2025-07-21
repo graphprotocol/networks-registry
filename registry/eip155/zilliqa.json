@@ -7,7 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [
     "https://zilliqa.blockscout.com",
-    "https://otterscan.zilliqa.com"    
+    "https://otterscan.zilliqa.com"
   ],
   "apiUrls": [
     { "url": "https://zilliqa.blockscout.com/api", "kind": "blockscout" }

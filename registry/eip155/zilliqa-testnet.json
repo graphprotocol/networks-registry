@@ -7,9 +7,13 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [
     "https://testnet.zilliqa.blockscout.com",
-    "https://otterscan.testnet.zilliqa.com"],
+    "https://otterscan.testnet.zilliqa.com"
+  ],
   "apiUrls": [
-    { "url": "https://testnet.zilliqa.blockscout.com/api", "kind": "blockscout" }
+    {
+      "url": "https://testnet.zilliqa.blockscout.com/api",
+      "kind": "blockscout"
+    }
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "zilliqa" }],
