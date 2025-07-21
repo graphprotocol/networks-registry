@@ -5,6 +5,13 @@
   "aliases": ["evm-747474", "katana-mainnet"],
   "caip2Id": "eip155:747474",
   "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://katanascan.com"],
+  "apiUrls": [
+    {
+      "url": "https://api.etherscan.io/v2/api?chainid=747474",
+      "kind": "etherscan"
+    }
+  ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["katana.streamingfast.io:443"],
