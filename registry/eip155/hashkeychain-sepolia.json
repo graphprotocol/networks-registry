@@ -8,10 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet-explorer.hsk.xyz"],
   "apiUrls": [
-    {
-      "url": "https://testnet-explorer.hsk.xyz/api",
-      "kind": "blockscout"
-    }
+    { "url": "https://testnet-explorer.hsk.xyz/api", "kind": "blockscout" }
   ],
   "rpcUrls": ["https://testnet.hsk.xyz"],
   "networkType": "testnet",
