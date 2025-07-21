@@ -8,7 +8,7 @@
   "explorerUrls": ["https://katanascan.com"],
   "apiUrls": [
     {
-      "url": "https://api.etherscan.io/v2/api?chainid=747474",
+      "url": "https://katana.abi.pinax.network/api",
       "kind": "etherscan"
     }
   ],
