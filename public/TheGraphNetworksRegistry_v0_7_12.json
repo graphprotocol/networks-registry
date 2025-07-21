@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.14",
+  "version": "0.7.12",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-21T21:25:57.115Z",
+  "updatedAt": "2025-07-21T16:21:49.330Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1760,16 +1760,16 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://testnet-explorer.hsk.xyz"
+        "https://hashkeychain-testnet-explorer.alt.technology"
       ],
       "apiUrls": [
         {
-          "url": "https://testnet-explorer.hsk.xyz/api",
-          "kind": "blockscout"
+          "url": "https://hashkeychain-testnet-explorer.alt.technology/api",
+          "kind": "etherscan"
         }
       ],
       "rpcUrls": [
-        "https://testnet.hsk.xyz"
+        "https://hashkeychain-testnet.alt.technology"
       ],
       "networkType": "testnet",
       "relations": [

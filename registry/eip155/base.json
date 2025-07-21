@@ -1,8 +1,8 @@
 {
   "id": "base",
   "shortName": "Base",
-  "fullName": "Base Mainnet",
-  "aliases": ["evm-8453", "base-mainnet"],
+  "fullName": "Base Chain",
+  "aliases": ["evm-8453", "base-mainnet", "base-chain"],
   "caip2Id": "eip155:8453",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://base.blockscout.com"],

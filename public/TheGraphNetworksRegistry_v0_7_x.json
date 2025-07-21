@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.11",
+  "version": "0.7.14",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-16T13:31:05.139Z",
+  "updatedAt": "2025-07-21T21:25:57.115Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1760,16 +1760,16 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://hashkeychain-testnet-explorer.alt.technology"
+        "https://testnet-explorer.hsk.xyz"
       ],
       "apiUrls": [
         {
-          "url": "https://hashkeychain-testnet-explorer.alt.technology/api",
-          "kind": "etherscan"
+          "url": "https://testnet-explorer.hsk.xyz/api",
+          "kind": "blockscout"
         }
       ],
       "rpcUrls": [
-        "https://hashkeychain-testnet.alt.technology"
+        "https://testnet.hsk.xyz"
       ],
       "networkType": "testnet",
       "relations": [
@@ -4440,7 +4440,14 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
+        "https://zilliqa.blockscout.com",
         "https://otterscan.zilliqa.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://zilliqa.blockscout.com/api",
+          "kind": "blockscout"
+        }
       ],
       "rpcUrls": [
         "https://api.zilliqa.com"
@@ -4485,7 +4492,14 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
+        "https://testnet.zilliqa.blockscout.com",
         "https://otterscan.testnet.zilliqa.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://testnet.zilliqa.blockscout.com/api",
+          "kind": "blockscout"
+        }
       ],
       "networkType": "testnet",
       "relations": [
@@ -7251,10 +7265,11 @@
     {
       "id": "base",
       "shortName": "Base",
-      "fullName": "Base Mainnet",
+      "fullName": "Base Chain",
       "aliases": [
         "evm-8453",
-        "base-mainnet"
+        "base-mainnet",
+        "base-chain"
       ],
       "caip2Id": "eip155:8453",
       "graphNode": {

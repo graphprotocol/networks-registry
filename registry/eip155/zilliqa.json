@@ -5,7 +5,13 @@
   "aliases": ["evm-32769", "zilliqa-mainnet"],
   "caip2Id": "eip155:32769",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://otterscan.zilliqa.com"],
+  "explorerUrls": [
+    "https://zilliqa.blockscout.com",
+    "https://otterscan.zilliqa.com"
+  ],
+  "apiUrls": [
+    { "url": "https://zilliqa.blockscout.com/api", "kind": "blockscout" }
+  ],
   "rpcUrls": ["https://api.zilliqa.com"],
   "networkType": "mainnet",
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },

@@ -6,14 +6,11 @@
   "aliases": ["hashkeychain-testnet", "evm-133"],
   "caip2Id": "eip155:133",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://hashkeychain-testnet-explorer.alt.technology"],
+  "explorerUrls": ["https://testnet-explorer.hsk.xyz"],
   "apiUrls": [
-    {
-      "url": "https://hashkeychain-testnet-explorer.alt.technology/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://testnet-explorer.hsk.xyz/api", "kind": "blockscout" }
   ],
-  "rpcUrls": ["https://hashkeychain-testnet.alt.technology"],
+  "rpcUrls": ["https://testnet.hsk.xyz"],
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },
