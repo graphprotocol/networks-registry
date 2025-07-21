@@ -10,7 +10,7 @@
     "https://otterscan.zilliqa.com"    
   ],
   "apiUrls": [
-    { "url": "https://zilliqa.blockscout.com/api", "kind": "etherscan" }
+    { "url": "https://zilliqa.blockscout.com/api", "kind": "blockscout" }
   ],
   "rpcUrls": ["https://api.zilliqa.com"],
   "networkType": "mainnet",

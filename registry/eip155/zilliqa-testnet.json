@@ -9,7 +9,7 @@
     "https://testnet.zilliqa.blockscout.com",
     "https://otterscan.testnet.zilliqa.com"],
   "apiUrls": [
-    { "url": "https://testnet.zilliqa.blockscout.com/api", "kind": "etherscan" }
+    { "url": "https://testnet.zilliqa.blockscout.com/api", "kind": "blockscout" }
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "zilliqa" }],
