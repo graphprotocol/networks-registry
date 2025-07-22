@@ -6345,6 +6345,13 @@
       "graphNode": {
         "protocol": "ethereum"
       },
+      "explorerUrls": ["https://katanascan.com"],
+      "apiUrls": [
+        {
+          "url": "https://katana.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
