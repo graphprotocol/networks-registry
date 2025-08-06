@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.17",
+  "version": "0.7.18",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-06T18:52:19.278Z",
+  "updatedAt": "2025-08-06T19:20:52.666Z",
   "networks": [
     {
       "id": "mainnet",
@@ -434,7 +434,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://gnosis-chiado.blockscout.com/"
+        "https://gnosis-chiado.blockscout.com"
       ],
       "rpcUrls": [
         "https://rpc.chiadochain.net",
@@ -1150,7 +1150,6 @@
       ],
       "rpcUrls": [
         "https://rpc.api.moonriver.moonbeam.network",
-        "https://moonriver.rpc.service.pinax.network",
         "https://moonriver.public.blastapi.io"
       ],
       "apiUrls": [
@@ -1225,7 +1224,9 @@
         }
       ],
       "services": {
-        "subgraphs": []
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
       },
       "networkType": "testnet",
       "relations": [
