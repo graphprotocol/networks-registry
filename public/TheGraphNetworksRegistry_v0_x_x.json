@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.16",
+  "version": "0.7.17",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-07-22T14:45:53.027Z",
+  "updatedAt": "2025-08-06T18:52:19.278Z",
   "networks": [
     {
       "id": "mainnet",
@@ -434,7 +434,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://blockscout.chiadochain.net"
+        "https://gnosis-chiado.blockscout.com/"
       ],
       "rpcUrls": [
         "https://rpc.chiadochain.net",
@@ -477,59 +477,6 @@
       "icon": {
         "web3Icons": {
           "name": "gnosis"
-        }
-      }
-    },
-    {
-      "id": "clover",
-      "shortName": "CLV",
-      "fullName": "CLV Parachain",
-      "aliases": [
-        "clv-mainnet",
-        "evm-1023",
-        "clover-mainnet"
-      ],
-      "caip2Id": "eip155:1023",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://clvscan.com"
-      ],
-      "rpcUrls": [
-        "https://api-para.clv.org"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://clvscan.com/api",
-          "kind": "blockscout"
-        }
-      ],
-      "networkType": "mainnet",
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
-      },
-      "issuanceRewards": false,
-      "nativeToken": "CLV",
-      "docsUrl": "https://docs.clv.org",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0x316ead04231197413e137d371f8763cf6db84400d43749853efba5006115783b",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "clover"
         }
       }
     },
@@ -1278,9 +1225,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -2188,74 +2133,6 @@
       }
     },
     {
-      "id": "jungle4-evm",
-      "shortName": "EOS EVM",
-      "secondName": "Jungle4",
-      "fullName": "EOS Jungle4 EVM Testnet",
-      "aliases": [
-        "jungle4-evm-testnet",
-        "eos-evm-testnet",
-        "evm-15557"
-      ],
-      "caip2Id": "eip155:15557",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "relations": [
-        {
-          "kind": "evmOf",
-          "network": "jungle4"
-        },
-        {
-          "kind": "testnetOf",
-          "network": "eos-evm"
-        }
-      ],
-      "explorerUrls": [
-        "https://explorer.testnet.evm.eosnetwork.com"
-      ],
-      "rpcUrls": [
-        "https://api.testnet.evm.eosnetwork.com",
-        "https://jungle4evm.rpc.service.pinax.network"
-      ],
-      "apiUrls": [
-        {
-          "kind": "etherscan",
-          "url": "https://explorer.testnet.evm.eosnetwork.com/api"
-        }
-      ],
-      "services": {
-        "firehose": [
-          "jungle4evm.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "jungle4evm.substreams.pinax.network:443"
-        ]
-      },
-      "networkType": "testnet",
-      "issuanceRewards": false,
-      "nativeToken": "EOS",
-      "docsUrl": "https://eosnetwork.com/eos-evm",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xc6f7c5c995ae7a7567b44e9679c6654b39a957fe33daa33aee4ee96a01b2fbd5",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "eos"
-        }
-      }
-    },
-    {
       "id": "gravity-mainnet",
       "shortName": "Gravity",
       "secondName": "Alpha",
@@ -2743,69 +2620,6 @@
       "icon": {
         "web3Icons": {
           "name": "hashkey"
-        }
-      }
-    },
-    {
-      "id": "eos-evm",
-      "shortName": "EOS EVM",
-      "fullName": "EOS EVM Network",
-      "aliases": [
-        "eosevm",
-        "eos-evm-mainnet",
-        "evm-17777"
-      ],
-      "caip2Id": "eip155:17777",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "relations": [
-        {
-          "kind": "evmOf",
-          "network": "eos"
-        }
-      ],
-      "explorerUrls": [
-        "https://explorer.evm.eosnetwork.com"
-      ],
-      "rpcUrls": [
-        "https://api.evm.eosnetwork.com",
-        "https://eosevm.rpc.service.pinax.network"
-      ],
-      "apiUrls": [
-        {
-          "kind": "etherscan",
-          "url": "https://explorer.evm.eosnetwork.com/api"
-        }
-      ],
-      "services": {
-        "firehose": [
-          "eosevm.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "eosevm.substreams.pinax.network:443"
-        ]
-      },
-      "networkType": "mainnet",
-      "issuanceRewards": false,
-      "nativeToken": "EOS",
-      "docsUrl": "https://eosnetwork.com/eos-evm",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0x330402d1032bd515fa7f93b5ccb370bd1b6fdf54cdf009b6d46e55070aa0a1b8",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "eos"
         }
       }
     },
@@ -3697,6 +3511,9 @@
       ],
       "networkType": "testnet",
       "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ],
         "firehose": [
           "cardona.firehose.pinax.network:443"
         ],

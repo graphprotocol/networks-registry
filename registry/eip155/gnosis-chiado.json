@@ -6,7 +6,7 @@
   "aliases": ["chiado"],
   "caip2Id": "eip155:10200",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://gnosis-chiado.blockscout.com/"],
+  "explorerUrls": ["https://gnosis-chiado.blockscout.com"],
   "rpcUrls": [
     "https://rpc.chiadochain.net",
     "https://chiado.rpc.service.pinax.network"
