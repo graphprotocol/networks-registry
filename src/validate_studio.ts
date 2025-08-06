@@ -9,6 +9,7 @@ const execAsync = promisify(exec);
 const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
 
+// hard coded for now, will pull from in the future
 const STUDIO_CHAINS = [
   "matic",
   "optimism",
@@ -25,7 +26,7 @@ const STUDIO_CHAINS = [
   "fuji",
   "celo",
   "celo-alfajores",
-  "moonbase",
+  "mbase",
   "moonriver",
   "arbitrum-one",
   "near-mainnet",
