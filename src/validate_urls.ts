@@ -122,6 +122,8 @@ async function testRpc({
       }
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+      const firstBlock = network.firehose?.firstStreamableBlock?.height ?? 0;
+      const hash = network.firehose?.firstStreamableBlock?.id ?? "";
       const response = await fetch(urlExpanded, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -129,7 +131,7 @@ async function testRpc({
           jsonrpc: "2.0",
           id: 1,
           method: "eth_getBlockByNumber",
-          params: [`0x${network.genesis?.height.toString(16)}`, false],
+          params: [`0x${firstBlock.toString(16)}`, false],
         }),
         signal: controller.signal,
       });
@@ -148,7 +150,7 @@ async function testRpc({
       }
 
       const genesisHash = data.result.hash;
-      if (genesisHash?.toLowerCase() !== network.genesis?.hash.toLowerCase()) {
+      if (hash && genesisHash?.toLowerCase() !== hash.toLowerCase()) {
         throw new Error("mismatched genesis hash");
       }
     }, url);
@@ -174,7 +176,7 @@ async function testRpc({
 async function validatePublicRpcs(networks: Network[]) {
   console.log("Validating public RPCs ... ");
   const ethNetworks = networks.filter(
-    (n) => n.genesis && n.caip2Id.startsWith("eip155"),
+    (n) => n.firehose?.firstStreamableBlock && n.caip2Id.startsWith("eip155"),
   );
   const urls = ethNetworks.flatMap((n) =>
     (n.rpcUrls ?? [])
@@ -202,7 +204,7 @@ async function validatePublicRpcs(networks: Network[]) {
 async function validatePrivateRpcs(networks: Network[]) {
   console.log("Validating private RPCs ... ");
   const ethNetworks = networks.filter(
-    (n) => n.genesis && n.caip2Id.startsWith("eip155"),
+    (n) => n.firehose?.firstStreamableBlock && n.caip2Id.startsWith("eip155"),
   );
   const urls = ethNetworks.flatMap((n) =>
     (n.rpcUrls ?? [])
