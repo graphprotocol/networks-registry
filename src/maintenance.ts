@@ -2,6 +2,7 @@ import { printErrorsAndWarnings } from "./print";
 import { validateFirehose } from "./validate_firehose";
 import { validateLogic } from "./validate_logic";
 import { validateSchema } from "./validate_schema";
+import { validateStudioChains } from "./validate_studio";
 import { validateUrls } from "./validate_urls";
 import { Octokit } from "@octokit/rest";
 
@@ -102,9 +103,10 @@ async function main() {
   const { errors: e2, warnings: w2 } = await validateUrls("registry");
   const { errors: e3, warnings: w3 } = await validateLogic("registry");
   const { errors: e4, warnings: w4 } = await validateFirehose("registry");
+  const { errors: e5, warnings: w5 } = await validateStudioChains("registry");
 
-  const errors = [...e1, ...e2, ...e3, ...e4];
-  const warnings = [...w1, ...w2, ...w3, ...w4];
+  const errors = [...e1, ...e2, ...e3, ...e4, ...e5];
+  const warnings = [...w1, ...w2, ...w3, ...w4, ...w5];
 
   printErrorsAndWarnings(errors, warnings);
 

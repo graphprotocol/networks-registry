@@ -1,5 +1,5 @@
 {
-  "version": "0.7.16",
+  "version": "0.7.17",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,10 +7,11 @@
     "format:check": "prettier ./schemas/registry.schema.json ./registry/**/*.json ./src/**/*.ts ./**/*.md --check",
     "validate:schema": "bun run ./src/validate_schema.ts",
     "validate:networks": "bun run ./src/validate_logic.ts",
+    "validate:studio": "bun run ./src/validate_studio.ts",
     "validate:registry": "ajv validate -s schemas/registry.schema.json -d 'dist/TheGraphNetworksRegistry.json' --strict=true -c ajv-formats",
     "validate:urls": "bun run ./src/validate_urls.ts",
     "validate:firehose": "bun run ./src/validate_firehose.ts",
-    "validate": "bun validate:schema && bun validate:networks",
+    "validate": "bun validate:schema && bun validate:networks && bun validate:studio",
     "generate:types": "json2ts --input schemas/registry.schema.json --output src/types/registry.d.ts --cwd=schemas",
     "generate:registry": "bun run ./src/generate.ts",
     "generate:public": "bun run ./src/generate.ts registry public",

@@ -23,6 +23,7 @@
   ],
   "networkType": "testnet",
   "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["cardona.firehose.pinax.network:443"],
     "substreams": ["cardona.substreams.pinax.network:443"]
   },

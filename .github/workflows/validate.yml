@@ -27,6 +27,9 @@ jobs:
       - name: Validate logic
         run: bun validate:networks
 
+      - name: Validate Studio
+        run: bun validate:studio
+
       - name: Generate registry types
         run: bun generate:types
 
