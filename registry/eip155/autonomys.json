@@ -1,23 +1,20 @@
 {
-  "id": "autonomys-taurus",
+  "id": "autonomys",
   "shortName": "Autonomys",
-  "fullName": "Autonomys Taurus Auto EVM",
-  "aliases": ["evm-490000", "autonomys-testnet"],
-  "caip2Id": "eip155:490000",
+  "fullName": "Autonomys Mainnet",
+  "aliases": ["evm-870", "autonomys-testnet"],
+  "caip2Id": "eip155:870",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://blockscout.taurus.autonomys.xyz"],
-  "rpcUrls": ["https://auto-evm.taurus.autonomys.xyz/ws"],
+  "explorerUrls": ["https://explorer.auto-evm.mainnet.autonomys.xyz/"],
+  "rpcUrls": ["https://auto-evm.mainnet.autonomys.xyz/ws"],
   "apiUrls": [
     {
-      "url": "https://blockscout.taurus.autonomys.xyz/api",
+      "url": "https://explorer.auto-evm.mainnet.autonomys.xyz/api",
       "kind": "blockscout"
     }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
-  "networkType": "testnet",
-  "relations": [
-    { "kind": "testnetOf", "network": "autonomys" }
-  ],
+  "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "AI3",
   "docsUrl": "https://docs.autonomys.xyz",
