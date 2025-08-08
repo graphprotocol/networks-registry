@@ -2,7 +2,7 @@
   "id": "autonomys",
   "shortName": "Autonomys",
   "fullName": "Autonomys Mainnet",
-  "aliases": ["evm-870", "autonomys-testnet"],
+  "aliases": ["evm-870", "autonomys-mainnet"],
   "caip2Id": "eip155:870",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.auto-evm.mainnet.autonomys.xyz/"],
