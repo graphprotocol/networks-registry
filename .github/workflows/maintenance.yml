@@ -36,3 +36,4 @@ jobs:
           SF_API_KEY: ${{ secrets.SF_API_KEY }}
           PINAX_API_KEY: ${{ secrets.PINAX_API_KEY }}
           THEGRAPH_STUDIO_KEY: ${{ secrets.THEGRAPH_STUDIO_KEY }}
+          STUDIO_GITHUB_TOKEN: ${{ secrets.STUDIO_GITHUB_TOKEN }}

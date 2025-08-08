@@ -29,6 +29,8 @@ jobs:
 
       - name: Validate Studio
         run: bun validate:studio
+        env:
+          STUDIO_GITHUB_TOKEN: ${{ secrets.STUDIO_GITHUB_TOKEN }}
 
       - name: Generate registry types
         run: bun generate:types

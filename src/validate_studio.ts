@@ -1,167 +1,73 @@
 import { printErrorsAndWarnings } from "./print";
-import { Network } from "./types/registry";
 import { loadNetworks } from "./utils/fs";
-import { exec } from "child_process";
-import { promisify } from "util";
-
-const execAsync = promisify(exec);
 
 const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
 
-// hard coded for now, will pull from in the future
-const STUDIO_CHAINS = [
-  "matic",
-  "optimism",
-  "optimism-sepolia",
-  "fantom",
-  "linea",
-  "linea-sepolia",
-  "mode-mainnet",
-  "mode-sepolia",
-  "bsc",
-  "fuse",
-  "chapel",
-  "avalanche",
-  "fuji",
-  "celo",
-  "celo-alfajores",
-  "mbase",
-  "moonriver",
-  "arbitrum-one",
-  "near-mainnet",
-  "near-testnet",
-  "mainnet",
-  "sepolia",
-  "holesky",
-  "poa-sokol",
-  "xdai",
-  "gnosis",
-  "gnosis-chiado",
-  "aurora-testnet",
-  "aurora",
-  "fantom-testnet",
-  "moonbeam",
-  "boba",
-  "zksync-era-sepolia",
-  "harmony",
-  "base",
-  "base-sepolia",
-  "astar-zkevm-sepolia",
-  "blast-testnet",
-  "astar-zkevm-mainnet",
-  "zksync-era",
-  "polygon-zkevm",
-  "polygon-zkevm-cardona",
-  "scroll-sepolia",
-  "scroll",
-  "arbitrum-sepolia",
-  "blast-mainnet",
-  "sei-testnet",
-  "zkyoto-testnet",
-  "polygon-amoy",
-  "xlayer-mainnet",
-  "xlayer-sepolia",
-  "etherlink-testnet",
-  "btc",
-  "sei-mainnet",
-  "sei-atlantic",
-  "solana-mainnet-beta",
-  "rootstock",
-  "iotex",
-  "gravity-mainnet",
-  "gravity-testnet",
-  "etherlink-mainnet",
-  "iotex-testnet",
-  "neox",
-  "neox-testnet",
-  "arbitrum-nova",
-  "soneium-testnet",
-  "starknet-mainnet",
-  "chiliz",
-  "fuse-testnet",
-  "boba-testnet",
-  "boba-bnb",
-  "boba-bnb-testnet",
-  "chiliz-testnet",
-  "rootstock-testnet",
-  "unichain-testnet",
-  "kaia",
-  "kaia-testnet",
-  "lens-testnet",
-  "solana-devnet",
-  "hemi",
-  "abstract",
-  "abstract-testnet",
-  "corn-testnet",
-  "corn",
-  "botanix-testnet",
-  "lumia",
-  "sonic",
-  "hemi-sepolia",
-  "joc",
-  "expchain-testnet",
-  "monad-testnet",
-  "soneium",
-  "mint",
-  "viction",
-  "mint-sepolia",
-  "fraxtal",
-  "vana",
-  "vana-moksha",
-  "zetachain",
-  "berachain",
-  "ink",
-  "ink-sepolia",
-  "joc-testnet",
-  "unichain",
-  "autonomys-taurus",
-  "swellchain",
-  "swellchain-sepolia",
-  "apechain",
-  "apechain-curtis",
-  "hashkeychain-sepolia",
-  "hashkeychain",
-  "metis",
-  "starknet-testnet",
-  "zilliqa-protomainnet",
-  "peaq",
-  "berachain-bepolia",
-  "manta",
-  "hoodi",
-  "megaeth-testnet",
-  "lens",
-  "stellar",
-  "katana-tatara",
-  "ronin",
-  "katana",
-  "ozean-poseidon",
-  "botanix",
-  "status-sepolia",
-  "cronos",
-  "zilliqa",
-  "zilliqa-testnet",
-];
+/**
+ * Fetches the list of supported chains from the private GitHub repository
+ * @returns An array of chain IDs supported by Studio
+ */
+async function fetchStudioChains(): Promise<string[]> {
+  const token = process.env.STUDIO_GITHUB_TOKEN;
+  if (!token) {
+    console.warn("STUDIO_GITHUB_TOKEN not set");
+    return [];
+  }
+
+  try {
+    const response = await fetch(
+      "https://raw.githubusercontent.com/alinobrasil/studio_chain_names/refs/heads/main/chains.json",
+      {
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: "application/vnd.github.v3.raw",
+        },
+      },
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `GitHub API returned ${response.status}: ${response.statusText}`,
+      );
+    }
+
+    const chains = (await response.json()) as string[];
+    return chains;
+  } catch (error) {
+    console.error("Error fetching studio chains:", error);
+    return [];
+  }
+}
 
 export async function validateStudioChains(networksPath: string) {
   let networks = loadNetworks(networksPath);
   console.log(`Loaded ${networks.length} networks`);
 
+  const studioChains = await fetchStudioChains();
+  if (studioChains.length === 0) {
+    return {
+      errors: [`[studio] failed to fetch Studio chains`],
+      warnings: [],
+    };
+  }
+  console.log(`Loaded ${studioChains.length} studio chains`);
+
   for (const network of networks) {
     const hasStudioService = network.services.subgraphs?.find((url) =>
       url.includes("studio.thegraph.com"),
     );
-    if (hasStudioService && !STUDIO_CHAINS.includes(network.id)) {
-      WARNINGS.push(
+    if (hasStudioService && !studioChains.includes(network.id)) {
+      ERRORS.push(
         `Network ${network.id} has subgraph service but is not in Studio`,
       );
     }
     if (
       !hasStudioService &&
-      STUDIO_CHAINS.includes(network.id) &&
+      studioChains.includes(network.id) &&
       network.graphNode?.protocol === "ethereum"
     ) {
-      WARNINGS.push(
+      ERRORS.push(
         `Network ${network.id} is in Studio but has no subgraphs service`,
       );
     }
