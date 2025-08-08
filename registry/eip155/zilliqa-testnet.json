@@ -15,6 +15,7 @@
       "kind": "blockscout"
     }
   ],
+  "rpcUrls": ["https://api.testnet.zilliqa.com"],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "zilliqa" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
