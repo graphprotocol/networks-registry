@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.19",
+  "version": "0.7.20",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-08T14:05:21.103Z",
+  "updatedAt": "2025-08-08T15:41:48.729Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3704,7 +3704,7 @@
         }
       ],
       "issuanceRewards": false,
-      "nativeToken": "frxETH",
+      "nativeToken": "FRAX",
       "docsUrl": "https://docs.mintchain.io",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
@@ -7283,7 +7283,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.auto-evm.mainnet.autonomys.xyz/"
+        "https://explorer.auto-evm.mainnet.autonomys.xyz"
       ],
       "rpcUrls": [
         "https://auto-evm.mainnet.autonomys.xyz/ws"
