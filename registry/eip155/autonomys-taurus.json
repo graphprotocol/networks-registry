@@ -15,9 +15,7 @@
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
-  "relations": [
-    { "kind": "testnetOf", "network": "autonomys" }
-  ],
+  "relations": [{ "kind": "testnetOf", "network": "autonomys" }],
   "issuanceRewards": false,
   "nativeToken": "AI3",
   "docsUrl": "https://docs.autonomys.xyz",

@@ -5,7 +5,7 @@
   "aliases": ["evm-870", "autonomys-mainnet"],
   "caip2Id": "eip155:870",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explorer.auto-evm.mainnet.autonomys.xyz/"],
+  "explorerUrls": ["https://explorer.auto-evm.mainnet.autonomys.xyz"],
   "rpcUrls": ["https://auto-evm.mainnet.autonomys.xyz/ws"],
   "apiUrls": [
     {

@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.18",
+  "version": "0.7.19",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-06T19:20:52.666Z",
+  "updatedAt": "2025-08-08T14:05:21.103Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4319,6 +4319,9 @@
           "kind": "blockscout"
         }
       ],
+      "rpcUrls": [
+        "https://api.testnet.zilliqa.com"
+      ],
       "networkType": "testnet",
       "relations": [
         {
@@ -5639,6 +5642,12 @@
         ]
       },
       "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "autonomys"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "AI3",
       "docsUrl": "https://docs.autonomys.xyz",
@@ -7258,6 +7267,58 @@
       "icon": {
         "web3Icons": {
           "name": "base"
+        }
+      }
+    },
+    {
+      "id": "autonomys",
+      "shortName": "Autonomys",
+      "fullName": "Autonomys Mainnet",
+      "aliases": [
+        "evm-870",
+        "autonomys-mainnet"
+      ],
+      "caip2Id": "eip155:870",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.auto-evm.mainnet.autonomys.xyz/"
+      ],
+      "rpcUrls": [
+        "https://auto-evm.mainnet.autonomys.xyz/ws"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer.auto-evm.mainnet.autonomys.xyz/api",
+          "kind": "blockscout"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "AI3",
+      "docsUrl": "https://docs.autonomys.xyz",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x085b6a1088858e39e9f26e832db9ba44e7f8ca977f363f0aff79f8bec5abb8b9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "autonomys"
         }
       }
     },
