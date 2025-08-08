@@ -18,7 +18,7 @@
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
-  "nativeToken": "frxETH",
+  "nativeToken": "FRAX",
   "docsUrl": "https://docs.mintchain.io",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
