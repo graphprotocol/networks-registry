@@ -9,8 +9,7 @@
   "explorerUrls": ["https://www.oklink.com/xlayer-test"],
   "rpcUrls": [
     "https://testrpc.xlayer.tech",
-    "https://xlayertestrpc.okx.com",
-    "https://xlayertest.rpc.service.pinax.network"
+    "https://xlayertestrpc.okx.com"
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

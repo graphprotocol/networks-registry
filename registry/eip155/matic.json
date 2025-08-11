@@ -9,8 +9,7 @@
   "explorerUrls": ["https://polygonscan.com"],
   "rpcUrls": [
     "https://polygon-rpc.com",
-    "https://polygon.rpc.service.pinax.network",
-    "https://rpc.ankr.com/polygon"
+    "https://polygon.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://polygon.abi.pinax.network/api", "kind": "etherscan" },

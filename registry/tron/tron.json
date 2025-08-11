@@ -7,8 +7,7 @@
   "explorerUrls": ["https://tronscan.org"],
   "rpcUrls": [
     "https://api.trongrid.io/jsonrpc",
-    "https://tron.drpc.org",
-    "https://rpc.ankr.com/tron_jsonrpc"
+    "https://tron.drpc.org"
   ],
   "apiUrls": [],
   "networkType": "mainnet",
