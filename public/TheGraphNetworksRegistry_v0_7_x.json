@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.20",
+  "version": "0.7.21",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-08T15:41:48.729Z",
+  "updatedAt": "2025-08-11T15:04:02.715Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1149,8 +1149,7 @@
         "https://moonriver.moonscan.io"
       ],
       "rpcUrls": [
-        "https://rpc.api.moonriver.moonbeam.network",
-        "https://moonriver.public.blastapi.io"
+        "https://rpc.api.moonriver.moonbeam.network"
       ],
       "apiUrls": [
         {
@@ -1804,7 +1803,7 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
-          "id": "0xdf76dabe0734fed9d517027a494bc00662576d30aee9672a6fab5184e06ee8ca",
+          "id": "0x7ec91560d457d4812a727cf8f280ff15e0f74432f29d35dff9b957f597a584c2",
           "height": 0
         },
         "blockFeatures": [
@@ -1840,8 +1839,7 @@
       ],
       "rpcUrls": [
         "https://polygon-rpc.com",
-        "https://polygon.rpc.service.pinax.network",
-        "https://rpc.ankr.com/polygon"
+        "https://polygon.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -3016,8 +3014,7 @@
       ],
       "rpcUrls": [
         "https://testrpc.xlayer.tech",
-        "https://xlayertestrpc.okx.com",
-        "https://xlayertest.rpc.service.pinax.network"
+        "https://xlayertestrpc.okx.com"
       ],
       "services": {
         "subgraphs": [
@@ -3619,7 +3616,8 @@
         "https://explorer.fantom.network"
       ],
       "rpcUrls": [
-        "https://rpc.ftm.tools",
+        "https://fantom-rpc.publicnode.com",
+        "https://fantom.drpc.org",
         "https://fantom.rpc.service.pinax.network"
       ],
       "apiUrls": [],
@@ -5761,8 +5759,7 @@
       ],
       "rpcUrls": [
         "https://rpc.scroll.io",
-        "https://scroll.rpc.service.pinax.network",
-        "https://rpc.ankr.com/scroll"
+        "https://scroll.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6424,8 +6421,7 @@
       ],
       "rpcUrls": [
         "https://api.trongrid.io/jsonrpc",
-        "https://tron.drpc.org",
-        "https://rpc.ankr.com/tron_jsonrpc"
+        "https://tron.drpc.org"
       ],
       "relations": [
         {
@@ -9183,8 +9179,7 @@
       ],
       "rpcUrls": [
         "https://api.trongrid.io/jsonrpc",
-        "https://tron.drpc.org",
-        "https://rpc.ankr.com/tron_jsonrpc"
+        "https://tron.drpc.org"
       ],
       "apiUrls": [],
       "networkType": "mainnet",

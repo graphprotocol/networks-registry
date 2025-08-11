@@ -7,10 +7,7 @@
   "caip2Id": "eip155:195",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://www.oklink.com/xlayer-test"],
-  "rpcUrls": [
-    "https://testrpc.xlayer.tech",
-    "https://xlayertestrpc.okx.com"
-  ],
+  "rpcUrls": ["https://testrpc.xlayer.tech", "https://xlayertestrpc.okx.com"],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["xlayertest.firehose.pinax.network:443"],

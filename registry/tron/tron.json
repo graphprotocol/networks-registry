@@ -5,10 +5,7 @@
   "aliases": ["tron-mainnet"],
   "caip2Id": "tron:mainnet",
   "explorerUrls": ["https://tronscan.org"],
-  "rpcUrls": [
-    "https://api.trongrid.io/jsonrpc",
-    "https://tron.drpc.org"
-  ],
+  "rpcUrls": ["https://api.trongrid.io/jsonrpc", "https://tron.drpc.org"],
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {

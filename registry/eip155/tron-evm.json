@@ -6,10 +6,7 @@
   "caip2Id": "eip155:728126428",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://tronscan.org"],
-  "rpcUrls": [
-    "https://api.trongrid.io/jsonrpc",
-    "https://tron.drpc.org"
-  ],
+  "rpcUrls": ["https://api.trongrid.io/jsonrpc", "https://tron.drpc.org"],
   "relations": [{ "kind": "evmOf", "network": "tron" }],
   "apiUrls": [],
   "networkType": "mainnet",
