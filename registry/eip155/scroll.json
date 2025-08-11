@@ -8,8 +8,7 @@
   "explorerUrls": ["https://scrollscan.com"],
   "rpcUrls": [
     "https://rpc.scroll.io",
-    "https://scroll.rpc.service.pinax.network",
-    "https://rpc.ankr.com/scroll"
+    "https://scroll.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://scroll.blockscout.com/api", "kind": "blockscout" },
