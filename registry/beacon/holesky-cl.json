@@ -9,10 +9,7 @@
   "apiUrls": [],
   "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "holesky" }],
-  "services": {
-    "firehose": ["holesky-cl.firehose.pinax.network:443"],
-    "substreams": ["holesky-cl.substreams.pinax.network:443"]
-  },
+  "services": {},
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
