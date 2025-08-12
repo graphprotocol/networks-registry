@@ -8,13 +8,10 @@
   "explorerUrls": ["https://www.oklink.com/xlayer"],
   "rpcUrls": [
     "https://rpc.xlayer.tech",
-    "https://xlayerrpc.okx.com",
-    "https://xlayer.rpc.service.pinax.network"
+    "https://xlayerrpc.okx.com"
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["xlayer.firehose.pinax.network:443"],
-    "substreams": ["xlayer.substreams.pinax.network:443"]
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

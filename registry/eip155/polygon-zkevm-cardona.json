@@ -12,8 +12,7 @@
   ],
   "explorerUrls": ["https://cardona-zkevm.polygonscan.com"],
   "rpcUrls": [
-    "https://rpc.cardona.zkevm-rpc.com",
-    "https://cardona.rpc.service.pinax.network"
+    "https://rpc.cardona.zkevm-rpc.com"
   ],
   "apiUrls": [
     {
@@ -23,9 +22,7 @@
   ],
   "networkType": "testnet",
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["cardona.firehose.pinax.network:443"],
-    "substreams": ["cardona.substreams.pinax.network:443"]
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
   },
   "issuanceRewards": false,
   "nativeToken": "ETH",

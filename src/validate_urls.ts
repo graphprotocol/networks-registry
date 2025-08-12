@@ -8,6 +8,10 @@ const ERRORS: string[] = [];
 const WARNINGS: string[] = [];
 const FETCH_TIMEOUT_MS = 10000;
 
+const ALLOWED_RPC_ERRORS = {
+  "https://sei-evm-rpc.publicnode.com": "height is not available",
+};
+
 async function testURL({
   url,
   networkId,
@@ -142,10 +146,19 @@ async function testRpc({
       }
 
       const data = await response.json();
-      if (data.error) {
-        throw new Error("bad response");
+      if (data?.error) {
+        if (
+          ALLOWED_RPC_ERRORS[url] &&
+          data.error?.message.includes(ALLOWED_RPC_ERRORS[url])
+        ) {
+          console.warn(
+            `\`${network.id}\` - ${ALLOWED_RPC_ERRORS[url]} at RPC endpoint: ${url} - OK to ignore`,
+          );
+          return true;
+        }
+        throw new Error(`bad response: ${data.error?.message ?? data.error}`);
       }
-      if (!data.result) {
+      if (!data?.result) {
         throw new Error("empty response");
       }
 
