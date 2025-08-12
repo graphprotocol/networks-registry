@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.21",
+  "version": "0.7.22",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-11T15:04:02.715Z",
+  "updatedAt": "2025-08-12T20:42:17.570Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3019,12 +3019,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "xlayertest.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "xlayertest.substreams.pinax.network:443"
         ]
       },
       "networkType": "testnet",
@@ -3077,18 +3071,11 @@
       ],
       "rpcUrls": [
         "https://rpc.xlayer.tech",
-        "https://xlayerrpc.okx.com",
-        "https://xlayer.rpc.service.pinax.network"
+        "https://xlayerrpc.okx.com"
       ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "xlayer.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "xlayer.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -3498,8 +3485,7 @@
         "https://cardona-zkevm.polygonscan.com"
       ],
       "rpcUrls": [
-        "https://rpc.cardona.zkevm-rpc.com",
-        "https://cardona.rpc.service.pinax.network"
+        "https://rpc.cardona.zkevm-rpc.com"
       ],
       "apiUrls": [
         {
@@ -3511,12 +3497,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "cardona.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "cardona.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -5982,8 +5962,7 @@
       ],
       "rpcUrls": [
         "https://bnb.boba.network",
-        "https://boba-bnb.gateway.tenderly.co",
-        "https://bobabnb.rpc.service.pinax.network"
+        "https://boba-bnb.gateway.tenderly.co"
       ],
       "apiUrls": [
         {
@@ -5994,12 +5973,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "bobabnb.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "bobabnb.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -8292,14 +8265,7 @@
           "network": "holesky"
         }
       ],
-      "services": {
-        "firehose": [
-          "holesky-cl.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "holesky-cl.substreams.pinax.network:443"
-        ]
-      },
+      "services": {},
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",

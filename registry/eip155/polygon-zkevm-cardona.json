@@ -11,9 +11,7 @@
     { "kind": "testnetOf", "network": "polygon-zkevm" }
   ],
   "explorerUrls": ["https://cardona-zkevm.polygonscan.com"],
-  "rpcUrls": [
-    "https://rpc.cardona.zkevm-rpc.com"
-  ],
+  "rpcUrls": ["https://rpc.cardona.zkevm-rpc.com"],
   "apiUrls": [
     {
       "url": "https://polygon-zkevm-cardona.abi.pinax.network/api",
@@ -21,9 +19,7 @@
     }
   ],
   "networkType": "testnet",
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.polygon.technology/zkEVM",

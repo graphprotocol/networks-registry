@@ -8,9 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://www.oklink.com/xlayer-test"],
   "rpcUrls": ["https://testrpc.xlayer.tech", "https://xlayertestrpc.okx.com"],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },
