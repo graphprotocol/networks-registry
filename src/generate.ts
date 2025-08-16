@@ -24,7 +24,7 @@ function generateMermaidGraph(networks: Network[]): string {
   return `graph TD\n  ${relations.join("\n  ")}\n`;
 }
 
-function byCaip2Id(a: Network, b: Network) {
+export function byCaip2Id(a: Network, b: Network) {
   if (a.caip2Id.startsWith("eip155") && !b.caip2Id.startsWith("eip155")) {
     return -1;
   }
