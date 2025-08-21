@@ -1,0 +1,38 @@
+{
+  "id": "celo-sepolia",
+  "shortName": "Celo",
+  "secondName": "Sepolia",
+  "fullName": "Celo Sepolia Testnet",
+  "aliases": ["evm-11142220"],
+  "caip2Id": "eip155:11142220",
+  "networkType": "testnet",
+  "relations": [
+    { "kind": "testnetOf", "network": "celo" },
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://celo-sepolia.blockscout.com/"],
+  "rpcUrls": [
+    "https://forno.celo-sepolia.celo-testnet.org",
+    "https://rpc.ankr.com/celo_sepolia"
+  ],
+  "apiUrls": [
+    { "url": "https://celo-sepolia.blockscout.com/api", "kind": "blockscout" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "CELO",
+  "docsUrl": "https://docs.celo.org",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xabcc77fb92a7ea1e7d330042d81200585d251355b33408ed1c27fb54175b1fe2",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "celo" } }
+}
