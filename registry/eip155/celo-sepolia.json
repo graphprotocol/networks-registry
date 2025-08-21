@@ -11,7 +11,7 @@
     { "kind": "l2Of", "network": "sepolia" }
   ],
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://celo-sepolia.blockscout.com/"],
+  "explorerUrls": ["https://celo-sepolia.blockscout.com"],
   "rpcUrls": [
     "https://forno.celo-sepolia.celo-testnet.org",
     "https://rpc.ankr.com/celo_sepolia"
