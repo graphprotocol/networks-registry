@@ -17,6 +17,7 @@
     "generate:public": "bun run ./src/generate.ts registry public",
     "generate:table": "bun run ./src/generate_table.ts",
     "maintenance": "bun run ./src/maintenance.ts",
+    "backport": "bun run ./src/backport_to_v06x.ts",
     "all": "bun generate:types && bun validate && bun generate:registry && bun format && bun format:check"
   },
   "devDependencies": {
