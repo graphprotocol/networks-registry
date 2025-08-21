@@ -17,6 +17,7 @@
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": true,
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "nativeToken": "CELO",
   "docsUrl": "https://docs.celo.org",
   "indexerDocsUrls": [
