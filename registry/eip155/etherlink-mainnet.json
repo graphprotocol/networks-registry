@@ -6,7 +6,10 @@
   "caip2Id": "eip155:42793",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.etherlink.com"],
-  "rpcUrls": ["https://node.mainnet.etherlink.com"],
+  "rpcUrls": [
+    "https://node.mainnet.etherlink.com",
+    "https://etherlink.rpc.service.pinax.network"
+  ],
   "apiUrls": [
     { "url": "https://explorer.etherlink.com/api", "kind": "blockscout" }
   ],

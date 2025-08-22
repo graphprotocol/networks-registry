@@ -9,7 +9,8 @@
   "explorerUrls": ["https://snowtrace.io"],
   "rpcUrls": [
     "https://api.avax.network/ext/bc/C/rpc",
-    "https://avalanche-c-chain-rpc.publicnode.com"
+    "https://avalanche-c-chain-rpc.publicnode.com",
+    "https://avalanche.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://avalanche.abi.pinax.network/api", "kind": "etherscan" },
