@@ -9,7 +9,10 @@
   "apiUrls": [
     { "url": "https://explorer.inkonchain.com/api", "kind": "blockscout" }
   ],
-  "rpcUrls": ["https://rpc-gel.inkonchain.com", "https://ink.rpc.service.pinax.network"],
+  "rpcUrls": [
+    "https://rpc-gel.inkonchain.com",
+    "https://ink.rpc.service.pinax.network"
+  ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["ink.firehose.pinax.network:443"],

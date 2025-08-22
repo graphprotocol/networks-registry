@@ -9,9 +9,7 @@
   "relations": [{ "kind": "testnetOf", "network": "celo" }],
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://alfajores.celoscan.io"],
-  "rpcUrls": [
-    "https://alfajores-forno.celo-testnet.org"
-  ],
+  "rpcUrls": ["https://alfajores-forno.celo-testnet.org"],
   "apiUrls": [
     {
       "url": "https://celo-alfajores.abi.pinax.network/api",

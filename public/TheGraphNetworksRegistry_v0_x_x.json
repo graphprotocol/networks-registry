@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.23",
+  "version": "0.7.24",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-21T18:24:26.734Z",
+  "updatedAt": "2025-08-22T13:34:53.914Z",
   "networks": [
     {
       "id": "mainnet",
@@ -703,10 +703,11 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://celo-sepolia.blockscout.com/"
+        "https://celo-sepolia.blockscout.com"
       ],
       "rpcUrls": [
         "https://forno.celo-sepolia.celo-testnet.org",
+        "https://celosepolia.rpc.service.pinax.network",
         "https://rpc.ankr.com/celo_sepolia"
       ],
       "apiUrls": [
@@ -1212,7 +1213,8 @@
         "https://moonriver.moonscan.io"
       ],
       "rpcUrls": [
-        "https://rpc.api.moonriver.moonbeam.network"
+        "https://rpc.api.moonriver.moonbeam.network",
+        "https://moonriver.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -2327,7 +2329,8 @@
         "https://explorer.harmony.one/?shard=0"
       ],
       "rpcUrls": [
-        "https://api.harmony.one/?shard=0"
+        "https://api.harmony.one/?shard=0",
+        "https://harmony.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5178,7 +5181,8 @@
         "https://explorer.etherlink.com"
       ],
       "rpcUrls": [
-        "https://node.mainnet.etherlink.com"
+        "https://node.mainnet.etherlink.com",
+        "https://etherlink.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5289,7 +5293,8 @@
         "https://testnet.snowscan.xyz"
       ],
       "rpcUrls": [
-        "https://api.avax-test.network/ext/bc/C/rpc"
+        "https://api.avax-test.network/ext/bc/C/rpc",
+        "https://fuji.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5357,7 +5362,8 @@
       ],
       "rpcUrls": [
         "https://api.avax.network/ext/bc/C/rpc",
-        "https://avalanche-c-chain-rpc.publicnode.com"
+        "https://avalanche-c-chain-rpc.publicnode.com",
+        "https://avalanche.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5451,8 +5457,7 @@
         "https://alfajores.celoscan.io"
       ],
       "rpcUrls": [
-        "https://alfajores-forno.celo-testnet.org",
-        "https://alfajores.rpc.service.pinax.network"
+        "https://alfajores-forno.celo-testnet.org"
       ],
       "apiUrls": [
         {
@@ -5507,7 +5512,8 @@
         "https://iotexscan.io"
       ],
       "rpcUrls": [
-        "https://babel-api.mainnet.iotex.io"
+        "https://babel-api.mainnet.iotex.io",
+        "https://iotex.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6101,11 +6107,18 @@
         }
       ],
       "rpcUrls": [
-        "https://rpc-gel.inkonchain.com"
+        "https://rpc-gel.inkonchain.com",
+        "https://ink.rpc.service.pinax.network"
       ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "ink.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "ink.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -6122,7 +6135,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
