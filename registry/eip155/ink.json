@@ -9,8 +9,12 @@
   "apiUrls": [
     { "url": "https://explorer.inkonchain.com/api", "kind": "blockscout" }
   ],
-  "rpcUrls": ["https://rpc-gel.inkonchain.com"],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "rpcUrls": ["https://rpc-gel.inkonchain.com", "https://ink.rpc.service.pinax.network"],
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["ink.firehose.pinax.network:443"],
+    "substreams": ["ink.substreams.pinax.network:443"]
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "ETH",
@@ -24,7 +28,7 @@
       "id": "0x23a2658170ba70d014ba0d0d2709f8fbfe2fa660cd868c5f282f991eecbe38ee",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "ink" } }
 }

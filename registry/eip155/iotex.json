@@ -6,7 +6,10 @@
   "caip2Id": "eip155:4689",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://iotexscan.io"],
-  "rpcUrls": ["https://babel-api.mainnet.iotex.io"],
+  "rpcUrls": [
+    "https://babel-api.mainnet.iotex.io",
+    "https://iotex.rpc.service.pinax.network"
+  ],
   "apiUrls": [{ "url": "https://index.iotexscan.io/api", "kind": "etherscan" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",

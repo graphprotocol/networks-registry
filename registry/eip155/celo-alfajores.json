@@ -10,8 +10,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://alfajores.celoscan.io"],
   "rpcUrls": [
-    "https://alfajores-forno.celo-testnet.org",
-    "https://alfajores.rpc.service.pinax.network"
+    "https://alfajores-forno.celo-testnet.org"
   ],
   "apiUrls": [
     {
