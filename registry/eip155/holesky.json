@@ -13,8 +13,7 @@
     "https://holesky.otterscan.io"
   ],
   "rpcUrls": [
-    "https://ethereum-holesky-rpc.publicnode.com",
-    "https://holesky.rpc.service.pinax.network"
+    "https://ethereum-holesky-rpc.publicnode.com"
   ],
   "apiUrls": [
     { "url": "https://eth-holesky.blockscout.com/api", "kind": "blockscout" },
@@ -24,11 +23,9 @@
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],
     "firehose": [
-      "holesky.firehose.pinax.network:443",
       "holesky.eth.streamingfast.io:443"
     ],
     "substreams": [
-      "holesky.substreams.pinax.network:443",
       "holesky.eth.streamingfast.io:443"
     ]
   },
