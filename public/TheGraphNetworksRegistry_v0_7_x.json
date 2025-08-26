@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.24",
+  "version": "0.7.25",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-22T13:34:53.914Z",
+  "updatedAt": "2025-08-26T15:05:49.974Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2581,8 +2581,7 @@
         "https://holesky.otterscan.io"
       ],
       "rpcUrls": [
-        "https://ethereum-holesky-rpc.publicnode.com",
-        "https://holesky.rpc.service.pinax.network"
+        "https://ethereum-holesky-rpc.publicnode.com"
       ],
       "apiUrls": [
         {
@@ -2600,11 +2599,9 @@
         ],
         "sps": [],
         "firehose": [
-          "holesky.firehose.pinax.network:443",
           "holesky.eth.streamingfast.io:443"
         ],
         "substreams": [
-          "holesky.substreams.pinax.network:443",
           "holesky.eth.streamingfast.io:443"
         ]
       },
