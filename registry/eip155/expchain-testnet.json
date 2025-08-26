@@ -6,7 +6,7 @@
   "caip2Id": "eip155:18880",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://blockscout-testnet.expchain.ai"],
-  "rpcUrls": ["https://rpc1-testnet.expchain.ai"],
+  "rpcUrls": ["https://rpc0-testnet.expchain.ai"],
   "apiUrls": [
     {
       "url": "https://blockscout-testnet.gadsgcxobnadfogadsihg.com/api",
@@ -25,7 +25,7 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "id": "0xcd32fbe4844c34d8c24a50949e84a2b67bacca64a1229f248bb4c8a95c5feb75",
+      "id": "0xda850eae396d48df12c9a024e8639150aa5009275de2432f90710e3ebd9ec4c5",
       "height": 0
     },
     "blockFeatures": ["base"]
