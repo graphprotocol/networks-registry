@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.25",
+  "version": "0.7.26",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-26T15:05:49.974Z",
+  "updatedAt": "2025-08-26T22:31:55.967Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2823,7 +2823,7 @@
         "https://blockscout-testnet.expchain.ai"
       ],
       "rpcUrls": [
-        "https://rpc1-testnet.expchain.ai"
+        "https://rpc0-testnet.expchain.ai"
       ],
       "apiUrls": [
         {
@@ -2847,7 +2847,7 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
-          "id": "0xcd32fbe4844c34d8c24a50949e84a2b67bacca64a1229f248bb4c8a95c5feb75",
+          "id": "0xda850eae396d48df12c9a024e8639150aa5009275de2432f90710e3ebd9ec4c5",
           "height": 0
         },
         "blockFeatures": [
