@@ -12,9 +12,7 @@
     "https://fantom.drpc.org",
     "https://fantom.rpc.service.pinax.network"
   ],
-  "apiUrls": [
-    { "url": "https://ftmscout.com/api", "kind": "blockscout" }
-  ],
+  "apiUrls": [{ "url": "https://ftmscout.com/api", "kind": "blockscout" }],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["fantom.firehose.pinax.network:443"],
