@@ -36,45 +36,53 @@ async function validateSingleEndpoint(
   try {
     const command = `grpcurl -H "X-Api-Key: ${process.env.SF_API_KEY}" ${endpoint} sf.firehose.v2.EndpointInfo/Info`;
     const { stdout } = await execAsync(command);
-    const info = JSON.parse(stdout) as FirehoseInfo;
+    const fh = JSON.parse(stdout) as FirehoseInfo;
 
     if (
-      ValidEncodingMap[info.blockIdEncoding] !== network.firehose?.bytesEncoding
+      ValidEncodingMap[fh.blockIdEncoding] !== network.firehose?.bytesEncoding
     ) {
-      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`bytesEncoding\``;
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`bytesEncoding\`. Endpoint: \`${fh.blockIdEncoding}\` vs Registry: \`${network.firehose?.bytesEncoding}\``;
       ERRORS.push(err);
       console.error(err);
     }
     if (
-      info.blockFeatures?.includes("extended") &&
+      fh.blockFeatures?.includes("extended") &&
       !network.firehose?.evmExtendedModel
     ) {
-      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`evmExtendedModel\``;
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has inconsistent block model. Endpoint blockFeatures: \`extended\` vs Registry evmExtendedModel: \`false\``;
       ERRORS.push(err);
       console.error(err);
     }
     if (
-      info.blockFeatures?.includes("base") &&
+      fh.blockFeatures?.includes("base") &&
       network.firehose?.evmExtendedModel
     ) {
-      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`evmExtendedModel\``;
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has inconsistent block model. Endpoint blockFeatures: \`base\` vs Registry evmExtendedModel: \`true\``;
       ERRORS.push(err);
       console.error(err);
     }
     if (
-      info.blockFeatures?.includes("hybrid") &&
+      fh.blockFeatures?.includes("hybrid") &&
       !network.firehose?.evmExtendedModel
     ) {
-      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`evmExtendedModel\``;
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has inconsistent block model. Endpoint blockFeatures: \`hybrid\` vs Registry evmExtendedModel: \`false\``;
       ERRORS.push(err);
+      console.error(err);
+    }
+    if (
+      fh.blockFeatures?.sort().join(",") !==
+      network.firehose?.blockFeatures?.sort().join(",")
+    ) {
+      const err = `\`${network.id}\` - \`${endpoint}\` has inconsistent \`blockFeatures\`. Endpoint: ${fh.blockFeatures?.join(",")} vs Registry: ${network.firehose?.blockFeatures?.join(",")}`;
+      WARNINGS.push(err);
       console.error(err);
     }
     if (
       !network.firehose?.firstStreamableBlock?.id?.includes(
-        info.firstStreamableBlockId,
+        fh.firstStreamableBlockId,
       )
     ) {
-      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has wrong \`firstStreamableBlockId\``;
+      const err = `\`${network.id}\` - \`${endpoint}\` has inconsistent \`firstStreamableBlockId\`. Endpoint: ${fh.firstStreamableBlockId} vs Registry: ${network.firehose?.firstStreamableBlock?.id}`;
       if (["testnet", "devnet"].includes(network.networkType)) {
         WARNINGS.push(err);
       } else {
