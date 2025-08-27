@@ -6,13 +6,15 @@
   "aliases": ["evm-250", "fantom-mainnet", "fantom-opera"],
   "caip2Id": "eip155:250",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explorer.fantom.network"],
+  "explorerUrls": ["https://explorer.fantom.network", "https://ftmscout.com"],
   "rpcUrls": [
     "https://fantom-rpc.publicnode.com",
     "https://fantom.drpc.org",
     "https://fantom.rpc.service.pinax.network"
   ],
-  "apiUrls": [],
+  "apiUrls": [
+    { "url": "https://ftmscout.com/api", "kind": "blockscout" }
+  ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": ["fantom.firehose.pinax.network:443"],

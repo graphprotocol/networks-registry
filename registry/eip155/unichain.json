@@ -7,8 +7,14 @@
   "graphNode": { "protocol": "ethereum" },
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["unichain.firehose.pinax.network:443"],
-    "substreams": ["unichain.substreams.pinax.network:443"]
+    "firehose": [
+      "unichain.firehose.pinax.network:443",
+      "mainnet.unichain.streamingfast.io:443"
+    ],
+    "substreams": [
+      "unichain.substreams.pinax.network:443",
+      "mainnet.unichain.streamingfast.io:443"
+    ]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

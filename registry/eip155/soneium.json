@@ -32,7 +32,7 @@
       "id": "0x295d22d269634c7d0055b33b887519362d0b31899e97109d1789a8a168de1b21",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "soneium" } }
 }
