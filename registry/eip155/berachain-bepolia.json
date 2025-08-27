@@ -29,7 +29,7 @@
       "id": "0x0207661de38f0e54ba91c8286096e72486784c79dc6a9681fc486b38335c042f",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "berachain" } }
 }

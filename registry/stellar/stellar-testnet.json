@@ -20,8 +20,8 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
     "bytesEncoding": "base64",
     "firstStreamableBlock": {
-      "id": "0x2ec9adddf7475dee37e8fd0cc0f07ae0893e2325db7fb25fb318e8b7a797a720",
-      "height": 200
+      "id": "0x74ec355ea2c6b68e81f726c2b6a006772ff228749b17f85d87228e494ea3ca78",
+      "height": 255
     }
   },
   "icon": { "web3Icons": { "name": "stellar" } }
