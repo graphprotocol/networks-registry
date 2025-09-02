@@ -19,7 +19,7 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "FRAX",
-  "docsUrl": "https://docs.mintchain.io",
+  "docsUrl": "https://docs.frax.com/fraxtal",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
