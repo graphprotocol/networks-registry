@@ -9,7 +9,7 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "sps": [],
     "firehose": [
       "bitcoin.firehose.pinax.network:443",

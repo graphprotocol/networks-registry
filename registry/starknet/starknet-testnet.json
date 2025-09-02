@@ -18,7 +18,7 @@
   "apiUrls": [],
   "networkType": "testnet",
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "sps": [],
     "firehose": ["starksepolia.firehose.pinax.network:443"],
     "substreams": [

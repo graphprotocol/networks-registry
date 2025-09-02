@@ -13,7 +13,9 @@
   "apiUrls": [
     { "url": "https://explorer.harmony.one/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": []
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "ONE",
