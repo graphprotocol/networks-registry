@@ -15,9 +15,7 @@
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
-  "relations": [
-    { "kind": "testnetOf", "network": "monad" }
-  ],
+  "relations": [{ "kind": "testnetOf", "network": "monad" }],
   "issuanceRewards": false,
   "nativeToken": "MON",
   "docsUrl": "https://docs.monad.xyz",

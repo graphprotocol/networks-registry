@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.27",
+  "version": "0.7.28",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-08-27T21:47:56.729Z",
+  "updatedAt": "2025-09-02T21:04:24.588Z",
   "networks": [
     {
       "id": "mainnet",
@@ -398,7 +398,12 @@
         ]
       },
       "networkType": "testnet",
-      "relations": [],
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "monad"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "MON",
       "docsUrl": "https://docs.monad.xyz",
@@ -1846,9 +1851,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -1969,6 +1972,46 @@
       "icon": {
         "web3Icons": {
           "name": "polygon"
+        }
+      }
+    },
+    {
+      "id": "monad",
+      "shortName": "Monad",
+      "fullName": "Monad Mainnet",
+      "aliases": [
+        "evm-143",
+        "monad-mainnet"
+      ],
+      "caip2Id": "eip155:143",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "MON",
+      "docsUrl": "https://docs.monad.xyz",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x0c47353304f22b1c15706367d739b850cda80b5c87bbc335014fef3d88deaac9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "monad"
         }
       }
     },
@@ -2229,9 +2272,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -2341,9 +2382,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -3754,7 +3793,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "FRAX",
-      "docsUrl": "https://docs.mintchain.io",
+      "docsUrl": "https://docs.frax.com/fraxtal",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
@@ -8434,9 +8473,7 @@
       "apiUrls": [],
       "networkType": "mainnet",
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "sps": [],
         "firehose": [
           "bitcoin.firehose.pinax.network:443",
@@ -9034,9 +9071,7 @@
       "apiUrls": [],
       "networkType": "mainnet",
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "sps": [],
         "firehose": [
           "starknet.firehose.pinax.network:443"
@@ -9102,9 +9137,7 @@
       "apiUrls": [],
       "networkType": "testnet",
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "sps": [],
         "firehose": [
           "starksepolia.firehose.pinax.network:443"

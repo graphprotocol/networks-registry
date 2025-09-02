@@ -11,9 +11,7 @@
   "apiUrls": [
     { "url": "https://explorer-sepolia.gravity.xyz/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": []
-  },
+  "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },
