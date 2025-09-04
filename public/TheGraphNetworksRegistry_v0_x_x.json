@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.28",
+  "version": "0.7.29",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-09-02T21:04:24.588Z",
+  "updatedAt": "2025-09-04T01:31:44.364Z",
   "networks": [
     {
       "id": "mainnet",
@@ -6943,7 +6943,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "extended"
+          "base"
         ]
       },
       "icon": {
@@ -7006,7 +7006,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "extended"
+          "base"
         ]
       },
       "icon": {
