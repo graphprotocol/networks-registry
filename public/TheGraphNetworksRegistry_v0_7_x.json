@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.29",
+  "version": "0.7.30",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-09-04T01:31:44.364Z",
+  "updatedAt": "2025-09-08T18:31:40.462Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1667,6 +1667,10 @@
       ],
       "apiUrls": [
         {
+          "url": "https://sei-atlantic.abi.pinax.network/api",
+          "kind": "etherscan"
+        },
+        {
           "url": "https://seitrace.com/atlantic-2/api",
           "kind": "etherscan"
         }
@@ -1724,6 +1728,10 @@
         "https://sei-evm-rpc.publicnode.com"
       ],
       "apiUrls": [
+        {
+          "url": "https://sei-mainnet.abi.pinax.network/api",
+          "kind": "etherscan"
+        },
         {
           "url": "https://seitrace.com/pacific-1/api",
           "kind": "etherscan"
@@ -6913,6 +6921,10 @@
         "https://bepolia.beratrail.io"
       ],
       "apiUrls": [
+        {
+          "url": "https://berachain-bepolia.abi.pinax.network/api",
+          "kind": "etherscan"
+        },
         {
           "url": "https://api.routescan.io/v2/network/testnet/evm/80069/etherscan/api",
           "kind": "etherscan"
