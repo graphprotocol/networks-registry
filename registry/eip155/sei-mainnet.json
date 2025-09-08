@@ -8,6 +8,7 @@
   "explorerUrls": ["https://seitrace.com"],
   "rpcUrls": ["https://sei-evm-rpc.publicnode.com"],
   "apiUrls": [
+    { "url": "https://sei-mainnet.abi.pinax.network/api", "kind": "etherscan" },
     { "url": "https://seitrace.com/pacific-1/api", "kind": "etherscan" }
   ],
   "services": {

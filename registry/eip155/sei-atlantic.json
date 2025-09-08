@@ -9,6 +9,7 @@
   "explorerUrls": ["https://seitrace.com/?chain=atlantic-2"],
   "rpcUrls": ["https://evm-rpc-testnet.sei-apis.com"],
   "apiUrls": [
+    { "url": "https://sei-atlantic.abi.pinax.network/api", "kind": "etherscan" },
     { "url": "https://seitrace.com/atlantic-2/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
