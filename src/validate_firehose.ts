@@ -57,9 +57,9 @@ async function validateSingleEndpoint(
       fh.blockFeatures?.includes("base") &&
       network.firehose?.evmExtendedModel
     ) {
-      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has inconsistent block model. Endpoint blockFeatures: \`base\` vs Registry evmExtendedModel: \`true\``;
-      ERRORS.push(err);
-      console.error(err);
+      const err = `\`${network.id}\` - endpoint \`${endpoint}\` has potentially wrong block model. Endpoint blockFeatures: \`base\` vs Registry evmExtendedModel: \`true\``;
+      WARNINGS.push(err);
+      console.warn(err);
     }
     if (
       fh.blockFeatures?.includes("hybrid") &&
