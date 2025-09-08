@@ -9,6 +9,7 @@
   "rpcUrls": ["https://bepolia.rpc.berachain.com"],
   "explorerUrls": ["https://bepolia.beratrail.io"],
   "apiUrls": [
+    { "url": "https://berachain-bepolia.abi.pinax.network/api", "kind": "etherscan" },
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/80069/etherscan/api",
       "kind": "etherscan"
