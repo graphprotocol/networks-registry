@@ -21,6 +21,7 @@ async function createOrUpdateIssue(errors: string[], warnings: string[]) {
     process.exit(1);
   }
   const body = `## Maintenance Report (${new Date().toISOString().split("T")[0]})
+  This issue is updated once a day by the bot and contains all active problems/inconsistencies with the registry. In addition, comment is posted if a new problem is discovered.
 
 ${
   errors.length > 0
