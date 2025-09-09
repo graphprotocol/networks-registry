@@ -5,7 +5,7 @@
   "aliases": ["evm-8700"],
   "caip2Id": "eip155:8700",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explorer.auto-evm.chronos.autonomys.xyz/"],
+  "explorerUrls": ["https://explorer.auto-evm.chronos.autonomys.xyz"],
   "rpcUrls": ["https://auto-evm.chronos.autonomys.xyz/ws"],
   "apiUrls": [
     {

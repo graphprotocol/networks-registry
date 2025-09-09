@@ -3,7 +3,7 @@
   "version": "0.7.30",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-09-08T18:31:40.462Z",
+  "updatedAt": "2025-09-09T17:38:03.182Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5719,64 +5719,6 @@
       }
     },
     {
-      "id": "autonomys-taurus",
-      "shortName": "Autonomys",
-      "fullName": "Autonomys Taurus Auto EVM",
-      "aliases": [
-        "evm-490000",
-        "autonomys-testnet"
-      ],
-      "caip2Id": "eip155:490000",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://blockscout.taurus.autonomys.xyz"
-      ],
-      "rpcUrls": [
-        "https://auto-evm.taurus.autonomys.xyz/ws"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://blockscout.taurus.autonomys.xyz/api",
-          "kind": "blockscout"
-        }
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
-      },
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "autonomys"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "AI3",
-      "docsUrl": "https://docs.autonomys.xyz",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0x085b6a1088858e39e9f26e832db9ba44e7f8ca977f363f0aff79f8bec5abb8b9",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "autonomys"
-        }
-      }
-    },
-    {
       "id": "scroll-sepolia",
       "shortName": "Scroll",
       "secondName": "Sepolia",
@@ -7418,6 +7360,63 @@
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
           "id": "0x085b6a1088858e39e9f26e832db9ba44e7f8ca977f363f0aff79f8bec5abb8b9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "autonomys"
+        }
+      }
+    },
+    {
+      "id": "autonomys-chronos",
+      "shortName": "Autonomys",
+      "fullName": "Autonomys Chronos Testnet",
+      "aliases": [
+        "evm-8700"
+      ],
+      "caip2Id": "eip155:8700",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explorer.auto-evm.chronos.autonomys.xyz/"
+      ],
+      "rpcUrls": [
+        "https://auto-evm.chronos.autonomys.xyz/ws"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://explorer.auto-evm.chronos.autonomys.xyz/api",
+          "kind": "blockscout"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "autonomys"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "AI3",
+      "docsUrl": "https://docs.autonomys.xyz",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xb6dfbb865903aa8d41db9449156cb837df134bd6eceda73ccd242891f13a206d",
           "height": 0
         },
         "blockFeatures": [
