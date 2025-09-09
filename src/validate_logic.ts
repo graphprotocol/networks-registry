@@ -18,6 +18,7 @@ const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
   "ozean-poseidon",
   "injective-evm-testnet",
   "autonomys",
+  "autonomys-chronos"
 ];
 
 function validateFilenames(networksPath: string) {
