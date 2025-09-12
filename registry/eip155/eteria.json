@@ -10,14 +10,8 @@
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],
-    "firehose": [
-      "arbone.firehose.pinax.network:443",
-      "arb-one.streamingfast.io:443"
-    ],
-    "substreams": [
-      "arbone.substreams.pinax.network:443",
-      "arb-one.streamingfast.io:443"
-    ],
+    "firehose": [],
+    "substreams": [],
     "tokenApi": ["https://token-api.thegraph.com"]
   },
   "nativeToken": "ERA",
