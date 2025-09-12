@@ -4,23 +4,9 @@
   "fullName": "Eteria Mainnet",
   "aliases": ["era", "eteria", "eteria-mainnet"],
   "caip2Id": "eip155:140",
+  "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
-  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://explorer.eteria.io"],
-  "rpcUrls": [
-    "https://arbitrum-one.publicnode.com",
-    "https://arb1.arbitrum.io/rpc",
-    "https://arb-mainnet.g.alchemy.com/v2/${ALCHEMY_API_KEY}",
-    "https://arbitrum-mainnet.infura.io/v3/${INFURA_API_KEY}",
-    "https://arbone.rpc.service.pinax.network"
-  ],
-  "apiUrls": [
-    {
-      "url": "https://arbitrum-one.abi.pinax.network/api",
-      "kind": "etherscan"
-    },
-    { "url": "https://arbitrum.blockscout.com/api", "kind": "blockscout" }
-  ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],
@@ -34,30 +20,6 @@
     ],
     "tokenApi": ["https://token-api.thegraph.com"]
   },
-  "networkType": "mainnet",
-  "issuanceRewards": true,
-  "nativeToken": "ETH",
-  "docsUrl": "https://docs.arbitrum.io",
-  "indexerDocsUrls": [
-    {
-      "url": "https://docs.infradao.com/archive-nodes-101/arbitrum",
-      "description": "Archive Nodes 101"
-    }
-  ],
-  "firehose": {
-    "blockType": "sf.ethereum.type.v2.Block",
-    "evmExtendedModel": true,
-    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-    "bytesEncoding": "hex",
-    "firstStreamableBlock": {
-      "id": "0x7ee576b35482195fc49205cec9af72ce14f003b9ae69f6ba0faef4514be8b442",
-      "height": 0
-    },
-    "blockFeatures": ["hybrid", "extended@22207818"]
-  },
-  "tokenApi": {
-    "features": ["tokens", "dexes", "nfts"],
-    "networkId": "arbitrum-one"
-  },
+  "nativeToken": "ERA",
   "icon": { "web3Icons": { "name": "arbitrum-one" } }
 }
