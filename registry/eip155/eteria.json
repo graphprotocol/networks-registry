@@ -1,0 +1,19 @@
+{
+  "id": "eteria",
+  "shortName": "Eteria",
+  "fullName": "Eteria Mainnet",
+  "aliases": ["era", "eteria", "eteria-mainnet"],
+  "caip2Id": "eip155:140",
+  "networkType": "mainnet",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.eteria.io"],
+  "services": {
+    "subgraphs": ["https://deploy.deun.io"],
+    "sps": [],
+    "firehose": [],
+    "substreams": [],
+    "tokenApi": ["https://token-api.thegraph.com"]
+  },
+  "nativeToken": "ERA",
+  "icon": { "web3Icons": { "name": "eteria" } }
+}
