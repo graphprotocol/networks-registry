@@ -21,5 +21,5 @@
     "tokenApi": ["https://token-api.thegraph.com"]
   },
   "nativeToken": "ERA",
-  "icon": { "web3Icons": { "name": "arbitrum-one" } }
+  "icon": { "web3Icons": { "name": "eteria" } }
 }
