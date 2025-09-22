@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.30",
+  "version": "0.7.32",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-09-09T17:38:03.182Z",
+  "updatedAt": "2025-09-22T22:05:25.227Z",
   "networks": [
     {
       "id": "mainnet",
@@ -50,11 +50,13 @@
         "sps": [],
         "firehose": [
           "eth.firehose.pinax.network:443",
-          "mainnet.eth.streamingfast.io:443"
+          "mainnet.eth.streamingfast.io:443",
+          "eth.firehose.data.nexus:443"
         ],
         "substreams": [
           "eth.substreams.pinax.network:443",
-          "mainnet.eth.streamingfast.io:443"
+          "mainnet.eth.streamingfast.io:443",
+          "eth.substreams.data.nexus:443"
         ],
         "tokenApi": [
           "https://token-api.thegraph.com"
@@ -7384,7 +7386,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.auto-evm.chronos.autonomys.xyz/"
+        "https://explorer.auto-evm.chronos.autonomys.xyz"
       ],
       "rpcUrls": [
         "https://auto-evm.chronos.autonomys.xyz/ws"
