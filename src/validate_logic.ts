@@ -18,7 +18,7 @@ const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
   "ozean-poseidon",
   "injective-evm-testnet",
   "autonomys",
-  "autonomys-chronos"
+  "autonomys-chronos",
 ];
 
 function validateFilenames(networksPath: string) {
@@ -221,8 +221,16 @@ function validateBeacons(networks: Network[]) {
   process.stdout.write("done\n");
 }
 
-const ALLOWED_FH_PROVIDERS = ["pinax.network", "streamingfast.io"];
-const ALLOWED_SG_PROVIDERS = ["api.studio.thegraph.com", "streamingfast.io"];
+const ALLOWED_FH_PROVIDERS = [
+  "pinax.network",
+  "streamingfast.io",
+  "data.nexus",
+];
+const ALLOWED_SG_PROVIDERS = [
+  "api.studio.thegraph.com",
+  "streamingfast.io",
+  "data.nexus",
+];
 const ALLOWED_TOKEN_API_PROVIDERS = ["token-api.thegraph.com"];
 
 function validateServices(networks: Network[]) {

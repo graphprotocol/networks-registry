@@ -26,11 +26,13 @@
     "sps": [],
     "firehose": [
       "eth.firehose.pinax.network:443",
-      "mainnet.eth.streamingfast.io:443"
+      "mainnet.eth.streamingfast.io:443",
+      "eth.firehose.data.nexus:443"
     ],
     "substreams": [
       "eth.substreams.pinax.network:443",
-      "mainnet.eth.streamingfast.io:443"
+      "mainnet.eth.streamingfast.io:443",
+      "eth.substreams.data.nexus:443"
     ],
     "tokenApi": ["https://token-api.thegraph.com"]
   },
