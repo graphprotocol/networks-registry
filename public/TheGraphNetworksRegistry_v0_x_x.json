@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.32",
+  "version": "0.7.33",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-09-22T22:05:25.227Z",
+  "updatedAt": "2025-09-26T23:52:03.781Z",
   "networks": [
     {
       "id": "mainnet",
@@ -6359,10 +6359,6 @@
         {
           "url": "https://explorer.xai-chain.net/api",
           "kind": "blockscout"
-        },
-        {
-          "url": "https://xai.abi.pinax.network/api",
-          "kind": "etherscan"
         }
       ],
       "services": {
@@ -7935,11 +7931,12 @@
     },
     {
       "id": "kylin",
-      "shortName": "EOS",
+      "shortName": "Vaulta",
       "secondName": "Kylin",
-      "fullName": "EOS Kylin Testnet",
+      "fullName": "Vaulta Kylin Testnet",
       "aliases": [
-        "eos-kylin"
+        "eos-kylin",
+        "vaulta-kylin"
       ],
       "caip2Id": "antelope:5fff1dae8dc8e2fc4d5b23b2c7665c97",
       "explorerUrls": [
@@ -7984,9 +7981,9 @@
     },
     {
       "id": "jungle4",
-      "shortName": "EOS",
+      "shortName": "Vaulta",
       "secondName": "Jungle4",
-      "fullName": "EOS Jungle4 Testnet",
+      "fullName": "Vaulta Jungle4 Testnet",
       "aliases": [
         "jungle"
       ],
@@ -8075,8 +8072,8 @@
     },
     {
       "id": "eos",
-      "shortName": "EOS",
-      "fullName": "EOS Mainnet",
+      "shortName": "Vaulta",
+      "fullName": "Vaulta Mainnet",
       "aliases": [
         "eos-mainnet",
         "vaulta"
