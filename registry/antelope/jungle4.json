@@ -1,8 +1,8 @@
 {
   "id": "jungle4",
-  "shortName": "EOS",
+  "shortName": "Vaulta",
   "secondName": "Jungle4",
-  "fullName": "EOS Jungle4 Testnet",
+  "fullName": "Vaulta Jungle4 Testnet",
   "aliases": ["jungle"],
   "caip2Id": "antelope:73e4385a2708e6d7048834fbc1079f2f",
   "explorerUrls": ["https://eosauthority.com/?network=jungle"],

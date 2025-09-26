@@ -1,7 +1,7 @@
 {
   "id": "eos",
-  "shortName": "EOS",
-  "fullName": "EOS Mainnet",
+  "shortName": "Vaulta",
+  "fullName": "Vaulta Mainnet",
   "aliases": ["eos-mainnet", "vaulta"],
   "caip2Id": "antelope:aca376f206b8fc25a6ed44dbdc66547c",
   "explorerUrls": ["https://eosauthority.com/?network=eos"],
