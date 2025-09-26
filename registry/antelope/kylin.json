@@ -1,9 +1,9 @@
 {
   "id": "kylin",
-  "shortName": "EOS",
+  "shortName": "Vaulta",
   "secondName": "Kylin",
-  "fullName": "EOS Kylin Testnet",
-  "aliases": ["eos-kylin"],
+  "fullName": "Vaulta Kylin Testnet",
+  "aliases": ["eos-kylin", "vaulta-kylin"],
   "caip2Id": "antelope:5fff1dae8dc8e2fc4d5b23b2c7665c97",
   "explorerUrls": ["https://eosauthority.com/?network=kylin"],
   "rpcUrls": ["https://kylin.api.eosnation.io"],
