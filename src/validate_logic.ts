@@ -19,6 +19,7 @@ const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
   "injective-evm-testnet",
   "autonomys",
   "autonomys-chronos",
+  "sonic-testnet",
 ];
 
 function validateFilenames(networksPath: string) {
