@@ -1,0 +1,31 @@
+{
+  "id": "sonic-testnet",
+  "shortName": "Sonic",
+  "fullName": "Sonic Testnet",
+  "aliases": [ "evm-14601"],
+  "caip2Id": "eip155:14601",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://testnet.sonicscan.org/"],
+  "rpcUrls": ["https://rpc.testnet.soniclabs.com/"],
+  "apiUrls": [
+    { "url": "https://sonic-testnet.abi.pinax.network/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "sonic" }],
+  "issuanceRewards": false,
+  "nativeToken": "S",
+  "docsUrl": "https://docs.soniclabs.com",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xd9d01e30e455175794714d8a4a2aa3e281ec893c36e25b1c6c01947394317b50",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "sonic" } }
+}
