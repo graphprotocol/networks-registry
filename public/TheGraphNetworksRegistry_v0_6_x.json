@@ -2027,7 +2027,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.etherscan.io/v2/api?chainid=14601",
+          "url": "https://sonic-testnet.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -2054,7 +2054,7 @@
       },
       "icon": {
         "web3Icons": {
-          "name": "status"
+          "name": "sonic"
         }
       },
       "genesis": {
