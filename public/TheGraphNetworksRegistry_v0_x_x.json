@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.33",
+  "version": "0.7.34",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-09-26T23:52:03.781Z",
+  "updatedAt": "2025-09-30T14:02:50.406Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2142,6 +2142,63 @@
       }
     },
     {
+      "id": "sonic-testnet",
+      "shortName": "Sonic",
+      "fullName": "Sonic Testnet",
+      "aliases": [
+        "evm-14601"
+      ],
+      "caip2Id": "eip155:14601",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://testnet.sonicscan.org/"
+      ],
+      "rpcUrls": [
+        "https://rpc.testnet.soniclabs.com/"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://sonic-testnet.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "sonic"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "S",
+      "docsUrl": "https://docs.soniclabs.com",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xd9d01e30e455175794714d8a4a2aa3e281ec893c36e25b1c6c01947394317b50",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "sonic"
+        }
+      }
+    },
+    {
       "id": "vana",
       "shortName": "Vana",
       "fullName": "Vana Mainnet",
@@ -4203,62 +4260,6 @@
       "icon": {
         "web3Icons": {
           "name": "rootstock"
-        }
-      }
-    },
-    {
-      "id": "ozean-poseidon",
-      "shortName": "Ozean",
-      "fullName": "Ozean Poseidon Testnet",
-      "aliases": [
-        "evm-31911"
-      ],
-      "caip2Id": "eip155:31911",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://poseidon-testnet.explorer.caldera.xyz"
-      ],
-      "rpcUrls": [
-        "https://poseidon-testnet.rpc.caldera.xyz/http"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://poseidon-testnet.explorer.caldera.xyz/api",
-          "kind": "etherscan"
-        }
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
-      },
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "sepolia"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0x7ee9e9a8b75fa5f73e276e4b7f9eee22ceac26ec7516141a4ee737be1881102c",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "ozean"
         }
       }
     },

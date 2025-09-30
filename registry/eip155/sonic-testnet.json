@@ -2,13 +2,16 @@
   "id": "sonic-testnet",
   "shortName": "Sonic",
   "fullName": "Sonic Testnet",
-  "aliases": [ "evm-14601"],
+  "aliases": ["evm-14601"],
   "caip2Id": "eip155:14601",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://testnet.sonicscan.org/"],
-  "rpcUrls": ["https://rpc.testnet.soniclabs.com/"],
+  "explorerUrls": ["https://testnet.sonicscan.org"],
+  "rpcUrls": ["https://rpc.testnet.soniclabs.com"],
   "apiUrls": [
-    { "url": "https://sonic-testnet.abi.pinax.network/api", "kind": "etherscan" }
+    {
+      "url": "https://sonic-testnet.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
