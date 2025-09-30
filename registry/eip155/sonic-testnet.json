@@ -8,7 +8,7 @@
   "explorerUrls": ["https://testnet.sonicscan.org/"],
   "rpcUrls": ["https://rpc.testnet.soniclabs.com/"],
   "apiUrls": [
-    { "url": "https://api.etherscan.io/v2/api?chainid=14601", "kind": "etherscan" }
+    { "url": "https://sonic-testnet.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
@@ -27,5 +27,5 @@
     },
     "blockFeatures": ["base"]
   },
-  "icon": { "web3Icons": { "name": "status" } }
+  "icon": { "web3Icons": { "name": "sonic" } }
 }
