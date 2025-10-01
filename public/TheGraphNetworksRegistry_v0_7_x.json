@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.34",
+  "version": "0.7.35",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-09-30T14:02:50.406Z",
+  "updatedAt": "2025-10-01T18:52:19.430Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1564,9 +1564,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -1615,9 +1613,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -2153,10 +2149,10 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://testnet.sonicscan.org/"
+        "https://testnet.sonicscan.org"
       ],
       "rpcUrls": [
-        "https://rpc.testnet.soniclabs.com/"
+        "https://rpc.testnet.soniclabs.com"
       ],
       "apiUrls": [
         {
@@ -2702,9 +2698,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "sps": [],
         "firehose": [
           "holesky.eth.streamingfast.io:443"
@@ -4653,9 +4647,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "sps": [],
         "firehose": [
           "mode.firehose.pinax.network:443"
@@ -5526,9 +5518,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "issuanceRewards": false,
       "nativeToken": "CELO",
@@ -7638,9 +7628,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
