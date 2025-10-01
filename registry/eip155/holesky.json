@@ -12,7 +12,10 @@
     "https://holesky.etherscan.io",
     "https://holesky.otterscan.io"
   ],
-  "rpcUrls": ["https://holesky.gateway.tenderly.co", "https://holesky.drpc.org"],
+  "rpcUrls": [
+    "https://holesky.gateway.tenderly.co",
+    "https://holesky.drpc.org"
+  ],
   "apiUrls": [
     { "url": "https://eth-holesky.blockscout.com/api", "kind": "blockscout" },
     { "url": "https://holesky.abi.pinax.network/api", "kind": "etherscan" }

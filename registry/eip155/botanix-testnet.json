@@ -6,7 +6,10 @@
   "caip2Id": "eip155:3636",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.botanixscan.io"],
-  "rpcUrls": ["https://node.botanixlabs.dev", "https://rpc.ankr.com/botanix_testnet"],
+  "rpcUrls": [
+    "https://node.botanixlabs.dev",
+    "https://rpc.ankr.com/botanix_testnet"
+  ],
   "apiUrls": [
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/3636/etherscan/api",

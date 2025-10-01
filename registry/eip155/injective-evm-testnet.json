@@ -6,7 +6,10 @@
   "caip2Id": "eip155:1439",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.blockscout.injective.network"],
-  "rpcUrls": ["https://k8s.testnet.json-rpc.injective.network", "https://injectiveevm-testnet-rpc.polkachu.com"],
+  "rpcUrls": [
+    "https://k8s.testnet.json-rpc.injective.network",
+    "https://injectiveevm-testnet-rpc.polkachu.com"
+  ],
   "apiUrls": [
     {
       "url": "https://testnet.blockscout-api.injective.network/api",

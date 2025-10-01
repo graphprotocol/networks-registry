@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.35",
+  "version": "0.7.36",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-01T18:52:19.430Z",
+  "updatedAt": "2025-10-01T19:10:15.297Z",
   "networks": [
     {
       "id": "mainnet",
@@ -567,7 +567,8 @@
         }
       ],
       "explorerUrls": [
-        "https://zkevm.polygonscan.com"
+        "https://zkevm.polygonscan.com",
+        "https://www.oklink.com/polygon-zkevm"
       ],
       "rpcUrls": [
         "https://zkevm-rpc.com",
@@ -2036,7 +2037,8 @@
         "https://testnet.blockscout.injective.network"
       ],
       "rpcUrls": [
-        "https://k8s.testnet.json-rpc.injective.network"
+        "https://k8s.testnet.json-rpc.injective.network",
+        "https://injectiveevm-testnet-rpc.polkachu.com"
       ],
       "apiUrls": [
         {
@@ -2685,7 +2687,8 @@
         "https://holesky.otterscan.io"
       ],
       "rpcUrls": [
-        "https://ethereum-holesky-rpc.publicnode.com"
+        "https://holesky.gateway.tenderly.co",
+        "https://holesky.drpc.org"
       ],
       "apiUrls": [
         {
@@ -4708,7 +4711,8 @@
         "https://testnet.botanixscan.io"
       ],
       "rpcUrls": [
-        "https://node.botanixlabs.dev"
+        "https://node.botanixlabs.dev",
+        "https://rpc.ankr.com/botanix_testnet"
       ],
       "apiUrls": [
         {
@@ -5509,10 +5513,6 @@
       ],
       "apiUrls": [
         {
-          "url": "https://celo-alfajores.abi.pinax.network/api",
-          "kind": "etherscan"
-        },
-        {
           "url": "https://celo-alfajores.blockscout.com/api",
           "kind": "blockscout"
         }
@@ -6149,8 +6149,7 @@
         "https://sepolia.lineascan.build"
       ],
       "rpcUrls": [
-        "https://rpc.sepolia.linea.build",
-        "https://lineasepolia.rpc.service.pinax.network"
+        "https://rpc.sepolia.linea.build"
       ],
       "apiUrls": [
         {
