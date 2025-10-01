@@ -8,8 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.lineascan.build"],
   "rpcUrls": [
-    "https://rpc.sepolia.linea.build",
-    "https://lineasepolia.rpc.service.pinax.network"
+    "https://rpc.sepolia.linea.build"
   ],
   "apiUrls": [
     {

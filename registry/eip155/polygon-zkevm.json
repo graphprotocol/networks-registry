@@ -6,7 +6,7 @@
   "caip2Id": "eip155:1101",
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "explorerUrls": ["https://zkevm.polygonscan.com"],
+  "explorerUrls": ["https://zkevm.polygonscan.com", "https://www.oklink.com/polygon-zkevm"],
   "rpcUrls": [
     "https://zkevm-rpc.com",
     "https://polygonzk.rpc.service.pinax.network"
