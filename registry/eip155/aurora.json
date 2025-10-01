@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://explorer.mainnet.aurora.dev/api", "kind": "blockscout" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "ETH",
