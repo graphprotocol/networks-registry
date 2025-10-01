@@ -18,7 +18,7 @@
     { "url": "https://holesky.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "sps": [],
     "firehose": ["holesky.eth.streamingfast.io:443"],
     "substreams": ["holesky.eth.streamingfast.io:443"]
