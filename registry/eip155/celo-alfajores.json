@@ -11,10 +11,6 @@
   "explorerUrls": ["https://alfajores.celoscan.io"],
   "rpcUrls": ["https://alfajores-forno.celo-testnet.org"],
   "apiUrls": [
-    {
-      "url": "https://celo-alfajores.abi.pinax.network/api",
-      "kind": "etherscan"
-    },
     { "url": "https://celo-alfajores.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": [] },
