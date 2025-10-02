@@ -1,12 +1,20 @@
 {
   "id": "zksync-era",
-  "shortName": "zkSync",
-  "secondName": "Era",
-  "fullName": "zkSync Mainnet",
-  "aliases": ["evm-324", "zksync", "zksync-era-mainnet"],
+  "shortName": "ZKsync Era",
+  "secondName": "Mainnet",
+  "fullName": "ZKsync Era Mainnet",
+  "aliases": [
+    "evm-324",
+    "zksync",
+    "zksync-era-mainnet"
+  ],
   "caip2Id": "eip155:324",
-  "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explorer.zksync.io"],
+  "graphNode": {
+    "protocol": "ethereum"
+  },
+  "explorerUrls": [
+    "https://explorer.zksync.io"
+  ],
   "rpcUrls": [
     "https://mainnet.era.zksync.io",
     "https://zksyncera.rpc.service.pinax.network"
@@ -16,16 +24,33 @@
       "url": "https://block-explorer-api.mainnet.zksync.io/api",
       "kind": "etherscan"
     },
-    { "url": "https://zksync.blockscout.com/api", "kind": "blockscout" },
-    { "url": "https://zksync-era.abi.pinax.network/api", "kind": "etherscan" }
+    {
+      "url": "https://zksync.blockscout.com/api",
+      "kind": "blockscout"
+    },
+    {
+      "url": "https://zksync-era.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["zksyncera.firehose.pinax.network:443"],
-    "substreams": ["zksyncera.substreams.pinax.network:443"]
+    "subgraphs": [
+      "https://api.studio.thegraph.com/deploy"
+    ],
+    "firehose": [
+      "zksyncera.firehose.pinax.network:443"
+    ],
+    "substreams": [
+      "zksyncera.substreams.pinax.network:443"
+    ]
   },
   "networkType": "mainnet",
-  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
+  "relations": [
+    {
+      "kind": "l2Of",
+      "network": "mainnet"
+    }
+  ],
   "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.zksync.io",
@@ -44,7 +69,13 @@
       "id": "0xe8e77626586f73b955364c7b4bbf0bb7f7685ebd40e852b164633a4acbd3244c",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": [
+      "base"
+    ]
   },
-  "icon": { "web3Icons": { "name": "zksync" } }
+  "icon": {
+    "web3Icons": {
+      "name": "zksync"
+    }
+  }
 }

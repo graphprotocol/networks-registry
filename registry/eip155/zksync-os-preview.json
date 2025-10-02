@@ -1,14 +1,13 @@
 {
-  "id": "zksync-era-sepolia",
-  "shortName": "ZKsyncEra",
+  "id": "zksync-os-preview",
+  "shortName": "zksyncos",
   "secondName": "Sepolia",
-  "fullName": "ZKsync Era Sepolia Testnet",
+  "fullName": "ZKsync OS Developer Preview",
   "aliases": [
-    "evm-300",
-    "zksync-testnet",
-    "zksync-sepolia"
+    "evm-8022833",
+    "zksync-os-preview"
   ],
-  "caip2Id": "eip155:300",
+  "caip2Id": "eip155:8022833",
   "graphNode": {
     "protocol": "ethereum"
   },
@@ -20,15 +19,7 @@
   ],
   "apiUrls": [
     {
-      "url": "https://block-explorer-api.sepolia.zksync.dev/api",
-      "kind": "etherscan"
-    },
-    {
-      "url": "https://zksync-sepolia.blockscout.com/api",
-      "kind": "blockscout"
-    },
-    {
-      "url": "https://zksync-era-sepolia.abi.pinax.network/api",
+      "url": "https://block-explorer-api.zksync-os-testnet-alpha.zksync.dev/api",
       "kind": "etherscan"
     }
   ],
@@ -39,10 +30,6 @@
   },
   "networkType": "testnet",
   "relations": [
-    {
-      "kind": "testnetOf",
-      "network": "zksync-era"
-    },
     {
       "kind": "l2Of",
       "network": "sepolia"
