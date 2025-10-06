@@ -1,7 +1,6 @@
 {
-  "id": "zksync-os-preview",
+  "id": "zksync-os-testnet",
   "shortName": "zksync OS",
-  "secondName": "preview",
   "fullName": "ZKsync OS Developer Preview",
   "aliases": [
     "evm-8022833"

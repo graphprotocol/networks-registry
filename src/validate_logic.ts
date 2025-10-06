@@ -20,7 +20,7 @@ const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
   "autonomys",
   "autonomys-chronos",
   "sonic-testnet",
-  "zksync-os-preview",
+  "zksync-os-testnet",
 ];
 
 function validateFilenames(networksPath: string) {
