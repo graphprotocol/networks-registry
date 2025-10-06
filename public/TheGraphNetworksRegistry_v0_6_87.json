@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_6.json",
-  "version": "0.6.88",
+  "version": "0.6.87",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated. To add a chain, open a pull request: https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-06T15:42:56.808Z",
+  "updatedAt": "2025-10-06T14:53:13.458Z",
   "networks": [
     {
       "id": "mainnet",
@@ -6559,7 +6559,7 @@
       }
     },
     {
-      "id": "zksync-os-devnet",
+      "id": "zksync-os-testnet",
       "shortName": "zksync OS",
       "fullName": "ZKsync OS Developer Preview",
       "aliases": [
