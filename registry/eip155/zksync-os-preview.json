@@ -1,0 +1,58 @@
+{
+  "id": "zksync-os-preview",
+  "shortName": "zksync OS",
+  "secondName": "preview",
+  "fullName": "ZKsync OS Developer Preview",
+  "aliases": [
+    "evm-8022833"
+  ],
+  "caip2Id": "eip155:8022833",
+  "graphNode": {
+    "protocol": "ethereum"
+  },
+  "explorerUrls": [
+    "https://zksync-os-testnet-alpha.staging-scan-v2.zksync.dev"
+  ],
+  "rpcUrls": [
+    "https://zksync-os-testnet-alpha.zksync.dev"
+  ],
+  "apiUrls": [
+    {
+      "url": "https://block-explorer-api.zksync-os-testnet-alpha.zksync.dev/api",
+      "kind": "etherscan"
+    }
+  ],
+  "services": {
+    "subgraphs": [
+      "https://api.studio.thegraph.com/deploy"
+    ]
+  },
+  "networkType": "testnet",
+  "relations": [
+    {
+      "kind": "l2Of",
+      "network": "sepolia"
+    }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.zksync.io",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xef97917ce9bd9fa7d12ad6a8d81ea26c80ac1d727acc37cbb9799ae199788dc5",
+      "height": 0
+    },
+    "blockFeatures": [
+      "base"
+    ]
+  },
+  "icon": {
+    "web3Icons": {
+      "name": "zksync"
+    }
+  }
+}
