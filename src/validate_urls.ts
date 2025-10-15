@@ -46,7 +46,7 @@ async function testURL({
   } catch (e) {
     // Only add warning/error after all retries have failed
     console.error(`  ${networkId} - exception at ${url}: ${e.message}`);
-    ERRORS.push(`\`${networkId}\` - unreachable URL: ${url}`);
+    WARNINGS.push(`\`${networkId}\` - unreachable URL: ${url}`);
     return false;
   }
   return true;
@@ -205,7 +205,11 @@ async function validatePublicRpcs(networks: Network[]) {
       .map((u, i) => ({ url: u.url, valid: results[i] }))
       .filter(({ url }) => network.rpcUrls?.includes(url));
     if (networkUrls.length > 0 && !networkUrls.some(({ valid }) => valid)) {
-      ERRORS.push(`\`${network.id}\` - no working public RPC endpoints`);
+      if (network.networkType === "testnet") {
+        WARNINGS.push(`\`${network.id}\` - no working public RPC endpoints [testnet]`);
+      } else {
+        ERRORS.push(`\`${network.id}\` - no working public RPC endpoints [mainnet]`);
+      }
     }
   }
 
