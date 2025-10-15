@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.37",
+  "version": "0.7.38",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-06T16:21:29.079Z",
+  "updatedAt": "2025-10-15T21:07:11.453Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1412,6 +1412,9 @@
         "substreams": [
           "unichain.substreams.pinax.network:443",
           "mainnet.unichain.streamingfast.io:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -1454,6 +1457,14 @@
         "blockFeatures": [
           "extended"
         ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes",
+          "nfts"
+        ],
+        "networkId": "unichain"
       },
       "icon": {
         "web3Icons": {

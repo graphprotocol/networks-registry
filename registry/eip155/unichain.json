@@ -42,6 +42,9 @@
     },
     "blockFeatures": ["extended"]
   },
-  "tokenApi": { "features": ["tokens", "dexes", "nfts"], "networkId": "unichain" },
+  "tokenApi": {
+    "features": ["tokens", "dexes", "nfts"],
+    "networkId": "unichain"
+  },
   "icon": { "web3Icons": { "name": "unichain" } }
 }
