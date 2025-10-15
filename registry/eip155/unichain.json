@@ -14,7 +14,8 @@
     "substreams": [
       "unichain.substreams.pinax.network:443",
       "mainnet.unichain.streamingfast.io:443"
-    ]
+    ],
+    "tokenApi": ["https://token-api.thegraph.com"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
@@ -41,5 +42,6 @@
     },
     "blockFeatures": ["extended"]
   },
+  "tokenApi": { "features": ["tokens", "dexes", "nfts"], "networkId": "unichain" },
   "icon": { "web3Icons": { "name": "unichain" } }
 }
