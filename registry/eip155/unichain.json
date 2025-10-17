@@ -28,7 +28,7 @@
     "https://mainnet.unichain.org",
     "https://unichain.rpc.service.pinax.network"
   ],
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.unichain.org/docs",
   "firehose": {
