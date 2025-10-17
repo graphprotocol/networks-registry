@@ -1,0 +1,43 @@
+## Info from Injective: https://github.com/ethereum-lists/chains/pull/7565/files
+## Injective EVM Testnet file: https://github.com/joshkauffman/networks-registry/blob/main/registry/eip155/injective-evm-testnet.json
+
+{
+  "id": "injective-evm-mainnet",
+  "shortName": "Injective EVM",
+  "fullName": "Injective EVM Mainnet",
+  "aliases": ["evm-1776"],
+  "caip2Id": "eip155:1776",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://blockscout.injective.network"],
+  "rpcUrls": [
+    "https://sentry.evm-rpc.injective.network",
+    "wss://sentry.evm-ws.injective.network",
+    "https://injectiveevm-rpc.polkachu.com",
+    "wss://injectiveevm-ws.polkachu.com"
+  ],
+  "apiUrls": [
+    { "url": "https://blockscout-api.injective.network/api", "kind": "blockscout" }
+  ],
+  "services": {
+    "substreams": ["mainnet.injective-evm.streamingfast.io:443"],
+    "firehose": ["mainnet.injective-evm.streamingfast.io:443"]
+  },
+  "networkType": "testnet",
+  "issuanceRewards": false,
+  "nativeToken": "INJ",
+  "docsUrl": "https://docs.injective.network/developers-evm/network-information",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    
+## TODO Get proper info from Stephane here
+    "firstStreamableBlock": {
+      "id": "0x399400eb7ad682450ac74e94489bf992bb72868977cba866ece56e777d295ba8",
+      "height": 81314400
+    },
+    "blockFeatures": ["extended"]
+  },
+  "icon": { "web3Icons": { "name": "injective" } }
+}
