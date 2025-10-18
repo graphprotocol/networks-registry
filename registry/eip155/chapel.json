@@ -21,7 +21,7 @@
     "firehose": ["chapel.firehose.pinax.network:443"],
     "substreams": ["chapel.substreams.pinax.network:443"]
   },
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "tBNB",
   "docsUrl": "https://docs.bnbchain.org",
   "firehose": {

@@ -37,7 +37,7 @@
       "sepolia.eth.streamingfast.io:443"
     ]
   },
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "ETH",
   "docsUrl": "https://sepolia.dev",
   "firehose": {
