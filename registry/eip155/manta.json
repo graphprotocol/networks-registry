@@ -5,7 +5,10 @@
   "aliases": ["evm-169", "manta-mainnet"],
   "caip2Id": "eip155:169",
   "graphNode": { "protocol": "ethereum" },
-  "rpcUrls": ["https://pacific-rpc.manta.network/http", "https://manta-pacific.drpc.org"],
+  "rpcUrls": [
+    "https://pacific-rpc.manta.network/http",
+    "https://manta-pacific.drpc.org"
+  ],
   "explorerUrls": ["https://pacific-explorer.manta.network"],
   "apiUrls": [
     {

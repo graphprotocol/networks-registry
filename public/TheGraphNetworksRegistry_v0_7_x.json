@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.38",
+  "version": "0.7.39",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-15T21:07:11.453Z",
+  "updatedAt": "2025-10-18T17:09:57.449Z",
   "networks": [
     {
       "id": "mainnet",
@@ -807,7 +807,7 @@
           "sepolia.eth.streamingfast.io:443"
         ]
       },
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://sepolia.dev",
       "firehose": {
@@ -1442,7 +1442,7 @@
         "https://mainnet.unichain.org",
         "https://unichain.rpc.service.pinax.network"
       ],
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.unichain.org/docs",
       "firehose": {
@@ -2629,6 +2629,7 @@
         "protocol": "ethereum"
       },
       "rpcUrls": [
+        "https://pacific-rpc.manta.network/http",
         "https://manta-pacific.drpc.org"
       ],
       "explorerUrls": [
@@ -4033,8 +4034,7 @@
         "https://testnet.bobascan.com"
       ],
       "rpcUrls": [
-        "https://sepolia.boba.network",
-        "https://bobasepolia.rpc.service.pinax.network"
+        "https://sepolia.boba.network"
       ],
       "apiUrls": [
         {
@@ -4045,12 +4045,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "bobasepolia.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "bobasepolia.substreams.pinax.network:443"
         ]
       },
       "networkType": "testnet",
@@ -6056,7 +6050,7 @@
           "network": "bsc"
         }
       ],
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "BOBA",
       "docsUrl": "https://docs.boba.network",
       "indexerDocsUrls": [
@@ -7775,7 +7769,7 @@
           "chapel.substreams.pinax.network:443"
         ]
       },
-      "issuanceRewards": false,
+      "issuanceRewards": true,
       "nativeToken": "tBNB",
       "docsUrl": "https://docs.bnbchain.org",
       "firehose": {

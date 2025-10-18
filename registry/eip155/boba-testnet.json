@@ -7,18 +7,14 @@
   "caip2Id": "eip155:28882",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.bobascan.com"],
-  "rpcUrls": [
-    "https://sepolia.boba.network"
-  ],
+  "rpcUrls": ["https://sepolia.boba.network"],
   "apiUrls": [
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/28882/etherscan/api",
       "kind": "etherscan"
     }
   ],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },
