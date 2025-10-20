@@ -11,7 +11,7 @@ jobs:
     name: Upload to Cloudflare Pages
     runs-on: ubuntu-latest
     permissions:
-      contents: 'write'
+      contents: "write"
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -46,15 +46,6 @@ jobs:
 
       - name: Validate logic
         run: bun validate:networks
-
-      - name: Generate registry
-        run: bun generate:public
-
-      - name: Generate table
-        run: bun generate:table
-
-      - name: Format
-        run: bun format
 
       - name: Import bot's GPG key for signing commits
         id: import-gpg
@@ -94,6 +85,15 @@ jobs:
           GIT_AUTHOR_EMAIL: ${{ steps.import-gpg.outputs.email }}
           GIT_COMMITTER_NAME: ${{ steps.import-gpg.outputs.name }}
           GIT_COMMITTER_EMAIL: ${{ steps.import-gpg.outputs.email }}
+
+      - name: Generate registry
+        run: bun generate:public
+
+      - name: Generate table
+        run: bun generate:table
+
+      - name: Format
+        run: bun format
 
       - name: Get version
         id: get_version
