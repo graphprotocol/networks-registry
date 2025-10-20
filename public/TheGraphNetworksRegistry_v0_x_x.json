@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.39",
+  "version": "0.7.41",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-20T18:18:51.121Z",
+  "updatedAt": "2025-10-20T18:29:44.496Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3724,10 +3724,6 @@
         {
           "url": "https://cronos.org/explorer/api",
           "kind": "blockscout"
-        },
-        {
-          "url": "https://cronos.abi.pinax.network/api",
-          "kind": "etherscan"
         }
       ],
       "services": {
