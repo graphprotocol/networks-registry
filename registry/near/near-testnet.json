@@ -13,8 +13,8 @@
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],
-    "firehose": ["neartest.firehose.pinax.network:443"],
-    "substreams": ["neartest.substreams.pinax.network:443"]
+    "firehose": ["neartest.firehose.pinax.network:443","testnet.near.streamingfast.io:443"],
+    "substreams": ["neartest.substreams.pinax.network:443","testnet.near.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "NEAR",
