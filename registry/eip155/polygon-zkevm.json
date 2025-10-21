@@ -15,10 +15,6 @@
     "https://polygonzk.rpc.service.pinax.network"
   ],
   "apiUrls": [
-    {
-      "url": "https://polygon-zkevm.abi.pinax.network/api",
-      "kind": "etherscan"
-    }
   ],
   "networkType": "mainnet",
   "services": {
