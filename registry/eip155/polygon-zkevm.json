@@ -14,8 +14,7 @@
     "https://zkevm-rpc.com",
     "https://polygonzk.rpc.service.pinax.network"
   ],
-  "apiUrls": [
-  ],
+  "apiUrls": [],
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

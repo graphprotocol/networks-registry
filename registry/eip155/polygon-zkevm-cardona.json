@@ -12,8 +12,7 @@
   ],
   "explorerUrls": ["https://cardona-zkevm.polygonscan.com"],
   "rpcUrls": ["https://rpc.cardona.zkevm-rpc.com"],
-  "apiUrls": [
-  ],
+  "apiUrls": [],
   "networkType": "testnet",
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,

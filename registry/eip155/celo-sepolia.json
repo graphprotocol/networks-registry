@@ -18,7 +18,10 @@
     "https://rpc.ankr.com/celo_sepolia"
   ],
   "apiUrls": [
-    { "url": "https://celo-sepolia.abi.pinax.network/api", "kind": "etherscan" },
+    {
+      "url": "https://celo-sepolia.abi.pinax.network/api",
+      "kind": "etherscan"
+    },
     { "url": "https://celo-sepolia.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },

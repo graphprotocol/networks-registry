@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.41",
+  "version": "0.7.42",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-20T18:29:44.496Z",
+  "updatedAt": "2025-10-21T15:19:16.879Z",
   "networks": [
     {
       "id": "mainnet",
@@ -574,12 +574,7 @@
         "https://zkevm-rpc.com",
         "https://polygonzk.rpc.service.pinax.network"
       ],
-      "apiUrls": [
-        {
-          "url": "https://polygon-zkevm.abi.pinax.network/api",
-          "kind": "etherscan"
-        }
-      ],
+      "apiUrls": [],
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
@@ -719,6 +714,10 @@
         "https://rpc.ankr.com/celo_sepolia"
       ],
       "apiUrls": [
+        {
+          "url": "https://celo-sepolia.abi.pinax.network/api",
+          "kind": "etherscan"
+        },
         {
           "url": "https://celo-sepolia.blockscout.com/api",
           "kind": "blockscout"
@@ -3667,12 +3666,7 @@
       "rpcUrls": [
         "https://rpc.cardona.zkevm-rpc.com"
       ],
-      "apiUrls": [
-        {
-          "url": "https://polygon-zkevm-cardona.abi.pinax.network/api",
-          "kind": "etherscan"
-        }
-      ],
+      "apiUrls": [],
       "networkType": "testnet",
       "services": {
         "subgraphs": [
