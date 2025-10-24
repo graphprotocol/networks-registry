@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.42",
+  "version": "0.7.43",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-21T15:19:16.879Z",
+  "updatedAt": "2025-10-24T20:10:37.956Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3554,7 +3554,7 @@
       ],
       "rpcUrls": [
         "https://rpc.ankr.com/kava_evm",
-        "https://kava.rpc.service.pinax.network"
+        "https://evm.kava-rpc.com"
       ],
       "networkType": "mainnet",
       "services": {},
@@ -5240,6 +5240,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "etherlink.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "etherlink.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -6144,7 +6150,8 @@
         "https://sepolia.lineascan.build"
       ],
       "rpcUrls": [
-        "https://rpc.sepolia.linea.build"
+        "https://rpc.sepolia.linea.build",
+        "https://lineasepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6468,10 +6475,12 @@
         "subgraphs": [],
         "sps": [],
         "firehose": [
-          "mainnet-evm.tron.streamingfast.io:443"
+          "mainnet-evm.tron.streamingfast.io:443",
+          "tronevm.firehose.pinax.network:443"
         ],
         "substreams": [
-          "mainnet-evm.tron.streamingfast.io:443"
+          "mainnet-evm.tron.streamingfast.io:443",
+          "tronevm.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -9326,10 +9335,12 @@
         "subgraphs": [],
         "sps": [],
         "firehose": [
-          "mainnet.tron.streamingfast.io:443"
+          "mainnet.tron.streamingfast.io:443",
+          "tron.firehose.pinax.network:443"
         ],
         "substreams": [
-          "mainnet.tron.streamingfast.io:443"
+          "mainnet.tron.streamingfast.io:443",
+          "tron.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,

@@ -6,10 +6,7 @@
   "caip2Id": "eip155:2222",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://kavascan.io"],
-  "rpcUrls": [
-    "https://rpc.ankr.com/kava_evm",
-    "https://evm.kava-rpc.com"
-  ],
+  "rpcUrls": ["https://rpc.ankr.com/kava_evm", "https://evm.kava-rpc.com"],
   "networkType": "mainnet",
   "services": {},
   "issuanceRewards": false,
