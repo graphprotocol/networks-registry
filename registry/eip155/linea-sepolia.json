@@ -7,7 +7,7 @@
   "caip2Id": "eip155:59141",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.lineascan.build"],
-  "rpcUrls": ["https://rpc.sepolia.linea.build"],
+  "rpcUrls": ["https://rpc.sepolia.linea.build", "https://lineasepolia.rpc.service.pinax.network"],
   "apiUrls": [
     {
       "url": "https://linea-sepolia.abi.pinax.network/api",
