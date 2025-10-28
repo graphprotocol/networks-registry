@@ -6,6 +6,7 @@ This repository manages a registry of networks in The Graph ecosystem.
 
 See [Releases](https://github.com/graphprotocol/networks-registry/releases) page for the latest version of the registry.
 See [Networks Table](./docs/networks-table.md) for an up-to-date auto-generated networks list.
+See [Subgraphs Arbitration Policy](./docs/subgraphs-arbitration-policy.md) for information about network arbitration support.
 
 [Libraries](https://github.com/pinax-network/graph-networks-libs) for Typescript, Go and Rust.
 
