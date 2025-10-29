@@ -14,7 +14,7 @@
   "networkType": "testnet",
   "issuanceRewards": false,
   "nativeToken": "USDC",
-  "docsUrl": "https://docs.arc.network/",
+  "docsUrl": "https://docs.arc.network",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,

@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.43",
+  "version": "0.7.44",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-24T20:10:37.956Z",
+  "updatedAt": "2025-10-29T19:25:38.353Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1079,6 +1079,63 @@
       "icon": {
         "web3Icons": {
           "name": "neo-x"
+        }
+      }
+    },
+    {
+      "id": "etherlink-shadownet",
+      "shortName": "Etherlink",
+      "fullName": "Etherlink Shadownet Testnet",
+      "aliases": [
+        "evm-127823"
+      ],
+      "caip2Id": "eip155:127823",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://shadownet.explorer.etherlink.com"
+      ],
+      "rpcUrls": [
+        "https://node.shadownet.etherlink.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://shadownet.explorer.etherlink.com/api",
+          "kind": "blockscout"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "etherlink-mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "XTZ",
+      "docsUrl": "https://docs.etherlink.com",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x65709dcc615e0b4de1a0534d3975974b0db7f66c77e20db7ecdaf537ac8c5f3c",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "etherlink"
         }
       }
     },
@@ -5713,6 +5770,52 @@
       }
     },
     {
+      "id": "arc-testnet",
+      "shortName": "Arc",
+      "fullName": "Arc Testnet",
+      "aliases": [
+        "evm-5042002"
+      ],
+      "caip2Id": "eip155:5042002",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://testnet.arcscan.app"
+      ],
+      "rpcUrls": [
+        "https://rpc.testnet.arc.network"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://testnet.arcscan.app/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "issuanceRewards": false,
+      "nativeToken": "USDC",
+      "docsUrl": "https://docs.arc.network/",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xe20e653af4441e8c6088e172b129d56420139824400477287b46e7101ae2bb1f",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      }
+    },
+    {
       "id": "scroll-sepolia",
       "shortName": "Scroll",
       "secondName": "Sepolia",
@@ -6958,63 +7061,6 @@
       "icon": {
         "web3Icons": {
           "name": "berachain"
-        }
-      }
-    },
-    {
-      "id": "zksync-os-devnet",
-      "shortName": "zksync OS",
-      "fullName": "ZKsync OS Developer Preview",
-      "aliases": [
-        "evm-8022833"
-      ],
-      "caip2Id": "eip155:8022833",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://zksync-os-testnet-alpha.staging-scan-v2.zksync.dev"
-      ],
-      "rpcUrls": [
-        "https://zksync-os-testnet-alpha.zksync.dev"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://block-explorer-api.zksync-os-testnet-alpha.zksync.dev/api",
-          "kind": "etherscan"
-        }
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
-      },
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "sepolia"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "docsUrl": "https://docs.zksync.io",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xef97917ce9bd9fa7d12ad6a8d81ea26c80ac1d727acc37cbb9799ae199788dc5",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "zksync"
         }
       }
     },
