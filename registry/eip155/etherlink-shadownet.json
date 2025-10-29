@@ -1,0 +1,34 @@
+{
+  "id": "etherlink-shadownet",
+  "shortName": "Etherlink",
+  "fullName": "Etherlink Shadownet Testnet",
+  "aliases": ["evm-127823"],
+  "caip2Id": "eip155:127823",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://shadownet.explorer.etherlink.com"],
+  "rpcUrls": ["https://node.shadownet.etherlink.com"],
+  "apiUrls": [
+    {
+      "url": "https://shadownet.explorer.etherlink.com/api",
+      "kind": "blockscout"
+    }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "etherlink-mainnet" }],
+  "issuanceRewards": false,
+  "nativeToken": "XTZ",
+  "docsUrl": "https://docs.etherlink.com",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x65709dcc615e0b4de1a0534d3975974b0db7f66c77e20db7ecdaf537ac8c5f3c",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "etherlink" } }
+}
