@@ -1,0 +1,29 @@
+{
+  "id": "arc-testnet",
+  "shortName": "arc",
+  "fullName": "Arc Testnet",
+  "aliases": ["evm-5042002"],
+  "caip2Id": "eip155:5042002",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://testnet.arcscan.app"],
+  "rpcUrls": ["https://rpc.testnet.arc.network"],
+  "apiUrls": [
+    { "url": "https://testnet.arcscan.app/api", "kind": "etherscan" }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "issuanceRewards": false,
+  "nativeToken": "USDC",
+  "docsUrl": "https://docs.arc.network/",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xe20e653af4441e8c6088e172b129d56420139824400477287b46e7101ae2bb1f",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  }
+}
