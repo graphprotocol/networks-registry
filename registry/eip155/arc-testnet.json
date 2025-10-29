@@ -1,6 +1,6 @@
 {
   "id": "arc-testnet",
-  "shortName": "arc",
+  "shortName": "Arc",
   "fullName": "Arc Testnet",
   "aliases": ["evm-5042002"],
   "caip2Id": "eip155:5042002",
