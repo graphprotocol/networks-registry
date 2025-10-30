@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.44",
+  "version": "0.7.45",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-10-29T19:25:38.353Z",
+  "updatedAt": "2025-10-30T00:49:21.943Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5800,7 +5800,7 @@
       "networkType": "testnet",
       "issuanceRewards": false,
       "nativeToken": "USDC",
-      "docsUrl": "https://docs.arc.network/",
+      "docsUrl": "https://docs.arc.network",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
@@ -5813,6 +5813,11 @@
         "blockFeatures": [
           "base"
         ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "arc"
+        }
       }
     },
     {
