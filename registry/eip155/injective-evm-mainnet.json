@@ -1,6 +1,3 @@
-## Info from Injective: https://github.com/ethereum-lists/chains/pull/7565/files
-## Injective EVM Testnet file: https://github.com/joshkauffman/networks-registry/blob/main/registry/eip155/injective-evm-testnet.json
-
 {
   "id": "injective-evm-mainnet",
   "shortName": "Injective EVM",
@@ -32,10 +29,9 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     
-## TODO Get proper info from Stephane here
     "firstStreamableBlock": {
-      "id": "0x399400eb7ad682450ac74e94489bf992bb72868977cba866ece56e777d295ba8",
-      "height": 81314400
+      "id": "0xa217fa3285f9af1e8a27b79d5c276241ad46ec88eb57fd6cb0137b25d90ff8cf",
+      "height": 138091500
     },
     "blockFeatures": ["extended"]
   },
