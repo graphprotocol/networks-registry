@@ -47,6 +47,13 @@ Per [GGP-0062](https://snapshot.org/#/s:council.graphprotocol.eth/proposal/0x4ef
 - **The Graph Council** can determine which new graph-node features or data source types are eligible for indexing rewards and arbitration
 - These decisions are documented in the [Feature Support Matrix](https://github.com/graphprotocol/indexer/blob/main/docs/feature-support-matrix.md)
 
+### Updating Indexing Rewards in the Registry
+When adding/removing indexing rewards to networks, the following steps must be taken:
+1. PR with the updated `issuanceRewards` field is opened by the maintainers or the Foundation
+2. PR is reviewed by the maintainers
+3. Transaction enabling/disabling rewards is executed on chain
+4. PR is merged by the maintainers or the Foundation, and the registry is published
+
 ## Relationship with Feature Support Matrix
 
 Historically, both network support and indexing rewards were documented in the [Feature Support Matrix](https://github.com/graphprotocol/indexer/blob/main/docs/feature-support-matrix.md) in the indexer repository. This created duplication with the Networks Registry.
