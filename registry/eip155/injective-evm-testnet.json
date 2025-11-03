@@ -22,6 +22,7 @@
     "firehose": ["testnet.injective-evm.streamingfast.io:443"]
   },
   "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "injective-evm" }],
   "issuanceRewards": false,
   "nativeToken": "INJ",
   "docsUrl": "https://docs.injective.network/developers-evm/network-information",

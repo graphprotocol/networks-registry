@@ -16,7 +16,6 @@ const ALLOWED_DUPLICATES: string[] = [
 
 const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
   "ozean-poseidon",
-  "injective-evm-testnet",
   "autonomys",
   "autonomys-chronos",
   "sonic-testnet",

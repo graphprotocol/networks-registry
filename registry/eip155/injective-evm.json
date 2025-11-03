@@ -1,0 +1,37 @@
+{
+  "id": "injective-evm",
+  "shortName": "Injective EVM",
+  "fullName": "Injective EVM Mainnet",
+  "aliases": ["evm-1776", "injective-evm-mainnet"],
+  "caip2Id": "eip155:1776",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://blockscout.injective.network"],
+  "rpcUrls": [
+    "https://sentry.evm-rpc.injective.network",
+    "https://injectiveevm-rpc.polkachu.com"
+  ],
+  "apiUrls": [
+    { "url": "https://blockscout-api.injective.network/api", "kind": "blockscout" }
+  ],
+  "services": {
+    "substreams": ["mainnet.injective-evm.streamingfast.io:443"],
+    "firehose": ["mainnet.injective-evm.streamingfast.io:443"]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "INJ",
+  "docsUrl": "https://docs.injective.network/developers-evm/network-information",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+
+    "firstStreamableBlock": {
+      "id": "0xa217fa3285f9af1e8a27b79d5c276241ad46ec88eb57fd6cb0137b25d90ff8cf",
+      "height": 138091500
+    },
+    "blockFeatures": ["extended"]
+  },
+  "icon": { "web3Icons": { "name": "injective" } }
+}
