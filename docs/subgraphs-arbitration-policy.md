@@ -32,18 +32,8 @@ To verify if a network supports arbitration:
 
 ## Examples
 
-### Networks with Arbitration Support
-
 - **Ethereum** (`issuanceRewards: true`) → ✅ Full arbitration support
-- **Arbitrum One** (`issuanceRewards: true`) → ✅ Full arbitration support
-- **Polygon** (`issuanceRewards: true`) → ✅ Full arbitration support
-- **Gnosis** (`issuanceRewards: true`) → ✅ Full arbitration support
-
-### Networks without Arbitration Support
-
 - **Near** (`issuanceRewards: false`) → ❌ No arbitration support
-- **Solana** (`issuanceRewards: false`) → ❌ No arbitration support
-- **Bitcoin** (`issuanceRewards: false`) → ❌ No arbitration support
 
 ## Governance
 
