@@ -1,0 +1,25 @@
+{
+  "id": "polkadot-testnet",
+  "shortName": "Polkadot",
+  "fullName": "Polkadot Testnet",
+  "aliases": ["evm-420420417"],
+  "caip2Id": "eip155:420420417",
+  "graphNode": { "protocol": "ethereum" },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "testnet",
+  "issuanceRewards": false,
+  "nativeToken": "DOT",
+  "docsUrl": "https://docs.polkadot.com/",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xd6eec26135305a8ad257a20d003357284c8aa03d0bdb2b357ab0a22371e11ef2",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "polkadot" } }
+}

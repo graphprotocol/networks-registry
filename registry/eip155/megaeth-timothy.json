@@ -1,0 +1,32 @@
+{
+  "id": "megaeth-timothy",
+  "shortName": "MegaETH",
+  "fullName": "MegaETH Testnet V2",
+  "aliases": ["evm-6343"],
+  "caip2Id": "eip155:6343",
+  "networkType": "testnet",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://megaeth-testnet-v2.blockscout.com"],
+  "rpcUrls": ["https://timothy.megaeth.com/rpc"],
+  "apiUrls": [
+    {
+      "url": "https://megaeth-testnet-v2.blockscout.com/api",
+      "kind": "blockscout"
+    }
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x37521b7ab268caffc10a6e23bee0ace6e53f8227b7595fff117b00ac837f29a8",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "mega-eth" } }
+}
