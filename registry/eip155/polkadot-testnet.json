@@ -9,7 +9,7 @@
   "networkType": "testnet",
   "issuanceRewards": false,
   "nativeToken": "DOT",
-  "docsUrl": "https://docs.polkadot.com/",
+  "docsUrl": "https://docs.polkadot.com",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
