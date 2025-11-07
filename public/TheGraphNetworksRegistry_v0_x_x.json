@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.46",
+  "version": "0.7.47",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-11-03T17:04:42.943Z",
+  "updatedAt": "2025-11-07T15:02:47.757Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2890,6 +2890,9 @@
         }
       ],
       "services": {
+        "subgraphs": [
+          "https://streamingfast.io"
+        ],
         "substreams": [
           "mainnet.injective-evm.streamingfast.io:443"
         ],

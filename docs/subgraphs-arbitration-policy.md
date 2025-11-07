@@ -9,6 +9,7 @@ Arbitration is The Graph Network's dispute resolution system for subgraphs. It a
 This system ensures data integrity and indexer accountability on The Graph Network.
 
 For complete details, see:
+
 - [GIP-0008: Timeline for Sunsetting Hosted Service](https://snapshot.org/#/council.graphprotocol.eth/proposal/0xbdd884654a393620a7e8665b4289201b7542c3ee62becfad133e951b0c408444) - Introduced the Feature Support Matrix
 - [Arbitration Charter](https://github.com/graphprotocol/graph-improvement-proposals/blob/main/gips/0009-arbitration-charter.md) - Detailed arbitration rules and procedures
 
@@ -17,6 +18,7 @@ For complete details, see:
 Networks with indexing rewards (`issuanceRewards: true`) support both query and indexing arbitration on The Graph Network unless explicitly documented as exceptions in the [Feature Support Matrix](https://github.com/graphprotocol/indexer/blob/main/docs/feature-support-matrix.md).
 
 This is a bidirectional relationship:
+
 - **Indexing rewards enabled** → Arbitration support enabled
 - **Arbitration support enabled** → Indexing rewards enabled
 
@@ -40,15 +42,19 @@ To verify if a network supports arbitration:
 Per [GGP-0062](https://snapshot.org/#/s:council.graphprotocol.eth/proposal/0x4eff14202f6204c0927860a9adff865fce33c32b6cbe7054227457631ee261b9):
 
 **Network-level (managed in this registry)**:
+
 - **The Graph Foundation** (with Technical Advisory Board review) has authority to add or remove indexing rewards for networks via the `issuanceRewards` field
 - Since indexing rewards determine arbitration support, this authority also controls network arbitration eligibility
 
 **Feature-level (managed in Feature Support Matrix)**:
+
 - **The Graph Council** can determine which new graph-node features or data source types are eligible for indexing rewards and arbitration
 - These decisions are documented in the [Feature Support Matrix](https://github.com/graphprotocol/indexer/blob/main/docs/feature-support-matrix.md)
 
 ### Updating Indexing Rewards in the Registry
+
 When adding/removing indexing rewards to networks, the following steps must be taken:
+
 1. PR with the updated `issuanceRewards` field is opened by the maintainers or the Foundation
 2. PR is reviewed by the maintainers
 3. Transaction enabling/disabling rewards is executed on chain
@@ -59,6 +65,7 @@ When adding/removing indexing rewards to networks, the following steps must be t
 Historically, both network support and indexing rewards were documented in the [Feature Support Matrix](https://github.com/graphprotocol/indexer/blob/main/docs/feature-support-matrix.md) in the indexer repository. This created duplication with the Networks Registry.
 
 **New approach (established by this documentation)**:
+
 - **Networks Registry** (`issuanceRewards` field) = Source of truth for which networks have indexing rewards
 - **Feature Support Matrix** = Documents graph-node features and arbitration rules, references registry for network-level data
 
