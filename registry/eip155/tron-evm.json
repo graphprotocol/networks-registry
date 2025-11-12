@@ -20,8 +20,7 @@
     "substreams": [
       "mainnet-evm.tron.streamingfast.io:443",
       "tronevm.substreams.pinax.network:443"
-    ],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    ]
   },
   "issuanceRewards": false,
   "nativeToken": "TRX",
@@ -36,10 +35,6 @@
       "height": 0
     },
     "blockFeatures": ["base"]
-  },
-  "tokenApi": {
-    "features": ["tokens", "dexes"],
-    "networkId": "tron"
   },
   "icon": { "web3Icons": { "name": "tron" } }
 }
