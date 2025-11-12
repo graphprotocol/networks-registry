@@ -11,18 +11,14 @@
     { "kind": "testnetOf", "network": "starknet-mainnet" }
   ],
   "explorerUrls": ["https://sepolia.starkscan.co"],
-  "rpcUrls": [
-    "https://starknet-sepolia.public.blastapi.io"
-  ],
+  "rpcUrls": ["https://starknet-sepolia.public.blastapi.io"],
   "apiUrls": [],
   "networkType": "testnet",
   "services": {
     "subgraphs": [],
     "sps": [],
     "firehose": [],
-    "substreams": [
-      "testnet.starknet.streamingfast.io:443"
-    ]
+    "substreams": ["testnet.starknet.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "STRK",

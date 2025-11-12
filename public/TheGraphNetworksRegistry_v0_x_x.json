@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.48",
+  "version": "0.7.49",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-11-07T19:18:39.134Z",
+  "updatedAt": "2025-11-12T22:09:33.118Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4207,8 +4207,7 @@
         "https://rootstock.blockscout.com"
       ],
       "rpcUrls": [
-        "https://public-node.rsk.co",
-        "https://rootstock.rpc.service.pinax.network"
+        "https://public-node.rsk.co"
       ],
       "apiUrls": [
         {
@@ -5044,7 +5043,7 @@
       "networkType": "testnet",
       "issuanceRewards": false,
       "nativeToken": "DOT",
-      "docsUrl": "https://docs.polkadot.com/",
+      "docsUrl": "https://docs.polkadot.com",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
@@ -8435,12 +8434,8 @@
       },
       "services": {
         "sps": [],
-        "firehose": [
-          "arweave.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "arweave.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "issuanceRewards": false,
       "nativeToken": "AR",
@@ -9331,19 +9326,15 @@
         "https://starkscan.co"
       ],
       "rpcUrls": [
-        "https://starknet-mainnet.public.blastapi.io",
-        "https://starknet.rpc.service.pinax.network"
+        "https://starknet-mainnet.public.blastapi.io"
       ],
       "apiUrls": [],
       "networkType": "mainnet",
       "services": {
         "subgraphs": [],
         "sps": [],
-        "firehose": [
-          "starknet.firehose.pinax.network:443"
-        ],
+        "firehose": [],
         "substreams": [
-          "starknet.substreams.pinax.network:443",
           "mainnet.starknet.streamingfast.io:443"
         ]
       },
@@ -9397,19 +9388,15 @@
         "https://sepolia.starkscan.co"
       ],
       "rpcUrls": [
-        "https://starknet-sepolia.public.blastapi.io",
-        "https://starksepolia.rpc.service.pinax.network"
+        "https://starknet-sepolia.public.blastapi.io"
       ],
       "apiUrls": [],
       "networkType": "testnet",
       "services": {
         "subgraphs": [],
         "sps": [],
-        "firehose": [
-          "starksepolia.firehose.pinax.network:443"
-        ],
+        "firehose": [],
         "substreams": [
-          "starksepolia.substreams.pinax.network:443",
           "testnet.starknet.streamingfast.io:443"
         ]
       },

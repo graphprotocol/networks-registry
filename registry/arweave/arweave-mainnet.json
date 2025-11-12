@@ -12,11 +12,7 @@
     "protocol": "arweave",
     "deprecatedAt": "2025-05-28T00:00:00Z"
   },
-  "services": {
-    "sps": [],
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "sps": [], "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "AR",
   "docsUrl": "https://docs.arweave.org/developers",

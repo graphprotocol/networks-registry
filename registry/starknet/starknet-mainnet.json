@@ -7,18 +7,14 @@
   "graphNode": { "protocol": "starknet" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://starkscan.co"],
-  "rpcUrls": [
-    "https://starknet-mainnet.public.blastapi.io"
-  ],
+  "rpcUrls": ["https://starknet-mainnet.public.blastapi.io"],
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
     "sps": [],
     "firehose": [],
-    "substreams": [
-      "mainnet.starknet.streamingfast.io:443"
-    ]
+    "substreams": ["mainnet.starknet.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "ETH",
