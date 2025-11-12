@@ -12,17 +12,15 @@
   ],
   "explorerUrls": ["https://sepolia.starkscan.co"],
   "rpcUrls": [
-    "https://starknet-sepolia.public.blastapi.io",
-    "https://starksepolia.rpc.service.pinax.network"
+    "https://starknet-sepolia.public.blastapi.io"
   ],
   "apiUrls": [],
   "networkType": "testnet",
   "services": {
     "subgraphs": [],
     "sps": [],
-    "firehose": ["starksepolia.firehose.pinax.network:443"],
+    "firehose": [],
     "substreams": [
-      "starksepolia.substreams.pinax.network:443",
       "testnet.starknet.streamingfast.io:443"
     ]
   },

@@ -14,8 +14,8 @@
   },
   "services": {
     "sps": [],
-    "firehose": ["arweave.firehose.pinax.network:443"],
-    "substreams": ["arweave.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "issuanceRewards": false,
   "nativeToken": "AR",
