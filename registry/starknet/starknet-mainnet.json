@@ -8,17 +8,15 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://starkscan.co"],
   "rpcUrls": [
-    "https://starknet-mainnet.public.blastapi.io",
-    "https://starknet.rpc.service.pinax.network"
+    "https://starknet-mainnet.public.blastapi.io"
   ],
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
     "sps": [],
-    "firehose": ["starknet.firehose.pinax.network:443"],
+    "firehose": [],
     "substreams": [
-      "starknet.substreams.pinax.network:443",
       "mainnet.starknet.streamingfast.io:443"
     ]
   },

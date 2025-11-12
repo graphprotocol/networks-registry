@@ -7,8 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://rootstock.blockscout.com"],
   "rpcUrls": [
-    "https://public-node.rsk.co",
-    "https://rootstock.rpc.service.pinax.network"
+    "https://public-node.rsk.co"
   ],
   "apiUrls": [
     { "url": "https://rootstock.blockscout.com/api", "kind": "blockscout" }
