@@ -33,9 +33,6 @@
       "height": 1
     }
   },
-  "tokenApi": {
-    "features": ["tokens", "dexes"],
-    "networkId": "tron"
-  },
+  "tokenApi": { "features": ["tokens", "dexes"], "networkId": "tron" },
   "icon": { "web3Icons": { "name": "tron" } }
 }

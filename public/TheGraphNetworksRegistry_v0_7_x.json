@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.49",
+  "version": "0.7.50",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-11-12T22:09:33.118Z",
+  "updatedAt": "2025-11-13T17:43:15.835Z",
   "networks": [
     {
       "id": "mainnet",
@@ -9533,6 +9533,9 @@
         "substreams": [
           "mainnet.tron.streamingfast.io:443",
           "tron.substreams.pinax.network:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": false,
@@ -9546,6 +9549,13 @@
           "id": "0x00000000000000010ff5414c5cfbe9eae982e8cef7eb2399a39118e1206c8247",
           "height": 1
         }
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes"
+        ],
+        "networkId": "tron"
       },
       "icon": {
         "web3Icons": {
