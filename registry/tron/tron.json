@@ -18,7 +18,8 @@
     "substreams": [
       "mainnet.tron.streamingfast.io:443",
       "tron.substreams.pinax.network:443"
-    ]
+    ],
+    "tokenApi": ["https://token-api.thegraph.com"]
   },
   "issuanceRewards": false,
   "nativeToken": "TRX",
@@ -31,6 +32,10 @@
       "id": "0x00000000000000010ff5414c5cfbe9eae982e8cef7eb2399a39118e1206c8247",
       "height": 1
     }
+  },
+  "tokenApi": {
+    "features": ["tokens", "dexes"],
+    "networkId": "tron"
   },
   "icon": { "web3Icons": { "name": "tron" } }
 }
