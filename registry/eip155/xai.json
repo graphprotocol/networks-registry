@@ -8,14 +8,14 @@
   "explorerUrls": ["https://explorer.xai-chain.net"],
   "rpcUrls": [
     "https://xai-chain.net/rpc",
-    "https://xai.rpc.service.pinax.network"
+    "https://rpc.ankr.com/xai"
   ],
   "apiUrls": [
     { "url": "https://explorer.xai-chain.net/api", "kind": "blockscout" }
   ],
   "services": {
-    "firehose": ["xai.firehose.pinax.network:443"],
-    "substreams": ["xai.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "arbitrum-one" }],

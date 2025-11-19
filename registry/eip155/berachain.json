@@ -7,7 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "rpcUrls": [
     "https://rpc.berachain.com",
-    "https://bera.rpc.service.pinax.network"
+    "https://rpc.berachain-apis.com"
   ],
   "explorerUrls": ["https://berascan.com"],
   "apiUrls": [
@@ -19,8 +19,8 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["bera.firehose.pinax.network:443"],
-    "substreams": ["bera.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "networkType": "mainnet",
   "issuanceRewards": false,
