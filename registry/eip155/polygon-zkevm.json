@@ -12,15 +12,15 @@
   ],
   "rpcUrls": [
     "https://zkevm-rpc.com",
-    "https://polygonzk.rpc.service.pinax.network"
+    "https://polygon-zkevm.drpc.org"
   ],
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],
-    "firehose": ["polygonzk.firehose.pinax.network:443"],
-    "substreams": ["polygonzk.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "issuanceRewards": true,
   "nativeToken": "ETH",

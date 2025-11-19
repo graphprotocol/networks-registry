@@ -8,7 +8,7 @@
   "explorerUrls": ["https://bobascan.com"],
   "rpcUrls": [
     "https://mainnet.boba.network",
-    "https://boba.rpc.service.pinax.network"
+    "https://boba-eth.drpc.org"
   ],
   "apiUrls": [
     {
@@ -18,8 +18,8 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["boba.firehose.pinax.network:443"],
-    "substreams": ["boba.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

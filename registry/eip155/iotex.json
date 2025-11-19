@@ -8,7 +8,7 @@
   "explorerUrls": ["https://iotexscan.io"],
   "rpcUrls": [
     "https://babel-api.mainnet.iotex.io",
-    "https://iotex.rpc.service.pinax.network"
+    "https://iotex.api.onfinality.io/public"
   ],
   "apiUrls": [{ "url": "https://index.iotexscan.io/api", "kind": "etherscan" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
