@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.50",
+  "version": "0.7.51",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-11-13T17:43:15.835Z",
+  "updatedAt": "2025-11-19T00:14:18.847Z",
   "networks": [
     {
       "id": "mainnet",
@@ -572,7 +572,7 @@
       ],
       "rpcUrls": [
         "https://zkevm-rpc.com",
-        "https://polygonzk.rpc.service.pinax.network"
+        "https://polygon-zkevm.drpc.org"
       ],
       "apiUrls": [],
       "networkType": "mainnet",
@@ -581,12 +581,8 @@
           "https://api.studio.thegraph.com/deploy"
         ],
         "sps": [],
-        "firehose": [
-          "polygonzk.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "polygonzk.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "issuanceRewards": true,
       "nativeToken": "ETH",
@@ -2511,7 +2507,7 @@
       ],
       "rpcUrls": [
         "https://api.harmony.one/?shard=0",
-        "https://harmony.rpc.service.pinax.network"
+        "https://1rpc.io/one"
       ],
       "apiUrls": [
         {
@@ -3833,8 +3829,7 @@
         "https://explorer.cronos.org"
       ],
       "rpcUrls": [
-        "https://evm.cronos.org",
-        "https://cronos.rpc.service.pinax.network"
+        "https://evm.cronos.org"
       ],
       "apiUrls": [
         {
@@ -4076,7 +4071,7 @@
       ],
       "rpcUrls": [
         "https://mainnet.boba.network",
-        "https://boba.rpc.service.pinax.network"
+        "https://boba-eth.drpc.org"
       ],
       "apiUrls": [
         {
@@ -4088,12 +4083,8 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "firehose": [
-          "boba.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "boba.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "networkType": "mainnet",
       "relations": [
@@ -5720,7 +5711,7 @@
       ],
       "rpcUrls": [
         "https://babel-api.mainnet.iotex.io",
-        "https://iotex.rpc.service.pinax.network"
+        "https://iotex.api.onfinality.io/public"
       ],
       "apiUrls": [
         {
@@ -6237,7 +6228,8 @@
       ],
       "rpcUrls": [
         "https://bnb.boba.network",
-        "https://boba-bnb.gateway.tenderly.co"
+        "https://boba-bnb.gateway.tenderly.co",
+        "https://boba-bnb.drpc.org"
       ],
       "apiUrls": [
         {
@@ -6606,7 +6598,7 @@
       ],
       "rpcUrls": [
         "https://xai-chain.net/rpc",
-        "https://xai.rpc.service.pinax.network"
+        "https://rpc.ankr.com/xai"
       ],
       "apiUrls": [
         {
@@ -6615,12 +6607,8 @@
         }
       ],
       "services": {
-        "firehose": [
-          "xai.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "xai.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "networkType": "mainnet",
       "relations": [
@@ -7173,7 +7161,7 @@
       },
       "rpcUrls": [
         "https://rpc.berachain.com",
-        "https://bera.rpc.service.pinax.network"
+        "https://rpc.berachain-apis.com"
       ],
       "explorerUrls": [
         "https://berascan.com"
@@ -7192,12 +7180,8 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "firehose": [
-          "bera.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "bera.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,

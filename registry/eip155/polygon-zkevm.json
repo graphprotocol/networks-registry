@@ -10,10 +10,7 @@
     "https://zkevm.polygonscan.com",
     "https://www.oklink.com/polygon-zkevm"
   ],
-  "rpcUrls": [
-    "https://zkevm-rpc.com",
-    "https://polygon-zkevm.drpc.org"
-  ],
+  "rpcUrls": ["https://zkevm-rpc.com", "https://polygon-zkevm.drpc.org"],
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {

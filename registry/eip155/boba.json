@@ -6,10 +6,7 @@
   "caip2Id": "eip155:288",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://bobascan.com"],
-  "rpcUrls": [
-    "https://mainnet.boba.network",
-    "https://boba-eth.drpc.org"
-  ],
+  "rpcUrls": ["https://mainnet.boba.network", "https://boba-eth.drpc.org"],
   "apiUrls": [
     {
       "url": "https://api.routescan.io/v2/network/mainnet/evm/288/etherscan/api",

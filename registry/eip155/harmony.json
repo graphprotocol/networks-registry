@@ -6,10 +6,7 @@
   "caip2Id": "eip155:1666600000",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.harmony.one/?shard=0"],
-  "rpcUrls": [
-    "https://api.harmony.one/?shard=0",
-    "https://1rpc.io/one"
-  ],
+  "rpcUrls": ["https://api.harmony.one/?shard=0", "https://1rpc.io/one"],
   "apiUrls": [
     { "url": "https://explorer.harmony.one/api", "kind": "etherscan" }
   ],
