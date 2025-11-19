@@ -5,7 +5,16 @@
   "aliases": ["evm-143", "monad-mainnet"],
   "caip2Id": "eip155:143",
   "graphNode": { "protocol": "ethereum" },
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "explorerUrls": ["https://mainnet-beta.monvision.io"],
+  "rpcUrls": ["https://rpc-mainnet.monadinfra.com/rpc/"],
+  "apiUrls": [],
+  "networkType": "mainnet",
+  "services": { 
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"], 
+    "sps": [],
+    "firehose": ["mainnet-base.monad.streamingfast.io:443"],
+    "substreams": ["mainnet-base.monad.streamingfast.io:443"]
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "MON",
