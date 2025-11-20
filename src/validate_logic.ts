@@ -21,6 +21,7 @@ const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
   "etherlink-shadownet",
   "megaeth-timothy",
   "polkadot-testnet",
+  "stable"
 ];
 
 function validateFilenames(networksPath: string) {
