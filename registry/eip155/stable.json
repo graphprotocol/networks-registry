@@ -1,0 +1,24 @@
+{
+  "id": "stable",
+  "shortName": "Stable",
+  "fullName": "Stable",
+  "aliases": ["evm-988", "stable-mainnet"],
+  "caip2Id": "eip155:988",
+  "networkType": "mainnet",
+  "graphNode": { "protocol": "ethereum" },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "gUSDT",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x5911f7cbe3a5532c100b0ba871070084c460dd9b79f3fd8f5c2c1b394948819c",
+      "height": 1
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "stable" } }
+}
