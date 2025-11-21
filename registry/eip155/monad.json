@@ -10,7 +10,7 @@
   "apiUrls": [],
   "networkType": "mainnet",
   "services": { 
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"], 
+    "subgraphs": [], 
     "sps": [],
     "firehose": ["mainnet-base.monad.streamingfast.io:443"],
     "substreams": ["mainnet-base.monad.streamingfast.io:443"]
