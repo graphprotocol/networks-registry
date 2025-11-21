@@ -4,52 +4,77 @@ import { loadNetworks } from "./utils/fs";
 import { Network } from "./types/registry";
 import { version } from "../package.json";
 
-function generateMarkdownTable(networks: Network[]): string {
-  const headers = [
-    "Network",
-    "ID",
-    "Type",
-    "Indexing Rewards",
-    "Graph Node Protocol",
-    "Subgraphs",
-    "SpS",
-    "Firehose",
-    "Substreams",
-    "Explorer",
-    "Docs",
-  ];
+function getGraphNodeProtocol(network: Network): string {
+  if (network.graphNode?.protocol) return network.graphNode.protocol;
+  if (network.services?.substreams?.length) return "substreams";
+  return "N/A";
+}
 
-  // header row with alignment
-  const headerRow = `| ${headers.join(" | ")} |`;
-  // center-align all columns using :---:
-  const alignmentRow = `| ${headers.map(() => ":---:").join(" | ")} |`;
+function getChainId(network: Network): string {
+  const [type, id] = network.caip2Id.split(":");
+  if (type === "eip155") return id;
+  return "N/A";
+}
 
-  const fullName = (network: Network) => {
+function sortNetworks(networks: Network[]): Network[] {
+  return networks.sort((a, b) => {
+    if (a.id == "mainnet") return -1;
+    if (b.id == "mainnet") return 1;
+    if (a.issuanceRewards !== b.issuanceRewards) {
+      return b.issuanceRewards ? 1 : -1;
+    }
+    const countServices = (network: Network) => {
+      return (["subgraphs", "firehose", "substreams", "tokenApi"] as const).reduce(
+        (count, service) => {
+          return count + (network.services?.[service]?.length ?? 0);
+        },
+        0,
+      );
+    };
+    return countServices(b) - countServices(a);
+  });
+}
+
+function getFullName(network: Network): string {
     const icon = network.icon?.web3Icons?.name
       ? `![](https://raw.githubusercontent.com/0xa3k5/web3icons/refs/heads/main/raw-svgs/networks/branded/${network.icon.web3Icons.name}.svg)`
       : "";
     return `${icon} ${network.shortName} ${network.secondName ?? ""}`;
-  };
+}
+
+function generateMarkdownTable(networks: Network[]): string {
+  const headers = [
+    ["Network", ":---"],
+    ["ID", ":---:"],
+    ["Type", ":---:"],
+    ["Chain Id", ":---:"],
+    ["Indexing Rewards", ":---:"],
+    ["Graph Node Protocol", ":---:"],
+    ["Subgraphs", ":---:"],
+    ["Firehose", ":---:"],
+    ["Substreams", ":---:"],
+    ["Token API", ":---:"],
+    ["Explorer", ":---"],
+    ["Docs", ":---"],
+  ];
+
+  const headerRow = `| ${headers.map(([header]) => header).join(" | ")} |`;
+  const alignmentRow = `| ${headers.map(([, alignment]) => alignment).join(" | ")} |`;
 
   // Generate rows for each network
   const rows = networks.map((network) => {
     const services = network.services || {};
     return [
-      fullName(network),
+      getFullName(network),
       `**${network.id}**`,
       `*${network.networkType}*`,
+      `*${getChainId(network)}*`,
       network.issuanceRewards ? "✅" : "",
-      `*${
-        network.graphNode?.protocol
-          ? network.graphNode.protocol
-          : network.services?.substreams?.length
-            ? "substreams"
-            : ""
-      }*`,
+      `*${getGraphNodeProtocol(network)}*`,
       services.subgraphs?.length ? "✅" : "",
-      services.sps?.length ? "✅" : "",
       services.firehose?.length ? "✅" : "",
       services.substreams?.length ? "✅" : "",
+      services.tokenApi?.length ? "✅" : "",
       network.explorerUrls?.[0]
         ? `[${network.explorerUrls[0]}](${network.explorerUrls[0]})`
         : "",
@@ -76,25 +101,8 @@ function main() {
   const networks = loadNetworks(networksDir);
   console.log(`Loaded ${networks.length} networks`);
 
-  networks.sort((a, b) => {
-    if (a.id == "mainnet") return -1;
-    if (b.id == "mainnet") return 1;
-    if (a.issuanceRewards !== b.issuanceRewards) {
-      return b.issuanceRewards ? 1 : -1;
-    }
-    const countServices = (network: Network) => {
-      return ["subgraphs", "sps", "firehose", "substreams"].reduce(
-        (count, service) => {
-          return count + (network.services?.[service]?.length ?? 0);
-        },
-        0,
-      );
-    };
-    return countServices(b) - countServices(a);
-  });
-
   // Generate markdown content
-  const content = generateMarkdownTable(networks);
+  const content = generateMarkdownTable(sortNetworks(networks));
 
   // Ensure docs directory exists
   const docsDir = path.dirname(outputPath);
