@@ -6,16 +6,15 @@
   "caip2Id": "eip155:143",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://mainnet-beta.monvision.io"],
-  "rpcUrls": ["https://rpc-mainnet.monadinfra.com/rpc/"],
+  "rpcUrls": ["https://rpc-mainnet.monadinfra.com/rpc"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "services": { 
-    "subgraphs": [], 
+  "services": {
+    "subgraphs": [],
     "sps": [],
     "firehose": ["mainnet-base.monad.streamingfast.io:443"],
     "substreams": ["mainnet-base.monad.streamingfast.io:443"]
   },
-  "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "MON",
   "docsUrl": "https://docs.monad.xyz",

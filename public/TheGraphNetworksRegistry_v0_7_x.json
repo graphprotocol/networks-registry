@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.52",
+  "version": "0.7.53",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-11-20T18:17:20.602Z",
+  "updatedAt": "2025-11-22T20:25:47.513Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2057,12 +2057,24 @@
       "graphNode": {
         "protocol": "ethereum"
       },
+      "explorerUrls": [
+        "https://mainnet-beta.monvision.io"
+      ],
+      "rpcUrls": [
+        "https://rpc-mainnet.monadinfra.com/rpc/"
+      ],
+      "apiUrls": [],
+      "networkType": "mainnet",
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
+        "subgraphs": [],
+        "sps": [],
+        "firehose": [
+          "mainnet-base.monad.streamingfast.io:443"
+        ],
+        "substreams": [
+          "mainnet-base.monad.streamingfast.io:443"
         ]
       },
-      "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "MON",
       "docsUrl": "https://docs.monad.xyz",
