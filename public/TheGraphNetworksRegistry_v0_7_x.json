@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.53",
+  "version": "0.7.54",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-11-22T20:25:47.513Z",
+  "updatedAt": "2025-11-23T17:11:36.677Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2058,16 +2058,18 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://mainnet-beta.monvision.io"
+        "https://monadvision.com"
       ],
       "rpcUrls": [
-        "https://rpc-mainnet.monadinfra.com/rpc/"
+        "https://rpc.monad.xyz",
+        "https://rpc-mainnet.monadinfra.com"
       ],
       "apiUrls": [],
       "networkType": "mainnet",
       "services": {
-        "subgraphs": [],
-        "sps": [],
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ],
         "firehose": [
           "mainnet-base.monad.streamingfast.io:443"
         ],
@@ -2084,8 +2086,8 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
-          "id": "0x0c47353304f22b1c15706367d739b850cda80b5c87bbc335014fef3d88deaac9",
-          "height": 0
+          "id": "0xd9916dfc1859896af8127318a0eb3ef3aee1286f2912962bd8d172a589fdb890",
+          "height": 36215100
         },
         "blockFeatures": [
           "base"
