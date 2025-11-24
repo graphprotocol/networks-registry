@@ -6,6 +6,14 @@
   "caip2Id": "eip155:143",
   "graphNode": { "protocol": "ethereum" },
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "rpcUrls": ["https://rpc.monad.xyz"],
+  "explorerUrls": ["https://testnet.monadexplorer.com"],
+  "apiUrls": [
+    {
+      "url": "https://api.monadscan.com/api",
+      "kind": "etherscan"
+    }
+  ],
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "MON",
