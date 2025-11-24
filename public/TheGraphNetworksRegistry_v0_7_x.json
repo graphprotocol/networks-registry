@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.54",
+  "version": "0.7.55",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-11-23T17:11:36.677Z",
+  "updatedAt": "2025-11-24T18:19:48.299Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2058,13 +2058,18 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://monadvision.com"
+        "https://monadscan.com"
       ],
       "rpcUrls": [
         "https://rpc.monad.xyz",
         "https://rpc-mainnet.monadinfra.com"
       ],
-      "apiUrls": [],
+      "apiUrls": [
+        {
+          "url": "https://monad.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
       "networkType": "mainnet",
       "services": {
         "subgraphs": [

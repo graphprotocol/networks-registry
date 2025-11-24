@@ -8,10 +8,7 @@
   "explorerUrls": ["https://monadscan.com"],
   "rpcUrls": ["https://rpc.monad.xyz", "https://rpc-mainnet.monadinfra.com"],
   "apiUrls": [
-    {
-      "url": "https://monad.abi.pinax.network/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://monad.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "networkType": "mainnet",
   "services": {
