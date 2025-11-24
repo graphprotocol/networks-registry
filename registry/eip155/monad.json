@@ -9,7 +9,7 @@
   "rpcUrls": ["https://rpc.monad.xyz", "https://rpc-mainnet.monadinfra.com"],
   "apiUrls": [
     {
-      "url": "https://api.monadscan.com/api",
+      "url": "https://monad.abi.pinax.network/api",
       "kind": "etherscan"
     }
   ],
