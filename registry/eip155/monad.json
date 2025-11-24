@@ -5,9 +5,14 @@
   "aliases": ["evm-143", "monad-mainnet"],
   "caip2Id": "eip155:143",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://monadvision.com"],
+  "explorerUrls": ["https://monadscan.com"],
   "rpcUrls": ["https://rpc.monad.xyz", "https://rpc-mainnet.monadinfra.com"],
-  "apiUrls": [],
+  "apiUrls": [
+    {
+      "url": "https://api.monadscan.com/api",
+      "kind": "etherscan"
+    }
+  ],
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
