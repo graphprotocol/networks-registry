@@ -7,7 +7,9 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
   "rpcUrls": [],
-  "apiUrls": [{ "url": "https://stable.abi.pinax.network/api", "kind": "etherscan" }],
+  "apiUrls": [
+    { "url": "https://stable.abi.pinax.network/api", "kind": "etherscan" }
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "gUSDT",
