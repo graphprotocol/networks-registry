@@ -30,8 +30,8 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-near",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "id": "0xd784da5a9e5e66668516c19a8095448fc54a22a28971dc330f0099df94379410",
-      "height": 42376888
+      "id": "0x09d69c8ba4f319f8e78d0b701f0c1f763cc0d920551bfbd00072d5f56016d853",
+      "height": 42376923
     }
   },
   "icon": { "web3Icons": { "name": "near-protocol" } }
