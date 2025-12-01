@@ -1,18 +1,14 @@
 {
-  "id": "megaeth-testnet",
+  "id": "megaeth",
   "shortName": "MegaETH",
-  "secondName": "Testnet",
-  "fullName": "MegaETH Testnet",
-  "aliases": ["evm-6342"],
-  "caip2Id": "eip155:6342",
-  "networkType": "testnet",
+  "fullName": "MegaETH Mainnet",
+  "aliases": ["evm-4326", "megaeth-mainnet"],
+  "caip2Id": "eip155:4326",
+  "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://www.megaexplorer.xyz"],
-  "rpcUrls": ["https://carrot.megaeth.com/rpc"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "relations": [
-    { "kind": "testnetOf", "network": "megaeth" },
-    { "kind": "l2Of", "network": "sepolia" }
+    { "kind": "l2Of", "network": "mainnet" }
   ],
   "issuanceRewards": false,
   "nativeToken": "ETH",
@@ -22,7 +18,7 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "id": "0xe56bd7ae2a26376ed01d4775edcec3fc18817451137e4a06a5899bf478b75500",
+      "id": "0x9425ed45fa0843e257166258f69bced9ef9eb2d0bb23c6b5a901fba3a07623b6",
       "height": 0
     },
     "blockFeatures": ["base"]

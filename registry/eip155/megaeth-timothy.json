@@ -15,6 +15,10 @@
     }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "relations": [
+    { "kind": "testnetOf", "network": "megaeth" },
+    { "kind": "l2Of", "network": "sepolia" }
+  ],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "firehose": {
