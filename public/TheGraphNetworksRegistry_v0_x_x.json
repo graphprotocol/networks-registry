@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.56",
+  "version": "0.7.57",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-11-25T21:52:30.846Z",
+  "updatedAt": "2025-12-01T14:29:06.468Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3062,58 +3062,6 @@
       }
     },
     {
-      "id": "expchain-testnet",
-      "shortName": "EXPchain",
-      "fullName": "EXPchain Testnet",
-      "aliases": [
-        "evm-18880"
-      ],
-      "caip2Id": "eip155:18880",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://blockscout-testnet.expchain.ai"
-      ],
-      "rpcUrls": [
-        "https://rpc0-testnet.expchain.ai"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://blockscout-testnet.gadsgcxobnadfogadsihg.com/api",
-          "kind": "blockscout"
-        }
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
-      },
-      "networkType": "testnet",
-      "relations": [],
-      "issuanceRewards": false,
-      "nativeToken": "tZKJ",
-      "docsUrl": "https://docs.polyhedra.network/expchain",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xda850eae396d48df12c9a024e8639150aa5009275de2432f90710e3ebd9ec4c5",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "expchain"
-        }
-      }
-    },
-    {
       "id": "swellchain",
       "shortName": "Swellchain",
       "fullName": "Swellchain Mainnet",
@@ -5657,6 +5605,51 @@
       }
     },
     {
+      "id": "megaeth",
+      "shortName": "MegaETH",
+      "fullName": "MegaETH Mainnet",
+      "aliases": [
+        "evm-4326",
+        "megaeth-mainnet"
+      ],
+      "caip2Id": "eip155:4326",
+      "networkType": "mainnet",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x9425ed45fa0843e257166258f69bced9ef9eb2d0bb23c6b5a901fba3a07623b6",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "mega-eth"
+        }
+      }
+    },
+    {
       "id": "celo-alfajores",
       "shortName": "Celo",
       "secondName": "Alfajores",
@@ -6230,73 +6223,6 @@
       }
     },
     {
-      "id": "boba-bnb",
-      "shortName": "Boba BNB",
-      "fullName": "Boba BNB Mainnet",
-      "aliases": [
-        "evm-56288",
-        "boba-bsc",
-        "boba-bnb-mainnet"
-      ],
-      "caip2Id": "eip155:56288",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://bnb.bobascan.com"
-      ],
-      "rpcUrls": [
-        "https://bnb.boba.network",
-        "https://boba-bnb.gateway.tenderly.co",
-        "https://boba-bnb.drpc.org"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://api.routescan.io/v2/network/mainnet/evm/56288/etherscan/api",
-          "kind": "etherscan"
-        }
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
-      },
-      "networkType": "mainnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "bsc"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "BOBA",
-      "docsUrl": "https://docs.boba.network",
-      "indexerDocsUrls": [
-        {
-          "url": "https://docs.infradao.com/archive-nodes-101/bobabnb",
-          "description": "Archive Nodes 101"
-        }
-      ],
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xf9aa25373a3cf1c3d3dcb1911093b56eb129221d203270bcdb002b3f01a120d9",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "boba"
-        }
-      }
-    },
-    {
       "id": "ink",
       "shortName": "Ink",
       "fullName": "Ink Mainnet",
@@ -6529,6 +6455,16 @@
           "https://api.studio.thegraph.com/deploy"
         ]
       },
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "megaeth"
+        },
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "firehose": {
@@ -6579,6 +6515,16 @@
           "https://api.studio.thegraph.com/deploy"
         ]
       },
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "megaeth"
+        },
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
       "firehose": {

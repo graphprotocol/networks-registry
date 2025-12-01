@@ -7,9 +7,7 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
-  "relations": [
-    { "kind": "l2Of", "network": "mainnet" }
-  ],
+  "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "firehose": {
