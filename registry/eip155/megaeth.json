@@ -2,7 +2,7 @@
   "id": "megaeth",
   "shortName": "MegaETH",
   "fullName": "MegaETH Mainnet",
-  "aliases": ["evm-4326"],
+  "aliases": ["evm-4326", "megaeth-mainnet"],
   "caip2Id": "eip155:4326",
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
