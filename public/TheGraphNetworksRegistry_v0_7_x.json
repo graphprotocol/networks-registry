@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.57",
+  "version": "0.7.59",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-12-01T14:29:06.468Z",
+  "updatedAt": "2025-12-02T20:52:09.465Z",
   "networks": [
     {
       "id": "mainnet",
@@ -993,7 +993,7 @@
         ]
       },
       "networkType": "mainnet",
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "FUSE",
       "docsUrl": "https://docs.fuse.io",
       "indexerDocsUrls": [
@@ -4060,7 +4060,7 @@
           "network": "mainnet"
         }
       ],
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.boba.network",
       "indexerDocsUrls": [
@@ -4740,7 +4740,7 @@
           "network": "mainnet"
         }
       ],
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.mode.network",
       "indexerDocsUrls": [
@@ -5872,6 +5872,68 @@
       "icon": {
         "web3Icons": {
           "name": "neo-x"
+        }
+      }
+    },
+    {
+      "id": "worldchain",
+      "shortName": "WorldChain",
+      "fullName": "World Chain Mainnet",
+      "aliases": [
+        "evm-480",
+        "worldchain-mainnet"
+      ],
+      "caip2Id": "eip155:480",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "services": {
+        "firehose": [
+          "mainnet.worldchain.streamingfast.io:443"
+        ],
+        "substreams": [
+          "mainnet.worldchain.streamingfast.io:443"
+        ]
+      },
+      "networkType": "mainnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "mainnet"
+        }
+      ],
+      "explorerUrls": [
+        "https://worldscan.org"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://api.etherscan.io/v2/api",
+          "kind": "etherscan"
+        }
+      ],
+      "rpcUrls": [
+        "https://480.rpc.thirdweb.com",
+        "https://worldchain-mainnet.gateway.tenderly.co"
+      ],
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "docsUrl": "https://docs.world.org/world-chain",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x70d316d2e0973b62332ba2e9768dd7854298d7ffe77f0409ffdb8d859f2d3fa3",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "world"
         }
       }
     },
@@ -7270,7 +7332,7 @@
           "network": "mainnet"
         }
       ],
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.blast.io",
       "indexerDocsUrls": [
