@@ -15,7 +15,7 @@
     "substreams": ["fuse.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
-  "issuanceRewards": true,
+  "issuanceRewards": false,
   "nativeToken": "FUSE",
   "docsUrl": "https://docs.fuse.io",
   "indexerDocsUrls": [

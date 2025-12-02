@@ -15,8 +15,11 @@
   "apiUrls": [
     { "url": "https://api.etherscan.io/v2/api", "kind": "etherscan" }
   ],
-  "rpcUrls": [],
-  "issuanceRewards": true,
+  "rpcUrls": [
+    "https://480.rpc.thirdweb.com",
+    "https://worldchain-mainnet.gateway.tenderly.co"
+  ],
+  "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.world.org/world-chain",
   "firehose": {

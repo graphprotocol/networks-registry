@@ -20,7 +20,7 @@
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "issuanceRewards": true,
+  "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.boba.network",
   "indexerDocsUrls": [
