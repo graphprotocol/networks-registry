@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.60",
+  "version": "0.7.61",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-12-05T14:46:31.169Z",
+  "updatedAt": "2025-12-08T14:53:29.348Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5907,7 +5907,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://api.etherscan.io/v2/api",
+          "url": "https://worldchain.abi.pinax.network/api",
           "kind": "etherscan"
         }
       ],
@@ -8018,7 +8018,12 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "rpcUrls": [],
+      "explorerUrls": [
+        "https://stablescan.xyz/"
+      ],
+      "rpcUrls": [
+        "https://rpc.stable.xyz"
+      ],
       "apiUrls": [
         {
           "url": "https://stable.abi.pinax.network/api",

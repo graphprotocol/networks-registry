@@ -6,7 +6,7 @@
   "caip2Id": "eip155:988",
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://stablescan.xyz/"],
+  "explorerUrls": ["https://stablescan.xyz"],
   "rpcUrls": ["https://rpc.stable.xyz"],
   "apiUrls": [
     { "url": "https://stable.abi.pinax.network/api", "kind": "etherscan" }
