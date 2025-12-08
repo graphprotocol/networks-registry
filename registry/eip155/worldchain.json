@@ -13,7 +13,7 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://worldscan.org"],
   "apiUrls": [
-    { "url": "https://api.etherscan.io/v2/api", "kind": "etherscan" }
+    { "url": "https://worldchain.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "rpcUrls": [
     "https://480.rpc.thirdweb.com",
