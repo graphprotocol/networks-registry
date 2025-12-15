@@ -5,19 +5,14 @@
   "aliases": ["evm-42429"],
   "caip2Id": "eip155:42429",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://scout.tempo.xyz/"],
+  "explorerUrls": ["https://scout.tempo.xyz"],
   "rpcUrls": ["https://rpc.testnet.tempo.xyz"],
-  "apiUrls": [
-    {
-      "url": "https://scout.tempo.xyz/api",
-      "kind": "blockscout"
-    }
-  ],
+  "apiUrls": [{ "url": "https://scout.tempo.xyz/api", "kind": "blockscout" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "issuanceRewards": false,
   "nativeToken": "USD",
-  "docsUrl": "https://docs.tempo.xyz/",
+  "docsUrl": "https://docs.tempo.xyz",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,

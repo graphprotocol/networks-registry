@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.61",
+  "version": "0.7.62",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-12-08T14:53:29.348Z",
+  "updatedAt": "2025-12-15T20:08:55.144Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5332,6 +5332,52 @@
       }
     },
     {
+      "id": "tempo-andantino",
+      "shortName": "tempo",
+      "fullName": "Tempo Andantino Testnet",
+      "aliases": [
+        "evm-42429"
+      ],
+      "caip2Id": "eip155:42429",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://scout.tempo.xyz/"
+      ],
+      "rpcUrls": [
+        "https://rpc.testnet.tempo.xyz"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://scout.tempo.xyz/api",
+          "kind": "blockscout"
+        }
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "testnet",
+      "issuanceRewards": false,
+      "nativeToken": "USD",
+      "docsUrl": "https://docs.tempo.xyz/",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x8561f1bc7c4bbada054f2edc616deb0be221d4b2f712dc0ba8f7ef385ec86ce9",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      }
+    },
+    {
       "id": "etherlink-mainnet",
       "shortName": "Etherlink",
       "fullName": "Etherlink Mainnet",
@@ -6490,61 +6536,6 @@
       "icon": {
         "web3Icons": {
           "name": "linea"
-        }
-      }
-    },
-    {
-      "id": "megaeth-testnet",
-      "shortName": "MegaETH",
-      "secondName": "Testnet",
-      "fullName": "MegaETH Testnet",
-      "aliases": [
-        "evm-6342"
-      ],
-      "caip2Id": "eip155:6342",
-      "networkType": "testnet",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://www.megaexplorer.xyz"
-      ],
-      "rpcUrls": [
-        "https://carrot.megaeth.com/rpc"
-      ],
-      "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
-      },
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "megaeth"
-        },
-        {
-          "kind": "l2Of",
-          "network": "sepolia"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xe56bd7ae2a26376ed01d4775edcec3fc18817451137e4a06a5899bf478b75500",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "mega-eth"
         }
       }
     },
@@ -8019,7 +8010,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://stablescan.xyz/"
+        "https://stablescan.xyz"
       ],
       "rpcUrls": [
         "https://rpc.stable.xyz"
