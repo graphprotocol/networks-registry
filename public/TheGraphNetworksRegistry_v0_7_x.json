@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.62",
+  "version": "0.7.63",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2025-12-15T20:08:55.144Z",
+  "updatedAt": "2026-01-07T16:35:46.814Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2577,8 +2577,7 @@
         "https://sepolia.blastscan.io"
       ],
       "rpcUrls": [
-        "https://sepolia.blast.io",
-        "https://blastsepolia.rpc.service.pinax.network"
+        "https://sepolia.blast.io"
       ],
       "apiUrls": [
         {
@@ -2589,12 +2588,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "blastsepolia.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "blastsepolia.substreams.pinax.network:443"
         ]
       },
       "networkType": "testnet",
@@ -5343,7 +5336,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://scout.tempo.xyz/"
+        "https://scout.tempo.xyz"
       ],
       "rpcUrls": [
         "https://rpc.testnet.tempo.xyz"
@@ -5362,7 +5355,7 @@
       "networkType": "testnet",
       "issuanceRewards": false,
       "nativeToken": "USD",
-      "docsUrl": "https://docs.tempo.xyz/",
+      "docsUrl": "https://docs.tempo.xyz",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,

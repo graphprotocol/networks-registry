@@ -7,18 +7,14 @@
   "caip2Id": "eip155:168587773",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.blastscan.io"],
-  "rpcUrls": [
-    "https://sepolia.blast.io"
-  ],
+  "rpcUrls": ["https://sepolia.blast.io"],
   "apiUrls": [
     {
       "url": "https://blast-testnet.abi.pinax.network/api",
       "kind": "etherscan"
     }
   ],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },
