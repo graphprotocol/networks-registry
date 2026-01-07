@@ -8,8 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.blastscan.io"],
   "rpcUrls": [
-    "https://sepolia.blast.io",
-    "https://blastsepolia.rpc.service.pinax.network"
+    "https://sepolia.blast.io"
   ],
   "apiUrls": [
     {
@@ -18,9 +17,7 @@
     }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["blastsepolia.firehose.pinax.network:443"],
-    "substreams": ["blastsepolia.substreams.pinax.network:443"]
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
   },
   "networkType": "testnet",
   "relations": [
