@@ -20,12 +20,7 @@
     { "url": "https://eth-holesky.blockscout.com/api", "kind": "blockscout" },
     { "url": "https://holesky.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": [],
-    "sps": [],
-    "firehose": ["holesky.eth.streamingfast.io:443"],
-    "substreams": ["holesky.eth.streamingfast.io:443"]
-  },
+  "services": { "subgraphs": [], "sps": [], "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://holesky.dev",

@@ -11,14 +11,8 @@
   "services": {
     "subgraphs": [],
     "sps": [],
-    "firehose": [
-      "bitcoin.firehose.pinax.network:443",
-      "mainnet.btc.streamingfast.io:443"
-    ],
-    "substreams": [
-      "bitcoin.substreams.pinax.network:443",
-      "mainnet.btc.streamingfast.io:443"
-    ]
+    "firehose": ["bitcoin.firehose.pinax.network:443"],
+    "substreams": ["bitcoin.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "BTC",
