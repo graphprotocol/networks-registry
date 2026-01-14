@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.63",
+  "version": "0.7.64",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-01-07T16:35:46.814Z",
+  "updatedAt": "2026-01-14T21:44:15.486Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2785,12 +2785,8 @@
       "services": {
         "subgraphs": [],
         "sps": [],
-        "firehose": [
-          "holesky.eth.streamingfast.io:443"
-        ],
-        "substreams": [
-          "holesky.eth.streamingfast.io:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "issuanceRewards": false,
       "nativeToken": "ETH",
@@ -8781,12 +8777,10 @@
         "subgraphs": [],
         "sps": [],
         "firehose": [
-          "bitcoin.firehose.pinax.network:443",
-          "mainnet.btc.streamingfast.io:443"
+          "bitcoin.firehose.pinax.network:443"
         ],
         "substreams": [
-          "bitcoin.substreams.pinax.network:443",
-          "mainnet.btc.streamingfast.io:443"
+          "bitcoin.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
