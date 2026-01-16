@@ -7,6 +7,11 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "explorerUrls": ["https://explorer.url.here"],
+  "rpcUrls": ["https://rpc.url.here"],
+  "apiUrls": [
+    { "url": "https://explorer-API.url.here/api", "kind": "blockscout" }
+  ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "ETH",
