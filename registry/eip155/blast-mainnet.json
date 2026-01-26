@@ -15,7 +15,7 @@
     { "url": "https://blast.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "sps": [],
     "firehose": ["blast.firehose.pinax.network:443"],
     "substreams": ["blast.substreams.pinax.network:443"]
