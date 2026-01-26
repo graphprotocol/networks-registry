@@ -19,7 +19,7 @@
     { "kind": "testnetOf", "network": "mint" },
     { "kind": "l2Of", "network": "sepolia" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.mintchain.io",
