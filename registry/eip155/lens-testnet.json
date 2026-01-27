@@ -15,7 +15,7 @@
     { "kind": "l2Of", "network": "sepolia" },
     { "kind": "testnetOf", "network": "lens" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "issuanceRewards": false,
   "nativeToken": "GRASS",
   "docsUrl": "https://www.lens.xyz/docs",

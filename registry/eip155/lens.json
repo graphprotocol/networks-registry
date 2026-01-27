@@ -10,7 +10,7 @@
     { "url": "https://explorer-api.lens.xyz/api", "kind": "etherscan" }
   ],
   "rpcUrls": ["https://rpc.lens.dev"],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

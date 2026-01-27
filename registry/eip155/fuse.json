@@ -9,7 +9,7 @@
   "rpcUrls": ["https://rpc.fuse.io", "https://fuse.rpc.service.pinax.network"],
   "apiUrls": [{ "url": "https://explorer.fuse.io/api", "kind": "blockscout" }],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "sps": [],
     "firehose": ["fuse.firehose.pinax.network:443"],
     "substreams": ["fuse.substreams.pinax.network:443"]

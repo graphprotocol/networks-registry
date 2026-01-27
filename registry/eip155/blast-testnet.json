@@ -14,7 +14,7 @@
       "kind": "etherscan"
     }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },
