@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.65",
+  "version": "0.7.66",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-01-27T17:04:44.808Z",
+  "updatedAt": "2026-02-09T17:49:11.382Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2942,9 +2942,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "relations": [
@@ -5643,6 +5641,18 @@
           "https://api.studio.thegraph.com/deploy"
         ]
       },
+      "explorerUrls": [
+        "https://megaeth.blockscout.com"
+      ],
+      "rpcUrls": [
+        "https://mainnet.megaeth.com/rpc"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://megaeth.blockscout.com/api",
+          "kind": "blockscout"
+        }
+      ],
       "relations": [
         {
           "kind": "l2Of",

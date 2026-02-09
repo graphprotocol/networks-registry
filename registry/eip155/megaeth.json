@@ -10,10 +10,7 @@
   "explorerUrls": ["https://megaeth.blockscout.com"],
   "rpcUrls": ["https://mainnet.megaeth.com/rpc"],
   "apiUrls": [
-    {
-      "url": "https://megaeth.blockscout.com/api",
-      "kind": "blockscout"
-    }
+    { "url": "https://megaeth.blockscout.com/api", "kind": "blockscout" }
   ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
