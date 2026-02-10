@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.66",
+  "version": "0.7.67",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-02-09T17:49:11.382Z",
+  "updatedAt": "2026-02-10T17:42:23.416Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2766,10 +2766,6 @@
         {
           "url": "https://eth-holesky.blockscout.com/api",
           "kind": "blockscout"
-        },
-        {
-          "url": "https://holesky.abi.pinax.network/api",
-          "kind": "etherscan"
         }
       ],
       "services": {
@@ -4210,10 +4206,6 @@
         {
           "url": "https://zksync-sepolia.blockscout.com/api",
           "kind": "blockscout"
-        },
-        {
-          "url": "https://zksync-era-sepolia.abi.pinax.network/api",
-          "kind": "etherscan"
         }
       ],
       "services": {
@@ -4338,10 +4330,6 @@
         {
           "url": "https://zksync.blockscout.com/api",
           "kind": "blockscout"
-        },
-        {
-          "url": "https://zksync-era.abi.pinax.network/api",
-          "kind": "etherscan"
         }
       ],
       "services": {
@@ -5651,6 +5639,10 @@
         {
           "url": "https://megaeth.blockscout.com/api",
           "kind": "blockscout"
+        },
+        {
+          "url": "https://megaeth.abi.pinax.network/api",
+          "kind": "etherscan"
         }
       ],
       "relations": [
