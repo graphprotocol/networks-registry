@@ -14,7 +14,7 @@
   ],
   "rpcUrls": ["https://api.zilliqa.com"],
   "networkType": "mainnet",
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "issuanceRewards": false,
   "nativeToken": "ZIL",
   "docsUrl": "https://dev.zilliqa.com",
