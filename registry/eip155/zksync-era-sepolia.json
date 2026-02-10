@@ -16,10 +16,6 @@
     {
       "url": "https://zksync-sepolia.blockscout.com/api",
       "kind": "blockscout"
-    },
-    {
-      "url": "https://zksync-era-sepolia.abi.pinax.network/api",
-      "kind": "etherscan"
     }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },

@@ -16,8 +16,7 @@
       "url": "https://block-explorer-api.mainnet.zksync.io/api",
       "kind": "etherscan"
     },
-    { "url": "https://zksync.blockscout.com/api", "kind": "blockscout" },
-    { "url": "https://zksync-era.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://zksync.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
