@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.68",
+  "version": "0.7.69",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-02-10T17:50:50.688Z",
+  "updatedAt": "2026-02-11T23:16:19.946Z",
   "networks": [
     {
       "id": "mainnet",
@@ -8073,6 +8073,64 @@
       "icon": {
         "web3Icons": {
           "name": "lumia"
+        }
+      }
+    },
+    {
+      "id": "hyper-evm",
+      "shortName": "HyperEVM",
+      "fullName": "HyperEVM Mainnet",
+      "aliases": [
+        "evm-999",
+        "hyper-evm-mainnet"
+      ],
+      "caip2Id": "eip155:999",
+      "networkType": "mainnet",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://hyperevmscan.io"
+      ],
+      "rpcUrls": [
+        "https://rpc.hypurrscan.io",
+        "https://rpc.hyperliquid.xyz/evm",
+        "https://hyperevm.rpc.service.pinax.network"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://hyperevm.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": [],
+        "firehose": [
+          "hyperevm.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "hyperevm.substreams.pinax.network:443"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "HYPE",
+      "docsUrl": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0xd8fcc13b6a195b88b7b2da3722ff6cad767b13a8c1e9ffb1c73aa9d216d895f0",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "hyper-evm"
         }
       }
     },
