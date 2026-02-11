@@ -22,6 +22,7 @@
   },
   "issuanceRewards": false,
   "nativeToken": "HYPE",
+  "docsUrl": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
