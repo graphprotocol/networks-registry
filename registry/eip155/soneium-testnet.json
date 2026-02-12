@@ -12,11 +12,7 @@
     "https://minato.rpc.service.pinax.network"
   ],
   "apiUrls": [
-    { "url": "https://soneium-minato.blockscout.com/api", "kind": "etherscan" },
-    {
-      "url": "https://api.routescan.io/v2/network/testnet/evm/1946/etherscan/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://soneium-minato.blockscout.com/api", "kind": "etherscan" }
   ],
   "networkType": "testnet",
   "relations": [

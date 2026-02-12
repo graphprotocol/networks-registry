@@ -5,17 +5,13 @@
   "aliases": ["evm-42170", "arbnova", "arb-nova", "arbitrum-nova-mainnet"],
   "caip2Id": "eip155:42170",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://nova.arbiscan.io"],
+  "explorerUrls": [],
   "rpcUrls": [
     "https://nova.arbitrum.io/rpc",
     "https://arbitrum-nova.publicnode.com",
     "https://arbnova.rpc.service.pinax.network"
   ],
   "apiUrls": [
-    {
-      "url": "https://arbitrum-nova.abi.pinax.network/api",
-      "kind": "etherscan"
-    }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

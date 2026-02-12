@@ -6,14 +6,10 @@
   "aliases": ["mint-testnet", "evm-1687"],
   "caip2Id": "eip155:1687",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://sepolia-testnet-explorer.mintchain.io"],
+  "explorerUrls": [],
   "apiUrls": [
-    {
-      "url": "https://sepolia-testnet-explorer.mintchain.io/api",
-      "kind": "etherscan"
-    }
   ],
-  "rpcUrls": ["https://sepolia-testnet-rpc.mintchain.io"],
+  "rpcUrls": [],
   "networkType": "testnet",
   "relations": [
     { "kind": "testnetOf", "network": "mint" },

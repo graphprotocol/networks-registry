@@ -7,7 +7,6 @@
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": [
-    "https://zkevm.polygonscan.com",
     "https://www.oklink.com/polygon-zkevm"
   ],
   "rpcUrls": ["https://zkevm-rpc.com", "https://polygon-zkevm.drpc.org"],
@@ -21,7 +20,7 @@
   },
   "issuanceRewards": true,
   "nativeToken": "ETH",
-  "docsUrl": "https://docs.polygon.technology/zkEVM",
+  "docsUrl": "https://polygon.technology/polygon-zkevm",
   "indexerDocsUrls": [
     {
       "url": "https://docs.infradao.com/archive-nodes-101/polygon-zkevm",

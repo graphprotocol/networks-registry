@@ -6,7 +6,7 @@
   "caip2Id": "eip155:128123",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.explorer.etherlink.com"],
-  "rpcUrls": ["https://node.ghostnet.etherlink.com"],
+  "rpcUrls": [],
   "apiUrls": [
     {
       "url": "https://testnet.explorer.etherlink.com/api",

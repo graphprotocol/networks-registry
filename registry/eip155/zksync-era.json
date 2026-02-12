@@ -19,9 +19,7 @@
     { "url": "https://zksync.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["zksyncera.firehose.pinax.network:443"],
-    "substreams": ["zksyncera.substreams.pinax.network:443"]
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

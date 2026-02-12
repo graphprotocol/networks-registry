@@ -10,8 +10,6 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "cosmos", "deprecatedAt": "2025-04-23T00:00:00Z" },
   "services": {
-    "firehose": ["mainnet.mantra.streamingfast.io:443"],
-    "substreams": ["mainnet.mantra.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "OM",

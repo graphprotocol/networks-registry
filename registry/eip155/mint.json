@@ -8,7 +8,7 @@
   "explorerUrls": ["https://explorer.mintchain.io"],
   "rpcUrls": ["https://rpc.mintchain.io"],
   "apiUrls": [
-    { "url": "https://explorer.mintchain.io/api", "kind": "blockscout" }
+    { "url": "https://api.routescan.io/v2/network/mainnet/evm/185/etherscan/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",
