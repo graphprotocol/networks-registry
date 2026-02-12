@@ -11,8 +11,7 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "mantra-mainnet" }],
   "graphNode": { "protocol": "cosmos", "deprecatedAt": "2025-04-23T00:00:00Z" },
-  "services": {
-  },
+  "services": {},
   "issuanceRewards": false,
   "nativeToken": "OM",
   "docsUrl": "https://docs.mantrachain.io",

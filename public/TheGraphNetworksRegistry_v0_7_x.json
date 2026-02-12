@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.69",
+  "version": "0.7.70",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-02-11T23:16:19.946Z",
+  "updatedAt": "2026-02-12T18:13:34.980Z",
   "networks": [
     {
       "id": "mainnet",
@@ -415,7 +415,7 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
-          "id": "0x1436534e54a22183ea29a2273b341cb50018ed066441ffd111cd263297caba35",
+          "id": "0x298034669ee44327d2da9744b9b2782848e2f2a6959756b7b0471b09a404f5c9",
           "height": 0
         },
         "blockFeatures": [
@@ -567,7 +567,6 @@
         }
       ],
       "explorerUrls": [
-        "https://zkevm.polygonscan.com",
         "https://www.oklink.com/polygon-zkevm"
       ],
       "rpcUrls": [
@@ -586,7 +585,7 @@
       },
       "issuanceRewards": true,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.polygon.technology/zkEVM",
+      "docsUrl": "https://polygon.technology/polygon-zkevm",
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/polygon-zkevm",
@@ -1132,59 +1131,6 @@
       }
     },
     {
-      "id": "etherlink-testnet",
-      "shortName": "Etherlink",
-      "fullName": "Etherlink Testnet",
-      "aliases": [],
-      "caip2Id": "eip155:128123",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://testnet.explorer.etherlink.com"
-      ],
-      "rpcUrls": [
-        "https://node.ghostnet.etherlink.com"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://testnet.explorer.etherlink.com/api",
-          "kind": "blockscout"
-        }
-      ],
-      "services": {
-        "subgraphs": []
-      },
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "etherlink-mainnet"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "XTZ",
-      "docsUrl": "https://docs.etherlink.com",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0x2cf11372c813c0007ef080103fc813cf26ad9a374e88d589ef536dfc3dd1fee9",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "etherlink"
-        }
-      }
-    },
-    {
       "id": "moonbeam",
       "shortName": "Moonbeam",
       "fullName": "Moonbeam Mainnet",
@@ -1372,64 +1318,6 @@
       "icon": {
         "web3Icons": {
           "name": "moonbeam"
-        }
-      }
-    },
-    {
-      "id": "katana-tatara",
-      "shortName": "Katana",
-      "fullName": "Katana Tatara Testnet",
-      "aliases": [
-        "evm-129399"
-      ],
-      "caip2Id": "eip155:129399",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://explorer.tatara.katana.network"
-      ],
-      "rpcUrls": [
-        "https://rpc.tatara.katanarpc.com"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://explorer.tatara.katana.network/api",
-          "kind": "etherscan"
-        }
-      ],
-      "services": {
-        "subgraphs": []
-      },
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "sepolia"
-        },
-        {
-          "kind": "testnetOf",
-          "network": "katana"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xbca38f4936fefe65751e55b3f3f88fec27d478e283b6bb92b5268e2ffcea7716",
-          "height": 0
-        },
-        "blockFeatures": [
-          "extended"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "katana"
         }
       }
     },
@@ -1662,12 +1550,7 @@
       "rpcUrls": [
         "https://testnet.aurora.dev"
       ],
-      "apiUrls": [
-        {
-          "url": "https://explorer.testnet.aurora.dev/api",
-          "kind": "blockscout"
-        }
-      ],
+      "apiUrls": [],
       "services": {
         "subgraphs": []
       },
@@ -2614,67 +2497,6 @@
       }
     },
     {
-      "id": "mint-sepolia",
-      "shortName": "Mint",
-      "secondName": "Sepolia",
-      "fullName": "Mint Sepolia Testnet",
-      "aliases": [
-        "mint-testnet",
-        "evm-1687"
-      ],
-      "caip2Id": "eip155:1687",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://sepolia-testnet-explorer.mintchain.io"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://sepolia-testnet-explorer.mintchain.io/api",
-          "kind": "etherscan"
-        }
-      ],
-      "rpcUrls": [
-        "https://sepolia-testnet-rpc.mintchain.io"
-      ],
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "mint"
-        },
-        {
-          "kind": "l2Of",
-          "network": "sepolia"
-        }
-      ],
-      "services": {
-        "subgraphs": []
-      },
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "docsUrl": "https://docs.mintchain.io",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xdf018ef6eb34f7f003e00e4980aee2c2af56e7a5a865924d18cc775c02190deb",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "mint"
-        }
-      }
-    },
-    {
       "id": "manta",
       "shortName": "Manta",
       "fullName": "Manta Pacific Mainnet",
@@ -2730,67 +2552,6 @@
       "icon": {
         "web3Icons": {
           "name": "manta-pacific"
-        }
-      }
-    },
-    {
-      "id": "holesky",
-      "shortName": "Ethereum",
-      "secondName": "Holesky",
-      "fullName": "Ethereum Holesky Testnet",
-      "aliases": [
-        "evm-17000"
-      ],
-      "caip2Id": "eip155:17000",
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "mainnet"
-        }
-      ],
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://holesky.etherscan.io",
-        "https://holesky.otterscan.io"
-      ],
-      "rpcUrls": [
-        "https://holesky.gateway.tenderly.co",
-        "https://holesky.drpc.org"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://eth-holesky.blockscout.com/api",
-          "kind": "blockscout"
-        }
-      ],
-      "services": {
-        "subgraphs": [],
-        "sps": [],
-        "firehose": [],
-        "substreams": []
-      },
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "docsUrl": "https://holesky.dev",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xb5f7f912443c940f21fd611f12828d75b534364ed9e95ca4e307729a4661bde4",
-          "height": 0
-        },
-        "blockFeatures": [
-          "extended"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "ethereum"
         }
       }
     },
@@ -2908,62 +2669,6 @@
       "icon": {
         "web3Icons": {
           "name": "injective"
-        }
-      }
-    },
-    {
-      "id": "mint",
-      "shortName": "Mint",
-      "fullName": "Mint Mainnet",
-      "aliases": [
-        "evm-185",
-        "mint-mainnet"
-      ],
-      "caip2Id": "eip155:185",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://explorer.mintchain.io"
-      ],
-      "rpcUrls": [
-        "https://rpc.mintchain.io"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://explorer.mintchain.io/api",
-          "kind": "blockscout"
-        }
-      ],
-      "services": {
-        "subgraphs": []
-      },
-      "networkType": "mainnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "mainnet"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "docsUrl": "https://docs.mintchain.io",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0x88441835ca2344ea384e6f73e3d6f921cdd304e5bd6dca15590217e3911c61a3",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "mint"
         }
       }
     },
@@ -3181,10 +2886,6 @@
         {
           "url": "https://soneium-minato.blockscout.com/api",
           "kind": "etherscan"
-        },
-        {
-          "url": "https://api.routescan.io/v2/network/testnet/evm/1946/etherscan/api",
-          "kind": "etherscan"
         }
       ],
       "networkType": "testnet",
@@ -3247,10 +2948,7 @@
       "explorerUrls": [
         "https://www.oklink.com/xlayer-test"
       ],
-      "rpcUrls": [
-        "https://testrpc.xlayer.tech",
-        "https://xlayertestrpc.okx.com"
-      ],
+      "rpcUrls": [],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -3714,9 +3412,7 @@
           "network": "polygon-zkevm"
         }
       ],
-      "explorerUrls": [
-        "https://cardona-zkevm.polygonscan.com"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [
         "https://rpc.cardona.zkevm-rpc.com"
       ],
@@ -3729,7 +3425,7 @@
       },
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.polygon.technology/zkEVM",
+      "docsUrl": "https://polygon.technology/polygon-zkevm",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
@@ -3820,7 +3516,6 @@
         "https://ftmscout.com"
       ],
       "rpcUrls": [
-        "https://fantom-rpc.publicnode.com",
         "https://fantom.drpc.org",
         "https://fantom.rpc.service.pinax.network"
       ],
@@ -4333,12 +4028,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "zksyncera.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "zksyncera.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -4613,15 +4302,9 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://peaq.subscan.io",
-        "https://scout.peaq.xyz"
+        "https://peaq.subscan.io"
       ],
-      "apiUrls": [
-        {
-          "url": "https://scout.peaq.xyz/api",
-          "kind": "etherscan"
-        }
-      ],
+      "apiUrls": [],
       "rpcUrls": [
         "https://peaq.api.onfinality.io/public"
       ],
@@ -5164,20 +4847,13 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://nova.arbiscan.io"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [
         "https://nova.arbitrum.io/rpc",
         "https://arbitrum-nova.publicnode.com",
         "https://arbnova.rpc.service.pinax.network"
       ],
-      "apiUrls": [
-        {
-          "url": "https://arbitrum-nova.abi.pinax.network/api",
-          "kind": "etherscan"
-        }
-      ],
+      "apiUrls": [],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
@@ -5332,6 +5008,11 @@
         "blockFeatures": [
           "base"
         ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "tempo"
+        }
       }
     },
     {
@@ -5665,63 +5346,6 @@
       "icon": {
         "web3Icons": {
           "name": "mega-eth"
-        }
-      }
-    },
-    {
-      "id": "celo-alfajores",
-      "shortName": "Celo",
-      "secondName": "Alfajores",
-      "fullName": "Celo Alfajores Testnet",
-      "aliases": [
-        "evm-44787",
-        "celo-testnet"
-      ],
-      "caip2Id": "eip155:44787",
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "testnetOf",
-          "network": "celo"
-        }
-      ],
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://alfajores.celoscan.io"
-      ],
-      "rpcUrls": [
-        "https://alfajores-forno.celo-testnet.org"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://celo-alfajores.blockscout.com/api",
-          "kind": "blockscout"
-        }
-      ],
-      "services": {
-        "subgraphs": []
-      },
-      "issuanceRewards": false,
-      "nativeToken": "CELO",
-      "docsUrl": "https://docs.celo.org",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0xe423b034e7f0282c1b621f7bbc1cea4316a2a80b1600490769eae77777e4b67e",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "celo"
         }
       }
     },
@@ -6643,17 +6267,16 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://zetachain.blockscout.com"
+        "https://zetascan.com"
       ],
       "apiUrls": [
         {
-          "url": "https://zetachain.blockscout.com/api",
+          "url": "https://zetascan.com/api",
           "kind": "etherscan"
         }
       ],
       "rpcUrls": [
-        "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
-        "https://zetachain-mainnet.public.blastapi.io"
+        "https://zetachain-mainnet.g.allthatnode.com/archive/evm"
       ],
       "services": {
         "subgraphs": [
@@ -6742,6 +6365,66 @@
       "icon": {
         "web3Icons": {
           "name": "tron"
+        }
+      }
+    },
+    {
+      "id": "katana-bokuto",
+      "shortName": "Katana",
+      "fullName": "Katana Bokuto Testnet",
+      "aliases": [
+        "evm-737373"
+      ],
+      "caip2Id": "eip155:737373",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://bokuto.katanascan.com/"
+      ],
+      "rpcUrls": [
+        "https://katana-bokuto.gateway.tenderly.co",
+        "https://rpc-bokuto.katanarpc.com"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://katana-bokuto.abi.pinax.network/api",
+          "kind": "etherscan"
+        }
+      ],
+      "services": {
+        "subgraphs": []
+      },
+      "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "l2Of",
+          "network": "sepolia"
+        },
+        {
+          "kind": "testnetOf",
+          "network": "katana"
+        }
+      ],
+      "docsUrl": "https://docs.katana.network",
+      "issuanceRewards": false,
+      "nativeToken": "ETH",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": true,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x23a3f9f69af51572119a55ad6c14b65075a75b8a588933b2c4383acee63544df",
+          "height": 0
+        },
+        "blockFeatures": [
+          "extended"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "katana"
         }
       }
     },
@@ -6840,6 +6523,7 @@
           "katana.streamingfast.io:443"
         ]
       },
+      "docsUrl": "https://docs.katana.network",
       "networkType": "mainnet",
       "relations": [
         {
@@ -7030,7 +6714,7 @@
         }
       ],
       "explorerUrls": [
-        "https://www.oklink.com/amoy"
+        "https://amoy.polygonscan.com"
       ],
       "rpcUrls": [
         "https://rpc-amoy.polygon.technology",
@@ -7268,8 +6952,7 @@
       ],
       "rpcUrls": [
         "https://rpc.blast.io",
-        "https://blast.rpc.service.pinax.network",
-        "https://rpc.ankr.com/blast"
+        "https://blast.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -7723,10 +7406,6 @@
       ],
       "apiUrls": [
         {
-          "url": "https://spicy-explorer.chiliz.com/api",
-          "kind": "etherscan"
-        },
-        {
           "url": "https://api.routescan.io/v2/network/testnet/evm/88882/etherscan/api",
           "kind": "etherscan"
         }
@@ -7741,12 +7420,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "spicy.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "spicy.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -7793,10 +7466,6 @@
       ],
       "apiUrls": [
         {
-          "url": "https://scan.chiliz.com/api",
-          "kind": "etherscan"
-        },
-        {
           "url": "https://api.routescan.io/v2/network/mainnet/evm/88888/etherscan/api",
           "kind": "etherscan"
         }
@@ -7805,12 +7474,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "chiliz.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "chiliz.substreams.pinax.network:443"
         ]
       },
       "issuanceRewards": false,
@@ -7849,16 +7512,12 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://sepolia.explorer.mode.network"
+        "https://testnet.modescan.io"
       ],
       "rpcUrls": [
         "https://sepolia.mode.network"
       ],
       "apiUrls": [
-        {
-          "url": "https://sepolia.explorer.mode.network/api",
-          "kind": "blockscout"
-        },
         {
           "url": "https://api.routescan.io/v2/network/testnet/evm/919/etherscan/api",
           "kind": "etherscan"
@@ -8716,43 +8375,6 @@
       }
     },
     {
-      "id": "holesky-cl",
-      "shortName": "Holesky Beacon",
-      "fullName": "Ethereum Holesky Consensus Layer",
-      "aliases": [
-        "holesky-beacon"
-      ],
-      "caip2Id": "beacon:17000",
-      "explorerUrls": [],
-      "rpcUrls": [],
-      "apiUrls": [],
-      "networkType": "beacon",
-      "relations": [
-        {
-          "kind": "beaconOf",
-          "network": "holesky"
-        }
-      ],
-      "services": {},
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
-      "firehose": {
-        "blockType": "sf.beacon.type.v1.Block",
-        "bufUrl": "https://buf.build/pinax/firehose-beacon",
-        "bytesEncoding": "0xhex",
-        "firstStreamableBlock": {
-          "id": "0xab09edd9380f8451c3ff5c809821174a36dce606fea8b5ea35ea936915dbf889",
-          "height": 0
-        }
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "ethereum"
-        }
-      }
-    },
-    {
       "id": "hoodi-cl",
       "shortName": "Hoodi Beacon",
       "fullName": "Ethereum Hoodi Consensus Layer",
@@ -9000,14 +8622,7 @@
         "protocol": "cosmos",
         "deprecatedAt": "2025-04-23T00:00:00Z"
       },
-      "services": {
-        "firehose": [
-          "mainnet.mantra.streamingfast.io:443"
-        ],
-        "substreams": [
-          "mainnet.mantra.streamingfast.io:443"
-        ]
-      },
+      "services": {},
       "issuanceRewards": false,
       "nativeToken": "OM",
       "docsUrl": "https://docs.mantrachain.io",
@@ -9053,14 +8668,7 @@
         "protocol": "cosmos",
         "deprecatedAt": "2025-04-23T00:00:00Z"
       },
-      "services": {
-        "firehose": [
-          "testnet.mantra.streamingfast.io:443"
-        ],
-        "substreams": [
-          "testnet.mantra.streamingfast.io:443"
-        ]
-      },
+      "services": {},
       "issuanceRewards": false,
       "nativeToken": "OM",
       "docsUrl": "https://docs.mantrachain.io",
@@ -9403,7 +9011,7 @@
         }
       ],
       "explorerUrls": [
-        "https://starkscan.co"
+        "https://www.oklink.com/starknet"
       ],
       "rpcUrls": [
         "https://starknet-mainnet.public.blastapi.io"
@@ -9464,9 +9072,7 @@
           "network": "starknet-mainnet"
         }
       ],
-      "explorerUrls": [
-        "https://sepolia.starkscan.co"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [
         "https://starknet-sepolia.public.blastapi.io"
       ],
@@ -9576,8 +9182,8 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
         "bytesEncoding": "base64",
         "firstStreamableBlock": {
-          "id": "0x74ec355ea2c6b68e81f726c2b6a006772ff228749b17f85d87228e494ea3ca78",
-          "height": 255
+          "id": "0x745cccfdaaa59ee819d96a0fe098300933d948f7a1fb5027864e03b2a3466398",
+          "height": 767
         }
       },
       "icon": {

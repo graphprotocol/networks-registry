@@ -11,8 +11,7 @@
     "https://arbitrum-nova.publicnode.com",
     "https://arbnova.rpc.service.pinax.network"
   ],
-  "apiUrls": [
-  ],
+  "apiUrls": [],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],

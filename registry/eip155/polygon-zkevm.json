@@ -6,9 +6,7 @@
   "caip2Id": "eip155:1101",
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "explorerUrls": [
-    "https://www.oklink.com/polygon-zkevm"
-  ],
+  "explorerUrls": ["https://www.oklink.com/polygon-zkevm"],
   "rpcUrls": ["https://zkevm-rpc.com", "https://polygon-zkevm.drpc.org"],
   "apiUrls": [],
   "networkType": "mainnet",

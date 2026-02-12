@@ -5,10 +5,16 @@
   "aliases": ["evm-737373"],
   "caip2Id": "eip155:737373",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://bokuto.katanascan.com/"],
-  "rpcUrls": ["https://katana-bokuto.gateway.tenderly.co", "https://rpc-bokuto.katanarpc.com"],
+  "explorerUrls": ["https://bokuto.katanascan.com"],
+  "rpcUrls": [
+    "https://katana-bokuto.gateway.tenderly.co",
+    "https://rpc-bokuto.katanarpc.com"
+  ],
   "apiUrls": [
-    { "url": "https://katana-bokuto.abi.pinax.network/api", "kind": "etherscan" }
+    {
+      "url": "https://katana-bokuto.abi.pinax.network/api",
+      "kind": "etherscan"
+    }
   ],
   "services": { "subgraphs": [] },
   "networkType": "testnet",

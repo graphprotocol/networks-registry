@@ -6,12 +6,8 @@
   "caip2Id": "eip155:7000",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://zetascan.com"],
-  "apiUrls": [
-    { "url": "https://zetascan.com/api", "kind": "etherscan" }
-  ],
-  "rpcUrls": [
-    "https://zetachain-mainnet.g.allthatnode.com/archive/evm"
-  ],
+  "apiUrls": [{ "url": "https://zetascan.com/api", "kind": "etherscan" }],
+  "rpcUrls": ["https://zetachain-mainnet.g.allthatnode.com/archive/evm"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,

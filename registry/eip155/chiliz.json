@@ -18,9 +18,7 @@
     }
   ],
   "networkType": "mainnet",
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "CHZ",
   "docsUrl": "https://docs.chiliz.com",
