@@ -10,7 +10,7 @@
     { "kind": "l2Of", "network": "sepolia" },
     { "kind": "testnetOf", "network": "starknet-mainnet" }
   ],
-  "explorerUrls": ["https://sepolia.starkscan.co"],
+  "explorerUrls": [],
   "rpcUrls": ["https://starknet-sepolia.public.blastapi.io"],
   "apiUrls": [],
   "networkType": "testnet",

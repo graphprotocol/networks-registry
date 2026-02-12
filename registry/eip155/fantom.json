@@ -8,7 +8,6 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.fantom.network", "https://ftmscout.com"],
   "rpcUrls": [
-    "https://fantom-rpc.publicnode.com",
     "https://fantom.drpc.org",
     "https://fantom.rpc.service.pinax.network"
   ],

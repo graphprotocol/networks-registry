@@ -8,8 +8,7 @@
   "explorerUrls": ["https://blastscan.io"],
   "rpcUrls": [
     "https://rpc.blast.io",
-    "https://blast.rpc.service.pinax.network",
-    "https://rpc.ankr.com/blast"
+    "https://blast.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://blast.abi.pinax.network/api", "kind": "etherscan" }

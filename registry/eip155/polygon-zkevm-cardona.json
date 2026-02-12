@@ -10,14 +10,14 @@
     { "kind": "l2Of", "network": "sepolia" },
     { "kind": "testnetOf", "network": "polygon-zkevm" }
   ],
-  "explorerUrls": ["https://cardona-zkevm.polygonscan.com"],
+  "explorerUrls": [],
   "rpcUrls": ["https://rpc.cardona.zkevm-rpc.com"],
   "apiUrls": [],
   "networkType": "testnet",
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
-  "docsUrl": "https://docs.polygon.technology/zkEVM",
+  "docsUrl": "https://polygon.technology/polygon-zkevm",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,

@@ -10,7 +10,7 @@
     { "kind": "testnetOf", "network": "matic" },
     { "kind": "l2Of", "network": "sepolia" }
   ],
-  "explorerUrls": ["https://www.oklink.com/amoy"],
+  "explorerUrls": ["https://amoy.polygonscan.com"],
   "rpcUrls": [
     "https://rpc-amoy.polygon.technology",
     "https://amoy.rpc.service.pinax.network"

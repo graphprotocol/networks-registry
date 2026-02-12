@@ -6,7 +6,7 @@
   "caip2Id": "starknet:SN_MAIN",
   "graphNode": { "protocol": "starknet" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "explorerUrls": ["https://starkscan.co"],
+  "explorerUrls": ["https://www.oklink.com/starknet"],
   "rpcUrls": ["https://starknet-mainnet.public.blastapi.io"],
   "apiUrls": [],
   "networkType": "mainnet",
