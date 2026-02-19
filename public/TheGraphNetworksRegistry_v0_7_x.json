@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.70",
+  "version": "0.7.71",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-02-12T18:13:34.980Z",
+  "updatedAt": "2026-02-19T16:15:36.134Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4965,27 +4965,21 @@
       }
     },
     {
-      "id": "tempo-andantino",
+      "id": "tempo-moderato",
       "shortName": "tempo",
-      "fullName": "Tempo Andantino Testnet",
+      "fullName": "Tempo Moderato Testnet",
       "aliases": [
-        "evm-42429"
+        "evm-42431"
       ],
-      "caip2Id": "eip155:42429",
+      "caip2Id": "eip155:42431",
       "graphNode": {
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://scout.tempo.xyz"
+        "https://explore.tempo.xyz/"
       ],
       "rpcUrls": [
-        "https://rpc.testnet.tempo.xyz"
-      ],
-      "apiUrls": [
-        {
-          "url": "https://scout.tempo.xyz/api",
-          "kind": "blockscout"
-        }
+        "https://rpc.moderato.tempo.xyz"
       ],
       "services": {
         "subgraphs": [
@@ -5002,7 +4996,7 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
-          "id": "0x8561f1bc7c4bbada054f2edc616deb0be221d4b2f712dc0ba8f7ef385ec86ce9",
+          "id": "0xfa173125b3a5ac32bed1a5c441a269524f3ce621c6b2827ce1be465ea43c4731",
           "height": 0
         },
         "blockFeatures": [
@@ -6380,7 +6374,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://bokuto.katanascan.com/"
+        "https://bokuto.katanascan.com"
       ],
       "rpcUrls": [
         "https://katana-bokuto.gateway.tenderly.co",

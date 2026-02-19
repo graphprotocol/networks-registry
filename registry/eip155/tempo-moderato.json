@@ -5,7 +5,7 @@
   "aliases": ["evm-42431"],
   "caip2Id": "eip155:42431",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explore.tempo.xyz/"],
+  "explorerUrls": ["https://explore.tempo.xyz"],
   "rpcUrls": ["https://rpc.moderato.tempo.xyz"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
