@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.71",
+  "version": "0.7.72",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-02-19T16:15:36.134Z",
+  "updatedAt": "2026-02-20T21:31:26.980Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4976,7 +4976,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explore.tempo.xyz/"
+        "https://explore.tempo.xyz"
       ],
       "rpcUrls": [
         "https://rpc.moderato.tempo.xyz"
@@ -8013,48 +8013,6 @@
       "icon": {
         "web3Icons": {
           "name": "eos"
-        }
-      }
-    },
-    {
-      "id": "ultra",
-      "shortName": "Ultra",
-      "fullName": "Ultra Mainnet",
-      "aliases": [
-        "ultra-mainnet"
-      ],
-      "caip2Id": "antelope:a9c481dfbc7d9506dc7e87e9a137c931",
-      "explorerUrls": [
-        "https://explorer.mainnet.ultra.io"
-      ],
-      "rpcUrls": [
-        "https://ultra.api.eosnation.io"
-      ],
-      "apiUrls": [],
-      "networkType": "mainnet",
-      "services": {
-        "firehose": [
-          "ultra.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "ultra.substreams.pinax.network:443"
-        ]
-      },
-      "issuanceRewards": false,
-      "nativeToken": "UOS",
-      "docsUrl": "https://developers.ultra.io",
-      "firehose": {
-        "blockType": "sf.antelope.type.v1.Block",
-        "bufUrl": "https://buf.build/pinax/firehose-antelope",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0x00000002e10cbadd0c7491064d13ae89cfbdd734e1f66726861d771af1fcd6e9",
-          "height": 2
-        }
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "ultra"
         }
       }
     },
