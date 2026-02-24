@@ -8,15 +8,13 @@
   "explorerUrls": ["https://explorer.etherlink.com"],
   "rpcUrls": [
     "https://node.mainnet.etherlink.com",
-    "https://etherlink.rpc.service.pinax.network"
+    "https://rpc.ankr.com/etherlink_mainnet"
   ],
   "apiUrls": [
     { "url": "https://explorer.etherlink.com/api", "kind": "blockscout" }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["etherlink.firehose.pinax.network:443"],
-    "substreams": ["etherlink.substreams.pinax.network:443"]
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,
