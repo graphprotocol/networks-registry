@@ -13,9 +13,7 @@
   "apiUrls": [
     { "url": "https://explorer.etherlink.com/api", "kind": "blockscout" }
   ],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "XTZ",

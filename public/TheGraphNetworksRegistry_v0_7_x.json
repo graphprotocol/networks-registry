@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.72",
+  "version": "0.7.73",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-02-20T21:31:26.980Z",
+  "updatedAt": "2026-02-24T01:41:57.570Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5025,7 +5025,7 @@
       ],
       "rpcUrls": [
         "https://node.mainnet.etherlink.com",
-        "https://etherlink.rpc.service.pinax.network"
+        "https://rpc.ankr.com/etherlink_mainnet"
       ],
       "apiUrls": [
         {
@@ -5036,12 +5036,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "etherlink.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "etherlink.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
