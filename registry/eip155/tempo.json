@@ -5,8 +5,8 @@
   "aliases": ["tempo-mainnet", "evm-4217"],
   "caip2Id": "eip155:4217",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": [],
-  "rpcUrls": ["https://rpc.tempo.xyz"],
+  "explorerUrls": ["https://explore.mainnet.tempo.xyz"],
+  "rpcUrls": ["https://tempo-mainnet.drpc.org"],
   "services": {
     "firehose": [
       "tempo.firehose.pinax.network:443"
