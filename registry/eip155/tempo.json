@@ -1,0 +1,34 @@
+{
+  "id": "tempo",
+  "shortName": "Tempo",
+  "fullName": "Tempo Mainnet",
+  "aliases": ["tempo-mainnet", "evm-4217"],
+  "caip2Id": "eip155:4217",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": [],
+  "rpcUrls": ["https://rpc.tempo.xyz"],
+  "services": {
+    "firehose": [
+      "tempo.firehose.pinax.network:443"
+    ],
+    "substreams": [
+      "tempo.substreams.pinax.network:443"
+    ]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "USD",
+  "docsUrl": "https://docs.tempo.xyz",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "tempo" } }
+}
