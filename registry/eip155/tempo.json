@@ -5,16 +5,9 @@
   "aliases": ["tempo-mainnet", "evm-4217"],
   "caip2Id": "eip155:4217",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explore.mainnet.tempo.xyz"],
+  "explorerUrls": ["https://explore.tempo.xyz"],
   "rpcUrls": ["https://tempo-mainnet.drpc.org"],
-  "services": {
-    "firehose": [
-      "tempo.firehose.pinax.network:443"
-    ],
-    "substreams": [
-      "tempo.substreams.pinax.network:443"
-    ]
-  },
+  "services": {},
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "USD",
@@ -25,7 +18,7 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "id": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "id": "0x49d7ec7085e77bf5a403d0fcb4cfc42a4084a89dfff60477579c5e09c9e03c54",
       "height": 0
     },
     "blockFeatures": ["base"]
