@@ -5,6 +5,8 @@
   "aliases": ["evm-4217", "tempo-mainnet"],
   "caip2Id": "eip155:4217",
   "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explore.tempo.xyz"],
+  "rpcUrls": ["https://tempo-mainnet.drpc.org"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
