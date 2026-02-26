@@ -1,17 +1,14 @@
 {
-  "id": "tempo-moderato",
+  "id": "tempo",
   "shortName": "tempo",
-  "fullName": "Tempo Moderato Testnet",
-  "aliases": ["evm-42431"],
-  "caip2Id": "eip155:42431",
+  "fullName": "Tempo Mainnet",
+  "aliases": ["evm-4217", "tempo-mainnet"],
+  "caip2Id": "eip155:4217",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explore.moderato.tempo.xyz"],
-  "rpcUrls": ["https://rpc.moderato.tempo.xyz"],
+  "explorerUrls": ["https://explore.tempo.xyz"],
+  "rpcUrls": ["https://tempo-mainnet.drpc.org"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
-  "networkType": "testnet",
-  "relations": [
-    { "kind": "testnetOf", "network": "tempo" }
-  ],
+  "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "USD",
   "docsUrl": "https://docs.tempo.xyz",
@@ -21,7 +18,7 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "id": "0xfa173125b3a5ac32bed1a5c441a269524f3ce621c6b2827ce1be465ea43c4731",
+      "id": "0x846ef97031bf5b01e2279f19850ae3a66793407491c645db7f13ba2d88b54db8",
       "height": 0
     },
     "blockFeatures": ["base"]
