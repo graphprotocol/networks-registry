@@ -2,7 +2,7 @@
   "id": "tempo",
   "shortName": "tempo",
   "fullName": "Tempo Mainnet",
-  "aliases": ["evm-4217"],
+  "aliases": ["evm-4217", "tempo-mainnet"],
   "caip2Id": "eip155:4217",
   "graphNode": { "protocol": "ethereum" },
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
