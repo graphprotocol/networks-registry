@@ -9,9 +9,7 @@
   "rpcUrls": ["https://rpc.moderato.tempo.xyz"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
-  "relations": [
-    { "kind": "testnetOf", "network": "tempo" }
-  ],
+  "relations": [{ "kind": "testnetOf", "network": "tempo" }],
   "issuanceRewards": false,
   "nativeToken": "USD",
   "docsUrl": "https://docs.tempo.xyz",

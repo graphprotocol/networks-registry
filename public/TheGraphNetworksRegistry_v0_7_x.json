@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.73",
+  "version": "0.7.74",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-02-24T01:41:57.570Z",
+  "updatedAt": "2026-02-26T18:24:19.984Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4834,6 +4834,52 @@
       }
     },
     {
+      "id": "tempo",
+      "shortName": "tempo",
+      "fullName": "Tempo Mainnet",
+      "aliases": [
+        "evm-4217",
+        "tempo-mainnet"
+      ],
+      "caip2Id": "eip155:4217",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://explore.tempo.xyz"
+      ],
+      "rpcUrls": [
+        "https://tempo-mainnet.drpc.org"
+      ],
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "networkType": "mainnet",
+      "issuanceRewards": false,
+      "nativeToken": "USD",
+      "docsUrl": "https://docs.tempo.xyz",
+      "firehose": {
+        "blockType": "sf.ethereum.type.v2.Block",
+        "evmExtendedModel": false,
+        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+        "bytesEncoding": "hex",
+        "firstStreamableBlock": {
+          "id": "0x846ef97031bf5b01e2279f19850ae3a66793407491c645db7f13ba2d88b54db8",
+          "height": 0
+        },
+        "blockFeatures": [
+          "base"
+        ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "tempo"
+        }
+      }
+    },
+    {
       "id": "arbitrum-nova",
       "shortName": "Arbitrum Nova",
       "fullName": "Arbitrum Nova Mainnet",
@@ -4976,7 +5022,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explore.tempo.xyz"
+        "https://explore.moderato.tempo.xyz"
       ],
       "rpcUrls": [
         "https://rpc.moderato.tempo.xyz"
@@ -4987,6 +5033,12 @@
         ]
       },
       "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "tempo"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "USD",
       "docsUrl": "https://docs.tempo.xyz",
