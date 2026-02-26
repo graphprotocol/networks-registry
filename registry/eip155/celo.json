@@ -14,7 +14,11 @@
     { "url": "https://celo.abi.pinax.network/api", "kind": "etherscan" },
     { "url": "https://explorer.celo.org/mainnet/api", "kind": "blockscout" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["celo.firehose.pinax.network:443"],
+    "substreams": ["celo.substreams.pinax.network:443"]
+  },
   "networkType": "mainnet",
   "issuanceRewards": true,
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
