@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.75",
+  "version": "0.7.76",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-02-26T18:27:07.635Z",
+  "updatedAt": "2026-03-03T15:11:25.697Z",
   "networks": [
     {
       "id": "mainnet",
@@ -7993,14 +7993,7 @@
           "network": "eos"
         }
       ],
-      "services": {
-        "firehose": [
-          "kylin.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "kylin.substreams.pinax.network:443"
-        ]
-      },
+      "services": {},
       "issuanceRewards": false,
       "nativeToken": "EOS",
       "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",

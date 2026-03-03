@@ -10,8 +10,7 @@
   "apiUrls": [],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "eos" }],
-  "services": {
-  },
+  "services": {},
   "issuanceRewards": false,
   "nativeToken": "EOS",
   "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
