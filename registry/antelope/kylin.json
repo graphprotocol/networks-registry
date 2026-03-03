@@ -11,8 +11,6 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "eos" }],
   "services": {
-    "firehose": ["kylin.firehose.pinax.network:443"],
-    "substreams": ["kylin.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "EOS",
