@@ -8,8 +8,7 @@
   "explorerUrls": ["https://chiliscan.com"],
   "rpcUrls": [
     "https://rpc.chiliz.com",
-    "https://rpc.ankr.com/chiliz",
-    "https://chiliz.rpc.service.pinax.network"
+    "https://rpc.ankr.com/chiliz"
   ],
   "apiUrls": [
     {
