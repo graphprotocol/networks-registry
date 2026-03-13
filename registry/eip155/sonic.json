@@ -7,8 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sonicscan.org"],
   "rpcUrls": [
-    "https://rpc.soniclabs.com",
-    "https://sonic.rpc.service.pinax.network"
+    "https://rpc.soniclabs.com"
   ],
   "apiUrls": [
     { "url": "https://sonic.abi.pinax.network/api", "kind": "etherscan" }
