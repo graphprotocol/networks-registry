@@ -8,8 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.chiliscan.com"],
   "rpcUrls": [
-    "https://spicy-rpc.chiliz.com",
-    "https://spicy.rpc.service.pinax.network"
+    "https://spicy-rpc.chiliz.com"
   ],
   "apiUrls": [
     {
