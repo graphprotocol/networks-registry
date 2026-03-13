@@ -7,8 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.mode.network"],
   "rpcUrls": [
-    "https://mainnet.mode.network",
-    "https://mode.rpc.service.pinax.network"
+    "https://mainnet.mode.network"
   ],
   "apiUrls": [
     { "url": "https://explorer.mode.network/api", "kind": "blockscout" },
@@ -20,8 +19,8 @@
   "services": {
     "subgraphs": [],
     "sps": [],
-    "firehose": ["mode.firehose.pinax.network:443"],
-    "substreams": ["mode.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
