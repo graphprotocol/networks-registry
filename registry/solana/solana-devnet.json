@@ -1,6 +1,7 @@
 {
   "id": "solana-devnet",
   "shortName": "Solana",
+  "secondName": "Devnet",
   "fullName": "Solana Devnet",
   "aliases": [],
   "caip2Id": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
