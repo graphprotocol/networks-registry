@@ -10,9 +10,7 @@
     { "url": "https://explorer.inkonchain.com/api", "kind": "blockscout" }
   ],
   "rpcUrls": ["https://rpc-gel.inkonchain.com"],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "ETH",

@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.77",
+  "version": "0.7.78",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-03-11T16:35:06.818Z",
+  "updatedAt": "2026-03-16T21:13:34.569Z",
   "networks": [
     {
       "id": "mainnet",
@@ -968,8 +968,7 @@
         "https://explorer.fuse.io"
       ],
       "rpcUrls": [
-        "https://rpc.fuse.io",
-        "https://fuse.rpc.service.pinax.network"
+        "https://rpc.fuse.io"
       ],
       "apiUrls": [
         {
@@ -979,13 +978,7 @@
       ],
       "services": {
         "subgraphs": [],
-        "sps": [],
-        "firehose": [
-          "fuse.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "fuse.substreams.pinax.network:443"
-        ]
+        "sps": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -2059,8 +2052,7 @@
         "https://sonicscan.org"
       ],
       "rpcUrls": [
-        "https://rpc.soniclabs.com",
-        "https://sonic.rpc.service.pinax.network"
+        "https://rpc.soniclabs.com"
       ],
       "apiUrls": [
         {
@@ -3055,12 +3047,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "ronin.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "ronin.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -3069,8 +3055,7 @@
         "https://app.roninchain.com"
       ],
       "rpcUrls": [
-        "https://api.roninchain.com/rpc",
-        "https://ronin.rpc.service.pinax.network"
+        "https://api.roninchain.com/rpc"
       ],
       "issuanceRewards": false,
       "nativeToken": "RON",
@@ -4352,8 +4337,7 @@
         "https://explorer.mode.network"
       ],
       "rpcUrls": [
-        "https://mainnet.mode.network",
-        "https://mode.rpc.service.pinax.network"
+        "https://mainnet.mode.network"
       ],
       "apiUrls": [
         {
@@ -4367,13 +4351,7 @@
       ],
       "services": {
         "subgraphs": [],
-        "sps": [],
-        "firehose": [
-          "mode.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "mode.substreams.pinax.network:443"
-        ]
+        "sps": []
       },
       "networkType": "mainnet",
       "relations": [
@@ -4897,21 +4875,14 @@
       "explorerUrls": [],
       "rpcUrls": [
         "https://nova.arbitrum.io/rpc",
-        "https://arbitrum-nova.publicnode.com",
-        "https://arbnova.rpc.service.pinax.network"
+        "https://arbitrum-nova.publicnode.com"
       ],
       "apiUrls": [],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "sps": [],
-        "firehose": [
-          "arbnova.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "arbnova.substreams.pinax.network:443"
-        ]
+        "sps": []
       },
       "networkType": "mainnet",
       "relations": [
@@ -5996,18 +5967,11 @@
         }
       ],
       "rpcUrls": [
-        "https://rpc-gel.inkonchain.com",
-        "https://ink.rpc.service.pinax.network"
+        "https://rpc-gel.inkonchain.com"
       ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "ink.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "ink.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -7448,8 +7412,7 @@
         "https://testnet.chiliscan.com"
       ],
       "rpcUrls": [
-        "https://spicy-rpc.chiliz.com",
-        "https://spicy.rpc.service.pinax.network"
+        "https://spicy-rpc.chiliz.com"
       ],
       "apiUrls": [
         {
@@ -7508,8 +7471,7 @@
       ],
       "rpcUrls": [
         "https://rpc.chiliz.com",
-        "https://rpc.ankr.com/chiliz",
-        "https://chiliz.rpc.service.pinax.network"
+        "https://rpc.ankr.com/chiliz"
       ],
       "apiUrls": [
         {
@@ -8892,6 +8854,7 @@
     {
       "id": "solana-devnet",
       "shortName": "Solana",
+      "secondName": "Devnet",
       "fullName": "Solana Devnet",
       "aliases": [],
       "caip2Id": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",

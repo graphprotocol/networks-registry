@@ -7,9 +7,7 @@
   "caip2Id": "eip155:88882",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.chiliscan.com"],
-  "rpcUrls": [
-    "https://spicy-rpc.chiliz.com"
-  ],
+  "rpcUrls": ["https://spicy-rpc.chiliz.com"],
   "apiUrls": [
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/88882/etherscan/api",

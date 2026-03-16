@@ -6,9 +6,7 @@
   "caip2Id": "eip155:34443",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.mode.network"],
-  "rpcUrls": [
-    "https://mainnet.mode.network"
-  ],
+  "rpcUrls": ["https://mainnet.mode.network"],
   "apiUrls": [
     { "url": "https://explorer.mode.network/api", "kind": "blockscout" },
     {
@@ -16,10 +14,7 @@
       "kind": "etherscan"
     }
   ],
-  "services": {
-    "subgraphs": [],
-    "sps": []
-  },
+  "services": { "subgraphs": [], "sps": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
