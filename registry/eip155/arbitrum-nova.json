@@ -8,15 +8,12 @@
   "explorerUrls": [],
   "rpcUrls": [
     "https://nova.arbitrum.io/rpc",
-    "https://arbitrum-nova.publicnode.com",
-    "https://arbnova.rpc.service.pinax.network"
+    "https://arbitrum-nova.publicnode.com"
   ],
   "apiUrls": [],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": [],
-    "firehose": ["arbnova.firehose.pinax.network:443"],
-    "substreams": ["arbnova.substreams.pinax.network:443"]
+    "sps": []
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
