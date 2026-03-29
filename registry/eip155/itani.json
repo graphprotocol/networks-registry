@@ -4,6 +4,7 @@
   "fullName": "iTani Network Chain",
   "aliases": ["evm-1229800785", "itani-mainnet"],
   "caip2Id": "eip155:1229800785",
+  "icon": { "web3Icons": { "name": "itani" } },
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://itani-mainnet-1009642477948.us-central1.run.app"],
   "rpcUrls": [
