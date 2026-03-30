@@ -8,7 +8,6 @@
   "explorerUrls": ["https://lineascan.build"],
   "rpcUrls": [
     "https://rpc.linea.build",
-    "https://linea.rpc.service.pinax.network",
     "https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}"
   ],
   "apiUrls": [
@@ -17,8 +16,8 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["linea.firehose.pinax.network:443"],
-    "substreams": ["linea.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
