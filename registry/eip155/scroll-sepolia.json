@@ -8,8 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.scrollscan.com"],
   "rpcUrls": [
-    "https://sepolia-rpc.scroll.io",
-    "https://scrsepolia.rpc.service.pinax.network"
+    "https://sepolia-rpc.scroll.io"
   ],
   "apiUrls": [
     {
@@ -23,8 +22,8 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["scrsepolia.firehose.pinax.network:443"],
-    "substreams": ["scrsepolia.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "networkType": "testnet",
   "relations": [
