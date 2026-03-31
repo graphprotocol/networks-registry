@@ -7,16 +7,15 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://moonriver.moonscan.io"],
   "rpcUrls": [
-    "https://rpc.api.moonriver.moonbeam.network",
-    "https://moonriver.rpc.service.pinax.network"
+    "https://rpc.api.moonriver.moonbeam.network"
   ],
   "apiUrls": [
     { "url": "https://moonriver.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["moonriver.firehose.pinax.network:443"],
-    "substreams": ["moonriver.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "other", "network": "moonbeam" }],

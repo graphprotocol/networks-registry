@@ -7,8 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://scrollscan.com"],
   "rpcUrls": [
-    "https://rpc.scroll.io",
-    "https://scroll.rpc.service.pinax.network"
+    "https://rpc.scroll.io"
   ],
   "apiUrls": [
     { "url": "https://scroll.blockscout.com/api", "kind": "blockscout" },
@@ -17,8 +16,8 @@
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],
-    "firehose": ["scroll.firehose.pinax.network:443"],
-    "substreams": ["scroll.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
