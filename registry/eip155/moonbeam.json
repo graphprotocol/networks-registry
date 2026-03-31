@@ -6,9 +6,7 @@
   "caip2Id": "eip155:1284",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://moonbeam.moonscan.io"],
-  "rpcUrls": [
-    "https://rpc.api.moonbeam.network"
-  ],
+  "rpcUrls": ["https://rpc.api.moonbeam.network"],
   "apiUrls": [
     { "url": "https://moonbeam.abi.pinax.network/api", "kind": "etherscan" }
   ],
