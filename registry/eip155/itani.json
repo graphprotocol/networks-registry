@@ -1,0 +1,29 @@
+{
+  "id": "itani",
+  "shortName": "iTani",
+  "fullName": "iTani Network Chain",
+  "aliases": ["evm-1229800785", "itani-mainnet"],
+  "caip2Id": "eip155:1229800785",
+  "icon": { "web3Icons": { "name": "itani" } },
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": [
+    "https://relay.itaninetworkchain.com",
+    "https://node.itaninetworkchain.com"
+  ],
+  "rpcUrls": [
+    "https://relay.itaninetworkchain.com/jsonrpc",
+    "https://node.itaninetworkchain.com/jsonrpc"
+  ],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy/"] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "ITANI",
+  "docsUrl": "https://github.com/itanidreams-dev/iTani-Network-Chain",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "blockFeatures": ["base"]
+  }
+}
