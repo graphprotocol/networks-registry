@@ -5,7 +5,7 @@
   "aliases": ["evm-420420417"],
   "caip2Id": "eip155:420420417",
   "graphNode": { "protocol": "ethereum" },
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "testnet",
   "issuanceRewards": false,
   "nativeToken": "DOT",

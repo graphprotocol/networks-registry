@@ -8,7 +8,7 @@
   "explorerUrls": ["https://vanascan.io"],
   "rpcUrls": ["https://rpc.vana.org"],
   "apiUrls": [{ "url": "https://vanascan.io/api", "kind": "blockscout" }],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "VANA",
