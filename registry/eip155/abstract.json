@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://abstract.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

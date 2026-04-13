@@ -12,7 +12,7 @@
   "rpcUrls": ["https://mainnet.hsk.xyz"],
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "issuanceRewards": false,
   "nativeToken": "HSK",
   "docsUrl": "https://docs.hsk.xyz",

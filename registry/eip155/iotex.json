@@ -11,7 +11,7 @@
     "https://iotex.api.onfinality.io/public"
   ],
   "apiUrls": [{ "url": "https://index.iotexscan.io/api", "kind": "etherscan" }],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "IOTX",

@@ -21,7 +21,7 @@
   "rpcUrls": ["https://andromeda.metis.io"],
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "issuanceRewards": false,
   "nativeToken": "METIS",
   "docsUrl": "https://docs.metis.io",
