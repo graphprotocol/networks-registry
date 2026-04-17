@@ -10,8 +10,8 @@
   "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "gnosis-chiado" }],
   "services": {
-    "firehose": [""],
-    "substreams": [""]
+    "firehose": [],
+    "substreams": []
   },
   "issuanceRewards": false,
   "nativeToken": "XDAI",
