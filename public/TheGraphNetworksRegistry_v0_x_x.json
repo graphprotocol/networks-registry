@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.80",
+  "version": "0.7.81",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-04-13T19:20:40.587Z",
+  "updatedAt": "2026-04-17T16:54:53.928Z",
   "networks": [
     {
       "id": "mainnet",
@@ -8196,12 +8196,8 @@
         }
       ],
       "services": {
-        "firehose": [
-          "chiado-cl.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "chiado-cl.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "issuanceRewards": false,
       "nativeToken": "XDAI",

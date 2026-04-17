@@ -9,10 +9,7 @@
   "apiUrls": [],
   "networkType": "beacon",
   "relations": [{ "kind": "beaconOf", "network": "gnosis-chiado" }],
-  "services": {
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "XDAI",
   "docsUrl": "https://ethereum.org/en/developers/docs/consensus-mechanisms",
