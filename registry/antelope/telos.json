@@ -8,10 +8,7 @@
   "rpcUrls": ["https://telos.api.eosnation.io"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "services": {
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "TELOS",
   "docsUrl": "https://docs.telos.net",

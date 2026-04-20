@@ -9,10 +9,7 @@
   "apiUrls": [],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "telos" }],
-  "services": {
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "TELOS",
   "docsUrl": "https://docs.telos.net",

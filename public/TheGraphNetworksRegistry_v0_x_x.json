@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.81",
+  "version": "0.7.82",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-04-17T16:54:53.928Z",
+  "updatedAt": "2026-04-20T22:31:22.142Z",
   "networks": [
     {
       "id": "mainnet",
@@ -7796,12 +7796,8 @@
         }
       ],
       "services": {
-        "firehose": [
-          "telostest.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "telostest.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "issuanceRewards": false,
       "nativeToken": "TELOS",
@@ -7838,12 +7834,8 @@
       "apiUrls": [],
       "networkType": "mainnet",
       "services": {
-        "firehose": [
-          "telos.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "telos.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "issuanceRewards": false,
       "nativeToken": "TELOS",
