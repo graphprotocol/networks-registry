@@ -10,8 +10,8 @@
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "telos" }],
   "services": {
-    "firehose": ["telostest.firehose.pinax.network:443"],
-    "substreams": ["telostest.substreams.pinax.network:443"]
+    "firehose": [],
+    "substreams": []
   },
   "issuanceRewards": false,
   "nativeToken": "TELOS",
