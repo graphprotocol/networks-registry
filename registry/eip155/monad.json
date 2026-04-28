@@ -13,15 +13,15 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["mainnet-base.monad.streamingfast.io:443"],
-    "substreams": ["mainnet-base.monad.streamingfast.io:443"]
+    "firehose": ["mainnet-base.monad.streamingfast.io:443", "mainnet.monad.streamingfast.io:443"],
+    "substreams": ["mainnet-base.monad.streamingfast.io:443", "mainnet.monad.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "MON",
   "docsUrl": "https://docs.monad.xyz",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
-    "evmExtendedModel": false,
+    "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
