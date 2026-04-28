@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.83",
+  "version": "0.7.84",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-04-28T20:56:50.852Z",
+  "updatedAt": "2026-04-28T20:57:48.452Z",
   "networks": [
     {
       "id": "mainnet",
@@ -6026,7 +6026,8 @@
       ],
       "rpcUrls": [
         "https://rpc.linea.build",
-        "https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}"
+        "https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}",
+        "https://linea.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -6042,8 +6043,12 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "firehose": [],
-        "substreams": []
+        "firehose": [
+          "linea.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "linea.substreams.pinax.network:443"
+        ]
       },
       "networkType": "mainnet",
       "relations": [
