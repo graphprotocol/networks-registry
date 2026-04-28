@@ -12,12 +12,8 @@
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],
-    "firehose": [
-      "mainnet.near.streamingfast.io:443"
-    ],
-    "substreams": [
-      "mainnet.near.streamingfast.io:443"
-    ]
+    "firehose": ["mainnet.near.streamingfast.io:443"],
+    "substreams": ["mainnet.near.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "NEAR",
