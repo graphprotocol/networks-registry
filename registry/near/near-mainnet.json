@@ -13,11 +13,9 @@
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "sps": [],
     "firehose": [
-      "near.firehose.pinax.network:443",
       "mainnet.near.streamingfast.io:443"
     ],
     "substreams": [
-      "near.substreams.pinax.network:443",
       "mainnet.near.streamingfast.io:443"
     ]
   },
