@@ -19,7 +19,7 @@
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "SEI",
-  "docsUrl": "https://docs.seitrace.com",
+  "docsUrl": "https://docs.sei.io",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": true,
