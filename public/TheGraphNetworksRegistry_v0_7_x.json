@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.85",
+  "version": "0.7.86",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-04-28T20:58:36.807Z",
+  "updatedAt": "2026-04-29T16:03:19.435Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1667,7 +1667,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "SEI",
-      "docsUrl": "https://docs.seitrace.com",
+      "docsUrl": "https://docs.sei.io",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
