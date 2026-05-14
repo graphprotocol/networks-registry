@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.87",
+  "version": "0.7.88",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-05-14T19:35:25.882Z",
+  "updatedAt": "2026-05-14T19:53:10.148Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4792,11 +4792,18 @@
         "https://explore.tempo.xyz"
       ],
       "rpcUrls": [
-        "https://tempo-mainnet.drpc.org"
+        "https://tempo-mainnet.drpc.org",
+        "https://tempo.rpc.service.pinax.network"
       ],
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "substreams": [
+          "tempo.substreams.pinax.network:443"
+        ],
+        "firehose": [
+          "tempo.firehose.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -4809,7 +4816,7 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
-          "id": "0x846ef97031bf5b01e2279f19850ae3a66793407491c645db7f13ba2d88b54db8",
+          "id": "0x49d7ec7085e77bf5a403d0fcb4cfc42a4084a89dfff60477579c5e09c9e03c54",
           "height": 0
         },
         "blockFeatures": [
@@ -5954,7 +5961,8 @@
       "fullName": "Linea Sepolia Testnet",
       "aliases": [
         "evm-59141",
-        "linea-testnet"
+        "linea-testnet",
+        "lineasepolia"
       ],
       "caip2Id": "eip155:59141",
       "graphNode": {

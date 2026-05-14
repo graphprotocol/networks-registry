@@ -6,7 +6,10 @@
   "caip2Id": "eip155:4217",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explore.tempo.xyz"],
-  "rpcUrls": ["https://tempo-mainnet.drpc.org", "https://tempo.rpc.service.pinax.network"],
+  "rpcUrls": [
+    "https://tempo-mainnet.drpc.org",
+    "https://tempo.rpc.service.pinax.network"
+  ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "substreams": ["tempo.substreams.pinax.network:443"],
