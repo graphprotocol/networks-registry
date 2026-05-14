@@ -3,7 +3,7 @@
   "shortName": "Linea",
   "secondName": "Sepolia",
   "fullName": "Linea Sepolia Testnet",
-  "aliases": ["evm-59141", "linea-testnet"],
+  "aliases": ["evm-59141", "linea-testnet", "lineasepolia"],
   "caip2Id": "eip155:59141",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.lineascan.build"],

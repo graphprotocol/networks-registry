@@ -6,8 +6,12 @@
   "caip2Id": "eip155:4217",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explore.tempo.xyz"],
-  "rpcUrls": ["https://tempo-mainnet.drpc.org"],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "rpcUrls": ["https://tempo-mainnet.drpc.org", "https://tempo.rpc.service.pinax.network"],
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "substreams": ["tempo.substreams.pinax.network:443"],
+    "firehose": ["tempo.firehose.pinax.network:443"]
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "USD",
@@ -18,7 +22,7 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "id": "0x846ef97031bf5b01e2279f19850ae3a66793407491c645db7f13ba2d88b54db8",
+      "id": "0x49d7ec7085e77bf5a403d0fcb4cfc42a4084a89dfff60477579c5e09c9e03c54",
       "height": 0
     },
     "blockFeatures": ["base"]
