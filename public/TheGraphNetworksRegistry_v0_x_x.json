@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.86",
+  "version": "0.7.87",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-04-29T16:03:19.435Z",
+  "updatedAt": "2026-05-14T19:35:25.882Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5964,7 +5964,8 @@
         "https://sepolia.lineascan.build"
       ],
       "rpcUrls": [
-        "https://rpc.sepolia.linea.build"
+        "https://rpc.sepolia.linea.build",
+        "https://lineasepolia.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
@@ -5980,8 +5981,12 @@
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
         ],
-        "firehose": [],
-        "substreams": []
+        "firehose": [
+          "lineasepolia.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "lineasepolia.substreams.pinax.network:443"
+        ]
       },
       "networkType": "testnet",
       "relations": [
