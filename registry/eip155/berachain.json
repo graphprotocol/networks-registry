@@ -14,11 +14,7 @@
       "kind": "etherscan"
     }
   ],
-  "services": {
-    "subgraphs": [],
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "BERA",

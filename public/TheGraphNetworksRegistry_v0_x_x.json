@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.88",
+  "version": "0.7.89",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-05-14T19:53:10.148Z",
+  "updatedAt": "2026-05-21T19:47:15.787Z",
   "networks": [
     {
       "id": "mainnet",
@@ -2323,9 +2323,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -3430,9 +3428,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -4162,9 +4158,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "issuanceRewards": false,
       "nativeToken": "APE",
@@ -4213,9 +4207,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -5291,9 +5283,7 @@
         "protocol": "ethereum"
       },
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "explorerUrls": [
         "https://megaeth.blockscout.com"
@@ -5927,9 +5917,7 @@
         "https://rpc-gel.inkonchain.com"
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -6130,9 +6118,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "relations": [
         {
@@ -6547,9 +6533,7 @@
         "https://rpc-gel-sepolia.inkonchain.com"
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -6765,9 +6749,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "issuanceRewards": false,
       "nativeToken": "BERA",
@@ -6821,9 +6803,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "firehose": [],
         "substreams": []
       },
@@ -7223,9 +7203,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -7274,9 +7252,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
