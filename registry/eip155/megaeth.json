@@ -6,7 +6,7 @@
   "caip2Id": "eip155:4326",
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "explorerUrls": ["https://megaeth.blockscout.com"],
   "rpcUrls": ["https://mainnet.megaeth.com/rpc"],
   "apiUrls": [

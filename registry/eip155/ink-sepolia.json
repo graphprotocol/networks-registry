@@ -14,7 +14,7 @@
     }
   ],
   "rpcUrls": ["https://rpc-gel-sepolia.inkonchain.com"],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [
     { "kind": "testnetOf", "network": "ink" },
