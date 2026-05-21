@@ -15,7 +15,7 @@
     }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "firehose": [],
     "substreams": []
   },

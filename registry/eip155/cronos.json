@@ -10,7 +10,7 @@
   "apiUrls": [
     { "url": "https://cronos.org/explorer/api", "kind": "blockscout" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "CRO",

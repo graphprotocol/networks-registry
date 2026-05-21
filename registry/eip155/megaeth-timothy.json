@@ -14,7 +14,7 @@
       "kind": "blockscout"
     }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "relations": [
     { "kind": "testnetOf", "network": "megaeth" },
     { "kind": "l2Of", "network": "sepolia" }
