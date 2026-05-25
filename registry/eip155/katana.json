@@ -10,9 +10,7 @@
     { "url": "https://katana.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["katana.streamingfast.io:443"],
-    "substreams": ["katana.streamingfast.io:443"]
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
   },
   "docsUrl": "https://docs.katana.network",
   "networkType": "mainnet",
