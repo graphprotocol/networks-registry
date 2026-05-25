@@ -11,9 +11,7 @@
     { "url": "https://sei-mainnet.abi.pinax.network/api", "kind": "etherscan" },
     { "url": "https://seitrace.com/pacific-1/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"]
-  },
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "SEI",

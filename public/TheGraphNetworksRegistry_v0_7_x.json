@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.89",
+  "version": "0.7.90",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-05-21T19:47:15.787Z",
+  "updatedAt": "2026-05-25T13:35:39.772Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1656,12 +1656,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "evm-mainnet.sei.streamingfast.io:443"
-        ],
-        "substreams": [
-          "evm-mainnet.sei.streamingfast.io:443"
         ]
       },
       "networkType": "mainnet",
@@ -6470,12 +6464,6 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "katana.streamingfast.io:443"
-        ],
-        "substreams": [
-          "katana.streamingfast.io:443"
         ]
       },
       "docsUrl": "https://docs.katana.network",
@@ -6611,7 +6599,7 @@
           "network": "mainnet"
         }
       ],
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://docs.zora.co",
       "indexerDocsUrls": [
