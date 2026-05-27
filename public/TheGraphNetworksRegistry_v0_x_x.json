@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.90",
+  "version": "0.7.91",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-05-25T13:35:39.772Z",
+  "updatedAt": "2026-05-27T21:02:04.003Z",
   "networks": [
     {
       "id": "mainnet",
@@ -9002,8 +9002,8 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-stellar",
         "bytesEncoding": "base64",
         "firstStreamableBlock": {
-          "id": "0x84e2b18c296badee2a6c30347911f2b5a4323e1ecb3c8986235e1fdc322dadbe",
-          "height": 55411000
+          "id": "0xec168d452542589dbc2d0eb6d58c74b9bb2ccb93bba879a3b3fa73fdfa730182",
+          "height": 3
         }
       },
       "icon": {
