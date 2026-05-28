@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.93",
+  "version": "0.7.94",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-05-28T21:26:22.803Z",
+  "updatedAt": "2026-05-28T21:28:17.809Z",
   "networks": [
     {
       "id": "mainnet",
@@ -59,7 +59,7 @@
           "eth.substreams.data.nexus:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "issuanceRewards": true,
@@ -149,7 +149,7 @@
           "optimism.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "networkType": "mainnet",
@@ -1325,7 +1325,7 @@
           "mainnet.unichain.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "networkType": "mainnet",
@@ -1852,7 +1852,7 @@
           "polygon.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "indexerDocsUrls": [
@@ -4641,7 +4641,7 @@
           "arb-one.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "networkType": "mainnet",
@@ -5221,7 +5221,7 @@
           "avalanche.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "networkType": "mainnet",
@@ -5824,7 +5824,7 @@
           "bnb.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "issuanceRewards": true,
@@ -7078,7 +7078,7 @@
           "base-mainnet.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "networkType": "mainnet",
@@ -7740,7 +7740,7 @@
           "hyperevm.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "issuanceRewards": false,
@@ -8739,7 +8739,7 @@
           "solana.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "issuanceRewards": false,
@@ -9136,7 +9136,7 @@
           "tron.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://token-api.thegraph.com"
+          "https://api.pinax.network"
         ]
       },
       "issuanceRewards": false,
