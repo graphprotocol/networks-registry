@@ -9,7 +9,7 @@
   "apiUrls": [
     { "url": "https://katana.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "docsUrl": "https://docs.katana.network",
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
