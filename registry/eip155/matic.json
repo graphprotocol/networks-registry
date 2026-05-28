@@ -27,7 +27,7 @@
       "polygon.substreams.pinax.network:443",
       "polygon.streamingfast.io:443"
     ],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    "tokenApi": ["https://api.pinax.network"]
   },
   "indexerDocsUrls": [
     {

@@ -31,7 +31,7 @@
       "avalanche-mainnet.streamingfast.io:443",
       "avalanche.substreams.pinax.network:443"
     ],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    "tokenApi": ["https://api.pinax.network"]
   },
   "networkType": "mainnet",
   "issuanceRewards": true,

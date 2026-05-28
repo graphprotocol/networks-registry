@@ -34,7 +34,7 @@
       "mainnet.eth.streamingfast.io:443",
       "eth.substreams.data.nexus:443"
     ],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    "tokenApi": ["https://api.pinax.network"]
   },
   "issuanceRewards": true,
   "nativeToken": "ETH",

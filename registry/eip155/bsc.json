@@ -23,7 +23,7 @@
       "bsc.substreams.pinax.network:443",
       "bnb.streamingfast.io:443"
     ],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    "tokenApi": ["https://api.pinax.network"]
   },
   "issuanceRewards": true,
   "nativeToken": "BNB",

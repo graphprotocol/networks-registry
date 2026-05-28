@@ -19,7 +19,7 @@
     "subgraphs": [],
     "firehose": ["hyperevm.firehose.pinax.network:443"],
     "substreams": ["hyperevm.substreams.pinax.network:443"],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    "tokenApi": ["https://api.pinax.network"]
   },
   "issuanceRewards": false,
   "nativeToken": "HYPE",
