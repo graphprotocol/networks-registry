@@ -2,7 +2,7 @@
   "id": "hyper-evm",
   "shortName": "HyperEVM",
   "fullName": "HyperEVM Mainnet",
-  "aliases": ["evm-999", "hyper-evm-mainnet"],
+  "aliases": ["evm-999", "hyper-evm-mainnet", "hyperevm"],
   "caip2Id": "eip155:999",
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
@@ -18,7 +18,8 @@
   "services": {
     "subgraphs": [],
     "firehose": ["hyperevm.firehose.pinax.network:443"],
-    "substreams": ["hyperevm.substreams.pinax.network:443"]
+    "substreams": ["hyperevm.substreams.pinax.network:443"],
+    "tokenApi": ["https://token-api.thegraph.com"]
   },
   "issuanceRewards": false,
   "nativeToken": "HYPE",
@@ -33,6 +34,10 @@
       "height": 0
     },
     "blockFeatures": ["base"]
+  },
+  "tokenApi": {
+    "features": ["tokens", "dexes"],
+    "networkId": "hyperevm"
   },
   "icon": { "web3Icons": { "name": "hyper-evm" } }
 }
