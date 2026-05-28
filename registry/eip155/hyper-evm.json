@@ -35,9 +35,6 @@
     },
     "blockFeatures": ["base"]
   },
-  "tokenApi": {
-    "features": ["tokens", "dexes"],
-    "networkId": "hyperevm"
-  },
+  "tokenApi": { "features": ["tokens", "dexes"], "networkId": "hyperevm" },
   "icon": { "web3Icons": { "name": "hyper-evm" } }
 }

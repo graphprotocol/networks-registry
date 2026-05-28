@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.91",
+  "version": "0.7.92",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-05-27T21:02:04.003Z",
+  "updatedAt": "2026-05-28T15:16:13.237Z",
   "networks": [
     {
       "id": "mainnet",
@@ -7670,7 +7670,8 @@
       "fullName": "HyperEVM Mainnet",
       "aliases": [
         "evm-999",
-        "hyper-evm-mainnet"
+        "hyper-evm-mainnet",
+        "hyperevm"
       ],
       "caip2Id": "eip155:999",
       "networkType": "mainnet",
@@ -7698,6 +7699,9 @@
         ],
         "substreams": [
           "hyperevm.substreams.pinax.network:443"
+        ],
+        "tokenApi": [
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": false,
@@ -7715,6 +7719,13 @@
         "blockFeatures": [
           "base"
         ]
+      },
+      "tokenApi": {
+        "features": [
+          "tokens",
+          "dexes"
+        ],
+        "networkId": "hyperevm"
       },
       "icon": {
         "web3Icons": {
