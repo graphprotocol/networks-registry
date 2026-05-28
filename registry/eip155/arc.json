@@ -4,11 +4,10 @@
   "fullName": "Arc Mainnet",
   "aliases": ["evm-5042", "arc-mainnet"],
   "caip2Id": "eip155:5042",
-  "graphNode": { "protocol": "ethereum" },  
+  "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [],
   "rpcUrls": [],
-  "apiUrls": [
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,
