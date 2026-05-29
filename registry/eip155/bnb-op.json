@@ -14,8 +14,7 @@
   "apiUrls": [
     { "url": "https://bnb-op.abi.pinax.network/api", "kind": "etherscan" }
   ],
-  "services": {
-  },
+  "services": {},
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "BNB",

@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.94",
+  "version": "0.7.95",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-05-28T21:28:17.809Z",
+  "updatedAt": "2026-05-29T15:47:06.935Z",
   "networks": [
     {
       "id": "mainnet",
@@ -3087,14 +3087,7 @@
           "kind": "etherscan"
         }
       ],
-      "services": {
-        "firehose": [
-          "opbnb.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "opbnb.substreams.pinax.network:443"
-        ]
-      },
+      "services": {},
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "BNB",
