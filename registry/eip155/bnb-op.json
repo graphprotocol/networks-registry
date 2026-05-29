@@ -15,8 +15,6 @@
     { "url": "https://bnb-op.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "firehose": ["opbnb.firehose.pinax.network:443"],
-    "substreams": ["opbnb.substreams.pinax.network:443"]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,
