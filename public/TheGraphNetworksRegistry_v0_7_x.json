@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.95",
+  "version": "0.7.96",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-05-29T15:47:06.935Z",
+  "updatedAt": "2026-06-11T14:24:47.387Z",
   "networks": [
     {
       "id": "mainnet",
@@ -30,7 +30,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://mainnet.abi.pinax.network/api",
+          "url": "https://mainnet.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
