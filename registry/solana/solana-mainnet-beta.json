@@ -19,7 +19,7 @@
       "mainnet.sol.streamingfast.io:443",
       "solana.substreams.pinax.network:443"
     ],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    "tokenApi": ["https://api.pinax.network"]
   },
   "issuanceRewards": false,
   "nativeToken": "SOL",

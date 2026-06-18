@@ -13,7 +13,7 @@
     "https://mainnet.infura.io/v3/{INFURA_API_KEY}"
   ],
   "apiUrls": [
-    { "url": "https://mainnet.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://mainnet.abi.thegraph.com/api", "kind": "etherscan" },
     { "url": "https://eth.blockscout.com/api", "kind": "blockscout" },
     {
       "url": "https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api",
@@ -34,7 +34,7 @@
       "mainnet.eth.streamingfast.io:443",
       "eth.substreams.data.nexus:443"
     ],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    "tokenApi": ["https://api.pinax.network"]
   },
   "issuanceRewards": true,
   "nativeToken": "ETH",

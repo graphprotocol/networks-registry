@@ -5,7 +5,7 @@
   "aliases": ["evm-2020", "ronin-mainnet"],
   "caip2Id": "eip155:2020",
   "graphNode": { "protocol": "ethereum" },
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "relations": [],
   "explorerUrls": ["https://app.roninchain.com"],

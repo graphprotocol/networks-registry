@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.96",
+  "version": "0.7.94",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-06-11T14:24:47.387Z",
+  "updatedAt": "2026-05-28T21:28:17.809Z",
   "networks": [
     {
       "id": "mainnet",
@@ -30,7 +30,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://mainnet.abi.thegraph.com/api",
+          "url": "https://mainnet.abi.pinax.network/api",
           "kind": "etherscan"
         },
         {
@@ -3087,7 +3087,14 @@
           "kind": "etherscan"
         }
       ],
-      "services": {},
+      "services": {
+        "firehose": [
+          "opbnb.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "opbnb.substreams.pinax.network:443"
+        ]
+      },
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "BNB",

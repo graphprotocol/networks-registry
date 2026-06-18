@@ -1,0 +1,28 @@
+{
+  "id": "arc",
+  "shortName": "Arc",
+  "fullName": "Arc Mainnet",
+  "aliases": ["evm-5042", "arc-mainnet"],
+  "caip2Id": "eip155:5042",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": [],
+  "rpcUrls": [],
+  "apiUrls": [],
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "USDC",
+  "docsUrl": "https://docs.arc.network",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x09944e07412986bb417fd0006c89ffb71ee523d68ce2017ec2dabc944c42edad",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  },
+  "icon": { "web3Icons": { "name": "arc" } }
+}

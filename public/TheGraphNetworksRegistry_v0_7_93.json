@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.96",
+  "version": "0.7.93",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-06-11T14:24:47.387Z",
+  "updatedAt": "2026-05-28T21:26:22.803Z",
   "networks": [
     {
       "id": "mainnet",
@@ -30,7 +30,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://mainnet.abi.thegraph.com/api",
+          "url": "https://mainnet.abi.pinax.network/api",
           "kind": "etherscan"
         },
         {
@@ -59,7 +59,7 @@
           "eth.substreams.data.nexus:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": true,
@@ -149,7 +149,7 @@
           "optimism.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -1325,7 +1325,7 @@
           "mainnet.unichain.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -1852,7 +1852,7 @@
           "polygon.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "indexerDocsUrls": [
@@ -3087,7 +3087,14 @@
           "kind": "etherscan"
         }
       ],
-      "services": {},
+      "services": {
+        "firehose": [
+          "opbnb.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "opbnb.substreams.pinax.network:443"
+        ]
+      },
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "BNB",
@@ -4634,7 +4641,7 @@
           "arb-one.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -5214,7 +5221,7 @@
           "avalanche.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -5817,7 +5824,7 @@
           "bnb.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": true,
@@ -7071,7 +7078,7 @@
           "base-mainnet.streamingfast.io:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "networkType": "mainnet",
@@ -7733,7 +7740,7 @@
           "hyperevm.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": false,
@@ -8732,7 +8739,7 @@
           "solana.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": false,
@@ -9129,7 +9136,7 @@
           "tron.substreams.pinax.network:443"
         ],
         "tokenApi": [
-          "https://api.pinax.network"
+          "https://token-api.thegraph.com"
         ]
       },
       "issuanceRewards": false,

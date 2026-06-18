@@ -15,7 +15,7 @@
       "unichain.substreams.pinax.network:443",
       "mainnet.unichain.streamingfast.io:443"
     ],
-    "tokenApi": ["https://token-api.thegraph.com"]
+    "tokenApi": ["https://api.pinax.network"]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

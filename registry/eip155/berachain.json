@@ -14,11 +14,7 @@
       "kind": "etherscan"
     }
   ],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "BERA",
