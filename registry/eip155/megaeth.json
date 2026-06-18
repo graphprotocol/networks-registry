@@ -6,9 +6,13 @@
   "caip2Id": "eip155:4326",
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "substreams": ["megaeth.substreams.pinax.network:443"],
+    "firehose": ["megaeth.firehose.pinax.network:443"]
+  },
   "explorerUrls": ["https://megaeth.blockscout.com"],
-  "rpcUrls": ["https://mainnet.megaeth.com/rpc"],
+  "rpcUrls": ["https://mainnet.megaeth.com/rpc", "https://megaeth.rpc.service.pinax.network"],
   "apiUrls": [
     { "url": "https://megaeth.blockscout.com/api", "kind": "blockscout" },
     { "url": "https://megaeth.abi.pinax.network/api", "kind": "etherscan" }
