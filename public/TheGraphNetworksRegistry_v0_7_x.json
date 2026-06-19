@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.96",
+  "version": "0.7.97",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-06-11T14:24:47.387Z",
+  "updatedAt": "2026-06-19T13:30:26.232Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5268,13 +5268,20 @@
         "protocol": "ethereum"
       },
       "services": {
-        "subgraphs": []
+        "subgraphs": [],
+        "substreams": [
+          "megaeth.substreams.pinax.network:443"
+        ],
+        "firehose": [
+          "megaeth.firehose.pinax.network:443"
+        ]
       },
       "explorerUrls": [
         "https://megaeth.blockscout.com"
       ],
       "rpcUrls": [
-        "https://mainnet.megaeth.com/rpc"
+        "https://mainnet.megaeth.com/rpc",
+        "https://megaeth.rpc.service.pinax.network"
       ],
       "apiUrls": [
         {
