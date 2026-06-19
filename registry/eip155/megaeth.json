@@ -7,7 +7,7 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "substreams": ["megaeth.substreams.pinax.network:443"],
     "firehose": ["megaeth.firehose.pinax.network:443"]
   },
