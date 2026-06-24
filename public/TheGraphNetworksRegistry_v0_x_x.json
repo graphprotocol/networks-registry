@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.97",
+  "version": "0.7.98",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-06-19T13:30:26.232Z",
+  "updatedAt": "2026-06-24T16:37:59.547Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1616,7 +1616,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
@@ -1785,7 +1785,7 @@
       "docsUrl": "https://docs.gravity.xyz",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -1937,8 +1937,8 @@
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
-          "id": "0x0c47353304f22b1c15706367d739b850cda80b5c87bbc335014fef3d88deaac9",
-          "height": 0
+          "id": "0x76ac00ea25b983893d48fc0ddac36a9c4d605b31a5cfd440c2f9f3a06941152c",
+          "height": 1
         },
         "blockFeatures": [
           "base"
@@ -2162,7 +2162,7 @@
       "docsUrl": "https://docs.vana.org",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -2218,7 +2218,7 @@
       "docsUrl": "https://docs.vana.org",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -2274,7 +2274,7 @@
       "docsUrl": "https://docs.gravity.xyz",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -2331,7 +2331,7 @@
       "docsUrl": "https://docs.status.network",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -2734,7 +2734,7 @@
       "docsUrl": "https://docs.swellnetwork.io",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -2800,7 +2800,7 @@
       "docsUrl": "https://docs.swellnetwork.io",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -3544,7 +3544,7 @@
       "docsUrl": "https://docs.frax.com/fraxtal",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -4247,7 +4247,7 @@
       "docsUrl": "https://docs.peaq.network",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -4563,7 +4563,7 @@
       "docsUrl": "https://docs.polkadot.com",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -5303,7 +5303,7 @@
       "nativeToken": "ETH",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -5960,7 +5960,7 @@
       "docsUrl": "https://docs.inkonchain.com",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -5968,7 +5968,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "extended"
+          "base"
         ]
       },
       "icon": {
@@ -6169,7 +6169,7 @@
       "nativeToken": "ETH",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -6279,7 +6279,7 @@
       "docsUrl": "https://www.zetachain.com/docs",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -6578,7 +6578,7 @@
       "docsUrl": "https://docs.inkonchain.com",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -6783,7 +6783,7 @@
       "docsUrl": "https://docs.berachain.com",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -6840,7 +6840,7 @@
       "docsUrl": "https://docs.berachain.com",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -7238,7 +7238,7 @@
       "docsUrl": "https://docs.autonomys.xyz",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -7293,7 +7293,7 @@
       "docsUrl": "https://docs.autonomys.xyz",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -7339,7 +7339,7 @@
       "docsUrl": "https://docs.viction.xyz",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -7630,7 +7630,7 @@
       "nativeToken": "gUSDT",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": true,
+        "evmExtendedModel": false,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
