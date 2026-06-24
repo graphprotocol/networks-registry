@@ -143,6 +143,14 @@ function validateEvmRules(networks: Network[]) {
 						`\`${network.id}\` - EVM chain has firehose.evmExtendedModel=false but firehose.blockFeatures does not include "base"`,
 					);
 				}
+				if (
+					network.firehose.evmExtendedModel === true &&
+					network.firehose.blockFeatures?.includes("base")
+				) {
+					WARNINGS.push(
+						`\`${network.id}\` - EVM chain has firehose.evmExtendedModel=true but firehose.blockFeatures includes "base"`,
+					);
+				}
 			}
 
 			if (network.graphNode?.protocol !== "ethereum") {
