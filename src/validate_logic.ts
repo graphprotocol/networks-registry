@@ -15,17 +15,14 @@ const ALLOWED_DUPLICATES: string[] = [
 ];
 
 const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
+	// not yet present in the ethereum-lists repo
 	"autonomys",
-	"sonic-testnet",
-	"arc-testnet",
-	"etherlink-shadownet",
-	"megaeth-timothy",
-	"polkadot-testnet",
-	"stable",
-	"tempo-andantino",
-	"hyper-evm",
-	"tempo",
 	"robinhood",
+	// chainId 999 upstream is a different chain (Wanchain Testnet), not HyperEVM
+	"hyper-evm",
+	// present upstream but with a different native token; skip the mismatch warning
+	"stable", // upstream USDT0 vs gUSDT
+	"polkadot-testnet", // upstream DOT vs PAS
 ];
 
 function validateFilenames(networksPath: string) {
