@@ -25,6 +25,7 @@ const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
 	"tempo-andantino",
 	"hyper-evm",
 	"tempo",
+	"robinhood",
 ];
 
 function validateFilenames(networksPath: string) {
