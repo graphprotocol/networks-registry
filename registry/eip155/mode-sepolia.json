@@ -7,7 +7,7 @@
   "caip2Id": "eip155:919",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.modescan.io"],
-  "rpcUrls": ["https://sepolia.mode.network"],
+  "rpcUrls": ["https://sepolia.mode.network", "https://mode-testnet.drpc.org"],
   "apiUrls": [
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/919/etherscan/api",

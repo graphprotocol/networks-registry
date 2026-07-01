@@ -11,7 +11,10 @@
     { "kind": "testnetOf", "network": "polygon-zkevm" }
   ],
   "explorerUrls": [],
-  "rpcUrls": ["https://rpc.cardona.zkevm-rpc.com"],
+  "rpcUrls": [
+    "https://rpc.cardona.zkevm-rpc.com",
+    "https://polygon-zkevm-cardona.drpc.org"
+  ],
   "apiUrls": [],
   "networkType": "testnet",
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },

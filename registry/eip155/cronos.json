@@ -6,7 +6,11 @@
   "caip2Id": "eip155:25",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.cronos.org"],
-  "rpcUrls": ["https://evm.cronos.org"],
+  "rpcUrls": [
+    "https://evm.cronos.org",
+    "https://cronos.drpc.org",
+    "https://cronos.rpc.sentio.xyz"
+  ],
   "apiUrls": [
     { "url": "https://cronos.org/explorer/api", "kind": "blockscout" }
   ],

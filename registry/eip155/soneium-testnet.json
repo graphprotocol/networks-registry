@@ -9,7 +9,8 @@
   "explorerUrls": ["https://soneium-minato.blockscout.com"],
   "rpcUrls": [
     "https://rpc.minato.soneium.org",
-    "https://minato.rpc.service.pinax.network"
+    "https://minato.rpc.service.pinax.network",
+    "https://soneium-minato.drpc.org"
   ],
   "apiUrls": [
     { "url": "https://soneium-minato.blockscout.com/api", "kind": "etherscan" }

@@ -6,7 +6,11 @@
   "caip2Id": "eip155:1313161554",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.aurora.dev"],
-  "rpcUrls": ["https://mainnet.aurora.dev"],
+  "rpcUrls": [
+    "https://mainnet.aurora.dev",
+    "https://1rpc.io/aurora",
+    "https://aurora.drpc.org"
+  ],
   "apiUrls": [
     { "url": "https://explorer.mainnet.aurora.dev/api", "kind": "blockscout" }
   ],

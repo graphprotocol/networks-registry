@@ -5,7 +5,10 @@
   "aliases": ["evm-2741", "abstract-mainnet"],
   "caip2Id": "eip155:2741",
   "graphNode": { "protocol": "ethereum" },
-  "rpcUrls": ["https://api.mainnet.abs.xyz"],
+  "rpcUrls": [
+    "https://api.mainnet.abs.xyz",
+    "https://abstract-mainnet.gateway.tatum.io"
+  ],
   "explorerUrls": ["https://abscan.org"],
   "apiUrls": [
     { "url": "https://abstract.abi.pinax.network/api", "kind": "etherscan" }

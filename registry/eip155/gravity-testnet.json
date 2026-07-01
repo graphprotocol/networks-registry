@@ -7,7 +7,10 @@
   "caip2Id": "eip155:13505",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer-sepolia.gravity.xyz"],
-  "rpcUrls": ["https://rpc-sepolia.gravity.xyz"],
+  "rpcUrls": [
+    "https://rpc-sepolia.gravity.xyz",
+    "https://gravity-alpha-sepolia.drpc.org"
+  ],
   "apiUrls": [
     { "url": "https://explorer-sepolia.gravity.xyz/api", "kind": "etherscan" }
   ],

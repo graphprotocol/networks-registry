@@ -7,7 +7,8 @@
   "graphNode": { "protocol": "ethereum" },
   "rpcUrls": [
     "https://pacific-rpc.manta.network/http",
-    "https://manta-pacific.drpc.org"
+    "https://manta-pacific.drpc.org",
+    "https://1rpc.io/manta"
   ],
   "explorerUrls": ["https://pacific-explorer.manta.network"],
   "apiUrls": [

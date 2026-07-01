@@ -6,7 +6,11 @@
   "caip2Id": "eip155:143",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://monadscan.com"],
-  "rpcUrls": ["https://rpc.monad.xyz", "https://rpc-mainnet.monadinfra.com"],
+  "rpcUrls": [
+    "https://rpc-mainnet.monadinfra.com",
+    "https://infra.originstake.com/monad/evm",
+    "https://monad-mainnet.rpc.sentio.xyz"
+  ],
   "apiUrls": [
     { "url": "https://monad.abi.pinax.network/api", "kind": "etherscan" }
   ],

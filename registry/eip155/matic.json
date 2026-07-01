@@ -8,8 +8,9 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://polygonscan.com"],
   "rpcUrls": [
-    "https://polygon-rpc.com",
-    "https://polygon.rpc.service.pinax.network"
+    "https://polygon.rpc.service.pinax.network",
+    "https://polygon.drpc.org",
+    "https://rpc.satelink.network/rpc/polygon"
   ],
   "apiUrls": [
     { "url": "https://polygon.abi.pinax.network/api", "kind": "etherscan" },

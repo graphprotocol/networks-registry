@@ -6,7 +6,7 @@
   "caip2Id": "eip155:88",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://www.vicscan.xyz"],
-  "rpcUrls": ["https://rpc.viction.xyz"],
+  "rpcUrls": ["https://rpc.viction.xyz", "https://viction.drpc.org"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,

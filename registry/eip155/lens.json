@@ -9,7 +9,7 @@
   "apiUrls": [
     { "url": "https://explorer-api.lens.xyz/api", "kind": "etherscan" }
   ],
-  "rpcUrls": ["https://rpc.lens.dev"],
+  "rpcUrls": ["https://rpc.lens.dev", "https://rpc.lens.xyz"],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

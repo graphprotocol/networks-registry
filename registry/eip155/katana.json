@@ -26,5 +26,10 @@
     },
     "blockFeatures": ["extended"]
   },
-  "icon": { "web3Icons": { "name": "katana" } }
+  "icon": { "web3Icons": { "name": "katana" } },
+  "rpcUrls": [
+    "https://katana.drpc.org",
+    "https://rpc.katanarpc.com",
+    "https://rpc.katana.network"
+  ]
 }

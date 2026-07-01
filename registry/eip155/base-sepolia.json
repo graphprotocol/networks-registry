@@ -9,8 +9,8 @@
   "explorerUrls": ["https://sepolia.basescan.org"],
   "rpcUrls": [
     "https://sepolia.base.org",
-    "https://base-sepolia-rpc.publicnode.com",
-    "https://basesepolia.rpc.service.pinax.network"
+    "https://basesepolia.rpc.service.pinax.network",
+    "https://base-sepolia.drpc.org"
   ],
   "apiUrls": [
     {

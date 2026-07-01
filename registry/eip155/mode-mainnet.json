@@ -6,7 +6,11 @@
   "caip2Id": "eip155:34443",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.mode.network"],
-  "rpcUrls": ["https://mainnet.mode.network"],
+  "rpcUrls": [
+    "https://mainnet.mode.network",
+    "https://1rpc.io/mode",
+    "https://mode.drpc.org"
+  ],
   "apiUrls": [
     { "url": "https://explorer.mode.network/api", "kind": "blockscout" },
     {

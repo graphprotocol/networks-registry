@@ -6,7 +6,11 @@
   "caip2Id": "eip155:8217",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://kaiascan.io"],
-  "rpcUrls": ["https://public-en.node.kaia.io"],
+  "rpcUrls": [
+    "https://public-en.node.kaia.io",
+    "https://klaytn.drpc.org",
+    "https://rpc.ankr.com/kaia"
+  ],
   "apiUrls": [
     { "url": "https://kaia.abi.pinax.network/api", "kind": "etherscan" }
   ],

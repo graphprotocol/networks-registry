@@ -8,7 +8,8 @@
   "explorerUrls": ["https://explorer.zora.energy"],
   "rpcUrls": [
     "https://rpc.zora.energy",
-    "https://zora.rpc.service.pinax.network"
+    "https://zora.rpc.service.pinax.network",
+    "https://zora.drpc.org"
   ],
   "apiUrls": [
     { "url": "https://explorer.zora.energy/api", "kind": "blockscout" },

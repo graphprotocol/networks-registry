@@ -7,7 +7,11 @@
   "caip2Id": "eip155:1001",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://kairos.kaiascan.io"],
-  "rpcUrls": ["https://public-en-kairos.node.kaia.io"],
+  "rpcUrls": [
+    "https://public-en-kairos.node.kaia.io",
+    "https://klaytn-baobab.drpc.org",
+    "https://responsive-green-emerald.kaia-kairos.quiknode.pro"
+  ],
   "apiUrls": [
     { "url": "https://kaia-testnet.abi.pinax.network/api", "kind": "etherscan" }
   ],

@@ -7,7 +7,11 @@
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://www.oklink.com/polygon-zkevm"],
-  "rpcUrls": ["https://zkevm-rpc.com", "https://polygon-zkevm.drpc.org"],
+  "rpcUrls": [
+    "https://zkevm-rpc.com",
+    "https://polygon-zkevm.drpc.org",
+    "https://1rpc.io/polygon/zkevm"
+  ],
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {

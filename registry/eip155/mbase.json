@@ -7,7 +7,11 @@
   "caip2Id": "eip155:1287",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://moonbase.moonscan.io"],
-  "rpcUrls": ["https://rpc.api.moonbase.moonbeam.network"],
+  "rpcUrls": [
+    "https://rpc.api.moonbase.moonbeam.network",
+    "https://moonbase-alpha.drpc.org",
+    "https://moonbeam-alpha.api.onfinality.io/public"
+  ],
   "apiUrls": [
     { "url": "https://moonbase.abi.pinax.network/api", "kind": "etherscan" }
   ],

@@ -8,8 +8,8 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.bscscan.com"],
   "rpcUrls": [
-    "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
-    "https://chapel.rpc.service.pinax.network"
+    "https://chapel.rpc.service.pinax.network",
+    "https://bsc-testnet.rpc.sentio.xyz"
   ],
   "apiUrls": [
     { "url": "https://bsc-testnet.abi.pinax.network/api", "kind": "etherscan" }

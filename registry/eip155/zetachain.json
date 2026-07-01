@@ -7,7 +7,10 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://zetascan.com"],
   "apiUrls": [{ "url": "https://zetascan.com/api", "kind": "etherscan" }],
-  "rpcUrls": ["https://zetachain-mainnet.g.allthatnode.com/archive/evm"],
+  "rpcUrls": [
+    "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
+    "https://zeta-chain.drpc.org"
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,

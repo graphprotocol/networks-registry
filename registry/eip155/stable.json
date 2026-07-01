@@ -7,7 +7,7 @@
   "networkType": "mainnet",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://stablescan.xyz"],
-  "rpcUrls": ["https://rpc.stable.xyz"],
+  "rpcUrls": ["https://stable-mainnet.rpc.sentio.xyz"],
   "apiUrls": [
     { "url": "https://stable.abi.pinax.network/api", "kind": "etherscan" }
   ],

@@ -6,7 +6,7 @@
   "caip2Id": "eip155:1329",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://seitrace.com"],
-  "rpcUrls": ["https://sei-evm-rpc.publicnode.com"],
+  "rpcUrls": ["https://sei-evm-rpc.stakeme.pro"],
   "apiUrls": [
     { "url": "https://sei-mainnet.abi.pinax.network/api", "kind": "etherscan" },
     { "url": "https://seitrace.com/pacific-1/api", "kind": "etherscan" }

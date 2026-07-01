@@ -6,10 +6,7 @@
   "caip2Id": "eip155:1776",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://blockscout.injective.network"],
-  "rpcUrls": [
-    "https://sentry.evm-rpc.injective.network",
-    "https://injectiveevm-rpc.polkachu.com"
-  ],
+  "rpcUrls": ["https://sentry.evm-rpc.injective.network"],
   "apiUrls": [
     {
       "url": "https://blockscout-api.injective.network/api",

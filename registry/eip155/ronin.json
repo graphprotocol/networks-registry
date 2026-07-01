@@ -9,7 +9,10 @@
   "networkType": "mainnet",
   "relations": [],
   "explorerUrls": ["https://app.roninchain.com"],
-  "rpcUrls": ["https://api.roninchain.com/rpc"],
+  "rpcUrls": [
+    "https://ronin.drpc.org",
+    "https://ronin-mainnet.gateway.tatum.io"
+  ],
   "issuanceRewards": false,
   "nativeToken": "RON",
   "docsUrl": "https://docs.roninchain.com",

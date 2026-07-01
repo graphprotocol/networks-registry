@@ -6,7 +6,11 @@
   "caip2Id": "eip155:146",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sonicscan.org"],
-  "rpcUrls": ["https://rpc.soniclabs.com"],
+  "rpcUrls": [
+    "https://rpc.soniclabs.com",
+    "https://sonic.drpc.org",
+    "https://sonic.api.pocket.network"
+  ],
   "apiUrls": [
     { "url": "https://sonic.abi.pinax.network/api", "kind": "etherscan" }
   ],

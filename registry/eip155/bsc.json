@@ -7,9 +7,9 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://bscscan.com"],
   "rpcUrls": [
-    "https://bsc-dataseed1.binance.org",
-    "https://bsc-dataseed1.defibit.io",
-    "https://bsc.rpc.service.pinax.network"
+    "https://bsc.rpc.service.pinax.network",
+    "https://bsc.rpc.sentio.xyz",
+    "https://api.zan.top/bsc-mainnet"
   ],
   "apiUrls": [
     { "url": "https://bsc.abi.pinax.network/api", "kind": "etherscan" }

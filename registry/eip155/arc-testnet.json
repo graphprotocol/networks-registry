@@ -6,7 +6,10 @@
   "caip2Id": "eip155:5042002",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.arcscan.app"],
-  "rpcUrls": ["https://rpc.testnet.arc.network"],
+  "rpcUrls": [
+    "https://rpc.testnet.arc.network",
+    "https://arc-testnet.drpc.org"
+  ],
   "apiUrls": [
     { "url": "https://testnet.arcscan.app/api", "kind": "etherscan" }
   ],

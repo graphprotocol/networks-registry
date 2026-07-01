@@ -7,7 +7,7 @@
   "caip2Id": "eip155:1625",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.gravity.xyz"],
-  "rpcUrls": ["https://rpc.gravity.xyz"],
+  "rpcUrls": ["https://rpc.gravity.xyz", "https://rpc.ankr.com/gravity"],
   "apiUrls": [
     { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
   ],

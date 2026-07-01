@@ -6,7 +6,11 @@
   "caip2Id": "eip155:31",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://rootstock-testnet.blockscout.com"],
-  "rpcUrls": ["https://public-node.testnet.rsk.co"],
+  "rpcUrls": [
+    "https://public-node.testnet.rsk.co",
+    "https://rootstock-testnet.drpc.org",
+    "https://mycrypto.testnet.rsk.co"
+  ],
   "apiUrls": [
     {
       "url": "https://rootstock-testnet.blockscout.com/api",

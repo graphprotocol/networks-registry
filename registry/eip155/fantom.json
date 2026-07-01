@@ -7,7 +7,11 @@
   "caip2Id": "eip155:250",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.fantom.network", "https://ftmscout.com"],
-  "rpcUrls": ["https://fantom.drpc.org"],
+  "rpcUrls": [
+    "https://fantom.drpc.org",
+    "https://1rpc.io/ftm",
+    "https://rpc.fantom.network"
+  ],
   "apiUrls": [{ "url": "https://ftmscout.com/api", "kind": "blockscout" }],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

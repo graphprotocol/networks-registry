@@ -6,7 +6,10 @@
   "caip2Id": "eip155:14601",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.sonicscan.org"],
-  "rpcUrls": ["https://rpc.testnet.soniclabs.com"],
+  "rpcUrls": [
+    "https://rpc.testnet.soniclabs.com",
+    "https://sonic-testnet-v2.drpc.org"
+  ],
   "apiUrls": [
     {
       "url": "https://sonic-testnet.abi.pinax.network/api",

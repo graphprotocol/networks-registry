@@ -7,7 +7,11 @@
   "caip2Id": "eip155:168587773",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.blastscan.io"],
-  "rpcUrls": ["https://sepolia.blast.io"],
+  "rpcUrls": [
+    "https://sepolia.blast.io",
+    "https://blast-testnet-public.nodies.app",
+    "https://blast-sepolia.drpc.org"
+  ],
   "apiUrls": [
     {
       "url": "https://blast-testnet.abi.pinax.network/api",

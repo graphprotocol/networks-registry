@@ -12,8 +12,9 @@
   ],
   "explorerUrls": ["https://amoy.polygonscan.com"],
   "rpcUrls": [
-    "https://rpc-amoy.polygon.technology",
-    "https://amoy.rpc.service.pinax.network"
+    "https://amoy.rpc.service.pinax.network",
+    "https://polygon-amoy.drpc.org",
+    "https://polygon-amoy.api.onfinality.io/public"
   ],
   "apiUrls": [
     { "url": "https://polygon-amoy.abi.pinax.network/api", "kind": "etherscan" }

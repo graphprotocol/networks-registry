@@ -7,7 +7,11 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://peaq.subscan.io"],
   "apiUrls": [],
-  "rpcUrls": ["https://peaq.api.onfinality.io/public"],
+  "rpcUrls": [
+    "https://peaq.api.onfinality.io/public",
+    "https://quicknode1.peaq.xyz",
+    "https://quicknode2.peaq.xyz"
+  ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "issuanceRewards": false,

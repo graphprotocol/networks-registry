@@ -9,7 +9,7 @@
   "apiUrls": [
     { "url": "https://hashkey.blockscout.com/api", "kind": "etherscan" }
   ],
-  "rpcUrls": ["https://mainnet.hsk.xyz"],
+  "rpcUrls": ["https://mainnet.hsk.xyz", "https://hashkey.drpc.org"],
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "services": { "subgraphs": [] },

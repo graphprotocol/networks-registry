@@ -8,8 +8,8 @@
   "explorerUrls": ["https://base.blockscout.com"],
   "rpcUrls": [
     "https://mainnet.base.org",
-    "https://base-rpc.publicnode.com",
-    "https://base.rpc.service.pinax.network"
+    "https://base.rpc.service.pinax.network",
+    "https://1rpc.io/base"
   ],
   "apiUrls": [
     { "url": "https://base.abi.pinax.network/api", "kind": "etherscan" },

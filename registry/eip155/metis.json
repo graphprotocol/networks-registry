@@ -18,7 +18,11 @@
       "kind": "etherscan"
     }
   ],
-  "rpcUrls": ["https://andromeda.metis.io"],
+  "rpcUrls": [
+    "https://andromeda.metis.io",
+    "https://metis.drpc.org",
+    "https://metis-public.nodies.app"
+  ],
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "services": { "subgraphs": [] },

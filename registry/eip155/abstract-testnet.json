@@ -6,7 +6,10 @@
   "caip2Id": "eip155:11124",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.testnet.abs.xyz"],
-  "rpcUrls": ["https://api.testnet.abs.xyz"],
+  "rpcUrls": [
+    "https://api.testnet.abs.xyz",
+    "https://abstract-sepolia.drpc.org"
+  ],
   "apiUrls": [
     {
       "url": "https://block-explorer-api.testnet.abs.xyz/api",

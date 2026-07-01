@@ -13,7 +13,10 @@
       "kind": "blockscout"
     }
   ],
-  "rpcUrls": ["https://rpc-gel-sepolia.inkonchain.com"],
+  "rpcUrls": [
+    "https://rpc-gel-sepolia.inkonchain.com",
+    "https://ink-sepolia.drpc.org"
+  ],
   "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [

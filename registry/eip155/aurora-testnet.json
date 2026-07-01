@@ -6,7 +6,7 @@
   "caip2Id": "eip155:1313161555",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.testnet.aurora.dev"],
-  "rpcUrls": ["https://testnet.aurora.dev"],
+  "rpcUrls": ["https://testnet.aurora.dev", "https://aurora-testnet.drpc.org"],
   "apiUrls": [],
   "services": { "subgraphs": [] },
   "networkType": "testnet",

@@ -6,7 +6,10 @@
   "caip2Id": "eip155:47763",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://xexplorer.neo.org"],
-  "rpcUrls": ["https://mainnet-1.rpc.banelabs.org"],
+  "rpcUrls": [
+    "https://mainnet-1.rpc.banelabs.org",
+    "https://mainnet-2.rpc.banelabs.org"
+  ],
   "apiUrls": [{ "url": "https://xexplorer.neo.org/api", "kind": "etherscan" }],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",

@@ -9,7 +9,8 @@
   "explorerUrls": ["https://gnosis-chiado.blockscout.com"],
   "rpcUrls": [
     "https://rpc.chiadochain.net",
-    "https://chiado.rpc.service.pinax.network"
+    "https://chiado.rpc.service.pinax.network",
+    "https://gnosis-chiado.drpc.org"
   ],
   "apiUrls": [
     { "url": "https://gnosis-chiado.blockscout.com/api", "kind": "blockscout" }

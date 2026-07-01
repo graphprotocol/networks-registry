@@ -6,7 +6,11 @@
   "caip2Id": "eip155:252",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://fraxscan.com"],
-  "rpcUrls": ["https://rpc.frax.com"],
+  "rpcUrls": [
+    "https://rpc.frax.com",
+    "https://fraxtal.drpc.org",
+    "https://fraxtal.api.pocket.network"
+  ],
   "apiUrls": [
     { "url": "https://fraxtal.abi.pinax.network/api", "kind": "etherscan" },
     {

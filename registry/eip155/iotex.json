@@ -8,7 +8,8 @@
   "explorerUrls": ["https://iotexscan.io"],
   "rpcUrls": [
     "https://babel-api.mainnet.iotex.io",
-    "https://iotex.api.onfinality.io/public"
+    "https://iotex.api.onfinality.io/public",
+    "https://babel-api.mainnet.iotex.one"
   ],
   "apiUrls": [{ "url": "https://index.iotexscan.io/api", "kind": "etherscan" }],
   "services": { "subgraphs": [] },

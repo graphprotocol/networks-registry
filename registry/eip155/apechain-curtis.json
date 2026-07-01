@@ -7,7 +7,10 @@
   "caip2Id": "eip155:33111",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://curtis.apescan.io"],
-  "rpcUrls": ["https://curtis.rpc.caldera.xyz/http"],
+  "rpcUrls": [
+    "https://curtis.rpc.caldera.xyz/http",
+    "https://rpc.curtis.apechain.com"
+  ],
   "apiUrls": [
     {
       "url": "https://apechain-testnet.abi.pinax.network/api",

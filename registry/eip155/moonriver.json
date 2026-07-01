@@ -6,7 +6,11 @@
   "caip2Id": "eip155:1285",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://moonriver.moonscan.io"],
-  "rpcUrls": ["https://rpc.api.moonriver.moonbeam.network"],
+  "rpcUrls": [
+    "https://rpc.api.moonriver.moonbeam.network",
+    "https://moonriver.api.onfinality.io/public",
+    "https://moonriver.unitedbloc.com"
+  ],
   "apiUrls": [
     { "url": "https://moonriver.abi.pinax.network/api", "kind": "etherscan" }
   ],

@@ -6,7 +6,7 @@
   "caip2Id": "eip155:33139",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://apescan.io"],
-  "rpcUrls": ["https://rpc.apechain.com"],
+  "rpcUrls": ["https://rpc.apechain.com", "https://apechain.drpc.org"],
   "apiUrls": [
     { "url": "https://apechain.abi.pinax.network/api", "kind": "etherscan" }
   ],

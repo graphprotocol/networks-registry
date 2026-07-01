@@ -8,7 +8,8 @@
   "explorerUrls": ["https://bokuto.katanascan.com"],
   "rpcUrls": [
     "https://katana-bokuto.gateway.tenderly.co",
-    "https://rpc-bokuto.katanarpc.com"
+    "https://rpc-bokuto.katanarpc.com",
+    "https://katana-testnet.drpc.org"
   ],
   "apiUrls": [
     {

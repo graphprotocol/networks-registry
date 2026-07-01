@@ -8,8 +8,8 @@
   "explorerUrls": ["https://lineascan.build"],
   "rpcUrls": [
     "https://rpc.linea.build",
-    "https://linea-mainnet.infura.io/v3/${INFURA_API_KEY}",
-    "https://linea.rpc.service.pinax.network"
+    "https://linea.rpc.service.pinax.network",
+    "https://1rpc.io/linea"
   ],
   "apiUrls": [
     { "url": "https://linea.abi.pinax.network/api", "kind": "etherscan" },

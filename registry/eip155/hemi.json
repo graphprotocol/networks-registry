@@ -7,7 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.hemi.xyz"],
   "apiUrls": [{ "url": "https://explorer.hemi.xyz/api", "kind": "etherscan" }],
-  "rpcUrls": ["https://rpc.hemi.network/rpc"],
+  "rpcUrls": ["https://rpc.hemi.network/rpc", "https://hemi.drpc.org"],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

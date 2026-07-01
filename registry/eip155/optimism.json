@@ -9,8 +9,8 @@
   "explorerUrls": ["https://optimistic.etherscan.io"],
   "rpcUrls": [
     "https://mainnet.optimism.io",
-    "https://optimism-rpc.publicnode.com",
-    "https://optimism.rpc.service.pinax.network"
+    "https://optimism.rpc.service.pinax.network",
+    "https://optimism.drpc.org"
   ],
   "apiUrls": [
     { "url": "https://optimism.abi.pinax.network/api", "kind": "etherscan" },

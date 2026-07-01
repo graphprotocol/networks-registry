@@ -7,7 +7,10 @@
   "caip2Id": "eip155:743111",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.explorer.hemi.xyz"],
-  "rpcUrls": ["https://testnet.rpc.hemi.network/rpc"],
+  "rpcUrls": [
+    "https://testnet.rpc.hemi.network/rpc",
+    "https://hemi-testnet.drpc.org"
+  ],
   "apiUrls": [
     { "url": "https://testnet.explorer.hemi.xyz/api", "kind": "etherscan" }
   ],

@@ -7,10 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "relations": [{ "kind": "l2Of", "network": "bsc" }],
   "explorerUrls": ["https://opbnbscan.com"],
-  "rpcUrls": [
-    "https://opbnb-mainnet-rpc.bnbchain.org",
-    "https://opbnb.rpc.service.pinax.network"
-  ],
+  "rpcUrls": ["https://1rpc.io/opbnb", "https://opbnb.drpc.org"],
   "apiUrls": [
     { "url": "https://bnb-op.abi.pinax.network/api", "kind": "etherscan" }
   ],

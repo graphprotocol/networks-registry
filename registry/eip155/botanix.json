@@ -21,5 +21,9 @@
     },
     "blockFeatures": ["base"]
   },
-  "icon": { "web3Icons": { "name": "botanix" } }
+  "icon": { "web3Icons": { "name": "botanix" } },
+  "rpcUrls": [
+    "https://rpc.ankr.com/botanix_mainnet",
+    "https://rpc.botanixlabs.com"
+  ]
 }

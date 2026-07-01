@@ -6,7 +6,7 @@
   "caip2Id": "eip155:37111",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://block-explorer.testnet.lens.dev"],
-  "rpcUrls": ["https://rpc.testnet.lens.dev"],
+  "rpcUrls": ["https://rpc.testnet.lens.dev", "https://lens-testnet.drpc.org"],
   "apiUrls": [
     { "url": "https://explorer-api.testnet.lens.xyz/api", "kind": "etherscan" }
   ],
