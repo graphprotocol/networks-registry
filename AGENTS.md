@@ -66,6 +66,28 @@ For a chain with id `<id>`, Pinax endpoints follow these patterns:
 **Always confirm each one responds before listing it** — the subdomain existing does
 not mean the chain is provisioned.
 
+**Never remove a Pinax `rpc.service.pinax.network` endpoint unless explicitly asked** —
+even if it is temporarily down or not archive. These are first-party; report the problem
+instead of deleting the endpoint.
+
+## Maintaining rpcUrls (archive nodes)
+
+`rpcUrls` are expected to point to **archive** nodes. Use the audit/cleanup tool:
+
+```bash
+bun cleanup:rpcs                 # dry run: audit ALL eip155 chains, print issues
+bun cleanup:rpcs base bnb-op     # only these ids (prefix match)
+bun cleanup:rpcs --write --max=3 # apply changes, target 3 RPCs/chain, then `bun format`
+```
+
+For each chain it probes existing + public (chainlist.org) endpoints for correct chainId,
+`firstStreamableBlock` hash match (at the real height), and archive capability
+(`eth_getBalance` at `firstStreamableBlock.height`). It keeps existing archive endpoints
+plus all Pinax endpoints, tops up with public archive nodes, and reports issues (stale
+`firstStreamableBlock`, chainId mismatches, broken Pinax endpoints). Public endpoints that
+serve archive only with a paid token (e.g. all `publicnode.com`) are correctly dropped.
+Default is dry-run — review before `--write`, since public RPC liveness varies run-to-run.
+
 ## Gotchas (these cause validation ERRORS, not just warnings)
 
 - **web3icons name must exist.** Setting `icon.web3Icons.name` to an id that isn't in
