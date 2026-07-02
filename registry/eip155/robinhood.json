@@ -1,7 +1,7 @@
 {
   "id": "robinhood",
-  "shortName": "Robinhood",
-  "fullName": "Robinhood Chain",
+  "shortName": "Robinhood Chain",
+  "fullName": "Robinhood Chain Mainnet",
   "aliases": ["evm-4663", "robinhood-mainnet", "robinhood-chain"],
   "caip2Id": "eip155:4663",
   "networkType": "mainnet",
