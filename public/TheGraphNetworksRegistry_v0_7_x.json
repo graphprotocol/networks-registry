@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.101",
+  "version": "0.7.102",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-07-01T21:19:52.557Z",
+  "updatedAt": "2026-07-02T14:59:51.763Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5393,8 +5393,8 @@
     },
     {
       "id": "robinhood",
-      "shortName": "Robinhood",
-      "fullName": "Robinhood Chain",
+      "shortName": "Robinhood Chain",
+      "fullName": "Robinhood Chain Mainnet",
       "aliases": [
         "evm-4663",
         "robinhood-mainnet",
