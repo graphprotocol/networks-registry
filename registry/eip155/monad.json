@@ -17,22 +17,22 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["mainnet-base.monad.streamingfast.io:443"],
-    "substreams": ["mainnet-base.monad.streamingfast.io:443"]
+    "firehose": ["mainnet.monad.streamingfast.io:443"],
+    "substreams": ["mainnet.monad.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "MON",
   "docsUrl": "https://docs.monad.xyz",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
-    "evmExtendedModel": false,
+    "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
       "id": "0x76ac00ea25b983893d48fc0ddac36a9c4d605b31a5cfd440c2f9f3a06941152c",
       "height": 1
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "monad" } }
 }
