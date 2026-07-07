@@ -17,7 +17,7 @@
   ],
   "apiUrls": [],
   "networkType": "testnet",
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://polygon.technology/polygon-zkevm",

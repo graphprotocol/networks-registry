@@ -14,7 +14,7 @@
   ],
   "apiUrls": [{ "url": "https://ftmscout.com/api", "kind": "blockscout" }],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "firehose": [],
     "substreams": []
   },

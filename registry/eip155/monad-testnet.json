@@ -13,7 +13,7 @@
       "kind": "etherscan"
     }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "monad" }],
   "issuanceRewards": false,
