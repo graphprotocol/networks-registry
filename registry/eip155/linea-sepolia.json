@@ -14,7 +14,7 @@
   ],
   "apiUrls": [
     {
-      "url": "https://linea-sepolia.abi.pinax.network/api",
+      "url": "https://linea-sepolia.abi.thegraph.com/api",
       "kind": "etherscan"
     },
     {

@@ -12,7 +12,7 @@
     "https://rpc.ankr.com/kaia"
   ],
   "apiUrls": [
-    { "url": "https://kaia.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://kaia.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",

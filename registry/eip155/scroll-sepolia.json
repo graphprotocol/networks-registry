@@ -18,7 +18,7 @@
       "kind": "blockscout"
     },
     {
-      "url": "https://scroll-sepolia.abi.pinax.network/api",
+      "url": "https://scroll-sepolia.abi.thegraph.com/api",
       "kind": "etherscan"
     }
   ],

@@ -12,7 +12,7 @@
     "https://1rpc.io/base"
   ],
   "apiUrls": [
-    { "url": "https://base.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://base.abi.thegraph.com/api", "kind": "etherscan" },
     { "url": "https://base.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {

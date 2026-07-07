@@ -13,7 +13,7 @@
     "https://moonbeam-alpha.api.onfinality.io/public"
   ],
   "apiUrls": [
-    { "url": "https://moonbase.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://moonbase.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",

@@ -19,7 +19,7 @@
   ],
   "apiUrls": [
     { "url": "https://megaeth.blockscout.com/api", "kind": "blockscout" },
-    { "url": "https://megaeth.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://megaeth.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

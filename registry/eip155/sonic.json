@@ -12,7 +12,7 @@
     "https://sonic.api.pocket.network"
   ],
   "apiUrls": [
-    { "url": "https://sonic.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://sonic.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "mainnet",

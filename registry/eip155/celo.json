@@ -12,7 +12,7 @@
     "https://celo.drpc.org"
   ],
   "apiUrls": [
-    { "url": "https://celo.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://celo.abi.thegraph.com/api", "kind": "etherscan" },
     { "url": "https://explorer.celo.org/mainnet/api", "kind": "blockscout" }
   ],
   "services": {

@@ -12,7 +12,7 @@
     "https://api.zan.top/bsc-mainnet"
   ],
   "apiUrls": [
-    { "url": "https://bsc.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://bsc.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "networkType": "mainnet",
   "services": {

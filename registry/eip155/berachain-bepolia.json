@@ -10,7 +10,7 @@
   "explorerUrls": ["https://bepolia.beratrail.io"],
   "apiUrls": [
     {
-      "url": "https://berachain-bepolia.abi.pinax.network/api",
+      "url": "https://berachain-bepolia.abi.thegraph.com/api",
       "kind": "etherscan"
     },
     {

@@ -7,7 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://katanascan.com"],
   "apiUrls": [
-    { "url": "https://katana.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://katana.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": [] },
   "docsUrl": "https://docs.katana.network",

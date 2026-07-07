@@ -10,7 +10,7 @@
   "rpcUrls": ["https://evm-rpc-testnet.sei-apis.com"],
   "apiUrls": [
     {
-      "url": "https://sei-atlantic.abi.pinax.network/api",
+      "url": "https://sei-atlantic.abi.thegraph.com/api",
       "kind": "etherscan"
     },
     { "url": "https://seitrace.com/atlantic-2/api", "kind": "etherscan" }

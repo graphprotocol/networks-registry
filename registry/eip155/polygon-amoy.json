@@ -17,7 +17,7 @@
     "https://polygon-amoy.api.onfinality.io/public"
   ],
   "apiUrls": [
-    { "url": "https://polygon-amoy.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://polygon-amoy.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "networkType": "testnet",
   "services": {

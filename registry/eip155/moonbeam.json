@@ -12,7 +12,7 @@
     "https://moonbeam.drpc.org"
   ],
   "apiUrls": [
-    { "url": "https://moonbeam.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://moonbeam.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],

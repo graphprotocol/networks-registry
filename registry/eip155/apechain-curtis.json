@@ -13,7 +13,7 @@
   ],
   "apiUrls": [
     {
-      "url": "https://apechain-testnet.abi.pinax.network/api",
+      "url": "https://apechain-testnet.abi.thegraph.com/api",
       "kind": "etherscan"
     }
   ],

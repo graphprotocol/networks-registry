@@ -11,7 +11,7 @@
   ],
   "explorerUrls": ["https://abscan.org"],
   "apiUrls": [
-    { "url": "https://abstract.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://abstract.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",

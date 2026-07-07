@@ -13,7 +13,7 @@
     "https://optimism.drpc.org"
   ],
   "apiUrls": [
-    { "url": "https://optimism.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://optimism.abi.thegraph.com/api", "kind": "etherscan" },
     { "url": "https://optimism.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {

@@ -9,7 +9,7 @@
   "rpcUrls": ["https://testnet-rpc.monad.xyz"],
   "apiUrls": [
     {
-      "url": "https://monad-testnet.abi.pinax.network/api",
+      "url": "https://monad-testnet.abi.thegraph.com/api",
       "kind": "etherscan"
     }
   ],

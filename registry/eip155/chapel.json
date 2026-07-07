@@ -12,7 +12,7 @@
     "https://bsc-testnet.rpc.sentio.xyz"
   ],
   "apiUrls": [
-    { "url": "https://bsc-testnet.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://bsc-testnet.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "bsc" }],

@@ -12,7 +12,7 @@
     "https://fraxtal.api.pocket.network"
   ],
   "apiUrls": [
-    { "url": "https://fraxtal.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://fraxtal.abi.thegraph.com/api", "kind": "etherscan" },
     {
       "url": "https://api.routescan.io/v2/network/mainnet/evm/252/etherscan/api",
       "kind": "etherscan"

@@ -18,7 +18,7 @@
   ],
   "apiUrls": [
     {
-      "url": "https://celo-sepolia.abi.pinax.network/api",
+      "url": "https://celo-sepolia.abi.thegraph.com/api",
       "kind": "etherscan"
     },
     { "url": "https://celo-sepolia.blockscout.com/api", "kind": "blockscout" }

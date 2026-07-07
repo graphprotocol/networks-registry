@@ -13,7 +13,7 @@
     "https://avalanche-fuji.drpc.org"
   ],
   "apiUrls": [
-    { "url": "https://fuji.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://fuji.abi.thegraph.com/api", "kind": "etherscan" },
     { "url": "https://api-testnet.snowtrace.io/api", "kind": "etherscan" },
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/43113/etherscan/api",

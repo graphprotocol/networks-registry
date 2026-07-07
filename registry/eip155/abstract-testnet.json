@@ -16,7 +16,7 @@
       "kind": "etherscan"
     },
     {
-      "url": "https://abstract-testnet.abi.pinax.network/api",
+      "url": "https://abstract-testnet.abi.thegraph.com/api",
       "kind": "etherscan"
     }
   ],

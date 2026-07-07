@@ -13,7 +13,7 @@
   ],
   "apiUrls": [
     { "url": "https://explorer.swellnetwork.io/api", "kind": "blockscout" },
-    { "url": "https://swellchain.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://swellchain.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",

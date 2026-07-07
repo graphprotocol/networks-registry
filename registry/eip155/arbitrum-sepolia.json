@@ -19,7 +19,7 @@
   ],
   "apiUrls": [
     {
-      "url": "https://arbitrum-sepolia.abi.pinax.network/api",
+      "url": "https://arbitrum-sepolia.abi.thegraph.com/api",
       "kind": "etherscan"
     }
   ],

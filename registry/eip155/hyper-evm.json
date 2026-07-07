@@ -13,7 +13,7 @@
     "https://hyperevm.rpc.service.pinax.network"
   ],
   "apiUrls": [
-    { "url": "https://hyperevm.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://hyperevm.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": [],

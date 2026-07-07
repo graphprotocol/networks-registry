@@ -9,7 +9,7 @@
   "explorerUrls": ["https://stablescan.xyz"],
   "rpcUrls": ["https://stable-mainnet.rpc.sentio.xyz"],
   "apiUrls": [
-    { "url": "https://stable.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://stable.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "issuanceRewards": false,

@@ -18,7 +18,7 @@
     "https://eth-sepolia-testnet.api.pocket.network"
   ],
   "apiUrls": [
-    { "url": "https://sepolia.abi.pinax.network/api", "kind": "etherscan" },
+    { "url": "https://sepolia.abi.thegraph.com/api", "kind": "etherscan" },
     { "url": "https://eth-sepolia.blockscout.com/api", "kind": "blockscout" },
     {
       "url": "https://api.routescan.io/v2/network/testnet/evm/11155111/etherscan/api",

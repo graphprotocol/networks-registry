@@ -22,7 +22,7 @@
   "explorerUrls": ["https://unichain.blockscout.com", "https://uniscan.xyz"],
   "apiUrls": [
     { "url": "https://unichain.blockscout.com/api", "kind": "blockscout" },
-    { "url": "https://unichain.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://unichain.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "rpcUrls": [
     "https://mainnet.unichain.org",

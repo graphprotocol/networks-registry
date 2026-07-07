@@ -9,7 +9,7 @@
   "explorerUrls": ["https://opbnbscan.com"],
   "rpcUrls": ["https://1rpc.io/opbnb", "https://opbnb.drpc.org"],
   "apiUrls": [
-    { "url": "https://bnb-op.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://bnb-op.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": {},
   "networkType": "mainnet",

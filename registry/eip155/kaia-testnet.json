@@ -13,7 +13,7 @@
     "https://responsive-green-emerald.kaia-kairos.quiknode.pro"
   ],
   "apiUrls": [
-    { "url": "https://kaia-testnet.abi.pinax.network/api", "kind": "etherscan" }
+    { "url": "https://kaia-testnet.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",

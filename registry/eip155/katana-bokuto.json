@@ -13,7 +13,7 @@
   ],
   "apiUrls": [
     {
-      "url": "https://katana-bokuto.abi.pinax.network/api",
+      "url": "https://katana-bokuto.abi.thegraph.com/api",
       "kind": "etherscan"
     }
   ],

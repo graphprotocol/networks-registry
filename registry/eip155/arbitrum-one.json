@@ -14,7 +14,7 @@
   ],
   "apiUrls": [
     {
-      "url": "https://arbitrum-one.abi.pinax.network/api",
+      "url": "https://arbitrum-one.abi.thegraph.com/api",
       "kind": "etherscan"
     },
     { "url": "https://arbitrum.blockscout.com/api", "kind": "blockscout" }
