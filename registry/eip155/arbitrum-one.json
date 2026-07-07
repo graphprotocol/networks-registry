@@ -13,10 +13,7 @@
     "https://arbitrum-one.rpc.sentio.xyz"
   ],
   "apiUrls": [
-    {
-      "url": "https://arbitrum-one.abi.thegraph.com/api",
-      "kind": "etherscan"
-    },
+    { "url": "https://arbitrum-one.abi.thegraph.com/api", "kind": "etherscan" },
     { "url": "https://arbitrum.blockscout.com/api", "kind": "blockscout" }
   ],
   "services": {

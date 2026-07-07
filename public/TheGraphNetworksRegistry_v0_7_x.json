@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.102",
+  "version": "0.7.103",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-07-02T14:59:51.763Z",
+  "updatedAt": "2026-07-07T16:02:35.687Z",
   "networks": [
     {
       "id": "mainnet",
@@ -126,7 +126,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://optimism.abi.pinax.network/api",
+          "url": "https://optimism.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -213,7 +213,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://gnosis.abi.pinax.network/api",
+          "url": "https://gnosis.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -277,7 +277,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://kaia-testnet.abi.pinax.network/api",
+          "url": "https://kaia-testnet.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -393,7 +393,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://monad-testnet.abi.pinax.network/api",
+          "url": "https://monad-testnet.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -641,7 +641,7 @@
           "kind": "etherscan"
         },
         {
-          "url": "https://abstract-testnet.abi.pinax.network/api",
+          "url": "https://abstract-testnet.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -713,7 +713,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://celo-sepolia.abi.pinax.network/api",
+          "url": "https://celo-sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -778,7 +778,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://sepolia.abi.pinax.network/api",
+          "url": "https://sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -859,7 +859,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://optimism-sepolia.abi.pinax.network/api",
+          "url": "https://optimism-sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -1152,7 +1152,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://moonbeam.abi.pinax.network/api",
+          "url": "https://moonbeam.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -1215,7 +1215,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://moonriver.abi.pinax.network/api",
+          "url": "https://moonriver.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -1278,7 +1278,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://moonbase.abi.pinax.network/api",
+          "url": "https://moonbase.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -1361,7 +1361,7 @@
           "kind": "blockscout"
         },
         {
-          "url": "https://unichain.abi.pinax.network/api",
+          "url": "https://unichain.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -1442,7 +1442,7 @@
           "kind": "etherscan"
         },
         {
-          "url": "https://unichain-testnet.abi.pinax.network/api",
+          "url": "https://unichain-testnet.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -1604,7 +1604,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://sei-atlantic.abi.pinax.network/api",
+          "url": "https://sei-atlantic.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -1666,7 +1666,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://sei-mainnet.abi.pinax.network/api",
+          "url": "https://sei-mainnet.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -1852,7 +1852,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://polygon.abi.pinax.network/api",
+          "url": "https://polygon.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -1936,7 +1936,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://monad.abi.pinax.network/api",
+          "url": "https://monad.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -2060,7 +2060,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://sonic.abi.pinax.network/api",
+          "url": "https://sonic.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -2118,7 +2118,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://sonic-testnet.abi.pinax.network/api",
+          "url": "https://sonic-testnet.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -2451,7 +2451,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://blast-testnet.abi.pinax.network/api",
+          "url": "https://blast-testnet.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -2756,7 +2756,7 @@
           "kind": "blockscout"
         },
         {
-          "url": "https://swellchain.abi.pinax.network/api",
+          "url": "https://swellchain.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -2809,7 +2809,7 @@
           "kind": "blockscout"
         },
         {
-          "url": "https://swellchain-sepolia.abi.pinax.network/api",
+          "url": "https://swellchain-sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -3121,7 +3121,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://bnb-op.abi.pinax.network/api",
+          "url": "https://bnb-op.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -3568,7 +3568,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://fraxtal.abi.pinax.network/api",
+          "url": "https://fraxtal.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -3629,7 +3629,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://abstract.abi.pinax.network/api",
+          "url": "https://abstract.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -4184,7 +4184,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://apechain-testnet.abi.pinax.network/api",
+          "url": "https://apechain-testnet.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -4245,7 +4245,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://apechain.abi.pinax.network/api",
+          "url": "https://apechain.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -4677,7 +4677,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://arbitrum-one.abi.pinax.network/api",
+          "url": "https://arbitrum-one.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -4775,7 +4775,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://arbitrum-sepolia.abi.pinax.network/api",
+          "url": "https://arbitrum-sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -4950,7 +4950,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://celo.abi.pinax.network/api",
+          "url": "https://celo.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -5189,7 +5189,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://fuji.abi.pinax.network/api",
+          "url": "https://fuji.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -5258,7 +5258,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://avalanche.abi.pinax.network/api",
+          "url": "https://avalanche.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -5360,7 +5360,7 @@
           "kind": "blockscout"
         },
         {
-          "url": "https://megaeth.abi.pinax.network/api",
+          "url": "https://megaeth.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -5649,7 +5649,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://worldchain.abi.pinax.network/api",
+          "url": "https://worldchain.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -5802,7 +5802,7 @@
           "kind": "blockscout"
         },
         {
-          "url": "https://scroll-sepolia.abi.pinax.network/api",
+          "url": "https://scroll-sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -5872,7 +5872,7 @@
           "kind": "blockscout"
         },
         {
-          "url": "https://scroll.abi.pinax.network/api",
+          "url": "https://scroll.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -5943,7 +5943,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://bsc.abi.pinax.network/api",
+          "url": "https://bsc.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -6030,7 +6030,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://hoodi.abi.pinax.network/api",
+          "url": "https://hoodi.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -6142,7 +6142,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://linea-sepolia.abi.pinax.network/api",
+          "url": "https://linea-sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -6216,7 +6216,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://linea.abi.pinax.network/api",
+          "url": "https://linea.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -6522,7 +6522,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://katana-bokuto.abi.pinax.network/api",
+          "url": "https://katana-bokuto.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -6643,7 +6643,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://katana.abi.pinax.network/api",
+          "url": "https://katana.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -6855,7 +6855,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://polygon-amoy.abi.pinax.network/api",
+          "url": "https://polygon-amoy.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -6913,7 +6913,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://berachain-bepolia.abi.pinax.network/api",
+          "url": "https://berachain-bepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -6975,7 +6975,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://berachain.abi.pinax.network/api",
+          "url": "https://berachain.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -7087,7 +7087,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://blast.abi.pinax.network/api",
+          "url": "https://blast.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -7158,7 +7158,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://kaia.abi.pinax.network/api",
+          "url": "https://kaia.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -7213,7 +7213,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://base.abi.pinax.network/api",
+          "url": "https://base.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -7304,7 +7304,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://base-sepolia.abi.pinax.network/api",
+          "url": "https://base-sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
         },
         {
@@ -7711,7 +7711,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://bsc-testnet.abi.pinax.network/api",
+          "url": "https://bsc-testnet.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -7776,7 +7776,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://stable.abi.pinax.network/api",
+          "url": "https://stable.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],
@@ -7886,7 +7886,7 @@
       ],
       "apiUrls": [
         {
-          "url": "https://hyperevm.abi.pinax.network/api",
+          "url": "https://hyperevm.abi.thegraph.com/api",
           "kind": "etherscan"
         }
       ],

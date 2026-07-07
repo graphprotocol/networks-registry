@@ -13,10 +13,7 @@
     "https://blast-sepolia.drpc.org"
   ],
   "apiUrls": [
-    {
-      "url": "https://blast-testnet.abi.thegraph.com/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://blast-testnet.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": [] },
   "networkType": "testnet",

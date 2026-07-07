@@ -12,10 +12,7 @@
     "https://katana-testnet.drpc.org"
   ],
   "apiUrls": [
-    {
-      "url": "https://katana-bokuto.abi.thegraph.com/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://katana-bokuto.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": [] },
   "networkType": "testnet",

@@ -11,10 +11,7 @@
     "https://sonic-testnet-v2.drpc.org"
   ],
   "apiUrls": [
-    {
-      "url": "https://sonic-testnet.abi.thegraph.com/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://sonic-testnet.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
   "networkType": "testnet",
