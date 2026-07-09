@@ -18,14 +18,14 @@
   "docsUrl": "https://docs.monad.xyz",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
-    "evmExtendedModel": false,
+    "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
       "id": "0x298034669ee44327d2da9744b9b2782848e2f2a6959756b7b0471b09a404f5c9",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "monad" } }
 }
