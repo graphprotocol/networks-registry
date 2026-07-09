@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.103",
+  "version": "0.7.104",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-07-07T16:02:35.687Z",
+  "updatedAt": "2026-07-09T16:05:11.601Z",
   "networks": [
     {
       "id": "mainnet",
@@ -414,7 +414,7 @@
       "docsUrl": "https://docs.monad.xyz",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -422,7 +422,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
@@ -1946,10 +1946,10 @@
           "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
-          "mainnet-base.monad.streamingfast.io:443"
+          "mainnet.monad.streamingfast.io:443"
         ],
         "substreams": [
-          "mainnet-base.monad.streamingfast.io:443"
+          "mainnet.monad.streamingfast.io:443"
         ]
       },
       "issuanceRewards": false,
@@ -1957,7 +1957,7 @@
       "docsUrl": "https://docs.monad.xyz",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -1965,7 +1965,7 @@
           "height": 1
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
@@ -5438,7 +5438,7 @@
       "docsUrl": "https://docs.robinhood.com/chain",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -5446,7 +5446,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       }
     },
