@@ -13,12 +13,8 @@
   "services": {
     "subgraphs": [],
     "sps": [],
-    "firehose": [
-      "mainnet-evm.tron.streamingfast.io:443"
-    ],
-    "substreams": [
-      "mainnet-evm.tron.streamingfast.io:443"
-    ]
+    "firehose": ["mainnet-evm.tron.streamingfast.io:443"],
+    "substreams": ["mainnet-evm.tron.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "TRX",

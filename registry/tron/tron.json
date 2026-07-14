@@ -11,12 +11,8 @@
   "services": {
     "subgraphs": [],
     "sps": [],
-    "firehose": [
-      "mainnet.tron.streamingfast.io:443"
-    ],
-    "substreams": [
-      "mainnet.tron.streamingfast.io:443"
-    ]
+    "firehose": ["mainnet.tron.streamingfast.io:443"],
+    "substreams": ["mainnet.tron.streamingfast.io:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "TRX",
