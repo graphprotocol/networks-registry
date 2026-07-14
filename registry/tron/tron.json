@@ -12,12 +12,10 @@
     "subgraphs": [],
     "sps": [],
     "firehose": [
-      "mainnet.tron.streamingfast.io:443",
-      "tron.firehose.pinax.network:443"
+      "mainnet.tron.streamingfast.io:443"
     ],
     "substreams": [
-      "mainnet.tron.streamingfast.io:443",
-      "tron.substreams.pinax.network:443"
+      "mainnet.tron.streamingfast.io:443"
     ]
   },
   "issuanceRewards": false,
