@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.104",
+  "version": "0.7.105",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-07-09T16:05:11.601Z",
+  "updatedAt": "2026-07-14T21:49:50.681Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5448,6 +5448,11 @@
         "blockFeatures": [
           "extended"
         ]
+      },
+      "icon": {
+        "web3Icons": {
+          "name": "robinhood"
+        }
       }
     },
     {
@@ -9293,9 +9298,6 @@
         "substreams": [
           "mainnet.tron.streamingfast.io:443",
           "tron.substreams.pinax.network:443"
-        ],
-        "tokenApi": [
-          "https://api.pinax.network"
         ]
       },
       "issuanceRewards": false,
