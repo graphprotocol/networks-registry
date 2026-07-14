@@ -18,8 +18,7 @@
     "substreams": [
       "mainnet.tron.streamingfast.io:443",
       "tron.substreams.pinax.network:443"
-    ],
-    "tokenApi": ["https://api.pinax.network"]
+    ]
   },
   "issuanceRewards": false,
   "nativeToken": "TRX",
