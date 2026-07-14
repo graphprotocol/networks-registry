@@ -33,5 +33,6 @@
       "height": 0
     },
     "blockFeatures": ["extended"]
-  }
+  },
+  "icon": { "web3Icons": { "name": "robinhood" } }
 }
