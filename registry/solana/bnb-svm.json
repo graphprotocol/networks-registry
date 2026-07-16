@@ -13,8 +13,6 @@
     { "kind": "svmOf", "network": "bsc" }
   ],
   "services": {
-    "firehose": ["svmbnb.firehose.pinax.network:443"],
-    "substreams": ["svmbnb.substreams.pinax.network:443"]
   },
   "issuanceRewards": false,
   "nativeToken": "BNB",
