@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.106",
+  "version": "0.7.107",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-07-14T21:53:15.176Z",
+  "updatedAt": "2026-07-16T13:53:37.687Z",
   "networks": [
     {
       "id": "mainnet",
@@ -9044,14 +9044,7 @@
           "network": "bsc"
         }
       ],
-      "services": {
-        "firehose": [
-          "svmbnb.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "svmbnb.substreams.pinax.network:443"
-        ]
-      },
+      "services": {},
       "issuanceRewards": false,
       "nativeToken": "BNB",
       "docsUrl": "https://docs.soo.network",
