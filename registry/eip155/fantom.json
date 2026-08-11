@@ -19,7 +19,7 @@
     "substreams": []
   },
   "networkType": "mainnet",
-  "issuanceRewards": true,
+  "issuanceRewards": false,
   "nativeToken": "FTM",
   "docsUrl": "https://docs.fantom.foundation",
   "indexerDocsUrls": [

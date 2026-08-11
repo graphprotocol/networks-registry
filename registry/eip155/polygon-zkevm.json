@@ -20,7 +20,7 @@
     "firehose": [],
     "substreams": []
   },
-  "issuanceRewards": true,
+  "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://polygon.technology/polygon-zkevm",
   "indexerDocsUrls": [
