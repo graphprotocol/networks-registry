@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.107",
+  "version": "0.7.108",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-07-16T13:53:37.687Z",
+  "updatedAt": "2026-08-11T03:25:28.556Z",
   "networks": [
     {
       "id": "mainnet",
@@ -588,7 +588,7 @@
         "firehose": [],
         "substreams": []
       },
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "ETH",
       "docsUrl": "https://polygon.technology/polygon-zkevm",
       "indexerDocsUrls": [
@@ -3518,7 +3518,7 @@
         "substreams": []
       },
       "networkType": "mainnet",
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "FTM",
       "docsUrl": "https://docs.fantom.foundation",
       "indexerDocsUrls": [
@@ -6044,10 +6044,12 @@
           "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
-          "hoodi.firehose.pinax.network:443"
+          "hoodi.firehose.pinax.network:443",
+          "hoodi.eth.streamingfast.io:443"
         ],
         "substreams": [
-          "hoodi.substreams.pinax.network:443"
+          "hoodi.substreams.pinax.network:443",
+          "hoodi.eth.streamingfast.io:443"
         ]
       },
       "issuanceRewards": false,
