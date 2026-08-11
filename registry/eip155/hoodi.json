@@ -19,8 +19,14 @@
   ],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "firehose": ["hoodi.firehose.pinax.network:443"],
-    "substreams": ["hoodi.substreams.pinax.network:443"]
+    "firehose": [
+      "hoodi.firehose.pinax.network:443",
+      "hoodi.eth.streamingfast.io:443"
+    ],
+    "substreams": [
+      "hoodi.substreams.pinax.network:443",
+      "hoodi.eth.streamingfast.io:443"
+    ]
   },
   "issuanceRewards": false,
   "nativeToken": "ETH",
