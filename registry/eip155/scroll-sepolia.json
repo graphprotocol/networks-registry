@@ -8,15 +8,10 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.scrollscan.com"],
   "rpcUrls": [
-    "https://sepolia-rpc.scroll.io",
     "https://scroll-sepolia.drpc.org",
     "https://scroll-sepolia-public.nodies.app"
   ],
   "apiUrls": [
-    {
-      "url": "https://scroll-sepolia.blockscout.com/api",
-      "kind": "blockscout"
-    },
     {
       "url": "https://scroll-sepolia.abi.thegraph.com/api",
       "kind": "etherscan"
