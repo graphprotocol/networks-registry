@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.108",
+  "version": "0.7.109",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-08-11T03:25:28.556Z",
+  "updatedAt": "2026-08-11T13:42:40.803Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5797,15 +5797,10 @@
         "https://sepolia.scrollscan.com"
       ],
       "rpcUrls": [
-        "https://sepolia-rpc.scroll.io",
         "https://scroll-sepolia.drpc.org",
         "https://scroll-sepolia-public.nodies.app"
       ],
       "apiUrls": [
-        {
-          "url": "https://scroll-sepolia.blockscout.com/api",
-          "kind": "blockscout"
-        },
         {
           "url": "https://scroll-sepolia.abi.thegraph.com/api",
           "kind": "etherscan"
