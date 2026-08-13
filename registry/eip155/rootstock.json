@@ -14,7 +14,7 @@
   "apiUrls": [
     { "url": "https://rootstock.blockscout.com/api", "kind": "blockscout" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "issuanceRewards": true,
   "nativeToken": "RBTC",
