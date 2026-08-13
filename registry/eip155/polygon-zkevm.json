@@ -14,12 +14,7 @@
   ],
   "apiUrls": [],
   "networkType": "mainnet",
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": [],
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "subgraphs": [], "sps": [], "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://polygon.technology/polygon-zkevm",
