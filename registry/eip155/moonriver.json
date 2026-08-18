@@ -15,7 +15,7 @@
     { "url": "https://moonriver.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [],
     "firehose": [],
     "substreams": []
   },
