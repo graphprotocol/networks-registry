@@ -14,11 +14,7 @@
   "apiUrls": [
     { "url": "https://moonriver.abi.thegraph.com/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": [],
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "other", "network": "moonbeam" }],
   "issuanceRewards": false,

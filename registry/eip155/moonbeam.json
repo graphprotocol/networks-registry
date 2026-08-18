@@ -14,11 +14,7 @@
   "apiUrls": [
     { "url": "https://moonbeam.abi.thegraph.com/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": [],
-    "firehose": [],
-    "substreams": []
-  },
+  "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",
   "issuanceRewards": true,
   "nativeToken": "GLMR",
