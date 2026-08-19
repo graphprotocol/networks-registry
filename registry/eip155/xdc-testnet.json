@@ -1,0 +1,20 @@
+{
+  "id": "xdc-testnet",
+  "shortName": "XDC",
+  "secondName": "Apothem",
+  "fullName": "XDC Apothem Testnet",
+  "aliases": ["xinfin-apothem", "apothem", "xdc-apothem", "evm-51"],
+  "caip2Id": "eip155:51",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://testnet.xdcscan.com"],
+  "apiUrls": [
+    { "url": "https://api.etherscan.io/v2/api?chainid=51", "kind": "etherscan" }
+  ],
+  "rpcUrls": ["https://erpc.apothem.network"],
+  "networkType": "testnet",
+  "relations": [{ "kind": "testnetOf", "network": "xdc" }],
+  "services": { "subgraphs": [] },
+  "issuanceRewards": false,
+  "nativeToken": "TXDC",
+  "docsUrl": "https://docs.xdc.network"
+}

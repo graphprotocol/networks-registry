@@ -1,0 +1,18 @@
+{
+  "id": "xdc",
+  "shortName": "XDC",
+  "fullName": "XDC Network",
+  "aliases": ["xinfin", "xdc-mainnet", "evm-50"],
+  "caip2Id": "eip155:50",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://xdcscan.com"],
+  "apiUrls": [
+    { "url": "https://api.etherscan.io/v2/api?chainid=50", "kind": "etherscan" }
+  ],
+  "rpcUrls": ["https://rpc.xdc.org"],
+  "networkType": "mainnet",
+  "services": { "subgraphs": [] },
+  "issuanceRewards": false,
+  "nativeToken": "XDC",
+  "docsUrl": "https://docs.xdc.network"
+}
