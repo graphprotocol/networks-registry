@@ -21,11 +21,13 @@
     "sps": [],
     "firehose": [
       "mainnet.optimism.streamingfast.io:443",
-      "optimism.firehose.pinax.network:443"
+      "optimism.firehose.pinax.network:443",
+      "op.firehose.data.nexus:443"
     ],
     "substreams": [
       "mainnet.optimism.streamingfast.io:443",
-      "optimism.substreams.pinax.network:443"
+      "optimism.substreams.pinax.network:443",
+      "op.substreams.data.nexus:443"
     ],
     "tokenApi": ["https://api.pinax.network"]
   },
