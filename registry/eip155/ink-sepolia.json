@@ -28,14 +28,14 @@
   "docsUrl": "https://docs.inkonchain.com",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
-    "evmExtendedModel": false,
+    "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
       "id": "0xe5fd5cf0be56af58ad5751b401410d6b7a09d830fa459789746a3d0dd1c79834",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "ink" } }
 }
