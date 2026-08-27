@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.111",
+  "version": "0.7.112",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-08-18T14:53:41.583Z",
+  "updatedAt": "2026-08-27T02:24:18.204Z",
   "networks": [
     {
       "id": "mainnet",
@@ -6069,11 +6069,18 @@
       ],
       "rpcUrls": [
         "https://rpc-gel.inkonchain.com",
+        "https://ink.rpc.service.pinax.network",
         "https://ink.drpc.org",
         "https://ink.api.pocket.network"
       ],
       "services": {
-        "subgraphs": []
+        "subgraphs": [],
+        "substreams": [
+          "ink.substreams.pinax.network:443"
+        ],
+        "firehose": [
+          "ink.firehose.pinax.network:443"
+        ]
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -6081,7 +6088,7 @@
       "docsUrl": "https://docs.inkonchain.com",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -6089,7 +6096,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
@@ -6707,7 +6714,7 @@
       "docsUrl": "https://docs.inkonchain.com",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -6715,7 +6722,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
