@@ -9,11 +9,13 @@
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
     "firehose": [
       "unichain.firehose.pinax.network:443",
-      "mainnet.unichain.streamingfast.io:443"
+      "mainnet.unichain.streamingfast.io:443",
+      "unichain.firehose.data.nexus:443"
     ],
     "substreams": [
       "unichain.substreams.pinax.network:443",
-      "mainnet.unichain.streamingfast.io:443"
+      "mainnet.unichain.streamingfast.io:443",
+      "unichain.substreams.data.nexus:443"
     ],
     "tokenApi": ["https://api.pinax.network"]
   },

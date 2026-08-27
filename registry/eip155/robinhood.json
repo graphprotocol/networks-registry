@@ -8,8 +8,14 @@
   "graphNode": { "protocol": "ethereum" },
   "services": {
     "subgraphs": [],
-    "substreams": ["robinhood.substreams.pinax.network:443"],
-    "firehose": ["robinhood.firehose.pinax.network:443"]
+    "substreams": [
+      "robinhood.substreams.pinax.network:443",
+      "robinhood.substreams.data.nexus:443"
+    ],
+    "firehose": [
+      "robinhood.firehose.pinax.network:443",
+      "robinhood.firehose.data.nexus:443"
+    ]
   },
   "explorerUrls": ["https://robinhoodchain.blockscout.com"],
   "rpcUrls": [

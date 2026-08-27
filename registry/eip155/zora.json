@@ -19,8 +19,14 @@
     }
   ],
   "services": {
-    "firehose": ["zora.firehose.pinax.network:443"],
-    "substreams": ["zora.substreams.pinax.network:443"]
+    "firehose": [
+      "zora.firehose.pinax.network:443",
+      "zora.firehose.data.nexus:443"
+    ],
+    "substreams": [
+      "zora.substreams.pinax.network:443",
+      "zora.substreams.data.nexus:443"
+    ]
   },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
