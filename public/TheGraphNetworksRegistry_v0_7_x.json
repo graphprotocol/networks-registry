@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.112",
+  "version": "0.7.113",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-08-27T02:24:18.204Z",
+  "updatedAt": "2026-08-27T02:27:48.931Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1324,11 +1324,13 @@
         ],
         "firehose": [
           "unichain.firehose.pinax.network:443",
-          "mainnet.unichain.streamingfast.io:443"
+          "mainnet.unichain.streamingfast.io:443",
+          "unichain.firehose.data.nexus:443"
         ],
         "substreams": [
           "unichain.substreams.pinax.network:443",
-          "mainnet.unichain.streamingfast.io:443"
+          "mainnet.unichain.streamingfast.io:443",
+          "unichain.substreams.data.nexus:443"
         ],
         "tokenApi": [
           "https://api.pinax.network"
@@ -2689,10 +2691,12 @@
           "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
-          "soneium.firehose.pinax.network:443"
+          "soneium.firehose.pinax.network:443",
+          "soneium.firehose.data.nexus:443"
         ],
         "substreams": [
-          "soneium.substreams.pinax.network:443"
+          "soneium.substreams.pinax.network:443",
+          "soneium.substreams.data.nexus:443"
         ]
       },
       "networkType": "mainnet",
@@ -5386,10 +5390,12 @@
       "services": {
         "subgraphs": [],
         "substreams": [
-          "robinhood.substreams.pinax.network:443"
+          "robinhood.substreams.pinax.network:443",
+          "robinhood.substreams.data.nexus:443"
         ],
         "firehose": [
-          "robinhood.firehose.pinax.network:443"
+          "robinhood.firehose.pinax.network:443",
+          "robinhood.firehose.data.nexus:443"
         ]
       },
       "explorerUrls": [
@@ -6762,10 +6768,12 @@
       ],
       "services": {
         "firehose": [
-          "zora.firehose.pinax.network:443"
+          "zora.firehose.pinax.network:443",
+          "zora.firehose.data.nexus:443"
         ],
         "substreams": [
-          "zora.substreams.pinax.network:443"
+          "zora.substreams.pinax.network:443",
+          "zora.substreams.data.nexus:443"
         ]
       },
       "networkType": "mainnet",
