@@ -14,7 +14,7 @@
     }
   ],
   "services": {
-    "subgraphs": ["https://streamingfast.io"],
+    "subgraphs": [],
     "substreams": ["mainnet.injective-evm.streamingfast.io:443"],
     "firehose": ["mainnet.injective-evm.streamingfast.io:443"]
   },
