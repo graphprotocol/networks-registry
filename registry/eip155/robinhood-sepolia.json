@@ -9,12 +9,8 @@
   "graphNode": { "protocol": "ethereum" },
   "services": {
     "subgraphs": [],
-    "substreams": [
-      "robsepolia.substreams.pinax.network:443"
-    ],
-    "firehose": [
-      "robsepolia.firehose.pinax.network:443"
-    ]
+    "substreams": ["robsepolia.substreams.pinax.network:443"],
+    "firehose": ["robsepolia.firehose.pinax.network:443"]
   },
   "explorerUrls": ["https://explorer.testnet.chain.robinhood.com"],
   "rpcUrls": [
@@ -22,7 +18,10 @@
     "https://robsepolia.rpc.service.pinax.network"
   ],
   "apiUrls": [
-    { "url": "https://explorer.testnet.chain.robinhood.com/api", "kind": "blockscout" }
+    {
+      "url": "https://explorer.testnet.chain.robinhood.com/api",
+      "kind": "blockscout"
+    }
   ],
   "relations": [
     { "kind": "l2Of", "network": "sepolia" },
