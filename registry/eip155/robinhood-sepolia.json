@@ -1,0 +1,46 @@
+{
+  "id": "robinhood-sepolia",
+  "shortName": "Robinhood Chain",
+  "secondName": "Sepolia",
+  "fullName": "Robinhood Chain Testnet",
+  "aliases": ["evm-46630", "robinhood-testnet"],
+  "caip2Id": "eip155:46630",
+  "networkType": "testnet",
+  "graphNode": { "protocol": "ethereum" },
+  "services": {
+    "subgraphs": [],
+    "substreams": [
+      "robsepolia.substreams.pinax.network:443"
+    ],
+    "firehose": [
+      "robsepolia.firehose.pinax.network:443"
+    ]
+  },
+  "explorerUrls": ["https://explorer.testnet.chain.robinhood.com"],
+  "rpcUrls": [
+    "https://rpc.testnet.chain.robinhood.com",
+    "https://robsepolia.rpc.service.pinax.network"
+  ],
+  "apiUrls": [
+    { "url": "https://explorer.testnet.chain.robinhood.com/api", "kind": "blockscout" }
+  ],
+  "relations": [
+    { "kind": "l2Of", "network": "sepolia" },
+    { "kind": "testnetOf", "network": "robinhood" }
+  ],
+  "issuanceRewards": false,
+  "nativeToken": "ETH",
+  "docsUrl": "https://docs.robinhood.com/chain",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x829a42e6d68c872aafcef3abb2123fe371138fc415dd8b44381bbbf23049dd32",
+      "height": 0
+    },
+    "blockFeatures": ["extended"]
+  },
+  "icon": { "web3Icons": { "name": "robinhood" } }
+}
