@@ -1,0 +1,34 @@
+{
+  "id": "whitechain-sepolia",
+  "shortName": "Whitechain",
+  "secondName": "Sepolia",
+  "fullName": "Whitechain Sepolia",
+  "aliases": ["evm-1874", "wch-sepolia"],
+  "caip2Id": "eip155:1874",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://explorer.testnet.whitechain.io"],
+  "apiUrls": [
+    {
+      "url": "https://explorer.testnet.whitechain.io/api",
+      "kind": "blockscout"
+    }
+  ],
+  "rpcUrls": ["https://rpc.testnet.whitechain.io"],
+  "services": { "subgraphs": [] },
+  "networkType": "testnet",
+  "relations": [{ "kind": "l2Of", "network": "sepolia" }],
+  "issuanceRewards": false,
+  "nativeToken": "WBT",
+  "docsUrl": "https://docs.whitechain.io",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": false,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0xb92575f4a11271b5fe065eb8289be17906302e1c23218c5a67c2871a99e6f0d5",
+      "height": 0
+    },
+    "blockFeatures": ["base"]
+  }
+}
