@@ -26,14 +26,14 @@
   "docsUrl": "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperevm",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
-    "evmExtendedModel": false,
+    "evmExtendedModel": true,
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
       "id": "0xde151843548b88d06f201d86e860e45fbf07d49612f1934fba5746abd942fb01",
       "height": 1
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "tokenApi": { "features": ["tokens", "dexes"], "networkId": "hyperevm" },
   "icon": { "web3Icons": { "name": "hyper-evm" } }
