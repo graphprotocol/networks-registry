@@ -30,8 +30,8 @@
     "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
     "bytesEncoding": "hex",
     "firstStreamableBlock": {
-      "id": "0xd8fcc13b6a195b88b7b2da3722ff6cad767b13a8c1e9ffb1c73aa9d216d895f0",
-      "height": 0
+      "id": "0xde151843548b88d06f201d86e860e45fbf07d49612f1934fba5746abd942fb01",
+      "height": 1
     },
     "blockFeatures": ["base"]
   },
