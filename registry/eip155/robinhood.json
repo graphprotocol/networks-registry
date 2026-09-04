@@ -10,10 +10,12 @@
     "subgraphs": [],
     "substreams": [
       "robinhood.substreams.pinax.network:443",
+      "mainnet.robinhood.streamingfast.io:443",
       "robinhood.substreams.data.nexus:443"
     ],
     "firehose": [
       "robinhood.firehose.pinax.network:443",
+      "mainnet.robinhood.streamingfast.io:443",
       "robinhood.firehose.data.nexus:443"
     ]
   },
