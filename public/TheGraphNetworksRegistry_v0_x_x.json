@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.118",
+  "version": "0.7.119",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-02T18:38:14.348Z",
+  "updatedAt": "2026-09-04T20:20:59.504Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5393,10 +5393,12 @@
         "subgraphs": [],
         "substreams": [
           "robinhood.substreams.pinax.network:443",
+          "mainnet.robinhood.streamingfast.io:443",
           "robinhood.substreams.data.nexus:443"
         ],
         "firehose": [
           "robinhood.firehose.pinax.network:443",
+          "mainnet.robinhood.streamingfast.io:443",
           "robinhood.firehose.data.nexus:443"
         ]
       },
