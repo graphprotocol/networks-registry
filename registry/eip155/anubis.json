@@ -1,0 +1,18 @@
+{
+  "id": "anubis",
+  "shortName": "Anubis",
+  "fullName": "Anubis Mainnet",
+  "aliases": ["evm-6714", "anubis-mainnet"],
+  "caip2Id": "eip155:6714",
+  "graphNode": { "protocol": "ethereum" },
+  "explorerUrls": ["https://browser.anubispace.org"],
+  "rpcUrls": ["https://rpc.anubispace.org"],
+  "apiUrls": [
+    { "url": "https://browser.anubispace.org/api", "kind": "blockscout" }
+  ],
+  "networkType": "mainnet",
+  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "issuanceRewards": false,
+  "nativeToken": "gasDAI",
+  "docsUrl": "https://anubis-network.gitbook.io/anubis-network"
+}
