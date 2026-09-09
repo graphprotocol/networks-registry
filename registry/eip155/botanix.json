@@ -5,7 +5,7 @@
   "aliases": ["evm-3637", "botanix-mainnet"],
   "caip2Id": "eip155:3637",
   "graphNode": { "protocol": "ethereum" },
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "BTC",

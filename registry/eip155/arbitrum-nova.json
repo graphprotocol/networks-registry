@@ -11,10 +11,7 @@
     "https://arbitrum-nova.publicnode.com"
   ],
   "apiUrls": [],
-  "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
-    "sps": []
-  },
+  "services": { "subgraphs": [], "sps": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
