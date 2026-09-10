@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.119",
+  "version": "0.7.120",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-04T20:20:59.504Z",
+  "updatedAt": "2026-09-10T19:24:44.112Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4066,7 +4066,9 @@
       ],
       "networkType": "mainnet",
       "services": {
-        "subgraphs": []
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
       },
       "issuanceRewards": false,
       "nativeToken": "ZIL",
@@ -4406,9 +4408,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -4452,9 +4452,7 @@
         "protocol": "ethereum"
       },
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -4878,9 +4876,7 @@
       ],
       "apiUrls": [],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "sps": []
       },
       "networkType": "mainnet",
@@ -6450,6 +6446,40 @@
           "name": "xai"
         }
       }
+    },
+    {
+      "id": "anubis",
+      "shortName": "Anubis",
+      "fullName": "Anubis Mainnet",
+      "aliases": [
+        "evm-6714",
+        "anubis-mainnet"
+      ],
+      "caip2Id": "eip155:6714",
+      "graphNode": {
+        "protocol": "ethereum"
+      },
+      "explorerUrls": [
+        "https://browser.anubispace.org"
+      ],
+      "rpcUrls": [
+        "https://rpc.anubispace.org"
+      ],
+      "apiUrls": [
+        {
+          "url": "https://browser.anubispace.org/api",
+          "kind": "blockscout"
+        }
+      ],
+      "networkType": "mainnet",
+      "services": {
+        "subgraphs": [
+          "https://api.studio.thegraph.com/deploy"
+        ]
+      },
+      "issuanceRewards": false,
+      "nativeToken": "gasDAI",
+      "docsUrl": "https://anubis-network.gitbook.io/anubis-network"
     },
     {
       "id": "zetachain",
