@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.120",
+  "version": "0.7.121",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-10T19:24:44.112Z",
+  "updatedAt": "2026-09-14T15:40:52.676Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4803,7 +4803,7 @@
     },
     {
       "id": "tempo",
-      "shortName": "tempo",
+      "shortName": "Tempo",
       "fullName": "Tempo Mainnet",
       "aliases": [
         "evm-4217",
@@ -4986,7 +4986,7 @@
     },
     {
       "id": "tempo-moderato",
-      "shortName": "tempo",
+      "shortName": "Tempo",
       "fullName": "Tempo Moderato Testnet",
       "aliases": [
         "evm-42431"
@@ -5763,7 +5763,7 @@
       "docsUrl": "https://docs.arc.network",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
