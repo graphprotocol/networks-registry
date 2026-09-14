@@ -1,6 +1,6 @@
 {
   "id": "tempo",
-  "shortName": "tempo",
+  "shortName": "Tempo",
   "fullName": "Tempo Mainnet",
   "aliases": ["evm-4217", "tempo-mainnet"],
   "caip2Id": "eip155:4217",

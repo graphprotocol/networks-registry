@@ -1,6 +1,6 @@
 {
   "id": "tempo-moderato",
-  "shortName": "tempo",
+  "shortName": "Tempo",
   "fullName": "Tempo Moderato Testnet",
   "aliases": ["evm-42431"],
   "caip2Id": "eip155:42431",
