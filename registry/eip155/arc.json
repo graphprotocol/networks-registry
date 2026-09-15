@@ -26,7 +26,7 @@
       "id": "0x09944e07412986bb417fd0006c89ffb71ee523d68ce2017ec2dabc944c42edad",
       "height": 0
     },
-    "blockFeatures": ["base"]
+    "blockFeatures": ["extended"]
   },
   "icon": { "web3Icons": { "name": "arc" } }
 }
