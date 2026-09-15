@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.121",
+  "version": "0.7.122",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-14T15:40:52.676Z",
+  "updatedAt": "2026-09-15T18:50:39.348Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5755,6 +5755,12 @@
       "services": {
         "subgraphs": [
           "https://api.studio.thegraph.com/deploy"
+        ],
+        "firehose": [
+          "arc.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "arc.substreams.pinax.network:443"
         ]
       },
       "networkType": "mainnet",
@@ -5771,7 +5777,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
