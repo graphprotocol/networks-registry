@@ -8,7 +8,11 @@
   "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "firehose": ["arc.firehose.pinax.network:443"],
+    "substreams": ["arc.substreams.pinax.network:443"]
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "USDC",
