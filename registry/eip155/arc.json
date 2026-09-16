@@ -6,7 +6,7 @@
   "caip2Id": "eip155:5042",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [],
-  "rpcUrls": ["https://arc.rpc.pinax.network/v1/{PINAX_API_KEY}"],
+  "rpcUrls": ["https://arc.rpc.service.pinax.network"],
   "apiUrls": [],
   "services": {
     "subgraphs": ["https://api.studio.thegraph.com/deploy"],
