@@ -17,7 +17,12 @@
     }
   ],
   "services": {
-    "subgraphs": ["https://streamingfast.io"],
+    "subgraphs": [
+      {
+        "backstopSupport": "https://streamingfast.io",
+        "description": "StreamingFast provides backstop support for all InjectiveEVM Subgraphs"
+      }
+    ],
     "substreams": ["testnet.injective-evm.streamingfast.io:443"],
     "firehose": ["testnet.injective-evm.streamingfast.io:443"]
   },
