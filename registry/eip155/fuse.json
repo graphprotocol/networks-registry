@@ -12,7 +12,15 @@
     "https://fuse.api.pocket.network"
   ],
   "apiUrls": [{ "url": "https://explorer.fuse.io/api", "kind": "blockscout" }],
-  "services": { "subgraphs": [], "sps": [] },
+  "services": {
+    "subgraphs": [
+      {
+        "backstopSupport": "infradao",
+        "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+      }
+    ],
+    "sps": []
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "FUSE",

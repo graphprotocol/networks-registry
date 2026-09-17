@@ -163,9 +163,21 @@ export interface Network {
    */
   services: {
     /**
-     * Subgraph studio deployment URLs, e.g. https://api.thegraph.com/deploy
+     * Subgraph studio deployment URLs, and/or a backstop support entry, e.g. https://api.thegraph.com/deploy
      */
-    subgraphs?: string[];
+    subgraphs?: (
+      | string
+      | {
+          /**
+           * Backstop support provider for Subgraphs on this network, e.g. infradao
+           */
+          backstopSupport: string;
+          /**
+           * Human-readable description of the backstop support
+           */
+          description?: string;
+        }
+    )[];
     /**
      * Substreams-based subgraphs studio deployment URLs, e.g. https://api.thegraph.com/deploy
      */

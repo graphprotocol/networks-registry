@@ -18,7 +18,12 @@
     }
   ],
   "services": {
-    "subgraphs": ["https://api.studio.thegraph.com/deploy"],
+    "subgraphs": [
+      {
+        "backstopSupport": "infradao",
+        "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+      }
+    ],
     "firehose": [],
     "substreams": []
   },

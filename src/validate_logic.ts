@@ -266,6 +266,7 @@ function validateServices(networks: Network[]) {
 		// Validate subgraphs and sps services
 		["subgraphs", "sps"].forEach((serviceType) => {
 			for (const url of services[serviceType] ?? []) {
+				if (typeof url !== "string") continue; // skip backstop support entries
 				if (!ALLOWED_SG_PROVIDERS.some((provider) => url.includes(provider))) {
 					ERRORS.push(
 						`\`${network.id}\` - invalid \`${serviceType}\` provider: ${url}`,

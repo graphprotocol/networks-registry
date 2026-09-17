@@ -14,7 +14,14 @@
   "apiUrls": [
     { "url": "https://rootstock.blockscout.com/api", "kind": "blockscout" }
   ],
-  "services": { "subgraphs": [] },
+  "services": {
+    "subgraphs": [
+      {
+        "backstopSupport": "infradao",
+        "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+      }
+    ]
+  },
   "networkType": "mainnet",
   "issuanceRewards": true,
   "nativeToken": "RBTC",

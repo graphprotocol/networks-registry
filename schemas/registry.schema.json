@@ -229,8 +229,27 @@
           "properties": {
             "subgraphs": {
               "type": "array",
-              "items": { "type": "string", "format": "uri-template" },
-              "description": "Subgraph studio deployment URLs, e.g. https://api.thegraph.com/deploy"
+              "items": {
+                "anyOf": [
+                  { "type": "string", "format": "uri-template" },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "backstopSupport": {
+                        "type": "string",
+                        "description": "Backstop support provider for Subgraphs on this network, e.g. infradao"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "Human-readable description of the backstop support"
+                      }
+                    },
+                    "required": ["backstopSupport"],
+                    "additionalProperties": false
+                  }
+                ]
+              },
+              "description": "Subgraph studio deployment URLs, and/or a backstop support entry, e.g. https://api.thegraph.com/deploy"
             },
             "sps": {
               "type": "array",

@@ -71,7 +71,7 @@ function generateMarkdownTable(networks: Network[]): string {
       `*${getChainId(network)}*`,
       network.issuanceRewards ? "✅" : "",
       `*${getGraphNodeProtocol(network)}*`,
-      services.subgraphs?.length ? "✅" : "",
+      services.subgraphs?.some((s) => typeof s === "string") ? "✅" : "",
       services.firehose?.length ? "✅" : "",
       services.substreams?.length ? "✅" : "",
       services.tokenApi?.length ? "✅" : "",

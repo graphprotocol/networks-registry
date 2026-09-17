@@ -17,7 +17,14 @@
       "kind": "etherscan"
     }
   ],
-  "services": { "subgraphs": [] },
+  "services": {
+    "subgraphs": [
+      {
+        "backstopSupport": "infradao",
+        "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+      }
+    ]
+  },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "rootstock" }],
   "issuanceRewards": false,
