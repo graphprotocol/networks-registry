@@ -6,7 +6,7 @@
   "caip2Id": "eip155:5042",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [],
-  "rpcUrls": [],
+  "rpcUrls": ["https://arc.rpc.service.pinax.network"],
   "apiUrls": [],
   "services": {
     "subgraphs": [

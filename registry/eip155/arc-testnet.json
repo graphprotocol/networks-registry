@@ -8,7 +8,8 @@
   "explorerUrls": ["https://testnet.arcscan.app"],
   "rpcUrls": [
     "https://rpc.testnet.arc.network",
-    "https://arc-testnet.drpc.org"
+    "https://arc-testnet.drpc.org",
+    "https://arctest.rpc.service.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://testnet.arcscan.app/api", "kind": "etherscan" }
