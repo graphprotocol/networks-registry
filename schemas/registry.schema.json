@@ -235,21 +235,26 @@
                   {
                     "type": "object",
                     "properties": {
-                      "backstopSupport": {
+                      "kind": {
                         "type": "string",
-                        "description": "Backstop support provider for Subgraphs on this network, e.g. infradao"
+                        "enum": ["gateway", "studio", "backstop"],
+                        "description": "Kind of Subgraph service entry"
+                      },
+                      "provider": {
+                        "type": "string",
+                        "description": "Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao"
                       },
                       "description": {
                         "type": "string",
-                        "description": "Human-readable description of the backstop support"
+                        "description": "[optional] Human-readable description of the entry"
                       }
                     },
-                    "required": ["backstopSupport"],
+                    "required": ["kind", "provider"],
                     "additionalProperties": false
                   }
                 ]
               },
-              "description": "Subgraph studio deployment URLs, and/or a backstop support entry, e.g. https://api.thegraph.com/deploy"
+              "description": "Subgraph service entries: studio deployment URL strings and/or structured { kind, provider, description } entries (gateway, studio, backstop)"
             },
             "sps": {
               "type": "array",

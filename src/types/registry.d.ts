@@ -163,17 +163,21 @@ export interface Network {
    */
   services: {
     /**
-     * Subgraph studio deployment URLs, and/or a backstop support entry, e.g. https://api.thegraph.com/deploy
+     * Subgraph service entries: studio deployment URL strings and/or structured { kind, provider, description } entries (gateway, studio, backstop)
      */
     subgraphs?: (
       | string
       | {
           /**
-           * Backstop support provider for Subgraphs on this network, e.g. infradao
+           * Kind of Subgraph service entry
            */
-          backstopSupport: string;
+          kind: "gateway" | "studio" | "backstop";
           /**
-           * Human-readable description of the backstop support
+           * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao
+           */
+          provider: string;
+          /**
+           * [optional] Human-readable description of the entry
            */
           description?: string;
         }
