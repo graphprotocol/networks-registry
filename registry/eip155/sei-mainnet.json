@@ -11,7 +11,20 @@
     { "url": "https://sei-mainnet.abi.thegraph.com/api", "kind": "etherscan" },
     { "url": "https://seitrace.com/pacific-1/api", "kind": "etherscan" }
   ],
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": [
+      {
+        "kind": "gateway",
+        "provider": "https://gateway.thegraph.com/api",
+        "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
+      },
+      {
+        "kind": "studio",
+        "provider": "https://api.studio.thegraph.com/deploy",
+        "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
+      }
+    ]
+  },
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "SEI",

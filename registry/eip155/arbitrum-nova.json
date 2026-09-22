@@ -11,7 +11,7 @@
     "https://arbitrum-nova.publicnode.com"
   ],
   "apiUrls": [],
-  "services": { "subgraphs": [], "sps": [] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

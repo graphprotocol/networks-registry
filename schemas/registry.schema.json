@@ -38,6 +38,26 @@
   ],
   "additionalProperties": false,
   "$defs": {
+    "SubgraphsService": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["gateway", "studio", "backstop"],
+          "description": "Kind of Subgraph service entry"
+        },
+        "provider": {
+          "type": "string",
+          "description": "Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao"
+        },
+        "description": {
+          "type": "string",
+          "description": "[optional] Human-readable description of the entry"
+        }
+      },
+      "required": ["kind", "provider"],
+      "additionalProperties": false
+    },
     "Network": {
       "type": "object",
       "properties": {
@@ -229,13 +249,8 @@
           "properties": {
             "subgraphs": {
               "type": "array",
-              "items": { "type": "string", "format": "uri-template" },
-              "description": "Subgraph studio deployment URLs, e.g. https://api.thegraph.com/deploy"
-            },
-            "sps": {
-              "type": "array",
-              "items": { "type": "string", "format": "uri-template" },
-              "description": "Substreams-based subgraphs studio deployment URLs, e.g. https://api.thegraph.com/deploy"
+              "items": { "$ref": "#/$defs/SubgraphsService" },
+              "description": "Subgraph service entries (gateway, studio, backstop)"
             },
             "firehose": {
               "type": "array",

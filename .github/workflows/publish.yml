@@ -89,6 +89,9 @@ jobs:
       - name: Generate registry
         run: bun generate:public
 
+      - name: Backport registry to v0.7.x
+        run: bun backport:v07x
+
       - name: Generate table
         run: bun generate:table
 

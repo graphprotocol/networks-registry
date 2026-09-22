@@ -1,5 +1,5 @@
 {
-  "version": "0.7.122",
+  "version": "0.8.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -19,6 +19,7 @@
     "maintenance": "bun run ./src/maintenance.ts",
     "cleanup:rpcs": "bun run ./src/cleanup_rpcs.ts",
     "backport": "bun run ./src/backport_to_v06x.ts",
+    "backport:v07x": "bun run ./src/backport_to_v07x.ts",
     "all": "bun generate:types && bun validate && bun generate:registry && bun format && bun format:check"
   },
   "devDependencies": {

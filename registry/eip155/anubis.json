@@ -11,7 +11,20 @@
     { "url": "https://browser.anubispace.org/api", "kind": "blockscout" }
   ],
   "networkType": "mainnet",
-  "services": { "subgraphs": ["https://api.studio.thegraph.com/deploy"] },
+  "services": {
+    "subgraphs": [
+      {
+        "kind": "gateway",
+        "provider": "https://gateway.thegraph.com/api",
+        "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
+      },
+      {
+        "kind": "backstop",
+        "provider": "infradao",
+        "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+      }
+    ]
+  },
   "issuanceRewards": false,
   "nativeToken": "gasDAI",
   "docsUrl": "https://anubis-network.gitbook.io/anubis-network"

@@ -12,7 +12,6 @@
   "relations": [{ "kind": "testnetOf", "network": "solana-mainnet-beta" }],
   "services": {
     "subgraphs": [],
-    "sps": [],
     "firehose": [
       "devnet.sol.streamingfast.io:443",
       "soldev.firehose.pinax.network:443"

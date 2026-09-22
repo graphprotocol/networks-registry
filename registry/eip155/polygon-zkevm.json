@@ -14,7 +14,7 @@
   ],
   "apiUrls": [],
   "networkType": "mainnet",
-  "services": { "subgraphs": [], "sps": [], "firehose": [], "substreams": [] },
+  "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://polygon.technology/polygon-zkevm",

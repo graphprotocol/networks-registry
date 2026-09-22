@@ -18,7 +18,7 @@
       "kind": "etherscan"
     }
   ],
-  "services": { "subgraphs": [], "sps": [] },
+  "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

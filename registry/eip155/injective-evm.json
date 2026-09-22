@@ -14,7 +14,18 @@
     }
   ],
   "services": {
-    "subgraphs": ["https://streamingfast.io"],
+    "subgraphs": [
+      {
+        "kind": "gateway",
+        "provider": "https://gateway.thegraph.com/api",
+        "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
+      },
+      {
+        "kind": "backstop",
+        "provider": "https://streamingfast.io",
+        "description": "StreamingFast provides backstop support for all InjectiveEVM Subgraphs"
+      }
+    ],
     "substreams": ["mainnet.injective-evm.streamingfast.io:443"],
     "firehose": ["mainnet.injective-evm.streamingfast.io:443"]
   },
