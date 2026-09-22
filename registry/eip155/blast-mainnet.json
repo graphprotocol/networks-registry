@@ -16,7 +16,6 @@
   ],
   "services": {
     "subgraphs": [],
-    "sps": [],
     "firehose": ["blast.firehose.pinax.network:443"],
     "substreams": ["blast.substreams.pinax.network:443"]
   },

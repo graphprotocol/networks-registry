@@ -10,7 +10,6 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
-    "sps": [],
     "firehose": [
       "mainnet.btc.streamingfast.io:443",
       "bitcoin.firehose.pinax.network:443"

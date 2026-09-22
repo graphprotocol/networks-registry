@@ -163,13 +163,9 @@ export interface Network {
    */
   services: {
     /**
-     * Subgraph studio deployment URLs, e.g. https://api.thegraph.com/deploy
+     * Subgraph service entries (gateway, studio, backstop)
      */
-    subgraphs?: string[];
-    /**
-     * Substreams-based subgraphs studio deployment URLs, e.g. https://api.thegraph.com/deploy
-     */
-    sps?: string[];
+    subgraphs?: SubgraphsService[];
     /**
      * Firehose gRPC URLs, e.g. eth.firehose.pinax.network:443
      */
@@ -236,4 +232,18 @@ export interface Network {
      */
     description?: string;
   }[];
+}
+export interface SubgraphsService {
+  /**
+   * Kind of Subgraph service entry
+   */
+  kind: "gateway" | "studio" | "backstop";
+  /**
+   * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao
+   */
+  provider: string;
+  /**
+   * [optional] Human-readable description of the entry
+   */
+  description?: string;
 }

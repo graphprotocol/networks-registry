@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.1",
+  "version": "0.8.0",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-22T19:50:56.130Z",
+  "updatedAt": "2026-09-22T19:46:42.208Z",
   "networks": [
     {
       "id": "mainnet",
@@ -6161,9 +6161,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [],
-      "rpcUrls": [
-        "https://arc.rpc.service.pinax.network"
-      ],
+      "rpcUrls": [],
       "apiUrls": [],
       "services": {
         "subgraphs": [
@@ -6224,8 +6222,7 @@
       ],
       "rpcUrls": [
         "https://rpc.testnet.arc.network",
-        "https://arc-testnet.drpc.org",
-        "https://arctest.rpc.service.pinax.network"
+        "https://arc-testnet.drpc.org"
       ],
       "apiUrls": [
         {

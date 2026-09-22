@@ -54,8 +54,8 @@ export async function validateStudioChains(networksPath: string) {
   console.log(`Loaded ${studioChains.length} studio chains`);
 
   for (const network of networks) {
-    const hasStudioService = network.services.subgraphs?.find((url) =>
-      url.includes("studio.thegraph.com"),
+    const hasStudioService = network.services.subgraphs?.some(
+      (s) => s.kind === "studio",
     );
     if (hasStudioService && !studioChains.includes(network.id)) {
       ERRORS.push(

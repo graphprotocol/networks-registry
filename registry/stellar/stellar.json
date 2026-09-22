@@ -9,7 +9,6 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
-    "sps": [],
     "firehose": ["mainnet.stellar.streamingfast.io:443"],
     "substreams": ["mainnet.stellar.streamingfast.io:443"]
   },

@@ -12,7 +12,6 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
-    "sps": [],
     "firehose": ["mainnet-evm.tron.streamingfast.io:443"],
     "substreams": ["mainnet-evm.tron.streamingfast.io:443"]
   },

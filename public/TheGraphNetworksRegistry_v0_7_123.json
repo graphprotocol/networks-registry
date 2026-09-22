@@ -1,9 +1,9 @@
 {
-  "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.1",
+  "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
+  "version": "0.7.123",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-22T19:50:56.130Z",
+  "updatedAt": "2026-09-22T19:46:42.275Z",
   "networks": [
     {
       "id": "mainnet",
@@ -44,16 +44,7 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "eth.firehose.pinax.network:443",
@@ -144,16 +135,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "mainnet.optimism.streamingfast.io:443",
@@ -241,16 +223,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -310,16 +283,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -378,16 +342,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -502,16 +457,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -772,16 +718,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -850,16 +787,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "sepolia.firehose.pinax.network:443",
@@ -935,16 +863,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "opsepolia.firehose.pinax.network:443"
@@ -1000,18 +919,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
-          }
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -1069,18 +977,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
-          }
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -1136,16 +1033,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -1202,16 +1090,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -1438,16 +1317,7 @@
       },
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "unichain.firehose.pinax.network:443",
@@ -1567,16 +1437,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "unisepolia.firehose.pinax.network:443"
@@ -1741,16 +1602,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -1812,16 +1664,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -2008,16 +1851,7 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "polygon.firehose.pinax.network:443",
@@ -2150,18 +1984,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "https://streamingfast.io",
-            "description": "StreamingFast provides backstop support for all InjectiveEVM Subgraphs"
-          }
-        ],
+        "subgraphs": [],
         "substreams": [
           "testnet.injective-evm.streamingfast.io:443"
         ],
@@ -2226,16 +2049,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -2293,16 +2107,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -2809,18 +2614,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "https://streamingfast.io",
-            "description": "StreamingFast provides backstop support for all InjectiveEVM Subgraphs"
-          }
-        ],
+        "subgraphs": [],
         "substreams": [
           "mainnet.injective-evm.streamingfast.io:443"
         ],
@@ -2885,16 +2679,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "soneium.firehose.pinax.network:443",
@@ -3092,16 +2877,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "minato.firehose.pinax.network:443"
@@ -3150,16 +2926,7 @@
       "rpcUrls": [],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -3217,16 +2984,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "xlayer.firehose.pinax.network:443"
@@ -3797,18 +3555,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
-          }
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "relations": [
@@ -3923,18 +3670,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
-          }
-        ],
+        "subgraphs": [],
         "firehose": [],
         "substreams": []
       },
@@ -3998,18 +3734,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
-          }
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -4070,18 +3795,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
-          }
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": true,
@@ -4146,16 +3860,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -4215,18 +3920,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
-          }
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -4291,16 +3985,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -4366,16 +4051,7 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -4433,16 +4109,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -4603,16 +4270,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -4994,16 +4652,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "arbone.firehose.pinax.network:443",
@@ -5096,16 +4745,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "arbsepolia.firehose.pinax.network:443"
@@ -5164,16 +4804,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "substreams": [
           "tempo.substreams.pinax.network:443"
@@ -5289,16 +4920,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "celo.firehose.pinax.network:443"
@@ -5361,16 +4983,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -5428,16 +5041,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -5490,16 +5094,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -5568,16 +5163,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -5646,16 +5232,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "avalanche-mainnet.streamingfast.io:443",
@@ -6050,16 +5627,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -6161,22 +5729,11 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [],
-      "rpcUrls": [
-        "https://arc.rpc.service.pinax.network"
-      ],
+      "rpcUrls": [],
       "apiUrls": [],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "arc.firehose.pinax.network:443"
@@ -6224,8 +5781,7 @@
       ],
       "rpcUrls": [
         "https://rpc.testnet.arc.network",
-        "https://arc-testnet.drpc.org",
-        "https://arctest.rpc.service.pinax.network"
+        "https://arc-testnet.drpc.org"
       ],
       "apiUrls": [
         {
@@ -6235,16 +5791,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -6298,16 +5845,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [],
         "substreams": []
@@ -6377,16 +5915,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [],
         "substreams": []
@@ -6457,16 +5986,7 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "bsc.firehose.pinax.network:443",
@@ -6551,16 +6071,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "hoodi.firehose.pinax.network:443",
@@ -6685,16 +6196,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "lineasepolia.firehose.pinax.network:443"
@@ -6768,16 +6270,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "linea.firehose.pinax.network:443"
@@ -6963,18 +6456,7 @@
       ],
       "networkType": "mainnet",
       "services": {
-        "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "backstop",
-            "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
-          }
-        ]
+        "subgraphs": []
       },
       "issuanceRewards": false,
       "nativeToken": "gasDAI",
@@ -7007,16 +6489,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -7190,16 +6663,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "testnet",
@@ -7473,16 +6937,7 @@
       "networkType": "testnet",
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "amoy.firehose.pinax.network:443"
@@ -7659,16 +7114,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -7792,16 +7238,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -7860,16 +7297,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "base.firehose.pinax.network:443",
@@ -7959,16 +7387,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "basesepolia.firehose.pinax.network:443"
@@ -8142,16 +7561,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "networkType": "mainnet",
@@ -8211,16 +7621,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -8273,16 +7674,7 @@
       "networkType": "mainnet",
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -8405,16 +7797,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "chapel.firehose.pinax.network:443"
@@ -8472,16 +7855,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ]
       },
       "issuanceRewards": false,
@@ -9482,16 +8856,7 @@
       },
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "mainnet.near.streamingfast.io:443"
@@ -9543,16 +8908,7 @@
       ],
       "services": {
         "subgraphs": [
-          {
-            "kind": "gateway",
-            "provider": "https://gateway.thegraph.com/api",
-            "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-          },
-          {
-            "kind": "studio",
-            "provider": "https://api.studio.thegraph.com/deploy",
-            "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
-          }
+          "https://api.studio.thegraph.com/deploy"
         ],
         "firehose": [
           "testnet.near.streamingfast.io:443"

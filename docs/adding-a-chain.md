@@ -28,8 +28,10 @@ Each chain should be defined as a JSON file in the `registry` directory with the
 
 - `services` - The Graph services support for the chain
 
-  - `subgraphs` - Studio support for subgraphs
-  - `sps` - Studio support for substreams-based subgraphs
+  - `subgraphs` - Subgraph service entries, each `{ kind, provider, description? }`:
+    - `kind: "studio"` - Subgraph Studio support, `provider` is the deployment URL, e.g. `https://api.studio.thegraph.com/deploy`
+    - `kind: "gateway"` - Subgraph gateway, `provider` is the gateway URL, e.g. `https://gateway.thegraph.com/api`
+    - `kind: "backstop"` - backstop indexing support, `provider` is the backstop provider, e.g. `infradao`
   - `firehose` - Firehose support and endpoints
   - `substreams` - Substreams support and endpoints
 
@@ -69,8 +71,10 @@ Each chain should be defined as a JSON file in the `registry` directory with the
     { "url": "https://arbitrum-one.abi.pinax.network/api", "kind": "etherscan" }
   ],
   "services": {
-    "subgraphs": [{ "provider": "e&n" }],
-    "sps": [{ "provider": "e&n" }],
+    "subgraphs": [
+      { "kind": "gateway", "provider": "https://gateway.thegraph.com/api" },
+      { "kind": "studio", "provider": "https://api.studio.thegraph.com/deploy" }
+    ],
     "firehose": [
       { "provider": "pinax", "url": "arbone.firehose.pinax.network:443" }
     ],
