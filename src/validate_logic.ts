@@ -244,6 +244,9 @@ const ALLOWED_SG_PROVIDERS = [
 	"streamingfast.io",
 	"data.nexus",
 ];
+const ALLOWED_SG_GATEWAY_PROVIDERS = ["gateway.thegraph.com"];
+const ALLOWED_SG_STUDIO_PROVIDERS = ["api.studio.thegraph.com"];
+const ALLOWED_SG_BACKSTOP_PROVIDERS = ["infradao", "streamingfast.io"];
 const ALLOWED_TOKEN_API_PROVIDERS = [
 	"token-api.thegraph.com",
 	"api.pinax.network",
@@ -263,17 +266,34 @@ function validateServices(networks: Network[]) {
 			}
 		}
 
-		// Validate subgraphs and sps services
-		["subgraphs", "sps"].forEach((serviceType) => {
-			for (const url of services[serviceType] ?? []) {
-				if (typeof url !== "string") continue; // skip backstop support entries
-				if (!ALLOWED_SG_PROVIDERS.some((provider) => url.includes(provider))) {
-					ERRORS.push(
-						`\`${network.id}\` - invalid \`${serviceType}\` provider: ${url}`,
-					);
-				}
+		// Validate subgraphs services
+		const seenSubgraphs = new Set<string>();
+		for (const { kind, provider } of services.subgraphs ?? []) {
+			const key = `${kind}:${provider}`;
+			if (seenSubgraphs.has(key)) {
+				ERRORS.push(
+					`\`${network.id}\` - duplicate \`subgraphs\` entry: ${key}`,
+				);
 			}
-		});
+			seenSubgraphs.add(key);
+			const allowed = {
+				gateway: ALLOWED_SG_GATEWAY_PROVIDERS,
+				studio: ALLOWED_SG_STUDIO_PROVIDERS,
+				backstop: ALLOWED_SG_BACKSTOP_PROVIDERS,
+			}[kind];
+			if (!allowed.some((p) => provider.includes(p))) {
+				ERRORS.push(
+					`\`${network.id}\` - invalid \`subgraphs\` ${kind} provider: ${provider}`,
+				);
+			}
+		}
+
+		// Validate sps services
+		for (const url of services.sps ?? []) {
+			if (!ALLOWED_SG_PROVIDERS.some((provider) => url.includes(provider))) {
+				ERRORS.push(`\`${network.id}\` - invalid \`sps\` provider: ${url}`);
+			}
+		}
 
 		// Validate substreams and firehose services
 		["firehose", "substreams"].forEach((serviceType) => {

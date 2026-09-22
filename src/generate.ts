@@ -76,4 +76,7 @@ function main() {
   process.stdout.write(`\n\n${mermaid}`);
 }
 
-main();
+// Only run main() if this file is being run directly
+if (import.meta.main) {
+  main();
+}

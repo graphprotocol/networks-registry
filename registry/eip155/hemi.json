@@ -10,7 +10,6 @@
   "rpcUrls": ["https://rpc.hemi.network/rpc", "https://hemi.drpc.org"],
   "services": {
     "subgraphs": [
-      "https://api.studio.thegraph.com/deploy",
       {
         "kind": "gateway",
         "provider": "https://gateway.thegraph.com/api",

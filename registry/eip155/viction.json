@@ -9,7 +9,6 @@
   "rpcUrls": ["https://rpc.viction.xyz", "https://viction.drpc.org"],
   "services": {
     "subgraphs": [
-      "https://api.studio.thegraph.com/deploy",
       {
         "kind": "gateway",
         "provider": "https://gateway.thegraph.com/api",

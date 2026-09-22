@@ -163,25 +163,9 @@ export interface Network {
    */
   services: {
     /**
-     * Subgraph service entries: studio deployment URL strings and/or structured { kind, provider, description } entries (gateway, studio, backstop)
+     * Subgraph service entries (gateway, studio, backstop)
      */
-    subgraphs?: (
-      | string
-      | {
-          /**
-           * Kind of Subgraph service entry
-           */
-          kind: "gateway" | "studio" | "backstop";
-          /**
-           * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao
-           */
-          provider: string;
-          /**
-           * [optional] Human-readable description of the entry
-           */
-          description?: string;
-        }
-    )[];
+    subgraphs?: SubgraphsService[];
     /**
      * Substreams-based subgraphs studio deployment URLs, e.g. https://api.thegraph.com/deploy
      */
@@ -252,4 +236,18 @@ export interface Network {
      */
     description?: string;
   }[];
+}
+export interface SubgraphsService {
+  /**
+   * Kind of Subgraph service entry
+   */
+  kind: "gateway" | "studio" | "backstop";
+  /**
+   * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao
+   */
+  provider: string;
+  /**
+   * [optional] Human-readable description of the entry
+   */
+  description?: string;
 }

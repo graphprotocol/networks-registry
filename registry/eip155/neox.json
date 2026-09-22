@@ -13,7 +13,6 @@
   "apiUrls": [{ "url": "https://xexplorer.neo.org/api", "kind": "etherscan" }],
   "services": {
     "subgraphs": [
-      "https://api.studio.thegraph.com/deploy",
       {
         "kind": "gateway",
         "provider": "https://gateway.thegraph.com/api",

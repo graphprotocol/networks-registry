@@ -38,6 +38,26 @@
   ],
   "additionalProperties": false,
   "$defs": {
+    "SubgraphsService": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["gateway", "studio", "backstop"],
+          "description": "Kind of Subgraph service entry"
+        },
+        "provider": {
+          "type": "string",
+          "description": "Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao"
+        },
+        "description": {
+          "type": "string",
+          "description": "[optional] Human-readable description of the entry"
+        }
+      },
+      "required": ["kind", "provider"],
+      "additionalProperties": false
+    },
     "Network": {
       "type": "object",
       "properties": {
@@ -229,32 +249,8 @@
           "properties": {
             "subgraphs": {
               "type": "array",
-              "items": {
-                "anyOf": [
-                  { "type": "string", "format": "uri-template" },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "kind": {
-                        "type": "string",
-                        "enum": ["gateway", "studio", "backstop"],
-                        "description": "Kind of Subgraph service entry"
-                      },
-                      "provider": {
-                        "type": "string",
-                        "description": "Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao"
-                      },
-                      "description": {
-                        "type": "string",
-                        "description": "[optional] Human-readable description of the entry"
-                      }
-                    },
-                    "required": ["kind", "provider"],
-                    "additionalProperties": false
-                  }
-                ]
-              },
-              "description": "Subgraph service entries: studio deployment URL strings and/or structured { kind, provider, description } entries (gateway, studio, backstop)"
+              "items": { "$ref": "#/$defs/SubgraphsService" },
+              "description": "Subgraph service entries (gateway, studio, backstop)"
             },
             "sps": {
               "type": "array",
