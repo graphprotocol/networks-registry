@@ -252,11 +252,6 @@
               "items": { "$ref": "#/$defs/SubgraphsService" },
               "description": "Subgraph service entries (gateway, studio, backstop)"
             },
-            "sps": {
-              "type": "array",
-              "items": { "type": "string", "format": "uri-template" },
-              "description": "Substreams-based subgraphs studio deployment URLs, e.g. https://api.thegraph.com/deploy"
-            },
             "firehose": {
               "type": "array",
               "items": { "type": "string", "format": "uri-template" },

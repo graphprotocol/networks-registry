@@ -239,11 +239,6 @@ const ALLOWED_FH_PROVIDERS = [
 	"streamingfast.io",
 	"data.nexus",
 ];
-const ALLOWED_SG_PROVIDERS = [
-	"api.studio.thegraph.com",
-	"streamingfast.io",
-	"data.nexus",
-];
 const ALLOWED_SG_GATEWAY_PROVIDERS = ["gateway.thegraph.com"];
 const ALLOWED_SG_STUDIO_PROVIDERS = ["api.studio.thegraph.com"];
 const ALLOWED_SG_BACKSTOP_PROVIDERS = ["infradao", "streamingfast.io"];
@@ -285,13 +280,6 @@ function validateServices(networks: Network[]) {
 				ERRORS.push(
 					`\`${network.id}\` - invalid \`subgraphs\` ${kind} provider: ${provider}`,
 				);
-			}
-		}
-
-		// Validate sps services
-		for (const url of services.sps ?? []) {
-			if (!ALLOWED_SG_PROVIDERS.some((provider) => url.includes(provider))) {
-				ERRORS.push(`\`${network.id}\` - invalid \`sps\` provider: ${url}`);
 			}
 		}
 

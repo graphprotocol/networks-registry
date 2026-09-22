@@ -24,8 +24,7 @@
         "provider": "infradao",
         "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
       }
-    ],
-    "sps": []
+    ]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,

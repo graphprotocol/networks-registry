@@ -16,7 +16,6 @@
   "networkType": "testnet",
   "services": {
     "subgraphs": [],
-    "sps": [],
     "firehose": [],
     "substreams": ["testnet.starknet.streamingfast.io:443"]
   },

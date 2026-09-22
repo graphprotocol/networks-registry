@@ -167,10 +167,6 @@ export interface Network {
      */
     subgraphs?: SubgraphsService[];
     /**
-     * Substreams-based subgraphs studio deployment URLs, e.g. https://api.thegraph.com/deploy
-     */
-    sps?: string[];
-    /**
      * Firehose gRPC URLs, e.g. eth.firehose.pinax.network:443
      */
     firehose?: string[];
