@@ -10,8 +10,14 @@
   "networkType": "mainnet",
   "services": {
     "subgraphs": [],
-    "firehose": ["bitcoin.firehose.pinax.network:443"],
-    "substreams": ["bitcoin.substreams.pinax.network:443"]
+    "firehose": [
+      "mainnet.btc.streamingfast.io:443",
+      "bitcoin.firehose.pinax.network:443"
+    ],
+    "substreams": [
+      "mainnet.btc.streamingfast.io:443",
+      "bitcoin.substreams.pinax.network:443"
+    ]
   },
   "issuanceRewards": false,
   "nativeToken": "BTC",
