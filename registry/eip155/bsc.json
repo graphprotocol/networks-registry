@@ -26,6 +26,11 @@
         "kind": "studio",
         "provider": "https://api.studio.thegraph.com/deploy",
         "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
+      },
+      {
+        "kind": "curation",
+        "provider": "the-graph-foundation",
+        "description": "The Graph Foundation will provide curation support for all published Subgraphs on BNB Smart Chain Mainnet until October 8, 2026."
       }
     ],
     "firehose": ["bsc.firehose.pinax.network:443", "bnb.streamingfast.io:443"],

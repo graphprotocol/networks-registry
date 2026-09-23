@@ -163,7 +163,7 @@ export interface Network {
    */
   services: {
     /**
-     * Subgraph service entries (gateway, studio, backstop)
+     * Subgraph service entries (gateway, studio, backstop, curation)
      */
     subgraphs?: SubgraphsService[];
     /**
@@ -237,9 +237,9 @@ export interface SubgraphsService {
   /**
    * Kind of Subgraph service entry
    */
-  kind: "gateway" | "studio" | "backstop";
+  kind: "gateway" | "studio" | "backstop" | "curation";
   /**
-   * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao
+   * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao or a curation provider like the-graph-foundation
    */
   provider: string;
   /**
