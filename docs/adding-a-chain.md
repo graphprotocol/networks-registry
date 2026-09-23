@@ -31,7 +31,8 @@ Each chain should be defined as a JSON file in the `registry` directory with the
   - `subgraphs` - Subgraph service entries, each `{ kind, provider, description? }`:
     - `kind: "studio"` - Subgraph Studio support, `provider` is the deployment URL, e.g. `https://api.studio.thegraph.com/deploy`
     - `kind: "gateway"` - Subgraph gateway, `provider` is the gateway URL, e.g. `https://gateway.thegraph.com/api`
-    - `kind: "backstop"` - backstop indexing support, `provider` is the backstop provider, e.g. `infradao`
+    - `kind: "backstop"` - backstop indexing support, `provider` is the backstop provider, e.g. `infradao` or `streamingfast`
+    - `kind: "curation"` - curation support, `provider` is the curation provider, e.g. `the-graph-foundation`
   - `firehose` - Firehose support and endpoints
   - `substreams` - Substreams support and endpoints
 

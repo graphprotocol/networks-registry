@@ -25,8 +25,8 @@
       },
       {
         "kind": "backstop",
-        "provider": "https://streamingfast.io",
-        "description": "StreamingFast provides backstop support for all InjectiveEVM Subgraphs"
+        "provider": "streamingfast",
+        "description": "StreamingFast provides indexing support for all published Subgraphs on Injective EVM Testnet."
       }
     ],
     "substreams": ["testnet.injective-evm.streamingfast.io:443"],

@@ -241,7 +241,8 @@ const ALLOWED_FH_PROVIDERS = [
 ];
 const ALLOWED_SG_GATEWAY_PROVIDERS = ["gateway.thegraph.com"];
 const ALLOWED_SG_STUDIO_PROVIDERS = ["api.studio.thegraph.com"];
-const ALLOWED_SG_BACKSTOP_PROVIDERS = ["infradao", "streamingfast.io"];
+const ALLOWED_SG_BACKSTOP_PROVIDERS = ["infradao", "streamingfast"];
+const ALLOWED_SG_CURATION_PROVIDERS = ["the-graph-foundation"];
 const ALLOWED_TOKEN_API_PROVIDERS = [
 	"token-api.thegraph.com",
 	"api.pinax.network",
@@ -275,6 +276,7 @@ function validateServices(networks: Network[]) {
 				gateway: ALLOWED_SG_GATEWAY_PROVIDERS,
 				studio: ALLOWED_SG_STUDIO_PROVIDERS,
 				backstop: ALLOWED_SG_BACKSTOP_PROVIDERS,
+				curation: ALLOWED_SG_CURATION_PROVIDERS,
 			}[kind];
 			if (!allowed.some((p) => provider.includes(p))) {
 				ERRORS.push(

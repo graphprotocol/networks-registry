@@ -21,7 +21,7 @@
       {
         "kind": "backstop",
         "provider": "infradao",
-        "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+        "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Anubis Mainnet."
       }
     ]
   },
