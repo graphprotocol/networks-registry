@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-22T19:54:19.515Z",
+  "updatedAt": "2026-09-23T19:47:50.620Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1009,7 +1009,7 @@
           {
             "kind": "backstop",
             "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+            "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Fuse Testnet."
           }
         ]
       },
@@ -1078,7 +1078,7 @@
           {
             "kind": "backstop",
             "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+            "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Fuse Mainnet."
           }
         ]
       },
@@ -2017,6 +2017,11 @@
             "kind": "studio",
             "provider": "https://api.studio.thegraph.com/deploy",
             "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
+          },
+          {
+            "kind": "curation",
+            "provider": "the-graph-foundation",
+            "description": "The Graph Foundation will provide curation support for all published Subgraphs on Polygon Mainnet until October 8, 2026."
           }
         ],
         "firehose": [
@@ -2158,8 +2163,8 @@
           },
           {
             "kind": "backstop",
-            "provider": "https://streamingfast.io",
-            "description": "StreamingFast provides backstop support for all InjectiveEVM Subgraphs"
+            "provider": "streamingfast",
+            "description": "StreamingFast provides indexing support for all published Subgraphs on Injective EVM Testnet."
           }
         ],
         "substreams": [
@@ -2817,8 +2822,8 @@
           },
           {
             "kind": "backstop",
-            "provider": "https://streamingfast.io",
-            "description": "StreamingFast provides backstop support for all InjectiveEVM Subgraphs"
+            "provider": "streamingfast",
+            "description": "StreamingFast provides indexing support for all published Subgraphs on Injective EVM Mainnet."
           }
         ],
         "substreams": [
@@ -3806,7 +3811,7 @@
           {
             "kind": "backstop",
             "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+            "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Fraxtal Mainnet."
           }
         ]
       },
@@ -3932,7 +3937,7 @@
           {
             "kind": "backstop",
             "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+            "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Boba Network."
           }
         ],
         "firehose": [],
@@ -4007,7 +4012,7 @@
           {
             "kind": "backstop",
             "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+            "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Boba Sepolia Testnet."
           }
         ]
       },
@@ -4079,7 +4084,7 @@
           {
             "kind": "backstop",
             "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+            "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Rootstock Mainnet."
           }
         ]
       },
@@ -4224,7 +4229,7 @@
           {
             "kind": "backstop",
             "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+            "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Rootstock Testnet."
           }
         ]
       },
@@ -6466,6 +6471,11 @@
             "kind": "studio",
             "provider": "https://api.studio.thegraph.com/deploy",
             "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
+          },
+          {
+            "kind": "curation",
+            "provider": "the-graph-foundation",
+            "description": "The Graph Foundation will provide curation support for all published Subgraphs on BNB Smart Chain Mainnet until October 8, 2026."
           }
         ],
         "firehose": [
@@ -6972,7 +6982,7 @@
           {
             "kind": "backstop",
             "provider": "infradao",
-            "description": "InfraDAO provides backstop support for Subgraphs with 500 GRT in signal"
+            "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Anubis Mainnet."
           }
         ]
       },
