@@ -22,7 +22,7 @@
   "explorerUrls": ["https://robinhoodchain.blockscout.com"],
   "rpcUrls": [
     "https://rpc.mainnet.chain.robinhood.com",
-    "https://robinhood.rpc.service.pinax.network"
+    "https://robinhood.rpc.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://robinhoodchain.blockscout.com/api", "kind": "blockscout" }

@@ -8,7 +8,7 @@
   "explorerUrls": ["https://gnosisscan.io", "https://gnosis.blockscout.com"],
   "rpcUrls": [
     "https://rpc.gnosischain.com",
-    "https://gnosis.rpc.service.pinax.network",
+    "https://gnosis.rpc.pinax.network",
     "https://rpc.gnosis.gateway.fm"
   ],
   "apiUrls": [

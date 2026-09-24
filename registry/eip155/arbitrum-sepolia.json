@@ -13,7 +13,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.arbiscan.io"],
   "rpcUrls": [
-    "https://arbsepolia.rpc.service.pinax.network",
+    "https://arbsepolia.rpc.pinax.network",
     "https://arbitrum-sepolia.drpc.org",
     "https://arbitrum-sepolia-testnet.api.pocket.network"
   ],

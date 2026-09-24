@@ -14,7 +14,7 @@
   ],
   "rpcUrls": [
     "https://sepolia.gateway.tenderly.co",
-    "https://sepolia.rpc.service.pinax.network",
+    "https://sepolia.rpc.pinax.network",
     "https://eth-sepolia-testnet.api.pocket.network"
   ],
   "apiUrls": [

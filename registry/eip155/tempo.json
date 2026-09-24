@@ -8,7 +8,7 @@
   "explorerUrls": ["https://explore.tempo.xyz"],
   "rpcUrls": [
     "https://tempo-mainnet.drpc.org",
-    "https://tempo.rpc.service.pinax.network",
+    "https://tempo.rpc.pinax.network",
     "https://rpc.mainnet.tempo.xyz"
   ],
   "services": {

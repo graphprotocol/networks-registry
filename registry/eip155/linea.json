@@ -8,7 +8,7 @@
   "explorerUrls": ["https://lineascan.build"],
   "rpcUrls": [
     "https://rpc.linea.build",
-    "https://linea.rpc.service.pinax.network",
+    "https://linea.rpc.pinax.network",
     "https://1rpc.io/linea"
   ],
   "apiUrls": [

@@ -39,7 +39,7 @@
   ],
   "rpcUrls": [
     "https://mainnet.unichain.org",
-    "https://unichain.rpc.service.pinax.network",
+    "https://unichain.rpc.pinax.network",
     "https://unichain.drpc.org"
   ],
   "issuanceRewards": true,

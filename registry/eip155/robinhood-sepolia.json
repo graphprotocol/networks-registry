@@ -15,7 +15,7 @@
   "explorerUrls": ["https://explorer.testnet.chain.robinhood.com"],
   "rpcUrls": [
     "https://rpc.testnet.chain.robinhood.com",
-    "https://robsepolia.rpc.service.pinax.network"
+    "https://robsepolia.rpc.pinax.network"
   ],
   "apiUrls": [
     {

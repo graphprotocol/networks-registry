@@ -8,7 +8,7 @@
   "explorerUrls": ["https://soneium.blockscout.com"],
   "rpcUrls": [
     "https://rpc.soneium.org",
-    "https://soneium.rpc.service.pinax.network",
+    "https://soneium.rpc.pinax.network",
     "https://soneium.drpc.org"
   ],
   "apiUrls": [

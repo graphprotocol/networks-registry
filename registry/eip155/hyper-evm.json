@@ -10,7 +10,7 @@
   "rpcUrls": [
     "https://rpc.hypurrscan.io",
     "https://rpc.hyperliquid.xyz/evm",
-    "https://hyperevm.rpc.service.pinax.network"
+    "https://hyperevm.rpc.pinax.network"
   ],
   "apiUrls": [
     { "url": "https://hyperevm.abi.thegraph.com/api", "kind": "etherscan" }

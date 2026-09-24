@@ -8,7 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.bscscan.com"],
   "rpcUrls": [
-    "https://chapel.rpc.service.pinax.network",
+    "https://chapel.rpc.pinax.network",
     "https://bsc-testnet.rpc.sentio.xyz"
   ],
   "apiUrls": [

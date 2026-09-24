@@ -14,7 +14,7 @@
   "explorerUrls": ["https://megaeth.blockscout.com"],
   "rpcUrls": [
     "https://mainnet.megaeth.com/rpc",
-    "https://megaeth.rpc.service.pinax.network",
+    "https://megaeth.rpc.pinax.network",
     "https://megaeth.drpc.org"
   ],
   "apiUrls": [

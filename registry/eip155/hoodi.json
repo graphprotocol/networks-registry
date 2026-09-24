@@ -10,7 +10,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://hoodi.etherscan.io"],
   "rpcUrls": [
-    "https://hoodi.rpc.service.pinax.network",
+    "https://hoodi.rpc.pinax.network",
     "https://hoodi.rpc.sentio.xyz",
     "https://rpc.hoodi.ethpandaops.io"
   ],

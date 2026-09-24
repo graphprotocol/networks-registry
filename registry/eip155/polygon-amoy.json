@@ -12,7 +12,7 @@
   ],
   "explorerUrls": ["https://amoy.polygonscan.com"],
   "rpcUrls": [
-    "https://amoy.rpc.service.pinax.network",
+    "https://amoy.rpc.pinax.network",
     "https://polygon-amoy.drpc.org",
     "https://polygon-amoy.api.onfinality.io/public"
   ],

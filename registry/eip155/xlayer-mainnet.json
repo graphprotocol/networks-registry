@@ -9,7 +9,7 @@
   "rpcUrls": [
     "https://rpc.xlayer.tech",
     "https://xlayerrpc.okx.com",
-    "https://xlayer.rpc.service.pinax.network"
+    "https://xlayer.rpc.pinax.network"
   ],
   "services": {
     "subgraphs": [

@@ -8,7 +8,7 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://arbiscan.io"],
   "rpcUrls": [
-    "https://arbone.rpc.service.pinax.network",
+    "https://arbone.rpc.pinax.network",
     "https://arbitrum.drpc.org",
     "https://arbitrum-one.rpc.sentio.xyz"
   ],

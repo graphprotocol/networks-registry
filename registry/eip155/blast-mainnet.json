@@ -8,7 +8,7 @@
   "explorerUrls": ["https://blastscan.io"],
   "rpcUrls": [
     "https://rpc.blast.io",
-    "https://blast.rpc.service.pinax.network",
+    "https://blast.rpc.pinax.network",
     "https://blast.drpc.org"
   ],
   "apiUrls": [

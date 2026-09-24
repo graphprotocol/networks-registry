@@ -16,7 +16,7 @@
   ],
   "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",
-  "issuanceRewards": false,
+  "issuanceRewards": true,
   "nativeToken": "GLMR",
   "docsUrl": "https://docs.moonbeam.network",
   "indexerDocsUrls": [

@@ -9,7 +9,7 @@
   "explorerUrls": ["https://sepolia.basescan.org"],
   "rpcUrls": [
     "https://sepolia.base.org",
-    "https://basesepolia.rpc.service.pinax.network",
+    "https://basesepolia.rpc.pinax.network",
     "https://base-sepolia.drpc.org"
   ],
   "apiUrls": [

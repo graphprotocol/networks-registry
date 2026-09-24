@@ -9,7 +9,7 @@
   "explorerUrls": ["https://testnet.snowscan.xyz"],
   "rpcUrls": [
     "https://api.avax-test.network/ext/bc/C/rpc",
-    "https://fuji.rpc.service.pinax.network",
+    "https://fuji.rpc.pinax.network",
     "https://avalanche-fuji.drpc.org"
   ],
   "apiUrls": [

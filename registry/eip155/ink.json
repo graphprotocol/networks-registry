@@ -11,7 +11,7 @@
   ],
   "rpcUrls": [
     "https://rpc-gel.inkonchain.com",
-    "https://ink.rpc.service.pinax.network",
+    "https://ink.rpc.pinax.network",
     "https://ink.drpc.org",
     "https://ink.api.pocket.network"
   ],

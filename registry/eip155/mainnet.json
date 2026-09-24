@@ -8,7 +8,7 @@
   "explorerUrls": ["https://etherscan.io"],
   "rpcUrls": [
     "https://mainnet.gateway.tenderly.co",
-    "https://eth.rpc.service.pinax.network",
+    "https://eth.rpc.pinax.network",
     "https://eth.drpc.org"
   ],
   "apiUrls": [

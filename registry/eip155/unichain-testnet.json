@@ -14,7 +14,7 @@
   "explorerUrls": ["https://unichain-sepolia.blockscout.com"],
   "rpcUrls": [
     "https://sepolia.unichain.org",
-    "https://unisepolia.rpc.service.pinax.network",
+    "https://unisepolia.rpc.pinax.network",
     "https://unichain-sepolia.drpc.org"
   ],
   "apiUrls": [

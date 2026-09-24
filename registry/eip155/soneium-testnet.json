@@ -9,7 +9,7 @@
   "explorerUrls": ["https://soneium-minato.blockscout.com"],
   "rpcUrls": [
     "https://rpc.minato.soneium.org",
-    "https://minato.rpc.service.pinax.network",
+    "https://minato.rpc.pinax.network",
     "https://soneium-minato.drpc.org"
   ],
   "apiUrls": [

@@ -9,7 +9,7 @@
   "explorerUrls": ["https://snowtrace.io"],
   "rpcUrls": [
     "https://api.avax.network/ext/bc/C/rpc",
-    "https://avalanche.rpc.service.pinax.network",
+    "https://avalanche.rpc.pinax.network",
     "https://1rpc.io/avax/c"
   ],
   "apiUrls": [

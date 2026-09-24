@@ -8,7 +8,7 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "explorerUrls": ["https://polygonscan.com"],
   "rpcUrls": [
-    "https://polygon.rpc.service.pinax.network",
+    "https://polygon.rpc.pinax.network",
     "https://polygon.drpc.org",
     "https://rpc.satelink.network/rpc/polygon"
   ],

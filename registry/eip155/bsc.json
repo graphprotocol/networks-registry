@@ -7,7 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://bscscan.com"],
   "rpcUrls": [
-    "https://bsc.rpc.service.pinax.network",
+    "https://bsc.rpc.pinax.network",
     "https://bsc.rpc.sentio.xyz",
     "https://api.zan.top/bsc-mainnet"
   ],
