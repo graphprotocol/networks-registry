@@ -21,8 +21,14 @@
         "description": "Subgraph Studio is The Graph's developer portal for managing API keys and usage-based billing (via card or GRT) as well as deploying, testing, and publishing Subgraphs to The Graph Network."
       }
     ],
-    "firehose": ["arc.firehose.pinax.network:443"],
-    "substreams": ["arc.substreams.pinax.network:443"]
+    "firehose": [
+      "mainnet.arc.streamingfast.io:443",
+      "arc.firehose.pinax.network:443"
+    ],
+    "substreams": [
+      "mainnet.arc.streamingfast.io:443",
+      "arc.substreams.pinax.network:443"
+    ]
   },
   "networkType": "mainnet",
   "issuanceRewards": false,
