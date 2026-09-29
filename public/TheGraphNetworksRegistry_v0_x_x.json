@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-24T21:50:40.258Z",
+  "updatedAt": "2026-09-29T14:53:47.514Z",
   "networks": [
     {
       "id": "mainnet",
@@ -6184,9 +6184,11 @@
           }
         ],
         "firehose": [
+          "mainnet.arc.streamingfast.io:443",
           "arc.firehose.pinax.network:443"
         ],
         "substreams": [
+          "mainnet.arc.streamingfast.io:443",
           "arc.substreams.pinax.network:443"
         ]
       },
