@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-09-29T14:53:47.514Z",
+  "updatedAt": "2026-10-01T19:47:56.844Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1276,7 +1276,7 @@
         "substreams": []
       },
       "networkType": "mainnet",
-      "issuanceRewards": true,
+      "issuanceRewards": false,
       "nativeToken": "GLMR",
       "docsUrl": "https://docs.moonbeam.network",
       "indexerDocsUrls": [
@@ -6220,7 +6220,8 @@
       "shortName": "Arc",
       "fullName": "Arc Testnet",
       "aliases": [
-        "evm-5042002"
+        "evm-5042002",
+        "arctest"
       ],
       "caip2Id": "eip155:5042002",
       "graphNode": {
@@ -6255,12 +6256,18 @@
         ]
       },
       "networkType": "testnet",
+      "relations": [
+        {
+          "kind": "testnetOf",
+          "network": "arc"
+        }
+      ],
       "issuanceRewards": false,
       "nativeToken": "USDC",
       "docsUrl": "https://docs.arc.network",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
+        "evmExtendedModel": true,
         "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
         "bytesEncoding": "hex",
         "firstStreamableBlock": {
@@ -6268,7 +6275,7 @@
           "height": 0
         },
         "blockFeatures": [
-          "base"
+          "extended"
         ]
       },
       "icon": {
