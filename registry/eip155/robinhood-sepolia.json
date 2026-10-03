@@ -8,9 +8,7 @@
   "networkType": "testnet",
   "graphNode": { "protocol": "ethereum" },
   "services": {
-    "subgraphs": [],
-    "substreams": ["robsepolia.substreams.pinax.network:443"],
-    "firehose": ["robsepolia.firehose.pinax.network:443"]
+    "subgraphs": []
   },
   "explorerUrls": ["https://explorer.testnet.chain.robinhood.com"],
   "rpcUrls": [
