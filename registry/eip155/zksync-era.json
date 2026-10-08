@@ -3,7 +3,7 @@
   "shortName": "zkSync",
   "secondName": "Era",
   "fullName": "zkSync Mainnet",
-  "aliases": ["evm-324", "zksync", "zksync-era-mainnet"],
+  "aliases": ["evm-324", "zksync", "zksync-era-mainnet", "zksyncera"],
   "caip2Id": "eip155:324",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.zksync.io"],

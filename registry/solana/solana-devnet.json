@@ -3,7 +3,7 @@
   "shortName": "Solana",
   "secondName": "Devnet",
   "fullName": "Solana Devnet",
-  "aliases": [],
+  "aliases": ["soldev"],
   "caip2Id": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
   "explorerUrls": ["https://explorer.solana.com/?cluster=devnet"],
   "rpcUrls": ["https://api.devnet.solana.com"],

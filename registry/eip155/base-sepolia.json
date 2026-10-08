@@ -3,7 +3,7 @@
   "shortName": "Base",
   "secondName": "Sepolia",
   "fullName": "Base Sepolia Testnet",
-  "aliases": ["evm-84532", "base-testnet"],
+  "aliases": ["evm-84532", "base-testnet", "basesepolia"],
   "caip2Id": "eip155:84532",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.basescan.org"],
