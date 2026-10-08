@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-10-01T19:47:56.844Z",
+  "updatedAt": "2026-10-08T04:20:37.436Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1526,7 +1526,8 @@
       "fullName": "Unichain Sepolia Testnet",
       "aliases": [
         "evm-1301",
-        "unichain-sepolia"
+        "unichain-sepolia",
+        "unisepolia"
       ],
       "caip2Id": "eip155:1301",
       "networkType": "testnet",
@@ -4270,7 +4271,8 @@
       "aliases": [
         "evm-324",
         "zksync",
-        "zksync-era-mainnet"
+        "zksync-era-mainnet",
+        "zksyncera"
       ],
       "caip2Id": "eip155:324",
       "graphNode": {
@@ -7952,7 +7954,8 @@
       "fullName": "Base Sepolia Testnet",
       "aliases": [
         "evm-84532",
-        "base-testnet"
+        "base-testnet",
+        "basesepolia"
       ],
       "caip2Id": "eip155:84532",
       "graphNode": {
@@ -9701,7 +9704,9 @@
       "shortName": "Solana",
       "secondName": "Devnet",
       "fullName": "Solana Devnet",
-      "aliases": [],
+      "aliases": [
+        "soldev"
+      ],
       "caip2Id": "solana:EtWTRABZaYq6iMfeYKouRu166VU2xqa1",
       "explorerUrls": [
         "https://explorer.solana.com/?cluster=devnet"
