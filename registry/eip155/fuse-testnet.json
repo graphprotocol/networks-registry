@@ -16,11 +16,6 @@
         "kind": "gateway",
         "provider": "https://gateway.thegraph.com/api",
         "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-      },
-      {
-        "kind": "backstop",
-        "provider": "infradao",
-        "description": "InfraDAO provides indexing support for all published Subgraphs with 500+ GRT in signal on Fuse Testnet."
       }
     ]
   },
