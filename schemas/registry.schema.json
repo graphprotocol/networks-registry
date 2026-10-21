@@ -57,7 +57,7 @@
       },
       "required": ["kind"],
       "if": { "properties": { "kind": { "const": "none" } } },
-      "then": { "not": { "required": ["provider"] } },
+      "then": { "properties": { "provider": false } },
       "else": { "required": ["provider"] },
       "additionalProperties": false
     },
