@@ -10,14 +10,7 @@
   "apiUrls": [
     { "url": "https://monad-testnet.abi.thegraph.com/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": [
-      {
-        "kind": "none",
-        "description": "The Graph Foundation's Studio support was deprecated on Oct 21, 2026"
-      }
-    ]
-  },
+  "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "monad" }],
   "issuanceRewards": false,

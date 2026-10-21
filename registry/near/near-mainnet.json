@@ -15,10 +15,6 @@
         "kind": "gateway",
         "provider": "https://gateway.thegraph.com/api",
         "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
-      },
-      {
-        "kind": "none",
-        "description": "The Graph Foundation's Studio support was deprecated on Oct 16, 2026"
       }
     ]
   },

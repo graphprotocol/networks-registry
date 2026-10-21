@@ -272,14 +272,13 @@ function validateServices(networks: Network[]) {
 				);
 			}
 			seenSubgraphs.add(key);
-			if (kind === "none") continue;
 			const allowed = {
 				gateway: ALLOWED_SG_GATEWAY_PROVIDERS,
 				studio: ALLOWED_SG_STUDIO_PROVIDERS,
 				backstop: ALLOWED_SG_BACKSTOP_PROVIDERS,
 				curation: ALLOWED_SG_CURATION_PROVIDERS,
 			}[kind];
-			if (!provider || !allowed.some((p) => provider.includes(p))) {
+			if (!allowed.some((p) => provider.includes(p))) {
 				ERRORS.push(
 					`\`${network.id}\` - invalid \`subgraphs\` ${kind} provider: ${provider}`,
 				);
