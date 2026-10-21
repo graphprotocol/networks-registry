@@ -38,6 +38,18 @@ function validateFilenames(networksPath: string) {
 	process.stdout.write("done\n");
 }
 
+// Collects the values at a dotted path (e.g. "firehose.firstStreamableBlock.id"),
+// descending into arrays at any level.
+function valuesAtPath(value: any, path: string[]): any[] {
+	if (value === undefined || value === null) return [];
+	if (Array.isArray(value)) {
+		return value.flatMap((item) => valuesAtPath(item, path));
+	}
+	if (path.length === 0) return [value];
+	const [key, ...rest] = path;
+	return valuesAtPath(value[key], rest);
+}
+
 function validateUniqueness(networks: Network[]) {
 	process.stdout.write("Validating uniqueness ... ");
 	for (const field of [
@@ -55,20 +67,7 @@ function validateUniqueness(networks: Network[]) {
 		// Only consider networks that do NOT have an 'evmOf' relation
 		const values = networks
 			.filter((n) => !n.relations?.some((rel) => rel.kind === "evmOf"))
-			.flatMap((n) => {
-				if (field.includes(".")) {
-					const [obj, fi] = field.split(".");
-					if (Array.isArray(n[obj])) {
-						return n[obj].map((item) => item[fi]);
-					}
-					if (Array.isArray(n[obj]?.[fi])) {
-						return n[obj][fi];
-					}
-					return [n[obj]?.[fi]].filter(Boolean);
-				}
-				if (Array.isArray(n[field])) return n[field];
-				return n[field] ? [n[field]] : [];
-			});
+			.flatMap((n) => valuesAtPath(n, field.split(".")).filter(Boolean));
 		const duplicates = values
 			.filter((v, i) => values.indexOf(v) !== i)
 			.filter((v) => !ALLOWED_DUPLICATES.includes(v));
