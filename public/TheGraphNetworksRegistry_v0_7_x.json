@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.130",
+  "version": "0.7.131",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-10-08T04:20:37.504Z",
+  "updatedAt": "2026-10-21T18:18:02.035Z",
   "networks": [
     {
       "id": "mainnet",
@@ -282,9 +282,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -2679,9 +2677,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "firehose": [
           "soneium.firehose.pinax.network:443",
           "soneium.firehose.data.nexus:443"
@@ -2877,9 +2873,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "firehose": [
           "minato.firehose.pinax.network:443"
         ],
@@ -3860,9 +3854,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "testnet",
       "relations": [
@@ -7251,9 +7243,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -7575,9 +7565,7 @@
         "https://viction.drpc.org"
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ]
+        "subgraphs": []
       },
       "networkType": "mainnet",
       "issuanceRewards": false,
@@ -8872,15 +8860,7 @@
         "protocol": "near"
       },
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "mainnet.near.streamingfast.io:443"
-        ],
-        "substreams": [
-          "mainnet.near.streamingfast.io:443"
-        ]
+        "subgraphs": []
       },
       "issuanceRewards": false,
       "nativeToken": "NEAR",
@@ -8924,15 +8904,7 @@
         }
       ],
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
-        "firehose": [
-          "testnet.near.streamingfast.io:443"
-        ],
-        "substreams": [
-          "testnet.near.streamingfast.io:443"
-        ]
+        "subgraphs": []
       },
       "issuanceRewards": false,
       "nativeToken": "NEAR",
