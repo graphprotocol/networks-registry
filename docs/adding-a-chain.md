@@ -33,6 +33,7 @@ Each chain should be defined as a JSON file in the `registry` directory with the
     - `kind: "gateway"` - Subgraph gateway, `provider` is the gateway URL, e.g. `https://gateway.thegraph.com/api`
     - `kind: "backstop"` - backstop indexing support, `provider` is the backstop provider, e.g. `infradao` or `streamingfast`
     - `kind: "curation"` - curation support, `provider` is the curation provider, e.g. `the-graph-foundation`
+    - `kind: "none"` - a deprecated service, no `provider`; use `description` to note what was deprecated and when, e.g. `The Graph Foundation's Studio support was deprecated on Oct 21, 2026`
   - `firehose` - Firehose support and endpoints
   - `substreams` - Substreams support and endpoints
 

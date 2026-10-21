@@ -43,19 +43,22 @@
       "properties": {
         "kind": {
           "type": "string",
-          "enum": ["gateway", "studio", "backstop", "curation"],
-          "description": "Kind of Subgraph service entry"
+          "enum": ["gateway", "studio", "backstop", "curation", "none"],
+          "description": "Kind of Subgraph service entry. `none` marks a deprecated service and has no provider"
         },
         "provider": {
           "type": "string",
-          "description": "Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao or a curation provider like the-graph-foundation"
+          "description": "Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao or a curation provider like the-graph-foundation. Required unless kind is `none`"
         },
         "description": {
           "type": "string",
           "description": "[optional] Human-readable description of the entry"
         }
       },
-      "required": ["kind", "provider"],
+      "required": ["kind"],
+      "if": { "properties": { "kind": { "const": "none" } } },
+      "then": { "not": { "required": ["provider"] } },
+      "else": { "required": ["provider"] },
       "additionalProperties": false
     },
     "Network": {
@@ -250,7 +253,7 @@
             "subgraphs": {
               "type": "array",
               "items": { "$ref": "#/$defs/SubgraphsService" },
-              "description": "Subgraph service entries (gateway, studio, backstop, curation)"
+              "description": "Subgraph service entries (gateway, studio, backstop, curation, none)"
             },
             "firehose": {
               "type": "array",

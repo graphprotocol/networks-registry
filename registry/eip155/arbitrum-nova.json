@@ -11,7 +11,14 @@
     "https://arbitrum-nova.publicnode.com"
   ],
   "apiUrls": [],
-  "services": { "subgraphs": [] },
+  "services": {
+    "subgraphs": [
+      {
+        "kind": "none",
+        "description": "The Graph Foundation's Studio support was deprecated on Oct 21, 2026"
+      }
+    ]
+  },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

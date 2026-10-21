@@ -163,7 +163,7 @@ export interface Network {
    */
   services: {
     /**
-     * Subgraph service entries (gateway, studio, backstop, curation)
+     * Subgraph service entries (gateway, studio, backstop, curation, none)
      */
     subgraphs?: SubgraphsService[];
     /**
@@ -235,13 +235,13 @@ export interface Network {
 }
 export interface SubgraphsService {
   /**
-   * Kind of Subgraph service entry
+   * Kind of Subgraph service entry. `none` marks a deprecated service and has no provider
    */
-  kind: "gateway" | "studio" | "backstop" | "curation";
+  kind: "gateway" | "studio" | "backstop" | "curation" | "none";
   /**
-   * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao or a curation provider like the-graph-foundation
+   * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao or a curation provider like the-graph-foundation. Required unless kind is `none`
    */
-  provider: string;
+  provider?: string;
   /**
    * [optional] Human-readable description of the entry
    */
