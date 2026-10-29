@@ -10,11 +10,7 @@
   "rpcUrls": ["https://starknet-mainnet.public.blastapi.io"],
   "apiUrls": [],
   "networkType": "mainnet",
-  "services": {
-    "subgraphs": [],
-    "firehose": [],
-    "substreams": ["mainnet.starknet.streamingfast.io:443"]
-  },
+  "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "ETH",
   "docsUrl": "https://docs.starknet.io",

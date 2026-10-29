@@ -14,11 +14,7 @@
   "rpcUrls": ["https://starknet-sepolia.public.blastapi.io"],
   "apiUrls": [],
   "networkType": "testnet",
-  "services": {
-    "subgraphs": [],
-    "firehose": [],
-    "substreams": ["testnet.starknet.streamingfast.io:443"]
-  },
+  "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "issuanceRewards": false,
   "nativeToken": "STRK",
   "docsUrl": "https://docs.starknet.io",
