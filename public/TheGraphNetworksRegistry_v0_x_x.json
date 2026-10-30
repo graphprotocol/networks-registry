@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.9",
+  "version": "0.8.10",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-10-30T04:50:10.074Z",
+  "updatedAt": "2026-10-30T15:25:12.894Z",
   "networks": [
     {
       "id": "mainnet",
@@ -7702,7 +7702,6 @@
       ],
       "rpcUrls": [
         "https://rpc.blast.io",
-        "https://blast.rpc.pinax.network",
         "https://blast.drpc.org"
       ],
       "apiUrls": [
@@ -7713,12 +7712,8 @@
       ],
       "services": {
         "subgraphs": [],
-        "firehose": [
-          "blast.firehose.pinax.network:443"
-        ],
-        "substreams": [
-          "blast.substreams.pinax.network:443"
-        ]
+        "firehose": [],
+        "substreams": []
       },
       "networkType": "mainnet",
       "relations": [
