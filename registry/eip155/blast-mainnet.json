@@ -6,19 +6,11 @@
   "caip2Id": "eip155:81457",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://blastscan.io"],
-  "rpcUrls": [
-    "https://rpc.blast.io",
-    "https://blast.rpc.pinax.network",
-    "https://blast.drpc.org"
-  ],
+  "rpcUrls": ["https://rpc.blast.io", "https://blast.drpc.org"],
   "apiUrls": [
     { "url": "https://blast.abi.thegraph.com/api", "kind": "etherscan" }
   ],
-  "services": {
-    "subgraphs": [],
-    "firehose": ["blast.firehose.pinax.network:443"],
-    "substreams": ["blast.substreams.pinax.network:443"]
-  },
+  "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
