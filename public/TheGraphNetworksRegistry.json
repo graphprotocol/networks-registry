@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-10-21T18:18:01.950Z",
+  "updatedAt": "2026-10-30T04:50:10.074Z",
   "networks": [
     {
       "id": "mainnet",
@@ -9762,9 +9762,7 @@
       "services": {
         "subgraphs": [],
         "firehose": [],
-        "substreams": [
-          "mainnet.starknet.streamingfast.io:443"
-        ]
+        "substreams": []
       },
       "issuanceRewards": false,
       "nativeToken": "ETH",
@@ -9821,9 +9819,7 @@
       "services": {
         "subgraphs": [],
         "firehose": [],
-        "substreams": [
-          "testnet.starknet.streamingfast.io:443"
-        ]
+        "substreams": []
       },
       "issuanceRewards": false,
       "nativeToken": "STRK",
