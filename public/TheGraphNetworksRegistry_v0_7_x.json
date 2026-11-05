@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.133",
+  "version": "0.7.134",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-10-30T15:25:12.969Z",
+  "updatedAt": "2026-11-05T04:04:10.826Z",
   "networks": [
     {
       "id": "mainnet",
@@ -1849,9 +1849,7 @@
       ],
       "networkType": "mainnet",
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "firehose": [
           "polygon.firehose.pinax.network:443",
           "polygon.streamingfast.io:443"
@@ -5991,9 +5989,7 @@
       ],
       "networkType": "mainnet",
       "services": {
-        "subgraphs": [
-          "https://api.studio.thegraph.com/deploy"
-        ],
+        "subgraphs": [],
         "firehose": [
           "bsc.firehose.pinax.network:443",
           "bnb.streamingfast.io:443"
