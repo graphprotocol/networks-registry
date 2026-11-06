@@ -7,9 +7,7 @@
   "caip2Id": "eip155:46630",
   "networkType": "testnet",
   "graphNode": { "protocol": "ethereum" },
-  "services": {
-    "subgraphs": []
-  },
+  "services": { "subgraphs": [] },
   "explorerUrls": ["https://explorer.testnet.chain.robinhood.com"],
   "rpcUrls": [
     "https://rpc.testnet.chain.robinhood.com",

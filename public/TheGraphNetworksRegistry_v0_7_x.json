@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.134",
+  "version": "0.7.135",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-11-05T04:04:10.826Z",
+  "updatedAt": "2026-11-06T18:25:23.348Z",
   "networks": [
     {
       "id": "mainnet",
@@ -5425,13 +5425,7 @@
         "protocol": "ethereum"
       },
       "services": {
-        "subgraphs": [],
-        "substreams": [
-          "robsepolia.substreams.pinax.network:443"
-        ],
-        "firehose": [
-          "robsepolia.firehose.pinax.network:443"
-        ]
+        "subgraphs": []
       },
       "explorerUrls": [
         "https://explorer.testnet.chain.robinhood.com"
