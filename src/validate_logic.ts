@@ -19,6 +19,7 @@ const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
 	"autonomys",
 	"robinhood",
 	"anubis",
+	"elysium",
 	// chainId 999 upstream is a different chain (Wanchain Testnet), not HyperEVM
 	"hyper-evm",
 	// present upstream but with a different native token; skip the mismatch warning

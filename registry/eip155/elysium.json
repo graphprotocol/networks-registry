@@ -1,0 +1,29 @@
+{
+  "id": "elysium",
+  "shortName": "Elysium",
+  "fullName": "Elysium Mainnet",
+  "aliases": ["elysium-mainnet", "evm-99901"],
+  "caip2Id": "eip155:99901",
+  "graphNode": { "protocol": "ethereum" },
+  "relations": [{ "kind": "l2Of", "network": "hyper-evm" }],
+  "services": {
+    "subgraphs": [],
+    "firehose": ["mainnet.elysium.streamingfast.io:443"],
+    "substreams": ["mainnet.elysium.streamingfast.io:443"]
+  },
+  "networkType": "mainnet",
+  "issuanceRewards": false,
+  "nativeToken": "HYPE",
+  "docsUrl": "https://elysium.kinetiq.xyz/docs",
+  "firehose": {
+    "blockType": "sf.ethereum.type.v2.Block",
+    "evmExtendedModel": true,
+    "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
+    "bytesEncoding": "hex",
+    "firstStreamableBlock": {
+      "id": "0x14cd46a8e7cfd201c7a79d307c320213f984e7a2b3297cd4e2c4b514538db600",
+      "height": 0
+    },
+    "blockFeatures": ["extended"]
+  }
+}
