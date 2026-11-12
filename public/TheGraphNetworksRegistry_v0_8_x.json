@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.13",
+  "version": "0.8.14",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-11-09T14:52:58.822Z",
+  "updatedAt": "2026-11-12T15:45:13.108Z",
   "networks": [
     {
       "id": "mainnet",
@@ -4262,6 +4262,12 @@
         }
       ],
       "services": {
+        "firehose": [
+          "zksyncera.firehose.pinax.network:443"
+        ],
+        "substreams": [
+          "zksyncera.substreams.pinax.network:443"
+        ],
         "subgraphs": [
           {
             "kind": "gateway",
