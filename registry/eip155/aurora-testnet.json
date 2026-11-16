@@ -7,7 +7,9 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.testnet.aurora.dev"],
   "rpcUrls": ["https://testnet.aurora.dev"],
-  "apiUrls": [],
+  "apiUrls": [
+    { "url": "https://explorer.testnet.aurora.dev/api/", "kind": "blockscout" }
+  ],
   "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "aurora" }],

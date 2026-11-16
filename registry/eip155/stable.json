@@ -26,7 +26,7 @@
     ]
   },
   "issuanceRewards": false,
-  "nativeToken": "gUSDT",
+  "nativeToken": "USDT0",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,
