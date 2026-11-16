@@ -12,8 +12,7 @@
     "https://rpc.gnosis.gateway.fm"
   ],
   "apiUrls": [
-    { "url": "https://gnosis.abi.thegraph.com/api", "kind": "etherscan" },
-    { "url": "https://gnosis.blockscout.com/api", "kind": "blockscout" }
+    { "url": "https://gnosis.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": [

@@ -7,13 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [],
   "rpcUrls": [],
-  "apiUrls": [
-    { "url": "https://maizenet-explorer.usecorn.com/api", "kind": "etherscan" },
-    {
-      "url": "https://api.routescan.io/v2/network/mainnet/evm/21000000/etherscan/api",
-      "kind": "etherscan"
-    }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

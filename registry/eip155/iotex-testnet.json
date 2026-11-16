@@ -9,7 +9,7 @@
   "explorerUrls": ["https://testnet.iotexscan.io"],
   "rpcUrls": ["https://babel-api.testnet.iotex.io"],
   "apiUrls": [
-    { "url": "https://testnet.index.iotexscan.io/api", "kind": "etherscan" }
+    { "url": "https://testnet.iotexscan.io/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": [] },
   "networkType": "testnet",

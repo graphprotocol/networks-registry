@@ -10,9 +10,7 @@
     "https://moonriver.api.onfinality.io/public",
     "https://moonriver.api.pocket.network"
   ],
-  "apiUrls": [
-    { "url": "https://moonriver.abi.thegraph.com/api", "kind": "etherscan" }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "other", "network": "moonbeam" }],

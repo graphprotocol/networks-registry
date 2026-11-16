@@ -23,10 +23,6 @@
       "kind": "blockscout"
     },
     {
-      "url": "https://api.routescan.io/v2/network/testnet/evm/1301/etherscan/api",
-      "kind": "etherscan"
-    },
-    {
       "url": "https://unichain-testnet.abi.thegraph.com/api",
       "kind": "etherscan"
     }

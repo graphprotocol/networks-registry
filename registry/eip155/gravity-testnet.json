@@ -8,9 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [],
   "rpcUrls": [],
-  "apiUrls": [
-    { "url": "https://explorer-sepolia.gravity.xyz/api", "kind": "etherscan" }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [

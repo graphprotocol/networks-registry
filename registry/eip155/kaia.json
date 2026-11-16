@@ -11,9 +11,7 @@
     "https://kaia.api.pocket.network",
     "https://8217.rpc.thirdweb.com"
   ],
-  "apiUrls": [
-    { "url": "https://kaia.abi.thegraph.com/api", "kind": "etherscan" }
-  ],
+  "apiUrls": [],
   "services": {
     "subgraphs": [
       {

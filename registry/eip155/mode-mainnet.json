@@ -12,11 +12,7 @@
     "https://mode.drpc.org"
   ],
   "apiUrls": [
-    { "url": "https://explorer.mode.network/api", "kind": "blockscout" },
-    {
-      "url": "https://api.routescan.io/v2/network/mainnet/evm/34443/etherscan/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://explorer.mode.network/api", "kind": "blockscout" }
   ],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",

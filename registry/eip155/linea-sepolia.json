@@ -13,14 +13,7 @@
     "https://linea-sepolia.drpc.org"
   ],
   "apiUrls": [
-    {
-      "url": "https://linea-sepolia.abi.thegraph.com/api",
-      "kind": "etherscan"
-    },
-    {
-      "url": "https://api-explorer.sepolia.linea.build/api",
-      "kind": "blockscout"
-    }
+    { "url": "https://linea-sepolia.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": [

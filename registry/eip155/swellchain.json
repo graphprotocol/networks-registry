@@ -7,10 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [],
   "rpcUrls": [],
-  "apiUrls": [
-    { "url": "https://explorer.swellnetwork.io/api", "kind": "blockscout" },
-    { "url": "https://swellchain.abi.thegraph.com/api", "kind": "etherscan" }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,

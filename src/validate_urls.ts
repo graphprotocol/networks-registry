@@ -1,7 +1,14 @@
 import { printErrorsAndWarnings } from "./print";
 import { Network } from "./types/registry";
 import { applyEnvVars } from "./utils/env";
-import { processQueue, withRetry } from "./utils/retry";
+import {
+  holdOff,
+  parseRetryAfter,
+  processQueue,
+  RateLimitError,
+  throttle,
+  withRetry,
+} from "./utils/retry";
 import { loadNetworks } from "./utils/fs";
 
 const ERRORS: string[] = [];
@@ -53,6 +60,33 @@ async function testURL({
   return true;
 }
 
+// Many API hostnames share one rate-limited backend (every *.abi.thegraph.com chain goes
+// through the same proxy), so requests are paced per backend, not per hostname.
+// Value = minimum spacing between request starts. abi.thegraph.com sits behind a
+// Cloudflare rate limit (429 + Retry-After) that trips at a few dozen requests/minute.
+const SHARED_API_BACKENDS: Record<string, number> = {
+  "abi.thegraph.com": 2000,
+  "abi.pinax.network": 300,
+  "routescan.io": 300,
+  "blockscout.com": 300,
+};
+const DEFAULT_API_INTERVAL_MS = 300;
+
+function apiBackend(url: string): { key: string; intervalMs: number } {
+  let host: string;
+  try {
+    host = new URL(url).host;
+  } catch {
+    return { key: url, intervalMs: DEFAULT_API_INTERVAL_MS };
+  }
+  const shared = Object.keys(SHARED_API_BACKENDS).find(
+    (d) => host === d || host.endsWith(`.${d}`),
+  );
+  return shared
+    ? { key: shared, intervalMs: SHARED_API_BACKENDS[shared] }
+    : { key: host, intervalMs: DEFAULT_API_INTERVAL_MS };
+}
+
 async function testAPI({
   url,
   kind,
@@ -62,9 +96,11 @@ async function testAPI({
   kind: string;
   networkId: string;
 }): Promise<boolean> {
+  const backend = apiBackend(url);
   try {
     await withRetry(
       async () => {
+        await throttle(backend.key, backend.intervalMs);
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
         const response = await fetch(
@@ -76,6 +112,11 @@ async function testAPI({
 
         clearTimeout(timeout);
 
+        if (response.status === 429) {
+          const retryAfterMs = parseRetryAfter(response.headers.get("retry-after"));
+          if (retryAfterMs !== undefined) holdOff(backend.key, retryAfterMs);
+          throw new RateLimitError("status 429", retryAfterMs);
+        }
         if (!response.ok) {
           throw new Error(`status ${response.status}`);
         }
@@ -83,15 +124,20 @@ async function testAPI({
         if (!body) {
           throw new Error("non-JSON response");
         }
+        // Etherscan-style APIs report rate limiting in the body with HTTP 200
+        if (/rate limit/i.test(`${body.message} ${body.result}`)) {
+          throw new RateLimitError(`rate limited: ${body.result ?? body.message}`);
+        }
         if (body.status != "1" && !body.result?.includes("not verified")) {
           throw new Error(`invalid response: ${body.status} - ${body.message}`);
         }
         console.log(`  ${networkId} - ${url} is valid`);
       },
       url,
-      5, // max attempts
-      30_000, // for rate-limiting
-      0.2, // jitter
+      6, // max attempts
+      5_000, // first retry after ~5s, then exponential: ~5/10/20/40/80s
+      0.5, // jitter, so workers that failed together don't retry together
+      2, // backoff factor
     );
   } catch (e) {
     let errorMessage = "unknown error";

@@ -11,12 +11,7 @@
     "https://timothy.megaeth.com/rpc",
     "https://carrot.megaeth.com/rpc"
   ],
-  "apiUrls": [
-    {
-      "url": "https://megaeth-testnet-v2.blockscout.com/api",
-      "kind": "blockscout"
-    }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": [] },
   "relations": [
     { "kind": "testnetOf", "network": "megaeth" },

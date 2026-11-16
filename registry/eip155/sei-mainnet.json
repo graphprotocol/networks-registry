@@ -8,8 +8,7 @@
   "explorerUrls": ["https://seitrace.com"],
   "rpcUrls": ["https://1329.rpc.thirdweb.com"],
   "apiUrls": [
-    { "url": "https://sei-mainnet.abi.thegraph.com/api", "kind": "etherscan" },
-    { "url": "https://seitrace.com/pacific-1/api", "kind": "etherscan" }
+    { "url": "https://sei-mainnet.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": [

@@ -25,9 +25,7 @@
     "https://robinhood.rpc.pinax.network",
     "https://robinhood.api.pocket.network"
   ],
-  "apiUrls": [
-    { "url": "https://robinhoodchain.blockscout.com/api", "kind": "blockscout" }
-  ],
+  "apiUrls": [],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "ETH",

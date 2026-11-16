@@ -12,7 +12,7 @@
   ],
   "apiUrls": [
     {
-      "url": "https://testnet.blockscout-api.injective.network/api",
+      "url": "https://testnet.blockscout.injective.network/api",
       "kind": "blockscout"
     }
   ],

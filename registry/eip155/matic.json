@@ -13,8 +13,7 @@
     "https://matic.rpc.sentio.xyz"
   ],
   "apiUrls": [
-    { "url": "https://polygon.abi.thegraph.com/api", "kind": "etherscan" },
-    { "url": "https://polygon.blockscout.com/api", "kind": "blockscout" }
+    { "url": "https://polygon.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "networkType": "mainnet",
   "services": {

@@ -13,10 +13,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.metis.io"],
   "apiUrls": [
-    {
-      "url": "https://api.routescan.io/v2/network/mainnet/evm/1088/etherscan/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://andromeda-explorer.metis.io/api", "kind": "blockscout" }
   ],
   "rpcUrls": [
     "https://andromeda.metis.io",

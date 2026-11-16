@@ -8,12 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.explorer.mode.network"],
   "rpcUrls": ["https://sepolia.mode.network", "https://mode-testnet.drpc.org"],
-  "apiUrls": [
-    {
-      "url": "https://api.routescan.io/v2/network/testnet/evm/919/etherscan/api",
-      "kind": "etherscan"
-    }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [
