@@ -7,7 +7,6 @@
     "format:check": "prettier ./schemas/registry.schema.json ./registry/**/*.json ./src/**/*.ts ./**/*.md --check",
     "validate:schema": "bun run ./src/validate_schema.ts",
     "validate:networks": "bun run ./src/validate_logic.ts",
-    "validate:studio": "bun run ./src/validate_studio.ts",
     "validate:registry": "ajv validate -s schemas/registry.schema.json -d 'dist/TheGraphNetworksRegistry.json' --strict=true -c ajv-formats",
     "validate:urls": "bun run ./src/validate_urls.ts",
     "validate:firehose": "bun run ./src/validate_firehose.ts",
