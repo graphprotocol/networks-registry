@@ -8,8 +8,8 @@
   "explorerUrls": ["https://kaiascan.io"],
   "rpcUrls": [
     "https://public-en.node.kaia.io",
-    "https://klaytn.drpc.org",
-    "https://rpc.ankr.com/kaia"
+    "https://kaia.api.pocket.network",
+    "https://8217.rpc.thirdweb.com"
   ],
   "apiUrls": [
     { "url": "https://kaia.abi.thegraph.com/api", "kind": "etherscan" }

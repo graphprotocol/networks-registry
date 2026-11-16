@@ -6,7 +6,10 @@
   "caip2Id": "eip155:10143",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet.monadexplorer.com"],
-  "rpcUrls": ["https://testnet-rpc.monad.xyz"],
+  "rpcUrls": [
+    "https://testnet-rpc.monad.xyz",
+    "https://rpc-testnet.monadinfra.com"
+  ],
   "apiUrls": [
     { "url": "https://monad-testnet.abi.thegraph.com/api", "kind": "etherscan" }
   ],

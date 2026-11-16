@@ -8,9 +8,9 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.basescan.org"],
   "rpcUrls": [
-    "https://sepolia.base.org",
     "https://basesepolia.rpc.pinax.network",
-    "https://base-sepolia.drpc.org"
+    "https://base-sepolia.rpc.sentio.xyz",
+    "https://base-testnet.api.pocket.network"
   ],
   "apiUrls": [
     { "url": "https://base-sepolia.abi.thegraph.com/api", "kind": "etherscan" },

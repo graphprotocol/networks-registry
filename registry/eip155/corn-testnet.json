@@ -6,7 +6,7 @@
   "caip2Id": "eip155:21000001",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://testnet-explorer.usecorn.com"],
-  "rpcUrls": ["https://testnet-rpc.usecorn.com"],
+  "rpcUrls": [],
   "apiUrls": [
     { "url": "https://testnet-explorer.usecorn.com/api", "kind": "etherscan" },
     {

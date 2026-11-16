@@ -17,8 +17,8 @@
   ],
   "rpcUrls": [
     "https://480.rpc.thirdweb.com",
-    "https://worldchain-mainnet.gateway.tenderly.co",
-    "https://worldchain.drpc.org"
+    "https://worldchain.drpc.org",
+    "https://worldchain-mainnet.g.alchemy.com/public"
   ],
   "issuanceRewards": false,
   "nativeToken": "ETH",

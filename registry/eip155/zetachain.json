@@ -9,7 +9,8 @@
   "apiUrls": [{ "url": "https://zetascan.com/api", "kind": "etherscan" }],
   "rpcUrls": [
     "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
-    "https://zeta-chain.drpc.org"
+    "https://zeta-chain.drpc.org",
+    "https://7000.rpc.thirdweb.com"
   ],
   "services": {
     "subgraphs": [

@@ -6,11 +6,7 @@
   "caip2Id": "eip155:1923",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.swellnetwork.io"],
-  "rpcUrls": [
-    "https://rpc.ankr.com/swell",
-    "https://swell-mainnet.rpc.sentio.xyz",
-    "https://swell-mainnet.alt.technology"
-  ],
+  "rpcUrls": [],
   "apiUrls": [
     { "url": "https://explorer.swellnetwork.io/api", "kind": "blockscout" },
     { "url": "https://swellchain.abi.thegraph.com/api", "kind": "etherscan" }

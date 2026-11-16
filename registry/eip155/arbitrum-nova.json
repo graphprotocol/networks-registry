@@ -8,7 +8,8 @@
   "explorerUrls": [],
   "rpcUrls": [
     "https://nova.arbitrum.io/rpc",
-    "https://arbitrum-nova.publicnode.com"
+    "https://arbitrum-nova.publicnode.com",
+    "https://42170.rpc.thirdweb.com"
   ],
   "apiUrls": [],
   "services": { "subgraphs": [] },

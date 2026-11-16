@@ -8,7 +8,8 @@
   "explorerUrls": ["https://testnet.sonicscan.org"],
   "rpcUrls": [
     "https://rpc.testnet.soniclabs.com",
-    "https://sonic-testnet-v2.drpc.org"
+    "https://sonic-testnet-v2.drpc.org",
+    "https://lb.routeme.sh/rpc/evm/14601"
   ],
   "apiUrls": [
     { "url": "https://sonic-testnet.abi.thegraph.com/api", "kind": "etherscan" }

@@ -10,7 +10,7 @@
   "rpcUrls": [
     "https://api.avax-test.network/ext/bc/C/rpc",
     "https://fuji.rpc.pinax.network",
-    "https://avalanche-fuji.drpc.org"
+    "https://avalanche-fuji-c-chain-rpc.publicnode.com"
   ],
   "apiUrls": [
     { "url": "https://fuji.abi.thegraph.com/api", "kind": "etherscan" },

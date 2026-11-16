@@ -8,7 +8,7 @@
   "explorerUrls": ["https://testnet.blockscout.injective.network"],
   "rpcUrls": [
     "https://k8s.testnet.json-rpc.injective.network",
-    "https://injectiveevm-testnet-rpc.polkachu.com"
+    "https://testnet.sentry.chain.json-rpc.injective.network"
   ],
   "apiUrls": [
     {

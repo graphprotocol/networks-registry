@@ -7,9 +7,8 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://moonriver.moonscan.io"],
   "rpcUrls": [
-    "https://rpc.api.moonriver.moonbeam.network",
     "https://moonriver.api.onfinality.io/public",
-    "https://moonriver.unitedbloc.com"
+    "https://moonriver.api.pocket.network"
   ],
   "apiUrls": [
     { "url": "https://moonriver.abi.thegraph.com/api", "kind": "etherscan" }

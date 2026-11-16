@@ -8,7 +8,8 @@
   "explorerUrls": ["https://explorer.etherlink.com"],
   "rpcUrls": [
     "https://node.mainnet.etherlink.com",
-    "https://rpc.ankr.com/etherlink_mainnet"
+    "https://rpc.ankr.com/etherlink_mainnet",
+    "https://42793.rpc.thirdweb.com"
   ],
   "apiUrls": [
     { "url": "https://explorer.etherlink.com/api", "kind": "blockscout" }

@@ -6,7 +6,10 @@
   "caip2Id": "eip155:42431",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explore.moderato.tempo.xyz"],
-  "rpcUrls": ["https://rpc.moderato.tempo.xyz"],
+  "rpcUrls": [
+    "https://rpc.moderato.tempo.xyz",
+    "https://rpc.testnet.tempo.xyz"
+  ],
   "services": {
     "subgraphs": [
       {
