@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_8.json",
-  "version": "0.8.15",
+  "version": "0.8.16",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-11-16T19:56:04.005Z",
+  "updatedAt": "2026-11-16T20:42:33.720Z",
   "networks": [
     {
       "id": "mainnet",
@@ -618,9 +618,7 @@
           "network": "mainnet"
         }
       ],
-      "explorerUrls": [
-        "https://www.oklink.com/polygon-zkevm"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [
         "https://zkevm-rpc.com",
         "https://polygon-zkevm.drpc.org"
@@ -1243,7 +1241,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://moonbeam.moonscan.io"
+        "https://moonbeam.subscan.io"
       ],
       "rpcUrls": [
         "https://moonbeam.api.pocket.network",
@@ -1264,7 +1262,7 @@
       "networkType": "mainnet",
       "issuanceRewards": false,
       "nativeToken": "GLMR",
-      "docsUrl": "https://docs.moonbeam.network",
+      "docsUrl": "https://moonbeam.network/docs",
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/moonbeam",
@@ -1304,7 +1302,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://moonriver.moonscan.io"
+        "https://moonriver.subscan.io"
       ],
       "rpcUrls": [
         "https://moonriver.api.onfinality.io/public",
@@ -1330,7 +1328,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "MOVR",
-      "docsUrl": "https://docs.moonbeam.network",
+      "docsUrl": "https://moonbeam.network/docs",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
@@ -1364,7 +1362,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://moonbase.moonscan.io"
+        "https://moonbase.subscan.io"
       ],
       "rpcUrls": [
         "https://moonbeam-alpha.api.onfinality.io/public"
@@ -1387,7 +1385,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "DEV",
-      "docsUrl": "https://docs.moonbeam.network/learn/platform/networks/moonbase",
+      "docsUrl": "https://moonbeam.network/docs",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
@@ -1750,7 +1748,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "SEI",
-      "docsUrl": "https://docs.seitrace.com",
+      "docsUrl": "https://docs.sei.io",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": true,
@@ -1849,7 +1847,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://testnet-explorer.hsk.xyz"
+        "https://testnet-explorer.hskchain.net"
       ],
       "apiUrls": [
         {
@@ -1908,9 +1906,7 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://explorer-sepolia.gravity.xyz"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [
         {
@@ -2484,61 +2480,6 @@
       }
     },
     {
-      "id": "status-sepolia",
-      "shortName": "Status",
-      "secondName": "Sepolia",
-      "fullName": "Status Network Sepolia",
-      "aliases": [
-        "status-testnet",
-        "evm-1660990954"
-      ],
-      "caip2Id": "eip155:1660990954",
-      "graphNode": {
-        "protocol": "ethereum"
-      },
-      "explorerUrls": [
-        "https://sepoliascan.status.network"
-      ],
-      "rpcUrls": [],
-      "apiUrls": [
-        {
-          "url": "https://sepoliascan.status.network/api",
-          "kind": "etherscan"
-        }
-      ],
-      "services": {
-        "subgraphs": []
-      },
-      "networkType": "testnet",
-      "relations": [
-        {
-          "kind": "l2Of",
-          "network": "sepolia"
-        }
-      ],
-      "issuanceRewards": false,
-      "nativeToken": "ETH",
-      "docsUrl": "https://docs.status.network",
-      "firehose": {
-        "blockType": "sf.ethereum.type.v2.Block",
-        "evmExtendedModel": false,
-        "bufUrl": "https://buf.build/streamingfast/firehose-ethereum",
-        "bytesEncoding": "hex",
-        "firstStreamableBlock": {
-          "id": "0x8f6889114bdfdb70c73fb33765df93a99816db0ad942bbcee71cd5d7a39e11c2",
-          "height": 0
-        },
-        "blockFeatures": [
-          "base"
-        ]
-      },
-      "icon": {
-        "web3Icons": {
-          "name": "status"
-        }
-      }
-    },
-    {
       "id": "harmony",
       "shortName": "Harmony",
       "fullName": "Harmony Mainnet Shard 0",
@@ -2599,9 +2540,7 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://sepolia.blastscan.io"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [
         {
@@ -2625,7 +2564,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.blast.io",
+      "docsUrl": "https://blast.io",
       "firehose": {
         "blockType": "sf.ethereum.type.v2.Block",
         "evmExtendedModel": false,
@@ -2912,9 +2851,7 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://explorer.swellnetwork.io"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [
         {
@@ -2966,9 +2903,7 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://swell-testnet-explorer.alt.technology"
-      ],
+      "explorerUrls": [],
       "apiUrls": [
         {
           "url": "https://swell-testnet-explorer.alt.technology/api",
@@ -3349,9 +3284,7 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://maizenet-explorer.usecorn.com"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [
         {
@@ -3406,9 +3339,7 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://testnet-explorer.usecorn.com"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [
         {
@@ -3469,7 +3400,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://kavascan.io"
+        "https://kavascan.com"
       ],
       "rpcUrls": [
         "https://rpc.ankr.com/kava_evm",
@@ -3623,7 +3554,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.cronos.org"
+        "https://explorer.cronos.com"
       ],
       "rpcUrls": [
         "https://evm.cronos.org",
@@ -3677,8 +3608,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://explorer.fantom.network",
-        "https://ftmscout.com"
+        "https://explorer.fantom.network"
       ],
       "rpcUrls": [
         "https://fantom.drpc.org",
@@ -4683,9 +4613,7 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://testnet.botanixscan.io"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [
         {
@@ -4777,7 +4705,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://block-explorer.testnet.lens.dev"
+        "https://explorer.testnet.lens.xyz"
       ],
       "rpcUrls": [
         "https://lens-testnet.drpc.org"
@@ -4835,9 +4763,7 @@
       "graphNode": {
         "protocol": "ethereum"
       },
-      "explorerUrls": [
-        "https://explorer.testnet.fantom.network"
-      ],
+      "explorerUrls": [],
       "rpcUrls": [],
       "apiUrls": [],
       "services": {
@@ -7709,7 +7635,7 @@
       ],
       "issuanceRewards": false,
       "nativeToken": "ETH",
-      "docsUrl": "https://docs.blast.io",
+      "docsUrl": "https://blast.io",
       "indexerDocsUrls": [
         {
           "url": "https://docs.infradao.com/archive-nodes-101/blast",
@@ -8285,7 +8211,7 @@
         "protocol": "ethereum"
       },
       "explorerUrls": [
-        "https://testnet.modescan.io"
+        "https://sepolia.explorer.mode.network"
       ],
       "rpcUrls": [
         "https://sepolia.mode.network",
@@ -8793,7 +8719,7 @@
       "services": {},
       "issuanceRewards": false,
       "nativeToken": "EOS",
-      "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
+      "docsUrl": "https://docs.vaulta.com",
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
@@ -8885,7 +8811,7 @@
       },
       "issuanceRewards": false,
       "nativeToken": "EOS",
-      "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
+      "docsUrl": "https://docs.vaulta.com",
       "firehose": {
         "blockType": "sf.antelope.type.v1.Block",
         "bufUrl": "https://buf.build/pinax/firehose-antelope",
@@ -9585,8 +9511,8 @@
       ],
       "caip2Id": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
       "explorerUrls": [
-        "http://explorer.solana.com",
-        "http://solana.fm"
+        "https://explorer.solana.com",
+        "https://solana.fm"
       ],
       "rpcUrls": [
         "https://api.mainnet-beta.solana.com"
