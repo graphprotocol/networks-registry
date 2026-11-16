@@ -12,7 +12,7 @@
     "https://1rpc.io/ftm",
     "https://rpc.fantom.network"
   ],
-  "apiUrls": [{ "url": "https://ftmscout.com/api", "kind": "blockscout" }],
+  "apiUrls": [],
   "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",
   "issuanceRewards": false,

@@ -7,13 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [],
   "rpcUrls": [],
-  "apiUrls": [
-    { "url": "https://testnet-explorer.usecorn.com/api", "kind": "etherscan" },
-    {
-      "url": "https://api.routescan.io/v2/network/testnet/evm/21000001/etherscan/api",
-      "kind": "etherscan"
-    }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [

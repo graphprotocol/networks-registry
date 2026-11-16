@@ -8,10 +8,7 @@
   "explorerUrls": ["https://blockscout.injective.network"],
   "rpcUrls": ["https://sentry.evm-rpc.injective.network"],
   "apiUrls": [
-    {
-      "url": "https://blockscout-api.injective.network/api",
-      "kind": "blockscout"
-    }
+    { "url": "https://blockscout.injective.network/api", "kind": "blockscout" }
   ],
   "services": {
     "subgraphs": [

@@ -8,9 +8,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.gravity.xyz"],
   "rpcUrls": ["https://rpc.gravity.xyz", "https://1625.rpc.thirdweb.com"],
-  "apiUrls": [
-    { "url": "https://explorer.gravity.xyz/api", "kind": "etherscan" }
-  ],
+  "apiUrls": [],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",

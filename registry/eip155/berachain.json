@@ -12,11 +12,7 @@
   ],
   "explorerUrls": ["https://berascan.com"],
   "apiUrls": [
-    { "url": "https://berachain.abi.thegraph.com/api", "kind": "etherscan" },
-    {
-      "url": "https://api.routescan.io/v2/network/mainnet/evm/80094/etherscan/api",
-      "kind": "etherscan"
-    }
+    { "url": "https://berachain.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": { "subgraphs": [], "firehose": [], "substreams": [] },
   "networkType": "mainnet",

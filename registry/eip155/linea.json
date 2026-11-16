@@ -12,8 +12,7 @@
     "https://1rpc.io/linea"
   ],
   "apiUrls": [
-    { "url": "https://linea.abi.thegraph.com/api", "kind": "etherscan" },
-    { "url": "https://api-explorer.linea.build/api", "kind": "blockscout" }
+    { "url": "https://linea.abi.thegraph.com/api", "kind": "etherscan" }
   ],
   "services": {
     "subgraphs": [

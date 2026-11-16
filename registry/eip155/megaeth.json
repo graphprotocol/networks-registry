@@ -18,8 +18,7 @@
     "https://megaeth.drpc.org"
   ],
   "apiUrls": [
-    { "url": "https://megaeth.blockscout.com/api", "kind": "blockscout" },
-    { "url": "https://megaeth.abi.thegraph.com/api", "kind": "etherscan" }
+    { "url": "https://megaeth.blockscout.com/api", "kind": "blockscout" }
   ],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,

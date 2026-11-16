@@ -12,10 +12,6 @@
     {
       "url": "https://berachain-bepolia.abi.thegraph.com/api",
       "kind": "etherscan"
-    },
-    {
-      "url": "https://api.routescan.io/v2/network/testnet/evm/80069/etherscan/api",
-      "kind": "etherscan"
     }
   ],
   "networkType": "testnet",

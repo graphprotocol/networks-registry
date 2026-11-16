@@ -7,12 +7,7 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": [],
   "rpcUrls": [],
-  "apiUrls": [
-    {
-      "url": "https://api.routescan.io/v2/network/testnet/evm/3636/etherscan/api",
-      "kind": "etherscan"
-    }
-  ],
+  "apiUrls": [],
   "services": { "subgraphs": [] },
   "networkType": "testnet",
   "relations": [{ "kind": "testnetOf", "network": "botanix" }],
