@@ -5,7 +5,7 @@
   "aliases": ["corn-sepolia"],
   "caip2Id": "eip155:21000001",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://testnet-explorer.usecorn.com"],
+  "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [
     { "url": "https://testnet-explorer.usecorn.com/api", "kind": "etherscan" },

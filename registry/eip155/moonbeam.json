@@ -5,7 +5,7 @@
   "aliases": ["evm-1284", "mbeam", "moonbeam-mainnet"],
   "caip2Id": "eip155:1284",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://moonbeam.moonscan.io"],
+  "explorerUrls": ["https://moonbeam.subscan.io"],
   "rpcUrls": [
     "https://moonbeam.api.pocket.network",
     "https://moonbeam.api.onfinality.io/public",
@@ -18,7 +18,7 @@
   "networkType": "mainnet",
   "issuanceRewards": false,
   "nativeToken": "GLMR",
-  "docsUrl": "https://docs.moonbeam.network",
+  "docsUrl": "https://moonbeam.network/docs",
   "indexerDocsUrls": [
     {
       "url": "https://docs.infradao.com/archive-nodes-101/moonbeam",

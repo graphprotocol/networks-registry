@@ -4,7 +4,7 @@
   "fullName": "Solana Mainnet",
   "aliases": ["solana-mainnet", "solana", "solana-beta", "sol-mainnet"],
   "caip2Id": "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp",
-  "explorerUrls": ["http://explorer.solana.com", "http://solana.fm"],
+  "explorerUrls": ["https://explorer.solana.com", "https://solana.fm"],
   "rpcUrls": ["https://api.mainnet-beta.solana.com"],
   "apiUrls": [],
   "networkType": "mainnet",

@@ -6,7 +6,7 @@
   "aliases": ["evm-1287", "moonbase"],
   "caip2Id": "eip155:1287",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://moonbase.moonscan.io"],
+  "explorerUrls": ["https://moonbase.subscan.io"],
   "rpcUrls": ["https://moonbeam-alpha.api.onfinality.io/public"],
   "apiUrls": [
     { "url": "https://moonbase.abi.thegraph.com/api", "kind": "etherscan" }
@@ -16,7 +16,7 @@
   "relations": [{ "kind": "testnetOf", "network": "moonbeam" }],
   "issuanceRewards": false,
   "nativeToken": "DEV",
-  "docsUrl": "https://docs.moonbeam.network/learn/platform/networks/moonbase",
+  "docsUrl": "https://moonbeam.network/docs",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,

@@ -14,7 +14,7 @@
   },
   "issuanceRewards": false,
   "nativeToken": "EOS",
-  "docsUrl": "https://docs.eosnetwork.com/docs/latest/quick-start/introduction",
+  "docsUrl": "https://docs.vaulta.com",
   "firehose": {
     "blockType": "sf.antelope.type.v1.Block",
     "bufUrl": "https://buf.build/pinax/firehose-antelope",

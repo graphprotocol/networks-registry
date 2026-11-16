@@ -5,7 +5,7 @@
   "aliases": ["evm-1285", "mriver", "moonriver-mainnet"],
   "caip2Id": "eip155:1285",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://moonriver.moonscan.io"],
+  "explorerUrls": ["https://moonriver.subscan.io"],
   "rpcUrls": [
     "https://moonriver.api.onfinality.io/public",
     "https://moonriver.api.pocket.network"
@@ -18,7 +18,7 @@
   "relations": [{ "kind": "other", "network": "moonbeam" }],
   "issuanceRewards": false,
   "nativeToken": "MOVR",
-  "docsUrl": "https://docs.moonbeam.network",
+  "docsUrl": "https://moonbeam.network/docs",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,

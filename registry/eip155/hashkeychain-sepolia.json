@@ -6,7 +6,7 @@
   "aliases": ["hashkeychain-testnet", "evm-133"],
   "caip2Id": "eip155:133",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://testnet-explorer.hsk.xyz"],
+  "explorerUrls": ["https://testnet-explorer.hskchain.net"],
   "apiUrls": [
     { "url": "https://testnet-explorer.hsk.xyz/api", "kind": "blockscout" }
   ],

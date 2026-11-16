@@ -6,7 +6,7 @@
   "aliases": ["swellchain-testnet", "swellchain-bepolia", "evm-1924"],
   "caip2Id": "eip155:1924",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://swell-testnet-explorer.alt.technology"],
+  "explorerUrls": [],
   "apiUrls": [
     {
       "url": "https://swell-testnet-explorer.alt.technology/api",

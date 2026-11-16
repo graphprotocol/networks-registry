@@ -5,7 +5,7 @@
   "aliases": ["spiderchain-testnet", "spiderchain-testnet-v1", "evm-3636"],
   "caip2Id": "eip155:3636",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://testnet.botanixscan.io"],
+  "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [
     {

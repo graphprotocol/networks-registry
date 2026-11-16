@@ -35,8 +35,9 @@ async function testURL({
 
       if (!response.ok) {
         const err = `${networkId} - ${url} returned ${response.status}`;
-        //acceptable error codes
-        if ([308, 307, 403].includes(response.status)) {
+        // acceptable error codes: the site is up but refuses automated requests
+        // (403 bot protection, 429 rate limiting, e.g. Vercel on solana.com)
+        if ([308, 307, 403, 429].includes(response.status)) {
           console.warn(err + " (acceptable error)");
           return;
         }

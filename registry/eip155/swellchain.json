@@ -5,7 +5,7 @@
   "aliases": ["evm-1923", "swellchain-mainnet"],
   "caip2Id": "eip155:1923",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explorer.swellnetwork.io"],
+  "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [
     { "url": "https://explorer.swellnetwork.io/api", "kind": "blockscout" },
