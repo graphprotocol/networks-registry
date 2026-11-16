@@ -8,9 +8,9 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://hyperevmscan.io"],
   "rpcUrls": [
-    "https://rpc.hypurrscan.io",
-    "https://rpc.hyperliquid.xyz/evm",
-    "https://hyperevm.rpc.pinax.network"
+    "https://hyperevm.rpc.pinax.network",
+    "https://hyperevm.rpc.sentio.xyz",
+    "https://hyperliquid.drpc.org"
   ],
   "apiUrls": [
     { "url": "https://hyperevm.abi.thegraph.com/api", "kind": "etherscan" }

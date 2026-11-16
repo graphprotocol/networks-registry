@@ -7,7 +7,8 @@
   "graphNode": { "protocol": "ethereum" },
   "rpcUrls": [
     "https://api.mainnet.abs.xyz",
-    "https://abstract-mainnet.gateway.tatum.io"
+    "https://abstract-mainnet.gateway.tatum.io",
+    "https://abstract.drpc.org"
   ],
   "explorerUrls": ["https://abscan.org"],
   "apiUrls": [

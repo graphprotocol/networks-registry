@@ -6,7 +6,7 @@
   "caip2Id": "eip155:4002",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.testnet.fantom.network"],
-  "rpcUrls": ["https://rpc.testnet.fantom.network"],
+  "rpcUrls": [],
   "apiUrls": [],
   "services": { "subgraphs": [] },
   "networkType": "testnet",

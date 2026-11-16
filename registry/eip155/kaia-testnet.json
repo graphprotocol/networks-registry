@@ -9,8 +9,8 @@
   "explorerUrls": ["https://kairos.kaiascan.io"],
   "rpcUrls": [
     "https://public-en-kairos.node.kaia.io",
-    "https://klaytn-baobab.drpc.org",
-    "https://responsive-green-emerald.kaia-kairos.quiknode.pro"
+    "https://responsive-green-emerald.kaia-kairos.quiknode.pro",
+    "https://kaia-kairos.gateway.tatum.io"
   ],
   "apiUrls": [
     { "url": "https://kaia-testnet.abi.thegraph.com/api", "kind": "etherscan" }

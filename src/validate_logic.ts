@@ -21,6 +21,17 @@ const ALLOWED_ETHEREUM_LIST_MISSING: string[] = [
 	"elysium",
 ];
 
+// Known-wrong native token symbols in the ethereum-lists repo: network id -> the symbol
+// ethereum-lists reports. Only that exact mismatch is ignored, so if upstream changes
+// again the warning comes back.
+const ALLOWED_NATIVE_TOKEN_MISMATCH: Record<string, string> = {
+	// chainId 999 is registered to Wanchain Testnet upstream; HyperEVM also uses 999
+	"hyper-evm": "WAN",
+	// chainId 195 is marked deprecated upstream (replaced by 1952) and its OKB symbol
+	// renamed to "OKBDep" as a deprecation marker
+	"xlayer-sepolia": "OKBDep",
+};
+
 function validateFilenames(networksPath: string) {
 	process.stdout.write("Validating filenames ... ");
 	const files = getAllJsonFiles(networksPath);
@@ -513,7 +524,10 @@ async function validateEthereumList(networks: Network[]) {
 			);
 			continue;
 		}
-		if (chain.nativeCurrency.symbol !== network.nativeToken) {
+		if (
+			chain.nativeCurrency.symbol !== network.nativeToken &&
+			ALLOWED_NATIVE_TOKEN_MISMATCH[network.id] !== chain.nativeCurrency.symbol
+		) {
 			WARNINGS.push(
 				`\`${network.id}\` - native token mismatch in ethereum list: \`${chain.nativeCurrency.symbol}\` vs \`${network.nativeToken}\``,
 			);

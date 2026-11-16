@@ -10,7 +10,7 @@
   "rpcUrls": [
     "https://polygon.rpc.pinax.network",
     "https://polygon.drpc.org",
-    "https://rpc.satelink.network/rpc/polygon"
+    "https://matic.rpc.sentio.xyz"
   ],
   "apiUrls": [
     { "url": "https://polygon.abi.thegraph.com/api", "kind": "etherscan" },

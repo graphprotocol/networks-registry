@@ -6,7 +6,11 @@
   "caip2Id": "eip155:88",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://www.vicscan.xyz"],
-  "rpcUrls": ["https://rpc.viction.xyz", "https://viction.drpc.org"],
+  "rpcUrls": [
+    "https://rpc.viction.xyz",
+    "https://viction.drpc.org",
+    "https://88.rpc.thirdweb.com"
+  ],
   "services": {
     "subgraphs": [
       {

@@ -3,6 +3,22 @@ export async function fetchChainListNetworks(): Promise<ChainListNetwork[]> {
   return response.json();
 }
 
+// chainlist.org's feed: unlike chainid.network, `rpc` entries are objects carrying
+// privacy info (`tracking`), and it includes extra community-maintained endpoints.
+export interface ChainListOrgNetwork {
+  name: string;
+  chainId: number;
+  rpc: { url: string; tracking?: string; isOpenSource?: boolean }[];
+}
+
+export async function fetchChainListOrgRpcs(): Promise<ChainListOrgNetwork[]> {
+  const response = await fetch("https://chainlist.org/rpcs.json");
+  if (!response.ok) {
+    throw new Error(`chainlist.org returned ${response.status}`);
+  }
+  return response.json();
+}
+
 export interface ChainListNetwork {
   name: string;
   chain: string;

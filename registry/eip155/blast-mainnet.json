@@ -6,7 +6,7 @@
   "caip2Id": "eip155:81457",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://blastscan.io"],
-  "rpcUrls": ["https://rpc.blast.io", "https://blast.drpc.org"],
+  "rpcUrls": ["https://blast.api.pocket.network"],
   "apiUrls": [
     { "url": "https://blast.abi.thegraph.com/api", "kind": "etherscan" }
   ],

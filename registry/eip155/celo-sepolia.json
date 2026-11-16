@@ -14,7 +14,8 @@
   "explorerUrls": ["https://celo-sepolia.blockscout.com"],
   "rpcUrls": [
     "https://celosepolia.rpc.pinax.network",
-    "https://rpc.ankr.com/celo_sepolia"
+    "https://rpc.ankr.com/celo_sepolia",
+    "https://celo-sepolia.drpc.org"
   ],
   "apiUrls": [
     { "url": "https://celo-sepolia.abi.thegraph.com/api", "kind": "etherscan" },

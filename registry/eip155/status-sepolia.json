@@ -7,7 +7,7 @@
   "caip2Id": "eip155:1660990954",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepoliascan.status.network"],
-  "rpcUrls": ["https://public.sepolia.rpc.status.network"],
+  "rpcUrls": [],
   "apiUrls": [
     { "url": "https://sepoliascan.status.network/api", "kind": "etherscan" }
   ],

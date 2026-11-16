@@ -15,7 +15,8 @@
   ],
   "rpcUrls": [
     "https://rpc-gel-sepolia.inkonchain.com",
-    "https://ink-sepolia.drpc.org"
+    "https://ink-sepolia.drpc.org",
+    "https://ink-sepolia-rpc.publicnode.com"
   ],
   "services": { "subgraphs": [] },
   "networkType": "testnet",

@@ -10,8 +10,9 @@
   "relations": [],
   "explorerUrls": ["https://app.roninchain.com"],
   "rpcUrls": [
-    "https://ronin.drpc.org",
-    "https://ronin-mainnet.gateway.tatum.io"
+    "https://ronin-mainnet.gateway.tatum.io",
+    "https://2020.rpc.thirdweb.com",
+    "https://ronin.gateway.tenderly.co"
   ],
   "issuanceRewards": false,
   "nativeToken": "RON",

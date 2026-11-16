@@ -7,7 +7,11 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://explorer.hemi.xyz"],
   "apiUrls": [{ "url": "https://explorer.hemi.xyz/api", "kind": "etherscan" }],
-  "rpcUrls": ["https://rpc.hemi.network/rpc", "https://hemi.drpc.org"],
+  "rpcUrls": [
+    "https://rpc.hemi.network/rpc",
+    "https://hemi.drpc.org",
+    "https://43111.rpc.thirdweb.com"
+  ],
   "services": {
     "subgraphs": [
       {

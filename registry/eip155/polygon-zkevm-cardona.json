@@ -11,10 +11,7 @@
     { "kind": "testnetOf", "network": "polygon-zkevm" }
   ],
   "explorerUrls": [],
-  "rpcUrls": [
-    "https://rpc.cardona.zkevm-rpc.com",
-    "https://polygon-zkevm-cardona.drpc.org"
-  ],
+  "rpcUrls": ["https://rpc.cardona.zkevm-rpc.com"],
   "apiUrls": [],
   "networkType": "testnet",
   "services": { "subgraphs": [] },

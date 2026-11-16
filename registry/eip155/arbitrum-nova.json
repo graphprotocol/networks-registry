@@ -8,9 +8,12 @@
   "explorerUrls": [],
   "rpcUrls": [
     "https://nova.arbitrum.io/rpc",
-    "https://arbitrum-nova.publicnode.com"
+    "https://arbitrum-nova.publicnode.com",
+    "https://42170.rpc.thirdweb.com"
   ],
-  "apiUrls": [],
+  "apiUrls": [
+    { "url": "https://arbitrum-nova.blockscout.com/api", "kind": "blockscout" }
+  ],
   "services": { "subgraphs": [] },
   "networkType": "mainnet",
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

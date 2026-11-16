@@ -9,7 +9,8 @@
   "explorerUrls": ["https://testnet.bscscan.com"],
   "rpcUrls": [
     "https://chapel.rpc.pinax.network",
-    "https://bsc-testnet.rpc.sentio.xyz"
+    "https://bsc-testnet.rpc.sentio.xyz",
+    "https://bsc-testnet.drpc.org"
   ],
   "apiUrls": [
     { "url": "https://bsc-testnet.abi.thegraph.com/api", "kind": "etherscan" }

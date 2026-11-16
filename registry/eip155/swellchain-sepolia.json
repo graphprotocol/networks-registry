@@ -17,10 +17,7 @@
       "kind": "etherscan"
     }
   ],
-  "rpcUrls": [
-    "https://rpc.ankr.com/swell_sepolia",
-    "https://swell-testnet.drpc.org"
-  ],
+  "rpcUrls": ["https://swell-testnet.drpc.org"],
   "networkType": "testnet",
   "relations": [
     { "kind": "testnetOf", "network": "swellchain" },

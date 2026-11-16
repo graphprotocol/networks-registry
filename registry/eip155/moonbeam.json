@@ -7,9 +7,9 @@
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://moonbeam.moonscan.io"],
   "rpcUrls": [
-    "https://rpc.api.moonbeam.network",
-    "https://1rpc.io/glmr",
-    "https://moonbeam.drpc.org"
+    "https://moonbeam.api.pocket.network",
+    "https://moonbeam.api.onfinality.io/public",
+    "https://lb.routeme.sh/rpc/evm/1284"
   ],
   "apiUrls": [
     { "url": "https://moonbeam.abi.thegraph.com/api", "kind": "etherscan" }

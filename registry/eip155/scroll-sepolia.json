@@ -7,10 +7,7 @@
   "caip2Id": "eip155:534351",
   "graphNode": { "protocol": "ethereum" },
   "explorerUrls": ["https://sepolia.scrollscan.com"],
-  "rpcUrls": [
-    "https://scroll-sepolia.drpc.org",
-    "https://scroll-sepolia-public.nodies.app"
-  ],
+  "rpcUrls": [],
   "apiUrls": [
     {
       "url": "https://scroll-sepolia.abi.thegraph.com/api",

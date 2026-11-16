@@ -6,6 +6,8 @@ module.exports = {
         // List of URLs that should keep their trailing slash
         const exceptions = [
           "https://explorer.lumia.org/api/",
+          // without the slash it hits the explorer frontend (404 HTML), not the API
+          "https://explorer.testnet.aurora.dev/api/",
         ];
 
         const processValue = (value) => {
