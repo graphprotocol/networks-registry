@@ -15,7 +15,7 @@
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],
   "issuanceRewards": false,
   "nativeToken": "ETH",
-  "docsUrl": "https://docs.blast.io",
+  "docsUrl": "https://blast.io",
   "indexerDocsUrls": [
     {
       "url": "https://docs.infradao.com/archive-nodes-101/blast",

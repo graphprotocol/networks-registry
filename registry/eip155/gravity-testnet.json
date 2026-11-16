@@ -6,7 +6,7 @@
   "aliases": ["gravity-sepolia"],
   "caip2Id": "eip155:13505",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explorer-sepolia.gravity.xyz"],
+  "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [
     { "url": "https://explorer-sepolia.gravity.xyz/api", "kind": "etherscan" }

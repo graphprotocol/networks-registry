@@ -6,7 +6,7 @@
   "aliases": ["evm-168587773", "blast-sepolia"],
   "caip2Id": "eip155:168587773",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://sepolia.blastscan.io"],
+  "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [
     { "url": "https://blast-testnet.abi.thegraph.com/api", "kind": "etherscan" }
@@ -19,7 +19,7 @@
   ],
   "issuanceRewards": false,
   "nativeToken": "ETH",
-  "docsUrl": "https://docs.blast.io",
+  "docsUrl": "https://blast.io",
   "firehose": {
     "blockType": "sf.ethereum.type.v2.Block",
     "evmExtendedModel": false,

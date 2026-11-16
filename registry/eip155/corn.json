@@ -5,7 +5,7 @@
   "aliases": ["corn-maizenet", "corn-mainnet"],
   "caip2Id": "eip155:21000000",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://maizenet-explorer.usecorn.com"],
+  "explorerUrls": [],
   "rpcUrls": [],
   "apiUrls": [
     { "url": "https://maizenet-explorer.usecorn.com/api", "kind": "etherscan" },

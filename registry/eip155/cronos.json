@@ -5,7 +5,7 @@
   "aliases": ["evm-25", "cronos-mainnet"],
   "caip2Id": "eip155:25",
   "graphNode": { "protocol": "ethereum" },
-  "explorerUrls": ["https://explorer.cronos.org"],
+  "explorerUrls": ["https://explorer.cronos.com"],
   "rpcUrls": [
     "https://evm.cronos.org",
     "https://cronos.drpc.org",
