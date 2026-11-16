@@ -1,17 +1,22 @@
 import fs from "fs";
 import { getAllJsonFiles } from "./utils/fs";
-import { fetchChainListNetworks } from "./utils/chainlist";
+import { fetchChainListOrgRpcs } from "./utils/chainlist";
 import { Network } from "./types/registry";
 
 // RPC cleanup / audit tool.
 //
-// For every EVM (eip155) network it gathers candidate RPC endpoints (the ones already
-// in the registry plus public ones from chainlist.org) and probes each for:
+// For every EVM (eip155) network it probes the registry's RPC endpoints, and if fewer than
+// --max are healthy, public candidates from chainlist.org, for:
 //   - correct chainId (eth_chainId matches caip2Id)
-//   - firstStreamableBlock is correct (block hash at that height matches firehose.firstStreamableBlock.id)
+//   - serving firstStreamableBlock with the right hash (the same check validate_urls does)
 //   - archive capability (historical state query at firstStreamableBlock.height succeeds)
-// then keeps up to --max verified archive endpoints per chain (existing ones first, in
-// their original order, then public additions).
+// Healthy = the first two. It then:
+//   - keeps healthy registry endpoints (archive or not) and ALL Pinax endpoints
+//   - removes registry endpoints that are dead or fail the check
+//   - tops up to --max with healthy chainlist.org endpoints: archive first, then least
+//     tracking, one per provider host
+// If nothing at all is healthy (e.g. no node serves block 0, or firstStreamableBlock is
+// stale), endpoints that are up on the right chain are kept and the chain is reported.
 //
 // Usage:
 //   bun run src/cleanup_rpcs.ts [--write] [--max=3] [<idOrPrefix> ...]
@@ -27,29 +32,51 @@ const DEAD_ADDR = "0x000000000000000000000000000000000000dEaD";
 const CONCURRENCY = 12;
 
 // endpoints that embed an API key/token — not stable public endpoints
+// (incl. UUID keys, e.g. dwellir, and personal QuickNode subdomains)
 const DEMO_KEY =
-  /docs-demo|dkey=|[?&]token=|\/v1\/[0-9a-f]{20,}|\/rpc\/[0-9a-f]{20,}|\/[0-9a-f]{32,}(\/|$)/i;
+  /docs-demo|dkey=|[?&]token=|\/v1\/[0-9a-f]{20,}|\/rpc\/[0-9a-f]{20,}|\/[0-9a-f]{32,}(\/|$)|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}|\.quiknode\.pro/i;
 const isUsablePublic = (u: string) =>
   !!u &&
   !u.includes("${") &&
   !u.includes("API_KEY") &&
   !u.startsWith("ws") &&
   !DEMO_KEY.test(u);
+// registry endpoints we can probe as-is (not templated with a key placeholder)
+const isProbeable = (u: string) =>
+  !!u && u.startsWith("http") && !u.includes("{") && !u.includes("API_KEY");
+const norm = (u: string) => u.replace(/\/+$/, "").toLowerCase();
+const host = (u: string) => {
+  try {
+    return new URL(u).host;
+  } catch {
+    return u;
+  }
+};
 const eqHash = (a?: string | null, b?: string | null) =>
   !!a && !!b && a.toLowerCase() === b.toLowerCase();
 // Pinax first-party endpoints are always preserved (never dropped by cleanup), even if
 // they are temporarily down / not archive — those are reported as issues instead.
-const isPinax = (u: string) => u.includes("rpc.service.pinax.network");
+// Current form is `<id>.rpc.pinax.network`; the legacy `<id>.rpc.service.pinax.network` is also matched.
+const isPinax = (u: string) => /\.rpc(\.service)?\.pinax\.network/.test(u);
 
 type Probe = {
   url: string;
   reachable: boolean;
   chainId?: number;
   blockHash?: string | null;
+  blockErr?: string | null;
   archive?: boolean;
   err?: string;
   archiveErr?: string | null;
 };
+
+// Errors that say "not right now" rather than "this endpoint is broken": rate limits and
+// per-IP quotas (1rpc, OnFinality, Pinax free tier), timeouts and 5xx. A registry endpoint
+// failing only with these is kept (and reported) — a single probe from one IP isn't
+// enough evidence to delete it. DNS failures, wrong chain, missing methods, paid-plan
+// 4xx and missing/mismatched blocks are definitive and get the endpoint removed.
+const TRANSIENT =
+  /HTTP (408|425|429|5\d\d)|timeout|timed out|rate.?limit|usage limit|too many requests|temporar|try again|retry|service unavailable/i;
 
 async function rpcOnce(url: string, method: string, params: unknown[]) {
   const ctl = new AbortController();
@@ -94,6 +121,7 @@ async function probe(url: string, height: number): Promise<Probe> {
     reachable: true,
     chainId,
     blockHash,
+    blockErr: blk.err ?? null,
     archive: bal.ok !== undefined,
     archiveErr: bal.err ?? null,
   };
@@ -123,7 +151,7 @@ async function main() {
   );
   const filters = args.filter((a) => !a.startsWith("--"));
 
-  const chainlist = await fetchChainListNetworks();
+  const chainlist = await fetchChainListOrgRpcs();
   const clById = new Map(chainlist.map((c) => [c.chainId, c]));
   const trackingOf = (cid: number, url: string) =>
     clById.get(cid)?.rpc?.find((x: any) => x.url === url)?.tracking as
@@ -153,20 +181,71 @@ async function main() {
     const fsbId = fsb?.id;
     const current = net.rpcUrls ?? [];
 
-    const clRpcs = (clById.get(expected)?.rpc ?? []).map((r: any) => r.url);
-    const candidates = [
-      ...new Set([
-        ...current.filter(isUsablePublic),
-        ...clRpcs.filter(isUsablePublic),
-      ]),
-    ];
-    if (!candidates.length) {
-      if (!current.length) issues.push(`${net.id}: no RPC endpoints and none available`);
-      continue;
-    }
+    // 1. probe what is in the registry now (incl. keyed endpoints someone added on purpose)
+    const curResults = await pool(current.filter(isProbeable), (u) => probe(u, height));
+    const byUrl = new Map(curResults.map((r) => [r.url, r]));
+    // healthy = what validate_urls checks: right chain, serves firstStreamableBlock
+    const healthy = (u: string) => {
+      const r = byUrl.get(u);
+      return (
+        !!r &&
+        r.reachable &&
+        r.chainId === expected &&
+        (fsbId ? eqHash(r.blockHash, fsbId) : true)
+      );
+    };
+    const reachable = (u: string) => {
+      const r = byUrl.get(u);
+      return !!r && r.reachable && r.chainId === expected;
+    };
+    // failing only with a transient error (rate limit / quota / timeout / 5xx)
+    const flakyErr = (u: string) => {
+      const r = byUrl.get(u);
+      if (!r || healthy(u)) return null;
+      const e = r.reachable ? r.blockErr : r.err;
+      return e && TRANSIENT.test(e) ? e : null;
+    };
+    for (const u of current)
+      if (!isPinax(u) && flakyErr(u))
+        issues.push(`${net.id}: ${u} failed transiently (${flakyErr(u)}) — kept, re-check`);
+    // keep Pinax, healthy and flaky current endpoints, and anything we can't probe;
+    // drop the rest (dead / wrong chain / doesn't serve firstStreamableBlock)
+    const kept = current.filter(
+      (u) => isPinax(u) || !isProbeable(u) || healthy(u) || !!flakyErr(u),
+    );
 
-    const results = await pool(candidates, (u) => probe(u, height));
-    const byUrl = new Map(results.map((r) => [r.url, r]));
+    // 2. top up to --max from chainlist.org (archive first, then least tracking)
+    let clResults: Probe[] = [];
+    const added: string[] = [];
+    if (kept.length < max) {
+      const seen = new Set(current.map(norm));
+      const clRpcs = [
+        ...new Map(
+          (clById.get(expected)?.rpc ?? [])
+            .map((r) => r.url)
+            .filter((u) => isUsablePublic(u) && !isPinax(u) && !seen.has(norm(u)))
+            .map((u) => [norm(u), u] as const),
+        ).values(),
+      ];
+      clResults = await pool(clRpcs, (u) => probe(u, height));
+      for (const r of clResults) byUrl.set(r.url, r);
+      const hosts = new Set(kept.map(host));
+      const ranked = clResults
+        .filter((r) => healthy(r.url))
+        .sort((a, b) => {
+          if (!!a.archive !== !!b.archive) return a.archive ? -1 : 1;
+          const ta = trackRank[String(trackingOf(expected, a.url))];
+          const tb = trackRank[String(trackingOf(expected, b.url))];
+          return ta !== tb ? ta - tb : a.url.length - b.url.length;
+        });
+      for (const r of ranked) {
+        if (kept.length + added.length >= max) break;
+        if (hosts.has(host(r.url))) continue; // one endpoint per provider host
+        hosts.add(host(r.url));
+        added.push(r.url);
+      }
+    }
+    const results = [...curResults, ...clResults];
 
     // --- issue detection ---
     // chainId mismatch on official/current endpoints
@@ -193,7 +272,7 @@ async function main() {
       );
     // broken Pinax first-party endpoints
     for (const r of results) {
-      if (!r.url.includes("rpc.service.pinax.network")) continue;
+      if (!isPinax(r.url)) continue;
       if (!r.reachable) issues.push(`${net.id}: Pinax ${r.url} DOWN (${r.err})`);
       else if (r.chainId !== expected)
         issues.push(`${net.id}: Pinax ${r.url} wrong chainId ${r.chainId}`);
@@ -202,47 +281,25 @@ async function main() {
     }
 
     // --- selection ---
-    const isGood = (u: string) => {
-      const r = byUrl.get(u);
-      return (
-        !!r &&
-        r.reachable &&
-        r.chainId === expected &&
-        !!r.archive &&
-        (r.blockHash ? eqHash(r.blockHash, fsbId) : true)
+    let chosen = [...kept, ...added];
+    const healthyCount = chosen.filter(healthy).length;
+    if (healthyCount === 0) {
+      // Nothing serves firstStreamableBlock (not served by any node, or registry value
+      // is stale): keep endpoints that are up on the right chain rather than emptying
+      // the list. Only endpoints that are down / wrong chain get removed.
+      const up = current.filter((u) => !isPinax(u) && reachable(u));
+      chosen = current.filter(
+        (u) => isPinax(u) || !isProbeable(u) || up.includes(u) || !!flakyErr(u),
       );
-    };
-    // keep existing archive endpoints AND all Pinax endpoints (in original order)
-    const survivingCurrent = current.filter((u) => isGood(u) || isPinax(u));
-    const newPublic = results
-      .filter((r) => isGood(r.url) && !isPinax(r.url) && !current.includes(r.url))
-      .sort((a, b) => {
-        const ta = trackRank[String(trackingOf(expected, a.url))];
-        const tb = trackRank[String(trackingOf(expected, b.url))];
-        return ta !== tb ? ta - tb : a.url.length - b.url.length;
-      })
-      .map((r) => r.url);
-    let chosen = [...survivingCurrent, ...newPublic].slice(0, max);
-
-    if (!chosen.length) {
-      // no archive node — keep reachable+correct current endpoints as a fallback
-      const fb = current.filter((u) => {
-        const r = byUrl.get(u);
-        return (
-          r?.reachable &&
-          r.chainId === expected &&
-          (r.blockHash ? eqHash(r.blockHash, fsbId) : true)
+      if (up.length)
+        issues.push(
+          `${net.id}: no RPC serves firstStreamableBlock — kept ${up.length} reachable RPC(s)`,
         );
-      });
-      if (fb.length) {
-        chosen = fb.slice(0, max);
-        issues.push(`${net.id}: no archive RPC found — kept reachable official RPC(s)`);
-      } else {
-        issues.push(`${net.id}: no verified RPC — left unchanged for manual review`);
-        continue;
-      }
-    } else if (chosen.length < max) {
-      issues.push(`${net.id}: only ${chosen.length}/${max} archive RPC(s) available`);
+      else if (current.some((u) => !isPinax(u) && isProbeable(u) && !flakyErr(u)))
+        issues.push(`${net.id}: all public RPCs dead — removed`);
+      else if (!chosen.length) issues.push(`${net.id}: no RPC endpoints and none available`);
+    } else if (healthyCount < max) {
+      issues.push(`${net.id}: only ${healthyCount}/${max} healthy RPC(s) available`);
     }
 
     if (JSON.stringify(chosen) === JSON.stringify(current)) continue;

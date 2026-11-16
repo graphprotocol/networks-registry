@@ -60,19 +60,24 @@ For a chain with id `<id>`, Pinax endpoints follow these patterns:
 
 - Firehose: `<id>.firehose.pinax.network:443`
 - Substreams: `<id>.substreams.pinax.network:443`
-- RPC: `<id>.rpc.service.pinax.network`
+- RPC: `<id>.rpc.pinax.network` (free tier, rate limited per IP; the older
+  `<id>.rpc.service.pinax.network` form is no longer used)
 - ABI (Etherscan-like): `<id>.abi.pinax.network/api`
+
+The subdomain is sometimes a short alias rather than the registry id (e.g. `arbone` for
+`arbitrum-one`, `eth` for `mainnet`) — copy it from an existing entry for the same chain.
 
 **Always confirm each one responds before listing it** — the subdomain existing does
 not mean the chain is provisioned.
 
-**Never remove a Pinax `rpc.service.pinax.network` endpoint unless explicitly asked** —
+**Never remove a Pinax `rpc.pinax.network` endpoint unless explicitly asked** —
 even if it is temporarily down or not archive. These are first-party; report the problem
 instead of deleting the endpoint.
 
-## Maintaining rpcUrls (archive nodes)
+## Maintaining rpcUrls
 
-`rpcUrls` are expected to point to **archive** nodes. Use the audit/cleanup tool:
+Aim for **3 healthy** RPC endpoints per chain, preferring **archive** nodes. Use the
+audit/cleanup tool:
 
 ```bash
 bun cleanup:rpcs                 # dry run: audit ALL eip155 chains, print issues
@@ -80,12 +85,16 @@ bun cleanup:rpcs base bnb-op     # only these ids (prefix match)
 bun cleanup:rpcs --write --max=3 # apply changes, target 3 RPCs/chain, then `bun format`
 ```
 
-For each chain it probes existing + public (chainlist.org) endpoints for correct chainId,
-`firstStreamableBlock` hash match (at the real height), and archive capability
-(`eth_getBalance` at `firstStreamableBlock.height`). It keeps existing archive endpoints
-plus all Pinax endpoints, tops up with public archive nodes, and reports issues (stale
-`firstStreamableBlock`, chainId mismatches, broken Pinax endpoints). Public endpoints that
-serve archive only with a paid token (e.g. all `publicnode.com`) are correctly dropped.
+An endpoint is **healthy** when it returns the right chainId and serves
+`firstStreamableBlock` with the matching hash — the same check the daily maintenance run
+(`validate_urls.ts`) does. For each chain the tool keeps healthy registry endpoints plus
+all Pinax endpoints, removes dead/failing ones, and tops up to `--max` from
+[chainlist.org](https://chainlist.org/rpcs.json): archive nodes (`eth_getBalance` at
+`firstStreamableBlock.height`) first, then least tracking, one per provider host. If no
+endpoint at all serves `firstStreamableBlock` (some chains' nodes don't serve block 0, or
+the registry value is stale) it keeps the reachable ones and reports the chain instead of
+emptying it. It also reports stale `firstStreamableBlock`, chainId mismatches and broken
+Pinax endpoints. Endpoints that need a paid plan/key fail the probe and are dropped.
 Default is dry-run — review before `--write`, since public RPC liveness varies run-to-run.
 
 ## Gotchas (these cause validation ERRORS, not just warnings)
