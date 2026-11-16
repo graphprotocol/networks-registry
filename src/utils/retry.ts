@@ -2,6 +2,8 @@ const DEFAULT_BATCH_SIZE = 30;
 const DEFAULT_RETRY_SLEEP_MS = 10000;
 const DEFAULT_MAX_RETRY_ATTEMPTS = 3;
 
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 // calls processor function on each item of items, in parallel, up to batchSize items at a time
 export async function processQueue<T, S>(
   items: T[],
@@ -33,13 +35,56 @@ export async function processQueue<T, S>(
   return results;
 }
 
-// Helper function to implement retry logic
+// Error carrying a server-requested wait (HTTP 429 + Retry-After). withRetry waits at
+// least that long before the next attempt.
+export class RateLimitError extends Error {
+  constructor(
+    message: string,
+    public retryAfterMs?: number,
+  ) {
+    super(message);
+    this.name = "RateLimitError";
+  }
+}
+
+// Parses a Retry-After header (delta-seconds or HTTP date) into milliseconds.
+export function parseRetryAfter(value: string | null): number | undefined {
+  if (!value) return undefined;
+  const seconds = Number(value);
+  if (Number.isFinite(seconds)) return Math.max(0, seconds * 1000);
+  const date = Date.parse(value);
+  return Number.isNaN(date) ? undefined : Math.max(0, date - Date.now());
+}
+
+// Spaces out start times of requests that share a key (e.g. one rate-limited backend
+// behind many hostnames), so parallel workers don't hit it in a single burst.
+const nextSlot = new Map<string, number>();
+export async function throttle(
+  key: string,
+  minIntervalMs: number,
+): Promise<void> {
+  const now = Date.now();
+  const slot = Math.max(now, nextSlot.get(key) ?? 0);
+  nextSlot.set(key, slot + minIntervalMs);
+  if (slot > now) await sleep(slot - now);
+}
+
+// Pushes back every pending request for a key, e.g. after a 429 with Retry-After, so
+// all workers sharing the backend wait instead of only the one that was told to.
+export function holdOff(key: string, ms: number): void {
+  nextSlot.set(key, Math.max(nextSlot.get(key) ?? 0, Date.now() + ms));
+}
+
+// Helper function to implement retry logic.
+// Delay before attempt n+1 is delayMs * backoff^(n-1), randomised by ±jitter, and never
+// shorter than a RateLimitError's retryAfterMs.
 export async function withRetry<T>(
   operation: () => Promise<T>,
   caption: string = "operation",
   maxAttempts: number = DEFAULT_MAX_RETRY_ATTEMPTS,
   delayMs: number = DEFAULT_RETRY_SLEEP_MS,
   jitter: number = 0,
+  backoff: number = 1,
 ): Promise<T> {
   let lastError: any;
 
@@ -50,11 +95,20 @@ export async function withRetry<T>(
     } catch (error) {
       lastError = error;
       if (attempt < maxAttempts) {
+        const base = delayMs * Math.pow(backoff, attempt - 1);
         const jitterOffset = jitter * (Math.random() * 2 - 1); // Value between -jitter and +jitter
-        const actualDelay = Math.floor(delayMs * (1 + jitterOffset));
-
-        console.log(`${caption} failed, retrying in ${actualDelay}ms...`);
-        await new Promise((resolve) => setTimeout(resolve, actualDelay));
+        let actualDelay = Math.floor(base * (1 + jitterOffset));
+        if (
+          error instanceof RateLimitError &&
+          error.retryAfterMs !== undefined
+        ) {
+          actualDelay = Math.max(actualDelay, Math.ceil(error.retryAfterMs));
+        }
+        const reason = error instanceof Error ? error.message : String(error);
+        console.log(
+          `${caption} failed (${reason}), retrying in ${actualDelay}ms...`,
+        );
+        await sleep(actualDelay);
       }
     }
   }
