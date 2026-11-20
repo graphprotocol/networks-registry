@@ -244,7 +244,15 @@ const ALLOWED_FH_PROVIDERS = [
 	"streamingfast.io",
 	"data.nexus",
 ];
-const ALLOWED_SG_GATEWAY_PROVIDERS = ["gateway.thegraph.com"];
+const ALLOWED_SG_GATEWAY_PROVIDERS = [
+	"gateway.thegraph.com",
+	"subgraphs.graphops.xyz",
+];
+// Placeholders each gateway query URL template must contain, and no others
+const SG_QUERY_URL_PLACEHOLDERS = {
+	subgraphId: ["{API_KEY}", "{SUBGRAPH_ID}"],
+	deploymentId: ["{API_KEY}", "{DEPLOYMENT_ID}"],
+} as const;
 const ALLOWED_SG_STUDIO_PROVIDERS = ["api.studio.thegraph.com"];
 const ALLOWED_SG_BACKSTOP_PROVIDERS = ["infradao", "streamingfast"];
 const ALLOWED_SG_CURATION_PROVIDERS = ["the-graph-foundation"];
@@ -269,8 +277,28 @@ function validateServices(networks: Network[]) {
 
 		// Validate subgraphs services
 		const seenSubgraphs = new Set<string>();
-		for (const { kind, provider } of services.subgraphs ?? []) {
+		for (const { kind, provider, queryUrls } of services.subgraphs ?? []) {
 			const key = `${kind}:${provider}`;
+			for (const [field, placeholders] of Object.entries(
+				SG_QUERY_URL_PLACEHOLDERS,
+			)) {
+				const template: string | undefined = queryUrls?.[field];
+				if (!template) continue;
+				if (!template.startsWith(`${provider}/`)) {
+					ERRORS.push(
+						`\`${network.id}\` - \`subgraphs\` ${field} query URL is not under provider ${provider}: ${template}`,
+					);
+				}
+				const found = template.match(/\{[^}]*\}/g) ?? [];
+				if (
+					found.length !== placeholders.length ||
+					!placeholders.every((p) => found.includes(p))
+				) {
+					ERRORS.push(
+						`\`${network.id}\` - \`subgraphs\` ${field} query URL must contain exactly ${placeholders.join(" and ")}: ${template}`,
+					);
+				}
+			}
 			if (seenSubgraphs.has(key)) {
 				ERRORS.push(
 					`\`${network.id}\` - duplicate \`subgraphs\` entry: ${key}`,

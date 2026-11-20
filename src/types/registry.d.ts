@@ -233,17 +233,34 @@ export interface Network {
     description?: string;
   }[];
 }
+/**
+ * Subgraph service entry. Gateway entries must carry queryUrls; other kinds must not
+ */
 export interface SubgraphsService {
   /**
    * Kind of Subgraph service entry
    */
   kind: "gateway" | "studio" | "backstop" | "curation";
   /**
-   * Provider identifier or URL for this entry, e.g. a gateway/studio deployment URL or a backstop provider like infradao or a curation provider like the-graph-foundation
+   * Provider identifier or URL for this entry, e.g. a gateway base URL, a studio deployment URL, a backstop provider like infradao or a curation provider like the-graph-foundation
    */
   provider: string;
+  queryUrls?: SubgraphQueryUrls;
   /**
    * [optional] Human-readable description of the entry
    */
   description?: string;
+}
+/**
+ * Gateway query URL templates. Replace each placeholder with its value to get the GraphQL endpoint
+ */
+export interface SubgraphQueryUrls {
+  /**
+   * Query URL for a Subgraph ID on The Graph Network, with {SUBGRAPH_ID} and {API_KEY} placeholders, e.g. https://gateway.thegraph.com/api/{API_KEY}/subgraphs/id/{SUBGRAPH_ID}
+   */
+  subgraphId: string;
+  /**
+   * Query URL for a Subgraph deployment ID (IPFS CID), with {DEPLOYMENT_ID} and {API_KEY} placeholders, e.g. https://gateway.thegraph.com/api/{API_KEY}/deployments/id/{DEPLOYMENT_ID}
+   */
+  deploymentId: string;
 }

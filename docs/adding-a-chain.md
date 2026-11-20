@@ -29,10 +29,18 @@ Each chain should be defined as a JSON file in the `registry` directory with the
 - `services` - The Graph services support for the chain
 
   - `subgraphs` - Subgraph service entries, each `{ kind, provider, description? }`:
+
     - `kind: "studio"` - Subgraph Studio support, `provider` is the deployment URL, e.g. `https://api.studio.thegraph.com/deploy`
-    - `kind: "gateway"` - Subgraph gateway, `provider` is the gateway URL, e.g. `https://gateway.thegraph.com/api`
+    - `kind: "gateway"` - Subgraph gateway, `provider` is the gateway base URL, e.g. `https://gateway.thegraph.com/api`. Gateway entries must set `queryUrls`, the query URL templates for the gateway:
+
+      - `subgraphId` - query URL for a Subgraph ID, with `{SUBGRAPH_ID}` and `{API_KEY}` placeholders, e.g. `https://gateway.thegraph.com/api/{API_KEY}/subgraphs/id/{SUBGRAPH_ID}`
+      - `deploymentId` - query URL for a deployment ID, with `{DEPLOYMENT_ID}` and `{API_KEY}` placeholders, e.g. `https://gateway.thegraph.com/api/{API_KEY}/deployments/id/{DEPLOYMENT_ID}`
+
+      Both templates must start with `provider`. Replace every placeholder to get the GraphQL endpoint; do not derive query URLs from `provider`
+
     - `kind: "backstop"` - backstop indexing support, `provider` is the backstop provider, e.g. `infradao` or `streamingfast`
     - `kind: "curation"` - curation support, `provider` is the curation provider, e.g. `the-graph-foundation`
+
   - `firehose` - Firehose support and endpoints
   - `substreams` - Substreams support and endpoints
 
@@ -73,7 +81,14 @@ Each chain should be defined as a JSON file in the `registry` directory with the
   ],
   "services": {
     "subgraphs": [
-      { "kind": "gateway", "provider": "https://gateway.thegraph.com/api" },
+      {
+        "kind": "gateway",
+        "provider": "https://gateway.thegraph.com/api",
+        "queryUrls": {
+          "subgraphId": "https://gateway.thegraph.com/api/{API_KEY}/subgraphs/id/{SUBGRAPH_ID}",
+          "deploymentId": "https://gateway.thegraph.com/api/{API_KEY}/deployments/id/{DEPLOYMENT_ID}"
+        }
+      },
       { "kind": "studio", "provider": "https://api.studio.thegraph.com/deploy" }
     ],
     "firehose": [

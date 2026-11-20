@@ -13,7 +13,8 @@
     "https://rpc-gel.inkonchain.com",
     "https://ink.rpc.pinax.network",
     "https://ink.drpc.org",
-    "https://ink.api.pocket.network"
+    "https://ink.api.pocket.network",
+    "https://rpc.graphops.xyz/v1/evm/57073/{GRAPHOPS_API_KEY}"
   ],
   "services": {
     "subgraphs": [],

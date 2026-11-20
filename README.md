@@ -79,6 +79,8 @@ Assuming current version is v1.2.3, the following files with identical content a
 
 In addition to the above, the JSON Schema is available at TheGraphNetworksRegistrySchema_v1_2.json
 
+The previous minor versions keep receiving updates through backport scripts (`bun backport:v07x`, `bun backport:v08x`), which convert each network to that version's schema and drop entries the older schema cannot express.
+
 ## Registry Usage
 
 In your application you can use one of the generated registry JSONs above depending on your use case.

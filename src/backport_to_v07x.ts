@@ -1,13 +1,13 @@
 #!/usr/bin/env bun
 /**
- * Backport v0.8 registry entries to v0.7.x format
+ * Backport current registry entries to v0.7.x format
  *
- * This script reads all v0.8 network entries from the registry directory,
+ * This script reads all current network entries from the registry directory,
  * converts them to v0.7.x schema format, validates them against the v0.7 schema
  * and generates a consolidated v0.7.x registry file in the public directory.
  *
  * Schema differences:
- * - v0.8 `services.subgraphs` is an array of { kind, provider, description } objects
+ * - current `services.subgraphs` is an array of { kind, provider, queryUrls?, description } objects
  * - v0.7 `services.subgraphs` is an array of Studio deployment URL strings,
  *   so only `kind: "studio"` entries are carried over as their provider URL
  */
