@@ -74,6 +74,22 @@ not mean the chain is provisioned.
 even if it is temporarily down or not archive. These are first-party; report the problem
 instead of deleting the endpoint.
 
+## GraphOps endpoint conventions
+
+GraphOps endpoints are keyed by chain ID rather than registry id:
+
+- RPC (EVM): `https://rpc.graphops.xyz/v1/evm/<chainId>/{GRAPHOPS_API_KEY}`
+- RPC (Bitcoin): `https://rpc.graphops.xyz/v1/bitcoin/<network>/{GRAPHOPS_API_KEY}`
+- Subgraphs: a `gateway` entry next to The Graph's gateway on every chain that has one, with
+  provider `https://subgraphs.graphops.xyz/v1` and `queryUrls`
+  `https://subgraphs.graphops.xyz/v1/subgraphId/{SUBGRAPH_ID}/{API_KEY}` and
+  `https://subgraphs.graphops.xyz/v1/deploymentCID/{DEPLOYMENT_ID}/{API_KEY}`
+
+Every GraphOps request needs an API key, so RPC URLs carry the `{GRAPHOPS_API_KEY}`
+placeholder. The served chains are listed at
+`https://platform-api.graphops.xyz/v1/data-services/networks`; only add an endpoint for a
+chain listed there under the matching service.
+
 ## Maintaining rpcUrls
 
 Aim for **3 healthy** RPC endpoints per chain, preferring **archive** nodes. Use the

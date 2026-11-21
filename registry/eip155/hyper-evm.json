@@ -10,7 +10,8 @@
   "rpcUrls": [
     "https://hyperevm.rpc.pinax.network",
     "https://hyperevm.rpc.sentio.xyz",
-    "https://hyperliquid.drpc.org"
+    "https://hyperliquid.drpc.org",
+    "https://rpc.graphops.xyz/v1/evm/999/{GRAPHOPS_API_KEY}"
   ],
   "apiUrls": [
     { "url": "https://hyperevm.abi.thegraph.com/api", "kind": "etherscan" }
