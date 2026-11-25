@@ -1,9 +1,9 @@
 {
   "$schema": "https://networks-registry.thegraph.com/TheGraphNetworksRegistrySchema_v0_7.json",
-  "version": "0.7.140",
+  "version": "0.7.141",
   "title": "The Graph networks registry",
   "description": "This registry was generated and validated at https://github.com/graphprotocol/networks-registry",
-  "updatedAt": "2026-11-16T21:13:01.011Z",
+  "updatedAt": "2026-11-25T14:37:09.597Z",
   "networks": [
     {
       "id": "mainnet",
@@ -25,7 +25,8 @@
       "rpcUrls": [
         "https://mainnet.gateway.tenderly.co",
         "https://eth.rpc.pinax.network",
-        "https://eth.drpc.org"
+        "https://eth.drpc.org",
+        "https://rpc.graphops.xyz/v1/evm/1/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -209,7 +210,8 @@
       "rpcUrls": [
         "https://rpc.gnosischain.com",
         "https://gnosis.rpc.pinax.network",
-        "https://rpc.gnosis.gateway.fm"
+        "https://rpc.gnosis.gateway.fm",
+        "https://rpc.graphops.xyz/v1/evm/100/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -757,7 +759,8 @@
       "rpcUrls": [
         "https://sepolia.gateway.tenderly.co",
         "https://sepolia.rpc.pinax.network",
-        "https://eth-sepolia-testnet.api.pocket.network"
+        "https://eth-sepolia-testnet.api.pocket.network",
+        "https://rpc.graphops.xyz/v1/evm/11155111/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -1337,7 +1340,8 @@
       "rpcUrls": [
         "https://mainnet.unichain.org",
         "https://unichain.rpc.pinax.network",
-        "https://unichain.drpc.org"
+        "https://unichain.drpc.org",
+        "https://rpc.graphops.xyz/v1/evm/130/{GRAPHOPS_API_KEY}"
       ],
       "issuanceRewards": true,
       "nativeToken": "ETH",
@@ -1799,7 +1803,8 @@
       "rpcUrls": [
         "https://polygon.rpc.pinax.network",
         "https://polygon.drpc.org",
-        "https://matic.rpc.sentio.xyz"
+        "https://matic.rpc.sentio.xyz",
+        "https://rpc.graphops.xyz/v1/evm/137/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -4440,7 +4445,8 @@
       "rpcUrls": [
         "https://arbone.rpc.pinax.network",
         "https://arbitrum.drpc.org",
-        "https://arbitrum-one.rpc.sentio.xyz"
+        "https://arbitrum-one.rpc.sentio.xyz",
+        "https://rpc.graphops.xyz/v1/evm/42161/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -4533,7 +4539,8 @@
       "rpcUrls": [
         "https://arbsepolia.rpc.pinax.network",
         "https://arbitrum-sepolia.drpc.org",
-        "https://arbitrum-sepolia-testnet.api.pocket.network"
+        "https://arbitrum-sepolia-testnet.api.pocket.network",
+        "https://rpc.graphops.xyz/v1/evm/421614/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -4598,7 +4605,8 @@
       "rpcUrls": [
         "https://tempo-mainnet.drpc.org",
         "https://tempo.rpc.pinax.network",
-        "https://rpc.mainnet.tempo.xyz"
+        "https://rpc.mainnet.tempo.xyz",
+        "https://rpc.graphops.xyz/v1/evm/4217/{GRAPHOPS_API_KEY}"
       ],
       "services": {
         "subgraphs": [
@@ -4710,7 +4718,8 @@
       "rpcUrls": [
         "https://forno.celo.org",
         "https://celo.rpc.pinax.network",
-        "https://celo.drpc.org"
+        "https://celo.drpc.org",
+        "https://rpc.graphops.xyz/v1/evm/42220/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -5186,7 +5195,8 @@
       "rpcUrls": [
         "https://rpc.mainnet.chain.robinhood.com",
         "https://robinhood.rpc.pinax.network",
-        "https://robinhood.api.pocket.network"
+        "https://robinhood.api.pocket.network",
+        "https://rpc.graphops.xyz/v1/evm/4663/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [],
       "relations": [
@@ -5527,7 +5537,8 @@
       "rpcUrls": [
         "https://arc.rpc.pinax.network",
         "https://rpc.mainnet.arc.io",
-        "https://rpc.drpc.mainnet.arc.io"
+        "https://rpc.drpc.mainnet.arc.io",
+        "https://rpc.graphops.xyz/v1/evm/5042/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [],
       "services": {
@@ -5781,7 +5792,8 @@
       "rpcUrls": [
         "https://bsc.rpc.pinax.network",
         "https://bsc.rpc.sentio.xyz",
-        "https://api.zan.top/bsc-mainnet"
+        "https://api.zan.top/bsc-mainnet",
+        "https://rpc.graphops.xyz/v1/evm/56/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -5932,7 +5944,8 @@
         "https://rpc-gel.inkonchain.com",
         "https://ink.rpc.pinax.network",
         "https://ink.drpc.org",
-        "https://ink.api.pocket.network"
+        "https://ink.api.pocket.network",
+        "https://rpc.graphops.xyz/v1/evm/57073/{GRAPHOPS_API_KEY}"
       ],
       "services": {
         "subgraphs": [],
@@ -7052,7 +7065,8 @@
       "rpcUrls": [
         "https://mainnet.base.org",
         "https://base.rpc.pinax.network",
-        "https://1rpc.io/base"
+        "https://1rpc.io/base",
+        "https://rpc.graphops.xyz/v1/evm/8453/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -7139,7 +7153,8 @@
       "rpcUrls": [
         "https://basesepolia.rpc.pinax.network",
         "https://base-sepolia.rpc.sentio.xyz",
-        "https://base-testnet.api.pocket.network"
+        "https://base-testnet.api.pocket.network",
+        "https://rpc.graphops.xyz/v1/evm/84532/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -7718,7 +7733,8 @@
       "rpcUrls": [
         "https://hyperevm.rpc.pinax.network",
         "https://hyperevm.rpc.sentio.xyz",
-        "https://hyperliquid.drpc.org"
+        "https://hyperliquid.drpc.org",
+        "https://rpc.graphops.xyz/v1/evm/999/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [
         {
@@ -8391,7 +8407,8 @@
         "https://btcscan.org"
       ],
       "rpcUrls": [
-        "https://bitcoin-mainnet.gateway.tatum.io"
+        "https://bitcoin-mainnet.gateway.tatum.io",
+        "https://rpc.graphops.xyz/v1/bitcoin/mainnet/{GRAPHOPS_API_KEY}"
       ],
       "apiUrls": [],
       "networkType": "mainnet",
