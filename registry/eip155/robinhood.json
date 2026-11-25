@@ -23,7 +23,8 @@
   "rpcUrls": [
     "https://rpc.mainnet.chain.robinhood.com",
     "https://robinhood.rpc.pinax.network",
-    "https://robinhood.api.pocket.network"
+    "https://robinhood.api.pocket.network",
+    "https://rpc.graphops.xyz/v1/evm/4663/{GRAPHOPS_API_KEY}"
   ],
   "apiUrls": [],
   "relations": [{ "kind": "l2Of", "network": "mainnet" }],

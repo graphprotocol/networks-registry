@@ -5,7 +5,10 @@
   "aliases": ["bitcoin", "btc-mainnet"],
   "caip2Id": "bip122:000000000019d6689c085ae165831e93",
   "explorerUrls": ["https://btcscan.org"],
-  "rpcUrls": ["https://bitcoin-mainnet.gateway.tatum.io"],
+  "rpcUrls": [
+    "https://bitcoin-mainnet.gateway.tatum.io",
+    "https://rpc.graphops.xyz/v1/bitcoin/mainnet/{GRAPHOPS_API_KEY}"
+  ],
   "apiUrls": [],
   "networkType": "mainnet",
   "services": {

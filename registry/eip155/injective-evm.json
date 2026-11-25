@@ -15,7 +15,20 @@
       {
         "kind": "gateway",
         "provider": "https://gateway.thegraph.com/api",
+        "queryUrls": {
+          "subgraphId": "https://gateway.thegraph.com/api/{API_KEY}/subgraphs/id/{SUBGRAPH_ID}",
+          "deploymentId": "https://gateway.thegraph.com/api/{API_KEY}/deployments/id/{DEPLOYMENT_ID}"
+        },
         "description": "The Graph's canonical Subgraph gateway under www.thegraph.com routes data consumers' GraphQL queries to the Indexers on The Graph Network."
+      },
+      {
+        "kind": "gateway",
+        "provider": "https://subgraphs.graphops.xyz/v1",
+        "queryUrls": {
+          "subgraphId": "https://subgraphs.graphops.xyz/v1/subgraphId/{SUBGRAPH_ID}/{API_KEY}",
+          "deploymentId": "https://subgraphs.graphops.xyz/v1/deploymentCID/{DEPLOYMENT_ID}/{API_KEY}"
+        },
+        "description": "GraphOps routes GraphQL queries for any Subgraph on The Graph Network, authenticated with a GraphOps API key."
       },
       {
         "kind": "backstop",
