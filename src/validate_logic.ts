@@ -341,7 +341,44 @@ function validateServices(networks: Network[]) {
 		}
 	}
 
+	validateGatewayQueryUrls(networks);
+
 	process.stdout.write("done\n");
+}
+
+// A gateway serves every chain through the same endpoints, so a provider must
+// carry the same query URL templates on every chain that lists it
+function validateGatewayQueryUrls(networks: Network[]) {
+	// provider -> templates -> ids of the networks using them
+	const byProvider = new Map<string, Map<string, string[]>>();
+	for (const network of networks) {
+		for (const { kind, provider, queryUrls } of network.services?.subgraphs ??
+			[]) {
+			if (kind !== "gateway") continue;
+			const templates = JSON.stringify([
+				queryUrls?.subgraphId,
+				queryUrls?.deploymentId,
+			]);
+			const byTemplates = byProvider.get(provider) ?? new Map();
+			byProvider.set(provider, byTemplates);
+			byTemplates.set(templates, [
+				...(byTemplates.get(templates) ?? []),
+				network.id,
+			]);
+		}
+	}
+
+	for (const [provider, byTemplates] of byProvider) {
+		// the most common templates are taken as the reference, the rest are reported
+		const [, ...deviating] = [...byTemplates.values()].sort(
+			(a, b) => b.length - a.length,
+		);
+		for (const networkIds of deviating) {
+			ERRORS.push(
+				`\`subgraphs\` gateway provider ${provider} has different \`queryUrls\` than on other chains on: ${networkIds.map((id) => `\`${id}\``).join(", ")}`,
+			);
+		}
+	}
 }
 
 function validateUrls(networks: Network[]) {
